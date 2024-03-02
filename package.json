@@ -1,0 +1,20 @@
+{
+  "name": "cotr-snippets",
+  "displayName": "cotr-snippets",
+  "description": "Write code in every language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
