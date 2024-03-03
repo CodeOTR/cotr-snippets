@@ -1,0 +1,212 @@
+{
+    "JavaScript String Type": {
+        "prefix": "cotrString",
+        "body": [
+            "let text = \"John Doe\";"
+        ],
+        "description": "JavaScript does not have types."
+    },
+    "JavaScript Boolean Type": {
+        "prefix": "cotrBool",
+        "body": [
+            "let flag = Boolean($1);"
+        ],
+        "description":  "JavaScript does not have types."
+    },
+    "JavaScript Null Type": {
+        "prefix": "cotrNull",
+        "body": [
+            "let value = null;"
+        ],
+        "description":  "JavaScript does not have types."
+    },
+    "JavaScript Int Type": {
+        "prefix": "cotrInt",
+        "body": [
+            "let integer = Math.floor($1);"
+        ],
+        "description": "JavaScript does not have types."
+    },
+    "JavaScript Number Type": {
+        "prefix": "cotrNum",
+        "body": [
+            "let number = $1;"
+        ],
+        "description": "JavaScript does not have types."
+    },    
+    "JavaScript Create Variable": {
+        "prefix": "cotrVar",
+        "body": [
+            "let ${1:myVar} = $2;"
+        ],
+        "description": "Creates a variable in JavaScript using the let keyword."
+    },
+    "JavaScript Create Constant": {
+        "prefix": "cotrConst",
+        "body": [
+            "const ${1:myConst} = $2;"
+        ],
+        "description": "Creates a constant variable in JavaScript using the const keyword."
+    },
+    "JavaScript Static Variable": {
+        "prefix": "cotrStaticVar",
+        "body": [
+            "static ${3:myStaticVar} = ${4:value};",
+            "",
+            "// Access the static variable",
+            "// MyClass.${3:myStaticVar}"
+        ],
+        "description": "Creates a static variable in a JavaScript class."
+    },
+    "JavaScript Create Map (Object)": {
+        "prefix": "cotrMap",
+        "body": [
+            "const ${1:myMap} = {",
+            "  ${2:'key1'}: ${3:'value1'},",
+            "  ${4:'key2'}: ${5:'value2'},",
+            "  // Add more key-value pairs here",
+            "};"
+        ],
+        "description": "Creates a map using an object in JavaScript."
+    },
+    "JavaScript Create Map (Map Class)": {
+        "prefix": "cotrMapAlt",
+        "body": [
+            "const ${1:myMap} = new Map([",
+            "  [${2:'key1'}, ${3:'value1'}],",
+            "  [${4:'key2'}, ${5:'value2'}],",
+            "  // Add more key-value pairs here",
+            "]);"
+        ],
+        "description": "Creates a map using the Map class in JavaScript."
+    },
+    "JavaScript Generate Object Map": {
+        "prefix": "cotrGenMap",
+        "body": [
+            "const ${1:myMap} = Object.fromEntries(",
+            "  Array.from({ length: ${2:length} }, (_, index) => [`key${index}`, `value${index}`])",
+            ");"
+        ],
+        "description": "Generates an object map with a specific number of key-value pairs in JavaScript."
+    },
+    "JavaScript Create Array": {
+        "prefix": "cotrList",
+        "body": [
+            "const ${1:myList} = [",
+            "  ${2:'item1'},",
+            "  ${3:'item2'},",
+            "  // Add more items here",
+            "];"
+        ],
+        "description": "Creates an array (list) in JavaScript."
+    },
+    "JavaScript Generate Array": {
+        "prefix": "cotrGenList",
+        "body": [
+            "const ${1:myList} = Array.from({ length: ${2:length} }, (_, index) => ${3:'item'} + index);"
+        ],
+        "description": "Generates an array (list) of a specific length in JavaScript."
+    },
+    "JavaScript Print": {
+        "prefix": "cotrPrint",
+        "body": [
+            "console.log(${1:'Your message here'});"
+        ],
+        "description": "Prints a message to the console in JavaScript."
+    },
+    "JavaScript For Loop": {
+        "prefix": "cotrForLoop",
+        "body": [
+            "for (let ${1:i} = 0; $1 < ${2:10}; $1++) {",
+            "  // Your code here",
+            "}"
+        ],
+        "description": "Creates a for loop that iterates through a set of numbers with the index in JavaScript."
+    },
+    "JavaScript For...Of Loop": {
+        "prefix": "cotrForOfLoop",
+        "body": [
+            "for (const item of ${1:iterable}) {",
+            "  ${2:// Your code here}",
+            "}"
+        ],
+        "description": "Iterates over an iterable object in JavaScript."
+    },
+    "JavaScript While Loop": {
+        "prefix": "cotrWhileLoop",
+        "body": [
+            "while (${1:condition}) {",
+            "  ${2:// Your code here}",
+            "}"
+        ],
+        "description": "Creates a while loop in JavaScript."
+    },
+    "JavaScript Switch Statement": {
+        "prefix": "cotrSwitch",
+        "body": [
+            "switch (${1:variable}) {",
+            "  case ${2:value1}:",
+            "    ${3:// Your code here}",
+            "    break;",
+            "  case ${4:value2}:",
+            "    ${5:// Your code here}",
+            "    break;",
+            "  default:",
+            "    ${6:// Your code here}",
+            "}"
+        ],
+        "description": "Creates a switch statement in JavaScript."
+    },
+    "JavaScript Function": {
+        "prefix": "cotrFunc",
+        "body": [
+            "function ${2:myFunction}(${3:parameters}) {",
+            "  ${4:// Your code here}",
+            "}"
+        ],
+        "description": "Creates a function in JavaScript."
+    },
+    "JavaScript Comment": {
+        "prefix": "cotrComment",
+        "body": [
+            "// ${1:Your comment here}"
+        ],
+        "description": "Creates a single-line comment in JavaScript."
+    },
+    "JavaScript Multi-Line Comment": {
+        "prefix": "cotrMultiComment",
+        "body": [
+            "/*",
+            " * ${1:Your comment here}",
+            " */"
+        ],
+        "description": "Creates a multi-line comment in JavaScript."
+    },
+    "JavaScript Throw Exception": {
+        "prefix": "cotrThrow",
+        "body": [
+            "throw new Error('Your message here');"
+        ],
+        "description": "Throws an exception in JavaScript."
+    },
+    "JavaScript Try Catch": {
+        "prefix": "cotrTryCatch",
+        "body": [
+            "try {",
+            "  ${1:// Your code here}",
+            "} catch (${2:exception}) {",
+            "  ${3:// Your code here}",
+            "}"
+        ],
+        "description": "Creates a try...catch block in JavaScript."
+    },
+    "JavaScript Class": {
+        "prefix": "cotrClass",
+        "body": [
+            "class ${1:MyClass} {",
+            "  ${2:// Your code here}",
+            "}"
+        ],
+        "description": "Creates a class in JavaScript."
+    }
+}
