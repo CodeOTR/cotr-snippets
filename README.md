@@ -41,3 +41,5 @@ Its very simple, actually. A snippets file is created for every supported langua
 | cotrFunc | Creates a function |
 | cotrComment | Creates a single-line comment |
 | cotrMultiComment | Creates a multi-line comment |
+| cotrThrow | Throws an exception |
+| cotrTryCatch | Creates a try-catch block |

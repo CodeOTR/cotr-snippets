@@ -215,5 +215,24 @@
 			" */"
 		],
 		"description": "Creates a multi-line comment in Rust."
-	}
+	},
+    "Rust Throw Exception": {
+		"prefix": "cotrThrow",
+		"body": [
+		  "panic!(\"Your message here\")"
+		],
+		"description": "Throws an exception in Rust."
+	  },
+	  "Rust Try Catch": {
+		"prefix": "cotrTryCatch",
+		"body": [
+		  "let result = std::panic::catch_unwind(|| {",
+		  "  ${1:// Your code here}",
+		  "});",
+		  "if let Err(err) = result {",
+		  "  ${2:// Your code here}",
+		  "}"
+		],
+		"description": "Creates a try...catch block in Rust."
+	  }
 }
