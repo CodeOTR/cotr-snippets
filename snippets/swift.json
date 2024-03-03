@@ -206,5 +206,15 @@
         "${1:condition} ? ${2:trueValue} : ${3:falseValue}"
         ],
         "description": "Creates a ternary operator in Swift."
-    }
+    },
+    "Swift Closure": {
+        "prefix": "cotrLambda",
+        "body": [
+          "let ${1:myClosure} = { (${2:parameters}) -> ${3:ReturnType} in",
+          "  ${4:return expression}",
+          "}"
+        ],
+        "description": "Creates a closure (lambda function) in Swift."
+      }
+      
 }

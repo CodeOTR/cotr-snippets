@@ -1,6 +1,7 @@
 {
 	"Kotlin String Type": {
 		"prefix": "cotrString",
+		"scope": "kotlin",
 		"body": [
 			"String"
 		],
@@ -8,6 +9,7 @@
 	},
 	"Kotlin Integer Type": {
 		"prefix": "cotrInt",
+		"scope": "kotlin",
 		"body": [
 			"Int"
 		],
@@ -15,6 +17,7 @@
 	},
 	"Kotlin Double Type": {
 		"prefix": "cotrNum",
+		"scope": "kotlin",
 		"body": [
 			"Double"
 		],
@@ -22,6 +25,7 @@
 	},
 	"Kotlin Float Type": {
 		"prefix": "cotrNumAlt",
+		"scope": "kotlin",
 		"body": [
 			"Float"
 		],
@@ -29,6 +33,7 @@
 	},
 	"Kotlin Boolean Type": {
 		"prefix": "cotrBool",
+		"scope": "kotlin",
 		"body": [
 			"Boolean"
 		],
@@ -36,6 +41,7 @@
 	},
 	"Kotlin Character Type": {
 		"prefix": "cotrChar",
+		"scope": "kotlin",
 		"body": [
 			"Char"
 		],
@@ -43,6 +49,7 @@
 	},
 	"Kotlin Create Variable": {
 		"prefix": "cotrVar",
+		"scope": "kotlin",
 		"body": [
 			"var ${1:myVar} = $2"
 		],
@@ -50,6 +57,7 @@
 	},
 	"Kotlin Create Constant": {
 		"prefix": "cotrConst",
+		"scope": "kotlin",
 		"body": [
 			"val ${1:myConst} = $2"
 		],
@@ -57,6 +65,7 @@
 	},
 	"Kotlin Create Map": {
 		"prefix": "cotrMap",
+		"scope": "kotlin",
 		"body": [
 			"val ${1:myMap} = mapOf(",
 			"  ${2:'key1' to 'value1'},",
@@ -68,6 +77,7 @@
 	},
 	"Kotlin Generate Map": {
 		"prefix": "cotrGenMap",
+		"scope": "kotlin",
 		"body": [
 			"val ${1:myMap} = (0 until ${2:length}).associate {",
 			"  'key' + it to 'value' + it",
@@ -77,6 +87,7 @@
 	},
 	"Kotlin Create List": {
 		"prefix": "cotrList",
+		"scope": "kotlin",
 		"body": [
 			"val ${1:myList} = listOf(",
 			"  ${2:'item1'},",
@@ -88,6 +99,7 @@
 	},
 	"Kotlin Generate List": {
 		"prefix": "cotrGenList",
+		"scope": "kotlin",
 		"body": [
 			"val ${1:myList} = List(${2:length}) {",
 			"  'item' + it",
@@ -97,6 +109,7 @@
 	},
 	"Kotlin Print": {
 		"prefix": "cotrPrint",
+		"scope": "kotlin",
 		"body": [
 			"println(${1:'Your message here'})"
 		],
@@ -104,6 +117,7 @@
 	},
 	"Kotlin For Loop": {
 		"prefix": "cotrForLoop",
+		"scope": "kotlin",
 		"body": [
 			"for (i in ${1:0 until 10}) {",
 			"  // Your code here",
@@ -113,6 +127,7 @@
 	},
 	"Kotlin For...In Loop": {
 		"prefix": "cotrForInLoop",
+		"scope": "kotlin",
 		"body": [
 			"for (item in ${1:iterable}) {",
 			"  // Your code here",
@@ -122,6 +137,7 @@
 	},
 	"Kotlin While Loop": {
 		"prefix": "cotrWhileLoop",
+		"scope": "kotlin",
 		"body": [
 			"while (${1:condition}) {",
 			"  // Your code here",
@@ -130,8 +146,8 @@
 		"description": "Creates a while loop in Kotlin."
 	},
 	"Kotlin When Expression": {
-        "scope": "kotlin",
 		"prefix": "cotrWhen",
+		"scope": "kotlin",
 		"body": [
 			"when (${1:variable}) {",
 			"  ${2:value1} -> {",
@@ -149,6 +165,7 @@
 	},
 	"Kotlin Function": {
 		"prefix": "cotrFunc",
+		"scope": "kotlin",
 		"body": [
 			"fun ${1:myFunction}(${2:parameters}): ${3:ReturnType} {",
 			"  // Your code here",
@@ -158,6 +175,7 @@
 	},
 	"Kotlin Comment": {
 		"prefix": "cotrComment",
+		"scope": "kotlin",
 		"body": [
 			"// ${1:Your comment here}"
 		],
@@ -165,6 +183,7 @@
 	},
 	"Kotlin Multi-Line Comment": {
 		"prefix": "cotrMultiComment",
+		"scope": "kotlin",
 		"body": [
 			"/*",
 			" * ${1:Your comment here}",
@@ -174,6 +193,7 @@
 	},
 	"Kotlin Throw Exception": {
 		"prefix": "cotrThrow",
+		"scope": "kotlin",
 		"body": [
 			"throw ${1:Exception('Your message here')}"
 		],
@@ -181,6 +201,7 @@
 	},
 	"Kotlin Try Catch": {
 		"prefix": "cotrTryCatch",
+		"scope": "kotlin",
 		"body": [
 			"try {",
 			"  // Your code here",
@@ -192,6 +213,7 @@
 	},
 	"Kotlin Enum": {
 		"prefix": "cotrEnum",
+		"scope": "kotlin",
 		"body": [
 			"enum class ${1:MyEnum} {",
 			"  ${2:value1},",
@@ -203,6 +225,7 @@
 	},
 	"Kotlin Class": {
 		"prefix": "cotrClass",
+		"scope": "kotlin",
 		"body": [
 			"class ${1:MyClass} {",
 			"  // Your code here",
@@ -211,8 +234,8 @@
 		"description": "Creates a class in Kotlin."
 	},
 	"Kotlin If Statement": {
-        "scope": "kotlin",
 		"prefix": "cotrIf",
+		"scope": "kotlin",
 		"body": [
 			"if (${1:condition}) {",
 			"  // Your code here",
@@ -222,6 +245,7 @@
 	},
 	"Kotlin If Else Statement": {
 		"prefix": "cotrIfElse",
+		"scope": "kotlin",
 		"body": [
 			"if (${1:condition}) {",
 			"  // Your code here",
@@ -235,10 +259,20 @@
 	},
 	"Kotlin Ternary Operator": {
 		"prefix": "cotrTernary",
+		"scope": "kotlin",
 		"body": [
 			"${1:condition} ? ${2:trueValue} : ${3:falseValue}"
 		],
 		"description": "Creates a ternary operator in Kotlin."
-	}
+	},
+    "Kotlin Lambda": {
+        "prefix": "cotrLambda",
+        "body": [
+          "val ${1:myLambda}: (${2:ParameterType}) -> ${3:ReturnType} = { ${4:parameters} ->",
+          "  ${5:expression}",
+          "}"
+        ],
+        "description": "Creates a lambda function in Kotlin."
+      }      
 }
 	  

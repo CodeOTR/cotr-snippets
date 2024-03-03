@@ -243,5 +243,13 @@
 		  "${1:condition} ? ${2:trueValue} : ${3:falseValue}"
 		],
 		"description": "Creates a ternary operator in TypeScript."
-	  }
+	  },
+      "TypeScript Lambda": {
+        "prefix": "cotrLambda",
+        "body": [
+          "const ${1:myLambda} = (${2:parameters}) => ${3:expression};"
+        ],
+        "description": "Creates a lambda function in TypeScript."
+      }
+      
 }

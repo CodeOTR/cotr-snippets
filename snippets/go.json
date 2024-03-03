@@ -225,5 +225,14 @@
 		  "${1:condition} ? ${2:trueValue} : ${3:falseValue}"
 		],
 		"description": "Creates a ternary operator in Go."
-	  }
+	  },
+      "Go Lambda Function": {
+        "prefix": "cotrLambda",
+        "body": [
+          "func(${1:parameters}) ${2:returnType} {",
+          "  return ${3:expression}",
+          "}"
+        ],
+        "description": "Creates a lambda function in Go."
+    }
 }

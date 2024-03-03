@@ -217,5 +217,12 @@
       "${1:condition} ? ${2:trueValue} : ${3:falseValue}"
     ],
     "description": "Creates a ternary operator in Dart."
+  },
+  "Dart Lambda Function": {
+    "prefix": "cotrLambda",
+    "body": [
+      "(${1:parameters}) => ${2:expression}"
+    ],
+    "description": "Creates a lambda function in Dart."
   }
 }

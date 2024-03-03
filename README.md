@@ -6,7 +6,7 @@ This VS Code extension provides a large list of generic snippets that can be use
 
 How does it work? 
 
-Its very simple, actually. A snippets file is created for every supported language with all of the snippets implementations. For example, the `dart.json` snippet file implements all of the snippets in Dart while the `typescript.json` file implements all of the snippets in TypeScript. **The key is that the snippet names are consistent across languages so you only need to remember the COTR snippet name**.
+Its very simple, actually. Every supported language implements all snippets in a separate file. For example, the `dart.json` snippet file implements all of the snippets in Dart while the `typescript.json` file implements all of the snippets in TypeScript. **The key is that the snippet names are consistent across languages so you only need to remember the COTR snippet name**.
 
 ![COTR Snippets](./cotr_snippts.png)
 
@@ -43,6 +43,7 @@ Its very simple, actually. A snippets file is created for every supported langua
 | cotrWhileLoop | Creates a while loop |
 | cotrSwitch | Creates a switch stament with default |
 | cotrFunc | Creates a function |
+| cotrLambda | Creates a lambda function |
 | cotrComment | Creates a single-line comment |
 | cotrMultiComment | Creates a multi-line comment |
 | cotrThrow | Throws an exception |
