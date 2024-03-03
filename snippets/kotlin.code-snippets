@@ -1,0 +1,244 @@
+{
+	"Kotlin String Type": {
+		"prefix": "cotrString",
+		"body": [
+			"String"
+		],
+		"description": "The Kotlin String type."
+	},
+	"Kotlin Integer Type": {
+		"prefix": "cotrInt",
+		"body": [
+			"Int"
+		],
+		"description": "The Kotlin Int type."
+	},
+	"Kotlin Double Type": {
+		"prefix": "cotrNum",
+		"body": [
+			"Double"
+		],
+		"description": "The Kotlin Double type."
+	},
+	"Kotlin Float Type": {
+		"prefix": "cotrNumAlt",
+		"body": [
+			"Float"
+		],
+		"description": "The Kotlin Float type."
+	},
+	"Kotlin Boolean Type": {
+		"prefix": "cotrBool",
+		"body": [
+			"Boolean"
+		],
+		"description": "The Kotlin Boolean type."
+	},
+	"Kotlin Character Type": {
+		"prefix": "cotrChar",
+		"body": [
+			"Char"
+		],
+		"description": "The Kotlin Char type."
+	},
+	"Kotlin Create Variable": {
+		"prefix": "cotrVar",
+		"body": [
+			"var ${1:myVar} = $2"
+		],
+		"description": "Creates a variable in Kotlin using the var keyword."
+	},
+	"Kotlin Create Constant": {
+		"prefix": "cotrConst",
+		"body": [
+			"val ${1:myConst} = $2"
+		],
+		"description": "Creates a constant variable in Kotlin using the val keyword."
+	},
+	"Kotlin Create Map": {
+		"prefix": "cotrMap",
+		"body": [
+			"val ${1:myMap} = mapOf(",
+			"  ${2:'key1' to 'value1'},",
+			"  ${3:'key2' to 'value2'},",
+			"  // Add more key-value pairs here",
+			")"
+		],
+		"description": "Creates a map in Kotlin."
+	},
+	"Kotlin Generate Map": {
+		"prefix": "cotrGenMap",
+		"body": [
+			"val ${1:myMap} = (0 until ${2:length}).associate {",
+			"  'key' + it to 'value' + it",
+			"}"
+		],
+		"description": "Generates a map with a specific number of key-value pairs in Kotlin."
+	},
+	"Kotlin Create List": {
+		"prefix": "cotrList",
+		"body": [
+			"val ${1:myList} = listOf(",
+			"  ${2:'item1'},",
+			"  ${3:'item2'},",
+			"  // Add more items here",
+			")"
+		],
+		"description": "Creates a list in Kotlin."
+	},
+	"Kotlin Generate List": {
+		"prefix": "cotrGenList",
+		"body": [
+			"val ${1:myList} = List(${2:length}) {",
+			"  'item' + it",
+			"}"
+		],
+		"description": "Generates a list of a specific length in Kotlin."
+	},
+	"Kotlin Print": {
+		"prefix": "cotrPrint",
+		"body": [
+			"println(${1:'Your message here'})"
+		],
+		"description": "Prints a message to the console in Kotlin."
+	},
+	"Kotlin For Loop": {
+		"prefix": "cotrForLoop",
+		"body": [
+			"for (i in ${1:0 until 10}) {",
+			"  // Your code here",
+			"}"
+		],
+		"description": "Creates a for loop that iterates through a set of numbers with the index in Kotlin."
+	},
+	"Kotlin For...In Loop": {
+		"prefix": "cotrForInLoop",
+		"body": [
+			"for (item in ${1:iterable}) {",
+			"  // Your code here",
+			"}"
+		],
+		"description": "Iterates over an iterable object in Kotlin."
+	},
+	"Kotlin While Loop": {
+		"prefix": "cotrWhileLoop",
+		"body": [
+			"while (${1:condition}) {",
+			"  // Your code here",
+			"}"
+		],
+		"description": "Creates a while loop in Kotlin."
+	},
+	"Kotlin When Expression": {
+        "scope": "kotlin",
+		"prefix": "cotrWhen",
+		"body": [
+			"when (${1:variable}) {",
+			"  ${2:value1} -> {",
+			"    // Your code here",
+			"  }",
+			"  ${3:value2} -> {",
+			"    // Your code here",
+			"  }",
+			"  else -> {",
+			"    // Your code here",
+			"  }",
+			"}"
+		],
+		"description": "Creates a when expression in Kotlin."
+	},
+	"Kotlin Function": {
+		"prefix": "cotrFunc",
+		"body": [
+			"fun ${1:myFunction}(${2:parameters}): ${3:ReturnType} {",
+			"  // Your code here",
+			"}"
+		],
+		"description": "Creates a function in Kotlin."
+	},
+	"Kotlin Comment": {
+		"prefix": "cotrComment",
+		"body": [
+			"// ${1:Your comment here}"
+		],
+		"description": "Creates a single-line comment in Kotlin."
+	},
+	"Kotlin Multi-Line Comment": {
+		"prefix": "cotrMultiComment",
+		"body": [
+			"/*",
+			" * ${1:Your comment here}",
+			" */"
+		],
+		"description": "Creates a multi-line comment in Kotlin."
+	},
+	"Kotlin Throw Exception": {
+		"prefix": "cotrThrow",
+		"body": [
+			"throw ${1:Exception('Your message here')}"
+		],
+		"description": "Throws an exception in Kotlin."
+	},
+	"Kotlin Try Catch": {
+		"prefix": "cotrTryCatch",
+		"body": [
+			"try {",
+			"  // Your code here",
+			"} catch (${1:exception}) {",
+			"  // Your code here",
+			"}"
+		],
+		"description": "Creates a try...catch block in Kotlin."
+	},
+	"Kotlin Enum": {
+		"prefix": "cotrEnum",
+		"body": [
+			"enum class ${1:MyEnum} {",
+			"  ${2:value1},",
+			"  ${3:value2},",
+			"  // Add more values here",
+			"}"
+		],
+		"description": "Creates an enum in Kotlin."
+	},
+	"Kotlin Class": {
+		"prefix": "cotrClass",
+		"body": [
+			"class ${1:MyClass} {",
+			"  // Your code here",
+			"}"
+		],
+		"description": "Creates a class in Kotlin."
+	},
+	"Kotlin If Statement": {
+        "scope": "kotlin",
+		"prefix": "cotrIf",
+		"body": [
+			"if (${1:condition}) {",
+			"  // Your code here",
+			"}"
+		],
+		"description": "Creates an if statement in Kotlin."
+	},
+	"Kotlin If Else Statement": {
+		"prefix": "cotrIfElse",
+		"body": [
+			"if (${1:condition}) {",
+			"  // Your code here",
+			"} else if (${2:condition}) {",
+			"  // Your code here",
+			"} else {",
+			"  // Your code here",
+			"}"
+		],
+		"description": "Creates an if...else statement in Kotlin."
+	},
+	"Kotlin Ternary Operator": {
+		"prefix": "cotrTernary",
+		"body": [
+			"${1:condition} ? ${2:trueValue} : ${3:falseValue}"
+		],
+		"description": "Creates a ternary operator in Kotlin."
+	}
+}
+	  

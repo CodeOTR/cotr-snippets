@@ -11,14 +11,15 @@ Its very simple, actually. A snippets file is created for every supported langua
 ![COTR Snippets](./cotr_snippts.png)
 
 ## Supported Languages
-- Dart
-- Swift
-- JavaScript
+- [Dart](https://dart.dev/)
+- [Swift](https://www.swift.org/)
+- [JavaScript](https://www.javascript.com/)
 - JavaScript React (JSX)
-- TypeScript
-- TypeScript React (TSX)
-- Go
-- Rust
+- [TypeScript](https://www.typescriptlang.org/)
+- [TypeScript React (TSX)](https://react.dev/learn/typescript)
+- [Go](https://go.dev/)
+- [Rust](https://www.rust-lang.org/)
+- [Kotlin](https://kotlinlang.org/)
 
 ## Snippets
 
