@@ -1,5 +1,5 @@
 # Code on the Rocks 
-At Code on the Rocks (COTR) our mission is to enable developers to code fluently in every programming language. We create tools and resources to help you apply your high-level programming knowledge in any code base.
+At [Code on the Rocks](https://codeontherocks.dev/) (COTR) our mission is to enable developers to code fluently in every programming language. We create tools and resources to help you apply your high-level programming knowledge in any code base.
 
 ## COTR Snippets
 This VS Code extension provides a large list of generic snippets that can be used in any project, regardless of the language used. 
@@ -8,8 +8,11 @@ How does it work?
 
 Its very simple, actually. A snippets file is created for every supported language with all of the snippets implementations. For example, the `dart.json` snippet file implements all of the snippets in Dart while the `typescript.json` file implements all of the snippets in TypeScript. **The key is that the snippet names are consistent across languages so you only need to remember the COTR snippet name**.
 
+![COTR Snippets](./cotr_snippts.png)
+
 ## Supported Languages
 - Dart
+- Swift
 - JavaScript
 - JavaScript React (JSX)
 - TypeScript
