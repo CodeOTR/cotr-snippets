@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.3
+
+- Add `cotrBoolTrue` and `cotrBoolFalse` snippets
+- Add `cotrVar...` snippets
+- Add Python and C++ Support
+
 ## 0.0.2
 
 - Update README
