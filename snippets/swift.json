@@ -1,0 +1,181 @@
+{
+  "Swift String Type": {
+    "prefix": "cotrString",
+    "body": ["String"],
+    "description": "The Swift String type."
+  },
+  "Swift Integer Type": {
+    "prefix": "cotrInt",
+    "body": ["Int"],
+    "description": "The Swift Int type."
+  },
+  "Swift Double Type": {
+    "prefix": "cotrNum",
+    "body": ["Double"],
+    "description": "The Swift Double type."
+  },
+  "Swift Float Type": {
+    "prefix": "cotrNumAlt",
+    "body": ["Float"],
+    "description": "The Swift Float type."
+  },
+  "Swift Boolean Type": {
+    "prefix": "cotrBool",
+    "body": ["Bool"],
+    "description": "The Swift Bool type."
+  },
+  "Swift Character Type": {
+    "prefix": "cotrChar",
+    "body": ["Character"],
+    "description": "The Swift Character type."
+  },
+  "Swift Create Variable": {
+    "prefix": "cotrVar",
+    "body": ["var ${1:myVar} = $2;"],
+    "description": "Creates a variable in Swift using the var keyword."
+  },
+  "Swift Create Constant": {
+    "prefix": "cotrConst",
+    "body": ["let ${1:myConst} = $2;"],
+    "description": "Creates a constant variable in Swift using the let keyword."
+  },
+  "Swift Static Variable": {
+    "prefix": "cotrStaticVar",
+    "body": [
+      "static ${2:var} ${3:myStaticVar} = ${4:value};",
+      "",
+      "// Access the static variable",
+      "// MyClass.${3:myStaticVar}"
+    ],
+    "description": "Creates a static variable in a Swift class."
+  },
+  "Swift Create Array": {
+    "prefix": "cotrList",
+    "body": [
+      "var ${1:myArray} = [",
+      "  ${2:'item1'},",
+      "  ${3:'item2'},",
+      "  // Add more items here",
+      "];"
+    ],
+    "description": "Creates an array in Swift."
+  },
+  "Swift Generate Array": {
+    "prefix": "cotrGenList",
+    "body": [
+      "var ${1:myArray} = Array(repeating: ${2:'item'}, count: ${3:5});"
+    ],
+    "description": "Generates an array of a specific length in Swift."
+  },
+  "Swift Create Dictionary": {
+    "prefix": "cotrMap",
+    "body": [
+      "var ${1:myDictionary} = [",
+      "  ${2:'key1'}: ${3:'value1'},",
+      "  ${4:'key2'}: ${5:'value2'},",
+      "  // Add more key-value pairs here",
+      "];"
+    ],
+    "description": "Creates a dictionary in Swift."
+  },
+  "Swift Generate Dictionary": {
+    "prefix": "cotrGenMap",
+    "body": [
+      "var ${1:myDictionary} = ",
+      "Dictionary(uniqueKeysWithValues: zip([${2:'key1'}, ${3:'key",
+      "2'}], [${4:'value1'}, ${5:'value2'}]));"
+    ],
+    "description": "Generates a dictionary with a specific number of key-value pairs in Swift."
+  },
+  "Swift Print": {
+    "prefix": "cotrPrint",
+    "body": ["print(${1:'Your message here'});"],
+    "description": "Prints a message to the console in Swift."
+  },
+  "Swift For Loop": {
+    "prefix": "cotrForLoop",
+    "body": ["for ${1:i} in ${2:0..<10} {", "  // Your code here", "}"],
+    "description": "Creates a for loop that iterates through a set of numbers with the index in Swift."
+  },
+  "Swift For...In Loop": {
+    "prefix": "cotrForInLoop",
+    "body": [
+      "for ${1:item} in ${2:iterable} {",
+      "  ${3:// Your code here}",
+      "}"
+    ],
+    "description": "Iterates over an iterable object in Swift."
+  },
+  "Swift While Loop": {
+    "prefix": "cotrWhileLoop",
+    "body": ["while ${1:condition} {", "  ${2:// Your code here}", "}"],
+    "description": "Creates a while loop in Swift."
+  },
+  "Swift Switch Statement": {
+    "prefix": "cotrSwitch",
+    "body": [
+      "switch ${1:variable} {",
+      "  case ${2:value1}:",
+      "    ${3:// Your code here}",
+      "    break",
+      "  case ${4:value2}:",
+      "    ${5:// Your code here}",
+      "    break",
+      "  default:",
+      "    ${6:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a switch statement in Swift."
+  },
+  "Swift Function": {
+    "prefix": "cotrFunc",
+    "body": [
+      "func ${1:myFunction}(${2:parameters}) -> ${3:ReturnType} {",
+      "  ${4:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function in Swift."
+  },
+  "Swift Comment": {
+    "prefix": "cotrComment",
+    "body": ["// ${1:Your comment here}"],
+    "description": "Creates a single-line comment in Swift."
+  },
+  "Swift Multi-Line Comment": {
+    "prefix": "cotrMultiComment",
+    "body": ["/*", " * ${1:Your comment here}", " */"],
+    "description": "Creates a multi-line comment in Swift."
+  },
+  "Swift Throw Exception": {
+    "prefix": "cotrThrow",
+    "body": ["throw ${1:Error('Your message here')};"],
+    "description": "Throws an exception in Swift."
+  },
+  "Swift Try Catch": {
+    "prefix": "cotrTryCatch",
+    "body": [
+      "do {",
+      "  ${1:// Your code here}",
+      "} catch ${2:exception} {",
+      "  ${3:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a try...catch block in Swift."
+  },
+  "Swift Enum": {
+    "prefix": "cotrEnum",
+    "body": [
+      "enum ${1:MyEnum} {",
+      "  ${2:value1},",
+      "  ${3:value2},",
+      "  // Add more values here",
+      "}"
+    ],
+    "description": "Creates an enum in Swift."
+  },
+  "Swift Class": {
+    "prefix": "cotrClass",
+    "body": ["class ${1:MyClass} {", "  ${2:// Your code here}", "}"],
+    "description": "Creates a class in Swift."
+  }
+}

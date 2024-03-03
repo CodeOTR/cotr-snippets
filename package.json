@@ -22,12 +22,16 @@
         "path": "./snippets/dart.json"
       },
       {
+        "language": "swift",
+        "path": "./snippets/swift.json"
+      },
+      {
         "language": "javascript",
-        "path": "./snippets/typescript.json"
+        "path": "./snippets/javascript.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/typescript.json"
+        "path": "./snippets/javascriptreact.json"
       },
       {
         "language": "typescript",
