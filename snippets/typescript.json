@@ -192,5 +192,25 @@
 		  "}"
 		],
 		"description": "Creates a try...catch block in TypeScript."
+	  },
+      "TypeScript Enum": {
+		"prefix": "cotrEnum",
+		"body": [
+		  "enum ${1:MyEnum} {",
+		  "  ${2:value1},",
+		  "  ${3:value2},",
+		  "  // Add more values here",
+		  "}"
+		],
+		"description": "Creates an enum in TypeScript."
+	  },
+	  "TypeScript Class": {
+		"prefix": "cotrClass",
+		"body": [
+		  "class ${1:MyClass} {",
+		  "  ${2:// Your code here}",
+		  "}"
+		],
+		"description": "Creates a class in TypeScript."
 	  }
 }

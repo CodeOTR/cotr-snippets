@@ -173,5 +173,28 @@
 		  "${2:// Your code here}"
 		],
 		"description": "Creates a try...catch block in Go."
+	  },
+      "Go Iota": {
+		"prefix": "cotrEnum",
+		"body": [
+		  "const (",
+		  "  ${1:variable1} = iota",
+		  "  ${2:variable2}",
+		  "  ${3:variable3}",
+		  "  // Add more variables here",
+		  ")"
+		],
+		"description": "Creates an iota in Go."
+	  },
+	  "Go Struct": {
+		"prefix": "cotrClass",
+		"body": [
+		  "type ${1:MyStruct} struct {",
+		  "  ${2:field1} ${3:type1}",
+		  "  ${4:field2} ${5:type2}",
+		  "  // Add more fields here",
+		  "}"
+		],
+		"description": "Creates a struct in Go."
 	  }
 }
