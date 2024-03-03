@@ -58,6 +58,14 @@
       {
         "language": "kotlin",
         "path": "./snippets/kotlin.code-snippets"
+      },
+      {
+        "language": "cpp",
+        "path": "./snippets/cpp.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python.json"
       }
     ]
   }

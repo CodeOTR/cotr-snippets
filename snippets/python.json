@@ -1,0 +1,181 @@
+{
+	"Python String Type" : {
+		"prefix": "cotrString",
+		"body": [
+			"str"
+		],
+		"description": "The Python string type."
+	},
+	"Python Integer Type": {
+		"prefix": "cotrInt",
+		"body": [
+			"int"
+		],
+		"description": "The Python int type."
+	},
+	"Python Float Type": {
+		"prefix": "cotrNum",
+		"body": [
+			"float"
+		],
+		"description": "The Python float type."
+	},
+	"Python Boolean Type": {
+		"prefix": "cotrBool",
+		"body": [
+			"bool"
+		],
+		"description": "The Python bool type."
+	},
+	"Python List Type": {
+		"prefix": "cotrList",
+		"body": [
+			"list"
+		],
+		"description": "The Python list type."
+	},
+	"Python Dictionary Type": {
+		"prefix": "cotrMap",
+		"body": [
+			"dict"
+		],
+		"description": "The Python dictionary type."
+	},
+	"Python Create Variable" : {
+		"prefix": "cotrVar",
+		"body": [
+			"${1:myVar} = ${2:value}"
+		],
+		"description": "Creates a variable in Python."
+	},
+	"Python Create Constant" : {
+		"prefix": "cotrConst",
+		"body": [
+			"${1:MY_CONST} = ${2:value}"
+		],
+		"description": "Creates a constant variable in Python."
+	},
+	"Python Print" : {
+		"prefix": "cotrPrint",
+		"body": [
+			"print(${1:'Your message here'})"
+		],
+		"description": "Prints a message to the console in Python."
+	},
+	"Python For Loop" : {
+		"prefix": "cotrForLoop",
+		"body": [
+			"for ${1:i} in range(${2:10}):",
+			"  # Your code here"
+		],
+		"description": "Creates a for loop that iterates through a set of numbers with the index in Python."
+	},
+	"Python For...In Loop" : {
+		"prefix": "cotrForInLoop",
+		"body": [
+			"for ${1:item} in ${2:iterable}:",
+			"  # Your code here"
+		],
+		"description": "Iterates over an iterable object in Python."
+	},
+	"Python While Loop" : {
+		"prefix": "cotrWhileLoop",
+		"body": [
+			"while ${1:condition}:",
+			"  # Your code here"
+		],
+		"description": "Creates a while loop in Python."
+	},
+	"Python If Statement" : {
+		"prefix": "cotrIf",
+		"body": [
+			"if ${1:condition}:",
+			"  # Your code here"
+		],
+		"description": "Creates an if statement in Python."
+	},
+	"Python If Else Statement" : {
+		"prefix": "cotrIfElse",
+		"body": [
+			"if ${1:condition}:",
+			"  # Your code here",
+			"else:",
+			"  # Your code here"
+		],
+		"description": "Creates an if...else statement in Python."
+	},
+	"Python Ternary Operator" : {
+		"prefix": "cotrTernary",
+		"body": [
+			"${1:trueValue} if ${2:condition} else ${3:falseValue}"
+		],
+		"description": "Creates a ternary operator in Python."
+	},
+	"Python Function" : {
+		"prefix": "cotrFunc",
+		"body": [
+			"def ${1:myFunction}(${2:parameters}):",
+			"  # Your code here"
+		],
+		"description": "Creates a function in Python."
+	},
+	"Python Comment" : {
+		"prefix": "cotrComment",
+		"body": [
+			"# ${1:Your comment here}"
+		],
+		"description": "Creates a single-line comment in Python."
+	},
+	"Python Multi-Line Comment" : {
+		"prefix": "cotrMultiComment",
+		"body": [
+			"'''",
+			"${1:Your comment here}",
+			"'''"
+		],
+		"description": "Creates a multi-line comment in Python."
+	},
+	"Python Throw Exception" : {
+		"prefix": "cotrThrow",
+		"body": [
+			"raise ${1:Exception('Your message here')}"
+		],
+		"description": "Throws an exception in Python."
+	},
+	"Python Try Except" : {
+		"prefix": "cotrTryCatch",
+		"body": [
+			"try:",
+			"  # Your code here",
+			"except ${1:Exception} as ${2:e}:",
+			"  # Your code here"
+		],
+		"description": "Creates a try...except block in Python."
+	},
+	"Python Class" : {
+		"prefix": "cotrClass",
+		"body": [
+			"class ${1:MyClass}:",
+			"  # Your code here"
+		],
+		"description": "Creates a class in Python."
+	},
+	"Python Enum" : {
+		"prefix": "cotrEnum",
+		"body": [
+			"class ${1:MyEnum}(Enum):",
+			"  ${2:value1} = ${3:1}",
+			"  ${4:value2} = ${5:2}",
+			"  # Add more values here"
+		],
+		"description": "Creates an enum in Python."
+	},
+	"Python Lambda Function" : {
+		"prefix": "cotrLambda",
+		"body": [
+			"${1:myLambda} = lambda ${2:parameters}: ${3:returnValue}"
+		],
+		"description": "Creates a lambda function in Python."
+	}
+}
+	  

@@ -20,6 +20,8 @@ Its very simple, actually. Every supported language implements all snippets in a
 - [Go](https://go.dev/)
 - [Rust](https://www.rust-lang.org/)
 - [Kotlin](https://kotlinlang.org/)
+- [Python](https://www.python.org/)
+- [C++](https://cplusplus.com/)
 
 ## Snippets
 
