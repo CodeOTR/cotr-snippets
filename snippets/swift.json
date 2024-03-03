@@ -24,6 +24,16 @@
     "body": ["Bool"],
     "description": "The Swift Bool type."
   },
+  "Swift Boolean True": {
+    "prefix": "cotrBoolTrue",
+    "body": ["true"],
+    "description": "The Swift true value."
+  },
+  "Swift Boolean False": {
+    "prefix": "cotrBoolFalse",
+    "body": ["false"],
+    "description": "The Swift false value."
+  },
   "Swift Character Type": {
     "prefix": "cotrChar",
     "body": ["Character"],
@@ -33,6 +43,45 @@
     "prefix": "cotrVar",
     "body": ["var ${1:myVar} = $2;"],
     "description": "Creates a variable in Swift using the var keyword."
+  },
+  "Swift Create String Variable": {
+    "prefix": "cotrVarString",
+    "body": ["var ${1:myString} = ${2:'Your string here'};"],
+    "description": "Creates a string variable in Swift."
+  },
+  "Swift Create Integer Variable": {
+    "prefix": "cotrVarInt",
+    "body": ["var ${1:myInt} = ${2:0};"],
+    "description": "Creates an integer variable in Swift."
+  },
+  "Swift Create Double Variable": {
+    "prefix": "cotrVarNum",
+    "body": ["var ${1:myDouble} = ${2:0.0};"],
+    "description": "Creates a double variable in Swift."
+  },
+  "Swift Create Float Variable": {
+    "prefix": "cotrVarNumAlt",
+    "body": ["var ${1:myFloat} = ${2:0.0}f;"],
+    "description": "Creates a float variable in Swift."
+  },
+  "Swift Create Boolean Variable": {
+    "prefix": "cotrVarBool",
+    "body": ["var ${1:myBool} = ${2:true};"],
+    "description": "Creates a boolean variable in Swift."
+  },
+  "Swift Create List Variable": {
+    "prefix": "cotrVarList",
+    "body": ["var ${1:myArray} = [${2:'item1'}, ${3:'item2'}];"],
+    "description": "Creates an array variable in Swift."
+  },
+  "Swift Create Dictionary Variable": {
+    "prefix": "cotrVarMap",
+    "body": [
+      "var ${1:myDictionary} =",
+      "[${2:'key1'}: ${3:'value1'}, ${4:'key",
+      "2'}: ${5:'value2'}];"
+    ],
+    "description": "Creates a dictionary variable in Swift."
   },
   "Swift Create Constant": {
     "prefix": "cotrConst",
@@ -180,41 +229,34 @@
   },
   "Swift If Statement": {
     "prefix": "cotrIf",
+    "body": ["if ${1:condition} {", "  ${2:// Your code here}", "}"],
+    "description": "Creates an if statement in Swift."
+  },
+  "Swift If Else Statement": {
+    "prefix": "cotrIfElse",
     "body": [
       "if ${1:condition} {",
       "  ${2:// Your code here}",
+      "} else if ${3:condition} {",
+      "  ${4:// Your code here}",
+      "} else {",
+      "  ${5:// Your code here}",
       "}"
     ],
-    "description": "Creates an if statement in Swift."
+    "description": "Creates an if...else statement in Swift."
   },
-    "Swift If Else Statement": {
-        "prefix": "cotrIfElse",
-        "body": [
-        "if ${1:condition} {",
-        "  ${2:// Your code here}",
-        "} else if ${3:condition} {",
-        "  ${4:// Your code here}",
-        "} else {",
-        "  ${5:// Your code here}",
-        "}"
-        ],
-        "description": "Creates an if...else statement in Swift."
-    },
-    "Swift Ternary Operator": {
-        "prefix": "cotrTernary",
-        "body": [
-        "${1:condition} ? ${2:trueValue} : ${3:falseValue}"
-        ],
-        "description": "Creates a ternary operator in Swift."
-    },
-    "Swift Closure": {
-        "prefix": "cotrLambda",
-        "body": [
-          "let ${1:myClosure} = { (${2:parameters}) -> ${3:ReturnType} in",
-          "  ${4:return expression}",
-          "}"
-        ],
-        "description": "Creates a closure (lambda function) in Swift."
-      }
-      
+  "Swift Ternary Operator": {
+    "prefix": "cotrTernary",
+    "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
+    "description": "Creates a ternary operator in Swift."
+  },
+  "Swift Closure": {
+    "prefix": "cotrLambda",
+    "body": [
+      "let ${1:myClosure} = { (${2:parameters}) -> ${3:ReturnType} in",
+      "  ${4:return expression}",
+      "}"
+    ],
+    "description": "Creates a closure (lambda function) in Swift."
+  }
 }

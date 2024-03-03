@@ -27,6 +27,27 @@
 		],
 		"description": "The Python bool type."
 	},
+    "Python Boolean True": {
+        "prefix": "cotrBoolTrue",
+        "body": [
+            "True"
+        ],
+        "description": "The Python True value."
+    },
+    "Python Boolean False": {
+        "prefix": "cotrBoolFalse",
+        "body": [
+            "False"
+        ],
+        "description": "The Python False value."
+    },
+    "Python Null Type": {
+        "prefix": "cotrNull",
+        "body": [
+            "None"
+        ],
+        "description": "The Python None type."
+    },
 	"Python List Type": {
 		"prefix": "cotrList",
 		"body": [
@@ -47,6 +68,48 @@
 			"${1:myVar} = ${2:value}"
 		],
 		"description": "Creates a variable in Python."
+	},
+    "Python Create String Variable" : {
+        "prefix": "cotrVarStr",
+        "body": [
+            "${1:myString} = ${2:''}"
+        ],
+        "description": "Creates a string variable in Python."
+    },
+    "Python Create Integer Variable" : {
+        "prefix": "cotrVarNum",
+        "body": [
+            "${1:myInt} = ${2:0}"
+        ],
+        "description": "Creates an integer variable in Python."
+    },
+    "Python Create Float Variable" : {
+        "prefix": "cotrVarNumAlt",
+        "body": [
+            "${1:myFloat} = ${2:0.0}"
+        ],
+        "description": "Creates a float variable in Python."
+    },
+    "Python Create Boolean Variable" : {
+        "prefix": "cotrVarBool",
+        "body": [
+            "${1:myBool} = ${2:True}"
+        ],
+        "description": "Creates a boolean variable in Python."
+    },
+	"Python Create List Variable" : {
+		"prefix": "cotrVarList",
+		"body": [
+			"${1:myList} = [${2:1}, ${3:2}, ${4:3}]"
+		],
+		"description": "Creates a list variable in Python."
+	},
+	"Python Create Dictionary Variable" : {
+		"prefix": "cotrVarMap",
+		"body": [
+			"${1:myDict} = {${2:key1}: ${3:value1}, ${4:key2}: ${5:value2}}"
+		],
+		"description": "Creates a dictionary variable in Python."
 	},
 	"Python Create Constant" : {
 		"prefix": "cotrConst",

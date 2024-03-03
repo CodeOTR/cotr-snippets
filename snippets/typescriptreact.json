@@ -20,6 +20,20 @@
 		],
 		"description": "The TypeScript boolean type."
 	},
+	"TypeScript Boolean True": {
+		"prefix": "cotrBoolTrue",
+		"body": [
+			"true"
+		],
+		"description": "The TypeScript true value."
+	},
+	"TypeScript Boolean False": {
+		"prefix": "cotrBoolFalse",
+		"body": [
+			"false"
+		],
+		"description": "The TypeScript false value."
+	},
 	"TypeScript Null Type": {
 		"prefix": "cotrNull",
 		"body": [
@@ -33,6 +47,45 @@
 		  "let ${1:myVar} = $2;"
 		],
 		"description": "Creates a variable in TypeScript using the let keyword."
+	  },
+	  "TypeScript Create String Variable": {
+		"prefix": "cotrVarString",
+		"body": [
+		  "let ${1:myString}: string = ${2:'myValue'};"
+		],
+		"description": "Creates a string variable in TypeScript."
+	  },
+	  "TypeScript Create Number Variable": {
+		"prefix": "cotrVarNumber",
+		"body": [
+		  "let ${1:myNumber}: number = ${2:0};"
+		],
+		"description": "Creates a number variable in TypeScript."
+	  },
+	  "TypeScript Create Boolean Variable": {
+		"prefix": "cotrVarBool",
+		"body": [
+		  "let ${1:myBoolean}: boolean = ${2:true};"
+		],
+		"description": "Creates a boolean variable in TypeScript."
+	  },
+	  "TypeScript Create List Variable": {
+		"prefix": "cotrVarList",
+		"body": [
+		  "let ${1:myList}: ${2:type}[] = [${3:'item1'}, ${4:'item2'}];"
+		],
+		"description": "Creates an array (list) variable in TypeScript."
+	  },
+	  "TypeScript Create Map Variable": {
+		"prefix": "cotrVarMap",
+		"body": [
+		  "let ${1:myMap}: { [key: string]: ${2:type} } = {",
+		  "  ${3:'key1'}: ${4:'value1'},",
+		  "  ${5:'key2'}: ${6:'value2'},",
+		  "  // Add more key-value pairs here",
+		  "};"
+		],
+		"description": "Creates a map variable in TypeScript."
 	  },
 	  "TypeScript Create Constant": {
 		"prefix": "cotrConst",

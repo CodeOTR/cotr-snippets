@@ -13,6 +13,20 @@
         ],
         "description":  "JavaScript does not have types."
     },
+    "JavaScript Boolean True": {
+        "prefix": "cotrBoolTrue",
+        "body": [
+            "true;"
+        ],
+        "description":  "JavaScript does not have types."
+    },
+    "JavaScript Boolean False": {
+        "prefix": "cotrBoolFalse",
+        "body": [
+            "false;"
+        ],
+        "description":  "JavaScript does not have types."
+    },
     "JavaScript Null Type": {
         "prefix": "cotrNull",
         "body": [
@@ -40,6 +54,44 @@
             "let ${1:myVar} = $2;"
         ],
         "description": "Creates a variable in JavaScript using the let keyword."
+    },
+    "JavaScript Create String Variable": {
+        "prefix": "cotrVarString",
+        "body": [
+            "let ${1:myString} = \"${2:Your string here}\";"
+        ],
+        "description": "Creates a string variable in JavaScript."
+    },
+    "JavaScript Create Number Variable": {
+        "prefix": "cotrVarNum",
+        "body": [
+            "let ${1:myNumber} = ${2:0};"
+        ],
+        "description": "Creates a number variable in JavaScript."
+    },
+    "JavaScript Create Boolean Variable": {
+        "prefix": "cotrVarBool",
+        "body": [
+            "let ${1:myBoolean} = ${2:true};"
+        ],
+        "description": "Creates a boolean variable in JavaScript."
+    },
+    "JavaScript Create Array Variable": {
+        "prefix": "cotrVarList",
+        "body": [
+            "let ${1:myList} = [${2:'item1'}, ${3:'item2'}];"
+        ],
+        "description": "Creates an array (list) variable in JavaScript."
+    },
+    "JavaScript Create Object Variable": {
+        "prefix": "cotrVarMap",
+        "body": [
+            "let ${1:myObject} = {",
+            "  ${2:'key1'}: ${3:'value1'},",
+            "  ${4:'key2'}: ${5:'value2'}",
+            "};"
+        ],
+        "description": "Creates an object variable in JavaScript."
     },
     "JavaScript Create Constant": {
         "prefix": "cotrConst",

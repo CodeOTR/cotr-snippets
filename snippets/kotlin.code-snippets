@@ -39,6 +39,22 @@
 		],
 		"description": "The Kotlin Boolean type."
 	},
+	"Kotlin Boolean True": {
+		"prefix": "cotrBoolTrue",
+		"scope": "kotlin",
+		"body": [
+			"true"
+		],
+		"description": "The Kotlin true value."
+	},
+	"Kotlin Boolean False": {
+		"prefix": "cotrBoolFalse",
+		"scope": "kotlin",
+		"body": [
+			"false"
+		],
+		"description": "The Kotlin false value."
+	},
 	"Kotlin Character Type": {
 		"prefix": "cotrChar",
 		"scope": "kotlin",
@@ -55,6 +71,63 @@
 		],
 		"description": "Creates a variable in Kotlin using the var keyword."
 	},
+	"Kotlin Create String Variable": {
+		"prefix": "cotrVarString",
+		"scope": "kotlin",
+		"body": [
+			"var ${1:myString} = \"${2:myValue}\""
+		],
+		"description": "Creates a string variable in Kotlin using the var keyword."
+	},
+	"Kotlin Create Integer Variable": {
+		"prefix": "cotrVarInt",
+		"scope": "kotlin",
+		"body": [
+			"var ${1:myInt} = ${2:0}"
+		],
+		"description": "Creates an integer variable in Kotlin using the var keyword."
+	},
+	"Kotlin Create Double Variable": {
+		"prefix": "cotrVarNum",
+		"scope": "kotlin",
+		"body": [
+			"var ${1:myDouble} = ${2:0.0}"
+		],
+		"description": "Creates a double variable in Kotlin using the var keyword."
+	},
+	"Kotlin Create Float Variable": {
+		"prefix": "cotrVarNumAlt",
+		"scope": "kotlin",
+		"body": [
+			"var ${1:myFloat} = ${2:0.0f}"
+		],
+		"description": "Creates a float variable in Kotlin using the var keyword."
+	},
+	"Kotlin Create Boolean Variable": {
+		"prefix": "cotrVarBool",
+		"scope": "kotlin",
+		"body": [
+			"var ${1:myBool} = ${2:true}"
+		],
+		"description": "Creates a boolean variable in Kotlin using the var keyword."
+	},
+	"Kotlin Create List Variable": {
+		"prefix": "cotrVarList",
+		"scope": "kotlin",
+		"body": [
+			"var ${1:myList} = listOf(${2:'item1'}, ${3:'item2'})"
+		],
+		"description": "Creates a list variable in Kotlin using the var keyword."
+	},
+	"Kotlin Create Map Variable": {
+		"prefix": "cotrVarMap",
+		"scope": "kotlin",
+		"body": [
+			"var ${1:myMap} = mapOf(${2:'key1' to 'value1'}, ${3:'key2' to 'value2'})"
+		],
+		"description": "Creates a map variable in Kotlin using the var keyword."
+	},
+
 	"Kotlin Create Constant": {
 		"prefix": "cotrConst",
 		"scope": "kotlin",

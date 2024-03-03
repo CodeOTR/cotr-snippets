@@ -24,6 +24,16 @@
     "body": ["bool"],
     "description": "The Dart bool type."
   },
+  "Dart Boolean True": {
+    "prefix": "cotrTrue",
+    "body": ["true"],
+    "description": "The Dart true value."
+  },
+  "Dart Boolean False": {
+    "prefix": "cotrFalse",
+    "body": ["false"],
+    "description": "The Dart false value."
+  },
   "Dart Character Type": {
     "prefix": "cotrChar",
     "body": ["char"],
@@ -33,6 +43,36 @@
     "prefix": "cotrVar",
     "body": ["var ${1:myVar} = $2;"],
     "description": "Creates a variable in Dart using the var keyword."
+  },
+  "Dart Create String Variable": {
+    "prefix": "cotrVarString",
+    "body": ["String ${1:myString} = ${2:'Your string here'};"],
+    "description": "Creates a string variable in Dart."
+  },
+  "Dart Create Integer Variable": {
+    "prefix": "cotrVarInt",
+    "body": ["int ${1:myInt} = ${2:0};"],
+    "description": "Creates an integer variable in Dart."
+  },
+  "Dart Create Double Variable": {
+    "prefix": "cotrVarDouble",
+    "body": ["double ${1:myDouble} = ${2:0.0};"],
+    "description": "Creates a double variable in Dart."
+  },
+  "Dart Create Boolean Variable": {
+    "prefix": "cotrVarBool",
+    "body": ["bool ${1:myBool} = ${2:true};"],
+    "description": "Creates a boolean variable in Dart."
+  },
+  "Dart Create List Variable": {
+    "prefix": "cotrVarList",
+    "body": ["List<${1:Type}> ${2:myList} = [${3:items}];"],
+    "description": "Creates a list variable in Dart."
+  },
+  "Dart Create Map Variable": {
+    "prefix": "cotrVarMap",
+    "body": ["Map<${1:Key}, ${2:Value}> ${3:myMap} = {${4:key}: ${5:value}};"],
+    "description": "Creates a map variable in Dart."
   },
   "Dart Create Constant": {
     "prefix": "cotrConst",

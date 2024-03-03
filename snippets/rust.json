@@ -1,297 +1,287 @@
 {
-	"Rust String Type (String)": {
-		"prefix": "cotrString",
-		"body": [
-		  "String"
-		],
-		"description": "The Rust String type."
-	},
-	"Rust String Type (&str)": {
-		"prefix": "cotrStringAlt",
-		"body": [
-			"&str"
-		],
-		"description": "The Rust &str type."
-	},
-	"Rust Integer Type (i32)": {
-		"prefix": "cotrInt",
-		"body": [
-			"i32"
-		],
-		"description": "The Rust i32 type."
-	},
-	"Rust Integer Type (i64)": {
-		"prefix": "cotrIntAlt",
-		"body": [
-			"i64"
-		],
-		"description": "The Rust i64 type."
-	},
-	"Rust Float Type (f32)": {
-		"prefix": "cotrNum",
-		"body": [
-			"f32"
-		],
-		"description": "The Rust f32 type."
-	},
-	"Rust Float Type (f64)": {
-		"prefix": "cotrNumAlt",
-		"body": [
-			"f64"
-		],
-		"description": "The Rust f64 type."
-	},
-	"Rust Boolean Type (bool)": {
-		"prefix": "cotrBool",
-		"body": [
-			"bool"
-		],
-		"description": "The Rust bool type."
-	},
-	"Rust Character Type (char)": {
-		"prefix": "cotrChar",
-		"body": [
-			"char"
-		],
-		"description": "The Rust char type."
-	},
-	"Rust Null Type (Option)": {
-		"prefix": "cotrNull",
-		"body": [
-			"Option"
-		],
-		"description": "The Rust Option type."
-	},
-    "Rust Create Variable": {
-        "prefix": "cotrVar",
-        "body": [
-          "let ${1:myVar} = $2;"
-        ],
-        "description": "Creates a variable in Rust using the let keyword."
-    },
-    "Rust Create Constant": {
-        "prefix": "cotrConst",
-        "body": [
-          "const ${1:myConst}: ${2:type} = $3;"
-        ],
-        "description": "Creates a constant variable in Rust using the const keyword."
-    },
-    "Rust Create Mutable Variable": {
-        "prefix": "cotrMutVar",
-        "body": [
-          "let mut ${1:myVar} = $2;"
-        ],
-        "description": "Creates a mutable variable in Rust using the let mut keywords."
-    },
-    "Rust Create Map (HashMap)": {
-        "prefix": "cotrMap",
-        "body": [
-          "use std::collections::HashMap;",
-          "",
-          "let mut ${1:myMap} = HashMap::new();",
-          "${1:myMap}.insert(${2:'key1'}, ${3:'value1'});",
-          "${1:myMap}.insert(${4:'key2'}, ${5:'value2'});",
-          "// Add more key-value pairs here"
-        ],
-        "description": "Creates a map using the HashMap class in Rust."
-    },
-    "Rust Create Map (BTreeMap)": {
-        "prefix": "cotrMapAlt",
-        "body": [
-          "use std::collections::BTreeMap;",
-          "",
-          "let mut ${1:myMap} = BTreeMap::new();",
-          "${1:myMap}.insert(${2:'key1'}, ${3:'value1'});",
-          "${1:myMap}.insert(${4:'key2'}, ${5:'value2'});",
-          "// Add more key-value pairs here"
-        ],
-        "description": "Creates a map using the BTreeMap class in Rust."
-    },
-    "Rust Generate Object Map": {
-        "prefix": "cotrGenMap",
-        "body": [
-          "let ${1:myMap} = [",
-          "  ${2:'key1'}: ${3:'value1'},",
-          "  ${4:'key2'}: ${5:'value2'},",
-          "  // Add more key-value pairs here",
-          "];"
-        ],
-        "description": "Generates an object map with a specific number of key-value pairs in Rust."
-    },
-    "Rust Create Array": {
-        "prefix": "cotrList",
-        "body": [
-          "let ${1:myList} = [",
-          "  ${2:'item1'},",
-          "  ${3:'item2'},",
-          "  // Add more items here",
-          "];"
-        ],
-        "description": "Creates an array (list) in Rust."
-    },
-    "Rust Generate Array": {
-        "prefix": "cotrGenList",
-        "body": [
-          "let ${1:myList} = [",
-          "  ${2:'item1'},",
-          "  ${3:'item2'},",
-          "  // Add more items here",
-          "];"
-        ],
-        "description": "Generates an array (list) of a specific length in Rust."
-    },
-    "Rust Print": {
-        "prefix": "cotrPrint",
-        "body": [
-          "println!(\"{${1:'Your message here'}}\");"
-        ],
-        "description": "Prints a message to the console in Rust."
-    },
-    "Rust For Loop": {
-        "prefix": "cotrForLoop",
-        "body": [
-          "for ${1:i} in ${2:0..10} {",
-          "  // Your code here",
-          "}"
-        ],
-        "description": "Creates a for loop that iterates through a set of numbers with the index in Rust."
-    },
-    "Rust For...Of Loop": {
-        "prefix": "cotrForOfLoop",
-        "body": [
-          "for ${1:item} in ${2:iterable} {",
-          "  // Your code here",
-          "}"
-        ],
-        "description": "Iterates over an iterable object in Rust."
-    },
-    "Rust While Loop": {
-        "prefix": "cotrWhileLoop",
-        "body": [
-          "while ${1:condition} {",
-          "  // Your code here",
-          "}"
-        ],
-        "description": "Creates a while loop in Rust."
-    },
-    "Rust Match Statement": {
-        "prefix": "cotrSwitch",
-        "body": [
-          "match ${1:variable} {",
-          "  ${2:value1} => {",
-          "    // Your code here",
-          "  },",
-          "  ${3:value2} => {",
-          "    // Your code here",
-          "  },",
-          "  _ => {",
-          "    // Your code here",
-          "  }",
-          "}"
-        ],
-        "description": "Creates a match statement in Rust."
-    },
-    "Rust Function": {
-        "prefix": "cotrFunc",
-        "body": [
-          "fn ${2:myFunction}(${3:parameters}) -> ${1:ReturnType} {",
-          "  // Your code here",
-          "}"
-        ],
-        "description": "Creates a function in Rust."
-    },
-    "Rust Comment" : {
-		"prefix": "cotrComment",
-		"body": [
-			"// ${1:comment}"
-		],
-		"description": "Creates a single line comment in Rust."
-	},
-	"Rust Multi-line Comment" : {
-		"prefix": "cotrMultiComment",
-		"body": [
-			"/*",
-			" * ${1:comment}",
-			" */"
-		],
-		"description": "Creates a multi-line comment in Rust."
-	},
-    "Rust Throw Exception": {
-		"prefix": "cotrThrow",
-		"body": [
-		  "panic!(\"Your message here\")"
-		],
-		"description": "Throws an exception in Rust."
-	  },
-	  "Rust Try Catch": {
-		"prefix": "cotrTryCatch",
-		"body": [
-		  "let result = std::panic::catch_unwind(|| {",
-		  "  ${1:// Your code here}",
-		  "});",
-		  "if let Err(err) = result {",
-		  "  ${2:// Your code here}",
-		  "}"
-		],
-		"description": "Creates a try...catch block in Rust."
-	  },
-      "Rust Enum": {
-		"prefix": "cotrEnum",
-		"body": [
-		  "enum ${1:MyEnum} {",
-		  "  ${2:Variant1},",
-		  "  ${3:Variant2},",
-		  "  // Add more variants here",
-		  "}"
-		],
-		"description": "Creates an enum in Rust."
-	  },
-	  "Rust Struct": {
-		"prefix": "cotrClass",
-		"body": [
-		  "struct ${1:MyStruct} {",
-		  "  ${2:field1}: ${3:type1},",
-		  "  ${4:field2}: ${5:type2},",
-		  "  // Add more fields here",
-		  "}"
-		],
-		"description": "Creates a struct in Rust."
-	  },
-      "Rust If Statement": {
-		"prefix": "cotrIf",
-		"body": [
-		  "if ${1:condition} {",
-		  "  ${2:// Your code here}",
-		  "}"
-		],
-		"description": "Creates an if statement in Rust."
-	  },
-	  "Rust If Else Statement": {
-		"prefix": "cotrIfElse",
-		"body": [
-		  "if ${1:condition} {",
-		  "  ${2:// Your code here}",
-		  "} else if ${3:condition} {",
-		  "  ${4:// Your code here}",
-		  "} else {",
-		  "  ${5:// Your code here}",
-		  "}"
-		],
-		"description": "Creates an if...else statement in Rust."
-	  },
-	  "Rust Ternary Operator": {
-		"prefix": "cotrTernary",
-		"body": [
-		  "${1:condition} ? ${2:trueValue} : ${3:falseValue}"
-		],
-		"description": "Creates a ternary operator in Rust."
-	  },
-      "Rust Closure": {
-        "prefix": "cotrLambda",
-        "body": [
-          "let ${1:my_closure} = |${2:parameters}| ${3:expression};"
-        ],
-        "description": "Creates a closure (lambda function) in Rust."
-      }
-      
+  "Rust String Type (String)": {
+    "prefix": "cotrString",
+    "body": ["String"],
+    "description": "The Rust String type."
+  },
+  "Rust String Type (&str)": {
+    "prefix": "cotrStringAlt",
+    "body": ["&str"],
+    "description": "The Rust &str type."
+  },
+  "Rust Integer Type (i32)": {
+    "prefix": "cotrInt",
+    "body": ["i32"],
+    "description": "The Rust i32 type."
+  },
+  "Rust Integer Type (i64)": {
+    "prefix": "cotrIntAlt",
+    "body": ["i64"],
+    "description": "The Rust i64 type."
+  },
+  "Rust Float Type (f32)": {
+    "prefix": "cotrNum",
+    "body": ["f32"],
+    "description": "The Rust f32 type."
+  },
+  "Rust Float Type (f64)": {
+    "prefix": "cotrNumAlt",
+    "body": ["f64"],
+    "description": "The Rust f64 type."
+  },
+  "Rust Boolean Type (bool)": {
+    "prefix": "cotrBool",
+    "body": ["bool"],
+    "description": "The Rust bool type."
+  },
+  "Rust Boolean True": {
+    "prefix": "cotrBoolTrue",
+    "body": ["true"],
+    "description": "The Rust true value."
+  },
+  "Rust Boolean False": {
+    "prefix": "cotrBoolFalse",
+    "body": ["false"],
+    "description": "The Rust false value."
+  },
+  "Rust Character Type (char)": {
+    "prefix": "cotrChar",
+    "body": ["char"],
+    "description": "The Rust char type."
+  },
+  "Rust Null Type (Option)": {
+    "prefix": "cotrNull",
+    "body": ["Option"],
+    "description": "The Rust Option type."
+  },
+  "Rust Create Variable": {
+    "prefix": "cotrVar",
+    "body": ["let ${1:myVar} = $2;"],
+    "description": "Creates a variable in Rust using the let keyword."
+  },
+  "Rust Create String Variable": {
+    "prefix": "cotrVarString",
+    "body": ["let ${1:myStr} = String::from(${2:'myString'});"],
+    "description": "Creates a string variable in Rust using the String class."
+  },
+  " Rust Create Integer Variable": {
+    "prefix": "cotrVarInt",
+    "body": ["let ${1:myInt} = ${2:0};"],
+    "description": "Creates an integer variable in Rust."
+  },
+  "Rust Create Float Variable": {
+    "prefix": "cotrVarNum",
+    "body": ["let ${1:myFloat} = ${2:0.0};"],
+    "description": "Creates a float variable in Rust."
+  },
+  "Rust Create Boolean Variable": {
+    "prefix": "cotrVarBool",
+    "body": ["let ${1:myBool} = ${2:true};"],
+    "description": "Creates a boolean variable in Rust."
+  },
+  "Rust Create List Variable": {
+    "prefix": "cotrVarList",
+    "body": ["let ${1:myList} = vec![$2];"],
+    "description": "Creates a list variable in Rust using the vec! macro."
+  },
+  "Rust Create Map Variable": {
+    "prefix": "cotrVarMap",
+    "body": [
+      "use std::collections::HashMap;",
+      "",
+      "let ${1:myMap} = HashMap::new();"
+    ],
+    "description": "Creates a map variable in Rust using the HashMap class."
+  },
+
+  "Rust Create Constant": {
+    "prefix": "cotrConst",
+    "body": ["const ${1:myConst}: ${2:type} = $3;"],
+    "description": "Creates a constant variable in Rust using the const keyword."
+  },
+  "Rust Create Mutable Variable": {
+    "prefix": "cotrMutVar",
+    "body": ["let mut ${1:myVar} = $2;"],
+    "description": "Creates a mutable variable in Rust using the let mut keywords."
+  },
+  "Rust Create Map (HashMap)": {
+    "prefix": "cotrMap",
+    "body": [
+      "use std::collections::HashMap;",
+      "",
+      "let mut ${1:myMap} = HashMap::new();",
+      "${1:myMap}.insert(${2:'key1'}, ${3:'value1'});",
+      "${1:myMap}.insert(${4:'key2'}, ${5:'value2'});",
+      "// Add more key-value pairs here"
+    ],
+    "description": "Creates a map using the HashMap class in Rust."
+  },
+  "Rust Create Map (BTreeMap)": {
+    "prefix": "cotrMapAlt",
+    "body": [
+      "use std::collections::BTreeMap;",
+      "",
+      "let mut ${1:myMap} = BTreeMap::new();",
+      "${1:myMap}.insert(${2:'key1'}, ${3:'value1'});",
+      "${1:myMap}.insert(${4:'key2'}, ${5:'value2'});",
+      "// Add more key-value pairs here"
+    ],
+    "description": "Creates a map using the BTreeMap class in Rust."
+  },
+  "Rust Generate Object Map": {
+    "prefix": "cotrGenMap",
+    "body": [
+      "let ${1:myMap} = [",
+      "  ${2:'key1'}: ${3:'value1'},",
+      "  ${4:'key2'}: ${5:'value2'},",
+      "  // Add more key-value pairs here",
+      "];"
+    ],
+    "description": "Generates an object map with a specific number of key-value pairs in Rust."
+  },
+  "Rust Create Array": {
+    "prefix": "cotrList",
+    "body": [
+      "let ${1:myList} = [",
+      "  ${2:'item1'},",
+      "  ${3:'item2'},",
+      "  // Add more items here",
+      "];"
+    ],
+    "description": "Creates an array (list) in Rust."
+  },
+  "Rust Generate Array": {
+    "prefix": "cotrGenList",
+    "body": [
+      "let ${1:myList} = [",
+      "  ${2:'item1'},",
+      "  ${3:'item2'},",
+      "  // Add more items here",
+      "];"
+    ],
+    "description": "Generates an array (list) of a specific length in Rust."
+  },
+  "Rust Print": {
+    "prefix": "cotrPrint",
+    "body": ["println!(\"{${1:'Your message here'}}\");"],
+    "description": "Prints a message to the console in Rust."
+  },
+  "Rust For Loop": {
+    "prefix": "cotrForLoop",
+    "body": ["for ${1:i} in ${2:0..10} {", "  // Your code here", "}"],
+    "description": "Creates a for loop that iterates through a set of numbers with the index in Rust."
+  },
+  "Rust For...Of Loop": {
+    "prefix": "cotrForOfLoop",
+    "body": ["for ${1:item} in ${2:iterable} {", "  // Your code here", "}"],
+    "description": "Iterates over an iterable object in Rust."
+  },
+  "Rust While Loop": {
+    "prefix": "cotrWhileLoop",
+    "body": ["while ${1:condition} {", "  // Your code here", "}"],
+    "description": "Creates a while loop in Rust."
+  },
+  "Rust Match Statement": {
+    "prefix": "cotrSwitch",
+    "body": [
+      "match ${1:variable} {",
+      "  ${2:value1} => {",
+      "    // Your code here",
+      "  },",
+      "  ${3:value2} => {",
+      "    // Your code here",
+      "  },",
+      "  _ => {",
+      "    // Your code here",
+      "  }",
+      "}"
+    ],
+    "description": "Creates a match statement in Rust."
+  },
+  "Rust Function": {
+    "prefix": "cotrFunc",
+    "body": [
+      "fn ${2:myFunction}(${3:parameters}) -> ${1:ReturnType} {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Creates a function in Rust."
+  },
+  "Rust Comment": {
+    "prefix": "cotrComment",
+    "body": ["// ${1:comment}"],
+    "description": "Creates a single line comment in Rust."
+  },
+  "Rust Multi-line Comment": {
+    "prefix": "cotrMultiComment",
+    "body": ["/*", " * ${1:comment}", " */"],
+    "description": "Creates a multi-line comment in Rust."
+  },
+  "Rust Throw Exception": {
+    "prefix": "cotrThrow",
+    "body": ["panic!(\"Your message here\")"],
+    "description": "Throws an exception in Rust."
+  },
+  "Rust Try Catch": {
+    "prefix": "cotrTryCatch",
+    "body": [
+      "let result = std::panic::catch_unwind(|| {",
+      "  ${1:// Your code here}",
+      "});",
+      "if let Err(err) = result {",
+      "  ${2:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a try...catch block in Rust."
+  },
+  "Rust Enum": {
+    "prefix": "cotrEnum",
+    "body": [
+      "enum ${1:MyEnum} {",
+      "  ${2:Variant1},",
+      "  ${3:Variant2},",
+      "  // Add more variants here",
+      "}"
+    ],
+    "description": "Creates an enum in Rust."
+  },
+  "Rust Struct": {
+    "prefix": "cotrClass",
+    "body": [
+      "struct ${1:MyStruct} {",
+      "  ${2:field1}: ${3:type1},",
+      "  ${4:field2}: ${5:type2},",
+      "  // Add more fields here",
+      "}"
+    ],
+    "description": "Creates a struct in Rust."
+  },
+  "Rust If Statement": {
+    "prefix": "cotrIf",
+    "body": ["if ${1:condition} {", "  ${2:// Your code here}", "}"],
+    "description": "Creates an if statement in Rust."
+  },
+  "Rust If Else Statement": {
+    "prefix": "cotrIfElse",
+    "body": [
+      "if ${1:condition} {",
+      "  ${2:// Your code here}",
+      "} else if ${3:condition} {",
+      "  ${4:// Your code here}",
+      "} else {",
+      "  ${5:// Your code here}",
+      "}"
+    ],
+    "description": "Creates an if...else statement in Rust."
+  },
+  "Rust Ternary Operator": {
+    "prefix": "cotrTernary",
+    "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
+    "description": "Creates a ternary operator in Rust."
+  },
+  "Rust Closure": {
+    "prefix": "cotrLambda",
+    "body": ["let ${1:my_closure} = |${2:parameters}| ${3:expression};"],
+    "description": "Creates a closure (lambda function) in Rust."
+  }
 }

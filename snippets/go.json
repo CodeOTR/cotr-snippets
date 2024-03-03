@@ -27,12 +27,68 @@
 		],
 		"description" : "The Go bool type."
 	},
+  "Go Boolean True" : {
+    "prefix" : "cotrBoolTrue",
+    "body" : [
+      "true"
+    ],
+    "description" : "The Go true boolean value."
+  },
+  "Go Boolean False" : {
+    "prefix" : "cotrBoolFalse",
+    "body" : [
+      "false"
+    ],
+    "description" : "The Go false boolean value."
+  },
     "Go Create Variable" : {
         "prefix" : "cotrVar",
         "body" : [
             "var ${1:variableName} ${2:variableType} = ${3:variableValue}"
         ],
         "description" : "Creates a variable in Go using the var keyword"
+    },
+    "Go Create String Variable" : {
+        "prefix" : "cotrVarString",
+        "body" : [
+            "var ${1:variableName} string = ${2:variableValue}"
+        ],
+        "description" : "Creates a string variable in Go using the var keyword"
+    },
+    "Go Create Integer Variable" : {
+        "prefix" : "cotrVarInt",
+        "body" : [
+            "var ${1:variableName} int = ${2:variableValue}"
+        ],
+        "description" : "Creates an integer variable in Go using the var keyword"
+    },
+    "Go Create Float Variable" : {
+        "prefix" : "cotrVarNum",
+        "body" : [
+            "var ${1:variableName} float64 = ${2:variableValue}"
+        ],
+        "description" : "Creates a float variable in Go using the var keyword"
+    },
+    "Go Create Boolean Variable" : {
+        "prefix" : "cotrVarBool",
+        "body" : [
+            "var ${1:variableName} bool = ${2:variableValue}"
+        ],
+        "description" : "Creates a boolean variable in Go using the var keyword"
+    },
+    "Go Create List Variable" : {
+        "prefix" : "cotrVarList",
+        "body" : [
+            "var ${1:variableName} []${2:variableType} = ${3:variableValue}"
+        ],
+        "description" : "Creates a list variable in Go using the var keyword"
+    },
+    "Go Create Map Variable" : {
+        "prefix" : "cotrVarMap",
+        "body" : [
+            "var ${1:variableName} map[${2:keyType}]${3:valueType} = ${4:variableValue}"
+        ],
+        "description" : "Creates a map variable in Go using the var keyword"
     },
     "Go Create Constant" : {
         "prefix" : "cotrConst",
