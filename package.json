@@ -1,11 +1,17 @@
 {
   "name": "cotr-snippets",
-  "displayName": "cotr-snippets",
+  "displayName": "COTR Snippets",
   "description": "Write code in every language",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.87.0"
   },
+  "keywords": [
+    "dart",
+    "typescript",
+    "snippets",
+    "pseduo-code"
+  ],
   "categories": [
     "Snippets"
   ],
@@ -16,12 +22,28 @@
         "path": "./snippets/dart.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/typescript.json"
+      },
+      {
         "language": "typescript",
         "path": "./snippets/typescript.json"
       },
       {
-        "language": "swift",
-        "path": "./snippets/swift.json"
+        "language": "typescriptreact",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "rust",
+        "path": "./snippets/rust.json"
+      },
+      {
+        "language": "go",
+        "path": "./snippets/go.json"
       }
     ]
   }
