@@ -43,3 +43,6 @@ Its very simple, actually. A snippets file is created for every supported langua
 | cotrMultiComment | Creates a multi-line comment |
 | cotrThrow | Throws an exception |
 | cotrTryCatch | Creates a try-catch block |
+| cotrIf | Creates an if statement |
+| cotrIfElse | Creates an if-else statement |
+| cotrTernary | Creates a ternary statement |

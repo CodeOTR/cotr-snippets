@@ -1,6 +1,8 @@
 {
   "name": "cotr-snippets",
   "displayName": "COTR Snippets",
+  "publisher": "CodeontheRocks",
+  "repository": "https://github.com/CodeOTR/cotr-snippets",
   "description": "Write code in every language",
   "version": "0.0.1",
   "engines": {
