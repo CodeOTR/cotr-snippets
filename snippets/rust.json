@@ -1,4 +1,67 @@
 {
+	"Rust String Type (String)": {
+		"prefix": "cotrString",
+		"body": [
+		  "String"
+		],
+		"description": "The Rust String type."
+	},
+	"Rust String Type (&str)": {
+		"prefix": "cotrStringAlt",
+		"body": [
+			"&str"
+		],
+		"description": "The Rust &str type."
+	},
+	"Rust Integer Type (i32)": {
+		"prefix": "cotrInt",
+		"body": [
+			"i32"
+		],
+		"description": "The Rust i32 type."
+	},
+	"Rust Integer Type (i64)": {
+		"prefix": "cotrIntAlt",
+		"body": [
+			"i64"
+		],
+		"description": "The Rust i64 type."
+	},
+	"Rust Float Type (f32)": {
+		"prefix": "cotrNum",
+		"body": [
+			"f32"
+		],
+		"description": "The Rust f32 type."
+	},
+	"Rust Float Type (f64)": {
+		"prefix": "cotrNumAlt",
+		"body": [
+			"f64"
+		],
+		"description": "The Rust f64 type."
+	},
+	"Rust Boolean Type (bool)": {
+		"prefix": "cotrBool",
+		"body": [
+			"bool"
+		],
+		"description": "The Rust bool type."
+	},
+	"Rust Character Type (char)": {
+		"prefix": "cotrChar",
+		"body": [
+			"char"
+		],
+		"description": "The Rust char type."
+	},
+	"Rust Null Type (Option)": {
+		"prefix": "cotrNull",
+		"body": [
+			"Option"
+		],
+		"description": "The Rust Option type."
+	},
     "Rust Create Variable": {
         "prefix": "cotrVar",
         "body": [
@@ -80,7 +143,7 @@
     "Rust Print": {
         "prefix": "cotrPrint",
         "body": [
-          "println!(${1:'Your message here'});"
+          "println!(\"{${1:'Your message here'}}\");"
         ],
         "description": "Prints a message to the console in Rust."
     },
@@ -136,5 +199,21 @@
           "}"
         ],
         "description": "Creates a function in Rust."
-    }
+    },
+    "Rust Comment" : {
+		"prefix": "cotrComment",
+		"body": [
+			"// ${1:comment}"
+		],
+		"description": "Creates a single line comment in Rust."
+	},
+	"Rust Multi-line Comment" : {
+		"prefix": "cotrMultiComment",
+		"body": [
+			"/*",
+			" * ${1:comment}",
+			" */"
+		],
+		"description": "Creates a multi-line comment in Rust."
+	}
 }

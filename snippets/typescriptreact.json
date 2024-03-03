@@ -159,20 +159,22 @@
 		],
 		"description": "Creates a function in TypeScript."
 	  },
-	  "TypeScript Comment": {
+	  "TSX Comment": {
 		"prefix": "cotrComment",
 		"body": [
-		  "// ${1:Your comment here}"
+		  "{/* ${1:Your comment here} */}"
 		],
-		"description": "Creates a single-line comment in TypeScript."
+		"description": "Creates a comment in a TSX file."
 	  },
-	  "TypeScript Multi-Line Comment": {
+	  "TSX Multi-Line Comment": {
 		"prefix": "cotrMultiComment",
 		"body": [
-		  "/*",
-		  " * ${1:Your comment here}",
-		  " */"
+		  "{/*",
+		  "  ${1:Your comment here}",
+		  "  ${2:Your comment here}",
+		  "  ${3:Your comment here}",
+		  "*/}"
 		],
-		"description": "Creates a multi-line comment in TypeScript."
+		"description": "Creates a multi-line comment in a TSX file."
 	  }
 }

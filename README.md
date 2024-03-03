@@ -6,7 +6,7 @@ This VS Code extension provides a large list of generic snippets that can be use
 
 How does it work? 
 
-Its very simple, actually. A language snippets file is created for every supported language with all of the snippets implementations. For example, the `dart.json` snippet file implements all of the snippets in Dart while the `typescript.json` file implements all of the snippets in TypeScript. The key is that the snippet names are consistent across languages so you only need to remember the COTR snippet name.
+Its very simple, actually. A snippets file is created for every supported language with all of the snippets implementations. For example, the `dart.json` snippet file implements all of the snippets in Dart while the `typescript.json` file implements all of the snippets in TypeScript. **The key is that the snippet names are consistent across languages so you only need to remember the COTR snippet name**.
 
 ## Supported Languages
 - Dart
@@ -14,11 +14,18 @@ Its very simple, actually. A language snippets file is created for every support
 - JavaScript React (JSX)
 - TypeScript
 - TypeScript React (TSX)
+- Go
+- Rust
 
 ## Snippets
 
 | Name | Description |
 | --- | --- |
+| cotrString | The language's string data type |
+| cotrInt | The language's integer data type |
+| cotrNum | The language's numerical data type |
+| cotrBool | The language's boolean data type |
+| cotrNull | The language's null data type |
 | cotrVar | Creates a variable |
 | cotrConst | Creates a constant variable |
 | cotrStaticVar | Creates a static variable |
@@ -32,3 +39,5 @@ Its very simple, actually. A language snippets file is created for every support
 | cotrWhileLoop | Creates a while loop |
 | cotrSwitch | Creates a switch stament with default |
 | cotrFunc | Creates a function |
+| cotrComment | Creates a single-line comment |
+| cotrMultiComment | Creates a multi-line comment |

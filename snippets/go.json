@@ -1,4 +1,32 @@
 {
+	"Go String Type" : {
+		"prefix" : "cotrString",
+		"body" : [
+			"string"
+		],
+		"description" : "The Go string type."
+	},
+	"Go Integer Type" : {
+		"prefix" : "cotrInt",
+		"body" : [
+			"int"
+		],
+		"description" : "The Go int type."
+	},
+	"Go Float Type" : {
+		"prefix" : "cotrNum",
+		"body" : [
+			"float64"
+		],
+		"description" : "The Go float64 type."
+	},
+	"Go Boolean Type" : {
+		"prefix" : "cotrBool",
+		"body" : [
+			"bool"
+		],
+		"description" : "The Go bool type."
+	},
     "Go Create Variable" : {
         "prefix" : "cotrVar",
         "body" : [
@@ -110,5 +138,21 @@
             "}"
         ],
         "description" : "Creates a function in Go"
-    }
+    },
+    "Go Comment": {
+		"prefix": "cotrComment",
+		"body": [
+			"// ${1:comment}"
+		],
+		"description": "Creates a single-line comment in Go"
+	},
+	"Go Multi-line Comment": {
+		"prefix": "cotrMultiComment",
+		"body": [
+			"/*",
+			" * ${1:comment}",
+			" */"
+		],
+		"description": "Creates a multi-line comment in Go"
+	}
 }

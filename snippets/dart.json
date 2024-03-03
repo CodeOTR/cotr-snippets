@@ -1,126 +1,154 @@
 {
-	"Dart Create Variable": {
-		"prefix": "cotrVar",
-		"body": [
-		  "var ${1:myVar} = $2;"
-		],
-		"description": "Creates a variable in Dart using the var keyword."
-	  },
-	  "Dart Create Constant": {
-		"prefix": "cotrConst",
-		"body": [
-		  "const ${1:myConst} = $2;"
-		],
-		"description": "Creates a constant variable in Dart using the const keyword."
-	  },
-	  "Dart Static Variable": {
-		"prefix": "cotrStaticVar",
-		"body": [
-		  "static ${2:var} ${3:myStaticVar} = ${4:value};",
-		  "",
-		  "// Access the static variable",
-		  "// MyClass.${3:myStaticVar}"
-		],
-		"description": "Creates a static variable in a Dart class."
-	  },	  
-	  "Dart Create Map": {
-		"prefix": "cotrMap",
-		"body": [
-		  "var ${1:myMap} = {",
-		  "  ${2:'key1'}: ${3:'value1'},",
-		  "  ${4:'key2'}: ${5:'value2'},",
-		  "  // Add more key-value pairs here",
-		  "};"
-		],
-		"description": "Creates a map in Dart."
-	  },	
-	  "Dart Generate Map": {
-		"prefix": "cotrGenMap",
-		"body": [
-		  "var ${1:myMap} = Map.fromIterable(List.generate(${2:length}, (index) => index),",
-		  "  key: (item) => 'key' + item.toString(),",
-		  "  value: (item) => 'value' + item.toString(),",
-		  ");"
-		],
-		"description": "Generates a map with a specific number of key-value pairs in Dart."
-	  },	  
-	  "Dart Create List": {
-		"prefix": "cotrList",
-		"body": [
-		  "var ${1:myList} = [",
-		  "  ${2:'item1'},",
-		  "  ${3:'item2'},",
-		  "  // Add more items here",
-		  "];"
-		],
-		"description": "Creates a list in Dart."
-	  },
-	  "Dart Generate List": {
-		"prefix": "cotrGenList",
-		"body": [
-		  "var ${1:myList} = List.generate(${2:length}, (index) => ${3:'item'} + index.toString());"
-		],
-		"description": "Generates a list of a specific length in Dart."
-	  },			  
-	  "Dart Print": {
-		"prefix": "cotrPrint",
-		"body": [
-		  "print(${1:'Your message here'});"
-		],
-		"description": "Prints a message to the console in Dart."
-	  },
-	  "Dart For Loop": {
-		"prefix": "cotrForLoop",
-		"body": [
-		  "for (int ${1:i} = 0; $1 < ${2:10}; $1++) {",
-		  "  // Your code here",
-		  "}"
-		],
-		"description": "Creates a for loop that iterates through a set of numbers with the index in Dart."
-	  },
-	  "Dart For...In Loop": {
-		"prefix": "cotrForInLoop",
-		"body": [
-		  "for (var item in ${1:iterable}) {",
-		  "  ${2:// Your code here}",
-		  "}"
-		],
-		"description": "Iterates over an iterable object in Dart."
-	  },	  
-	  "Dart While Loop": {
-		"prefix": "cotrWhileLoop",
-		"body": [
-		  "while (${1:condition}) {",
-		  "  ${2:// Your code here}",
-		  "}"
-		],
-		"description": "Creates a while loop in Dart."
-	  },
-	  "Dart Switch Statement": {
-		"prefix": "cotrSwitch",
-		"body": [
-		  "switch (${1:variable}) {",
-		  "  case ${2:value1}:",
-		  "    ${3:// Your code here}",
-		  "    break;",
-		  "  case ${4:value2}:",
-		  "    ${5:// Your code here}",
-		  "    break;",
-		  "  default:",
-		  "    ${6:// Your code here}",
-		  "}"
-		],
-		"description": "Creates a switch statement in Dart."
-	  },
-	  "Dart Function": {
-		"prefix": "cotrFunc",
-		"body": [
-		  "${1:void} ${2:myFunction}(${3:parameters}) {",
-		  "  ${4:// Your code here}",
-		  "}"
-		],
-		"description": "Creates a function in Dart."
-	  }
-	  
+  "Dart String Type": {
+    "prefix": "cotrString",
+    "body": ["String"],
+    "description": "The Dart String type."
+  },
+  "Dart Integer Type": {
+    "prefix": "cotrInt",
+    "body": ["int"],
+    "description": "The Dart int type."
+  },
+  "Dart Double Type": {
+    "prefix": "cotrNum",
+    "body": ["double"],
+    "description": "The Dart double type."
+  },
+  "Dart Float Type": {
+    "prefix": "cotrNumAlt",
+    "body": ["float"],
+    "description": "The Dart float type."
+  },
+  "Dart Boolean Type": {
+    "prefix": "cotrBool",
+    "body": ["bool"],
+    "description": "The Dart bool type."
+  },
+  "Dart Character Type": {
+    "prefix": "cotrChar",
+    "body": ["char"],
+    "description": "The Dart char type."
+  },
+  "Dart Create Variable": {
+    "prefix": "cotrVar",
+    "body": ["var ${1:myVar} = $2;"],
+    "description": "Creates a variable in Dart using the var keyword."
+  },
+  "Dart Create Constant": {
+    "prefix": "cotrConst",
+    "body": ["const ${1:myConst} = $2;"],
+    "description": "Creates a constant variable in Dart using the const keyword."
+  },
+  "Dart Static Variable": {
+    "prefix": "cotrStaticVar",
+    "body": [
+      "static ${2:var} ${3:myStaticVar} = ${4:value};",
+      "",
+      "// Access the static variable",
+      "// MyClass.${3:myStaticVar}"
+    ],
+    "description": "Creates a static variable in a Dart class."
+  },
+  "Dart Create Map": {
+    "prefix": "cotrMap",
+    "body": [
+      "var ${1:myMap} = {",
+      "  ${2:'key1'}: ${3:'value1'},",
+      "  ${4:'key2'}: ${5:'value2'},",
+      "  // Add more key-value pairs here",
+      "};"
+    ],
+    "description": "Creates a map in Dart."
+  },
+  "Dart Generate Map": {
+    "prefix": "cotrGenMap",
+    "body": [
+      "var ${1:myMap} = Map.fromIterable(List.generate(${2:length}, (index) => index),",
+      "  key: (item) => 'key' + item.toString(),",
+      "  value: (item) => 'value' + item.toString(),",
+      ");"
+    ],
+    "description": "Generates a map with a specific number of key-value pairs in Dart."
+  },
+  "Dart Create List": {
+    "prefix": "cotrList",
+    "body": [
+      "var ${1:myList} = [",
+      "  ${2:'item1'},",
+      "  ${3:'item2'},",
+      "  // Add more items here",
+      "];"
+    ],
+    "description": "Creates a list in Dart."
+  },
+  "Dart Generate List": {
+    "prefix": "cotrGenList",
+    "body": [
+      "var ${1:myList} = List.generate(${2:length}, (index) => ${3:'item'} + index.toString());"
+    ],
+    "description": "Generates a list of a specific length in Dart."
+  },
+  "Dart Print": {
+    "prefix": "cotrPrint",
+    "body": ["print(${1:'Your message here'});"],
+    "description": "Prints a message to the console in Dart."
+  },
+  "Dart For Loop": {
+    "prefix": "cotrForLoop",
+    "body": [
+      "for (int ${1:i} = 0; $1 < ${2:10}; $1++) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Creates a for loop that iterates through a set of numbers with the index in Dart."
+  },
+  "Dart For...In Loop": {
+    "prefix": "cotrForInLoop",
+    "body": [
+      "for (var item in ${1:iterable}) {",
+      "  ${2:// Your code here}",
+      "}"
+    ],
+    "description": "Iterates over an iterable object in Dart."
+  },
+  "Dart While Loop": {
+    "prefix": "cotrWhileLoop",
+    "body": ["while (${1:condition}) {", "  ${2:// Your code here}", "}"],
+    "description": "Creates a while loop in Dart."
+  },
+  "Dart Switch Statement": {
+    "prefix": "cotrSwitch",
+    "body": [
+      "switch (${1:variable}) {",
+      "  case ${2:value1}:",
+      "    ${3:// Your code here}",
+      "    break;",
+      "  case ${4:value2}:",
+      "    ${5:// Your code here}",
+      "    break;",
+      "  default:",
+      "    ${6:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a switch statement in Dart."
+  },
+  "Dart Function": {
+    "prefix": "cotrFunc",
+    "body": [
+      "${1:void} ${2:myFunction}(${3:parameters}) {",
+      "  ${4:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function in Dart."
+  },
+  "Dart Comment": {
+    "prefix": "cotrComment",
+    "body": ["// ${1:Your comment here}"],
+    "description": "Creates a single-line comment in Dart."
+  },
+  "Dart Multi-Line Comment": {
+    "prefix": "cotrMultiComment",
+    "body": ["/*", " * ${1:Your comment here}", " */"],
+    "description": "Creates a multi-line comment in Dart."
+  }
 }
-	  

@@ -35,7 +35,7 @@
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/typescript.json"
+        "path": "./snippets/typescriptreact.json"
       },
       {
         "language": "rust",
