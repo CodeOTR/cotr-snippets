@@ -13,7 +13,15 @@
     "snippets": [
       {
         "language": "dart",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/dart.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "swift",
+        "path": "./snippets/swift.json"
       }
     ]
   }
