@@ -41,6 +41,13 @@
     ],
     "description" : "The Go false boolean value."
   },
+  "Go Interpolate String" : {
+    "prefix" : "cotrInterpolate",
+    "body" : [
+      "`${1:string}`"
+    ],
+    "description" : "Interpolates a string in Go."
+  },
     "Go Create Variable" : {
         "prefix" : "cotrVar",
         "body" : [

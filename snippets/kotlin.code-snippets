@@ -63,6 +63,14 @@
 		],
 		"description": "The Kotlin Char type."
 	},
+	"Kotlin Interpolate String": {
+		"prefix": "cotrInterpolate",
+		"scope": "kotlin",
+		"body": [
+			"\"${1:Your message here}\""
+		],
+		"description": "Interpolates a string in Kotlin."
+	},
 	"Kotlin Create Variable": {
 		"prefix": "cotrVar",
 		"scope": "kotlin",

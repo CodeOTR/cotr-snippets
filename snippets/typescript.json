@@ -41,6 +41,13 @@
 		],
 		"description": "The TypeScript null type."
 	},
+	"TypeScript Interpolate String": {
+		"prefix": "cotrInterpolate",
+		"body": [
+			"`Hello, ${1:name}!`"
+		],
+		"description": "Interpolates a string in TypeScript."
+	},
 	"TypeScript Create Variable": {
 		"prefix": "cotrVar",
 		"body": [

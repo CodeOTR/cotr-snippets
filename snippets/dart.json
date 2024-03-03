@@ -44,6 +44,11 @@
     "body": ["var ${1:myVar} = $2;"],
     "description": "Creates a variable in Dart using the var keyword."
   },
+  "Dart Interpolate String": {
+    "prefix": "cotrInterpolateString",
+    "body": ["'Your string here \\${${1:variable}}'"],
+    "description": "Interpolates a variable into a string in Dart."
+  },
   "Dart Create String Variable": {
     "prefix": "cotrVarString",
     "body": ["String ${1:myString} = ${2:'Your string here'};"],

@@ -39,6 +39,11 @@
     "body": ["Character"],
     "description": "The Swift Character type."
   },
+  "Swift Interpolate String": {
+    "prefix": "cotrInterpolate",
+    "body": ["\"\\(${1:variable})\""],
+    "description": "Interpolates a variable into a string in Swift."
+  },
   "Swift Create Variable": {
     "prefix": "cotrVar",
     "body": ["var ${1:myVar} = $2;"],

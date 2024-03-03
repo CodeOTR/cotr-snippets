@@ -48,6 +48,13 @@
         ],
         "description": "JavaScript does not have types."
     },    
+    "JavaScript Interpolate String": {
+        "prefix": "cotrInterpolate",
+        "body": [
+            "let text = `Hello, ${1:name}!`;"
+        ],
+        "description": "Interpolates a string in JavaScript."
+    },
     "JavaScript Create Variable": {
         "prefix": "cotrVar",
         "body": [

@@ -55,6 +55,13 @@
         ],
         "description": "The C++ char type."
     },
+    "C++ Interpolate String" : {
+        "prefix": "cotrInterpolateString",
+        "body": [
+            "std::string ${1:myString} = \"${2:Your message here}\";"
+        ],
+        "description": "Creates an interpolated string in C++."
+    },
     "C++ Create Variable" : {
         "prefix": "cotrVar",
         "body": [

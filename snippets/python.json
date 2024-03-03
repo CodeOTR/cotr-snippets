@@ -62,6 +62,13 @@
 		],
 		"description": "The Python dictionary type."
 	},
+	"Python Interpolate String": {
+		"prefix": "cotrInterpolate",
+		"body": [
+			"f\"${1:Your message here}\""
+		],
+		"description": "Interpolates a string in Python."
+	},
 	"Python Create Variable" : {
 		"prefix": "cotrVar",
 		"body": [

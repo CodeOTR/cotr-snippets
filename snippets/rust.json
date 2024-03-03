@@ -54,6 +54,11 @@
     "body": ["Option"],
     "description": "The Rust Option type."
   },
+  "Rust Interpolate String": {
+    "prefix": "cotrInterpolate",
+    "body": ["format!(\"${1:Your message here}\")"],
+    "description": "Interpolates a string in Rust."
+  },
   "Rust Create Variable": {
     "prefix": "cotrVar",
     "body": ["let ${1:myVar} = $2;"],

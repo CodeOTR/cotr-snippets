@@ -14,7 +14,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 - [Dart](https://dart.dev/)
 - [Swift](https://www.swift.org/)
 - [JavaScript](https://www.javascript.com/)
-- JavaScript React (JSX)
+- [JavaScript React (JSX)](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [TypeScript React (TSX)](https://react.dev/learn/typescript)
 - [Go](https://go.dev/)
@@ -22,6 +22,8 @@ Its very simple, actually. Every supported language implements all snippets in a
 - [Kotlin](https://kotlinlang.org/)
 - [Python](https://www.python.org/)
 - [C++](https://cplusplus.com/)
+- [C#](https://dotnet.microsoft.com/en-us/languages/csharp)
+- [Java](https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html)
 
 ## Snippets
 
