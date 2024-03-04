@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.4
+
+- Add `cotrInterpolate` snippet
+- Add C# and Java Support
+
+
 ## 0.0.3
 
 - Add `cotrBoolTrue` and `cotrBoolFalse` snippets

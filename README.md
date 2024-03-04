@@ -2,7 +2,7 @@
 At [Code on the Rocks](https://codeontherocks.dev/) (COTR) our mission is to enable developers to code fluently in every programming language. We create tools and resources to help you apply your high-level programming knowledge in any code base.
 
 ## COTR Snippets
-This VS Code extension provides a large list of generic snippets that can be used in any project, regardless of the language used. 
+This [VS Code extension](https://marketplace.visualstudio.com/items?itemName=CodeontheRocks.cotr-snippets) provides a large list of generic snippets that can be used in any project, regardless of the language used. 
 
 How does it work? 
 
