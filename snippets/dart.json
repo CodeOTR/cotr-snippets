@@ -25,12 +25,12 @@
     "description": "The Dart bool type."
   },
   "Dart Boolean True": {
-    "prefix": "cotrTrue",
+    "prefix": "cotrBoolTrue",
     "body": ["true"],
     "description": "The Dart true value."
   },
   "Dart Boolean False": {
-    "prefix": "cotrFalse",
+    "prefix": "cotrBoolFalse",
     "body": ["false"],
     "description": "The Dart false value."
   },

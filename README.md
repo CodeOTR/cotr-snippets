@@ -24,6 +24,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 - [C++](https://cplusplus.com/)
 - [C#](https://dotnet.microsoft.com/en-us/languages/csharp)
 - [Java](https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html)
+- [PHP](https://www.php.net/)
 
 ## Snippets
 
