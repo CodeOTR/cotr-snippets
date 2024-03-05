@@ -47,7 +47,17 @@
             "let number = $1;"
         ],
         "description": "JavaScript does not have types."
-    },    
+    },   
+    "JavaScript Date Type": {
+        "prefix": "cotrDate",
+        "body": ["Date"],
+        "description": "JavaScript uses the Date object for date and time operations."
+      },
+      "JavaScript Date Now": {
+        "prefix": "cotrNow",
+        "body": ["new Date()"],
+        "description": "Gets the current date and time in JavaScript."
+      },
     "JavaScript Interpolate String": {
         "prefix": "cotrInterpolate",
         "body": [
@@ -62,6 +72,16 @@
         ],
         "description": "Creates a variable in JavaScript using the let keyword."
     },
+    "JavaScript Create Typed Variable": {
+        "prefix": "cotrVarTyped",
+        "body": ["let ${1:myVar} = $2; // Note: JavaScript is dynamically typed."],
+        "description": "Creates a variable in JavaScript."
+      },
+      "JavaScript Create Nullable Variable": {
+        "prefix": "cotrVarNullable",
+        "body": ["let ${1:myVar} = null;"],
+        "description": "Creates a nullable variable in JavaScript."
+      },
     "JavaScript Create String Variable": {
         "prefix": "cotrVarString",
         "body": [
@@ -83,6 +103,13 @@
         ],
         "description": "Creates a boolean variable in JavaScript."
     },
+    "JavaScript Create Date Variable": {
+        "prefix": "cotrVarDate",
+        "body": [
+          "let ${1:myDate} = new Date(${2:year}, ${3:month} - 1, ${4:day});"
+        ],
+        "description": "Creates a date variable in JavaScript."
+      },
     "JavaScript Create Array Variable": {
         "prefix": "cotrVarList",
         "body": [

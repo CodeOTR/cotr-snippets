@@ -39,13 +39,38 @@
     "body": ["char"],
     "description": "The Dart char type."
   },
+  "Dart Date Type": {
+    "prefix": "cotrDate",
+    "body": ["DateTime"],
+    "description": "The Dart DateTime type."
+  },
+  "Dart Date Now": {
+    "prefix": "cotrNow",
+    "body": ["DateTime.now()"],
+    "description": "The Dart DateTime.now() method."
+  },
+  "Dart Null Type": {
+    "prefix": "cotrNull",
+    "body": ["null"],
+    "description": "The Dart null value."
+  },
   "Dart Create Variable": {
     "prefix": "cotrVar",
     "body": ["var ${1:myVar} = $2;"],
     "description": "Creates a variable in Dart using the var keyword."
   },
+  "Dart Create Typed Variable": {
+    "prefix": "cotrVarTyped",
+    "body": ["${1:Type} ${2:myVar} = $3;"],
+    "description": "Creates a typed variable in Dart."
+  },
+  "Dart Create Nullable Variable": {
+    "prefix": "cotrVarNullable",
+    "body": ["${1:Type}? ${2:myVar} = $3;"],
+    "description": "Creates a nullable variable in Dart."
+  },
   "Dart Interpolate String": {
-    "prefix": "cotrInterpolateString",
+    "prefix": "cotrInterpolate",
     "body": ["'Your string here \\${${1:variable}}'"],
     "description": "Interpolates a variable into a string in Dart."
   },
@@ -78,6 +103,11 @@
     "prefix": "cotrVarMap",
     "body": ["Map<${1:Key}, ${2:Value}> ${3:myMap} = {${4:key}: ${5:value}};"],
     "description": "Creates a map variable in Dart."
+  },
+  "Dart Create Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": ["DateTime ${1:myDate} = DateTime(${2:year}, ${3:month}, ${4:day});"],
+    "description": "Creates a date variable in Dart."
   },
   "Dart Create Constant": {
     "prefix": "cotrConst",

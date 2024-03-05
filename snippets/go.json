@@ -41,6 +41,20 @@
     ],
     "description" : "The Go false boolean value."
   },
+  "Go Date Type" : {
+    "prefix" : "cotrDate",
+    "body" : [
+      "time.Time"
+    ],
+    "description" : "The Go time.Time type."
+  },
+  "Go Date Now" : {
+    "prefix" : "cotrDateNow",
+    "body" : [
+      "time.Now()"
+    ],
+    "description" : "The Go time.Now() function."
+  },
   "Go Interpolate String" : {
     "prefix" : "cotrInterpolate",
     "body" : [
@@ -54,6 +68,16 @@
             "var ${1:variableName} ${2:variableType} = ${3:variableValue}"
         ],
         "description" : "Creates a variable in Go using the var keyword"
+    },
+    "Go Create Typed Variable": {
+      "prefix": "cotrVarTyped",
+      "body": ["var ${1:myVar} ${2:Type} = $3"],
+      "description": "Creates a typed variable in Go."
+    },
+    "Go Create Nullable Variable": {
+      "prefix": "cotrVarNullable",
+      "body": ["var ${1:myVar} *${2:Type} = $3"],
+      "description": "Creates a nullable variable in Go using pointers."
     },
     "Go Create String Variable" : {
         "prefix" : "cotrVarString",
@@ -82,6 +106,14 @@
             "var ${1:variableName} bool = ${2:variableValue}"
         ],
         "description" : "Creates a boolean variable in Go using the var keyword"
+    },
+    "Go Create Date Variable": {
+      "prefix": "cotrVarDate",
+      "body": [
+        "// import \"time\"",
+        "var ${1:myDate} = time.Date(${2:year}, time.${3:Month}, ${4:day}, ${5:0}, ${6:0}, ${7:0}, ${8:0}, time.UTC)"
+      ],
+      "description": "Creates a date variable in Go."
     },
     "Go Create List Variable" : {
         "prefix" : "cotrVarList",

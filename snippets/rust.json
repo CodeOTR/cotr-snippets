@@ -44,6 +44,26 @@
     "body": ["false"],
     "description": "The Rust false value."
   },
+  "Rust Date Type": {
+    "prefix": "cotrDate",
+    "body": [
+      "// Rust does not have a built-in Date type.",
+      "// Use the chrono crate for date and time operations.",
+      "use chrono::{DateTime, Utc};"
+    ],
+    "description": "Explains the absence of a built-in Date type in Rust."
+  },  
+  "Rust Date Now": {
+    "prefix": "cotrNow",
+    "body": [
+      "// Rust does not have a built-in Date type.",
+      "// Use the chrono crate to get the current date and time.",
+      "use chrono::Utc;",
+      "",
+      "Utc::now()"
+    ],
+    "description": "Gets the current date and time in Rust using the chrono crate."
+  },  
   "Rust Character Type (char)": {
     "prefix": "cotrChar",
     "body": ["char"],
@@ -64,6 +84,16 @@
     "body": ["let ${1:myVar} = $2;"],
     "description": "Creates a variable in Rust using the let keyword."
   },
+  "Rust Create Typed Variable": {
+    "prefix": "cotrVarTyped",
+    "body": ["let ${1:my_var}: ${2:Type} = $3;"],
+    "description": "Creates a typed variable in Rust."
+  },  
+  "Rust Create Nullable Variable": {
+    "prefix": "cotrVarNullable",
+    "body": ["let ${1:my_var}: Option<${2:Type}> = $3;"],
+    "description": "Creates a nullable variable in Rust using the Option type."
+  },  
   "Rust Create String Variable": {
     "prefix": "cotrVarString",
     "body": ["let ${1:myStr} = String::from(${2:'myString'});"],
@@ -84,6 +114,17 @@
     "body": ["let ${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in Rust."
   },
+  "Rust Create Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": [
+      "// Rust does not have a built-in Date type.",
+      "// Use the chrono crate to create a date variable.",
+      "use chrono::{DateTime, Utc};",
+      "",
+      "let ${1:my_date}: DateTime<Utc> = Utc::now();"
+    ],
+    "description": "Creates a date variable in Rust using the chrono crate."
+  },  
   "Rust Create List Variable": {
     "prefix": "cotrVarList",
     "body": ["let ${1:myList} = vec![$2];"],

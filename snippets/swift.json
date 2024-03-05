@@ -34,6 +34,16 @@
     "body": ["false"],
     "description": "The Swift false value."
   },
+  "Swift Date Type": {
+    "prefix": "cotrDate",
+    "body": ["Date"],
+    "description": "The Swift Date struct."
+  },  
+  "Swift Date Now": {
+    "prefix": "cotrNow",
+    "body": ["Date()"],
+    "description": "Gets the current date and time in Swift."
+  },  
   "Swift Character Type": {
     "prefix": "cotrChar",
     "body": ["Character"],
@@ -49,6 +59,16 @@
     "body": ["var ${1:myVar} = $2;"],
     "description": "Creates a variable in Swift using the var keyword."
   },
+  "Swift Create Typed Variable": {
+    "prefix": "cotrVarTyped",
+    "body": ["var ${1:myVar}: ${2:Type} = $3"],
+    "description": "Creates a typed variable in Swift."
+  },  
+  "Swift Create Nullable Variable": {
+    "prefix": "cotrVarNullable",
+    "body": ["var ${1:myVar}: ${2:Type}? = $3"],
+    "description": "Creates a nullable variable in Swift."
+  },  
   "Swift Create String Variable": {
     "prefix": "cotrVarString",
     "body": ["var ${1:myString} = ${2:'Your string here'};"],
@@ -74,6 +94,13 @@
     "body": ["var ${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in Swift."
   },
+  "Swift Create Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": [
+      "let ${1:myDate} = Date()"
+    ],
+    "description": "Creates a date variable in Swift."
+  },  
   "Swift Create List Variable": {
     "prefix": "cotrVarList",
     "body": ["var ${1:myArray} = [${2:'item1'}, ${3:'item2'}];"],

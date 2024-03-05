@@ -34,6 +34,16 @@
     "body": ["false"],
     "description": "The C# false value."
   },
+  "C# Date Type": {
+    "prefix": "cotrDate",
+    "body": ["DateTime"],
+    "description": "The C# DateTime type."
+  },  
+  "C# Date Now": {
+    "prefix": "cotrNow",
+    "body": ["DateTime.Now"],
+    "description": "The C# DateTime.Now property."
+  },  
   "C# Interpolate String": {
     "prefix": "cotrInterpolate",
     "body": ["$\"${1:Your string here}\""],
@@ -44,6 +54,16 @@
     "body": ["${1:Type} ${2:myVar} = ${3:value};"],
     "description": "Creates a variable in C#."
   },
+  "C# Create Typed Variable": {
+    "prefix": "cotrVarTyped",
+    "body": ["${1:Type} ${2:myVar} = $3;"],
+    "description": "Creates a typed variable in C#."
+  },  
+  "C# Create Nullable Variable": {
+    "prefix": "cotrVarNullable",
+    "body": ["${1:Type}? ${2:myVar} = $3;"],
+    "description": "Creates a nullable variable in C#."
+  },  
   "C# Create String Variable": {
     "prefix": "cotrVarString",
     "body": ["string ${1:myString} = ${2:'Your string here'};"],
@@ -64,6 +84,13 @@
     "body": ["bool ${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in C#."
   },
+  "C# Create Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": [
+      "DateTime ${1:myDate} = new DateTime(${2:year}, ${3:month}, ${4:day});"
+    ],
+    "description": "Creates a date variable in C#."
+  },  
   "C# Create List Variable": {
     "prefix": "cotrVarList",
     "body": ["List<${1:Type}> ${2:myList} = new List<${1:Type}>();"],

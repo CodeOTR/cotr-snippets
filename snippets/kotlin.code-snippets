@@ -55,6 +55,24 @@
 		],
 		"description": "The Kotlin false value."
 	},
+	"Kotlin Date Type": {
+		"prefix": "cotrDate",
+		"scope": "kotlin",
+		"body": [
+		  "import java.time.LocalDate"
+		],
+		"description": "The Kotlin LocalDate class from the java.time package."
+	  },	  
+	  "Kotlin Date Now": {
+		"prefix": "cotrNow",
+		"scope": "kotlin",
+		"body": [
+		  "import java.time.LocalDate",
+		  "",
+		  "val now: LocalDate = LocalDate.now()"
+		],
+		"description": "Gets the current date in Kotlin."
+	  },	  
 	"Kotlin Character Type": {
 		"prefix": "cotrChar",
 		"scope": "kotlin",
@@ -79,6 +97,22 @@
 		],
 		"description": "Creates a variable in Kotlin using the var keyword."
 	},
+	"Kotlin Create Typed Variable": {
+		"prefix": "cotrVarTyped",
+		"scope": "kotlin",
+		"body": [
+		  "var ${1:myVar}: ${2:Type} = $3"
+		],
+		"description": "Creates a typed variable in Kotlin."
+	  },	  
+	  "Kotlin Create Nullable Variable": {
+		"prefix": "cotrVarNullable",
+		"scope": "kotlin",
+		"body": [
+		  "var ${1:myVar}: ${2:Type}? = null"
+		],
+		"description": "Creates a nullable variable in Kotlin."
+	  },	  
 	"Kotlin Create String Variable": {
 		"prefix": "cotrVarString",
 		"scope": "kotlin",
@@ -119,6 +153,16 @@
 		],
 		"description": "Creates a boolean variable in Kotlin using the var keyword."
 	},
+	"Kotlin Create Date Variable": {
+		"prefix": "cotrVarDate",
+		"scope": "kotlin",
+		"body": [
+		  "import java.time.LocalDate",
+		  "",
+		  "val ${1:myDate}: LocalDate = LocalDate.of(${2:year}, ${3:month}, ${4:day})"
+		],
+		"description": "Creates a date variable in Kotlin."
+	  },	  
 	"Kotlin Create List Variable": {
 		"prefix": "cotrVarList",
 		"scope": "kotlin",

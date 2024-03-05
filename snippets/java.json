@@ -1,269 +1,287 @@
 {
-    "Java String Type": {
-      "prefix": "cotrString",
-      "body": ["String"],
-      "description": "The Java String type."
-    },
-    "Java Integer Type": {
-      "prefix": "cotrInt",
-      "body": ["int"],
-      "description": "The Java int type."
-    },
-    "Java Double Type": {
-      "prefix": "cotrNum",
-      "body": ["double"],
-      "description": "The Java double type."
-    },
-    "Java Float Type": {
-      "prefix": "cotrNumAlt",
-      "body": ["float"],
-      "description": "The Java float type."
-    },
-    "Java Boolean Type": {
-      "prefix": "cotrBoolean",
-      "body": ["boolean"],
-      "description": "The Java boolean type."
-    },
-    "Java Boolean True": {
-      "prefix": "cotrBoolTrue",
-      "body": ["true"],
-      "description": "The Java true value."
-    },
-    "Java Boolean False": {
-      "prefix": "cotrBoolFalse",
-      "body": ["false"],
-      "description": "The Java false value."
-    },
-    "Java Interpolate String": {
-      "prefix": "cotrInterpolate",
-      "body": ["String.format(\"${1:%s}\", ${2:value})"],
-      "description": "Interpolates a string in Java."
-    },
-    "Java Create Variable": {
-      "prefix": "cotrVar",
-      "body": ["${1:Type} ${2:myVar} = ${3:value};"],
-      "description": "Creates a variable in Java."
-    },
-    "Java Create String Variable": {
-      "prefix": "cotrVarString",
-      "body": ["String ${1:myString} = ${2:'Your string here'};"],
-      "description": "Creates a string variable in Java."
-    },
-    "Java Create Integer Variable": {
-      "prefix": "cotrVarInt",
-      "body": ["int ${1:myInt} = ${2:0};"],
-      "description": "Creates an integer variable in Java."
-    },
-    "Java Create Double Variable": {
-      "prefix": "cotrVarDouble",
-      "body": ["double ${1:myDouble} = ${2:0.0};"],
-      "description": "Creates a double variable in Java."
-    },
-    "Java Create Boolean Variable": {
-      "prefix": "cotrVarBool",
-      "body": ["boolean ${1:myBool} = ${2:true};"],
-      "description": "Creates a boolean variable in Java."
-    },
-    "Java Create List Variable": {
-      "prefix": "cotrVarList",
-      "body": ["List<${1:Type}> ${2:myList} = new ArrayList<>();"],
-      "description": "Creates a list variable in Java."
-    },
-    "Java Create Map Variable": {
-      "prefix": "cotrVarMap",
-      "body": ["Map<${1:Key}, ${2:Value}> ${3:myMap} = new HashMap<>();"],
-      "description": "Creates a map variable in Java."
-    },
-    "Java Create Constant": {
-      "prefix": "cotrConst",
-      "body": ["final ${1:Type} ${2:myConst} = ${3:value};"],
-      "description": "Creates a constant variable in Java."
-    },
-    "Java Static Variable": {
-      "prefix": "cotrStaticVar",
-      "body": [
-        "static ${2:Type} ${3:myStaticVar} = ${4:value};",
-        "",
-        "// Access the static variable",
-        "// MyClass.${3:myStaticVar}"
-      ],
-      "description": "Creates a static variable in a Java class."
-    },
-    "Java Create Map": {
-      "prefix": "cotrMap",
-      "body": [
-        "Map<${1:Key}, ${2:Value}> ${3:myMap} = new HashMap<>();",
-        "${3:myMap}.put(${4:key}, ${5:value});"
-      ],
-      "description": "Creates a map in Java."
-    },
-    "Java Create List": {
-      "prefix": "cotrList",
-      "body": [
-        "List<${1:Type}> ${2:myList} = new ArrayList<>();",
-        "${2:myList}.add(${3:item});"
-      ],
-      "description": "Creates a list in Java."
-    },
-    "Java Generate List": {
-      "prefix": "cotrGenList",
-      "body": [
-        "List<${1:Type}> ${2:myList} = IntStream.range(0, ${3:length}).mapToObj(i -> ${4:value}).collect(Collectors.toList());"
-      ],
-      "description": "Generates a list of a specific length in Java."
-    },
-    "Java Generate Map": {
-      "prefix": "cotrGenMap",
-      "body": [
-        "Map<${1:Key}, ${2:Value}> ${3:myMap} = IntStream.range(0, ${4:length}).boxed().collect(Collectors.toMap(i -> ${5:key}, i -> ${6:value}));"
-      ],
-      "description": "Generates a map of a specific length in Java."
-    },
-    "Java Print": {
-      "prefix": "cotrPrint",
-      "body": ["System.out.println(${1:'Your message here'});"],
-      "description": "Prints a message to the console in Java."
-    },
-    "Java For Loop": {
-      "prefix": "cotrForLoop",
-      "body": [
-        "for (int ${1:i} = 0; $1 < ${2:10}; $1++) {",
-        "  // Your code here",
-        "}"
-      ],
-      "description": "Creates a for loop that iterates through a set of numbers with the index in Java."
-    },
-    "Java For Each Loop": {
-      "prefix": "cotrForEachLoop",
-      "body": [
-        "for (${1:Type} ${2:item} : ${3:iterable}) {",
-        "  ${4:// Your code here}",
-        "}"
-      ],
-      "description": "Iterates over an iterable object in Java."
-    },
-    "Java While Loop": {
-      "prefix": "cotrWhileLoop",
-      "body": ["while (${1:condition}) {", "  ${2:// Your code here}", "}"],
-      "description": "Creates a while loop in Java."
-    },
-    "Java Do While Loop": {
-      "prefix": "cotrDoWhileLoop",
-      "body": [
-        "do {",
-        "  ${1:// Your code here}",
-        "} while (${2:condition});"
-      ],
-      "description": "Creates a do...while loop in Java."
-    },
-    "Java Switch Statement": {
-      "prefix": "cotrSwitch",
-      "body": [
-        "switch (${1:variable}) {",
-        "  case ${2:value1}:",
-        "    ${3:// Your code here}",
-        "    break;",
-        "  case ${4:value2}:",
-        "    ${5:// Your code here}",
-        "    break;",
-        "  default:",
-        "    ${6:// Your code here}",
-        "}"
-      ],
-      "description": "Creates a switch statement in Java."
-    },
-    "Java Function": {
-      "prefix": "cotrFunc",
-      "body": [
-        "${1:Type} ${2:myFunction}(${3:parameters}) {",
-        "  ${4:// Your code here}",
-        "}"
-      ],
-      "description": "Creates a function in Java."
-    },
-    "Java Comment": {
-      "prefix": "cotrComment",
-      "body": ["// ${1:Your comment here}"],
-      "description": "Creates a single-line comment in Java."
-    },
-    "Java Multi-Line Comment": {
-      "prefix": "cotrMultiComment",
-      "body": ["/*", " * ${1:Your comment here}", " */"],
-      "description": "Creates a multi-line comment in Java."
-    },
-    "Java Throw Exception" : {
-      "prefix": "cotrThrow",
-      "body": [
-        "throw new ${1:Exception}(${2:'Your message here'});"
-      ],
-      "description": "Throws an exception in Java."
-    },
-    "Java Try Catch" : {
-      "prefix": "cotrTryCatch",
-      "body": [
-        "try {",
-        "  ${1:// Your code here}",
-        "} catch (${2:Exception} ${3:e}) {",
-        "  ${4:// Your code here}",
-        "}"
-      ],
-      "description": "Creates a try...catch block in Java."
-    },
-    "Java Enum" : {
-      "prefix": "cotrEnum",
-      "body": [
-        "enum ${1:MyEnum} {",
-        "  ${2:value1},",
-        "  ${3:value2},",
-        "  // Add more values here",
-        "}"
-      ],
-      "description": "Creates an enum in Java."
-    },
-    "Java Class" : {
-      "prefix": "cotrClass",
-      "body": [
-        "public class ${1:MyClass} {",
-        "  ${2:// Your code here}",
-        "}"
-      ],
-      "description": "Creates a class in Java."
-    },
-    "Java If Statement": {
-      "prefix": "cotrIf",
-      "body": [
-        "if (${1:condition}) {",
-        "  ${2:// Your code here}",
-        "}"
-      ],
-      "description": "Creates an if statement in Java."
-    },
-    "Java If Else Statement": {
-      "prefix": "cotrIfElse",
-      "body": [
-        "if (${1:condition}) {",
-        "  ${2:// Your code here}",
-        "} else if (${3:condition}) {",
-        "  ${4:// Your code here}",
-        "} else {",
-        "  ${5:// Your code here}",
-        "}"
-      ],
-      "description": "Creates an if...else statement in Java."
-    },
-    "Java Ternary Operator": {
-      "prefix": "cotrTernary",
-      "body": [
-        "${1:condition} ? ${2:trueValue} : ${3:falseValue}"
-      ],
-      "description": "Creates a ternary operator in Java."
-    },
-    "Java Lambda Function": {
-      "prefix": "cotrLambda",
-      "body": [
-        "(${1:parameters}) -> ${2:expression}"
-      ],
-      "description": "Creates a lambda function in Java."
-    }
+  "Java String Type": {
+    "prefix": "cotrString",
+    "body": ["String"],
+    "description": "The Java String type."
+  },
+  "Java Integer Type": {
+    "prefix": "cotrInt",
+    "body": ["int"],
+    "description": "The Java int type."
+  },
+  "Java Double Type": {
+    "prefix": "cotrNum",
+    "body": ["double"],
+    "description": "The Java double type."
+  },
+  "Java Float Type": {
+    "prefix": "cotrNumAlt",
+    "body": ["float"],
+    "description": "The Java float type."
+  },
+  "Java Boolean Type": {
+    "prefix": "cotrBoolean",
+    "body": ["boolean"],
+    "description": "The Java boolean type."
+  },
+  "Java Boolean True": {
+    "prefix": "cotrBoolTrue",
+    "body": ["true"],
+    "description": "The Java true value."
+  },
+  "Java Boolean False": {
+    "prefix": "cotrBoolFalse",
+    "body": ["false"],
+    "description": "The Java false value."
+  },
+  "Java Date Type": {
+    "prefix": "cotrDate",
+    "body": ["import java.time.LocalDate;"],
+    "description": "The Java LocalDate class from the java.time package."
+  },
+  "Java Date Now": {
+    "prefix": "cotrNow",
+    "body": [
+      "import java.time.LocalDate;",
+      "",
+      "LocalDate now = LocalDate.now();"
+    ],
+    "description": "Gets the current date in Java."
+  },
+  "Java Interpolate String": {
+    "prefix": "cotrInterpolate",
+    "body": ["String.format(\"${1:%s}\", ${2:value})"],
+    "description": "Interpolates a string in Java."
+  },
+  "Java Create Variable": {
+    "prefix": "cotrVar",
+    "body": ["${1:Type} ${2:myVar} = ${3:value};"],
+    "description": "Creates a variable in Java."
+  },
+  "Java Create Typed Variable": {
+    "prefix": "cotrVarTyped",
+    "body": [
+      "${1:Type} ${2:myVar} = $3;"
+    ],
+    "description": "Creates a typed variable in Java."
+  },  
+  "Java Create Nullable Variable": {
+    "prefix": "cotrVarNullable",
+    "body": [
+      "${1:Type} ${2:myVar} = null;"
+    ],
+    "description": "Creates a nullable variable in Java."
+  },  
+  "Java Create String Variable": {
+    "prefix": "cotrVarString",
+    "body": ["String ${1:myString} = ${2:'Your string here'};"],
+    "description": "Creates a string variable in Java."
+  },
+  "Java Create Integer Variable": {
+    "prefix": "cotrVarInt",
+    "body": ["int ${1:myInt} = ${2:0};"],
+    "description": "Creates an integer variable in Java."
+  },
+  "Java Create Double Variable": {
+    "prefix": "cotrVarDouble",
+    "body": ["double ${1:myDouble} = ${2:0.0};"],
+    "description": "Creates a double variable in Java."
+  },
+  "Java Create Boolean Variable": {
+    "prefix": "cotrVarBool",
+    "body": ["boolean ${1:myBool} = ${2:true};"],
+    "description": "Creates a boolean variable in Java."
+  },
+  "Java Create Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": [
+      "import java.time.LocalDate;",
+      "",
+      "LocalDate ${1:myDate} = LocalDate.of(${2:year}, ${3:month}, ${4:day});"
+    ],
+    "description": "Creates a date variable in Java."
+  },
+  "Java Create List Variable": {
+    "prefix": "cotrVarList",
+    "body": ["List<${1:Type}> ${2:myList} = new ArrayList<>();"],
+    "description": "Creates a list variable in Java."
+  },
+  "Java Create Map Variable": {
+    "prefix": "cotrVarMap",
+    "body": ["Map<${1:Key}, ${2:Value}> ${3:myMap} = new HashMap<>();"],
+    "description": "Creates a map variable in Java."
+  },
+  "Java Create Constant": {
+    "prefix": "cotrConst",
+    "body": ["final ${1:Type} ${2:myConst} = ${3:value};"],
+    "description": "Creates a constant variable in Java."
+  },
+  "Java Static Variable": {
+    "prefix": "cotrStaticVar",
+    "body": [
+      "static ${2:Type} ${3:myStaticVar} = ${4:value};",
+      "",
+      "// Access the static variable",
+      "// MyClass.${3:myStaticVar}"
+    ],
+    "description": "Creates a static variable in a Java class."
+  },
+  "Java Create Map": {
+    "prefix": "cotrMap",
+    "body": [
+      "Map<${1:Key}, ${2:Value}> ${3:myMap} = new HashMap<>();",
+      "${3:myMap}.put(${4:key}, ${5:value});"
+    ],
+    "description": "Creates a map in Java."
+  },
+  "Java Create List": {
+    "prefix": "cotrList",
+    "body": [
+      "List<${1:Type}> ${2:myList} = new ArrayList<>();",
+      "${2:myList}.add(${3:item});"
+    ],
+    "description": "Creates a list in Java."
+  },
+  "Java Generate List": {
+    "prefix": "cotrGenList",
+    "body": [
+      "List<${1:Type}> ${2:myList} = IntStream.range(0, ${3:length}).mapToObj(i -> ${4:value}).collect(Collectors.toList());"
+    ],
+    "description": "Generates a list of a specific length in Java."
+  },
+  "Java Generate Map": {
+    "prefix": "cotrGenMap",
+    "body": [
+      "Map<${1:Key}, ${2:Value}> ${3:myMap} = IntStream.range(0, ${4:length}).boxed().collect(Collectors.toMap(i -> ${5:key}, i -> ${6:value}));"
+    ],
+    "description": "Generates a map of a specific length in Java."
+  },
+  "Java Print": {
+    "prefix": "cotrPrint",
+    "body": ["System.out.println(${1:'Your message here'});"],
+    "description": "Prints a message to the console in Java."
+  },
+  "Java For Loop": {
+    "prefix": "cotrForLoop",
+    "body": [
+      "for (int ${1:i} = 0; $1 < ${2:10}; $1++) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Creates a for loop that iterates through a set of numbers with the index in Java."
+  },
+  "Java For Each Loop": {
+    "prefix": "cotrForEachLoop",
+    "body": [
+      "for (${1:Type} ${2:item} : ${3:iterable}) {",
+      "  ${4:// Your code here}",
+      "}"
+    ],
+    "description": "Iterates over an iterable object in Java."
+  },
+  "Java While Loop": {
+    "prefix": "cotrWhileLoop",
+    "body": ["while (${1:condition}) {", "  ${2:// Your code here}", "}"],
+    "description": "Creates a while loop in Java."
+  },
+  "Java Do While Loop": {
+    "prefix": "cotrDoWhileLoop",
+    "body": ["do {", "  ${1:// Your code here}", "} while (${2:condition});"],
+    "description": "Creates a do...while loop in Java."
+  },
+  "Java Switch Statement": {
+    "prefix": "cotrSwitch",
+    "body": [
+      "switch (${1:variable}) {",
+      "  case ${2:value1}:",
+      "    ${3:// Your code here}",
+      "    break;",
+      "  case ${4:value2}:",
+      "    ${5:// Your code here}",
+      "    break;",
+      "  default:",
+      "    ${6:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a switch statement in Java."
+  },
+  "Java Function": {
+    "prefix": "cotrFunc",
+    "body": [
+      "${1:Type} ${2:myFunction}(${3:parameters}) {",
+      "  ${4:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function in Java."
+  },
+  "Java Comment": {
+    "prefix": "cotrComment",
+    "body": ["// ${1:Your comment here}"],
+    "description": "Creates a single-line comment in Java."
+  },
+  "Java Multi-Line Comment": {
+    "prefix": "cotrMultiComment",
+    "body": ["/*", " * ${1:Your comment here}", " */"],
+    "description": "Creates a multi-line comment in Java."
+  },
+  "Java Throw Exception": {
+    "prefix": "cotrThrow",
+    "body": ["throw new ${1:Exception}(${2:'Your message here'});"],
+    "description": "Throws an exception in Java."
+  },
+  "Java Try Catch": {
+    "prefix": "cotrTryCatch",
+    "body": [
+      "try {",
+      "  ${1:// Your code here}",
+      "} catch (${2:Exception} ${3:e}) {",
+      "  ${4:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a try...catch block in Java."
+  },
+  "Java Enum": {
+    "prefix": "cotrEnum",
+    "body": [
+      "enum ${1:MyEnum} {",
+      "  ${2:value1},",
+      "  ${3:value2},",
+      "  // Add more values here",
+      "}"
+    ],
+    "description": "Creates an enum in Java."
+  },
+  "Java Class": {
+    "prefix": "cotrClass",
+    "body": ["public class ${1:MyClass} {", "  ${2:// Your code here}", "}"],
+    "description": "Creates a class in Java."
+  },
+  "Java If Statement": {
+    "prefix": "cotrIf",
+    "body": ["if (${1:condition}) {", "  ${2:// Your code here}", "}"],
+    "description": "Creates an if statement in Java."
+  },
+  "Java If Else Statement": {
+    "prefix": "cotrIfElse",
+    "body": [
+      "if (${1:condition}) {",
+      "  ${2:// Your code here}",
+      "} else if (${3:condition}) {",
+      "  ${4:// Your code here}",
+      "} else {",
+      "  ${5:// Your code here}",
+      "}"
+    ],
+    "description": "Creates an if...else statement in Java."
+  },
+  "Java Ternary Operator": {
+    "prefix": "cotrTernary",
+    "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
+    "description": "Creates a ternary operator in Java."
+  },
+  "Java Lambda Function": {
+    "prefix": "cotrLambda",
+    "body": ["(${1:parameters}) -> ${2:expression}"],
+    "description": "Creates a lambda function in Java."
   }
-  
+}

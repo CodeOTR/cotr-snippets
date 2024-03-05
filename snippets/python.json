@@ -41,6 +41,22 @@
         ],
         "description": "The Python False value."
     },
+	"Python Date Type": {
+		"prefix": "cotrDate",
+		"body": [
+		  "from datetime import datetime"
+		],
+		"description": "The Python datetime type from the datetime module."
+	  },	  
+	  "Python Date Now": {
+		"prefix": "cotrNow",
+		"body": [
+		  "from datetime import datetime",
+		  "",
+		  "now = datetime.now()"
+		],
+		"description": "Gets the current date and time in Python."
+	  },	  
     "Python Null Type": {
         "prefix": "cotrNull",
         "body": [
@@ -76,6 +92,20 @@
 		],
 		"description": "Creates a variable in Python."
 	},
+	"Python Create Typed Variable": {
+		"prefix": "cotrVarTyped",
+		"body": [
+		  "${1:my_var} = $2  # Note: Python is dynamically typed."
+		],
+		"description": "Creates a variable in Python."
+	},	  
+	"Python Create Nullable Variable": {
+		"prefix": "cotrVarNullable",
+		"body": [
+		  "${1:my_var} = None  # Variable can be set to None."
+		],
+		"description": "Creates a nullable variable in Python."
+	  },	  
     "Python Create String Variable" : {
         "prefix": "cotrVarStr",
         "body": [
@@ -104,6 +134,15 @@
         ],
         "description": "Creates a boolean variable in Python."
     },
+	"Python Create Date Variable": {
+		"prefix": "cotrVarDate",
+		"body": [
+		  "from datetime import datetime",
+		  "",
+		  "my_date = datetime(${1:year}, ${2:month}, ${3:day})"
+		],
+		"description": "Creates a date variable in Python."
+	  },	  
 	"Python Create List Variable" : {
 		"prefix": "cotrVarList",
 		"body": [

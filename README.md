@@ -35,11 +35,15 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrBool | The language's boolean data type |
 | cotrBoolTrue | The language's value for true |
 | cotrBoolFalse | The language's value for false |
+| cotrDate | The language's Date data type |
 | cotrNull | The language's null data type |
 | cotrVar | Creates a variable |
+| cotrVarTyped | Creates a statically typed variable |
+| cotrVarNullable | Creates a nullable variable |
 | cotrVarString | Creates a string variable |
 | cotrVarNum | Creates a number variable |
 | cotrVarBool | Creates a boolean variable |
+| cotrVarDate | Creates a date variable |
 | cotrVarList| Creates a list variable |
 | cotrVarMap | Creates a map variable |
 | cotrConst | Creates a constant variable |
