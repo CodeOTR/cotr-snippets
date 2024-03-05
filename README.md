@@ -37,6 +37,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrBoolFalse | The language's value for false |
 | cotrDate | The language's Date data type |
 | cotrNull | The language's null data type |
+| cotrNow | How the language represents the current time |
 | cotrVar | Creates a variable |
 | cotrVarTyped | Creates a statically typed variable |
 | cotrVarNullable | Creates a nullable variable |
