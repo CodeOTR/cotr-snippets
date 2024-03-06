@@ -55,6 +55,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrList | Creates a list/array variable |
 | cotrGenList | Generates a list/array of a specific length |
 | cotrPrint | Creates a print/log statement |
+| cotrPrintMulti | Creates a multi-line print/log statement |
 | cotrForLoop | Creates a for loop |
 | cotrForIn | Creates a for-in/of loop |
 | cotrWhileLoop | Creates a while loop |
