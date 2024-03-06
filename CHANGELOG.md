@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.5
+
+- Add `cotrPrintMulti` snippets
+- Add `cotrDate` snippets
+- Add PHP support
+
 ## 0.0.4
 
 - Add `cotrInterpolate` snippet
