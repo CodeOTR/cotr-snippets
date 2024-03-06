@@ -168,6 +168,17 @@
     "body": ["print(${1:'Your message here'});"],
     "description": "Prints a message to the console in Dart."
   },
+  "Dart Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "print('''",
+      "${1:Line 1}",
+      "${2:Line 2}",
+      "${3:Line 3}",
+      "''');"
+    ],
+    "description": "Prints a multi-line message to the console in Dart."
+  },
   "Dart For Loop": {
     "prefix": "cotrForLoop",
     "body": [

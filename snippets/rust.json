@@ -212,6 +212,19 @@
     "body": ["println!(\"{${1:'Your message here'}}\");"],
     "description": "Prints a message to the console in Rust."
   },
+  "Rust Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "println!(\"{}",
+      "{}",
+      "{}\",",
+      "${1:\"Line 1\"},",
+      "${2:\"Line 2\"},",
+      "${3:\"Line 3\"}",
+      ");"
+    ],
+    "description": "Prints a multi-line message to the console in Rust."
+  },  
   "Rust For Loop": {
     "prefix": "cotrForLoop",
     "body": ["for ${1:i} in ${2:0..10} {", "  // Your code here", "}"],

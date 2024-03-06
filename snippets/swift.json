@@ -170,9 +170,20 @@
   },
   "Swift Print": {
     "prefix": "cotrPrint",
-    "body": ["print(${1:'Your message here'});"],
+    "body": ["print(${1:\"Your message here\"})"],
     "description": "Prints a message to the console in Swift."
   },
+  "Swift Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "print(\"\"\"",
+      "${1:Line 1}",
+      "${2:Line 2}",
+      "${3:Line 3}",
+      "\"\"\")"
+    ],
+    "description": "Prints a multi-line message to the console in Swift."
+  },  
   "Swift For Loop": {
     "prefix": "cotrForLoop",
     "body": ["for ${1:i} in ${2:0..<10} {", "  // Your code here", "}"],

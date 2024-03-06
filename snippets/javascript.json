@@ -170,6 +170,17 @@
     "body": ["console.log(${1:'Your message here'});"],
     "description": "Prints a message to the console in JavaScript."
   },
+  "JavaScript Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "console.log(`",
+      "${1:Line 1}",
+      "${2:Line 2}",
+      "${3:Line 3}",
+      "`);"
+    ],
+    "description": "Prints a multi-line message to the console in JavaScript."
+  },  
   "JavaScript For Loop": {
     "prefix": "cotrForLoop",
     "body": [

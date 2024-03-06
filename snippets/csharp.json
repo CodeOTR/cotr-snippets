@@ -153,6 +153,17 @@
     "body": ["Console.WriteLine(${1:'Your message here'});"],
     "description": "Prints a message to the console in C#."
   },
+  "C# Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "Console.WriteLine(@\"\"\"",
+      "${1:Line 1}",
+      "${2:Line 2}",
+      "${3:Line 3}",
+      "\"\"\");"
+    ],
+    "description": "Prints a multi-line message to the console in C#."
+  },  
   "C# For Loop": {
     "prefix": "cotrForLoop",
     "body": [

@@ -125,6 +125,17 @@
       "body": ["print('${1:Your message here}');"],
       "description": "Prints a message to the console in PHP."
     },
+    "PHP Print Multi": {
+      "prefix": "cotrPrintMulti",
+      "body": [
+        "echo <<<EOT",
+        "${1:Line 1}",
+        "${2:Line 2}",
+        "${3:Line 3}",
+        "EOT;"
+      ],
+      "description": "Prints a multi-line message to the console in PHP."
+    },    
     "PHP For Loop": {
       "prefix": "cotrForLoop",
       "body": [

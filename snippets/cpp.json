@@ -48,7 +48,7 @@
     "prefix": "cotrNow",
     "body": ["std::chrono::system_clock::now()"],
     "description": "Gets the current date and time in C++ using std::chrono."
-  },  
+  },
   "C++ Interpolate String": {
     "prefix": "cotrInterpolateString",
     "body": ["std::string ${1:myString} = \"${2:Your message here}\";"],
@@ -63,12 +63,12 @@
     "prefix": "cotrVarTyped",
     "body": ["${1:Type} ${2:myVar} = $3;"],
     "description": "Creates a typed variable in C++."
-  },  
+  },
   "C++ Create Nullable Variable": {
     "prefix": "cotrVarNullable",
     "body": ["std::optional<${1:Type}> ${2:myVar} = $3;"],
     "description": "Creates a nullable variable in C++ using std::optional."
-  },  
+  },
   "C++ Create Integer Variable": {
     "prefix": "cotrVarInt",
     "body": ["int ${1:myInt} = ${2:value};"],
@@ -118,7 +118,7 @@
       "auto ${1:myDate} = std::chrono::system_clock::now();"
     ],
     "description": "Creates a date variable in C++ using std::chrono."
-  },  
+  },
   "C++ Create Constant": {
     "prefix": "cotrConst",
     "body": ["const ${1:type} ${2:myConst} = ${3:value};"],
@@ -157,8 +157,23 @@
   },
   "C++ Print": {
     "prefix": "cotrPrint",
-    "body": ["std::cout << ${1:'Your message here'} << std::endl;"],
+    "body": [
+      "#include <iostream>",
+      "",
+      "std::cout << ${1:\"Your message here\"} << std::endl;"
+    ],
     "description": "Prints a message to the console in C++."
+  },
+  "C++ Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "#include <iostream>",
+      "",
+      "std::cout << ${1:\"Line 1\"} << std::endl",
+      "          << ${2:\"Line 2\"} << std::endl",
+      "          << ${3:\"Line 3\"} << std::endl;"
+    ],
+    "description": "Prints a multi-line message to the console in C++."
   },
   "C++ For Loop": {
     "prefix": "cotrForLoop",

@@ -182,6 +182,17 @@
         ],
         "description" : "Prints a message to the console in Go"
     },
+    "Go Print Multi": {
+      "prefix": "cotrPrintMulti",
+      "body": [
+        "fmt.Println(`",
+        "${1:Line 1}",
+        "${2:Line 2}",
+        "${3:Line 3}",
+        "`)"
+      ],
+      "description": "Prints a multi-line message to the console in Go."
+    },    
     "Go For Loop" : {
         "prefix" : "cotrForLoop",
         "body" : [

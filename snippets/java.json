@@ -161,6 +161,15 @@
     "body": ["System.out.println(${1:'Your message here'});"],
     "description": "Prints a message to the console in Java."
   },
+  "Java Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "System.out.println(${1:\"Line 1\"} +",
+      "    ${2:\"\\nLine 2\"} +",
+      "    ${3:\"\\nLine 3\"});"
+    ],
+    "description": "Prints a multi-line message to the console in Java."
+  },  
   "Java For Loop": {
     "prefix": "cotrForLoop",
     "body": [

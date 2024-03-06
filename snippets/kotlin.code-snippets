@@ -240,6 +240,18 @@
 		],
 		"description": "Prints a message to the console in Kotlin."
 	},
+	"Kotlin Print Multi": {
+		"prefix": "cotrPrintMulti",
+		"scope": "kotlin",
+		"body": [
+		  "println(\"\"\"",
+		  "${1:Line 1}",
+		  "${2:Line 2}",
+		  "${3:Line 3}",
+		  "\"\"\")"
+		],
+		"description": "Prints a multi-line message to the console in Kotlin."
+	  },	  
 	"Kotlin For Loop": {
 		"prefix": "cotrForLoop",
 		"scope": "kotlin",
