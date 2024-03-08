@@ -1,5 +1,12 @@
 # Change Log
 
+## 0.0.6
+
+- Add `cotrFunc...` snippets
+- Add `cotrTypes` snippet
+- Add `cotrVarStringMulti` snippet
+- Add Ruby support
+
 ## 0.0.5
 
 - Add `cotrPrintMulti` snippets

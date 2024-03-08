@@ -4,7 +4,7 @@
   "publisher": "CodeontheRocks",
   "repository": "https://github.com/CodeOTR/cotr-snippets",
   "description": "Write code in every language",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "icon": "cubes_with_background.png",
   "sponsor": {
     "url": "https://github.com/sponsors/jtmuller5"
@@ -57,7 +57,7 @@
       },
       {
         "language": "kotlin",
-        "path": "./snippets/kotlin.code-snippets"
+        "path": "./snippets/kotlin.json"
       },
       {
         "language": "cpp",
