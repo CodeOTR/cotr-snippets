@@ -325,7 +325,7 @@
 	  "// Kotlin Function Syntax",
 	  "// Basic function: fun functionName(parameters): ReturnType { ... }",
 	  "// Function with arguments: fun functionName(arg1: Type1, arg2: Type2, ...): ReturnType { ... }",
-	  "// Function with named arguments and default values: fun functionName(arg1: Type1 = defaultValue1, arg2: Type2 = defaultValue2, ...): ReturnType { ... }",
+	  "// Function with named arguments and default values: fun functionName(arg1: Type1 = defaultValue1, arg2: Type2 = defaultValue2, ...): ReturnType { ... }"
 	],
 	"description": "Outlines the syntax for functions in Kotlin."
   },  
