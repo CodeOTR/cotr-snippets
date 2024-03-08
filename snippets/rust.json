@@ -1,4 +1,34 @@
 {
+  "Rust Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "Rust is a statically typed language.",
+      "",
+      "Types in Rust include:",
+      "- i8, i16, i32, i64, i128: Signed integers",
+      "- u8, u16, u32, u64, u128: Unsigned integers",
+      "- f32, f64: Floating-point numbers",
+      "- bool: Boolean",
+      "- char: Character",
+      "- str: String slice",
+      "- String: Heap-allocated string",
+      "- &[T]: Slice of type T",
+      "- Vec<T>: Vector of type T",
+      "- Option<T>: Optional value of type T",
+      "- Result<T, E>: Result of a computation that could be successful (T) or an error (E)",
+      "- Box<T>: Boxed (heap-allocated) type T",
+      "- Rc<T>: Reference-counted type T",
+      "- RefCell<T>: Mutable memory location with dynamically checked borrow rules",
+      "- HashMap<K, V>: Hash map with key type K and value type V",
+      "- Tuple (T1, T2, ...): Tuple with elements of different types",
+      "- Array [T; N]: Array with elements of type T and fixed size N",
+      "- Struct: Custom data type with named fields",
+      "- Enum: Custom data type with variants",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists the types in Rust."
+  },  
   "Rust String Type (String)": {
     "prefix": "cotrString",
     "body": ["String"],
@@ -272,7 +302,7 @@
     "description": "Creates a single line comment in Rust."
   },
   "Rust Multi-line Comment": {
-    "prefix": "cotrMultiComment",
+    "prefix": "cotrCommentMulti",
     "body": ["/*", " * ${1:comment}", " */"],
     "description": "Creates a multi-line comment in Rust."
   },

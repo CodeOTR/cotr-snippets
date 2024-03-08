@@ -319,7 +319,7 @@
 		"description": "Creates a single-line comment in Kotlin."
 	},
 	"Kotlin Multi-Line Comment": {
-		"prefix": "cotrMultiComment",
+		"prefix": "cotrCommentMulti",
 		"scope": "kotlin",
 		"body": [
 			"/*",

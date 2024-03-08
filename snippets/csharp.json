@@ -1,4 +1,35 @@
 {
+  "C# Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "C# is a statically typed language.",
+      "",
+      "Types in C# include:",
+      "- int: Integer",
+      "- float: Single-precision floating-point number",
+      "- double: Double-precision floating-point number",
+      "- char: Character",
+      "- bool: Boolean",
+      "- string: String",
+      "- int[]: Array of integers",
+      "- List<int>: List of integers",
+      "- Dictionary<K, V>: Dictionary with key type K and value type V",
+      "- struct MyStruct: Custom value type with named fields",
+      "- enum MyEnum: Enumeration type",
+      "- void: Type representing the absence of a value",
+      "- object: Base type of all other types",
+      "- dynamic: Type for dynamic binding",
+      "- var: Type inferred by the compiler",
+      "- Nullable<T>: Type representing a value of type T or null",
+      "- Tuple<T1, T2, ...>: Tuple with elements of different types",
+      "- Action, Func<T>: Delegate types for methods",
+      "",
+      "Read more here: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists the types in C#."
+  },  
   "C# String Type": {
     "prefix": "cotrString",
     "body": ["string"],
@@ -68,6 +99,17 @@
     "prefix": "cotrVarString",
     "body": ["string ${1:myString} = ${2:'Your string here'};"],
     "description": "Creates a string variable in C#."
+  },
+  "C# Create Multi-Line String Variable": {
+    "prefix": "cotrVarStringMulti",
+    "body": [
+      "string ${1:myString} = @\"\"\"",
+      "${2:Line 1}",
+      "${3:Line 2}",
+      "${4:Line 3}",
+      "\"\"\";"
+    ],
+    "description": "Creates a multi-line string variable in C#."
   },
   "C# Create Integer Variable": {
     "prefix": "cotrVarInt",
@@ -223,7 +265,7 @@
     "description": "Creates a single-line comment in C#."
   },
   "C# Multi-Line Comment": {
-    "prefix": "cotrMultiComment",
+    "prefix": "cotrCommentMulti",
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in C#."
   },

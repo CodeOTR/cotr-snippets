@@ -1,277 +1,285 @@
 {
-    "PHP String Type": {
-      "prefix": "cotrString",
-      "body": ["string"],
-      "description": "The PHP string type."
-    },
-    "PHP Integer Type": {
-      "prefix": "cotrInt",
-      "body": ["int"],
-      "description": "The PHP int type."
-    },
-    "PHP Float Type": {
-      "prefix": "cotrNu",
-      "body": ["float"],
-      "description": "The PHP float type."
-    },
-    "PHP Boolean Type": {
-      "prefix": "cotrBool",
-      "body": ["bool"],
-      "description": "The PHP bool type."
-    },
-    "PHP Boolean True": {
-      "prefix": "cotrBoolTrue",
-      "body": ["true"],
-      "description": "The PHP true value."
-    },
-    "PHP Boolean False": {
-      "prefix": "cotrBoolFalse",
-      "body": ["false"],
-      "description": "The PHP false value."
-    },
-    "PHP Null Type": {
-      "prefix": "cotrNull",
-      "body": ["null"],
-      "description": "The PHP null value."
-    },
-    "PHP Date Type": {
-      "prefix": "cotrDate",
-      "body": ["DateTime"],
-      "description": "The PHP DateTime type."
-    },
-    "PHP Create Variable": {
-      "prefix": "cotrVar",
-      "body": ["$${1:myVar} = $2;"],
-      "description": "Creates a variable in PHP."
-    },
-    "PHP Create Typed Variable": {
-      "prefix": "cotrVarTyped",
-      "body": [
-        "// PHP is a dynamically typed language, which means that by default there is no need to specify the type",
-        "//  of a variable, as this will be determined at runtime.",
-        "//  However, it is possible to statically type some aspect of the language via the use of type declarations.",
-        "${1:Type} $${2:myVar} = $3;"],
-      "description": "Creates a typed variable in PHP."
-    },
-    "PHP Create Nullable Variable": {
-      "prefix": "cotrVarNullable",
-      "body": ["${1:Type}? $${2:myVar} = $3;"],
-      "description": "Creates a nullable variable in PHP."
-    },
-    "PHP Create String Variable": {
-      "prefix": "cotrVarString",
-      "body": ["$${1:myString} = '${2:Your string here}';"],
-      "description": "Creates a string variable in PHP."
-    },
-    "PHP Interpolate String": {
-      "prefix": "cotrInterpolate",
-      "body": ["'Your string here \\${${1:variable}}'"],
-      "description": "Interpolates a variable into a string in PHP."
-    },
-    "PHP Create Integer Variable": {
-      "prefix": "cotrVarInt",
-      "body": ["$${1:myInt} = ${2:0};"],
-      "description": "Creates an integer variable in PHP."
-    },
-    "PHP Create Float Variable": {
-      "prefix": "cotrVarFloat",
-      "body": ["$${1:myFloat} = ${2:0.0};"],
-      "description": "Creates a float variable in PHP."
-    },
-    "PHP Create Boolean Variable": {
-      "prefix": "cotrVarBool",
-      "body": ["$${1:myBool} = ${2:true};"],
-      "description": "Creates a boolean variable in PHP."
-    },
-    "PHP Create Array Variable": {
-      "prefix": "cotrVarList",
-      "body": ["$${1:myArray} = [${2:items}];"],
-      "description": "Creates an array variable in PHP."
-    },
-    "PHP Create Map Variable": {
-      "prefix": "cotrVarMap",
-      "body": ["$${1:myMap} = [${2:key} => ${3:value}];"],
-      "description": "Creates a map variable in PHP."
-    },
-    "PHP Create Date Variable": {
-        "prefix": "cotrVarDate",
-        "body": [
-          "$${1:myDate} = new DateTime('${2:Y-m-d}');"
-        ],
-        "description": "Creates a date variable in PHP."
-      },
-    "PHP Create Constant": {
-      "prefix": "cotrConst",
-      "body": ["const $${1:myConst} = $2;"],
-      "description": "Creates a constant variable in PHP using the const keyword."
-    },
-    "PHP Static Variable": {
-      "prefix": "cotrStaticVar",
-      "body": ["static $${1:myStaticVar} = $2;"],
-      "description": "Creates a static variable in a PHP class."
-    },
-    "PHP Generate Array": {
-      "prefix": "cotrGenList",
-      "body": ["$${1:myArray} = range(${2:0}, ${3:10});"],
-      "description": "Generates an array of a specific length in PHP."
-    },
-    "PHP Generate Map": {
-      "prefix": "cotrGenMap",
-      "body": ["$${1:myMap} = array_combine(range(${2:0}, ${3:10}), range(${4:0}, ${5:10}));"],
-      "description": "Generates a map with a specific number of key-value pairs in PHP."
-    },
-    "PHP Print": {
-      "prefix": "cotrPrint",
-      "body": ["print('${1:Your message here}');"],
-      "description": "Prints a message to the console in PHP."
-    },
-    "PHP Print Multi": {
-      "prefix": "cotrPrintMulti",
-      "body": [
-        "echo <<<EOT",
-        "${1:Line 1}",
-        "${2:Line 2}",
-        "${3:Line 3}",
-        "EOT;"
-      ],
-      "description": "Prints a multi-line message to the console in PHP."
-    },    
-    "PHP For Loop": {
-      "prefix": "cotrForLoop",
-      "body": [
-        "for ($${1:i} = 0; $1 < ${2:10}; $1++) {",
-        "  // Your code here",
-        "}"
-      ],
-      "description": "Creates a for loop that iterates through a set of numbers with the index in PHP."
-    },
-    "PHP For Each Loop": {
-      "prefix": "cotrForEachLoop",
-      "body": [
-        "foreach ($${1:iterable} as $${2:item}) {",
-        "  ${3:// Your code here}",
-        "}"
-      ],
-      "description": "Iterates over an iterable object in PHP."
-    },
-    "PHP While Loop": {
-      "prefix": "cotrWhileLoop",
-      "body": ["while ($${1:condition}) {", "  ${2:// Your code here}", "}"],
-      "description": "Creates a while loop in PHP."
-    },
-    "PHP Do While Loop": {
-      "prefix": "cotrDoWhileLoop",
-      "body": [
-        "do {",
-        "  ${1:// Your code here}",
-        "} while ($${2:condition});"
-      ],
-      "description": "Creates a do...while loop in PHP."
-    },
-    "PHP Switch Statement": {
-      "prefix": "cotrSwitch",
-      "body": [
-        "switch ($${1:variable}) {",
-        "  case ${2:value1}:",
-        "    ${3:// Your code here}",
-        "    break;",
-        "  case ${4:value2}:",
-        "    ${5:// Your code here}",
-        "    break;",
-        "  default:",
-        "    ${6:// Your code here}",
-        "}"
-      ],
-      "description": "Creates a switch statement in PHP."
-    },
-    "PHP Function": {
-      "prefix": "cotrFunc",
-      "body": [
-        "${1:function} ${2:myFunction}(${3:parameters}) {",
-        "  ${4:// Your code here}",
-        "}"
-      ],
-      "description": "Creates a function in PHP."
-    },
-    "PHP Comment": {
-      "prefix": "cotrComment",
-      "body": ["// ${1:Your comment here}"],
-      "description": "Creates a single-line comment in PHP."
-    },
-    "PHP Multi-Line Comment": {
-      "prefix": "cotrMultiComment",
-      "body": ["/*", " * ${1:Your comment here}", " */"],
-      "description": "Creates a multi-line comment in PHP."
-    },
-    "PHP Throw Exception": {
-      "prefix": "cotrThrow",
-      "body": ["throw new ${1:Exception}('${2:Your message here}');"],
-      "description": "Throws an exception in PHP."
-    },
-    "PHP Try Catch": {
-      "prefix": "cotrTryCatch",
-      "body": [
-        "try {",
-        "  ${1:// Your code here}",
-        "} catch (${2:Exception} $${3:e}) {",
-        "  ${4:// Your code here}",
-        "}"
-      ],
-      "description": "Creates a try...catch block in PHP."
-    },
-    "PHP Class": {
-      "prefix": "cotrClass",
-      "body": [
-        "class ${1:MyClass} {",
-        "  ${2:// Your code here}",
-        "}"
-      ],
-      "description": "Creates a class in PHP."
-    },
-    "PHP Enum": {
-      "prefix": "cotrEnum",
-      "body": [
-        "abstract class ${1:MyEnum} {",
-        "  const ${2:VALUE1} = ${3:0};",
-        "  const ${4:VALUE2} = ${5:1};",
-        "  // Add more values here",
-        "}"
-      ],
-      "description": "Creates an enum in PHP."
-    },
-    "PHP If Statement": {
-      "prefix": "cotrIf",
-      "body": [
-        "if (${1:condition}) {",
-        "  ${2:// Your code here}",
-        "}"
-      ],
-      "description": "Creates an if statement in PHP."
-    },
-    "PHP If Else Statement": {
-      "prefix": "cotrIfElse",
-      "body": [
-        "if (${1:condition}) {",
-        "  ${2:// Your code here}",
-        "} else {",
-        "  ${3:// Your code here}",
-        "}"
-      ],
-      "description": "Creates an if...else statement in PHP."
-    },
-    "PHP Ternary Operator": {
-      "prefix": "cotrTernary",
-      "body": [
-        "${1:condition} ? ${2:trueValue} : ${3:falseValue}"
-      ],
-      "description": "Creates a ternary operator in PHP."
-    },
-    "PHP Lambda Function": {
-      "prefix": "cotrLambda",
-      "body": [
-        "function (${1:parameters}) => ${2:expression}"
-      ],
-      "description": "Creates a lambda function in PHP."
-    }
+  "PHP Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "PHP is a dynamically typed language.",
+      "",
+      "Types in PHP include:",
+      "- int: Integer",
+      "- float: Floating-point number",
+      "- string: A sequence of characters",
+      "- bool: Boolean",
+      "- array: An ordered map",
+      "- object: An instance of a class",
+      "- resource: Holds a reference to an external resource",
+      "- NULL: Represents a variable with no value",
+      "- callable: A type that can be called, such as a function or a method",
+      "- iterable: A type that can be iterated over, such as an array or an object implementing the Traversable interface",
+      "- mixed: Indicates that a parameter may accept multiple (but not all) types",
+      "- void: Indicates that a function does not return a value",
+      "- never: Indicates that a function does not return normally (it either throws an exception or terminates the script)",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists all types in PHP."
+  },
+  "PHP String Type": {
+    "prefix": "cotrString",
+    "body": ["string"],
+    "description": "The PHP string type."
+  },
+  "PHP Integer Type": {
+    "prefix": "cotrInt",
+    "body": ["int"],
+    "description": "The PHP int type."
+  },
+  "PHP Float Type": {
+    "prefix": "cotrNu",
+    "body": ["float"],
+    "description": "The PHP float type."
+  },
+  "PHP Boolean Type": {
+    "prefix": "cotrBool",
+    "body": ["bool"],
+    "description": "The PHP bool type."
+  },
+  "PHP Boolean True": {
+    "prefix": "cotrBoolTrue",
+    "body": ["true"],
+    "description": "The PHP true value."
+  },
+  "PHP Boolean False": {
+    "prefix": "cotrBoolFalse",
+    "body": ["false"],
+    "description": "The PHP false value."
+  },
+  "PHP Null Type": {
+    "prefix": "cotrNull",
+    "body": ["null"],
+    "description": "The PHP null value."
+  },
+  "PHP Date Type": {
+    "prefix": "cotrDate",
+    "body": ["DateTime"],
+    "description": "The PHP DateTime type."
+  },
+  "PHP Create Variable": {
+    "prefix": "cotrVar",
+    "body": ["$${1:myVar} = $2;"],
+    "description": "Creates a variable in PHP."
+  },
+  "PHP Create Typed Variable": {
+    "prefix": "cotrVarTyped",
+    "body": [
+      "// PHP is a dynamically typed language, which means that by default there is no need to specify the type",
+      "//  of a variable, as this will be determined at runtime.",
+      "//  However, it is possible to statically type some aspect of the language via the use of type declarations.",
+      "${1:Type} $${2:myVar} = $3;"
+    ],
+    "description": "Creates a typed variable in PHP."
+  },
+  "PHP Create Nullable Variable": {
+    "prefix": "cotrVarNullable",
+    "body": ["${1:Type}? $${2:myVar} = $3;"],
+    "description": "Creates a nullable variable in PHP."
+  },
+  "PHP Create String Variable": {
+    "prefix": "cotrVarString",
+    "body": ["$${1:myString} = '${2:Your string here}';"],
+    "description": "Creates a string variable in PHP."
+  },
+  "PHP Interpolate String": {
+    "prefix": "cotrInterpolate",
+    "body": ["'Your string here \\${${1:variable}}'"],
+    "description": "Interpolates a variable into a string in PHP."
+  },
+  "PHP Create Integer Variable": {
+    "prefix": "cotrVarInt",
+    "body": ["$${1:myInt} = ${2:0};"],
+    "description": "Creates an integer variable in PHP."
+  },
+  "PHP Create Float Variable": {
+    "prefix": "cotrVarFloat",
+    "body": ["$${1:myFloat} = ${2:0.0};"],
+    "description": "Creates a float variable in PHP."
+  },
+  "PHP Create Boolean Variable": {
+    "prefix": "cotrVarBool",
+    "body": ["$${1:myBool} = ${2:true};"],
+    "description": "Creates a boolean variable in PHP."
+  },
+  "PHP Create Array Variable": {
+    "prefix": "cotrVarList",
+    "body": ["$${1:myArray} = [${2:items}];"],
+    "description": "Creates an array variable in PHP."
+  },
+  "PHP Create Map Variable": {
+    "prefix": "cotrVarMap",
+    "body": ["$${1:myMap} = [${2:key} => ${3:value}];"],
+    "description": "Creates a map variable in PHP."
+  },
+  "PHP Create Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": ["$${1:myDate} = new DateTime('${2:Y-m-d}');"],
+    "description": "Creates a date variable in PHP."
+  },
+  "PHP Create Constant": {
+    "prefix": "cotrConst",
+    "body": ["const $${1:myConst} = $2;"],
+    "description": "Creates a constant variable in PHP using the const keyword."
+  },
+  "PHP Static Variable": {
+    "prefix": "cotrStaticVar",
+    "body": ["static $${1:myStaticVar} = $2;"],
+    "description": "Creates a static variable in a PHP class."
+  },
+  "PHP Generate Array": {
+    "prefix": "cotrGenList",
+    "body": ["$${1:myArray} = range(${2:0}, ${3:10});"],
+    "description": "Generates an array of a specific length in PHP."
+  },
+  "PHP Generate Map": {
+    "prefix": "cotrGenMap",
+    "body": [
+      "$${1:myMap} = array_combine(range(${2:0}, ${3:10}), range(${4:0}, ${5:10}));"
+    ],
+    "description": "Generates a map with a specific number of key-value pairs in PHP."
+  },
+  "PHP Print": {
+    "prefix": "cotrPrint",
+    "body": ["print('${1:Your message here}');"],
+    "description": "Prints a message to the console in PHP."
+  },
+  "PHP Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "echo <<<EOT",
+      "${1:Line 1}",
+      "${2:Line 2}",
+      "${3:Line 3}",
+      "EOT;"
+    ],
+    "description": "Prints a multi-line message to the console in PHP."
+  },
+  "PHP For Loop": {
+    "prefix": "cotrForLoop",
+    "body": [
+      "for ($${1:i} = 0; $1 < ${2:10}; $1++) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Creates a for loop that iterates through a set of numbers with the index in PHP."
+  },
+  "PHP For Each Loop": {
+    "prefix": "cotrForEachLoop",
+    "body": [
+      "foreach ($${1:iterable} as $${2:item}) {",
+      "  ${3:// Your code here}",
+      "}"
+    ],
+    "description": "Iterates over an iterable object in PHP."
+  },
+  "PHP While Loop": {
+    "prefix": "cotrWhileLoop",
+    "body": ["while ($${1:condition}) {", "  ${2:// Your code here}", "}"],
+    "description": "Creates a while loop in PHP."
+  },
+  "PHP Do While Loop": {
+    "prefix": "cotrDoWhileLoop",
+    "body": ["do {", "  ${1:// Your code here}", "} while ($${2:condition});"],
+    "description": "Creates a do...while loop in PHP."
+  },
+  "PHP Switch Statement": {
+    "prefix": "cotrSwitch",
+    "body": [
+      "switch ($${1:variable}) {",
+      "  case ${2:value1}:",
+      "    ${3:// Your code here}",
+      "    break;",
+      "  case ${4:value2}:",
+      "    ${5:// Your code here}",
+      "    break;",
+      "  default:",
+      "    ${6:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a switch statement in PHP."
+  },
+  "PHP Function": {
+    "prefix": "cotrFunc",
+    "body": [
+      "${1:function} ${2:myFunction}(${3:parameters}) {",
+      "  ${4:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function in PHP."
+  },
+  "PHP Comment": {
+    "prefix": "cotrComment",
+    "body": ["// ${1:Your comment here}"],
+    "description": "Creates a single-line comment in PHP."
+  },
+  "PHP Multi-Line Comment": {
+    "prefix": "cotrCommentMulti",
+    "body": ["/*", " * ${1:Your comment here}", " */"],
+    "description": "Creates a multi-line comment in PHP."
+  },
+  "PHP Throw Exception": {
+    "prefix": "cotrThrow",
+    "body": ["throw new ${1:Exception}('${2:Your message here}');"],
+    "description": "Throws an exception in PHP."
+  },
+  "PHP Try Catch": {
+    "prefix": "cotrTryCatch",
+    "body": [
+      "try {",
+      "  ${1:// Your code here}",
+      "} catch (${2:Exception} $${3:e}) {",
+      "  ${4:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a try...catch block in PHP."
+  },
+  "PHP Class": {
+    "prefix": "cotrClass",
+    "body": ["class ${1:MyClass} {", "  ${2:// Your code here}", "}"],
+    "description": "Creates a class in PHP."
+  },
+  "PHP Enum": {
+    "prefix": "cotrEnum",
+    "body": [
+      "abstract class ${1:MyEnum} {",
+      "  const ${2:VALUE1} = ${3:0};",
+      "  const ${4:VALUE2} = ${5:1};",
+      "  // Add more values here",
+      "}"
+    ],
+    "description": "Creates an enum in PHP."
+  },
+  "PHP If Statement": {
+    "prefix": "cotrIf",
+    "body": ["if (${1:condition}) {", "  ${2:// Your code here}", "}"],
+    "description": "Creates an if statement in PHP."
+  },
+  "PHP If Else Statement": {
+    "prefix": "cotrIfElse",
+    "body": [
+      "if (${1:condition}) {",
+      "  ${2:// Your code here}",
+      "} else {",
+      "  ${3:// Your code here}",
+      "}"
+    ],
+    "description": "Creates an if...else statement in PHP."
+  },
+  "PHP Ternary Operator": {
+    "prefix": "cotrTernary",
+    "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
+    "description": "Creates a ternary operator in PHP."
+  },
+  "PHP Lambda Function": {
+    "prefix": "cotrLambda",
+    "body": ["function (${1:parameters}) => ${2:expression}"],
+    "description": "Creates a lambda function in PHP."
   }
-  
+}

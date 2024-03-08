@@ -74,6 +74,10 @@
       {
         "language": "csharp",
         "path": "./snippets/csharp.json"
+      },
+      {
+        "language": "ruby",
+        "path": "./snippets/ruby.json"
       }
     ]
   }

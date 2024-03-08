@@ -229,7 +229,7 @@
     "description": "Creates a single-line comment in Java."
   },
   "Java Multi-Line Comment": {
-    "prefix": "cotrMultiComment",
+    "prefix": "cotrCommentMulti",
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in Java."
   },

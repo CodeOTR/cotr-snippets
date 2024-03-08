@@ -1,4 +1,32 @@
 {
+  "C++ Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "C++ is a statically typed language.",
+      "",
+      "Types in C++ include:",
+      "- int: Integer",
+      "- float: Single-precision floating-point number",
+      "- double: Double-precision floating-point number",
+      "- char: Character",
+      "- bool: Boolean",
+      "- std::string: String class from the Standard Library",
+      "- int[10]: Array of integers with size 10",
+      "- std::vector<int>: Vector of integers from the Standard Library",
+      "- std::map<K, V>: Map (associative array) from the Standard Library",
+      "- struct MyStruct: Custom data structure with named fields",
+      "- enum MyEnum: Enumeration type",
+      "- void: Type representing the absence of a value",
+      "- auto: Type inferred by the compiler",
+      "- nullptr: Type of the null pointer",
+      "- decltype: Type specifier for the type of an expression",
+      "",
+      "Read more here: https://learn.microsoft.com/en-us/cpp/cpp/fundamental-types-cpp?view=msvc-170",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists the types in C++."
+  },  
   "C++ String Type": {
     "prefix": "cotrString",
     "body": ["std::string"],
@@ -93,6 +121,11 @@
     "prefix": "cotrVarString",
     "body": ["std::string ${1:myString} = ${2:value};"],
     "description": "Creates a string variable in C++."
+  },
+  "C++ Create Multi-Line String Variable": {
+    "prefix": "cotrVarStringMulti",
+    "body": ["std::string ${1:myString} = R\"(${2:Your multi-line message here})\";"],
+    "description": "Creates a multi-line string variable in C++."
   },
   "C++ Create List Variable": {
     "prefix": "cotrVarList",
@@ -234,7 +267,7 @@
     "description": "Creates a single-line comment in C++."
   },
   "C++ Multi-Line Comment": {
-    "prefix": "cotrMultiComment",
+    "prefix": "cotrCommentMulti",
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in C++."
   },

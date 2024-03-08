@@ -253,7 +253,7 @@
 		"description": "Creates a single-line comment in Go"
 	},
 	"Go Multi-line Comment": {
-		"prefix": "cotrMultiComment",
+		"prefix": "cotrCommentMulti",
 		"body": [
 			"/*",
 			" * ${1:comment}",

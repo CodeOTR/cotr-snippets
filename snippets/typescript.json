@@ -1,4 +1,27 @@
 {
+  "TypeScript Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "TypeScript is a statically typed language.",
+      "",
+      "Types in TypeScript include:",
+      "- number: Numeric data type",
+      "- string: Textual data type",
+      "- boolean: True or false value",
+      "- array: Array of values",
+      "- tuple: Fixed-length array of values",
+      "- enum: Enumeration of named values",
+      "- any: Any data type",
+      "- void: Absence of a value",
+      "- null: Null value",
+      "- undefined: Undefined value",
+      "- never: Represents values that never occur",
+      "- object: Non-primitive data type",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Prints out all the basic types in TypeScript."
+  },  
   "TypeScript String Type": {
     "prefix": "cotrString",
     "body": ["string"],
@@ -231,7 +254,7 @@
     "description": "Creates a single-line comment in TypeScript."
   },
   "TypeScript Multi-Line Comment": {
-    "prefix": "cotrMultiComment",
+    "prefix": "cotrCommentMulti",
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in TypeScript."
   },

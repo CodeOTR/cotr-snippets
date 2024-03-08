@@ -1,4 +1,28 @@
 {
+  "Dart Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "Dart is a statically typed language.",
+      "",
+      "Types in Dart include:",
+      "- num: A number type that can be either an int or a double",
+      "- int: Integer",
+      "- BigInt: Arbitrary-precision integer",
+      "- double: Double-precision floating-point number",
+      "- String: A sequence of characters",
+      "- bool: Boolean",
+      "- List: A list of elements",
+      "- Map: A collection of key-value pairs",
+      "- Set: A collection of unique elements",
+      "- Runes: For expressing Unicode characters in a String",
+      "- Symbol: An opaque, dynamic representation of a string in Dart",
+      "",
+      "Read more here: https://dart.dev/language/built-in-types",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Prints out all the basic types in Dart."
+  },  
   "Dart String Type": {
     "prefix": "cotrString",
     "body": ["String"],
@@ -79,6 +103,11 @@
     "body": ["String ${1:myString} = ${2:'Your string here'};"],
     "description": "Creates a string variable in Dart."
   },
+  "Dart Create Multiline String Variable": {
+    "prefix": "cotrVarStringMulti",
+    "body": ["String ${1:myString} = '''", "${2:Your string here}", "''';"],
+    "description": "Creates a multi-line string variable in Dart."
+  },
   "Dart Create Integer Variable": {
     "prefix": "cotrVarInt",
     "body": ["int ${1:myInt} = ${2:0};"],
@@ -106,7 +135,9 @@
   },
   "Dart Create Date Variable": {
     "prefix": "cotrVarDate",
-    "body": ["DateTime ${1:myDate} = DateTime(${2:year}, ${3:month}, ${4:day});"],
+    "body": [
+      "DateTime ${1:myDate} = DateTime(${2:year}, ${3:month}, ${4:day});"
+    ],
     "description": "Creates a date variable in Dart."
   },
   "Dart Create Constant": {
@@ -170,13 +201,7 @@
   },
   "Dart Print Multi": {
     "prefix": "cotrPrintMulti",
-    "body": [
-      "print('''",
-      "${1:Line 1}",
-      "${2:Line 2}",
-      "${3:Line 3}",
-      "''');"
-    ],
+    "body": ["print('''", "${1:Line 1}", "${2:Line 2}", "${3:Line 3}", "''');"],
     "description": "Prints a multi-line message to the console in Dart."
   },
   "Dart For Loop": {
@@ -233,18 +258,16 @@
     "description": "Creates a single-line comment in Dart."
   },
   "Dart Multi-Line Comment": {
-    "prefix": "cotrMultiComment",
+    "prefix": "cotrCommentMulti",
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in Dart."
   },
-  "Dart Throw Exception" : {
+  "Dart Throw Exception": {
     "prefix": "cotrThrow",
-    "body": [
-      "throw ${1:Exception('Your message here')};"
-    ],
+    "body": ["throw ${1:Exception('Your message here')};"],
     "description": "Throws an exception in Dart."
   },
-  "Dart Try Catch" : {
+  "Dart Try Catch": {
     "prefix": "cotrTryCatch",
     "body": [
       "try {",
@@ -255,7 +278,7 @@
     ],
     "description": "Creates a try...catch block in Dart."
   },
-  "Dart Enum" : {
+  "Dart Enum": {
     "prefix": "cotrEnum",
     "body": [
       "enum ${1:MyEnum} {",
@@ -266,22 +289,14 @@
     ],
     "description": "Creates an enum in Dart."
   },
-  "Dart Class" : {
+  "Dart Class": {
     "prefix": "cotrClass",
-    "body": [
-      "class ${1:MyClass} {",
-      "  ${2:// Your code here}",
-      "}"
-    ],
+    "body": ["class ${1:MyClass} {", "  ${2:// Your code here}", "}"],
     "description": "Creates a class in Dart."
   },
   "Dart If Statement": {
     "prefix": "cotrIf",
-    "body": [
-      "if (${1:condition}) {",
-      "  ${2:// Your code here}",
-      "}"
-    ],
+    "body": ["if (${1:condition}) {", "  ${2:// Your code here}", "}"],
     "description": "Creates an if statement in Dart."
   },
   "Dart If Else Statement": {
@@ -299,16 +314,12 @@
   },
   "Dart Ternary Operator": {
     "prefix": "cotrTernary",
-    "body": [
-      "${1:condition} ? ${2:trueValue} : ${3:falseValue}"
-    ],
+    "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in Dart."
   },
   "Dart Lambda Function": {
     "prefix": "cotrLambda",
-    "body": [
-      "(${1:parameters}) => ${2:expression}"
-    ],
+    "body": ["(${1:parameters}) => ${2:expression}"],
     "description": "Creates a lambda function in Dart."
   }
 }

@@ -25,11 +25,13 @@ Its very simple, actually. Every supported language implements all snippets in a
 - [C#](https://dotnet.microsoft.com/en-us/languages/csharp)
 - [Java](https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html)
 - [PHP](https://www.php.net/)
+- [Ruby](https://www.ruby-lang.org/en/)
 
 ## Snippets
 
 | Name | Description |
 | --- | --- |
+| cotrTypes | The language's data types |
 | cotrString | The language's string data type |
 | cotrInt | The language's integer data type |
 | cotrNum | The language's numerical data type |
@@ -63,7 +65,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrFunc | Creates a function |
 | cotrLambda | Creates a lambda function |
 | cotrComment | Creates a single-line comment |
-| cotrMultiComment | Creates a multi-line comment |
+| cotrCommentMulti | Creates a multi-line comment |
 | cotrThrow | Throws an exception |
 | cotrTryCatch | Creates a try-catch block |
 | cotrIf | Creates an if statement |

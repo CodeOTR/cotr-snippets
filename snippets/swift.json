@@ -1,4 +1,32 @@
 {
+  "Swift Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "Swift is a statically typed language.",
+      "",
+      "Types in Swift include:",
+      "- Int, UInt: Signed and unsigned integers",
+      "- Float, Double: Floating-point numbers",
+      "- Bool: Boolean",
+      "- String: Textual data",
+      "- Character: A single character",
+      "- Array<Element>: An ordered collection of elements",
+      "- Dictionary<Key, Value>: A collection of key-value pairs",
+      "- Set<Element>: An unordered collection of unique elements",
+      "- Optional<Type>: An optional value of Type",
+      "- Tuple: A group of values",
+      "- Enum: An enumeration",
+      "- Struct: A structure",
+      "- Class: A class",
+      "- Protocol: A protocol",
+      "- Closure: A closure or lambda function",
+      "",
+      "Read more here: https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists the types in Swift."
+  },  
   "Swift String Type": {
     "prefix": "cotrString",
     "body": ["String"],
@@ -234,7 +262,7 @@
     "description": "Creates a single-line comment in Swift."
   },
   "Swift Multi-Line Comment": {
-    "prefix": "cotrMultiComment",
+    "prefix": "cotrCommentMulti",
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in Swift."
   },

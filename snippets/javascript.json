@@ -1,4 +1,23 @@
 {
+  "JavaScript Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "JavaScript is a dynamically typed language. It does not have static types.",
+      "However, it has several built-in types:",
+      "- Number: for both integers and floating-point numbers",
+      "- String: for text",
+      "- Boolean: for true/false values",
+      "- Object: for key-value pairs",
+      "- Array: for ordered lists",
+      "- Function: for executable functions",
+      "- Symbol: for unique identifiers",
+      "- null: for absence of value",
+      "- undefined: for uninitialized variables",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Explains that JavaScript is dynamically typed and lists its built-in types."
+  },  
   "JavaScript String Type": {
     "prefix": "cotrString",
     "body": ["let text = \"John Doe\";"],
@@ -235,7 +254,7 @@
     "description": "Creates a single-line comment in JavaScript."
   },
   "JavaScript Multi-Line Comment": {
-    "prefix": "cotrMultiComment",
+    "prefix": "cotrCommentMulti",
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in JavaScript."
   },
