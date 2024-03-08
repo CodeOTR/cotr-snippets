@@ -88,6 +88,15 @@
     "body": ["$${1:myString} = '${2:Your string here}';"],
     "description": "Creates a string variable in PHP."
   },
+  "PHP Create Multi-Line String Variable": {
+    "prefix": "cotrVarMultiString",
+    "body": [
+      "$${1:myString} = <<<EOT",
+      "${2:Your string here}",
+      "EOT;"
+    ],
+    "description": "Creates a multi-line string variable in PHP."
+  },
   "PHP Interpolate String": {
     "prefix": "cotrInterpolate",
     "body": ["'Your string here \\${${1:variable}}'"],
@@ -208,12 +217,38 @@
   "PHP Function": {
     "prefix": "cotrFunc",
     "body": [
-      "${1:function} ${2:myFunction}(${3:parameters}) {",
+      "function ${2:myFunction}(${3:parameters}) {",
       "  ${4:// Your code here}",
       "}"
     ],
     "description": "Creates a function in PHP."
-  },
+  },  
+  "PHP Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "function ${2:myFunction}(${3:$arg1}, ${4:$arg2}) {",
+      "  ${5:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in PHP."
+  },  
+  "PHP Function Named Args": {
+    "prefix": "cotrFuncNamedArgs",
+    "body": [
+      "// Note: PHP does not support named arguments in function definitions."
+    ],
+    "description": "Note about named arguments in PHP."
+  },  
+  "PHP Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "// PHP Function Syntax",
+      "// Basic function: function functionName(parameters) { ... }",
+      "// Function with arguments: function functionName($arg1, $arg2, ...) { ... }",
+      "// Note: PHP does not support named arguments in function definitions."
+    ],
+    "description": "Outlines the syntax for functions in PHP."
+  },  
   "PHP Comment": {
     "prefix": "cotrComment",
     "body": ["// ${1:Your comment here}"],

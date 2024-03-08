@@ -1,4 +1,32 @@
 {
+  "Ruby Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "Ruby is a dynamically typed language.",
+      "",
+      "Some common types in Ruby include:",
+      "- Integer: Integer",
+      "- Float: Floating-point number",
+      "- String: String",
+      "- Symbol: Symbol",
+      "- Array: Array",
+      "- Hash: Hash (associative array)",
+      "- Range: Range",
+      "- Regexp: Regular expression",
+      "- TrueClass, FalseClass: Boolean values",
+      "- NilClass: Represents the absence of a value",
+      "- Proc: Block of code (lambda, proc)",
+      "- Method: Method object",
+      "- Class, Module: Class and module objects",
+      "- Time: Time object",
+      "- File: File object",
+      "- IO: Input/output stream",
+      "- Exception: Base class for exceptions",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists some common types in Ruby."
+  },
   "Ruby String Type": {
     "prefix": "cotrString",
     "body": ["String"],
@@ -200,11 +228,39 @@
     "prefix": "cotrFunc",
     "body": [
       "def ${2:my_function}(${3:parameters})",
-      "  # Your code here",
+      "  ${4:# Your code here}",
       "end"
     ],
     "description": "Creates a function in Ruby."
-  },
+  },  
+  "Ruby Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "def ${2:my_function}(${3:arg1}, ${4:arg2})",
+      "  ${5:# Your code here}",
+      "end"
+    ],
+    "description": "Creates a function with arguments in Ruby."
+  },  
+  "Ruby Function Named Args": {
+    "prefix": "cotrFuncNamedArgs",
+    "body": [
+      "def ${2:my_function}(${3:arg1}: ${4:value1}, ${5:arg2}: ${6:value2})",
+      "  ${7:# Your code here}",
+      "end"
+    ],
+    "description": "Creates a function with named arguments in Ruby."
+  },  
+  "Ruby Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "# Ruby Function Syntax",
+      "# Basic function: def function_name(parameters) ... end",
+      "# Function with arguments: def function_name(arg1, arg2, ...) ... end",
+      "# Function with named arguments: def function_name(arg1: value1, arg2: value2, ...) ... end"
+    ],
+    "description": "Outlines the syntax for functions in Ruby."
+  },  
   "Ruby Comment": {
     "prefix": "cotrComment",
     "body": ["# ${1:Your comment here}"],

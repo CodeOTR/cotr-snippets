@@ -1,4 +1,31 @@
 {
+  "Java Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "Java is a statically typed language.",
+      "",
+      "Types in Java include:",
+      "- int: Integer",
+      "- float: Single-precision floating-point number",
+      "- double: Double-precision floating-point number",
+      "- char: Character",
+      "- boolean: Boolean",
+      "- String: String",
+      "- int[]: Array of integers",
+      "- ArrayList<Integer>: List of integers",
+      "- HashMap<K, V>: Map with key type K and value type V",
+      "- MyCustomClass: Custom class with named fields",
+      "- enum MyEnum: Enumeration type",
+      "- void: Type representing the absence of a value",
+      "- Object: Base type of all other types",
+      "- List<T>: Interface for lists in the Collections framework",
+      "- Set<T>: Interface for sets in the Collections framework",
+      "- Map<K, V>: Interface for maps in the Collections framework",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists the types in Java."
+  },
   "Java String Type": {
     "prefix": "cotrString",
     "body": ["String"],
@@ -60,22 +87,28 @@
   },
   "Java Create Typed Variable": {
     "prefix": "cotrVarTyped",
-    "body": [
-      "${1:Type} ${2:myVar} = $3;"
-    ],
+    "body": ["${1:Type} ${2:myVar} = $3;"],
     "description": "Creates a typed variable in Java."
-  },  
+  },
   "Java Create Nullable Variable": {
     "prefix": "cotrVarNullable",
-    "body": [
-      "${1:Type} ${2:myVar} = null;"
-    ],
+    "body": ["${1:Type} ${2:myVar} = null;"],
     "description": "Creates a nullable variable in Java."
-  },  
+  },
   "Java Create String Variable": {
     "prefix": "cotrVarString",
     "body": ["String ${1:myString} = ${2:'Your string here'};"],
     "description": "Creates a string variable in Java."
+  },
+  "Java Create Multi-Line String Variable": {
+    "prefix": "cotrVarMultiString",
+    "body": [
+      "String ${1:myString} =",
+      "    \"${2:Line 1}\" +",
+      "    \"\\n${3:Line 2}\" +",
+      "    \"\\n${4:Line 3}\";"
+    ],
+    "description": "Creates a multi-line string variable in Java."
   },
   "Java Create Integer Variable": {
     "prefix": "cotrVarInt",
@@ -169,7 +202,7 @@
       "    ${3:\"\\nLine 3\"});"
     ],
     "description": "Prints a multi-line message to the console in Java."
-  },  
+  },
   "Java For Loop": {
     "prefix": "cotrForLoop",
     "body": [
@@ -217,11 +250,37 @@
   "Java Function": {
     "prefix": "cotrFunc",
     "body": [
-      "${1:Type} ${2:myFunction}(${3:parameters}) {",
-      "  ${4:// Your code here}",
+      "public ${1:void} ${2:myFunction}(${3:parameters}) {",
+      "    ${4:// Your code here}",
       "}"
     ],
     "description": "Creates a function in Java."
+  },
+  "Java Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "public ${1:void} ${2:myFunction}(${3:type1} ${4:arg1}, ${5:type2} ${6:arg2}) {",
+      "    ${7:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in Java."
+  },
+  "Java Function Named Args": {
+    "prefix": "cotrFuncNamedArgs",
+    "body": [
+      "// Note: Java does not support named arguments in function definitions."
+    ],
+    "description": "Note about named arguments in Java."
+  },
+  "Java Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "// Java Function Syntax",
+      "// Basic function: public returnType functionName(parameters) { ... }",
+      "// Function with arguments: public returnType functionName(argType argName, ...) { ... }",
+      "// Note: Java does not support named arguments in function definitions."
+    ],
+    "description": "Outlines the syntax for functions in Java."
   },
   "Java Comment": {
     "prefix": "cotrComment",

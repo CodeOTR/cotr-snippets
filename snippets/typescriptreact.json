@@ -246,6 +246,34 @@
     ],
     "description": "Creates a function in TypeScript."
   },
+  "TypeScript Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "function ${2:myFunction}(${3:arg1}: ${4:type1}, ${5:arg2}: ${6:type2}): ${1:void} {",
+      "  ${7:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in TypeScript."
+  },
+  "TypeScript Function Named Args": {
+    "prefix": "cotrFuncNamedArgs",
+    "body": [
+      "function ${2:myFunction}({${3:arg1}, ${4:arg2}}: {${3:arg1}: ${5:type1}, ${4:arg2}: ${6:type2}}): ${1:void} {",
+      "  ${7:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with named arguments in TypeScript."
+  },
+  "TypeScript Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "// TypeScript Function Syntax",
+      "// Basic function: function functionName(parameters): ReturnType { ... }",
+      "// Function with arguments: function functionName(arg1: Type1, arg2: Type2, ...): ReturnType { ... }",
+      "// Function with named arguments: function functionName({arg1, arg2, ...}: {arg1: Type1, arg2: Type2, ...}): ReturnType { ... }"
+    ],
+    "description": "Outlines the syntax for functions in TypeScript."
+  },
   "TSX Comment": {
     "prefix": "cotrComment",
     "body": ["{/* ${1:Your comment here} */}"],

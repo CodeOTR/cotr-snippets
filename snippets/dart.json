@@ -22,7 +22,7 @@
       "$BLOCK_COMMENT_END"
     ],
     "description": "Prints out all the basic types in Dart."
-  },  
+  },
   "Dart String Type": {
     "prefix": "cotrString",
     "body": ["String"],
@@ -251,7 +251,35 @@
       "}"
     ],
     "description": "Creates a function in Dart."
+  },  
+  "Dart Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "${1:void} ${2:myFunction}(${3:Type} ${4:arg1}, ${5:Type} ${6:arg2}) {",
+      "  ${7:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in Dart."
   },
+  "Dart Function Named Args": {
+    "prefix": "cotrFuncNamedArgs",
+    "body": [
+      "${1:void} ${2:myFunction}({${3:arg1}, ${4:arg2}}) {",
+      "  ${5:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with named arguments in Dart."
+  },
+  "Dart Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "// Dart Function Syntax",
+      "// Basic function: returnType functionName(parameters) { ... }",
+      "// Function with arguments: returnType functionName(arg1Type arg1, arg2Type arg2, ...) { ... }",
+      "// Function with named arguments: returnType functionName({arg1Type arg1, arg2Type arg2, ...}) { ... }"
+    ],
+    "description": "Outlines the syntax for functions in Dart."
+  },  
   "Dart Comment": {
     "prefix": "cotrComment",
     "body": ["// ${1:Your comment here}"],

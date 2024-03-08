@@ -21,7 +21,7 @@
       "$BLOCK_COMMENT_END"
     ],
     "description": "Prints out all the basic types in TypeScript."
-  },  
+  },
   "TypeScript String Type": {
     "prefix": "cotrString",
     "body": ["string"],
@@ -73,19 +73,30 @@
     "description": "Creates a variable in TypeScript using the let keyword."
   },
   "TypeScript Create Typed Variable": {
-	"prefix": "cotrVarTyped",
-	"body": ["let ${1:myVar}: ${2:Type} = $3;"],
-	"description": "Creates a typed variable in TypeScript."
-  },  
+    "prefix": "cotrVarTyped",
+    "body": ["let ${1:myVar}: ${2:Type} = $3;"],
+    "description": "Creates a typed variable in TypeScript."
+  },
   "TypeScript Create Nullable Variable": {
-	"prefix": "cotrVarNullable",
-	"body": ["let ${1:myVar}: ${2:Type} | null = $3;"],
-	"description": "Creates a nullable variable in TypeScript."
-  },  
+    "prefix": "cotrVarNullable",
+    "body": ["let ${1:myVar}: ${2:Type} | null = $3;"],
+    "description": "Creates a nullable variable in TypeScript."
+  },
   "TypeScript Create String Variable": {
     "prefix": "cotrVarString",
     "body": ["let ${1:myString}: string = ${2:'myValue'};"],
     "description": "Creates a string variable in TypeScript."
+  },
+  "TypeScript Create Multi-Line String Variable": {
+    "prefix": "cotrVarStringMulti",
+    "body": [
+      "let ${1:myString}: string = `",
+      "${2:Line 1}",
+      "${3:Line 2}",
+      "${4:Line 3}",
+      "`;"
+    ],
+    "description": "Creates a multi-line string variable in TypeScript."
   },
   "TypeScript Create Number Variable": {
     "prefix": "cotrVarNumber",
@@ -199,7 +210,7 @@
       "`);"
     ],
     "description": "Prints a multi-line message to the console in TypeScript."
-  },  
+  },
   "TypeScript For Loop": {
     "prefix": "cotrForLoop",
     "body": [
@@ -247,6 +258,34 @@
       "}"
     ],
     "description": "Creates a function in TypeScript."
+  },
+  "TypeScript Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "function ${2:myFunction}(${3:arg1}: ${4:type1}, ${5:arg2}: ${6:type2}): ${1:void} {",
+      "  ${7:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in TypeScript."
+  },
+  "TypeScript Function Named Args": {
+    "prefix": "cotrFuncNamedArgs",
+    "body": [
+      "function ${2:myFunction}({${3:arg1}, ${4:arg2}}: {${3:arg1}: ${5:type1}, ${4:arg2}: ${6:type2}}): ${1:void} {",
+      "  ${7:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with named arguments in TypeScript."
+  },
+  "TypeScript Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "// TypeScript Function Syntax",
+      "// Basic function: function functionName(parameters): ReturnType { ... }",
+      "// Function with arguments: function functionName(arg1: Type1, arg2: Type2, ...): ReturnType { ... }",
+      "// Function with named arguments: function functionName({arg1, arg2, ...}: {arg1: Type1, arg2: Type2, ...}): ReturnType { ... }"
+    ],
+    "description": "Outlines the syntax for functions in TypeScript."
   },
   "TypeScript Comment": {
     "prefix": "cotrComment",

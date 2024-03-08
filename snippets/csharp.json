@@ -253,12 +253,45 @@
   "C# Function": {
     "prefix": "cotrFunc",
     "body": [
-      "${1:Type} ${2:myFunction}(${3:parameters}) {",
-      "  ${4:// Your code here}",
+      "public ${1:void} ${2:MyFunction}(${3:parameters})",
+      "{",
+      "    ${4:// Your code here}",
       "}"
     ],
     "description": "Creates a function in C#."
-  },
+  },  
+  "C# Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "public ${1:void} ${2:MyFunction}(${3:type1} ${4:arg1}, ${5:type2} ${6:arg2})",
+      "{",
+      "    ${7:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in C#."
+  },  
+  "C# Function Named Args": {
+    "prefix": "cotrFuncNamedArgs",
+    "body": [
+      "// Note: C# does not have named arguments in function definitions.",
+      "// You can use named parameters in method calls.",
+      "public ${1:void} ${2:MyFunction}(${3:type1} ${4:arg1}, ${5:type2} ${6:arg2})",
+      "{",
+      "    ${7:// Your code here}",
+      "}"
+    ],
+    "description": "Note about named arguments in C#."
+  },  
+  "C# Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "// C# Function Syntax",
+      "// Basic function: public returnType FunctionName(parameters) { ... }",
+      "// Function with arguments: public returnType FunctionName(argType argName, ...) { ... }",
+      "// Named parameters in method calls: FunctionName(argName: value, ...);"
+    ],
+    "description": "Outlines the syntax for functions in C#."
+  },  
   "C# Comment": {
     "prefix": "cotrComment",
     "body": ["// ${1:Your comment here}"],

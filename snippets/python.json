@@ -1,301 +1,286 @@
 {
-	"Python String Type" : {
-		"prefix": "cotrString",
-		"body": [
-			"str"
-		],
-		"description": "The Python string type."
-	},
-	"Python Integer Type": {
-		"prefix": "cotrInt",
-		"body": [
-			"int"
-		],
-		"description": "The Python int type."
-	},
-	"Python Float Type": {
-		"prefix": "cotrNum",
-		"body": [
-			"float"
-		],
-		"description": "The Python float type."
-	},
-	"Python Boolean Type": {
-		"prefix": "cotrBool",
-		"body": [
-			"bool"
-		],
-		"description": "The Python bool type."
-	},
-    "Python Boolean True": {
-        "prefix": "cotrBoolTrue",
-        "body": [
-            "True"
-        ],
-        "description": "The Python True value."
-    },
-    "Python Boolean False": {
-        "prefix": "cotrBoolFalse",
-        "body": [
-            "False"
-        ],
-        "description": "The Python False value."
-    },
-	"Python Date Type": {
-		"prefix": "cotrDate",
-		"body": [
-		  "from datetime import datetime"
-		],
-		"description": "The Python datetime type from the datetime module."
-	  },	  
-	  "Python Date Now": {
-		"prefix": "cotrNow",
-		"body": [
-		  "from datetime import datetime",
-		  "",
-		  "now = datetime.now()"
-		],
-		"description": "Gets the current date and time in Python."
-	  },	  
-    "Python Null Type": {
-        "prefix": "cotrNull",
-        "body": [
-            "None"
-        ],
-        "description": "The Python None type."
-    },
-	"Python List Type": {
-		"prefix": "cotrList",
-		"body": [
-			"list"
-		],
-		"description": "The Python list type."
-	},
-	"Python Dictionary Type": {
-		"prefix": "cotrMap",
-		"body": [
-			"dict"
-		],
-		"description": "The Python dictionary type."
-	},
-	"Python Interpolate String": {
-		"prefix": "cotrInterpolate",
-		"body": [
-			"f\"${1:Your message here}\""
-		],
-		"description": "Interpolates a string in Python."
-	},
-	"Python Create Variable" : {
-		"prefix": "cotrVar",
-		"body": [
-			"${1:myVar} = ${2:value}"
-		],
-		"description": "Creates a variable in Python."
-	},
-	"Python Create Typed Variable": {
-		"prefix": "cotrVarTyped",
-		"body": [
-		  "${1:my_var} = $2  # Note: Python is dynamically typed."
-		],
-		"description": "Creates a variable in Python."
-	},	  
-	"Python Create Nullable Variable": {
-		"prefix": "cotrVarNullable",
-		"body": [
-		  "${1:my_var} = None  # Variable can be set to None."
-		],
-		"description": "Creates a nullable variable in Python."
-	  },	  
-    "Python Create String Variable" : {
-        "prefix": "cotrVarStr",
-        "body": [
-            "${1:myString} = ${2:''}"
-        ],
-        "description": "Creates a string variable in Python."
-    },
-    "Python Create Integer Variable" : {
-        "prefix": "cotrVarNum",
-        "body": [
-            "${1:myInt} = ${2:0}"
-        ],
-        "description": "Creates an integer variable in Python."
-    },
-    "Python Create Float Variable" : {
-        "prefix": "cotrVarNumAlt",
-        "body": [
-            "${1:myFloat} = ${2:0.0}"
-        ],
-        "description": "Creates a float variable in Python."
-    },
-    "Python Create Boolean Variable" : {
-        "prefix": "cotrVarBool",
-        "body": [
-            "${1:myBool} = ${2:True}"
-        ],
-        "description": "Creates a boolean variable in Python."
-    },
-	"Python Create Date Variable": {
-		"prefix": "cotrVarDate",
-		"body": [
-		  "from datetime import datetime",
-		  "",
-		  "my_date = datetime(${1:year}, ${2:month}, ${3:day})"
-		],
-		"description": "Creates a date variable in Python."
-	  },	  
-	"Python Create List Variable" : {
-		"prefix": "cotrVarList",
-		"body": [
-			"${1:myList} = [${2:1}, ${3:2}, ${4:3}]"
-		],
-		"description": "Creates a list variable in Python."
-	},
-	"Python Create Dictionary Variable" : {
-		"prefix": "cotrVarMap",
-		"body": [
-			"${1:myDict} = {${2:key1}: ${3:value1}, ${4:key2}: ${5:value2}}"
-		],
-		"description": "Creates a dictionary variable in Python."
-	},
-	"Python Create Constant" : {
-		"prefix": "cotrConst",
-		"body": [
-			"${1:MY_CONST} = ${2:value}"
-		],
-		"description": "Creates a constant variable in Python."
-	},
-	"Python Print" : {
-		"prefix": "cotrPrint",
-		"body": [
-			"print(${1:'Your message here'})"
-		],
-		"description": "Prints a message to the console in Python."
-	},
-	"Python Print Multi": {
-		"prefix": "cotrPrintMulti",
-		"body": [
-		  "print('''",
-		  "${1:Line 1}",
-		  "${2:Line 2}",
-		  "${3:Line 3}",
-		  "''')"
-		],
-		"description": "Prints a multi-line message to the console in Python."
-	  },	  
-	"Python For Loop" : {
-		"prefix": "cotrForLoop",
-		"body": [
-			"for ${1:i} in range(${2:10}):",
-			"  # Your code here"
-		],
-		"description": "Creates a for loop that iterates through a set of numbers with the index in Python."
-	},
-	"Python For...In Loop" : {
-		"prefix": "cotrForInLoop",
-		"body": [
-			"for ${1:item} in ${2:iterable}:",
-			"  # Your code here"
-		],
-		"description": "Iterates over an iterable object in Python."
-	},
-	"Python While Loop" : {
-		"prefix": "cotrWhileLoop",
-		"body": [
-			"while ${1:condition}:",
-			"  # Your code here"
-		],
-		"description": "Creates a while loop in Python."
-	},
-	"Python If Statement" : {
-		"prefix": "cotrIf",
-		"body": [
-			"if ${1:condition}:",
-			"  # Your code here"
-		],
-		"description": "Creates an if statement in Python."
-	},
-	"Python If Else Statement" : {
-		"prefix": "cotrIfElse",
-		"body": [
-			"if ${1:condition}:",
-			"  # Your code here",
-			"else:",
-			"  # Your code here"
-		],
-		"description": "Creates an if...else statement in Python."
-	},
-	"Python Ternary Operator" : {
-		"prefix": "cotrTernary",
-		"body": [
-			"${1:trueValue} if ${2:condition} else ${3:falseValue}"
-		],
-		"description": "Creates a ternary operator in Python."
-	},
-	"Python Function" : {
-		"prefix": "cotrFunc",
-		"body": [
-			"def ${1:myFunction}(${2:parameters}):",
-			"  # Your code here"
-		],
-		"description": "Creates a function in Python."
-	},
-	"Python Comment" : {
-		"prefix": "cotrComment",
-		"body": [
-			"# ${1:Your comment here}"
-		],
-		"description": "Creates a single-line comment in Python."
-	},
-	"Python Multi-Line Comment" : {
-		"prefix": "cotrCommentMulti",
-		"body": [
-			"'''",
-			"${1:Your comment here}",
-			"'''"
-		],
-		"description": "Creates a multi-line comment in Python."
-	},
-	"Python Throw Exception" : {
-		"prefix": "cotrThrow",
-		"body": [
-			"raise ${1:Exception('Your message here')}"
-		],
-		"description": "Throws an exception in Python."
-	},
-	"Python Try Except" : {
-		"prefix": "cotrTryCatch",
-		"body": [
-			"try:",
-			"  # Your code here",
-			"except ${1:Exception} as ${2:e}:",
-			"  # Your code here"
-		],
-		"description": "Creates a try...except block in Python."
-	},
-	"Python Class" : {
-		"prefix": "cotrClass",
-		"body": [
-			"class ${1:MyClass}:",
-			"  # Your code here"
-		],
-		"description": "Creates a class in Python."
-	},
-	"Python Enum" : {
-		"prefix": "cotrEnum",
-		"body": [
-			"class ${1:MyEnum}(Enum):",
-			"  ${2:value1} = ${3:1}",
-			"  ${4:value2} = ${5:2}",
-			"  # Add more values here"
-		],
-		"description": "Creates an enum in Python."
-	},
-	"Python Lambda Function" : {
-		"prefix": "cotrLambda",
-		"body": [
-			"${1:myLambda} = lambda ${2:parameters}: ${3:returnValue}"
-		],
-		"description": "Creates a lambda function in Python."
-	}
+  "Python Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "Python is a dynamically typed language.",
+      "",
+      "Some common types in Python include:",
+      "- int: Integer",
+      "- float: Floating-point number",
+      "- complex: Complex number",
+      "- str: String",
+      "- bool: Boolean",
+      "- list: List",
+      "- tuple: Tuple",
+      "- set: Set",
+      "- dict: Dictionary",
+      "- NoneType: Represents the absence of a value",
+      "- bytes: Byte sequence",
+      "- bytearray: Mutable byte sequence",
+      "- memoryview: Memory view object",
+      "- range: Range object",
+      "- frozenset: Immutable set",
+      "- object: Base class for all Python classes",
+      "- function: Function object",
+      "- type: Type object",
+      "- class: Custom class defined by the user",
+      "- module: Module object",
+      "- file: File object",
+      "- Exception: Base class for all exceptions",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists some common types in Python."
+  },
+  "Python String Type": {
+    "prefix": "cotrString",
+    "body": ["str"],
+    "description": "The Python string type."
+  },
+  "Python Integer Type": {
+    "prefix": "cotrInt",
+    "body": ["int"],
+    "description": "The Python int type."
+  },
+  "Python Float Type": {
+    "prefix": "cotrNum",
+    "body": ["float"],
+    "description": "The Python float type."
+  },
+  "Python Boolean Type": {
+    "prefix": "cotrBool",
+    "body": ["bool"],
+    "description": "The Python bool type."
+  },
+  "Python Boolean True": {
+    "prefix": "cotrBoolTrue",
+    "body": ["True"],
+    "description": "The Python True value."
+  },
+  "Python Boolean False": {
+    "prefix": "cotrBoolFalse",
+    "body": ["False"],
+    "description": "The Python False value."
+  },
+  "Python Date Type": {
+    "prefix": "cotrDate",
+    "body": ["from datetime import datetime"],
+    "description": "The Python datetime type from the datetime module."
+  },
+  "Python Date Now": {
+    "prefix": "cotrNow",
+    "body": ["from datetime import datetime", "", "now = datetime.now()"],
+    "description": "Gets the current date and time in Python."
+  },
+  "Python Null Type": {
+    "prefix": "cotrNull",
+    "body": ["None"],
+    "description": "The Python None type."
+  },
+  "Python List Type": {
+    "prefix": "cotrList",
+    "body": ["list"],
+    "description": "The Python list type."
+  },
+  "Python Dictionary Type": {
+    "prefix": "cotrMap",
+    "body": ["dict"],
+    "description": "The Python dictionary type."
+  },
+  "Python Interpolate String": {
+    "prefix": "cotrInterpolate",
+    "body": ["f\"${1:Your message here}\""],
+    "description": "Interpolates a string in Python."
+  },
+  "Python Create Variable": {
+    "prefix": "cotrVar",
+    "body": ["${1:myVar} = ${2:value}"],
+    "description": "Creates a variable in Python."
+  },
+  "Python Create Typed Variable": {
+    "prefix": "cotrVarTyped",
+    "body": ["${1:my_var} = $2  # Note: Python is dynamically typed."],
+    "description": "Creates a variable in Python."
+  },
+  "Python Create Nullable Variable": {
+    "prefix": "cotrVarNullable",
+    "body": ["${1:my_var} = None  # Variable can be set to None."],
+    "description": "Creates a nullable variable in Python."
+  },
+  "Python Create String Variable": {
+    "prefix": "cotrVarString",
+    "body": ["${1:myString} = ${2:''}"],
+    "description": "Creates a string variable in Python."
+  },
+  "Python Create Multi-Line String Variable": {
+	"prefix": "cotrVarStringMulti",
+	"body": ["${1:myString} = '''", "${2:Line 1}", "${3:Line 2}", "${4:Line 3}", "'''"],
+	"description": "Creates a multi-line string variable in Python."
+  },
+  "Python Create Integer Variable": {
+    "prefix": "cotrVarNum",
+    "body": ["${1:myInt} = ${2:0}"],
+    "description": "Creates an integer variable in Python."
+  },
+  "Python Create Float Variable": {
+    "prefix": "cotrVarNumAlt",
+    "body": ["${1:myFloat} = ${2:0.0}"],
+    "description": "Creates a float variable in Python."
+  },
+  "Python Create Boolean Variable": {
+    "prefix": "cotrVarBool",
+    "body": ["${1:myBool} = ${2:True}"],
+    "description": "Creates a boolean variable in Python."
+  },
+  "Python Create Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": [
+      "from datetime import datetime",
+      "",
+      "my_date = datetime(${1:year}, ${2:month}, ${3:day})"
+    ],
+    "description": "Creates a date variable in Python."
+  },
+  "Python Create List Variable": {
+    "prefix": "cotrVarList",
+    "body": ["${1:myList} = [${2:1}, ${3:2}, ${4:3}]"],
+    "description": "Creates a list variable in Python."
+  },
+  "Python Create Dictionary Variable": {
+    "prefix": "cotrVarMap",
+    "body": ["${1:myDict} = {${2:key1}: ${3:value1}, ${4:key2}: ${5:value2}}"],
+    "description": "Creates a dictionary variable in Python."
+  },
+  "Python Create Constant": {
+    "prefix": "cotrConst",
+    "body": ["${1:MY_CONST} = ${2:value}"],
+    "description": "Creates a constant variable in Python."
+  },
+  "Python Print": {
+    "prefix": "cotrPrint",
+    "body": ["print(${1:'Your message here'})"],
+    "description": "Prints a message to the console in Python."
+  },
+  "Python Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": ["print('''", "${1:Line 1}", "${2:Line 2}", "${3:Line 3}", "''')"],
+    "description": "Prints a multi-line message to the console in Python."
+  },
+  "Python For Loop": {
+    "prefix": "cotrForLoop",
+    "body": ["for ${1:i} in range(${2:10}):", "  # Your code here"],
+    "description": "Creates a for loop that iterates through a set of numbers with the index in Python."
+  },
+  "Python For...In Loop": {
+    "prefix": "cotrForInLoop",
+    "body": ["for ${1:item} in ${2:iterable}:", "  # Your code here"],
+    "description": "Iterates over an iterable object in Python."
+  },
+  "Python While Loop": {
+    "prefix": "cotrWhileLoop",
+    "body": ["while ${1:condition}:", "  # Your code here"],
+    "description": "Creates a while loop in Python."
+  },
+  "Python If Statement": {
+    "prefix": "cotrIf",
+    "body": ["if ${1:condition}:", "  # Your code here"],
+    "description": "Creates an if statement in Python."
+  },
+  "Python If Else Statement": {
+    "prefix": "cotrIfElse",
+    "body": [
+      "if ${1:condition}:",
+      "  # Your code here",
+      "else:",
+      "  # Your code here"
+    ],
+    "description": "Creates an if...else statement in Python."
+  },
+  "Python Ternary Operator": {
+    "prefix": "cotrTernary",
+    "body": ["${1:trueValue} if ${2:condition} else ${3:falseValue}"],
+    "description": "Creates a ternary operator in Python."
+  },
+  "Python Function": {
+    "prefix": "cotrFunc",
+    "body": [
+      "def ${2:my_function}(${3:parameters}):",
+      "    ${4:# Your code here}",
+      ""
+    ],
+    "description": "Creates a function in Python."
+  },
+  "Python Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "def ${2:my_function}(${3:arg1}, ${4:arg2}):",
+      "    ${5:# Your code here}",
+      ""
+    ],
+    "description": "Creates a function with arguments in Python."
+  },
+  "Python Function Named Args": {
+    "prefix": "cotrFuncNamedArgs",
+    "body": [
+      "def ${2:my_function}(*, ${3:arg1}=${4:value1}, ${5:arg2}=${6:value2}):",
+      "    ${7:# Your code here}",
+      ""
+    ],
+    "description": "Creates a function with named arguments in Python."
+  },
+  "Python Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "# Python Function Syntax",
+      "# Basic function: def function_name(parameters): ...",
+      "# Function with arguments: def function_name(arg1, arg2, ...): ...",
+      "# Function with named arguments: def function_name(*, arg1=value1, arg2=value2, ...): ..."
+    ],
+    "description": "Outlines the syntax for functions in Python."
+  },
+  "Python Comment": {
+    "prefix": "cotrComment",
+    "body": ["# ${1:Your comment here}"],
+    "description": "Creates a single-line comment in Python."
+  },
+  "Python Multi-Line Comment": {
+    "prefix": "cotrCommentMulti",
+    "body": ["'''", "${1:Your comment here}", "'''"],
+    "description": "Creates a multi-line comment in Python."
+  },
+  "Python Throw Exception": {
+    "prefix": "cotrThrow",
+    "body": ["raise ${1:Exception('Your message here')}"],
+    "description": "Throws an exception in Python."
+  },
+  "Python Try Except": {
+    "prefix": "cotrTryCatch",
+    "body": [
+      "try:",
+      "  # Your code here",
+      "except ${1:Exception} as ${2:e}:",
+      "  # Your code here"
+    ],
+    "description": "Creates a try...except block in Python."
+  },
+  "Python Class": {
+    "prefix": "cotrClass",
+    "body": ["class ${1:MyClass}:", "  # Your code here"],
+    "description": "Creates a class in Python."
+  },
+  "Python Enum": {
+    "prefix": "cotrEnum",
+    "body": [
+      "class ${1:MyEnum}(Enum):",
+      "  ${2:value1} = ${3:1}",
+      "  ${4:value2} = ${5:2}",
+      "  # Add more values here"
+    ],
+    "description": "Creates an enum in Python."
+  },
+  "Python Lambda Function": {
+    "prefix": "cotrLambda",
+    "body": ["${1:myLambda} = lambda ${2:parameters}: ${3:returnValue}"],
+    "description": "Creates a lambda function in Python."
+  }
 }
-	  

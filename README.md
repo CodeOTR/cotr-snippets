@@ -45,6 +45,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrVarTyped | Creates a statically typed variable |
 | cotrVarNullable | Creates a nullable variable |
 | cotrVarString | Creates a string variable |
+| cotrVarStringMulti | Creates a multi-line string variable |
 | cotrVarNum | Creates a number variable |
 | cotrVarBool | Creates a boolean variable |
 | cotrVarDate | Creates a date variable |
@@ -63,6 +64,9 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrWhileLoop | Creates a while loop |
 | cotrSwitch | Creates a switch stament with default |
 | cotrFunc | Creates a function |
+| cotrFuncArgs | Creates a function with arguments |
+| cotrFuncNamedArgs | Creates a function with named arguments |
+| cotrFuncSyntax | Outputs the basic syntax for a function |
 | cotrLambda | Creates a lambda function |
 | cotrComment | Creates a single-line comment |
 | cotrCommentMulti | Creates a multi-line comment |
@@ -71,3 +75,5 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrIf | Creates an if statement |
 | cotrIfElse | Creates an if-else statement |
 | cotrTernary | Creates a ternary statement |
+
+> If a language does not support the snippet, a comment will be added to the file indicating that the snippet is not supported. Additional resources may also be provided.

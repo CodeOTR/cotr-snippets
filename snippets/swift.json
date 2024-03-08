@@ -102,6 +102,17 @@
     "body": ["var ${1:myString} = ${2:'Your string here'};"],
     "description": "Creates a string variable in Swift."
   },
+  "Swift Create Multi-Line String Variable": {
+    "prefix": "cotrVarStringMulti",
+    "body": [
+      "var ${1:myString} = \"\"\"",
+      "${2:Line 1}",
+      "${3:Line 2}",
+      "${4:Line 3}",
+      "\"\"\";"
+    ],
+    "description": "Creates a multi-line string variable in Swift."
+  },
   "Swift Create Integer Variable": {
     "prefix": "cotrVarInt",
     "body": ["var ${1:myInt} = ${2:0};"],
@@ -250,12 +261,40 @@
   "Swift Function": {
     "prefix": "cotrFunc",
     "body": [
-      "func ${1:myFunction}(${2:parameters}) -> ${3:ReturnType} {",
-      "  ${4:// Your code here}",
+      "func ${2:myFunction}(${3:parameters}) -> ${1:Void} {",
+      "    ${4:// Your code here}",
       "}"
     ],
     "description": "Creates a function in Swift."
-  },
+  }, 
+  "Swift Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "func ${2:myFunction}(${3:arg1}: ${4:Type1}, ${5:arg2}: ${6:Type2}) -> ${1:Void} {",
+      "    ${7:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in Swift."
+  },   
+  "Swift Function Named Args": {
+    "prefix": "cotrFuncNamedArgs",
+    "body": [
+      "func ${2:myFunction}(${3:arg1Name} ${3:arg1}: ${4:Type1}, ${5:arg2Name} ${5:arg2}: ${6:Type2}) -> ${1:Void} {",
+      "    ${7:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with named arguments in Swift."
+  },  
+  "Swift Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "// Swift Function Syntax",
+      "// Basic function: func functionName(parameters) -> ReturnType { ... }",
+      "// Function with arguments: func functionName(arg1: Type1, arg2: Type2, ...) -> ReturnType { ... }",
+      "// Function with named arguments: func functionName(arg1Name arg1: Type1, arg2Name arg2: Type2, ...) -> ReturnType { ... }"
+    ],
+    "description": "Outlines the syntax for functions in Swift."
+  },  
   "Swift Comment": {
     "prefix": "cotrComment",
     "body": ["// ${1:Your comment here}"],
