@@ -1,0 +1,9 @@
+{
+  "C++ Create Multi-Line String Variable": {
+    "prefix": "cotrVarStringMulti",
+    "body": [
+      "std::string ${1:myString} = R\"(${2:Your multi-line message here})\";"
+    ],
+    "description": "Creates a multi-line string variable in C++."
+  }
+}

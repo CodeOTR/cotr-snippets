@@ -1,0 +1,11 @@
+{
+  "C++ Function": {
+    "prefix": "cotrFunc",
+    "body": [
+      "void ${2:myFunction}(${3:parameters}) {",
+      "  ${4:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function in C++."
+  }
+}

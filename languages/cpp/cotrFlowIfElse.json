@@ -1,0 +1,15 @@
+{
+  "C++ If Else Statement": {
+    "prefix": ["cotrFlowIfElse", "cotrIfElse"],
+    "body": [
+      "if (${1:condition}) {",
+      "  // Your code here",
+      "} else if (${2:condition}) {",
+      "  // Your code here",
+      "} else {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Creates an if...else statement in C++."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "C++ Multi-Line Comment": {
+    "prefix": "cotrCommentMulti",
+    "body": ["/*", " * ${1:Your comment here}", " */"],
+    "description": "Creates a multi-line comment in C++."
+  }
+}

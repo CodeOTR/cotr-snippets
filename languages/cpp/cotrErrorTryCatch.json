@@ -1,0 +1,13 @@
+{
+  "C++ Try Catch": {
+    "prefix": ["cotrErrorTryCatch", "cotrTryCatch"],
+    "body": [
+      "try {",
+      "  // Your code here",
+      "} catch (${1:exceptionType} ${2:exception}) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Creates a try...catch block in C++."
+  }
+}

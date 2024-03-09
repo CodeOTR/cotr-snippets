@@ -1,0 +1,7 @@
+{
+  "C++ Map Type": {
+    "prefix": ["cotrTypesMap", "typesMap"],
+    "body": ["std::map<${1:keyType}, ${2:valueType}>"],
+    "description": "The C++ map type."
+  }
+}

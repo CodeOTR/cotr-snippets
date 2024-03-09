@@ -1,0 +1,11 @@
+{
+  "C++ Anonymous Function": {
+    "prefix": "cotrFuncAnon",
+    "body": [
+      "[](${1:parameters}) -> ${2:returnType} {",
+      "    ${3:// Your code here}",
+      "}(${4:arguments});"
+    ],
+    "description": "Creates an anonymous function (lambda) in C++."
+  }
+}

@@ -306,7 +306,7 @@
     "description": "Creates a function with arguments in Swift, including an argument with a default value."
   },     
   "Swift Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "body": [
       "func ${2:myFunction}(${3:arg1Name} ${3:arg1}: ${4:Type1}, ${5:arg2Name} ${5:arg2}: ${6:Type2}) -> ${1:Void} {",
       "    ${7:// Your code here}",

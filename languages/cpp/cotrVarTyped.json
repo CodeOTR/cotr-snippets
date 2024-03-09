@@ -1,0 +1,7 @@
+{
+    "C++ Create Typed Variable": {
+        "prefix": "cotrVarTyped",
+        "body": ["${1:Type} ${2:myVar} = $3;"],
+        "description": "Creates a typed variable in C++."
+      }
+}

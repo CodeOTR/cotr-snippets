@@ -1,0 +1,11 @@
+{
+  "C++ Create Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": [
+      "#include <chrono>",
+      "",
+      "auto ${1:myDate} = std::chrono::system_clock::now();"
+    ],
+    "description": "Creates a date variable in C++ using std::chrono."
+  }
+}

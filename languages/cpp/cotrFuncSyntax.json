@@ -1,0 +1,12 @@
+{
+  "C++ Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "// C++ Function Syntax",
+      "// Basic function: returnType functionName(parameters) { ... }",
+      "// Function with arguments: returnType functionName(arg1Type arg1, arg2Type arg2, ...) { ... }",
+      "// C++ does not support named arguments in the same way as some other languages."
+    ],
+    "description": "Outlines the syntax for functions in C++."
+  }
+}

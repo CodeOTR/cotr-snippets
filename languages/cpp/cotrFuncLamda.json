@@ -1,0 +1,11 @@
+{
+  "C++ Lambda Function": {
+    "prefix": ["cotrFuncLamba", "cotrLambda"],
+    "body": [
+      "auto ${1:myLambda} = [](${2:parameters}) -> ${3:returnType} {",
+      "  // Your code here",
+      "};"
+    ],
+    "description": "Creates a lambda function in C++."
+  }
+}

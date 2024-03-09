@@ -1,0 +1,7 @@
+{
+  "C++ List Type": {
+    "prefix": ["cotrTypesList", "typesList"],
+    "body": ["std::vector<${1:type}>"],
+    "description": "The C++ list type."
+  }
+}

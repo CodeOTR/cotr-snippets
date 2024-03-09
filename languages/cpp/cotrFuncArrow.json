@@ -1,0 +1,7 @@
+{
+  "C++ Arrow Function": {
+    "prefix": "cotrFuncArrow",
+    "body": ["[]() -> ${1:void}", "{", "\t${2:/* code */}", "}"],
+    "description": "Creates an arrow function in C++"
+  }
+}

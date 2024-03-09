@@ -1,0 +1,12 @@
+{
+  "C++ Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "// Typing: Statically typed",
+      "// Paradigm: Multi-paradigm: procedural, object-oriented, functional, generic, imperative",
+      "// Compilation: Compiled",
+      "// Concurrency: Supports multi-threading"
+    ],
+    "description": "General information about C++."
+  }
+}

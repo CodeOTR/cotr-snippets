@@ -1,0 +1,7 @@
+{
+  "C++ Interpolate String": {
+    "prefix": ["cotrStringInterpolate", "cotrInterpolate"],
+    "body": ["std::string ${1:myString} = \"${2:Your message here}\";"],
+    "description": "Creates an interpolated string in C++."
+  }
+}

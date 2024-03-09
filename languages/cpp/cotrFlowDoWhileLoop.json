@@ -1,0 +1,7 @@
+{
+    "C++ Do...While Loop": {
+        "prefix": ["cotrFlowDoWhileLoop", "cotrDoWhileLoop"],
+        "body": ["do {", "  // Your code here", "} while (${1:condition});"],
+        "description": "Creates a do...while loop in C++."
+      }
+}

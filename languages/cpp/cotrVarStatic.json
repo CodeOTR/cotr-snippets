@@ -1,0 +1,12 @@
+{
+  "C++ Static Variable": {
+    "prefix": "cotrVarStatic",
+    "body": [
+      "static ${2:type} ${3:myStaticVar} = ${4:value};",
+      "",
+      "// Access the static variable",
+      "// MyClass::${3:myStaticVar}"
+    ],
+    "description": "Creates a static variable in a C++ class."
+  }
+}

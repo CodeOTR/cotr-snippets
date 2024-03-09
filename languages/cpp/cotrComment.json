@@ -1,0 +1,7 @@
+{
+  "C++ Comment": {
+    "prefix": "cotrComment",
+    "body": ["// ${1:Your comment here}"],
+    "description": "Creates a single-line comment in C++."
+  }
+}

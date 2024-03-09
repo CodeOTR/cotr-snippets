@@ -313,7 +313,7 @@
     "description": "Creates a function with arguments in Java, with a note about default argument values."
   },  
   "Java Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "body": [
       "// Note: Java does not support named arguments in function definitions."
     ],

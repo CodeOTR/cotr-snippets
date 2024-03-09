@@ -1,0 +1,18 @@
+{
+  "C++ Switch Statement": {
+    "prefix": ["cotrFlowSwitch", "cotrSwitch"],
+    "body": [
+      "switch (${1:variable}) {",
+      "  case ${2:value1}:",
+      "    // Your code here",
+      "    break;",
+      "  case ${3:value2}:",
+      "    // Your code here",
+      "    break;",
+      "  default:",
+      "    // Your code here",
+      "}"
+    ],
+    "description": "Creates a switch statement in C++."
+  }
+}

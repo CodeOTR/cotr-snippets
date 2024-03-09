@@ -288,7 +288,7 @@
     "description": "Creates a function with arguments in TypeScript, including an argument with a default value."
   },  
   "TypeScript Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "body": [
       "function ${2:myFunction}({${3:arg1}, ${4:arg2}}: {${3:arg1}: ${5:type1}, ${4:arg2}: ${6:type2}}): ${1:void} {",
       "  ${7:// Your code here}",

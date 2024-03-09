@@ -1,0 +1,7 @@
+{
+  "C++ Create Variable": {
+    "prefix": "cotrVar",
+    "body": ["${1:type} ${2:myVar} = ${3:value};"],
+    "description": "Creates a variable in C++."
+  }
+}

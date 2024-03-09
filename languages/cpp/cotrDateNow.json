@@ -1,0 +1,7 @@
+{
+  "C++ Date Now": {
+    "prefix": ["cotrDateNow", "cotrNow"],
+    "body": ["std::chrono::system_clock::now()"],
+    "description": "Gets the current date and time in C++ using std::chrono."
+  }
+}

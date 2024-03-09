@@ -24,7 +24,7 @@
       "}"
     ],
     "description": "Creates the entry point of a C# application."
-  },  
+  },
   "C# Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -128,7 +128,9 @@
   },
   "C# Concatenate Strings": {
     "prefix": "cotrConcat",
-    "body": ["string result = string.Concat(${1:First string}, ${2:Second string});"],
+    "body": [
+      "string result = string.Concat(${1:First string}, ${2:Second string});"
+    ],
     "description": "Concatenates two strings in C#."
   },
   "C# Create Variable": {
@@ -307,7 +309,7 @@
     "description": "Creates a function with arguments in C#, including an argument with a default value."
   },
   "C# Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "body": [
       "// Note: C# does not have named arguments in function definitions.",
       "// You can use named parameters in method calls.",
@@ -317,6 +319,20 @@
       "}"
     ],
     "description": "Note about named arguments in C#."
+  },
+  "C# Arrow Function": {
+    "prefix": "cotrFuncArrow",
+    "body": [
+      "Func<${2:parameters}, ${1:returnType}> ${3:myFunction} = (${4:parameters}) => {",
+      "    ${5:// Your code here}",
+      "};"
+    ],
+    "description": "Creates an arrow function (lambda) in C#."
+  },
+  "C# Anonymous Function": {
+    "prefix": "cotrFuncAnon",
+    "body": ["(${1:parameters}) => {", "    ${2:// Your code here}", "};"],
+    "description": "Creates an anonymous function (lambda) in C#."
   },
   "C# Function Syntax": {
     "prefix": "cotrFuncSyntax",

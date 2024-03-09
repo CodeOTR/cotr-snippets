@@ -1,0 +1,7 @@
+{
+  "C++ Boolean False": {
+    "prefix": ["cotrTypesBoolFalse", "typesBoolFalse"],
+    "body": ["false"],
+    "description": "The C++ false boolean value."
+  }
+}

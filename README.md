@@ -74,7 +74,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrSwitch         | Creates a switch stament with default                                |
 | cotrFunc           | Creates a function                                                   |
 | cotrFuncArgs       | Creates a function with arguments                                    |
-| cotrFuncNamedArgs  | Creates a function with named arguments                              |
+| cotrFuncArgsNamed  | Creates a function with named arguments                              |
 | cotrFuncSyntax     | Outputs the basic syntax for a function                              |
 | cotrLambda         | Creates a lambda function                                            |
 | cotrComment        | Creates a single-line comment                                        |

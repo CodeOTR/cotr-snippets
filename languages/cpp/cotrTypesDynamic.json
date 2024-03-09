@@ -1,0 +1,7 @@
+{
+  "C++ Dynamic Type": {
+    "prefix": ["cotrTypesDynamic", "typesDynamic"],
+    "body": ["std::any"],
+    "description": "The C++ dynamic type."
+  }
+}

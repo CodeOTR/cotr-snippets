@@ -1,0 +1,7 @@
+{
+  "C++ String Type": {
+    "prefix": ["cotrTypesString", "typesString"],
+    "body": ["std::string"],
+    "description": "The C++ string type."
+  }
+}

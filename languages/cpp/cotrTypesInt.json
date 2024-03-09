@@ -1,0 +1,7 @@
+{
+  "C++ Integer Type": {
+    "prefix": ["cotrTypesInt", "typesInt"],
+    "body": ["int"],
+    "description": "The C++ int type."
+  }
+}

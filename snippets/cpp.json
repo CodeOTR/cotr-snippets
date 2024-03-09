@@ -219,16 +219,6 @@
     ],
     "description": "Creates a static variable in a C++ class."
   },
-  "C++ Create Array": {
-    "prefix": "cotrArray",
-    "body": ["${1:type} ${2:myArray}[${3:size}] = {${4:values}};"],
-    "description": "Creates an array in C++."
-  },
-  "C++ Create Vector": {
-    "prefix": "cotrVector",
-    "body": ["std::vector<${1:type}> ${2:myVector} = {${3:values}};"],
-    "description": "Creates a vector in C++."
-  },
   "C++ Print": {
     "prefix": "cotrPrint",
     "body": [
@@ -313,7 +303,7 @@
     "description": "Creates a function with arguments in C++, including an argument with a default value in the definition."
   },
   "C++ Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "body": [
       "// C++ does not support named arguments in the same way as some other languages."
     ],

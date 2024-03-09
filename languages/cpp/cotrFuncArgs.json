@@ -1,0 +1,12 @@
+{
+  "C++ Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "// In C++, you can use default arguments in function definitions.",
+      "void ${2:myFunction}(${3:Type} ${4:arg1}, ${5:Type} ${6:arg2} = ${7:defaultValue}) {",
+      "    ${8:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in C++, including an argument with a default value in the definition."
+  }
+}

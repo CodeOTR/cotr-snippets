@@ -345,7 +345,7 @@
     "description": "Creates a function with arguments in Kotlin, including an argument with a default value."
   },  
   "Kotlin Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "scope": "kotlin",
     "body": [
       "fun ${2:myFunction}(${3:arg1}: ${4:Type1} = ${5:defaultValue1}, ${6:arg2}: ${7:Type2} = ${8:defaultValue2}): ${1:Unit} {",

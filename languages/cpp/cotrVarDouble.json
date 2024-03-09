@@ -1,0 +1,7 @@
+{
+  "C++ Create Double Variable": {
+    "prefix": ["cotrVarDouble", "cotrVarNum"],
+    "body": ["double ${1:myDouble} = ${2:value};"],
+    "description": "Creates a double variable in C++."
+  }
+}

@@ -258,7 +258,7 @@
     "description": "Creates a function with arguments in Python, including an argument with a default value."
   },  
   "Python Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "body": [
       "def ${2:my_function}(*, ${3:arg1}=${4:value1}, ${5:arg2}=${6:value2}):",
       "    ${7:# Your code here}",

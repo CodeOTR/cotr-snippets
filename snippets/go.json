@@ -295,7 +295,7 @@
     "description": "Creates a function with arguments in Go, with a note about default argument values."
   },  
   "Go Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "body": ["// Go does not support named arguments in function definitions."],
     "description": "Go does not support named arguments in function definitions."
   },

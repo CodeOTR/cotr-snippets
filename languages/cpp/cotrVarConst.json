@@ -1,0 +1,7 @@
+{
+  "C++ Create Constant": {
+    "prefix": ["cotrVarConst", "cotrConst"],
+    "body": ["const ${1:type} ${2:myConst} = ${3:value};"],
+    "description": "Creates a constant variable in C++."
+  }
+}

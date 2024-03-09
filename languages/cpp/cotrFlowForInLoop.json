@@ -1,0 +1,11 @@
+{
+  "C++ For...In Loop": {
+    "prefix": ["cotrFlowForInLoop", "cotrForInLoop"],
+    "body": [
+      "for (auto ${1:item} : ${2:iterable}) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Iterates over an iterable object in C++."
+  }
+}

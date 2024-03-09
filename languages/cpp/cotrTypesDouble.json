@@ -1,0 +1,7 @@
+{
+  "C++ Double Type": {
+    "prefix": ["cotrTypesNum", "cotrTypesDouble", "typesNum", "typesDouble"],
+    "body": ["double"],
+    "description": "The C++ double type."
+  }
+}

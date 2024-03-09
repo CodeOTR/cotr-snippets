@@ -272,7 +272,7 @@
     "description": "Creates a function with arguments in PHP, including an argument with a default value."
   },  
   "PHP Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "body": [
       "// Note: PHP does not support named arguments in function definitions."
     ],

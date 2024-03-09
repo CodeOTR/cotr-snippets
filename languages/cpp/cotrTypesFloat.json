@@ -1,0 +1,12 @@
+{
+  "C++ Float Type": {
+    "prefix": [
+      "cotrTypesNumAlt",
+      "cotrTypesFloat",
+      "typesNumAlt",
+      "typesFloat"
+    ],
+    "body": ["float"],
+    "description": "The C++ float type."
+  }
+}

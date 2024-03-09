@@ -1,0 +1,7 @@
+{
+  "C++ Throw Exception": {
+    "prefix": ["cotrErrorThrow", "cotrThrow"],
+    "body": ["throw ${1:Exception('Your message here')};"],
+    "description": "Throws an exception in C++."
+  }
+}

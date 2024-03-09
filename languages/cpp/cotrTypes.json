@@ -1,0 +1,30 @@
+{
+  "C++ Types": {
+    "prefix": ["cotrTypes", "types"],
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "C++ is a statically typed language.",
+      "",
+      "Types in C++ include:",
+      "- int: Integer",
+      "- float: Single-precision floating-point number",
+      "- double: Double-precision floating-point number",
+      "- char: Character",
+      "- bool: Boolean",
+      "- std::string: String class from the Standard Library",
+      "- int[10]: Array of integers with size 10",
+      "- std::vector<int>: Vector of integers from the Standard Library",
+      "- std::map<K, V>: Map (associative array) from the Standard Library",
+      "- struct MyStruct: Custom data structure with named fields",
+      "- enum MyEnum: Enumeration type",
+      "- void: Type representing the absence of a value",
+      "- auto: Type inferred by the compiler",
+      "- nullptr: Type of the null pointer",
+      "- decltype: Type specifier for the type of an expression",
+      "",
+      "Read more here: https://learn.microsoft.com/en-us/cpp/cpp/fundamental-types-cpp?view=msvc-170",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists the types in C++."
+  }
+}

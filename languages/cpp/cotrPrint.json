@@ -1,0 +1,11 @@
+{
+  "C++ Print": {
+    "prefix": "cotrPrint",
+    "body": [
+      "#include <iostream>",
+      "",
+      "std::cout << ${1:\"Your message here\"} << std::endl;"
+    ],
+    "description": "Prints a message to the console in C++."
+  }
+}

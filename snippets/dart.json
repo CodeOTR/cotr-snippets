@@ -288,7 +288,7 @@
     "description": "Creates a function with arguments in Dart, including an optional positional argument with a default value."
   },  
   "Dart Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "body": [
       "${1:void} ${2:myFunction}({${3:arg1}, ${4:arg2}}) {",
       "  ${5:// Your code here}",

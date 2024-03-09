@@ -1,0 +1,7 @@
+{
+  "C++ Create Float Variable": {
+    "prefix": ["cotrVarFloat", "cotrVarNumAlt"],
+    "body": ["float ${1:myFloat} = ${2:value};"],
+    "description": "Creates a float variable in C++."
+  }
+}

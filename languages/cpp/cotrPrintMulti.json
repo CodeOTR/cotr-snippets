@@ -1,0 +1,13 @@
+{
+  "C++ Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "#include <iostream>",
+      "",
+      "std::cout << ${1:\"Line 1\"} << std::endl",
+      "          << ${2:\"Line 2\"} << std::endl",
+      "          << ${3:\"Line 3\"} << std::endl;"
+    ],
+    "description": "Prints a multi-line message to the console in C++."
+  }
+}

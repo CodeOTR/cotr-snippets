@@ -1,0 +1,7 @@
+{
+    "C++ Concatenate Strings": {
+        "prefix": ["cotrStringConcat", "cotrConcat"],
+        "body": ["std::string ${1:myString} = ${2:\"Hello, \"} + ${3:\"world!\"};"],
+        "description": "Concatenates two strings in C++."
+      }
+}

@@ -274,7 +274,7 @@
     "description": "Creates a function with arguments in Ruby, including an argument with a default value."
   },  
   "Ruby Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "body": [
       "def ${2:my_function}(${3:arg1}: ${4:value1}, ${5:arg2}: ${6:value2})",
       "  ${7:# Your code here}",

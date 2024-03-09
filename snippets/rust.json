@@ -169,7 +169,7 @@
   },
   "Rust Create String Variable": {
     "prefix": "cotrVarString",
-    "body": ["let ${1:myStr} = String::from(${2:'myString'});"],
+    "body": ["let ${1:myStr} = String::from(${2:\"myString\"});"],
     "description": "Creates a string variable in Rust using the String class."
   },
   "Rust Create Multi-line String Variable": {
@@ -340,7 +340,7 @@
     "description": "Creates a function with arguments in Rust, including an argument with an optional default value."
   },  
   "Rust Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "body": [
       "// Note: Rust does not support named arguments in function definitions."
     ],

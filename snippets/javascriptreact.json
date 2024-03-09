@@ -290,7 +290,7 @@
     "description": "Creates a function with arguments in JavaScript, including an argument with a default value."
   },  
   "JavaScript Function Named Args": {
-    "prefix": "cotrFuncNamedArgs",
+    "prefix": "cotrFuncArgsNamed",
     "body": [
       "function ${2:myFunction}({${3:arg1}, ${4:arg2}}) {",
       "  ${5:// Your code here}",

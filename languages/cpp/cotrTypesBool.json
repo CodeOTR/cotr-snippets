@@ -1,0 +1,7 @@
+{
+  "C++ Boolean Type": {
+    "prefix": ["cotrTypesBool", "typesBool"],
+    "body": ["bool"],
+    "description": "The C++ bool type."
+  }
+}

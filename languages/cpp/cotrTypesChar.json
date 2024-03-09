@@ -1,0 +1,7 @@
+{
+  "C++ Character Type": {
+    "prefix": ["cotrTypesChar", "typesChar"],
+    "body": ["char"],
+    "description": "The C++ char type."
+  }
+}

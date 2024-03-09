@@ -1,0 +1,7 @@
+{
+  "C++ Create Integer Variable": {
+    "prefix": "cotrVarInt",
+    "body": ["int ${1:myInt} = ${2:value};"],
+    "description": "Creates an integer variable in C++."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "C++ Enum": {
+    "prefix": "cotrEnum",
+    "body": [
+      "enum class ${1:MyEnum} {",
+      "  ${2:value1},",
+      "  ${3:value2},",
+      "  // Add more values here",
+      "};"
+    ],
+    "description": "Creates an enum in C++."
+  }
+}

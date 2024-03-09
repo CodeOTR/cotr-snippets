@@ -1,0 +1,7 @@
+{
+  "C++ Null Type": {
+    "prefix": ["cotrTypesNull", "typesNull"],
+    "body": ["nullptr"],
+    "description": "The C++ null type."
+  }
+}
