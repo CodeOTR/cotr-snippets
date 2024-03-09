@@ -110,6 +110,11 @@
     "body": ["$\"${1:Your string here}\""],
     "description": "Interpolates a string in C#."
   },
+  "C# Concatenate Strings": {
+    "prefix": "cotrConcat",
+    "body": ["string result = string.Concat(${1:First string}, ${2:Second string});"],
+    "description": "Concatenates two strings in C#."
+  },
   "C# Create Variable": {
     "prefix": "cotrVar",
     "body": ["${1:Type} ${2:myVar} = ${3:value};"],

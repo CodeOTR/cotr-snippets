@@ -123,6 +123,11 @@
     "body": ["'Your string here \\${${1:variable}}'"],
     "description": "Interpolates a variable into a string in Dart."
   },
+  "Dart Concatenate Strings": {
+    "prefix": "cotrConcat",
+    "body": ["'Your string here ' + ${1:variable}"],
+    "description": "Concatenates two strings in Dart."
+  },
   "Dart Create String Variable": {
     "prefix": "cotrVarString",
     "body": ["String ${1:myString} = ${2:'Your string here'};"],

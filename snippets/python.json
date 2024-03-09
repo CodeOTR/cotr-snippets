@@ -107,6 +107,11 @@
     "body": ["f\"${1:Your message here}\""],
     "description": "Interpolates a string in Python."
   },
+  "Python Concatenate String": {
+    "prefix": "cotrConcat",
+    "body": ["\"${1:Your message here}\" + \"${2:Another message}\""],
+    "description": "Concatenates strings in Python."
+  },
   "Python Create Variable": {
     "prefix": "cotrVar",
     "body": ["${1:myVar} = ${2:value}"],

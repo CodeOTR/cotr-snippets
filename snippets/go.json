@@ -101,6 +101,11 @@
     "body": ["`${1:string}`"],
     "description": "Interpolates a string in Go."
   },
+  "Go Concatenate Strings": {
+    "prefix": "cotrConcat",
+    "body": ["${1:string1} + ${2:string2}"],
+    "description": "Concatenates two strings in Go."
+  },
   "Go Create Variable": {
     "prefix": "cotrVar",
     "body": ["var ${1:variableName} ${2:variableType} = ${3:variableValue}"],

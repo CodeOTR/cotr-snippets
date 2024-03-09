@@ -112,6 +112,11 @@
     "body": ["\"\\(${1:variable})\""],
     "description": "Interpolates a variable into a string in Swift."
   },
+  "Swift Concatenate Strings": {
+    "prefix": "cotrConcat",
+    "body": ["\"${1:string1}\" + \"${2:string2}\""],
+    "description": "Concatenates two strings in Swift."
+  },
   "Swift Create Variable": {
     "prefix": "cotrVar",
     "body": ["var ${1:myVar} = $2;"],

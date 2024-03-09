@@ -139,6 +139,12 @@
     "body": ["\"${1:Your message here}\""],
     "description": "Interpolates a string in Kotlin."
   },
+  "Kotlin Concatenate String": {
+    "prefix": "cotrConcat",
+    "scope": "kotlin",
+    "body": ["\"${1:Your message here}\" + \"${2:another message}\""],
+    "description": "Concatenates two strings in Kotlin."
+  },
   "Kotlin Create Variable": {
     "prefix": "cotrVar",
     "scope": "kotlin",

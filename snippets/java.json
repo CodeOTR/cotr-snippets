@@ -110,6 +110,11 @@
     "body": ["String.format(\"${1:%s}\", ${2:value})"],
     "description": "Interpolates a string in Java."
   },
+  "Java Concatenate String": {
+    "prefix": "cotrConcat",
+    "body": ["${1:\"String1\"} + ${2:\"String2\"}"],
+    "description": "Concatenates two strings in Java."
+  },
   "Java Create Variable": {
     "prefix": "cotrVar",
     "body": ["${1:Type} ${2:myVar} = ${3:value};"],

@@ -134,6 +134,11 @@
     "body": ["format!(\"${1:Your message here}\")"],
     "description": "Interpolates a string in Rust."
   },
+  "Rust Concatenate String": {
+    "prefix": "cotrConcat",
+    "body": ["format!(\"${1:Your message here} ${2:and} ${3:more}\")"],
+    "description": "Concatenates strings in Rust."
+  },
   "Rust Create Variable": {
     "prefix": "cotrVar",
     "body": ["let ${1:myVar} = $2;"],

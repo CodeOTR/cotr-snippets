@@ -125,6 +125,11 @@
     "body": ["\"Your string here \\#{${1:variable}}\""],
     "description": "Interpolates a variable into a string in Ruby."
   },
+  "Ruby Concatenate Strings": {
+    "prefix": "cotrConcat",
+    "body": ["\"${1:string1}\" + \"${2:string2}\""],
+    "description": "Concatenates two strings in Ruby."
+  },
   "Ruby Create String Variable": {
     "prefix": "cotrVarString",
     "body": ["${1:my_string} = ${2:'Your string here'}"],

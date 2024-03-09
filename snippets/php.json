@@ -123,6 +123,11 @@
     "body": ["'Your string here \\${${1:variable}}'"],
     "description": "Interpolates a variable into a string in PHP."
   },
+  "PHP Concatenate Strings": {
+    "prefix": "cotrConcat",
+    "body": ["'${1:string1}' . '${2:string2}'"],
+    "description": "Concatenates two strings in PHP."
+  },
   "PHP Create Integer Variable": {
     "prefix": "cotrVarInt",
     "body": ["$${1:myInt} = ${2:0};"],

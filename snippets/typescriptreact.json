@@ -90,6 +90,11 @@
     "body": ["`Hello, ${1:name}!`"],
     "description": "Interpolates a string in TypeScript."
   },
+  "TypeScript Concatenate Strings": {
+    "prefix": "cotrConcat",
+    "body": ["'Hello, ' + ${1:name} + '!'"],
+    "description": "Concatenates strings in TypeScript."
+  },
   "TypeScript Create Variable": {
     "prefix": "cotrVar",
     "body": ["let ${1:myVar} = $2;"],

@@ -112,6 +112,11 @@
     "body": ["std::string ${1:myString} = \"${2:Your message here}\";"],
     "description": "Creates an interpolated string in C++."
   },
+  "C++ Concatenate Strings": {
+    "prefix": "cotrConcat",
+    "body": ["std::string ${1:myString} = ${2:\"Hello, \"} + ${3:\"world!\"};"],
+    "description": "Concatenates two strings in C++."
+  },
   "C++ Create Variable": {
     "prefix": "cotrVar",
     "body": ["${1:type} ${2:myVar} = ${3:value};"],

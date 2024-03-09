@@ -96,6 +96,11 @@
     "body": ["let text = `Hello, ${1:name}!`;"],
     "description": "Interpolates a string in JavaScript."
   },
+  "JavaScript Concatenate String": {
+    "prefix": "cotrConcat",
+    "body": ["let text = 'Hello, ' + ${1:name} + '!';"],
+    "description": "Concatenates a string in JavaScript."
+  },
   "JavaScript Create Variable": {
     "prefix": "cotrVar",
     "body": ["let ${1:myVar} = $2;"],
