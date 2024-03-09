@@ -3,7 +3,9 @@
 ## 0.0.7
 
 - Add `cotrInfo` snippets
+- Nested types under `cotrTypes`
 - Removed duplicate map and list snippets
+- Add default args info to `cotrFuncArgs`
 
 ## 0.0.6
 
