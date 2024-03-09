@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.0.7
+
+- Add `cotrInfo` snippets
+- Removed duplicate map and list snippets
+
 ## 0.0.6
 
 - Add `cotrFunc...` snippets

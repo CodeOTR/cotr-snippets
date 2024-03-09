@@ -1,4 +1,14 @@
 {
+  "TypeScript Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "Typing: Statically typed (superset of JavaScript)",
+      "Paradigm: Multi-paradigm: event-driven, functional, imperative, object-oriented",
+      "Compilation: Transpiled to JavaScript",
+      "Concurrency: Inherits JavaScript's event loop model for asynchronous programming"
+    ],
+    "description": "Provides general information about the TypeScript programming language."
+  },  
   "TypeScript Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -49,6 +59,16 @@
     "prefix": "cotrTypesDate",
     "body": ["Date"],
     "description": "The TypeScript Date object."
+  },
+  "TypeScript Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["Map<${1:KeyType}, ${2:ValueType}>"],
+    "description": "The TypeScript Map type."
+  },
+  "TypeScript List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["Array<${1:Type}>"],
+    "description": "The TypeScript Array type, commonly used as a list."
   },
   "TypeScript Date Now": {
     "prefix": "cotrNow",
@@ -243,12 +263,13 @@
   "TypeScript Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
-      "function ${2:myFunction}(${3:arg1}: ${4:type1}, ${5:arg2}: ${6:type2}): ${1:void} {",
-      "  ${7:// Your code here}",
+      "// In TypeScript, functions can have arguments with default values.",
+      "function ${2:myFunction}(${3:arg1}: ${4:type1}, ${5:arg2}: ${6:type2} = ${7:defaultValue}): ${1:void} {",
+      "  ${8:// Your code here}",
       "}"
     ],
-    "description": "Creates a function with arguments in TypeScript."
-  },
+    "description": "Creates a function with arguments in TypeScript, including an argument with a default value."
+  },  
   "TypeScript Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
     "body": [

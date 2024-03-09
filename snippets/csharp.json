@@ -1,4 +1,14 @@
 {
+  "C# Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "// Typing: Statically typed",
+      "// Paradigm: Multi-paradigm: structured, imperative, object-oriented, event-driven, task-driven, functional, generic, reflective, concurrent",
+      "// Compilation: Compiled (.NET Framework), Just-In-Time (JIT) compilation (.NET Core)",
+      "// Concurrency: Supports multi-threading, async/await"
+    ],
+    "description": "General information about C#."
+  },  
   "C# Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -29,7 +39,7 @@
       "$BLOCK_COMMENT_END"
     ],
     "description": "Lists the types in C#."
-  },  
+  },
   "C# String Type": {
     "prefix": "cotrTypesString",
     "body": ["string"],
@@ -69,12 +79,23 @@
     "prefix": "cotrTypesDate",
     "body": ["DateTime"],
     "description": "The C# DateTime type."
-  },  
+  },
+  "C# Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["Dictionary<${1:keyType}, ${2:valueType}>"],
+    "description": "The C# Dictionary type, equivalent to a map."
+  },
+  "C# List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["List<${1:type}>"],
+    "description": "The C# List type."
+  },
+
   "C# Date Now": {
     "prefix": "cotrNow",
     "body": ["DateTime.Now"],
     "description": "The C# DateTime.Now property."
-  },  
+  },
   "C# Interpolate String": {
     "prefix": "cotrInterpolate",
     "body": ["$\"${1:Your string here}\""],
@@ -89,12 +110,12 @@
     "prefix": "cotrVarTyped",
     "body": ["${1:Type} ${2:myVar} = $3;"],
     "description": "Creates a typed variable in C#."
-  },  
+  },
   "C# Create Nullable Variable": {
     "prefix": "cotrVarNullable",
     "body": ["${1:Type}? ${2:myVar} = $3;"],
     "description": "Creates a nullable variable in C#."
-  },  
+  },
   "C# Create String Variable": {
     "prefix": "cotrVarString",
     "body": ["string ${1:myString} = ${2:'Your string here'};"],
@@ -132,7 +153,7 @@
       "DateTime ${1:myDate} = new DateTime(${2:year}, ${3:month}, ${4:day});"
     ],
     "description": "Creates a date variable in C#."
-  },  
+  },
   "C# Create List Variable": {
     "prefix": "cotrVarList",
     "body": ["List<${1:Type}> ${2:myList} = new List<${1:Type}>();"],
@@ -189,7 +210,7 @@
       "\"\"\");"
     ],
     "description": "Prints a multi-line message to the console in C#."
-  },  
+  },
   "C# For Loop": {
     "prefix": "cotrForLoop",
     "body": [
@@ -243,16 +264,17 @@
       "}"
     ],
     "description": "Creates a function in C#."
-  },  
+  },
   "C# Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
-      "public ${1:void} ${2:MyFunction}(${3:type1} ${4:arg1}, ${5:type2} ${6:arg2})",
+      "// In C#, functions can have arguments with default values.",
+      "public ${1:void} ${2:MyFunction}(${3:type1} ${4:arg1}, ${5:type2} ${6:arg2} = ${7:defaultValue})",
       "{",
-      "    ${7:// Your code here}",
+      "    ${8:// Your code here}",
       "}"
     ],
-    "description": "Creates a function with arguments in C#."
+    "description": "Creates a function with arguments in C#, including an argument with a default value."
   },  
   "C# Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
@@ -265,7 +287,7 @@
       "}"
     ],
     "description": "Note about named arguments in C#."
-  },  
+  },
   "C# Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [
@@ -275,7 +297,7 @@
       "// Named parameters in method calls: FunctionName(argName: value, ...);"
     ],
     "description": "Outlines the syntax for functions in C#."
-  },  
+  },
   "C# Comment": {
     "prefix": "cotrComment",
     "body": ["// ${1:Your comment here}"],

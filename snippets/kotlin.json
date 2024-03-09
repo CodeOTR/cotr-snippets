@@ -1,7 +1,18 @@
 {
+  "Kotlin Info": {
+    "prefix": "cotrInfo",
+    "scope": "kotlin",
+    "body": [
+      "Typing: Statically typed",
+      "Paradigm: Multi-paradigm: object-oriented, functional, imperative",
+      "Compilation: Compiled to bytecode for the Java Virtual Machine (JVM), JavaScript, or native binaries",
+      "Concurrency: Supports coroutines for asynchronous programming and concurrency"
+    ],
+    "description": "Provides general information about the Kotlin programming language."
+  },  
   "Kotlin Types": {
     "prefix": "cotrTypes",
-	"scope": "kotlin",
+    "scope": "kotlin",
     "body": [
       "$BLOCK_COMMENT_START",
       "Kotlin is a statically typed language.",
@@ -28,8 +39,8 @@
       "- Object: Singleton object",
       "- Companion object: Object associated with a class",
       "- Interface: Interface type",
-	  "",
-	  "Read more here: https://kotlinlang.org/docs/basic-types.html",
+      "",
+      "Read more here: https://kotlinlang.org/docs/basic-types.html",
       "$BLOCK_COMMENT_END"
     ],
     "description": "Lists the types in Kotlin."
@@ -82,6 +93,18 @@
     "body": ["import java.time.LocalDate"],
     "description": "The Kotlin LocalDate class from the java.time package."
   },
+  "Kotlin Map Type": {
+    "prefix": "cotrTypesMap",
+    "scope": "kotlin",
+    "body": ["Map<${1:keyType}, ${2:valueType}>"],
+    "description": "The Kotlin Map type."
+  },
+  "Kotlin List Type": {
+    "prefix": "cotrTypesList",
+    "scope": "kotlin",
+    "body": ["List<${1:type}>"],
+    "description": "The Kotlin List type."
+  },
   "Kotlin Date Now": {
     "prefix": "cotrNow",
     "scope": "kotlin",
@@ -129,16 +152,16 @@
     "description": "Creates a string variable in Kotlin using the var keyword."
   },
   "Kotlin Create Multi-Line String Variable": {
-	"prefix": "cotrVarStringMulti",
-	"scope": "kotlin",
-	"body": [
-	  "var ${1:myString} = \"\"\"",
-	  "${2:Line 1}",
-	  "${3:Line 2}",
-	  "${4:Line 3}",
-	  "\"\"\""
-	],
-	"description": "Creates a multi-line string variable in Kotlin using the var keyword."
+    "prefix": "cotrVarStringMulti",
+    "scope": "kotlin",
+    "body": [
+      "var ${1:myString} = \"\"\"",
+      "${2:Line 1}",
+      "${3:Line 2}",
+      "${4:Line 3}",
+      "\"\"\""
+    ],
+    "description": "Creates a multi-line string variable in Kotlin using the var keyword."
   },
   "Kotlin Create Integer Variable": {
     "prefix": "cotrVarInt",
@@ -177,9 +200,7 @@
   "Kotlin Create List Variable": {
     "prefix": "cotrVarList",
     "scope": "kotlin",
-    "body": [
-      "var ${1:myList} = listOf(${2:'item1'}, ${3:'item2'})"
-    ],
+    "body": ["var ${1:myList} = listOf(${2:'item1'}, ${3:'item2'})"],
     "description": "Creates a list variable in Kotlin."
   },
   "Kotlin Create Map Variable": {
@@ -272,45 +293,46 @@
     "description": "Creates a when expression in Kotlin."
   },
   "Kotlin Function": {
-	"prefix": "cotrFunc",
-	"scope": "kotlin",
-	"body": [
-	  "fun ${2:myFunction}(${3:parameters}): ${1:Unit} {",
-	  "    ${4:// Your code here}",
-	  "}"
-	],
-	"description": "Creates a function in Kotlin."
-  },  
+    "prefix": "cotrFunc",
+    "scope": "kotlin",
+    "body": [
+      "fun ${2:myFunction}(${3:parameters}): ${1:Unit} {",
+      "    ${4:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function in Kotlin."
+  },
   "Kotlin Function Args": {
-	"prefix": "cotrFuncArgs",
-	"scope": "kotlin",
-	"body": [
-	  "fun ${2:myFunction}(${3:arg1}: ${4:Type1}, ${5:arg2}: ${6:Type2}): ${1:Unit} {",
-	  "    ${7:// Your code here}",
-	  "}"
-	],
-	"description": "Creates a function with arguments in Kotlin."
+    "prefix": "cotrFuncArgs",
+    "scope": "kotlin",
+    "body": [
+      "// In Kotlin, functions can have arguments with default values.",
+      "fun ${2:myFunction}(${3:arg1}: ${4:Type1}, ${5:arg2}: ${6:Type2} = ${7:defaultValue}): ${1:Unit} {",
+      "    ${8:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in Kotlin, including an argument with a default value."
   },  
   "Kotlin Function Named Args": {
-	"prefix": "cotrFuncNamedArgs",
-	"scope": "kotlin",
-	"body": [
-	  "fun ${2:myFunction}(${3:arg1}: ${4:Type1} = ${5:defaultValue1}, ${6:arg2}: ${7:Type2} = ${8:defaultValue2}): ${1:Unit} {",
-	  "    ${9:// Your code here}",
-	  "}"
-	],
-	"description": "Creates a function with named arguments and default values in Kotlin."
-  },  
+    "prefix": "cotrFuncNamedArgs",
+    "scope": "kotlin",
+    "body": [
+      "fun ${2:myFunction}(${3:arg1}: ${4:Type1} = ${5:defaultValue1}, ${6:arg2}: ${7:Type2} = ${8:defaultValue2}): ${1:Unit} {",
+      "    ${9:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with named arguments and default values in Kotlin."
+  },
   "Kotlin Function Syntax": {
-	"prefix": "cotrFuncSyntax",
-	"body": [
-	  "// Kotlin Function Syntax",
-	  "// Basic function: fun functionName(parameters): ReturnType { ... }",
-	  "// Function with arguments: fun functionName(arg1: Type1, arg2: Type2, ...): ReturnType { ... }",
-	  "// Function with named arguments and default values: fun functionName(arg1: Type1 = defaultValue1, arg2: Type2 = defaultValue2, ...): ReturnType { ... }"
-	],
-	"description": "Outlines the syntax for functions in Kotlin."
-  },  
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "// Kotlin Function Syntax",
+      "// Basic function: fun functionName(parameters): ReturnType { ... }",
+      "// Function with arguments: fun functionName(arg1: Type1, arg2: Type2, ...): ReturnType { ... }",
+      "// Function with named arguments and default values: fun functionName(arg1: Type1 = defaultValue1, arg2: Type2 = defaultValue2, ...): ReturnType { ... }"
+    ],
+    "description": "Outlines the syntax for functions in Kotlin."
+  },
   "Kotlin Comment": {
     "prefix": "cotrComment",
     "scope": "kotlin",

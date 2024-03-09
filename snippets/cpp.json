@@ -1,4 +1,14 @@
 {
+  "C++ Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "// Typing: Statically typed",
+      "// Paradigm: Multi-paradigm: procedural, object-oriented, functional, generic, imperative",
+      "// Compilation: Compiled",
+      "// Concurrency: Supports multi-threading"
+    ],
+    "description": "General information about C++."
+  },  
   "C++ Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -53,14 +63,24 @@
     "description": "The C++ bool type."
   },
   "C++ Boolean True": {
-    "prefix": "cotrTrue",
+    "prefix": "cotrTypesBoolTrue",
     "body": ["true"],
     "description": "The C++ true boolean value."
   },
   "C++ Boolean False": {
-    "prefix": "cotrFalse",
+    "prefix": "cotrTypesBoolFalse",
     "body": ["false"],
     "description": "The C++ false boolean value."
+  },
+  "C++ Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["std::map<${1:keyType}, ${2:valueType}>"],
+    "description": "The C++ map type."
+  },
+  "C++ List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["std::vector<${1:type}>"],
+    "description": "The C++ list type."
   },
   "C++ Character Type": {
     "prefix": "cotrTypesChar",
@@ -255,12 +275,13 @@
   "C++ Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
-      "void ${2:myFunction}(${3:Type} ${4:arg1}, ${5:Type} ${6:arg2}) {",
-      "  ${7:// Your code here}",
+      "// In C++, you can use default arguments in function definitions.",
+      "void ${2:myFunction}(${3:Type} ${4:arg1}, ${5:Type} ${6:arg2} = ${7:defaultValue}) {",
+      "    ${8:// Your code here}",
       "}"
     ],
-    "description": "Creates a function with arguments in C++."
-  },
+    "description": "Creates a function with arguments in C++, including an argument with a default value in the definition."
+  },  
   "C++ Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
     "body": [

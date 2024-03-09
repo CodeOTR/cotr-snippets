@@ -1,4 +1,14 @@
 {
+  "Swift Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "Typing: Statically typed",
+      "Paradigm: Multi-paradigm: object-oriented, functional, imperative, block-structured",
+      "Compilation: Compiled",
+      "Concurrency: Supports multi-threading and concurrent programming with Grand Central Dispatch (GCD) and async/await"
+    ],
+    "description": "Provides general information about the Swift programming language."
+  },  
   "Swift Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -66,6 +76,16 @@
     "prefix": "cotrTypesDate",
     "body": ["Date"],
     "description": "The Swift Date struct."
+  },  
+  "Swift Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["Dictionary<${1:KeyType}, ${2:ValueType}>"],
+    "description": "The Swift Dictionary type, equivalent to a map."
+  },
+  "Swift List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["Array<${1:Type}>"],
+    "description": "The Swift Array type, equivalent to a list."
   },  
   "Swift Date Now": {
     "prefix": "cotrNow",
@@ -251,12 +271,13 @@
   "Swift Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
-      "func ${2:myFunction}(${3:arg1}: ${4:Type1}, ${5:arg2}: ${6:Type2}) -> ${1:Void} {",
-      "    ${7:// Your code here}",
+      "// In Swift, functions can have arguments with default values.",
+      "func ${2:myFunction}(${3:arg1}: ${4:Type1}, ${5:arg2}: ${6:Type2} = ${7:defaultValue}) -> ${1:Void} {",
+      "    ${8:// Your code here}",
       "}"
     ],
-    "description": "Creates a function with arguments in Swift."
-  },   
+    "description": "Creates a function with arguments in Swift, including an argument with a default value."
+  },     
   "Swift Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
     "body": [

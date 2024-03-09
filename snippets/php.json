@@ -1,4 +1,14 @@
 {
+  "PHP Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "Typing: Dynamically typed",
+      "Paradigm: Multi-paradigm: imperative, object-oriented, procedural, reflective",
+      "Compilation: Interpreted",
+      "Concurrency: Supports multi-threading with extensions like pthreads, but traditionally single-threaded"
+    ],
+    "description": "Provides general information about the PHP programming language."
+  },  
   "PHP Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -63,6 +73,16 @@
     "body": ["DateTime"],
     "description": "The PHP DateTime type."
   },
+  "PHP Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["// In PHP, associative arrays are used as maps."],
+    "description": "Explains the use of associative arrays as maps in PHP."
+  },
+  "PHP List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["// In PHP, indexed arrays are used as lists."],
+    "description": "Explains the use of indexed arrays as lists in PHP."
+  },
   "PHP Create Variable": {
     "prefix": "cotrVar",
     "body": ["$${1:myVar} = $2;"],
@@ -90,11 +110,7 @@
   },
   "PHP Create Multi-Line String Variable": {
     "prefix": "cotrVarMultiString",
-    "body": [
-      "$${1:myString} = <<<EOT",
-      "${2:Your string here}",
-      "EOT;"
-    ],
+    "body": ["$${1:myString} = <<<EOT", "${2:Your string here}", "EOT;"],
     "description": "Creates a multi-line string variable in PHP."
   },
   "PHP Interpolate String": {
@@ -222,15 +238,16 @@
       "}"
     ],
     "description": "Creates a function in PHP."
-  },  
+  },
   "PHP Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
-      "function ${2:myFunction}(${3:$arg1}, ${4:$arg2}) {",
-      "  ${5:// Your code here}",
+      "// In PHP, functions can have arguments with default values.",
+      "function ${2:myFunction}(${3:$arg1}, ${4:$arg2} = '${5:defaultVal}') {",
+      "  ${6:// Your code here}",
       "}"
     ],
-    "description": "Creates a function with arguments in PHP."
+    "description": "Creates a function with arguments in PHP, including an argument with a default value."
   },  
   "PHP Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
@@ -238,7 +255,7 @@
       "// Note: PHP does not support named arguments in function definitions."
     ],
     "description": "Note about named arguments in PHP."
-  },  
+  },
   "PHP Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [
@@ -248,7 +265,7 @@
       "// Note: PHP does not support named arguments in function definitions."
     ],
     "description": "Outlines the syntax for functions in PHP."
-  },  
+  },
   "PHP Comment": {
     "prefix": "cotrComment",
     "body": ["// ${1:Your comment here}"],

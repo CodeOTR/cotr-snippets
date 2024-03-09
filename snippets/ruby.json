@@ -1,4 +1,14 @@
 {
+  "Ruby Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "Typing: Dynamically typed",
+      "Paradigm: Multi-paradigm: object-oriented, imperative, functional, reflective",
+      "Compilation: Interpreted",
+      "Concurrency: Supports multi-threading and concurrent programming with fibers"
+    ],
+    "description": "Provides general information about the Ruby programming language."
+  },  
   "Ruby Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -71,6 +81,16 @@
     "prefix": "cotrTypesDate",
     "body": ["require 'date'", "", "Date"],
     "description": "The Ruby Date class."
+  },
+  "Ruby Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["Hash"],
+    "description": "The Ruby Hash type, equivalent to a map."
+  },
+  "Ruby List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["Array"],
+    "description": "The Ruby Array type, equivalent to a list."
   },
   "Ruby Date Now": {
     "prefix": "cotrNow",
@@ -222,15 +242,16 @@
       "end"
     ],
     "description": "Creates a function in Ruby."
-  },  
+  },
   "Ruby Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
-      "def ${2:my_function}(${3:arg1}, ${4:arg2})",
-      "  ${5:# Your code here}",
+      "# In Ruby, functions can have arguments with default values.",
+      "def ${2:my_function}(${3:arg1}, ${4:arg2}=${5:'defaultVal'})",
+      "  ${6:# Your code here}",
       "end"
     ],
-    "description": "Creates a function with arguments in Ruby."
+    "description": "Creates a function with arguments in Ruby, including an argument with a default value."
   },  
   "Ruby Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
@@ -240,7 +261,7 @@
       "end"
     ],
     "description": "Creates a function with named arguments in Ruby."
-  },  
+  },
   "Ruby Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [
@@ -250,7 +271,7 @@
       "# Function with named arguments: def function_name(arg1: value1, arg2: value2, ...) ... end"
     ],
     "description": "Outlines the syntax for functions in Ruby."
-  },  
+  },
   "Ruby Comment": {
     "prefix": "cotrComment",
     "body": ["# ${1:Your comment here}"],

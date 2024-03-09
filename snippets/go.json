@@ -1,4 +1,14 @@
 {
+  "Go Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "Typing: Statically typed",
+      "Paradigm: Multi-paradigm: procedural, concurrent",
+      "Compilation: Compiled",
+      "Concurrency: Built-in support for concurrency with goroutines and channels"
+    ],
+    "description": "Provides general information about the Go programming language."
+  },  
   "Go Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -61,6 +71,16 @@
     "body": ["time.Time"],
     "description": "The Go time.Time type."
   },
+  "Go Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["map[${1:keyType}]${2:valueType}"],
+    "description": "The Go map type."
+  },
+  "Go List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["[]${1:type}"],
+    "description": "The Go slice type, commonly used as a list."
+  },
   "Go Date Now": {
     "prefix": "cotrTypesDateNow",
     "body": ["time.Now()"],
@@ -93,7 +113,13 @@
   },
   "Go Create Multi-line String Variable": {
     "prefix": "cotrVarMultiString",
-    "body": ["var ${1:variableName} = `", "${2:Line 1}", "${3:Line 2}", "${4:Line 3}", "`"],
+    "body": [
+      "var ${1:variableName} = `",
+      "${2:Line 1}",
+      "${3:Line 2}",
+      "${4:Line 3}",
+      "`"
+    ],
     "description": "Creates a multi-line string variable in Go using the var keyword"
   },
   "Go Create Integer Variable": {
@@ -119,7 +145,7 @@
     ],
     "description": "Creates a date variable in Go."
   },
-  "Go Create List Variable":{
+  "Go Create List Variable": {
     "prefix": "cotrVarList",
     "body": [
       "var ${1:variableName} = []${2:variableType}{",
@@ -230,17 +256,16 @@
   "Go Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
+      "// In Go, functions do not support default argument values in definitions.",
       "func ${2:MyFunction}(${3:arg1} ${4:type1}, ${5:arg2} ${6:type2}) ${1:void} {",
       "    ${7:// Your code here}",
       "}"
     ],
-    "description": "Creates a function with arguments in Go."
+    "description": "Creates a function with arguments in Go, with a note about default argument values."
   },  
   "Go Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
-    "body": [
-      "// Go does not support named arguments in function definitions."
-    ],
+    "body": ["// Go does not support named arguments in function definitions."],
     "description": "Go does not support named arguments in function definitions."
   },
   "Go Function Syntax": {
@@ -252,7 +277,7 @@
       "// Note: Go does not support named arguments in function definitions."
     ],
     "description": "Outlines the syntax for functions in Go."
-  },  
+  },
   "Go Comment": {
     "prefix": "cotrComment",
     "body": ["// ${1:comment}"],

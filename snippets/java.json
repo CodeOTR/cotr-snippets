@@ -1,4 +1,14 @@
 {
+  "Java Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "Typing: Statically typed",
+      "Paradigm: Multi-paradigm: object-oriented, imperative, concurrent",
+      "Compilation: Compiled to bytecode, executed on the Java Virtual Machine (JVM)",
+      "Concurrency: Supports multi-threading and concurrent programming with the java.util.concurrent package"
+    ],
+    "description": "Provides general information about the Java programming language."
+  },  
   "Java Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -65,6 +75,16 @@
     "prefix": "cotrTypesDate",
     "body": ["import java.time.LocalDate;"],
     "description": "The Java LocalDate class from the java.time package."
+  },
+  "Java Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["Map<${1:keyType}, ${2:valueType}>"],
+    "description": "The Java Map type."
+  },
+  "Java List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["List<${1:type}>"],
+    "description": "The Java List type."
   },
   "Java Date Now": {
     "prefix": "cotrNow",
@@ -249,12 +269,20 @@
   "Java Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
+      "// In Java, functions do not support default argument values in definitions.",
+      "// You can achieve similar functionality using method overloading.",
       "public ${1:void} ${2:myFunction}(${3:type1} ${4:arg1}, ${5:type2} ${6:arg2}) {",
       "    ${7:// Your code here}",
+      "}",
+      "",
+      "// Overloaded method with default value for arg2",
+      "public ${1:void} ${2:myFunction}(${3:type1} ${4:arg1}) {",
+      "    ${5:type2} ${6:arg2} = ${8:defaultValue};",
+      "    ${2:myFunction}(${4:arg1}, ${6:arg2});",
       "}"
     ],
-    "description": "Creates a function with arguments in Java."
-  },
+    "description": "Creates a function with arguments in Java, with a note about default argument values."
+  },  
   "Java Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
     "body": [

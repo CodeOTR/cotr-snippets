@@ -1,4 +1,14 @@
 {
+  "Dart Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "Typing: Statically typed",
+      "Paradigm: Multi-paradigm: object-oriented, functional, imperative, reflective",
+      "Compilation: Compiled to native code or transpiled to JavaScript",
+      "Concurrency: Supports isolates for concurrent execution"
+    ],
+    "description": "Provides general information about the Dart programming language."
+  },  
   "Dart Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -67,6 +77,16 @@
     "prefix": "cotrTypesDate",
     "body": ["DateTime"],
     "description": "The Dart DateTime type."
+  },
+  "Dart Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["Map<${1:keyType}, ${2:valueType}>"],
+    "description": "The Dart Map type."
+  },
+  "Dart List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["List<${1:type}>"],
+    "description": "The Dart List type."
   },
   "Dart Date Now": {
     "prefix": "cotrNow",
@@ -234,16 +254,17 @@
       "}"
     ],
     "description": "Creates a function in Dart."
-  },  
+  },
   "Dart Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
-      "${1:void} ${2:myFunction}(${3:Type} ${4:arg1}, ${5:Type} ${6:arg2}) {",
-      "  ${7:// Your code here}",
+      "// In Dart, functions can have optional named or positional parameters with default values.",
+      "${1:void} ${2:myFunction}(${3:Type} ${4:arg1}, [${5:Type} ${6:arg2} = ${7:defaultValue}]) {",
+      "  ${8:// Your code here}",
       "}"
     ],
-    "description": "Creates a function with arguments in Dart."
-  },
+    "description": "Creates a function with arguments in Dart, including an optional positional argument with a default value."
+  },  
   "Dart Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
     "body": [
@@ -262,7 +283,7 @@
       "// Function with named arguments: returnType functionName({arg1Type arg1, arg2Type arg2, ...}) { ... }"
     ],
     "description": "Outlines the syntax for functions in Dart."
-  },  
+  },
   "Dart Comment": {
     "prefix": "cotrComment",
     "body": ["// ${1:Your comment here}"],

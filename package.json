@@ -4,7 +4,7 @@
   "publisher": "CodeontheRocks",
   "repository": "https://github.com/CodeOTR/cotr-snippets",
   "description": "Write code in every language",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "icon": "cubes_with_background.png",
   "sponsor": {
     "url": "https://github.com/sponsors/jtmuller5"
@@ -16,7 +16,8 @@
     "dart",
     "typescript",
     "snippets",
-    "pseduo-code"
+    "pseduo-code",
+    "polyglot"
   ],
   "categories": [
     "Snippets"

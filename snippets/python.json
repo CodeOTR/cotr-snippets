@@ -1,4 +1,14 @@
 {
+  "Python Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "Typing: Dynamically typed",
+      "Paradigm: Multi-paradigm: object-oriented, imperative, functional, procedural, reflective",
+      "Compilation: Interpreted",
+      "Concurrency: Supports multi-threading and asynchronous programming with asyncio"
+    ],
+    "description": "Provides general information about the Python programming language."
+  },  
   "Python Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -218,12 +228,13 @@
   "Python Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
-      "def ${2:my_function}(${3:arg1}, ${4:arg2}):",
-      "    ${5:# Your code here}",
+      "# In Python, functions can have arguments with default values.",
+      "def ${2:my_function}(${3:arg1}, ${4:arg2}=${5:'defaultVal'}):",
+      "    ${6:# Your code here}",
       ""
     ],
-    "description": "Creates a function with arguments in Python."
-  },
+    "description": "Creates a function with arguments in Python, including an argument with a default value."
+  },  
   "Python Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
     "body": [

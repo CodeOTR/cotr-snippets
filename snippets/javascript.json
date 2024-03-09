@@ -1,4 +1,14 @@
 {
+  "JavaScript Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "Typing: Dynamically typed",
+      "Paradigm: Multi-paradigm: event-driven, functional, imperative, prototype-based",
+      "Compilation: Interpreted or just-in-time compiled",
+      "Concurrency: Event loop model with support for asynchronous programming using callbacks, promises, and async/await"
+    ],
+    "description": "Provides general information about the JavaScript programming language."
+  },  
   "JavaScript Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -18,7 +28,7 @@
       "$BLOCK_COMMENT_END"
     ],
     "description": "Explains that JavaScript is dynamically typed and lists its built-in types."
-  },  
+  },
   "JavaScript String Type": {
     "prefix": "cotrTypesString",
     "body": ["let text = \"John Doe\";"],
@@ -43,6 +53,16 @@
     "prefix": "cotrTypesDate",
     "body": ["Date"],
     "description": "JavaScript uses the Date object for date and time operations."
+  },
+  "JavaScript Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["new Map()"],
+    "description": "The JavaScript Map type."
+  },
+  "JavaScript List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["[]"],
+    "description": "The JavaScript array type, commonly used as a list."
   },
   "JavaScript Date Now": {
     "prefix": "cotrNow",
@@ -188,7 +208,7 @@
       "`);"
     ],
     "description": "Prints a multi-line message to the console in JavaScript."
-  },  
+  },
   "JavaScript For Loop": {
     "prefix": "cotrForLoop",
     "body": [
@@ -236,15 +256,16 @@
       "}"
     ],
     "description": "Creates a function in JavaScript."
-  },  
+  },
   "JavaScript Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
-      "function ${2:myFunction}(${3:arg1}, ${4:arg2}) {",
-      "  ${5:// Your code here}",
+      "// In JavaScript, functions can have arguments with default values.",
+      "function ${2:myFunction}(${3:arg1}, ${4:arg2} = ${5:defaultValue}) {",
+      "  ${6:// Your code here}",
       "}"
     ],
-    "description": "Creates a function with arguments in JavaScript."
+    "description": "Creates a function with arguments in JavaScript, including an argument with a default value."
   },  
   "JavaScript Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
@@ -254,7 +275,7 @@
       "}"
     ],
     "description": "Creates a function with named arguments in JavaScript using object destructuring."
-  },  
+  },
   "JavaScript Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [
@@ -264,7 +285,7 @@
       "// Function with named arguments (using object destructuring): function functionName({arg1, arg2, ...}) { ... }"
     ],
     "description": "Outlines the syntax for functions in JavaScript."
-  },  
+  },
   "JavaScript Comment": {
     "prefix": "cotrComment",
     "body": ["// ${1:Your comment here}"],

@@ -31,6 +31,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 
 | Name | Description |
 | --- | --- |
+| cotrInfo | Outputs information about the language |
 | cotrTypes | The language's data types |
 | cotrTypesString | The language's string data type |
 | cotrTypesInt | The language's integer data type |
@@ -39,6 +40,8 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrTypesBoolTrue | The language's value for true |
 | cotrTypesBoolFalse | The language's value for false |
 | cotrTypesDate | The language's Date data type |
+| cotrTypesList | The language's list data type |
+| cotrTypesMap | The language's map data type |
 | cotrNull | The language's null data type |
 | cotrNow | How the language represents the current time |
 | cotrVar | Creates a variable |

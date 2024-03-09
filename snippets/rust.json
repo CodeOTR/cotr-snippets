@@ -1,4 +1,14 @@
 {
+  "Rust Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "Typing: Statically typed",
+      "Paradigm: Multi-paradigm: imperative, functional, concurrent",
+      "Compilation: Compiled",
+      "Concurrency: Built-in support for concurrency with ownership and borrowing, and asynchronous programming with async/await"
+    ],
+    "description": "Provides general information about the Rust programming language."
+  },  
   "Rust Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -28,7 +38,7 @@
       "$BLOCK_COMMENT_END"
     ],
     "description": "Lists the types in Rust."
-  },  
+  },
   "Rust String Type (String)": {
     "prefix": "cotrTypesString",
     "body": ["String"],
@@ -82,7 +92,17 @@
       "use chrono::{DateTime, Utc};"
     ],
     "description": "Explains the absence of a built-in Date type in Rust."
-  },  
+  },
+  "Rust Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["std::collections::HashMap<${1:KeyType}, ${2:ValueType}>"],
+    "description": "The Rust HashMap type, equivalent to a map."
+  },
+  "Rust List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["Vec<${1:Type}>"],
+    "description": "The Rust Vec type, commonly used as a list."
+  },
   "Rust Date Now": {
     "prefix": "cotrNow",
     "body": [
@@ -93,8 +113,8 @@
       "Utc::now()"
     ],
     "description": "Gets the current date and time in Rust using the chrono crate."
-  },  
-  "Rust Character Type (char)": {
+  },
+  "Rust Character Type": {
     "prefix": "cotrTypesChar",
     "body": ["char"],
     "description": "The Rust char type."
@@ -118,12 +138,12 @@
     "prefix": "cotrVarTyped",
     "body": ["let ${1:my_var}: ${2:Type} = $3;"],
     "description": "Creates a typed variable in Rust."
-  },  
+  },
   "Rust Create Nullable Variable": {
     "prefix": "cotrVarNullable",
     "body": ["let ${1:my_var}: Option<${2:Type}> = $3;"],
     "description": "Creates a nullable variable in Rust using the Option type."
-  },  
+  },
   "Rust Create String Variable": {
     "prefix": "cotrVarString",
     "body": ["let ${1:myStr} = String::from(${2:'myString'});"],
@@ -165,14 +185,16 @@
       "let ${1:my_date}: DateTime<Utc> = Utc::now();"
     ],
     "description": "Creates a date variable in Rust using the chrono crate."
-  },  
+  },
   "Rust Create List Variable": {
     "prefix": "cotrVarList",
-    "body": [ "let ${1:myList} = [",
-    "  ${2:'item1'},",
-    "  ${3:'item2'},",
-    "  // Add more items here",
-    "];"],
+    "body": [
+      "let ${1:myList} = [",
+      "  ${2:'item1'},",
+      "  ${3:'item2'},",
+      "  // Add more items here",
+      "];"
+    ],
     "description": "Creates a list variable in Rust."
   },
   "Rust Create Map Variable (Hashmap)": {
@@ -242,7 +264,7 @@
       ");"
     ],
     "description": "Prints a multi-line message to the console in Rust."
-  },  
+  },
   "Rust For Loop": {
     "prefix": "cotrForLoop",
     "body": ["for ${1:i} in ${2:0..10} {", "  // Your code here", "}"],
@@ -283,15 +305,16 @@
       "}"
     ],
     "description": "Creates a function in Rust."
-  },  
+  },
   "Rust Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
-      "fn ${2:my_function}(${3:arg1}: ${4:type1}, ${5:arg2}: ${6:type2}) -> ${1:void} {",
+      "// In Rust, default arguments are not supported but you can set default values using patterns like Option<T> or custom types.",
+      "fn ${2:my_function}(${3:arg1}: ${4:type1}, ${5:arg2}: Option<${6:type2}> = None) -> ${1:void} {",
       "    ${7:// Your code here}",
       "}"
     ],
-    "description": "Creates a function with arguments in Rust."
+    "description": "Creates a function with arguments in Rust, including an argument with an optional default value."
   },  
   "Rust Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
@@ -299,7 +322,7 @@
       "// Note: Rust does not support named arguments in function definitions."
     ],
     "description": "Note about named arguments in Rust."
-  }, 
+  },
   "Rust Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [
@@ -309,7 +332,7 @@
       "// Note: Rust does not support named arguments in function definitions."
     ],
     "description": "Outlines the syntax for functions in Rust."
-  },   
+  },
   "Rust Comment": {
     "prefix": "cotrComment",
     "body": ["// ${1:comment}"],
