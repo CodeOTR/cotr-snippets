@@ -105,6 +105,18 @@
     "body": ["List<${1:type}>"],
     "description": "The Kotlin List type."
   },
+  "Kotlin Null Type": {
+    "prefix": "cotrTypesNull",
+    "scope": "kotlin",
+    "body": ["null"],
+    "description": "The Kotlin null value."
+  },
+  "Kotlin Dynamic Type": {
+    "prefix": "cotrTypesAny",
+    "scope": "kotlin",
+    "body": ["Any"],
+    "description": "The Kotlin Any type."
+  },
   "Kotlin Date Now": {
     "prefix": "cotrNow",
     "scope": "kotlin",

@@ -2,7 +2,7 @@
   "Python Info": {
     "prefix": "cotrInfo",
     "body": [
-      "Typing: Dynamically typed",
+      "Typing: Dynamically typed. Use the Typing module to specify types.",
       "Paradigm: Multi-paradigm: object-oriented, imperative, functional, procedural, reflective",
       "Compilation: Interpreted",
       "Concurrency: Supports multi-threading and asynchronous programming with asyncio"
@@ -96,6 +96,11 @@
     "prefix": "cotrTypesMap",
     "body": ["dict"],
     "description": "The Python dictionary type."
+  },
+  "Python Dynamic Type": {
+    "prefix": "cotrTypesDynamic",
+    "body": ["Any # Note: Python is dynamically typed. Use the Typing module to specify types."],
+    "description": "The Python dynamic type."
   },
   "Python Interpolate String": {
     "prefix": "cotrInterpolate",

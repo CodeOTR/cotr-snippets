@@ -8,7 +8,7 @@
       "// Concurrency: Supports multi-threading, async/await"
     ],
     "description": "General information about C#."
-  },  
+  },
   "C# Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -90,7 +90,16 @@
     "body": ["List<${1:type}>"],
     "description": "The C# List type."
   },
-
+  "C# Null Type": {
+    "prefix": "cotrTypesNull",
+    "body": ["null"],
+    "description": "The C# null value."
+  },
+  "C# Dynamic Type": {
+    "prefix": "cotrTypesDynamic",
+    "body": ["dynamic"],
+    "description": "The C# dynamic type."
+  },
   "C# Date Now": {
     "prefix": "cotrNow",
     "body": ["DateTime.Now"],
@@ -275,7 +284,7 @@
       "}"
     ],
     "description": "Creates a function with arguments in C#, including an argument with a default value."
-  },  
+  },
   "C# Function Named Args": {
     "prefix": "cotrFuncNamedArgs",
     "body": [

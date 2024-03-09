@@ -121,8 +121,13 @@
   },
   "Rust Null Type (Option)": {
     "prefix": "cotrNull",
-    "body": ["Option"],
+    "body": ["None"],
     "description": "The Rust Option type."
+  },
+  "Rust Dynamic Type (Any)": {
+    "prefix": "cotrAny",
+    "body": ["dyn Any // There is no built-in Any type in Rust."],
+    "description": "The Rust dyn Any type."
   },
   "Rust Interpolate String": {
     "prefix": "cotrInterpolate",

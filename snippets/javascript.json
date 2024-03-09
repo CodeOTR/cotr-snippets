@@ -71,7 +71,7 @@
   },
   "JavaScript Null Type": {
     "prefix": "cotrNull",
-    "body": ["let value = null;"],
+    "body": ["null"],
     "description": "JavaScript does not have types."
   },
   "JavaScript Int Type": {
@@ -82,6 +82,13 @@
   "JavaScript Number Type": {
     "prefix": "cotrTypesNum",
     "body": ["let number = $1;"],
+    "description": "JavaScript does not have types."
+  },
+  "JavaScript Dynamic Type": {
+    "prefix": "cotrTypesDynamic",
+    "body": [
+      "// There is no specific syntax for declaring a variable with a dynamic type in JavaScript."
+    ],
     "description": "JavaScript does not have types."
   },
   "JavaScript Interpolate String": {

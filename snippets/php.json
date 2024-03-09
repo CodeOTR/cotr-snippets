@@ -83,6 +83,11 @@
     "body": ["// In PHP, indexed arrays are used as lists."],
     "description": "Explains the use of indexed arrays as lists in PHP."
   },
+  "PHP Dynamic Type": {
+    "prefix": "cotrTypesDynamic",
+    "body": ["// PHP is a dynamically typed language."],
+    "description": "Explains that PHP is a dynamically typed language."
+  },
   "PHP Create Variable": {
     "prefix": "cotrVar",
     "body": ["$${1:myVar} = $2;"],

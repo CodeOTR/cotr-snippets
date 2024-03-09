@@ -102,6 +102,11 @@
     "body": ["nil"],
     "description": "The Ruby nil value."
   },
+  "Ruby Dynamic Type": {
+    "prefix": "cotrDynamic",
+    "body": ["# Ruby is a dynamically typed language."],
+    "description": "Ruby is a dynamically typed language."
+  },
   "Ruby Create Variable": {
     "prefix": "cotrVar",
     "body": ["${1:my_var} = $2"],

@@ -80,6 +80,11 @@
     "body": ["null"],
     "description": "The TypeScript null type."
   },
+  "TypeScript Dynamic Type": {
+    "prefix": "cotrAny",
+    "body": ["any"],
+    "description": "The TypeScript any type."
+  },
   "TypeScript Interpolate String": {
     "prefix": "cotrInterpolate",
     "body": ["`Hello, ${1:name}!`"],

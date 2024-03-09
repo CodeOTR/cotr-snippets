@@ -81,6 +81,16 @@
     "body": ["[]${1:type}"],
     "description": "The Go slice type, commonly used as a list."
   },
+  "Go Null Type": {
+    "prefix": "cotrTypesNull",
+    "body": ["nil"],
+    "description": "The Go nil value, representing the absence of a value."
+  },
+  "Go Dynamic Type": {
+    "prefix": "cotrTypesDynamic",
+    "body": ["interface{}"],
+    "description": "The Go interface{} type, representing any type."
+  },
   "Go Date Now": {
     "prefix": "cotrTypesDateNow",
     "body": ["time.Now()"],

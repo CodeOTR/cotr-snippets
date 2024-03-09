@@ -92,10 +92,20 @@
     "body": ["Date()"],
     "description": "Gets the current date and time in Swift."
   },  
+  "Swift Null Type": {
+    "prefix": "cotrTypesNull",
+    "body": ["nil"],
+    "description": "The Swift nil value."
+  },
   "Swift Character Type": {
     "prefix": "cotrTypesChar",
     "body": ["Character"],
     "description": "The Swift Character type."
+  },
+  "Swift Dynamic Type": {
+    "prefix": "cotrTypesAny",
+    "body": ["Any"],
+    "description": "The Swift Any type."
   },
   "Swift Interpolate String": {
     "prefix": "cotrInterpolate",

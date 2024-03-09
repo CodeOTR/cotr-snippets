@@ -88,6 +88,11 @@
     "body": ["List<${1:type}>"],
     "description": "The Dart List type."
   },
+  "Dart Dynamic Type": {
+    "prefix": "cotrTypesDynamic",
+    "body": ["dynamic"],
+    "description": "The Dart dynamic type."
+  },
   "Dart Date Now": {
     "prefix": "cotrNow",
     "body": ["DateTime.now()"],
