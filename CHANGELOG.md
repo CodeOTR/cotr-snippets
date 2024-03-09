@@ -10,7 +10,7 @@
 ## 0.0.5
 
 - Add `cotrPrintMulti` snippets
-- Add `cotrDate` snippets
+- Add `cotrTypesDate` snippets
 - Add PHP support
 
 ## 0.0.4
@@ -21,7 +21,7 @@
 
 ## 0.0.3
 
-- Add `cotrBoolTrue` and `cotrBoolFalse` snippets
+- Add `cotrTypesBoolTrue` and `cotrTypesBoolFalse` snippets
 - Add `cotrVar...` snippets
 - Add Python and C++ Support
 

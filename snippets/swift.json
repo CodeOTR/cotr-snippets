@@ -28,42 +28,42 @@
     "description": "Lists the types in Swift."
   },  
   "Swift String Type": {
-    "prefix": "cotrString",
+    "prefix": "cotrTypesString",
     "body": ["String"],
     "description": "The Swift String type."
   },
   "Swift Integer Type": {
-    "prefix": "cotrInt",
+    "prefix": "cotrTypesInt",
     "body": ["Int"],
     "description": "The Swift Int type."
   },
   "Swift Double Type": {
-    "prefix": "cotrNum",
+    "prefix": "cotrTypesNum",
     "body": ["Double"],
     "description": "The Swift Double type."
   },
   "Swift Float Type": {
-    "prefix": "cotrNumAlt",
+    "prefix": "cotrTypesNumAlt",
     "body": ["Float"],
     "description": "The Swift Float type."
   },
   "Swift Boolean Type": {
-    "prefix": "cotrBool",
+    "prefix": "cotrTypesBool",
     "body": ["Bool"],
     "description": "The Swift Bool type."
   },
   "Swift Boolean True": {
-    "prefix": "cotrBoolTrue",
+    "prefix": "cotrTypesBoolTrue",
     "body": ["true"],
     "description": "The Swift true value."
   },
   "Swift Boolean False": {
-    "prefix": "cotrBoolFalse",
+    "prefix": "cotrTypesBoolFalse",
     "body": ["false"],
     "description": "The Swift false value."
   },
   "Swift Date Type": {
-    "prefix": "cotrDate",
+    "prefix": "cotrTypesDate",
     "body": ["Date"],
     "description": "The Swift Date struct."
   },  
@@ -73,7 +73,7 @@
     "description": "Gets the current date and time in Swift."
   },  
   "Swift Character Type": {
-    "prefix": "cotrChar",
+    "prefix": "cotrTypesChar",
     "body": ["Character"],
     "description": "The Swift Character type."
   },
@@ -142,15 +142,18 @@
   },  
   "Swift Create List Variable": {
     "prefix": "cotrVarList",
-    "body": ["var ${1:myArray} = [${2:'item1'}, ${3:'item2'}];"],
+    "body": [
+      "var ${1:myArray} = [${2:'item1'}, ${3:'item2'}, ${4:'item3'}];"
+    ],
     "description": "Creates an array variable in Swift."
   },
   "Swift Create Dictionary Variable": {
     "prefix": "cotrVarMap",
     "body": [
-      "var ${1:myDictionary} =",
-      "[${2:'key1'}: ${3:'value1'}, ${4:'key",
-      "2'}: ${5:'value2'}];"
+      "var ${1:myDictionary} = [",
+      "  ${2:'key1'}: ${3:'value1'},",
+      "  ${4:'key2'}: ${5:'value2'}",
+      "];"
     ],
     "description": "Creates a dictionary variable in Swift."
   },
@@ -169,34 +172,12 @@
     ],
     "description": "Creates a static variable in a Swift class."
   },
-  "Swift Create Array": {
-    "prefix": "cotrList",
-    "body": [
-      "var ${1:myArray} = [",
-      "  ${2:'item1'},",
-      "  ${3:'item2'},",
-      "  // Add more items here",
-      "];"
-    ],
-    "description": "Creates an array in Swift."
-  },
   "Swift Generate Array": {
     "prefix": "cotrGenList",
     "body": [
       "var ${1:myArray} = Array(repeating: ${2:'item'}, count: ${3:5});"
     ],
     "description": "Generates an array of a specific length in Swift."
-  },
-  "Swift Create Dictionary": {
-    "prefix": "cotrMap",
-    "body": [
-      "var ${1:myDictionary} = [",
-      "  ${2:'key1'}: ${3:'value1'},",
-      "  ${4:'key2'}: ${5:'value2'},",
-      "  // Add more key-value pairs here",
-      "];"
-    ],
-    "description": "Creates a dictionary in Swift."
   },
   "Swift Generate Dictionary": {
     "prefix": "cotrGenMap",

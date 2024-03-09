@@ -31,42 +31,42 @@
     "description": "Lists the types in C#."
   },  
   "C# String Type": {
-    "prefix": "cotrString",
+    "prefix": "cotrTypesString",
     "body": ["string"],
     "description": "The C# string type."
   },
   "C# Integer Type": {
-    "prefix": "cotrInt",
+    "prefix": "cotrTypesInt",
     "body": ["int"],
     "description": "The C# int type."
   },
   "C# Double Type": {
-    "prefix": "cotrNum",
+    "prefix": "cotrTypesNum",
     "body": ["double"],
     "description": "The C# double type."
   },
   "C# Float Type": {
-    "prefix": "cotrNumAlt",
+    "prefix": "cotrTypesNumAlt",
     "body": ["float"],
     "description": "The C# float type."
   },
   "C# Boolean Type": {
-    "prefix": "cotrBoolean",
+    "prefix": "cotrTypesBoolean",
     "body": ["bool"],
     "description": "The C# boolean type."
   },
   "C# Boolean True": {
-    "prefix": "cotrBoolTrue",
+    "prefix": "cotrTypesBoolTrue",
     "body": ["true"],
     "description": "The C# true value."
   },
   "C# Boolean False": {
-    "prefix": "cotrBoolFalse",
+    "prefix": "cotrTypesBoolFalse",
     "body": ["false"],
     "description": "The C# false value."
   },
   "C# Date Type": {
-    "prefix": "cotrDate",
+    "prefix": "cotrTypesDate",
     "body": ["DateTime"],
     "description": "The C# DateTime type."
   },  
@@ -173,22 +173,6 @@
       "// MyClass.${3:myStaticVar}"
     ],
     "description": "Creates a static variable in a C# class."
-  },
-  "C# Create Dictionary": {
-    "prefix": "cotrMap",
-    "body": [
-      "Dictionary<${1:Key}, ${2:Value}> ${3:myDict} = new Dictionary<${1:Key}, ${2:Value}>();",
-      "${3:myDict}.Add(${4:key}, ${5:value});"
-    ],
-    "description": "Creates a dictionary in C#."
-  },
-  "C# Create List": {
-    "prefix": "cotrList",
-    "body": [
-      "List<${1:Type}> ${2:myList} = new List<${1:Type}>();",
-      "${2:myList}.Add(${3:item});"
-    ],
-    "description": "Creates a list in C#."
   },
   "C# Print": {
     "prefix": "cotrPrint",

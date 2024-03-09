@@ -35,49 +35,49 @@
     "description": "Lists the types in Kotlin."
   },
   "Kotlin String Type": {
-    "prefix": "cotrString",
+    "prefix": "cotrTypesString",
     "scope": "kotlin",
     "body": ["String"],
     "description": "The Kotlin String type."
   },
   "Kotlin Integer Type": {
-    "prefix": "cotrInt",
+    "prefix": "cotrTypesInt",
     "scope": "kotlin",
     "body": ["Int"],
     "description": "The Kotlin Int type."
   },
   "Kotlin Double Type": {
-    "prefix": "cotrNum",
+    "prefix": "cotrTypesNum",
     "scope": "kotlin",
     "body": ["Double"],
     "description": "The Kotlin Double type."
   },
   "Kotlin Float Type": {
-    "prefix": "cotrNumAlt",
+    "prefix": "cotrTypesNumAlt",
     "scope": "kotlin",
     "body": ["Float"],
     "description": "The Kotlin Float type."
   },
   "Kotlin Boolean Type": {
-    "prefix": "cotrBool",
+    "prefix": "cotrTypesBool",
     "scope": "kotlin",
     "body": ["Boolean"],
     "description": "The Kotlin Boolean type."
   },
   "Kotlin Boolean True": {
-    "prefix": "cotrBoolTrue",
+    "prefix": "cotrTypesBoolTrue",
     "scope": "kotlin",
     "body": ["true"],
     "description": "The Kotlin true value."
   },
   "Kotlin Boolean False": {
-    "prefix": "cotrBoolFalse",
+    "prefix": "cotrTypesBoolFalse",
     "scope": "kotlin",
     "body": ["false"],
     "description": "The Kotlin false value."
   },
   "Kotlin Date Type": {
-    "prefix": "cotrDate",
+    "prefix": "cotrTypesDate",
     "scope": "kotlin",
     "body": ["import java.time.LocalDate"],
     "description": "The Kotlin LocalDate class from the java.time package."
@@ -93,7 +93,7 @@
     "description": "Gets the current date in Kotlin."
   },
   "Kotlin Character Type": {
-    "prefix": "cotrChar",
+    "prefix": "cotrTypesChar",
     "scope": "kotlin",
     "body": ["Char"],
     "description": "The Kotlin Char type."
@@ -177,16 +177,22 @@
   "Kotlin Create List Variable": {
     "prefix": "cotrVarList",
     "scope": "kotlin",
-    "body": ["var ${1:myList} = listOf(${2:'item1'}, ${3:'item2'})"],
-    "description": "Creates a list variable in Kotlin using the var keyword."
+    "body": [
+      "var ${1:myList} = listOf(${2:'item1'}, ${3:'item2'})"
+    ],
+    "description": "Creates a list variable in Kotlin."
   },
   "Kotlin Create Map Variable": {
     "prefix": "cotrVarMap",
     "scope": "kotlin",
     "body": [
-      "var ${1:myMap} = mapOf(${2:'key1' to 'value1'}, ${3:'key2' to 'value2'})"
+      "var ${1:myMap} = mapOf(",
+      "  ${2:'key1' to 'value1'},",
+      "  ${3:'key2' to 'value2'},",
+      "  // Add more key-value pairs here",
+      ")"
     ],
-    "description": "Creates a map variable in Kotlin using the var keyword."
+    "description": "Creates a map variable in Kotlin."
   },
 
   "Kotlin Create Constant": {
@@ -194,18 +200,6 @@
     "scope": "kotlin",
     "body": ["val ${1:myConst} = $2"],
     "description": "Creates a constant variable in Kotlin using the val keyword."
-  },
-  "Kotlin Create Map": {
-    "prefix": "cotrMap",
-    "scope": "kotlin",
-    "body": [
-      "val ${1:myMap} = mapOf(",
-      "  ${2:'key1' to 'value1'},",
-      "  ${3:'key2' to 'value2'},",
-      "  // Add more key-value pairs here",
-      ")"
-    ],
-    "description": "Creates a map in Kotlin."
   },
   "Kotlin Generate Map": {
     "prefix": "cotrGenMap",
@@ -216,18 +210,6 @@
       "}"
     ],
     "description": "Generates a map with a specific number of key-value pairs in Kotlin."
-  },
-  "Kotlin Create List": {
-    "prefix": "cotrList",
-    "scope": "kotlin",
-    "body": [
-      "val ${1:myList} = listOf(",
-      "  ${2:'item1'},",
-      "  ${3:'item2'},",
-      "  // Add more items here",
-      ")"
-    ],
-    "description": "Creates a list in Kotlin."
   },
   "Kotlin Generate List": {
     "prefix": "cotrGenList",

@@ -24,32 +24,32 @@
     "description": "Lists all types in PHP."
   },
   "PHP String Type": {
-    "prefix": "cotrString",
+    "prefix": "cotrTypesString",
     "body": ["string"],
     "description": "The PHP string type."
   },
   "PHP Integer Type": {
-    "prefix": "cotrInt",
+    "prefix": "cotrTypesInt",
     "body": ["int"],
     "description": "The PHP int type."
   },
   "PHP Float Type": {
-    "prefix": "cotrNu",
+    "prefix": "cotrTypesNum",
     "body": ["float"],
     "description": "The PHP float type."
   },
   "PHP Boolean Type": {
-    "prefix": "cotrBool",
+    "prefix": "cotrTypesBool",
     "body": ["bool"],
     "description": "The PHP bool type."
   },
   "PHP Boolean True": {
-    "prefix": "cotrBoolTrue",
+    "prefix": "cotrTypesBoolTrue",
     "body": ["true"],
     "description": "The PHP true value."
   },
   "PHP Boolean False": {
-    "prefix": "cotrBoolFalse",
+    "prefix": "cotrTypesBoolFalse",
     "body": ["false"],
     "description": "The PHP false value."
   },
@@ -59,7 +59,7 @@
     "description": "The PHP null value."
   },
   "PHP Date Type": {
-    "prefix": "cotrDate",
+    "prefix": "cotrTypesDate",
     "body": ["DateTime"],
     "description": "The PHP DateTime type."
   },

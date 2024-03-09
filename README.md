@@ -32,13 +32,13 @@ Its very simple, actually. Every supported language implements all snippets in a
 | Name | Description |
 | --- | --- |
 | cotrTypes | The language's data types |
-| cotrString | The language's string data type |
-| cotrInt | The language's integer data type |
-| cotrNum | The language's numerical data type |
-| cotrBool | The language's boolean data type |
-| cotrBoolTrue | The language's value for true |
-| cotrBoolFalse | The language's value for false |
-| cotrDate | The language's Date data type |
+| cotrTypesString | The language's string data type |
+| cotrTypesInt | The language's integer data type |
+| cotrTypesNum | The language's numerical data type |
+| cotrTypesBool | The language's boolean data type |
+| cotrTypesBoolTrue | The language's value for true |
+| cotrTypesBoolFalse | The language's value for false |
+| cotrTypesDate | The language's Date data type |
 | cotrNull | The language's null data type |
 | cotrNow | How the language represents the current time |
 | cotrVar | Creates a variable |
@@ -53,9 +53,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrVarMap | Creates a map variable |
 | cotrConst | Creates a constant variable |
 | cotrStaticVar | Creates a static variable |
-| cotrMap | Creates a map/dictionary variable |
 | cotrGenMap | Generates a map/dictionary with a specific number of key/value pairs |
-| cotrList | Creates a list/array variable |
 | cotrGenList | Generates a list/array of a specific length |
 | cotrPrint | Creates a print/log statement |
 | cotrPrintMulti | Creates a multi-line print/log statement |

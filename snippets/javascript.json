@@ -20,27 +20,27 @@
     "description": "Explains that JavaScript is dynamically typed and lists its built-in types."
   },  
   "JavaScript String Type": {
-    "prefix": "cotrString",
+    "prefix": "cotrTypesString",
     "body": ["let text = \"John Doe\";"],
     "description": "JavaScript does not have types."
   },
   "JavaScript Boolean Type": {
-    "prefix": "cotrBool",
+    "prefix": "cotrTypesBool",
     "body": ["let flag = Boolean($1);"],
     "description": "JavaScript does not have types."
   },
   "JavaScript Boolean True": {
-    "prefix": "cotrBoolTrue",
+    "prefix": "cotrTypesBoolTrue",
     "body": ["true;"],
     "description": "JavaScript does not have types."
   },
   "JavaScript Boolean False": {
-    "prefix": "cotrBoolFalse",
+    "prefix": "cotrTypesBoolFalse",
     "body": ["false;"],
     "description": "JavaScript does not have types."
   },
   "JavaScript Date Type": {
-    "prefix": "cotrDate",
+    "prefix": "cotrTypesDate",
     "body": ["Date"],
     "description": "JavaScript uses the Date object for date and time operations."
   },
@@ -55,12 +55,12 @@
     "description": "JavaScript does not have types."
   },
   "JavaScript Int Type": {
-    "prefix": "cotrInt",
+    "prefix": "cotrTypesInt",
     "body": ["let integer = Math.floor($1);"],
     "description": "JavaScript does not have types."
   },
   "JavaScript Number Type": {
-    "prefix": "cotrNum",
+    "prefix": "cotrTypesNum",
     "body": ["let number = $1;"],
     "description": "JavaScript does not have types."
   },
@@ -122,7 +122,7 @@
     "body": ["let ${1:myList} = [${2:'item1'}, ${3:'item2'}];"],
     "description": "Creates an array (list) variable in JavaScript."
   },
-  "JavaScript Create Object Variable": {
+  "JavaScript Create Map Variable (Object)": {
     "prefix": "cotrVarMap",
     "body": [
       "let ${1:myObject} = {",
@@ -131,6 +131,16 @@
       "};"
     ],
     "description": "Creates an object variable in JavaScript."
+  },
+  "JavaScript Create Map Variable": {
+    "prefix": "cotrVarMapAlt",
+    "body": [
+      "let ${1:myMap} = new Map([",
+      "  [${2:'key1'}, ${3:'value1'}],",
+      "  [${4:'key2'}, ${5:'value2'}]",
+      "]);"
+    ],
+    "description": "Creates a map variable in JavaScript."
   },
   "JavaScript Create Constant": {
     "prefix": "cotrConst",
@@ -147,28 +157,6 @@
     ],
     "description": "Creates a static variable in a JavaScript class."
   },
-  "JavaScript Create Map (Object)": {
-    "prefix": "cotrMap",
-    "body": [
-      "const ${1:myMap} = {",
-      "  ${2:'key1'}: ${3:'value1'},",
-      "  ${4:'key2'}: ${5:'value2'},",
-      "  // Add more key-value pairs here",
-      "};"
-    ],
-    "description": "Creates a map using an object in JavaScript."
-  },
-  "JavaScript Create Map (Map Class)": {
-    "prefix": "cotrMapAlt",
-    "body": [
-      "const ${1:myMap} = new Map([",
-      "  [${2:'key1'}, ${3:'value1'}],",
-      "  [${4:'key2'}, ${5:'value2'}],",
-      "  // Add more key-value pairs here",
-      "]);"
-    ],
-    "description": "Creates a map using the Map class in JavaScript."
-  },
   "JavaScript Generate Object Map": {
     "prefix": "cotrGenMap",
     "body": [
@@ -177,17 +165,6 @@
       ");"
     ],
     "description": "Generates an object map with a specific number of key-value pairs in JavaScript."
-  },
-  "JavaScript Create Array": {
-    "prefix": "cotrList",
-    "body": [
-      "const ${1:myList} = [",
-      "  ${2:'item1'},",
-      "  ${3:'item2'},",
-      "  // Add more items here",
-      "];"
-    ],
-    "description": "Creates an array (list) in JavaScript."
   },
   "JavaScript Generate Array": {
     "prefix": "cotrGenList",

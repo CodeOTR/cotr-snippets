@@ -28,27 +28,27 @@
     "description": "Lists the types in C++."
   },
   "C++ String Type": {
-    "prefix": "cotrString",
+    "prefix": "cotrTypesString",
     "body": ["std::string"],
     "description": "The C++ string type."
   },
   "C++ Integer Type": {
-    "prefix": "cotrInt",
+    "prefix": "cotrTypesInt",
     "body": ["int"],
     "description": "The C++ int type."
   },
   "C++ Double Type": {
-    "prefix": "cotrNum",
+    "prefix": "cotrTypesNum",
     "body": ["double"],
     "description": "The C++ double type."
   },
   "C++ Float Type": {
-    "prefix": "cotrNumAlt",
+    "prefix": "cotrTypesNumAlt",
     "body": ["float"],
     "description": "The C++ float type."
   },
   "C++ Boolean Type": {
-    "prefix": "cotrBool",
+    "prefix": "cotrTypesBool",
     "body": ["bool"],
     "description": "The C++ bool type."
   },
@@ -63,12 +63,12 @@
     "description": "The C++ false boolean value."
   },
   "C++ Character Type": {
-    "prefix": "cotrChar",
+    "prefix": "cotrTypesChar",
     "body": ["char"],
     "description": "The C++ char type."
   },
   "C++ Date Type": {
-    "prefix": "cotrDate",
+    "prefix": "cotrTypesDate",
     "body": ["#include <chrono>\n\nstd::chrono::system_clock::time_point"],
     "description": "C++ doesn't have a built-in Date type. Use std::chrono for date and time operations."
   },
@@ -178,17 +178,6 @@
     "prefix": "cotrVector",
     "body": ["std::vector<${1:type}> ${2:myVector} = {${3:values}};"],
     "description": "Creates a vector in C++."
-  },
-  "C++ Create Map": {
-    "prefix": "cotrMap",
-    "body": [
-      "std::map<${1:keyType}, ${2:valueType}> ${3:myMap} = {",
-      "  {${4:key1}, ${5:value1}},",
-      "  {${6:key2}, ${7:value2}},",
-      "  // Add more key-value pairs here",
-      "};"
-    ],
-    "description": "Creates a map in C++."
   },
   "C++ Print": {
     "prefix": "cotrPrint",

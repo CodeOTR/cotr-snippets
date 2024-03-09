@@ -28,47 +28,47 @@
     "description": "Lists some common types in Ruby."
   },
   "Ruby String Type": {
-    "prefix": "cotrString",
+    "prefix": "cotrTypesString",
     "body": ["String"],
     "description": "The Ruby String type."
   },
   "Ruby Integer Type": {
-    "prefix": "cotrInt",
+    "prefix": "cotrTypesInt",
     "body": ["Integer"],
     "description": "The Ruby Integer type."
   },
   "Ruby Double Type": {
-    "prefix": "cotrNum",
+    "prefix": "cotrTypesNum",
     "body": ["double"],
     "description": "The Ruby double type."
   },
   "Ruby Float Type": {
-    "prefix": "cotrNum",
+    "prefix": "cotrTypesNum",
     "body": ["Float"],
     "description": "The Ruby Float type."
   },
   "Ruby Boolean Type": {
-    "prefix": "cotrBool",
+    "prefix": "cotrTypesBool",
     "body": ["# Ruby uses true and false for boolean values."],
     "description": "Ruby uses true and false for boolean values."
   },
   "Ruby Boolean True": {
-    "prefix": "cotrBoolTrue",
+    "prefix": "cotrTypesBoolTrue",
     "body": ["true"],
     "description": "The Ruby true value."
   },
   "Ruby Boolean False": {
-    "prefix": "cotrBoolFalse",
+    "prefix": "cotrTypesBoolFalse",
     "body": ["false"],
     "description": "The Ruby false value."
   },
   "Ruby Character Type": {
-    "prefix": "cotrChar",
+    "prefix": "cotrTypesChar",
     "body": ["# Ruby does not have a separate char type; use String instead."],
     "description": "Ruby does not have a separate char type; use String instead."
   },
   "Ruby Date Type": {
-    "prefix": "cotrDate",
+    "prefix": "cotrTypesDate",
     "body": ["require 'date'", "", "Date"],
     "description": "The Ruby Date class."
   },
@@ -127,12 +127,24 @@
   },
   "Ruby Create Array Variable": {
     "prefix": "cotrVarList",
-    "body": ["${1:my_array} = [${2:items}]"],
+    "body": [
+      "${1:my_array} = [",
+      "  ${2:'item1'},",
+      "  ${3:'item2'},",
+      "  # Add more items here",
+      "]"
+    ],
     "description": "Creates an array variable in Ruby."
   },
   "Ruby Create Hash Variable": {
     "prefix": "cotrVarMap",
-    "body": ["${1:my_hash} = {${2:key} => ${3:value}}"],
+    "body": [
+      "${1:my_hash} = {",
+      "  ${2:key1}: ${3:value1},",
+      "  ${4:key2}: ${5:value2},",
+      "  # Add more key-value pairs here",
+      "}"
+    ],
     "description": "Creates a hash variable in Ruby."
   },
   "Ruby Create Date Variable": {
@@ -154,28 +166,6 @@
       "# MyClass.class_variable_get(:@@${1:my_static_var})"
     ],
     "description": "Creates a class variable in Ruby."
-  },
-  "Ruby Create Hash": {
-    "prefix": "cotrMap",
-    "body": [
-      "${1:my_hash} = {",
-      "  ${2:'key1'} => ${3:'value1'},",
-      "  ${4:'key2'} => ${5:'value2'},",
-      "  # Add more key-value pairs here",
-      "}"
-    ],
-    "description": "Creates a hash in Ruby."
-  },
-  "Ruby Create Array": {
-    "prefix": "cotrList",
-    "body": [
-      "${1:my_array} = [",
-      "  ${2:'item1'},",
-      "  ${3:'item2'},",
-      "  # Add more items here",
-      "]"
-    ],
-    "description": "Creates an array in Ruby."
   },
   "Ruby Generate Array": {
     "prefix": "cotrGenList",

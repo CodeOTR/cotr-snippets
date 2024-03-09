@@ -33,37 +33,37 @@
     "description": "Lists some common types in Python."
   },
   "Python String Type": {
-    "prefix": "cotrString",
+    "prefix": "cotrTypesString",
     "body": ["str"],
     "description": "The Python string type."
   },
   "Python Integer Type": {
-    "prefix": "cotrInt",
+    "prefix": "cotrTypesInt",
     "body": ["int"],
     "description": "The Python int type."
   },
   "Python Float Type": {
-    "prefix": "cotrNum",
+    "prefix": "cotrTypesNum",
     "body": ["float"],
     "description": "The Python float type."
   },
   "Python Boolean Type": {
-    "prefix": "cotrBool",
+    "prefix": "cotrTypesBool",
     "body": ["bool"],
     "description": "The Python bool type."
   },
   "Python Boolean True": {
-    "prefix": "cotrBoolTrue",
+    "prefix": "cotrTypesBoolTrue",
     "body": ["True"],
     "description": "The Python True value."
   },
   "Python Boolean False": {
-    "prefix": "cotrBoolFalse",
+    "prefix": "cotrTypesBoolFalse",
     "body": ["False"],
     "description": "The Python False value."
   },
   "Python Date Type": {
-    "prefix": "cotrDate",
+    "prefix": "cotrTypesDate",
     "body": ["from datetime import datetime"],
     "description": "The Python datetime type from the datetime module."
   },
@@ -78,12 +78,12 @@
     "description": "The Python None type."
   },
   "Python List Type": {
-    "prefix": "cotrList",
+    "prefix": "cotrTypesList",
     "body": ["list"],
     "description": "The Python list type."
   },
   "Python Dictionary Type": {
-    "prefix": "cotrMap",
+    "prefix": "cotrTypesMap",
     "body": ["dict"],
     "description": "The Python dictionary type."
   },
@@ -148,7 +148,12 @@
   },
   "Python Create Dictionary Variable": {
     "prefix": "cotrVarMap",
-    "body": ["${1:myDict} = {${2:key1}: ${3:value1}, ${4:key2}: ${5:value2}}"],
+    "body": [
+      "${1:myDict} = {",
+      "    '${2:key1}': ${3:value1},",
+      "    '${4:key2}': ${5:value2}",
+      "}"
+    ],
     "description": "Creates a dictionary variable in Python."
   },
   "Python Create Constant": {

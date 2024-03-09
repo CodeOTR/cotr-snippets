@@ -23,32 +23,32 @@
     "description": "Prints out all the basic types in TypeScript."
   },
   "TypeScript String Type": {
-    "prefix": "cotrString",
+    "prefix": "cotrTypesString",
     "body": ["string"],
     "description": "The TypeScript string type."
   },
   "TypeScript Number Type": {
-    "prefix": "cotrNum",
+    "prefix": "cotrTypesNum",
     "body": ["number"],
     "description": "The TypeScript number type."
   },
   "TypeScript Boolean Type": {
-    "prefix": "cotrBool",
+    "prefix": "cotrTypesBool",
     "body": ["boolean"],
     "description": "The TypeScript boolean type."
   },
   "TypeScript Boolean True": {
-    "prefix": "cotrBoolTrue",
+    "prefix": "cotrTypesBoolTrue",
     "body": ["true"],
     "description": "The TypeScript true value."
   },
   "TypeScript Boolean False": {
-    "prefix": "cotrBoolFalse",
+    "prefix": "cotrTypesBoolFalse",
     "body": ["false"],
     "description": "The TypeScript false value."
   },
   "TypeScript Date Type": {
-    "prefix": "cotrDate",
+    "prefix": "cotrTypesDate",
     "body": ["Date"],
     "description": "The TypeScript Date object."
   },
@@ -131,6 +131,11 @@
     ],
     "description": "Creates a map variable in TypeScript."
   },
+  "TypeScript Create Map Variable (Map Class)": {
+    "prefix": "cotrVarMapClass",
+    "body": ["let ${1:myMap} = new Map<string, ${2:type}>([", "  ['${3:key1}', ${4:'value1'}],", "  ['${5:key2}', ${6:'value2}']", "]);"],
+    "description": "Creates a map variable using the Map class in TypeScript."
+  },
   "TypeScript Create Constant": {
     "prefix": "cotrConst",
     "body": ["const ${1:myConst} = $2;"],
@@ -146,28 +151,6 @@
     ],
     "description": "Creates a static variable in a TypeScript class."
   },
-  "TypeScript Create Map (Object)": {
-    "prefix": "cotrMap",
-    "body": [
-      "const ${1:myMap} = {",
-      "  ${2:'key1'}: ${3:'value1'},",
-      "  ${4:'key2'}: ${5:'value2'},",
-      "  // Add more key-value pairs here",
-      "};"
-    ],
-    "description": "Creates a map using an object in TypeScript."
-  },
-  "TypeScript Create Map (Map Class)": {
-    "prefix": "cotrMapAlt",
-    "body": [
-      "const ${1:myMap} = new Map([",
-      "  [${2:'key1'}, ${3:'value1'}],",
-      "  [${4:'key2'}, ${5:'value2'}],",
-      "  // Add more key-value pairs here",
-      "]);"
-    ],
-    "description": "Creates a map using the Map class in TypeScript."
-  },
   "TypeScript Generate Object Map": {
     "prefix": "cotrGenMap",
     "body": [
@@ -176,17 +159,6 @@
       ");"
     ],
     "description": "Generates an object map with a specific number of key-value pairs in TypeScript."
-  },
-  "TypeScript Create Array": {
-    "prefix": "cotrList",
-    "body": [
-      "const ${1:myList} = [",
-      "  ${2:'item1'},",
-      "  ${3:'item2'},",
-      "  // Add more items here",
-      "];"
-    ],
-    "description": "Creates an array (list) in TypeScript."
   },
   "TypeScript Generate Array": {
     "prefix": "cotrGenList",

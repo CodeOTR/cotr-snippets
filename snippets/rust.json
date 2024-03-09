@@ -30,52 +30,52 @@
     "description": "Lists the types in Rust."
   },  
   "Rust String Type (String)": {
-    "prefix": "cotrString",
+    "prefix": "cotrTypesString",
     "body": ["String"],
     "description": "The Rust String type."
   },
   "Rust String Type (&str)": {
-    "prefix": "cotrStringAlt",
+    "prefix": "cotrTypesStringAlt",
     "body": ["&str"],
     "description": "The Rust &str type."
   },
   "Rust Integer Type (i32)": {
-    "prefix": "cotrInt",
+    "prefix": "cotrTypesInt",
     "body": ["i32"],
     "description": "The Rust i32 type."
   },
   "Rust Integer Type (i64)": {
-    "prefix": "cotrIntAlt",
+    "prefix": "cotrTypesIntAlt",
     "body": ["i64"],
     "description": "The Rust i64 type."
   },
   "Rust Float Type (f32)": {
-    "prefix": "cotrNum",
+    "prefix": "cotrTypesNum",
     "body": ["f32"],
     "description": "The Rust f32 type."
   },
   "Rust Float Type (f64)": {
-    "prefix": "cotrNumAlt",
+    "prefix": "cotrTypesNumAlt",
     "body": ["f64"],
     "description": "The Rust f64 type."
   },
   "Rust Boolean Type (bool)": {
-    "prefix": "cotrBool",
+    "prefix": "cotrTypesBool",
     "body": ["bool"],
     "description": "The Rust bool type."
   },
   "Rust Boolean True": {
-    "prefix": "cotrBoolTrue",
+    "prefix": "cotrTypesBoolTrue",
     "body": ["true"],
     "description": "The Rust true value."
   },
   "Rust Boolean False": {
-    "prefix": "cotrBoolFalse",
+    "prefix": "cotrTypesBoolFalse",
     "body": ["false"],
     "description": "The Rust false value."
   },
   "Rust Date Type": {
-    "prefix": "cotrDate",
+    "prefix": "cotrTypesDate",
     "body": [
       "// Rust does not have a built-in Date type.",
       "// Use the chrono crate for date and time operations.",
@@ -95,7 +95,7 @@
     "description": "Gets the current date and time in Rust using the chrono crate."
   },  
   "Rust Character Type (char)": {
-    "prefix": "cotrChar",
+    "prefix": "cotrTypesChar",
     "body": ["char"],
     "description": "The Rust char type."
   },
@@ -168,10 +168,14 @@
   },  
   "Rust Create List Variable": {
     "prefix": "cotrVarList",
-    "body": ["let ${1:myList} = vec![$2];"],
-    "description": "Creates a list variable in Rust using the vec! macro."
+    "body": [ "let ${1:myList} = [",
+    "  ${2:'item1'},",
+    "  ${3:'item2'},",
+    "  // Add more items here",
+    "];"],
+    "description": "Creates a list variable in Rust."
   },
-  "Rust Create Map Variable": {
+  "Rust Create Map Variable (Hashmap)": {
     "prefix": "cotrVarMap",
     "body": [
       "use std::collections::HashMap;",
@@ -180,7 +184,15 @@
     ],
     "description": "Creates a map variable in Rust using the HashMap class."
   },
-
+  "Rust Create Map Variable (BTreeMap)": {
+    "prefix": "cotrVarMapAlt",
+    "body": [
+      "use std::collections::BTreeMap;",
+      "",
+      "let ${1:myMap} = BTreeMap::new();"
+    ],
+    "description": "Creates a map variable in Rust using the BTreeMap class."
+  },
   "Rust Create Constant": {
     "prefix": "cotrConst",
     "body": ["const ${1:myConst}: ${2:type} = $3;"],
@@ -190,30 +202,6 @@
     "prefix": "cotrMutVar",
     "body": ["let mut ${1:myVar} = $2;"],
     "description": "Creates a mutable variable in Rust using the let mut keywords."
-  },
-  "Rust Create Map (HashMap)": {
-    "prefix": "cotrMap",
-    "body": [
-      "use std::collections::HashMap;",
-      "",
-      "let mut ${1:myMap} = HashMap::new();",
-      "${1:myMap}.insert(${2:'key1'}, ${3:'value1'});",
-      "${1:myMap}.insert(${4:'key2'}, ${5:'value2'});",
-      "// Add more key-value pairs here"
-    ],
-    "description": "Creates a map using the HashMap class in Rust."
-  },
-  "Rust Create Map (BTreeMap)": {
-    "prefix": "cotrMapAlt",
-    "body": [
-      "use std::collections::BTreeMap;",
-      "",
-      "let mut ${1:myMap} = BTreeMap::new();",
-      "${1:myMap}.insert(${2:'key1'}, ${3:'value1'});",
-      "${1:myMap}.insert(${4:'key2'}, ${5:'value2'});",
-      "// Add more key-value pairs here"
-    ],
-    "description": "Creates a map using the BTreeMap class in Rust."
   },
   "Rust Generate Object Map": {
     "prefix": "cotrGenMap",
@@ -225,17 +213,6 @@
       "];"
     ],
     "description": "Generates an object map with a specific number of key-value pairs in Rust."
-  },
-  "Rust Create Array": {
-    "prefix": "cotrList",
-    "body": [
-      "let ${1:myList} = [",
-      "  ${2:'item1'},",
-      "  ${3:'item2'},",
-      "  // Add more items here",
-      "];"
-    ],
-    "description": "Creates an array (list) in Rust."
   },
   "Rust Generate Array": {
     "prefix": "cotrGenList",

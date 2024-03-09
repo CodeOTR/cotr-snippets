@@ -27,42 +27,42 @@
     "description": "Lists the types in Java."
   },
   "Java String Type": {
-    "prefix": "cotrString",
+    "prefix": "cotrTypesString",
     "body": ["String"],
     "description": "The Java String type."
   },
   "Java Integer Type": {
-    "prefix": "cotrInt",
+    "prefix": "cotrTypesInt",
     "body": ["int"],
     "description": "The Java int type."
   },
   "Java Double Type": {
-    "prefix": "cotrNum",
+    "prefix": "cotrTypesNum",
     "body": ["double"],
     "description": "The Java double type."
   },
   "Java Float Type": {
-    "prefix": "cotrNumAlt",
+    "prefix": "cotrTypesNumAlt",
     "body": ["float"],
     "description": "The Java float type."
   },
   "Java Boolean Type": {
-    "prefix": "cotrBoolean",
+    "prefix": "cotrTypesBoolean",
     "body": ["boolean"],
     "description": "The Java boolean type."
   },
   "Java Boolean True": {
-    "prefix": "cotrBoolTrue",
+    "prefix": "cotrTypesBoolTrue",
     "body": ["true"],
     "description": "The Java true value."
   },
   "Java Boolean False": {
-    "prefix": "cotrBoolFalse",
+    "prefix": "cotrTypesBoolFalse",
     "body": ["false"],
     "description": "The Java false value."
   },
   "Java Date Type": {
-    "prefix": "cotrDate",
+    "prefix": "cotrTypesDate",
     "body": ["import java.time.LocalDate;"],
     "description": "The Java LocalDate class from the java.time package."
   },
@@ -136,12 +136,18 @@
   },
   "Java Create List Variable": {
     "prefix": "cotrVarList",
-    "body": ["List<${1:Type}> ${2:myList} = new ArrayList<>();"],
+    "body": [
+      "List<${1:Type}> ${2:myList} = new ArrayList<>();",
+      "${2:myList}.add(${3:value});"
+    ],
     "description": "Creates a list variable in Java."
   },
   "Java Create Map Variable": {
     "prefix": "cotrVarMap",
-    "body": ["Map<${1:Key}, ${2:Value}> ${3:myMap} = new HashMap<>();"],
+    "body": [
+      "Map<${1:Key}, ${2:Value}> ${3:myMap} = new HashMap<>();",
+      "${3:myMap}.put(${4:key}, ${5:value});"
+    ],
     "description": "Creates a map variable in Java."
   },
   "Java Create Constant": {
@@ -158,22 +164,6 @@
       "// MyClass.${3:myStaticVar}"
     ],
     "description": "Creates a static variable in a Java class."
-  },
-  "Java Create Map": {
-    "prefix": "cotrMap",
-    "body": [
-      "Map<${1:Key}, ${2:Value}> ${3:myMap} = new HashMap<>();",
-      "${3:myMap}.put(${4:key}, ${5:value});"
-    ],
-    "description": "Creates a map in Java."
-  },
-  "Java Create List": {
-    "prefix": "cotrList",
-    "body": [
-      "List<${1:Type}> ${2:myList} = new ArrayList<>();",
-      "${2:myList}.add(${3:item});"
-    ],
-    "description": "Creates a list in Java."
   },
   "Java Generate List": {
     "prefix": "cotrGenList",
