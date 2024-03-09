@@ -9,6 +9,17 @@
     ],
     "description": "Provides general information about the TypeScript programming language."
   },  
+  "TypeScript Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "// TypeScript Entry Point",
+      "// To run this program, use: `ts-node filename.ts`",
+      "// Note: Ensure you have ts-node installed globally (`npm install -g ts-node`)",
+      "",
+      "console.log('Hello, World!');"
+    ],
+    "description": "Describes the entry point of a TypeScript application."
+  },  
   "TypeScript Types": {
     "prefix": "cotrTypes",
     "body": [

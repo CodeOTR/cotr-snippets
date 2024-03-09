@@ -9,6 +9,16 @@
     ],
     "description": "Provides general information about the Ruby programming language."
   },  
+  "Ruby Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "# Ruby Entry Point",
+      "# To run this program, use: `ruby filename.rb`",
+      "",
+      "puts 'Hello, World!'"
+    ],
+    "description": "Creates the entry point of a Ruby application."
+  },  
   "Ruby Types": {
     "prefix": "cotrTypes",
     "body": [

@@ -9,6 +9,16 @@
     ],
     "description": "Provides general information about the JavaScript programming language."
   },  
+  "JavaScript Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "// JavaScript Entry Point",
+      "// To run this program, use: `node filename.js`",
+      "",
+      "console.log('Hello, World!');"
+    ],
+    "description": "Describes the entry point of a JavaScript application."
+  },  
   "JavaScript Types": {
     "prefix": "cotrTypes",
     "body": [

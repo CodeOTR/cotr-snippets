@@ -9,6 +9,18 @@
     ],
     "description": "Provides general information about the Python programming language."
   },  
+  "Python Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "# Python Entry Point",
+      "# To run this program, use: `python filename.py`",
+      "",
+      "if __name__ == '__main__':",
+      "    # Your code here",
+      ""
+    ],
+    "description": "Creates the entry point of a Python application."
+  },  
   "Python Types": {
     "prefix": "cotrTypes",
     "body": [

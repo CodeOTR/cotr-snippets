@@ -9,6 +9,18 @@
     ],
     "description": "Provides general information about the Swift programming language."
   },  
+  "Swift Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "// Swift Entry Point",
+      "// To run this program, use: `swift filename.swift`",
+      "",
+      "import Foundation",
+      "",
+      "print(\"Hello, World!\")"
+    ],
+    "description": "Describes the entry point of a Swift application."
+  },  
   "Swift Types": {
     "prefix": "cotrTypes",
     "body": [

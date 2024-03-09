@@ -9,6 +9,22 @@
     ],
     "description": "General information about C#."
   },
+  "C# Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "// C# Entry Point",
+      "// To run this program, use: `dotnet run` within the project directory",
+      "",
+      "class Program",
+      "{",
+      "    static void Main(string[] args)",
+      "    {",
+      "        // Your code here",
+      "    }",
+      "}"
+    ],
+    "description": "Creates the entry point of a C# application."
+  },  
   "C# Types": {
     "prefix": "cotrTypes",
     "body": [

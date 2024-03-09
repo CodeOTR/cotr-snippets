@@ -9,6 +9,22 @@
     ],
     "description": "Provides general information about the Go programming language."
   },  
+  "Go Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "// Go Entry Point",
+      "// To run this program, use: `go run filename.go`",
+      "",
+      "package main",
+      "",
+      "import \"fmt\"",
+      "",
+      "func main() {",
+      "    fmt.Println(\"Hello, World!\")",
+      "}"
+    ],
+    "description": "Creates the entry point of a Go application."
+  },  
   "Go Types": {
     "prefix": "cotrTypes",
     "body": [

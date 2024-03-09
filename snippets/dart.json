@@ -9,6 +9,18 @@
     ],
     "description": "Provides general information about the Dart programming language."
   },  
+  "Dart Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "// Dart Entry Point",
+      "// To run this program, use: `dart run filename.dart`",
+      "",
+      "void main() {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Creates the entry point of a Dart application."
+  },  
   "Dart Types": {
     "prefix": "cotrTypes",
     "body": [

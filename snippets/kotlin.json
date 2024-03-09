@@ -10,6 +10,19 @@
     ],
     "description": "Provides general information about the Kotlin programming language."
   },  
+  "Kotlin Entry Point": {
+    "prefix": "cotrEntry",
+    "scope": "kotlin",
+    "body": [
+      "// Kotlin Entry Point",
+      "// To run this program, use: `kotlinc filename.kt -include-runtime -d filename.jar && java -jar filename.jar`",
+      "",
+      "fun main() {",
+      "    println(\"Hello, World!\")",
+      "}"
+    ],
+    "description": "Creates the entry point of a Kotlin application."
+  },  
   "Kotlin Types": {
     "prefix": "cotrTypes",
     "scope": "kotlin",

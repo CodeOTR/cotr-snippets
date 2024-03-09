@@ -9,6 +9,20 @@
     ],
     "description": "Provides general information about the Java programming language."
   },  
+  "Java Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "// Java Entry Point",
+      "// To run this program, use: `java Main.java`",
+      "",
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "        // Your code here",
+      "    }",
+      "}"
+    ],
+    "description": "Creates the entry point of a Java application."
+  },  
   "Java Types": {
     "prefix": "cotrTypes",
     "body": [

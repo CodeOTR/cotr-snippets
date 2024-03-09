@@ -9,6 +9,21 @@
     ],
     "description": "General information about C++."
   },
+  "C++ Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "// C++ Entry Point",
+      "// To compile and run this program, use: `g++ filename.cpp -o output && ./output`",
+      "",
+      "#include <iostream>",
+      "",
+      "int main() {",
+      "    std::cout << \"Hello, World!\" << std::endl;",
+      "    return 0;",
+      "}"
+    ],
+    "description": "Creates the entry point of a C++ application."
+  },  
   "C++ Types": {
     "prefix": "cotrTypes",
     "body": [

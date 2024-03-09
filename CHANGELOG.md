@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.0.8
+
+- Add `cotrConcat` and `cotrInterpolate` snippets
+- Add dynamic and null types
+
 ## 0.0.7
 
 - Add `cotrInfo` snippets

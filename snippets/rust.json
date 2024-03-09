@@ -9,6 +9,19 @@
     ],
     "description": "Provides general information about the Rust programming language."
   },  
+  "Rust Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "// Rust Entry Point",
+      "// To run this program, use: `cargo run`",
+      "// Note: This assumes you are using Cargo, Rust's package manager and build tool.",
+      "",
+      "fn main() {",
+      "    println!(\"Hello, World!\");",
+      "}"
+    ],
+    "description": "Creates the entry point of a Rust application."
+  },  
   "Rust Types": {
     "prefix": "cotrTypes",
     "body": [
