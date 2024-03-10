@@ -1,0 +1,74 @@
+{
+  "Markdown Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "# Markdown Syntax Reference:",
+      "",
+      "Markdown is a lightweight markup language for creating formatted text.",
+      "It uses simple syntax to format text, create lists, insert links, and more.",
+      "",
+      "See the official Markdown guide for more details: https://www.markdownguide.org/"
+    ],
+    "description": "Provides general information about Markdown syntax."
+  },
+
+  "Markdown Comment (HTML)": {
+    "prefix": "cotrComment",
+    "body": ["<!-- ${1:Your comment here} -->"],
+    "description": "Creates an HTML comment within Markdown."
+  },
+
+  "Markdown Multi-Line Comment (HTML)": {
+    "prefix": "cotrCommentMulti",
+    "body": ["<!--", "  ${1:Your comment here}", "-->"],
+    "description": "Creates a multi-line HTML comment within Markdown."
+  },
+
+  "Markdown Heading": {
+    "prefix": "cotrHeading",
+    "body": ["${1:#} ${2:Heading Text}"],
+    "description": "Creates a Markdown heading."
+  },
+
+  "Markdown Bold": {
+    "prefix": "cotrBold",
+    "body": ["**${1:bold text}**"],
+    "description": "Makes text bold in Markdown."
+  },
+
+  "Markdown Italic": {
+    "prefix": "cotrItalic",
+    "body": ["*${1:italic text}*"],
+    "description": "Makes text italic in Markdown."
+  },
+
+  "Markdown Unordered List": {
+    "prefix": "cotrList",
+    "body": ["- ${1:List item}"],
+    "description": "Creates an unordered list item in Markdown."
+  },
+
+  "Markdown Ordered List": {
+    "prefix": "cotrOrderedList",
+    "body": ["${1:1}. ${2:List item}"],
+    "description": "Creates an ordered list item in Markdown."
+  },
+
+  "Markdown Link": {
+    "prefix": "cotrLink",
+    "body": ["[${1:link text}](${2:https://www.example.com})"],
+    "description": "Creates a hyperlink in Markdown."
+  },
+
+  "Markdown Image": {
+    "prefix": "cotrImage",
+    "body": ["![${1:alt text}](${2:image.jpg})"],
+    "description": "Inserts an image in Markdown."
+  },
+
+  "Markdown Code Block": {
+    "prefix": "cotrCodeBlock",
+    "body": ["```", "${1:Your code here}", "```"],
+    "description": "Creates a code block in Markdown."
+  }
+}
