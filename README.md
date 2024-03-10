@@ -26,24 +26,27 @@ Its very simple, actually. Every supported language implements all snippets in a
 
 ## Supported Languages
 
-- [Dart](https://dart.dev/)
-- [Swift](https://www.swift.org/)
-- [JavaScript](https://www.javascript.com/)
-- [JavaScript React (JSX)](https://react.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [TypeScript React (TSX)](https://react.dev/learn/typescript)
-- [Go](https://go.dev/)
-- [Rust](https://www.rust-lang.org/)
-- [Kotlin](https://kotlinlang.org/)
-- [Python](https://www.python.org/)
-- [C++](https://cplusplus.com/)
-- [C#](https://dotnet.microsoft.com/en-us/languages/csharp)
-- [Java](https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html)
-- [PHP](https://www.php.net/)
-- [Ruby](https://www.ruby-lang.org/en/)
-- [R](https://www.r-project.org/)
-- [Scala](https://www.scala-lang.org/)
-- [Markdown](https://www.markdownguide.org/)
+| Language | File Extensions | VS Code Extension |
+| -------- | --------------- | ----------------- |
+| [Dart](https://dart.dev/) | `.dart` | [Dart Code](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) |
+| [Swift](https://www.swift.org/) | `.swift` | [Swift Language](https://marketplace.visualstudio.com/items?itemName=Kasik96.swift) |
+| [JavaScript](https://www.javascript.com/) | `.js` | Built-in |
+| [JavaScript React (JSX)](https://react.dev/) | `.jsx` | [VSCode React Refactor](https://marketplace.visualstudio.com/items?itemName=planbcoding.vscode-react-refactor) |
+| [TypeScript](https://www.typescriptlang.org/) | `.ts` | Built-in |
+| [TypeScript React (TSX)](https://react.dev/learn/typescript) | `.tsx` | [TypeScript TSLint Plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin) |
+| [Go](https://go.dev/) | `.go` | [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go) |
+| [Rust](https://www.rust-lang.org/) | `.rs`, `.rlib` | [Rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust) |
+| [Kotlin](https://kotlinlang.org/) | `.kt`, `.kts` | [Kotlin](https://marketplace.visualstudio.com/items?itemName=fwcd.kotlin) |
+| [Python](https://www.python.org/) | `.py` | [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) |
+| [C++](https://cplusplus.com/) | `.cpp`, `.hpp`, `.cc`, `.hh`, `.cxx`, `.hxx`, `.c++`, `.h++` | [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) |
+| [C#](https://dotnet.microsoft.com/en-us/languages/csharp) | `.cs` | [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) |
+| [Java](https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html) | `.java` | [Language Support for Java(TM) by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java) |
+| [PHP](https://www.php.net/) | `.php` | [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) |
+| [Ruby](https://www.ruby-lang.org/en/) | `.rb` | [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby) |
+| [R](https://www.r-project.org/) | `.r` | [R](https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r) |
+| [Scala](https://www.scala-lang.org/) | `.scala`, `.sc` | [Scala (Metals)](https://marketplace.visualstudio.com/items?itemName=scalameta.metals) |
+| [Markdown](https://www.markdownguide.org/) | `.md` | Built-in |
+| [Haskell](https://www.haskell.org/) | `.hs` | [Haskell Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=haskell.haskell) |
 
 ## Snippets
 

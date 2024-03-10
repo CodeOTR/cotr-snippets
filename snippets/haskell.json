@@ -1,0 +1,343 @@
+{
+  "Haskell Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "-- Typing: Statically typed, strong, inferred",
+      "-- Paradigm: Functional",
+      "-- Compilation: Compiled or interpreted",
+      "-- Concurrency: Supports concurrency with lightweight threads and software transactional memory"
+    ],
+    "description": "Provides general information about the Haskell programming language."
+  },
+
+  "Haskell Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "-- Haskell Entry Point",
+      "-- To run this program, use: `ghc filename.hs` or `runhaskell filename.hs`",
+      "",
+      "main :: IO ()",
+      "main = do",
+      "  -- Your code here",
+      ""
+    ],
+    "description": "Creates the entry point of a Haskell application."
+  },
+
+  "Haskell Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "-- Haskell Mathematical Operators",
+      "-- Addition: +",
+      "-- Subtraction: -",
+      "-- Multiplication: *",
+      "-- Exponentiation: **",
+      "-- Division: /",
+      "-- Modulus (Remainder): mod",
+      "-- Integer Division: div",
+      "-- Assignment: =",
+      "-- Addition assignment: +=",
+      "-- Subtraction assignment: -=",
+      "-- Multiplication assignment: *=",
+      "-- Division assignment: /=",
+      "-- Modulus assignment: mod=",
+      "-- Integer Division assignment: div="
+    ],
+    "description": "Lists the mathematical operators in Haskell."
+  },
+
+  "Haskell Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "Haskell is a statically typed language with strong type inference.",
+      "",
+      "Types in Haskell include:",
+      "- Int: Integer",
+      "- Integer: Arbitrary-precision integer",
+      "- Float: Single-precision floating-point number",
+      "- Double: Double-precision floating-point number",
+      "- Char: Character",
+      "- Bool: Boolean",
+      "- String: String",
+      "- [a]: List of type 'a'",
+      "- (a, b): Tuple with elements of types 'a' and 'b'",
+      "- Maybe a: Type representing a value of type 'a' or Nothing",
+      "- Either a b: Type representing a value of either type 'a' or type 'b'",
+      "- Function types (e.g., Int -> String): Types representing functions",
+      "- Data types: Custom data types defined using algebraic data types",
+      "- Type classes: Interfaces that define shared behavior for types",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists the types in Haskell."
+  },
+
+  "Haskell String Type": {
+    "prefix": "cotrTypesString",
+    "body": ["String"],
+    "description": "The Haskell String type."
+  },
+
+  "Haskell Integer Type": {
+    "prefix": "cotrTypesInt",
+    "body": ["Int"],
+    "description": "The Haskell Int type."
+  },
+
+  "Haskell Double Type": {
+    "prefix": "cotrTypesNum",
+    "body": ["Double"],
+    "description": "The Haskell Double type."
+  },
+
+  "Haskell Float Type": {
+    "prefix": "cotrTypesNumAlt",
+    "body": ["Float"],
+    "description": "The Haskell Float type."
+  },
+
+  "Haskell Boolean Type": {
+    "prefix": "cotrTypesBool",
+    "body": ["Bool"],
+    "description": "The Haskell Bool type."
+  },
+
+  "Haskell Boolean True": {
+    "prefix": "cotrTypesBoolTrue",
+    "body": ["True"],
+    "description": "The Haskell True value."
+  },
+
+  "Haskell Boolean False": {
+    "prefix": "cotrTypesBoolFalse",
+    "body": ["False"],
+    "description": "The Haskell False value."
+  },
+
+  "Haskell Date Type": {
+    "prefix": "cotrTypesDate",
+    "body": [
+      "-- Haskell does not have a built-in Date type. Use the 'time' package for date and time operations."
+    ],
+    "description": "Explains the absence of a built-in Date type in Haskell."
+  },
+
+  "Haskell Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["Map k v"],
+    "description": "The Haskell Map type."
+  },
+
+  "Haskell List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["[a]"],
+    "description": "The Haskell List type."
+  },
+
+  "Haskell Date Now": {
+    "prefix": "cotrNow",
+    "body": ["-- Use the 'time' package to get the current date and time."],
+    "description": "Explains how to get the current date and time in Haskell."
+  },
+
+  "Haskell Null Type": {
+    "prefix": "cotrNull",
+    "body": ["Nothing"],
+    "description": "The Haskell Nothing value."
+  },
+
+  "Haskell Dynamic Type": {
+    "prefix": "cotrDynamic",
+    "body": [
+      "-- Haskell is statically typed, but you can use 'Any' for dynamic values."
+    ],
+    "description": "Explains the use of 'Any' for dynamic values in Haskell."
+  },
+
+  "Haskell Interpolate String": {
+    "prefix": "cotrInterpolate",
+    "body": ["show ${1:variable}"],
+    "description": "Interpolates a variable into a string in Haskell."
+  },
+
+  "Haskell Concatenate Strings": {
+    "prefix": "cotrConcat",
+    "body": ["${1:string1} ++ ${2:string2}"],
+    "description": "Concatenates two strings in Haskell."
+  },
+
+  "Haskell Create Variable": {
+    "prefix": "cotrVar",
+    "body": ["let ${1:myVar} = $2"],
+    "description": "Creates a variable in Haskell."
+  },
+
+  "Haskell Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "-- Haskell Variable Declaration Syntax:",
+      "",
+      "-- - let: (Scope: Block)",
+      "--   - Declares an immutable variable.",
+      "--   - Use for values that should not change.",
+      "",
+      "-- - let (mut) varName = expression: (Scope: do block)",
+      "--   - Declares a mutable variable within a 'do' block.",
+      "--   - Use for variables that need to be reassigned.",
+      "",
+      "-- Note:",
+      "-- - Haskell emphasizes immutability, so use 'let' by default.",
+      "-- - Use mutable variables with 'let (mut)' only when necessary within 'do' blocks."
+    ],
+    "description": "Explains Haskell variable declaration syntax"
+  },
+
+  "Haskell Create Typed Variable": {
+    "prefix": "cotrVarTyped",
+    "body": ["let ${1:myVar} :: ${2:Type} = $3"],
+    "description": "Creates a typed variable in Haskell."
+  },
+
+  "Haskell Create Nullable Variable": {
+    "prefix": "cotrVarNullable",
+    "body": ["let ${1:myVar} :: Maybe ${2:Type} = Nothing"],
+    "description": "Creates a nullable variable in Haskell using the Maybe type."
+  },
+
+  "Haskell Create String Variable": {
+    "prefix": "cotrVarString",
+    "body": ["let ${1:myString} = \"${2:Your string here}\""],
+    "description": "Creates a string variable in Haskell."
+  },
+
+  "Haskell Create Multi-Line String Variable": {
+    "prefix": "cotrVarStringMulti",
+    "body": [
+      "let ${1:myString} = \"\"\"",
+      "${2:Line 1}",
+      "${3:Line 2}",
+      "${4:Line 3}",
+      "\"\"\""
+    ],
+    "description": "Creates a multi-line string variable in Haskell."
+  },
+
+  "Haskell Create Integer Variable": {
+    "prefix": "cotrVarInt",
+    "body": ["let ${1:myInt} = ${2:0}"],
+    "description": "Creates an integer variable in Haskell."
+  },
+
+  "Haskell Create Double Variable": {
+    "prefix": "cotrVarDouble",
+    "body": ["let ${1:myDouble} = ${2:0.0}"],
+    "description": "Creates a double variable in Haskell."
+  },
+
+  "Haskell Create Boolean Variable": {
+    "prefix": "cotrVarBool",
+    "body": ["let ${1:myBool} = ${2:True}"],
+    "description": "Creates a boolean variable in Haskell."
+  },
+
+  "Haskell Create List Variable": {
+    "prefix": "cotrVarList",
+    "body": ["let ${1:myList} = [${2:items}]"],
+    "description": "Creates a list variable in Haskell."
+  },
+
+  "Haskell Create Map Variable": {
+    "prefix": "cotrVarMap",
+    "body": [
+      "let ${1:myMap} = Map.fromList [(${2:key}, ${3:value})]",
+      "  -- Add more key-value pairs here"
+    ],
+    "description": "Creates a map variable in Haskell."
+  },
+
+  "Haskell Create Constant": {
+    "prefix": "cotrConst",
+    "body": [
+      "-- Haskell does not have a 'const' keyword. Use 'let' for immutable values."
+    ],
+    "description": "Explains how to create constants in Haskell."
+  },
+
+  "Haskell Print": {
+    "prefix": "cotrPrint",
+    "body": ["putStrLn ${1:'Your message here'}"],
+    "description": "Prints a message to the console in Haskell."
+  },
+
+  "Haskell Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "putStrLn $ unlines [",
+      "  ${1:\"Line 1\"},",
+      "  ${2:\"Line 2\"},",
+      "  ${3:\"Line 3\"}",
+      "]"
+    ],
+    "description": "Prints a multi-line message to the console in Haskell."
+  },
+
+  "Haskell For Loop": {
+    "prefix": "cotrForLoop",
+    "body": [
+      "-- Haskell does not have a traditional for loop. Use recursion or higher-order functions like 'map' or 'forM'."
+    ],
+    "description": "Explains how to iterate in Haskell."
+  },
+
+  "Haskell For Each Loop": {
+    "prefix": "cotrForEachLoop",
+    "body": ["forM ${1:iterable} \\${2:item} -> do", "  -- Your code here"],
+    "description": "Iterates over an iterable object in Haskell."
+  },
+
+  "Haskell While Loop": {
+    "prefix": "cotrWhileLoop",
+    "body": [
+      "-- Haskell does not have a traditional while loop. Use recursion or higher-order functions like 'until'."
+    ],
+    "description": "Explains how to create loops in Haskell."
+  },
+
+  "Haskell Case Expression": {
+    "prefix": "cotrSwitch",
+    "body": [
+      "case ${1:variable} of",
+      "  ${2:pattern1} -> ${3:expression1}",
+      "  ${4:pattern2} -> ${5:expression2}",
+      "  _ -> ${6:defaultExpression}"
+    ],
+    "description": "Creates a case expression in Haskell."
+  },
+
+  "Haskell Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "-- Haskell Function Syntax:",
+      "",
+      "-- Basic function:",
+      "-- functionName :: parameterTypes -> returnType",
+      "-- functionName parameters = expression",
+      "",
+      "-- Function with arguments:",
+      "-- functionName arg1 arg2 ... = expression"
+    ],
+    "description": "Outlines the syntax for functions in Haskell."
+  },
+
+  "Haskell Comment": {
+    "prefix": "cotrComment",
+    "body": ["-- ${1:Your comment here}"],
+    "description": "Creates a single-line comment in Haskell."
+  },
+
+  "Haskell Multi-Line Comment": {
+    "prefix": "cotrCommentMulti",
+    "body": ["{-", " ${1:Your comment here}", "-}"],
+    "description": "Creates a multi-line comment in Haskell."
+  }
+}

@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.10
+
+- Added Markdown support
+
 ## 0.0.9
 
 - Add Scala and R support
