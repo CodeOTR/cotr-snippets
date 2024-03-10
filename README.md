@@ -74,7 +74,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrTypesDate         | The language's Date data type                                             |
 | cotrTypesList         | The language's list data type                                             |
 | cotrTypesMap          | The language's map data type                                              |
-| cotrTypseDynamic      | The language's dynamic data type                                          |
+| cotrTypesDynamic      | The language's dynamic data type                                          |
 | cotrTypesNull         | The language's nullable data type                                         |
 | cotrNull              | The language's null data type                                             |
 | cotrNow               | How the language represents the current time                              |
