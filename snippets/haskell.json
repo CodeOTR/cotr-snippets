@@ -471,6 +471,15 @@
     "description": "Creates a case expression in Haskell."
   },
 
+  "Haskell Function": {
+    "prefix": "cotrFunc",
+    "body": [
+      "${1:functionName} :: ${2:parameterTypes} -> ${3:returnType}",
+      "${1:functionName} ${2:parameters} = ${4:expression}"
+    ],
+    "description": "Creates a function in Haskell."
+  },
+
   "Haskell Named Arguments (Alternative)": {
     "prefix": "cotrFuncArgsNamed",
     "body": [
@@ -491,11 +500,16 @@
     "description": "Explains how to pass arguments to functions in Haskell."
   },
   "Haskell Anonymous Function": {
-    "prefix": ["cotrFuncAnon", "cotrFuncLambda", "cotrLambda"],
+    "prefix": ["cotrFuncAnon"],
     "body": ["\\${1:parameters} -> ${2:expression}"],
     "description": "Creates an anonymous function (lambda) in Haskell."
   },
 
+  "Haskell Lambda Function": {
+    "prefix": ["cotrFuncLambda", "cotrLambda"],
+    "body": ["\\${1:parameters} -> ${2:expression}"],
+    "description": "Creates an anonymous function (lambda) in Haskell."
+  },
   "Haskell Arrow Function": {
     "prefix": "cotrFuncArrow",
     "body": ["${1:functionName} = \\${2:parameters} -> ${3:expression}"],

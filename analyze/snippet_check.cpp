@@ -82,8 +82,8 @@ int main()
             // Check if the line contains any of the prefixes
             for (const auto &prefix : prefixes)
             {
-                if (line.find(prefix) != std::string::npos)
-                {
+                
+                if (line.find('"' + prefix + '"') != std::string::npos)                {
                     // If it does, remove the prefix from the set
                     prefixes.erase(prefix);
                     break;
