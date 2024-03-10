@@ -365,7 +365,7 @@
     "description": "Creates a constant variable in Java."
   },
   "Java Static Variable": {
-    "prefix": "cotrStaticVar",
+    "prefix": "cotrVarStatic",
     "body": [
       "static ${2:Type} ${3:myStaticVar} = ${4:value};",
       "",

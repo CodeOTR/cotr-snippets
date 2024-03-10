@@ -357,7 +357,7 @@
     "description": "Creates a constant variable in Dart using the const keyword."
   },
   "Dart Static Variable": {
-    "prefix": "cotrStaticVar",
+    "prefix": "cotrVarStatic",
     "body": [
       "static ${2:var} ${3:myStaticVar} = ${4:value};",
       "",

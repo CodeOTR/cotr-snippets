@@ -340,7 +340,7 @@
     "description": "Creates a constant variable in PHP using the const keyword."
   },
   "PHP Static Variable": {
-    "prefix": "cotrStaticVar",
+    "prefix": "cotrVarStatic",
     "body": ["static $${1:myStaticVar} = $2;"],
     "description": "Creates a static variable in a PHP class."
   },

@@ -394,7 +394,7 @@
     "description": "Creates a constant variable in C++."
   },
   "C++ Static Variable": {
-    "prefix": "cotrStaticVar",
+    "prefix": "cotrVarStatic",
     "body": [
       "static ${2:type} ${3:myStaticVar} = ${4:value};",
       "",

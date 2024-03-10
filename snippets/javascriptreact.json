@@ -354,7 +354,7 @@
     "description": "Creates a constant variable in JavaScript using the const keyword."
   },
   "JavaScript Static Variable": {
-    "prefix": "cotrStaticVar",
+    "prefix": "cotrVarStatic",
     "body": [
       "static ${3:myStaticVar} = ${4:value};",
       "",

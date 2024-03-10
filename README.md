@@ -89,7 +89,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrVarList           | Creates a list variable                                                   |
 | cotrVarMap            | Creates a map variable                                                    |
 | cotrConst             | Creates a constant variable                                               |
-| cotrStaticVar         | Creates a static variable                                                 |
+| cotrVarStatic         | Creates a static variable                                                 |
 | cotrGenMap            | Generates a map/dictionary with a specific number of key/value pairs      |
 | cotrGenList           | Generates a list/array of a specific length                               |
 | cotrPrint             | Creates a print/log statement                                             |

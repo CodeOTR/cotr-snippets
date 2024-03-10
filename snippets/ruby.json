@@ -352,7 +352,7 @@
     "description": "Creates a constant variable in Ruby."
   },
   "Ruby Static Variable": {
-    "prefix": "cotrStaticVar",
+    "prefix": "cotrVarStatic",
     "body": [
       "@@${1:my_static_var} = ${2:value}",
       "",

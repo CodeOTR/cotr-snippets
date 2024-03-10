@@ -350,7 +350,7 @@
     "description": "Creates a constant variable in TypeScript using the const keyword."
   },
   "TypeScript Static Variable": {
-    "prefix": "cotrStaticVar",
+    "prefix": "cotrVarStatic",
     "body": [
       "static ${3:myStaticVar}: ${2:type} = ${4:value};",
       "",

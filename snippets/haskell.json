@@ -24,6 +24,58 @@
     "description": "Creates the entry point of a Haskell application."
   },
 
+  "Haskell Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "-- Recommended High-Level Haskell Project Structure:",
+      "",
+      "-- - src/",
+      "--   - Contains all source code (.hs files).",
+      "-- - tests/",
+      "--   - Contains unit tests.",
+      "",
+      "-- Note:",
+      "-- - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for Haskell."
+  },
+  "Haskell Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "-- Recommended Haskell Source Directory Organization (Feature/Module):",
+      "",
+      "-- - src/",
+      "--   - rendering/",
+      "--     - Contains source code for rendering features.",
+      "--   - data_processing/",
+      "--     - Contains source code for data processing features.",
+      "--   - ... (Organize by feature or module)",
+      "",
+      "-- Note:",
+      "-- - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for Haskell."
+  },
+
+  "Haskell Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "-- Recommended Haskell Source Directory Organization (File Type):",
+      "",
+      "-- - src/",
+      "--   - types.hs",
+      "--     - Contains type definitions.",
+      "--   - functions.hs",
+      "--     - Contains function definitions.",
+      "--   - main.hs",
+      "--     - Contains the main entry point.",
+      "--   - ... (Organize by file type)",
+      "",
+      "-- Note:",
+      "-- - This approach can be helpful for smaller projects or specific use cases."
+    ],
+    "description": "Explains a file type-based source directory organization for Haskell."
+  },
   "Haskell Mathematical Operators": {
     "prefix": "cotrOperators",
     "body": [
@@ -44,6 +96,58 @@
       "-- Integer Division assignment: div="
     ],
     "description": "Lists the mathematical operators in Haskell."
+  },
+
+  "Haskell Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "-- Haskell Boolean Operators:",
+      "",
+      "-- - && : Logical AND",
+      "-- - || : Logical OR",
+      "-- - not : Logical NOT"
+    ],
+    "description": "Lists the boolean operators in Haskell."
+  },
+  "Haskell Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "Haskell equal to operator."
+  },
+
+  "Haskell Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["/="],
+    "description": "Haskell not equal to operator."
+  },
+  "Haskell Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["${1:variable} :: ${2:Type}"],
+    "description": "Checks the type of a variable in Haskell."
+  },
+  "Haskell Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "-- Haskell does not have a built-in function for comparing types directly.",
+      "-- You can use type classes or custom functions to achieve this."
+    ],
+    "description": "Explains how to compare types in Haskell."
+  },
+
+  "Haskell Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "-- Haskell emphasizes explicit type conversions for safety.",
+      "",
+      "-- Explicit conversions:",
+      "-- - fromIntegral variable  // Converts numeric types (e.g., Int to Double)",
+      "-- - show variable  // Converts values to strings",
+      "-- - read variable  // Converts strings to values (unsafe)",
+      "",
+      "-- Note:",
+      "-- - Be cautious with type conversions, especially 'read', as they can lead to errors if the conversion is not valid."
+    ],
+    "description": "Explains type conversion in Haskell."
   },
 
   "Haskell Types": {
@@ -140,20 +244,19 @@
     "description": "Explains how to get the current date and time in Haskell."
   },
 
-  "Haskell Null Type": {
-    "prefix": "cotrNull",
-    "body": ["Nothing"],
-    "description": "The Haskell Nothing value."
-  },
-
   "Haskell Dynamic Type": {
-    "prefix": "cotrDynamic",
+    "prefix": ["cotrTypesDynamic", "cotrDynamic"],
     "body": [
       "-- Haskell is statically typed, but you can use 'Any' for dynamic values."
     ],
     "description": "Explains the use of 'Any' for dynamic values in Haskell."
   },
 
+  "Haskell Null Type": {
+    "prefix": ["cotrTypesNull", "cotrNull"],
+    "body": ["Nothing"],
+    "description": "The Haskell Nothing value, representing the absence of a value."
+  },
   "Haskell Interpolate String": {
     "prefix": "cotrInterpolate",
     "body": ["show ${1:variable}"],
@@ -198,6 +301,15 @@
     "description": "Creates a typed variable in Haskell."
   },
 
+  "Haskell Static Variable (Alternative)": {
+    "prefix": "cotrVarStatic",
+    "body": [
+      "-- Haskell does not have static variables in the same way as imperative languages.",
+      "-- You can use top-level definitions or modules to achieve similar functionality."
+    ],
+    "description": "Explains alternatives to static variables in Haskell."
+  },
+
   "Haskell Create Nullable Variable": {
     "prefix": "cotrVarNullable",
     "body": ["let ${1:myVar} :: Maybe ${2:Type} = Nothing"],
@@ -234,10 +346,28 @@
     "description": "Creates a double variable in Haskell."
   },
 
+  "Haskell Number Variable": {
+    "prefix": "cotrVarNum",
+    "body": ["let ${1:myNum} :: ${2:NumType} = $3"],
+    "description": "Creates a number variable in Haskell."
+  },
+
   "Haskell Create Boolean Variable": {
     "prefix": "cotrVarBool",
     "body": ["let ${1:myBool} = ${2:True}"],
     "description": "Creates a boolean variable in Haskell."
+  },
+
+  "Haskell Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": [
+      "-- Use the 'time' package to create a date variable:",
+      "",
+      "import Data.Time",
+      "",
+      "let ${1:myDate} :: UTCTime = getCurrentTime"
+    ],
+    "description": "Creates a date variable in Haskell using the 'time' package."
   },
 
   "Haskell Create List Variable": {
@@ -253,6 +383,21 @@
       "  -- Add more key-value pairs here"
     ],
     "description": "Creates a map variable in Haskell."
+  },
+
+  "Haskell Generate List": {
+    "prefix": "cotrGenList",
+    "body": ["[${1:start}..${2:end}]"],
+    "description": "Generates a list of numbers in Haskell."
+  },
+
+  "Haskell Generate Map": {
+    "prefix": "cotrGenMap",
+    "body": [
+      "-- Haskell does not have a built-in way to generate a map with a specific number of key-value pairs.",
+      "-- You can use a list comprehension or a custom function to achieve this."
+    ],
+    "description": "Explains how to generate a map in Haskell."
   },
 
   "Haskell Create Constant": {
@@ -289,6 +434,18 @@
     "description": "Explains how to iterate in Haskell."
   },
 
+  "Haskell For...In Loop (Alternative)": {
+    "prefix": "cotrForIn",
+    "body": [
+      "-- Haskell does not have a direct for...in loop.",
+      "-- Use higher-order functions like 'map' or 'forM' instead:",
+      "",
+      "forM ${1:iterable} \\${2:item} -> do",
+      "  -- Your code here"
+    ],
+    "description": "Provides an alternative to the for...in loop in Haskell."
+  },
+
   "Haskell For Each Loop": {
     "prefix": "cotrForEachLoop",
     "body": ["forM ${1:iterable} \\${2:item} -> do", "  -- Your code here"],
@@ -312,6 +469,37 @@
       "  _ -> ${6:defaultExpression}"
     ],
     "description": "Creates a case expression in Haskell."
+  },
+
+  "Haskell Named Arguments (Alternative)": {
+    "prefix": "cotrFuncArgsNamed",
+    "body": [
+      "-- Haskell does not have named arguments in the traditional sense.",
+      "-- You can use record syntax or higher-order functions to achieve similar functionality."
+    ],
+    "description": "Explains alternatives to named arguments in Haskell."
+  },
+  "Haskell Function Arguments": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "-- Haskell functions typically use pattern matching to handle arguments.",
+      "-- Example:",
+      "",
+      "myFunction :: Int -> Int -> Int",
+      "myFunction x y = x + y"
+    ],
+    "description": "Explains how to pass arguments to functions in Haskell."
+  },
+  "Haskell Anonymous Function": {
+    "prefix": ["cotrFuncAnon", "cotrFuncLambda", "cotrLambda"],
+    "body": ["\\${1:parameters} -> ${2:expression}"],
+    "description": "Creates an anonymous function (lambda) in Haskell."
+  },
+
+  "Haskell Arrow Function": {
+    "prefix": "cotrFuncArrow",
+    "body": ["${1:functionName} = \\${2:parameters} -> ${3:expression}"],
+    "description": "Creates an arrow function (lambda) in Haskell."
   },
 
   "Haskell Function Syntax": {
@@ -339,5 +527,53 @@
     "prefix": "cotrCommentMulti",
     "body": ["{-", " ${1:Your comment here}", "-}"],
     "description": "Creates a multi-line comment in Haskell."
+  },
+
+  "Haskell If Statement": {
+    "prefix": "cotrIf",
+    "body": [
+      "if ${1:condition}",
+      "  then ${2:expression1}",
+      "  else ${3:expression2}"
+    ],
+    "description": "Creates an if statement in Haskell."
+  },
+
+  "Haskell If-Else Statement": {
+    "prefix": "cotrIfElse",
+    "body": [
+      "if ${1:condition}",
+      "  then ${2:expression1}",
+      "  else ${3:expression2}"
+    ],
+    "description": "Creates an if-else statement in Haskell."
+  },
+
+  "Haskell Ternary Operator (Alternative)": {
+    "prefix": "cotrTernary",
+    "body": [
+      "-- Haskell does not have a ternary operator.",
+      "-- Use a case expression or an if-then-else expression instead:",
+      "",
+      "let result = case ${1:condition} of",
+      "  True -> ${2:trueValue}",
+      "  False -> ${3:falseValue}"
+    ],
+    "description": "Provides an alternative to the ternary operator in Haskell."
+  },
+
+  "Haskell Throw Exception": {
+    "prefix": "cotrThrow",
+    "body": ["error \"${1:Your error message here}\""],
+    "description": "Throws an exception in Haskell."
+  },
+
+  "Haskell Try-Catch ": {
+    "prefix": "cotrTryCatch",
+    "body": [
+      "-- Haskell does not have a traditional try-catch mechanism.",
+      "-- Use the 'Either' or 'Maybe' types for error handling."
+    ],
+    "description": "Explains alternatives to try-catch in Haskell."
   }
 }

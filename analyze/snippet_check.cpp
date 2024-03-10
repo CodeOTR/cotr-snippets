@@ -7,7 +7,7 @@
 // Run it with `g++ -std=c++11 snippet_check.cpp -o snippet_check && ./snippet_check`
 int main()
 {
-    std::ifstream file("./../snippets/cpp.json");
+    std::ifstream file("./../snippets/haskell.json");
 
     // Define the set of snippet prefixes
     std::set<std::string> prefixes = {
@@ -48,7 +48,7 @@ int main()
         "cotrVarList",
         "cotrVarMap",
         "cotrConst",
-        "cotrStaticVar",
+        "cotrVarStatic",
         "cotrGenMap",
         "cotrGenList",
         "cotrPrint",
