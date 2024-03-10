@@ -1,5 +1,14 @@
 # Change Log
 
+## 0.0.9
+
+- Add Scala and R support
+- Add `cotrStructure`, `cotrStructureFeatures`, and `cotrStructureFiles` snippets
+- Add `cotrOperators` and `cotrOperatorsBoolean` snippets
+- Add `cotrEqual` and `cotrNotEqual` snippets
+- Add `cotrEntry` snippet
+- Add `cotrTypeCheck`, `cotrTypeCompare`, and `cotrTypeConvert` snippets
+
 ## 0.0.8
 
 - Add `cotrConcat` and `cotrInterpolate` snippets

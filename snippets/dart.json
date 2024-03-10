@@ -99,6 +99,64 @@
     ],
     "description": "Lists the mathematical operators in Dart."
   },
+  "Dart Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "Dart equal to operator (structural equality for objects)."
+  },
+  "Dart Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "Dart not equal to operator."
+  },
+  "Dart Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "// Dart Boolean Operators",
+      "// Logical AND: &&",
+      "// Logical OR: ||",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Inequality: !=",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in Dart."
+  },
+  "Dart Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["${1:variable}.runtimeType"],
+    "description": "Gets the type of a variable in Dart."
+  },
+  "Dart Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if (${1:variable1}.runtimeType == ${2:variable2}.runtimeType) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in Dart."
+  },
+  "Dart Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "// Dart Type Conversion:",
+      "",
+      "// Implicit conversions (compiler performs automatically):",
+      "// - int to double (if no precision loss).",
+      "",
+      "// Explicit conversions (using casts):",
+      "// - variable as Type  // Safe cast (returns null if conversion fails)",
+      "// - Type.castFrom(variable)  // Conversion methods",
+      "",
+      "// Note:",
+      "// - Be cautious with explicit conversions, as they can lead to data loss or errors if the conversion is not valid."
+    ],
+    "description": "Explains type conversion in Dart."
+  },
   "Dart Types": {
     "prefix": "cotrTypes",
     "body": [

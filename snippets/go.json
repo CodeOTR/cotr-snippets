@@ -8,7 +8,7 @@
       "Concurrency: Built-in support for concurrency with goroutines and channels"
     ],
     "description": "Provides general information about the Go programming language."
-  },  
+  },
   "Go Entry Point": {
     "prefix": "cotrEntry",
     "body": [
@@ -24,11 +24,11 @@
       "}"
     ],
     "description": "Creates the entry point of a Go application."
-  },  
+  },
   "Go Mathematical Operators": {
     "prefix": "cotrOperators",
     "body": [
-      "// Go Mathematical Operators",
+      "// Go Mathematical Operators:",
       "// Addition: +",
       "// Subtraction: -",
       "// Multiplication: *",
@@ -45,7 +45,66 @@
       "// Modulus assignment: %="
     ],
     "description": "Lists the mathematical operators in Go."
-  },  
+  },
+  "Go Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "Go equal to operator."
+  },
+  "Go Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "Go not equal to operator."
+  },
+  "Go Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "// Go Boolean Operators:",
+      "// Logical AND: &&",
+      "// Logical OR: ||",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Inequality: !=",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in Go."
+  },
+  "Go Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["fmt.Printf(\"%T\", ${1:variable})"],
+    "description": "Prints the type of a variable in Go."
+  },
+  "Go Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if reflect.TypeOf(${1:variable1}) == reflect.TypeOf(${2:variable2}) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in Go."
+  },
+  "Go Type Conversion": {
+    "prefix": "cotrTypeConvert",
+    "body": [
+      "// Go Type Conversion:",
+      "",
+      "// Explicit conversions (using type assertion):",
+      "// - targetType(variable)  // Type assertion (can panic if conversion fails)",
+      "",
+      "// Conversion functions:",
+      "// - strconv.Itoa(int)  // Converts int to string",
+      "// - strconv.Atoi(string)  // Converts string to int",
+      "// - ... (Various conversion functions in strconv and other packages)",
+      "",
+      "// Note:",
+      "// - Be cautious with type assertions, as they can lead to panics if the conversion is not valid."
+    ],
+    "description": "Explains type conversion in Go."
+  },
   "Go Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -393,7 +452,7 @@
       "}"
     ],
     "description": "Creates a function with arguments in Go, with a note about default argument values."
-  },  
+  },
   "Go Function Named Args": {
     "prefix": "cotrFuncArgsNamed",
     "body": ["// Go does not support named arguments in function definitions."],
@@ -408,7 +467,7 @@
       "}"
     ],
     "description": "Creates a function literal (anonymous function) in Go."
-  },  
+  },
   "Go Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [

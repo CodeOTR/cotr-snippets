@@ -106,6 +106,65 @@
     ],
     "description": "Lists the mathematical operators in C#."
   },
+  "C# Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "C# equal to operator."
+  },
+  "C# Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "C# not equal to operator."
+  },
+  "C# Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "// C# Boolean Operators",
+      "// Logical AND: &&",
+      "// Logical OR: ||",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Inequality: !=",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in C#."
+  },
+  "C# Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["${1:variable}.GetType()"],
+    "description": "Gets the type of a variable in C#."
+  },
+  "C# Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if (${1:variable1}.GetType() == ${2:variable2}.GetType()) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in C#."
+  },
+  "C# Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert"],
+    "body": [
+      "// C# Type Conversion:",
+      "",
+      "// Implicit conversions (compiler performs automatically):",
+      "// - Smaller numeric types to larger numeric types (e.g., int to double).",
+      "",
+      "// Explicit conversions (using casts):",
+      "// - (Type)variable  // C-style cast",
+      "// - variable as Type  // Safe cast (returns null if conversion fails)",
+      "// - Convert.ToType(variable)  // Conversion methods in the Convert class",
+      "",
+      "// Note:",
+      "// - Be cautious with explicit conversions, as they can lead to data loss or errors if the conversion is not valid."
+    ],
+    "description": "Explains type conversion in C#."
+  },
   "C# Types": {
     "prefix": "cotrTypes",
     "body": [

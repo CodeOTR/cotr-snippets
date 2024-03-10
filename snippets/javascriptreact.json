@@ -8,7 +8,7 @@
       "Concurrency: Event loop model with support for asynchronous programming using callbacks, promises, and async/await"
     ],
     "description": "Provides general information about the JavaScript programming language."
-  },  
+  },
   "JavaScript Entry Point": {
     "prefix": "cotrEntry",
     "body": [
@@ -18,7 +18,7 @@
       "console.log('Hello, World!');"
     ],
     "description": "Describes the entry point of a JavaScript application."
-  },  
+  },
   "JavaScript Project Structure (High-Level)": {
     "prefix": "cotrStructure",
     "body": [
@@ -96,7 +96,70 @@
       "// Modulus assignment: %="
     ],
     "description": "Lists the mathematical operators in JavaScript."
-  },  
+  },
+  "JavaScript Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["==="],
+    "description": "JavaScript strict equal to operator."
+  },
+  "JavaScript Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!=="],
+    "description": "JavaScript strict not equal to operator."
+  },
+  "JavaScript Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "// JavaScript Boolean Operators",
+      "// Logical AND: &&",
+      "// Logical OR: ||",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Strict Equality: ===",
+      "// Inequality: !=",
+      "// Strict Inequality: !==",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in JavaScript."
+  },
+  "JavaScript Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["typeof ${1:variable}"],
+    "description": "Gets the type of a variable in JavaScript."
+  },
+  "JavaScript Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if (typeof ${1:variable1} === typeof ${2:variable2}) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in JavaScript."
+  },
+  "JavaScript Type Conversion": {
+    "prefix": "cotrTypeConvert",
+    "body": [
+      "// JavaScript Type Conversion:",
+      "",
+      "// Implicit conversions (JavaScript performs automatically):",
+      "// - Can be unpredictable, especially with loose equality (==).",
+      "",
+      "// Explicit conversions:",
+      "// - Number(variable)  // Converts to number",
+      "// - String(variable)  // Converts to string",
+      "// - Boolean(variable)  // Converts to boolean",
+      "// - parseInt(string)  // Converts string to integer",
+      "// - parseFloat(string)  // Converts string to floating-point number",
+      "",
+      "// Note:",
+      "// - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control."
+    ],
+    "description": "Explains type conversion in JavaScript."
+  },
   "JavaScript Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -389,7 +452,7 @@
       "}"
     ],
     "description": "Creates a function with arguments in JavaScript, including an argument with a default value."
-  },  
+  },
   "JavaScript Function Named Args": {
     "prefix": "cotrFuncArgsNamed",
     "body": [
@@ -410,13 +473,9 @@
   },
   "JavaScript Anonymous Function": {
     "prefix": "cotrFuncAnon",
-    "body": [
-      "function(${1:parameters}) {",
-      "  ${2:// Your code here}",
-      "};"
-    ],
+    "body": ["function(${1:parameters}) {", "  ${2:// Your code here}", "};"],
     "description": "Creates an anonymous function in JavaScript."
-  },   
+  },
   "JavaScript Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [

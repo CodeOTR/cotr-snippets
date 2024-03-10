@@ -8,7 +8,7 @@
       "Concurrency: Supports multi-threading and concurrent programming with the java.util.concurrent package"
     ],
     "description": "Provides general information about the Java programming language."
-  },  
+  },
   "Java Entry Point": {
     "prefix": "cotrEntry",
     "body": [
@@ -22,7 +22,7 @@
       "}"
     ],
     "description": "Creates the entry point of a Java application."
-  },  
+  },
   "Java Project Structure (High-Level)": {
     "prefix": "cotrStructure",
     "body": [
@@ -100,7 +100,69 @@
       "// Modulus assignment: %="
     ],
     "description": "Lists the mathematical operators in Java."
-  },  
+  },
+  "Java Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "Java equal to operator."
+  },
+  "Java Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "Java not equal to operator."
+  },
+  "Java Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "// Java Boolean Operators",
+      "// Logical AND: &&",
+      "// Logical OR: ||",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Inequality: !=",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in Java."
+  },
+  "Java Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["${1:variable}.getClass()"],
+    "description": "Gets the type of a variable in Java."
+  },
+  "Java Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if (${1:variable1}.getClass() == ${2:variable2}.getClass()) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in Java."
+  },
+  "Java Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "// Java Type Conversion:",
+      "",
+      "// Implicit conversions (compiler performs automatically):",
+      "// - Smaller numeric types to larger numeric types (e.g., int to double).",
+      "",
+      "// Explicit conversions (using casts):",
+      "// - (Type)variable  // C-style cast",
+      "",
+      "// Conversion methods:",
+      "// - Integer.parseInt(string)  // Converts string to int",
+      "// - Double.parseDouble(string)  // Converts string to double",
+      "// - ... (Various conversion methods in wrapper classes and other packages)",
+      "",
+      "// Note:",
+      "// - Be cautious with explicit conversions, as they can lead to data loss or errors if the conversion is not valid."
+    ],
+    "description": "Explains type conversion in Java."
+  },
   "Java Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -409,7 +471,7 @@
       "}"
     ],
     "description": "Creates a function with arguments in Java, with a note about default argument values."
-  },  
+  },
   "Java Function Named Args": {
     "prefix": "cotrFuncArgsNamed",
     "body": [
@@ -425,7 +487,7 @@
       "}"
     ],
     "description": "Creates an arrow function (lambda) in Java."
-  },  
+  },
   "Java Anonymous Function": {
     "prefix": "cotrFuncAnon",
     "body": [
@@ -437,7 +499,7 @@
       "}"
     ],
     "description": "Creates an anonymous function (anonymous inner class) in Java."
-  },  
+  },
   "Java Lambda Function": {
     "prefix": ["cotrFuncLambda", "cotrLambda"],
     "body": ["(${1:parameters}) -> ${2:expression}"],

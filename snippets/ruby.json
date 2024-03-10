@@ -8,7 +8,7 @@
       "Concurrency: Supports multi-threading and concurrent programming with fibers"
     ],
     "description": "Provides general information about the Ruby programming language."
-  },  
+  },
   "Ruby Entry Point": {
     "prefix": "cotrEntry",
     "body": [
@@ -18,7 +18,7 @@
       "puts 'Hello, World!'"
     ],
     "description": "Creates the entry point of a Ruby application."
-  },  
+  },
   "Ruby Project Structure (High-Level)": {
     "prefix": "cotrStructure",
     "body": [
@@ -95,7 +95,69 @@
       "# Exponentiation assignment: **="
     ],
     "description": "Lists the mathematical operators in Ruby."
-  },  
+  },
+  "Ruby Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "Ruby equal to operator."
+  },
+  "Ruby Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "Ruby not equal to operator."
+  },
+  "Ruby Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "# Ruby Boolean Operators",
+      "# Logical AND: && or and",
+      "# Logical OR: || or or",
+      "# Logical NOT: ! or not",
+      "# Equality: ==",
+      "# Inequality: !=",
+      "# Greater than: >",
+      "# Less than: <",
+      "# Greater than or equal to: >=",
+      "# Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in Ruby."
+  }
+,  
+  "Ruby Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["${1:variable}.class"],
+    "description": "Gets the type of a variable in Ruby."
+  },
+  "Ruby Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "# Check if two variables have the same type:",
+      "if ${1:variable1}.class == ${2:variable2}.class",
+      "  # Your code here",
+      "end"
+    ],
+    "description": "Compares the types of two variables in Ruby."
+  },
+  "Ruby Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "# Ruby Type Conversion:",
+      "",
+      "# Implicit conversions (Ruby performs automatically):",
+      "# - Can be unpredictable, especially with loose equality (==).",
+      "",
+      "# Explicit conversions:",
+      "# - variable.to_i  // Converts to integer",
+      "# - variable.to_f  // Converts to float",
+      "# - variable.to_s  // Converts to string",
+      "# - !!variable  // Converts to boolean",
+      "",
+      "# Note:",
+      "# - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control."
+    ],
+    "description": "Explains type conversion in Ruby."
+  },
+
   "Ruby Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -364,7 +426,7 @@
       "end"
     ],
     "description": "Creates a function with arguments in Ruby, including an argument with a default value."
-  },  
+  },
   "Ruby Function Named Args": {
     "prefix": "cotrFuncArgsNamed",
     "body": [
@@ -385,11 +447,7 @@
   },
   "Ruby Anonymous Function": {
     "prefix": "cotrFuncAnon",
-    "body": [
-      "lambda { |${1:parameters}|",
-      "  ${2:# Your code here}",
-      "}"
-    ],
+    "body": ["lambda { |${1:parameters}|", "  ${2:# Your code here}", "}"],
     "description": "Creates an anonymous function (lambda) in Ruby."
   },
   "Ruby Function Syntax": {

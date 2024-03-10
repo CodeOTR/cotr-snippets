@@ -9,7 +9,7 @@
       "Concurrency: Supports coroutines for asynchronous programming and concurrency"
     ],
     "description": "Provides general information about the Kotlin programming language."
-  },  
+  },
   "Kotlin Entry Point": {
     "prefix": "cotrEntry",
     "scope": "kotlin",
@@ -22,7 +22,7 @@
       "}"
     ],
     "description": "Creates the entry point of a Kotlin application."
-  }, 
+  },
   "Kotlin Project Structure (High-Level)": {
     "prefix": "cotrStructure",
     "scope": "kotlin",
@@ -42,7 +42,7 @@
       "// - This is a basic structure; adjust based on project complexity and preferences."
     ],
     "description": "Explains a high-level project structure for Kotlin."
-  }, 
+  },
   "Kotlin Project Structure (Feature/Module)": {
     "prefix": "cotrStructureFeatures",
     "scope": "kotlin",
@@ -104,7 +104,71 @@
       "// Modulus assignment: %="
     ],
     "description": "Lists the mathematical operators in Kotlin."
-  },  
+  },
+  "Kotlin Equal To": {
+    "prefix": "cotrEqual",
+    "scope": "kotlin",
+    "body": ["=="],
+    "description": "Kotlin equal to operator (structural equality for objects)."
+  },
+  "Kotlin Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "scope": "kotlin",
+    "body": ["!="],
+    "description": "Kotlin not equal to operator."
+  },
+  "Kotlin Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "scope": "kotlin",
+    "body": [
+      "// Kotlin Boolean Operators",
+      "// Logical AND: &&",
+      "// Logical OR: ||",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Inequality: !=",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in Kotlin."
+  },
+  "Kotlin Type Check": {
+    "prefix": "cotrTypeCheck",
+    "scope": "kotlin",
+    "body": ["${1:variable}::class"],
+    "description": "Gets the type of a variable in Kotlin."
+  },
+  "Kotlin Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "scope": "kotlin",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if (${1:variable1}::class == ${2:variable2}::class) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in Kotlin."
+  },
+  "Kotlin Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "scope": "kotlin",
+    "body": [
+      "// Kotlin Type Conversion:",
+      "",
+      "// Implicit conversions (compiler performs automatically):",
+      "// - Smaller numeric types to larger numeric types (e.g., Int to Double).",
+      "",
+      "// Explicit conversions (using casts):",
+      "// - variable as Type  // Safe cast (returns null if conversion fails)",
+      "// - variable.toType()  // Conversion methods (e.g., toInt(), toDouble())",
+      "",
+      "// Note:",
+      "// - Be cautious with explicit conversions, as they can lead to data loss or errors if the conversion is not valid."
+    ],
+    "description": "Explains type conversion in Kotlin."
+  },
   "Kotlin Types": {
     "prefix": "cotrTypes",
     "scope": "kotlin",
@@ -350,7 +414,7 @@
   },
 
   "Kotlin Create Value (Constant)": {
-    "prefix": ["cotrConst","cotrVal"],
+    "prefix": ["cotrConst", "cotrVal"],
     "scope": "kotlin",
     "body": ["val ${1:myConst} = $2"],
     "description": "Creates a constant variable in Kotlin using the val keyword."
@@ -445,7 +509,7 @@
       "}"
     ],
     "description": "Creates a function with arguments in Kotlin, including an argument with a default value."
-  },  
+  },
   "Kotlin Function Named Args": {
     "prefix": "cotrFuncArgsNamed",
     "scope": "kotlin",
@@ -475,7 +539,7 @@
       "}"
     ],
     "description": "Creates an anonymous function in Kotlin."
-  },  
+  },
   "Kotlin Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "scope": "kotlin",

@@ -98,6 +98,65 @@
     ],
     "description": "Lists the mathematical operators in Python."
   },
+  "Python Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "Python equal to operator."
+  },
+  "Python Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "Python not equal to operator."
+  },
+  "Python Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "# Python Boolean Operators",
+      "# Logical AND: and",
+      "# Logical OR: or",
+      "# Logical NOT: not",
+      "# Equality: ==",
+      "# Inequality: !=",
+      "# Greater than: >",
+      "# Less than: <",
+      "# Greater than or equal to: >=",
+      "# Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in Python."
+  },
+  "Python Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["type(${1:variable})"],
+    "description": "Gets the type of a variable in Python."
+  },
+  "Python Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "# Check if two variables have the same type:",
+      "if type(${1:variable1}) is type(${2:variable2}):",
+      "  # Your code here"
+    ],
+    "description": "Compares the types of two variables in Python."
+  },
+  "Python Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "# Python Type Conversion:",
+      "",
+      "# Implicit conversions (Python performs automatically):",
+      "# - Can be unpredictable, especially with loose equality (==).",
+      "",
+      "# Explicit conversions:",
+      "# - int(variable)  // Converts to integer",
+      "# - float(variable)  // Converts to float",
+      "# - str(variable)  // Converts to string",
+      "# - bool(variable)  // Converts to boolean",
+      "",
+      "# Note:",
+      "# - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control."
+    ],
+    "description": "Explains type conversion in Python."
+  },
   "Python Types": {
     "prefix": "cotrTypes",
     "body": [

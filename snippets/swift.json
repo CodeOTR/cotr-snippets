@@ -97,6 +97,65 @@
     ],
     "description": "Lists the mathematical operators in Swift."
   },
+  "Swift Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "Swift equal to operator."
+  },
+  "Swift Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "Swift not equal to operator."
+  },
+  "Swift Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "// Swift Boolean Operators",
+      "// Logical AND: &&",
+      "// Logical OR: ||",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Inequality: !=",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in Swift."
+  },  
+  "Swift Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["type(of: ${1:variable})"],
+    "description": "Gets the type of a variable in Swift."
+  },
+  "Swift Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if type(of: ${1:variable1}) == type(of: ${2:variable2}) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in Swift."
+  },
+  "Swift Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "// Swift Type Conversion:",
+      "",
+      "// Swift emphasizes explicit type conversions for safety.",
+      "",
+      "// Explicit conversions:",
+      "// - variable as? TargetType  // Safe cast (returns nil if conversion fails)",
+      "// - TargetType(variable)  // Forced cast (can crash if conversion fails)",
+      "",
+      "// Note:",
+      "// - Use safe casts (as?) whenever possible.",
+      "// - Only use forced casts (TargetType()) when you are certain the conversion will succeed."
+    ],
+    "description": "Explains type conversion in Swift."
+  },
+
   "Swift Types": {
     "prefix": "cotrTypes",
     "body": [

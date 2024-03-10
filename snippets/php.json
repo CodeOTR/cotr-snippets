@@ -99,6 +99,71 @@
     ],
     "description": "Lists the mathematical operators in PHP."
   },
+  "PHP Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "PHP equal to operator."
+  },
+  "PHP Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "PHP not equal to operator."
+  },
+  "PHP Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "// PHP Boolean Operators",
+      "// Logical AND: && or and",
+      "// Logical OR: || or or",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Identity (Strict Equality): ===",
+      "// Inequality: !=",
+      "// Non-identity (Strict Inequality): !==",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in PHP."
+  },
+  "PHP Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["gettype(${1:variable})"],
+    "description": "Gets the type of a variable in PHP."
+  },
+  "PHP Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if (gettype(${1:variable1}) === gettype(${2:variable2})) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in PHP."
+  },
+  "PHP Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "// PHP Type Conversion:",
+      "",
+      "// Implicit conversions (PHP performs automatically):",
+      "// - Can be unpredictable, especially with loose equality (==).",
+      "",
+      "// Explicit conversions (using casts):",
+      "// - (Type)variable  // C-style cast",
+      "",
+      "// Conversion functions:",
+      "// - intval(variable)  // Converts to integer",
+      "// - floatval(variable)  // Converts to float",
+      "// - strval(variable)  // Converts to string",
+      "// - boolval(variable)  // Converts to boolean",
+      "",
+      "// Note:",
+      "// - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control."
+    ],
+    "description": "Explains type conversion in PHP."
+  },
   "PHP Types": {
     "prefix": "cotrTypes",
     "body": [

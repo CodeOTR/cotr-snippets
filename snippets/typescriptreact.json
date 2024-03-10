@@ -20,6 +20,63 @@
     ],
     "description": "Describes the entry point of a TypeScript application."
   },
+  "TypeScript Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "// Recommended High-Level TypeScript Project Structure:",
+      "",
+      "// - src/",
+      "//   - Contains all source code.",
+      "// - node_modules/",
+      "//   - Contains installed dependencies (if using a package manager).",
+      "// - public/",
+      "//   - Contains static assets (HTML, CSS, images).",
+      "// - test/",
+      "//   - Contains unit tests.",
+      "",
+      "// Note:",
+      "// - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for TypeScript."
+  },
+  "TypeScript Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "// Recommended TypeScript Source Directory Organization (Feature/Module):",
+      "",
+      "// - src/",
+      "//   - rendering/",
+      "//     - Contains source code for rendering features.",
+      "//   - physics/",
+      "//     - Contains source code for physics features.",
+      "//   - networking/",
+      "//     - Contains source code for networking features.",
+      "//   - ... (Organize by feature or module)",
+      "",
+      "// Note:",
+      "// - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for TypeScript."
+  },
+  "TypeScript Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "// Recommended TypeScript Source Directory Organization (File Type):",
+      "",
+      "// - src/",
+      "//   - models/",
+      "//     - Contains data models and classes.",
+      "//   - utils/",
+      "//     - Contains utility functions.",
+      "//   - components/",
+      "//     - Contains UI components.",
+      "//   - ... (Organize by file type)",
+      "",
+      "// Note:",
+      "// - This approach can be helpful for smaller projects or specific use cases."
+    ],
+    "description": "Explains a file type-based source directory organization for TypeScript."
+  },
   "TypeScript Mathematical Operators": {
     "prefix": "cotrOperators",
     "body": [
@@ -41,6 +98,66 @@
       "// Exponentiation assignment: **="
     ],
     "description": "Lists the mathematical operators in TypeScript."
+  },
+  "TypeScript Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["==="],
+    "description": "TypeScript strict equal to operator."
+  },
+  "TypeScript Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!=="],
+    "description": "TypeScript strict not equal to operator."
+  },
+  "TypeScript Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "// TypeScript Boolean Operators",
+      "// Logical AND: &&",
+      "// Logical OR: ||",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Strict Equality: ===",
+      "// Inequality: !=",
+      "// Strict Inequality: !==",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in TypeScript."
+  },  
+  "TypeScript Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["typeof ${1:variable}"],
+    "description": "Gets the type of a variable in TypeScript."
+  },
+  "TypeScript Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if (typeof ${1:variable1} === typeof ${2:variable2}) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in TypeScript."
+  },
+  "TypeScript Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "// TypeScript Type Conversion:",
+      "",
+      "// Implicit conversions (TypeScript performs automatically):",
+      "// - Can be unpredictable, especially with loose equality (==).",
+      "",
+      "// Explicit conversions:",
+      "// - variable as Type  // Type assertion (can throw an error if conversion fails)",
+      "// - <Type>variable  // Type casting (can throw an error if conversion fails)",
+      "",
+      "// Note:",
+      "// - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control."
+    ],
+    "description": "Explains type conversion in TypeScript."
   },
   "TypeScript Types": {
     "prefix": "cotrTypes",

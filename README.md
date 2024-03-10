@@ -34,64 +34,70 @@ Its very simple, actually. Every supported language implements all snippets in a
 
 ## Snippets
 
-| Name               | Description                                                          |
-| ------------------ | -------------------------------------------------------------------- |
-| cotrInfo           | Outputs information about the language                               |
-| cotrStructure      | Outputs the basic structure for a project                            |
-| cotrStructureFeatures | Outputs the basic structure for a project with feature-first organization          |
-| cotrStructureFiles | Outputs the basic structure for a project with file-first organization     |
-| cotrOperators      | Outputs the basic operators for the language                         |
-| cotrEntry          | Creates a main entry point                                           |
-| cotrTypes          | The language's data types                                            |
-| cotrTypesString    | The language's string data type                                      |
-| cotrTypesInt       | The language's integer data type                                     |
-| cotrTypesNum       | The language's numerical data type                                   |
-| cotrTypesBool      | The language's boolean data type                                     |
-| cotrTypesBoolTrue  | The language's value for true                                        |
-| cotrTypesBoolFalse | The language's value for false                                       |
-| cotrTypesDate      | The language's Date data type                                        |
-| cotrTypesList      | The language's list data type                                        |
-| cotrTypesMap       | The language's map data type                                         |
-| cotrTypseDynamic   | The language's dynamic data type                                     |
-| cotrTypesNull      | The language's nullable data type                                    |
-| cotrNull           | The language's null data type                                        |
-| cotrNow            | How the language represents the current time                         |
-| cotrVar            | Creates a variable                                                   |
-| cotrVarSyntax      | Outputs the basic syntax for a variable                              |
-| cotrVarTyped       | Creates a statically typed variable                                  |
-| cotrVarNullable    | Creates a nullable variable                                          |
-| cotrVarString      | Creates a string variable                                            |
-| cotrVarStringMulti | Creates a multi-line string variable                                 |
-| cotrVarNum         | Creates a number variable                                            |
-| cotrVarBool        | Creates a boolean variable                                           |
-| cotrVarDate        | Creates a date variable                                              |
-| cotrVarList        | Creates a list variable                                              |
-| cotrVarMap         | Creates a map variable                                               |
-| cotrConst          | Creates a constant variable                                          |
-| cotrStaticVar      | Creates a static variable                                            |
-| cotrGenMap         | Generates a map/dictionary with a specific number of key/value pairs |
-| cotrGenList        | Generates a list/array of a specific length                          |
-| cotrPrint          | Creates a print/log statement                                        |
-| cotrPrintMulti     | Creates a multi-line print/log statement                             |
-| cotrInterpolate    | Interpolates a string                                                |
-| cotrConcat         | Concatenates a string                                                |
-| cotrForLoop        | Creates a for loop                                                   |
-| cotrForIn          | Creates a for-in/of loop                                             |
-| cotrWhileLoop      | Creates a while loop                                                 |
-| cotrSwitch         | Creates a switch stament with default                                |
-| cotrFunc           | Creates a function                                                   |
-| cotrFuncArgs       | Creates a function with arguments                                    |
-| cotrFuncArgsNamed  | Creates a function with named arguments                              |
-| cotrFuncArrow      | Creates an arrow function                                            |
-| cotrFuncAnon       | Creates an anonymous function                                        |
-| cotrFuncLambda     | Creates a lambda function                                            |
-| cotrFuncSyntax     | Outputs the basic syntax for a function                              |
-| cotrComment        | Creates a single-line comment                                        |
-| cotrCommentMulti   | Creates a multi-line comment                                         |
-| cotrThrow          | Throws an exception                                                  |
-| cotrTryCatch       | Creates a try-catch block                                            |
-| cotrIf             | Creates an if statement                                              |
-| cotrIfElse         | Creates an if-else statement                                         |
-| cotrTernary        | Creates a ternary statement                                          |
+| Name                  | Description                                                               |
+| --------------------- | ------------------------------------------------------------------------- |
+| cotrInfo              | Outputs information about the language                                    |
+| cotrStructure         | Outputs the basic structure for a project                                 |
+| cotrStructureFeatures | Outputs the basic structure for a project with feature-first organization |
+| cotrStructureFiles    | Outputs the basic structure for a project with file-first organization    |
+| cotrOperators         | Outputs the basic operators for the language                              |
+| cotrOperatorsBoolean  | Outputs the basic boolean operators for the language                      |
+| cotrEqual             | Outputs the equality operator for the language                            |
+| cotrNotEqual          | Outputs the not equal operator for the language                           |
+| cotrEntry             | Creates a main entry point                                                |
+| cotrTypeCheck         | Outputs the basic syntax for type checking                                |
+| cotrTypeCompare      | Outputs the basic syntax for type comparison                              |
+| cotrTypeConvert       | Outputs the basic syntax for type conversion                              |
+| cotrTypes             | The language's data types                                                 |
+| cotrTypesString       | The language's string data type                                           |
+| cotrTypesInt          | The language's integer data type                                          |
+| cotrTypesNum          | The language's numerical data type                                        |
+| cotrTypesBool         | The language's boolean data type                                          |
+| cotrTypesBoolTrue     | The language's value for true                                             |
+| cotrTypesBoolFalse    | The language's value for false                                            |
+| cotrTypesDate         | The language's Date data type                                             |
+| cotrTypesList         | The language's list data type                                             |
+| cotrTypesMap          | The language's map data type                                              |
+| cotrTypseDynamic      | The language's dynamic data type                                          |
+| cotrTypesNull         | The language's nullable data type                                         |
+| cotrNull              | The language's null data type                                             |
+| cotrNow               | How the language represents the current time                              |
+| cotrVar               | Creates a variable                                                        |
+| cotrVarSyntax         | Outputs the basic syntax for a variable                                   |
+| cotrVarTyped          | Creates a statically typed variable                                       |
+| cotrVarNullable       | Creates a nullable variable                                               |
+| cotrVarString         | Creates a string variable                                                 |
+| cotrVarStringMulti    | Creates a multi-line string variable                                      |
+| cotrVarNum            | Creates a number variable                                                 |
+| cotrVarBool           | Creates a boolean variable                                                |
+| cotrVarDate           | Creates a date variable                                                   |
+| cotrVarList           | Creates a list variable                                                   |
+| cotrVarMap            | Creates a map variable                                                    |
+| cotrConst             | Creates a constant variable                                               |
+| cotrStaticVar         | Creates a static variable                                                 |
+| cotrGenMap            | Generates a map/dictionary with a specific number of key/value pairs      |
+| cotrGenList           | Generates a list/array of a specific length                               |
+| cotrPrint             | Creates a print/log statement                                             |
+| cotrPrintMulti        | Creates a multi-line print/log statement                                  |
+| cotrInterpolate       | Interpolates a string                                                     |
+| cotrConcat            | Concatenates a string                                                     |
+| cotrForLoop           | Creates a for loop                                                        |
+| cotrForIn             | Creates a for-in/of loop                                                  |
+| cotrWhileLoop         | Creates a while loop                                                      |
+| cotrSwitch            | Creates a switch stament with default                                     |
+| cotrFunc              | Creates a function                                                        |
+| cotrFuncArgs          | Creates a function with arguments                                         |
+| cotrFuncArgsNamed     | Creates a function with named arguments                                   |
+| cotrFuncArrow         | Creates an arrow function                                                 |
+| cotrFuncAnon          | Creates an anonymous function                                             |
+| cotrFuncLambda        | Creates a lambda function                                                 |
+| cotrFuncSyntax        | Outputs the basic syntax for a function                                   |
+| cotrComment           | Creates a single-line comment                                             |
+| cotrCommentMulti      | Creates a multi-line comment                                              |
+| cotrThrow             | Throws an exception                                                       |
+| cotrTryCatch          | Creates a try-catch block                                                 |
+| cotrIf                | Creates an if statement                                                   |
+| cotrIfElse            | Creates an if-else statement                                              |
+| cotrTernary           | Creates a ternary statement                                               |
 
 > If a language does not support the snippet, a comment will be added to the file indicating that the snippet is not supported. Additional resources may also be provided.

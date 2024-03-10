@@ -99,6 +99,66 @@
     ],
     "description": "Lists the mathematical operators in TypeScript."
   },
+  "TypeScript Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["==="],
+    "description": "TypeScript strict equal to operator."
+  },
+  "TypeScript Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!=="],
+    "description": "TypeScript strict not equal to operator."
+  },
+  "TypeScript Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "// TypeScript Boolean Operators",
+      "// Logical AND: &&",
+      "// Logical OR: ||",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Strict Equality: ===",
+      "// Inequality: !=",
+      "// Strict Inequality: !==",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in TypeScript."
+  },  
+  "TypeScript Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["typeof ${1:variable}"],
+    "description": "Gets the type of a variable in TypeScript."
+  },
+  "TypeScript Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if (typeof ${1:variable1} === typeof ${2:variable2}) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in TypeScript."
+  },
+  "TypeScript Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "// TypeScript Type Conversion:",
+      "",
+      "// Implicit conversions (TypeScript performs automatically):",
+      "// - Can be unpredictable, especially with loose equality (==).",
+      "",
+      "// Explicit conversions:",
+      "// - variable as Type  // Type assertion (can throw an error if conversion fails)",
+      "// - <Type>variable  // Type casting (can throw an error if conversion fails)",
+      "",
+      "// Note:",
+      "// - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control."
+    ],
+    "description": "Explains type conversion in TypeScript."
+  },
   "TypeScript Types": {
     "prefix": "cotrTypes",
     "body": [

@@ -100,7 +100,67 @@
     ],
     "description": "Lists the mathematical operators in R."
   },
-
+  "R Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "R equal to operator."
+  },
+  "R Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "R not equal to operator."
+  },
+  "R Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "# R Boolean Operators",
+      "# Logical AND: & or &&",
+      "# Logical OR: | or ||",
+      "# Logical NOT: !",
+      "# Equality: ==",
+      "# Inequality: !=",
+      "# Greater than: >",
+      "# Less than: <",
+      "# Greater than or equal to: >=",
+      "# Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in R."
+  },
+  "R Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["class(${1:variable})"],
+    "description": "Gets the type of a variable in R."
+  },
+  "R Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "# Check if two variables have the same type:",
+      "if (identical(class(${1:variable1}), class(${2:variable2}))) {",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in R."
+  },
+  "R Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "# R Type Conversion:",
+      "",
+      "# Implicit conversions (R performs automatically):",
+      "# - Can be unpredictable, especially with loose equality (==).",
+      "",
+      "# Explicit conversions:",
+      "# - as.integer(variable)  // Converts to integer",
+      "# - as.double(variable)  // Converts to double",
+      "# - as.character(variable)  // Converts to string",
+      "# - as.logical(variable)  // Converts to boolean",
+      "# - ... (Various conversion functions in base R and packages)",
+      "",
+      "# Note:",
+      "# - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control."
+    ],
+    "description": "Explains type conversion in R."
+  },
   "R Types": {
     "prefix": "cotrTypes",
     "body": [

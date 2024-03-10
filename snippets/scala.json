@@ -105,7 +105,65 @@
     ],
     "description": "Lists the mathematical operators in Scala."
   },
-
+  "Scala Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "Scala equal to operator (structural equality for objects)."
+  },
+  "Scala Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "Scala not equal to operator."
+  },
+  "Scala Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "// Scala Boolean Operators",
+      "// Logical AND: &&",
+      "// Logical OR: ||",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Inequality: !=",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in Scala."
+  }
+,  
+  "Scala Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["${1:variable}.getClass"],
+    "description": "Gets the type of a variable in Scala."
+  },
+  "Scala Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if (${1:variable1}.getClass == ${2:variable2}.getClass) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in Scala."
+  },
+  "Scala Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "// Scala Type Conversion:",
+      "",
+      "// Implicit conversions (compiler performs automatically):",
+      "// - Smaller numeric types to larger numeric types (e.g., Int to Double).",
+      "",
+      "// Explicit conversions (using casts):",
+      "// - variable.asInstanceOf[Type]  // Type casting (can throw ClassCastException if conversion fails)",
+      "// - variable.toType  // Conversion methods (e.g., toInt, toDouble)",
+      "",
+      "// Note:",
+      "// - Be cautious with explicit conversions, as they can lead to errors if the conversion is not valid."
+    ],
+    "description": "Explains type conversion in Scala."
+  },
   "Scala Types": {
     "prefix": "cotrTypes",
     "body": [

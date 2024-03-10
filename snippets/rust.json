@@ -79,6 +79,84 @@
     ],
     "description": "Explains a file type-based source directory organization for Rust."
   },
+  "Rust Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "// Rust Mathematical Operators",
+      "// Addition: +",
+      "// Subtraction: -",
+      "// Multiplication: *",
+      "// Division: /",
+      "// Modulus (Remainder): %",
+      "// Exponentiation: Not directly supported, use `f32::powi` or `f64::powf` for floating-point numbers",
+      "// Increment: Not directly supported, use `+= 1`",
+      "// Decrement: Not directly supported, use `-= 1`",
+      "// Assignment: =",
+      "// Addition assignment: +=",
+      "// Subtraction assignment: -=",
+      "// Multiplication assignment: *=",
+      "// Division assignment: /=",
+      "// Modulus assignment: %="
+    ],
+    "description": "Lists the mathematical operators in Rust."
+  },
+  "Rust Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "Rust equal to operator."
+  },
+  "Rust Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "Rust not equal to operator."
+  },
+  "Rust Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "// Rust Boolean Operators",
+      "// Logical AND: &&",
+      "// Logical OR: ||",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Inequality: !=",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in Rust."
+  },
+  "Rust Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["${1:variable}.type()"],
+    "description": "Gets the type of a variable in Rust."
+  },
+  "Rust Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if ${1:variable1}.type_id() == ${2:variable2}.type_id() {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in Rust."
+  },
+  "Rust Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "// Rust Type Conversion:",
+      "",
+      "// Rust emphasizes explicit type conversions for safety.",
+      "",
+      "// Explicit conversions:",
+      "// - variable as TargetType  // Type casting (can panic if conversion fails)",
+      "// - TargetType::from(variable)  // Conversion methods (e.g., i32::from(f64))",
+      "",
+      "// Note:",
+      "// - Be cautious with type casting, as it can lead to panics if the conversion is not valid."
+    ],
+    "description": "Explains type conversion in Rust."
+  },
   "Rust Types": {
     "prefix": "cotrTypes",
     "body": [

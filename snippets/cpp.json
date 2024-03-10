@@ -104,6 +104,32 @@
     ],
     "description": "Lists the mathematical operators in C++."
   },
+  "C++ Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "C++ equal to operator."
+  },
+  "C++ Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "C++ not equal to operator."
+  },
+  "C++ Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "// C++ Boolean Operators",
+      "// Logical AND: &&",
+      "// Logical OR: ||",
+      "// Logical NOT: !",
+      "// Equality: ==",
+      "// Inequality: !=",
+      "// Greater than: >",
+      "// Less than: <",
+      "// Greater than or equal to: >=",
+      "// Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in C++."
+  },
   "C++ Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -131,6 +157,43 @@
       "$BLOCK_COMMENT_END"
     ],
     "description": "Lists the types in C++."
+  },
+
+  "C++ Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["typeid(${1:variable})"],
+    "description": "Gets the type of a variable in C++."
+  },
+  "C++ Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "// Check if two variables have the same type:",
+      "if (typeid(${1:variable1}) == typeid(${2:variable2})) {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in C++."
+  },
+  "C++ Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrConvert", "cotrTypeCast"],
+    "body": [
+      "// C++ Type Conversion:",
+      "",
+      "// Implicit conversions (compiler performs automatically):",
+      "// - Smaller integer types to larger integer types (e.g., int to long).",
+      "// - Integers to floating-point types (e.g., int to double).",
+      "",
+      "// Explicit conversions (using casts):",
+      "// - static_cast<Type>(expression): For safe conversions within compatible types.",
+      "// - dynamic_cast<Type>(expression): For safe conversions between polymorphic types.",
+      "// - const_cast<Type>(expression): For removing constness.",
+      "// - reinterpret_cast<Type>(expression): For low-level reinterpretations of data.",
+      "",
+      "// Example:",
+      "// int x = 5;",
+      "// double y = static_cast<double>(x);"
+    ],
+    "description": "Explains type conversion in C++."
   },
   "C++ String Type": {
     "prefix": "cotrTypesString",
