@@ -21,6 +21,60 @@
     ],
     "description": "Describes the entry point of a Swift application."
   },
+  "Swift Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "// Recommended High-Level Swift Project Structure:",
+      "",
+      "// - Sources/",
+      "//   - Contains all source code.",
+      "// - Tests/",
+      "//   - Contains unit tests.",
+      "",
+      "// Note:",
+      "// - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for Swift."
+  },
+  "Swift Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "// Recommended Swift Source Directory Organization (Feature/Module):",
+      "",
+      "// - Sources/",
+      "//   - rendering/",
+      "//     - Contains source code for rendering features.",
+      "//   - physics/",
+      "//     - Contains source code for physics features.",
+      "//   - networking/",
+      "//     - Contains source code for networking features.",
+      "//   - ... (Organize by feature or module)",
+      "",
+      "// Note:",
+      "// - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for Swift."
+  },
+  "Swift Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "// Recommended Swift Source Directory Organization (File Type):",
+      "",
+      "// - Sources/",
+      "//   - models/",
+      "//     - Contains data models and structs.",
+      "//   - views/",
+      "//     - Contains UI components and logic.",
+      "//   - controllers/",
+      "//     - Contains logic for handling user interactions.",
+      "//   - ... (Organize by file type)",
+      "",
+      "// Note:",
+      "// - This approach is common in iOS and macOS app development."
+    ],
+    "description": "Explains a file type-based source directory organization for Swift."
+  },
+
   "Swift Mathematical Operators": {
     "prefix": "cotrOperators",
     "body": [

@@ -148,7 +148,7 @@
     "body": ["var ${1:variableName} ${2:variableType} = ${3:variableValue}"],
     "description": "Creates a variable in Go using the var keyword"
   },
-  "Variable Declaration Syntax": {
+  "Go Variable Declaration Syntax": {
     "prefix": "cotrVarSyntax",
     "body": [
       "// Go Variable Declaration Syntax:",
@@ -171,6 +171,61 @@
       "// - Use 'const' for values that are known at compile time."
     ],
     "description": "Explains Go variable declaration syntax"
+  },
+  "Go Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "// Recommended High-Level Go Project Structure:",
+      "",
+      "// - cmd/",
+      "//   - Contains main applications.",
+      "// - pkg/",
+      "//   - Contains reusable packages.",
+      "// - test/",
+      "//   - Contains unit tests.",
+      "",
+      "// Note:",
+      "// - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for Go."
+  },
+  "Go Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "// Recommended Go Source Directory Organization (Feature/Module):",
+      "",
+      "// - pkg/",
+      "//   - rendering/",
+      "//     - Contains source code for rendering features.",
+      "//   - physics/",
+      "//     - Contains source code for physics features.",
+      "//   - networking/",
+      "//     - Contains source code for networking features.",
+      "//   - ... (Organize by feature or module)",
+      "",
+      "// Note:",
+      "// - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for Go."
+  },
+  "Go Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "// Recommended Go Source Directory Organization (File Type):",
+      "",
+      "// - pkg/",
+      "//   - models/",
+      "//     - Contains data models and structs.",
+      "//   - utils/",
+      "//     - Contains utility functions.",
+      "//   - handlers/",
+      "//     - Contains request handlers.",
+      "//   - ... (Organize by file type)",
+      "",
+      "// Note:",
+      "// - This approach can be helpful for smaller projects or specific use cases."
+    ],
+    "description": "Explains a file type-based source directory organization for Go."
   },
   "Go Create Typed Variable": {
     "prefix": "cotrVarTyped",

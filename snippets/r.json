@@ -20,6 +20,64 @@
     ],
     "description": "Creates the entry point of an R application."
   },
+  "R Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "# Recommended High-Level R Project Structure:",
+      "",
+      "# - project_name/",
+      "#   - Contains all project files.",
+      "# - data/",
+      "#   - raw",
+      "#   - processed",
+      "# - R/",
+      "#   - Contains R scripts.",
+      "# - output/",
+      "#   - Contains generated output (e.g., figures, reports).",
+      "",
+      "# Note:",
+      "# - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for R."
+  },
+  "R Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "# Recommended R Source Directory Organization (Feature/Module):",
+      "",
+      "# - R/",
+      "#   - data_cleaning/",
+      "#     - Contains scripts for data cleaning.",
+      "#   - analysis/",
+      "#     - Contains scripts for data analysis.",
+      "#   - visualization/",
+      "#     - Contains scripts for data visualization.",
+      "#   - ... (Organize by feature or module)",
+      "",
+      "# Note:",
+      "# - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for R."
+  },
+  "R Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "# Recommended R Source Directory Organization (File Type):",
+      "",
+      "# - R/",
+      "#   - functions.R",
+      "#     - Contains custom functions.",
+      "#   - data_loading.R",
+      "#     - Contains scripts for loading data.",
+      "#   - analysis.R",
+      "#     - Contains scripts for data analysis.",
+      "#   - ... (Organize by file type)",
+      "",
+      "# Note:",
+      "# - This approach can be helpful for smaller projects or specific use cases."
+    ],
+    "description": "Explains a file type-based source directory organization for R."
+  },
 
   "R Mathematical Operators": {
     "prefix": "cotrOperators",

@@ -8,7 +8,7 @@
       "Concurrency: Supports multi-threading with extensions like pthreads, but traditionally single-threaded"
     ],
     "description": "Provides general information about the PHP programming language."
-  },  
+  },
   "PHP Entry Point": {
     "prefix": "cotrEntry",
     "body": [
@@ -20,7 +20,64 @@
       "?>"
     ],
     "description": "Creates the entry point of a PHP application."
-  },  
+  },
+  "PHP Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "// Recommended High-Level PHP Project Structure:",
+      "",
+      "// - public/",
+      "//   - Contains publicly accessible files (e.g., index.php).",
+      "// - src/",
+      "//   - Contains all source code.",
+      "// - vendor/",
+      "//   - Contains installed dependencies (if using Composer).",
+      "// - tests/",
+      "//   - Contains unit tests.",
+      "",
+      "// Note:",
+      "// - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for PHP."
+  },
+  "PHP Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "// Recommended PHP Source Directory Organization (Feature/Module):",
+      "",
+      "// - src/",
+      "//   - rendering/",
+      "//     - Contains source code for rendering features.",
+      "//   - authentication/",
+      "//     - Contains source code for authentication features.",
+      "//   - database/",
+      "//     - Contains source code for database interactions.",
+      "//   - ... (Organize by feature or module)",
+      "",
+      "// Note:",
+      "// - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for PHP."
+  },
+  "PHP Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "// Recommended PHP Source Directory Organization (File Type):",
+      "",
+      "// - src/",
+      "//   - models/",
+      "//     - Contains data models and classes.",
+      "//   - views/",
+      "//     - Contains templates and presentation logic.",
+      "//   - controllers/",
+      "//     - Contains logic for handling requests.",
+      "//   - ... (Organize by file type)",
+      "",
+      "// Note:",
+      "// - This approach is common in web applications and MVC patterns."
+    ],
+    "description": "Explains a file type-based source directory organization for PHP."
+  },
   "PHP Mathematical Operators": {
     "prefix": "cotrOperators",
     "body": [
@@ -41,7 +98,7 @@
       "// Modulus assignment: %="
     ],
     "description": "Lists the mathematical operators in PHP."
-  },  
+  },
   "PHP Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -312,7 +369,7 @@
       "}"
     ],
     "description": "Creates a function with arguments in PHP, including an argument with a default value."
-  },  
+  },
   "PHP Function Named Args": {
     "prefix": "cotrFuncArgsNamed",
     "body": [
@@ -326,7 +383,7 @@
       "$${2:myFunction} = fn(${3:parameters}) => ${4:// Your code here};"
     ],
     "description": "Creates an arrow function in PHP."
-  },  
+  },
   "PHP Anonymous Function": {
     "prefix": "cotrFuncAnon",
     "body": [
@@ -335,7 +392,7 @@
       "};"
     ],
     "description": "Creates an anonymous function in PHP."
-  },  
+  },
   "PHP Lambda Function": {
     "prefix": ["cotrFuncLambda", "cotrLambda"],
     "body": ["function (${1:parameters}) => ${2:expression}"],

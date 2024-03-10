@@ -8,7 +8,7 @@
       "Concurrency: Built-in support for concurrency with ownership and borrowing, and asynchronous programming with async/await"
     ],
     "description": "Provides general information about the Rust programming language."
-  },  
+  },
   "Rust Entry Point": {
     "prefix": "cotrEntry",
     "body": [
@@ -21,7 +21,64 @@
       "}"
     ],
     "description": "Creates the entry point of a Rust application."
-  },  
+  },
+  "Rust Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "// Recommended High-Level Rust Project Structure:",
+      "",
+      "// - src/",
+      "//   - Contains all source code.",
+      "// - target/",
+      "//   - Output directory for compiled binaries.",
+      "// - Cargo.toml",
+      "//   - Project configuration and dependencies.",
+      "// - tests/",
+      "//   - Contains unit tests.",
+      "",
+      "// Note:",
+      "// - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for Rust."
+  },
+  "Rust Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "// Recommended Rust Source Directory Organization (Feature/Module):",
+      "",
+      "// - src/",
+      "//   - rendering/",
+      "//     - Contains source code for rendering features.",
+      "//   - physics/",
+      "//     - Contains source code for physics features.",
+      "//   - networking/",
+      "//     - Contains source code for networking features.",
+      "//   - ... (Organize by feature or module)",
+      "",
+      "// Note:",
+      "// - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for Rust."
+  },
+  "Rust Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "// Recommended Rust Source Directory Organization (File Type):",
+      "",
+      "// - src/",
+      "//   - models/",
+      "//     - Contains data models and structs.",
+      "//   - utils/",
+      "//     - Contains utility functions.",
+      "//   - main.rs",
+      "//     - Contains the main entry point.",
+      "//   - ... (Organize by file type)",
+      "",
+      "// Note:",
+      "// - This approach can be helpful for smaller projects or specific use cases."
+    ],
+    "description": "Explains a file type-based source directory organization for Rust."
+  },
   "Rust Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -363,7 +420,7 @@
       "}"
     ],
     "description": "Creates a function with arguments in Rust, including an argument with an optional default value."
-  },  
+  },
   "Rust Function Named Args": {
     "prefix": "cotrFuncArgsNamed",
     "body": [
@@ -384,7 +441,7 @@
       "}"
     ],
     "description": "Creates an anonymous closure in Rust."
-  },  
+  },
   "Rust Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [

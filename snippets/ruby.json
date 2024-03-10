@@ -19,6 +19,61 @@
     ],
     "description": "Creates the entry point of a Ruby application."
   },  
+  "Ruby Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "# Recommended High-Level Ruby Project Structure:",
+      "",
+      "# - lib/",
+      "#   - Contains all source code.",
+      "# - bin/",
+      "#   - Contains executable scripts.",
+      "# - test/",
+      "#   - Contains unit tests.",
+      "",
+      "# Note:",
+      "# - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for Ruby."
+  },
+  "Ruby Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "# Recommended Ruby Source Directory Organization (Feature/Module):",
+      "",
+      "# - lib/",
+      "#   - rendering/",
+      "#     - Contains source code for rendering features.",
+      "#   - authentication/",
+      "#     - Contains source code for authentication features.",
+      "#   - database/",
+      "#     - Contains source code for database interactions.",
+      "#   - ... (Organize by feature or module)",
+      "",
+      "# Note:",
+      "# - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for Ruby."
+  },
+  "Ruby Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "# Recommended Ruby Source Directory Organization (File Type):",
+      "",
+      "# - lib/",
+      "#   - models/",
+      "#     - Contains data models and classes.",
+      "#   - helpers/",
+      "#     - Contains helper functions.",
+      "#   - services/",
+      "#     - Contains business logic.",
+      "#   - ... (Organize by file type)",
+      "",
+      "# Note:",
+      "# - This approach can be helpful for smaller projects or specific use cases."
+    ],
+    "description": "Explains a file type-based source directory organization for Ruby."
+  },
   "Ruby Mathematical Operators": {
     "prefix": "cotrOperators",
     "body": [

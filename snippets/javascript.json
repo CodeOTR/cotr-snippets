@@ -19,6 +19,63 @@
     ],
     "description": "Describes the entry point of a JavaScript application."
   },  
+  "JavaScript Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "// Recommended High-Level JavaScript Project Structure:",
+      "",
+      "// - src/",
+      "//   - Contains all source code.",
+      "// - node_modules/",
+      "//   - Contains installed dependencies (if using a package manager).",
+      "// - public/",
+      "//   - Contains static assets (HTML, CSS, images).",
+      "// - test/",
+      "//   - Contains unit tests.",
+      "",
+      "// Note:",
+      "// - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for JavaScript."
+  },
+  "JavaScript Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "// Recommended JavaScript Source Directory Organization (Feature/Module):",
+      "",
+      "// - src/",
+      "//   - rendering/",
+      "//     - Contains source code for rendering features.",
+      "//   - physics/",
+      "//     - Contains source code for physics features.",
+      "//   - networking/",
+      "//     - Contains source code for networking features.",
+      "//   - ... (Organize by feature or module)",
+      "",
+      "// Note:",
+      "// - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for JavaScript."
+  },
+  "JavaScript Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "// Recommended JavaScript Source Directory Organization (File Type):",
+      "",
+      "// - src/",
+      "//   - models/",
+      "//     - Contains data models and classes.",
+      "//   - utils/",
+      "//     - Contains utility functions.",
+      "//   - components/",
+      "//     - Contains UI components.",
+      "//   - ... (Organize by file type)",
+      "",
+      "// Note:",
+      "// - This approach can be helpful for smaller projects or specific use cases."
+    ],
+    "description": "Explains a file type-based source directory organization for JavaScript."
+  },
   "JavaScript Mathematical Operators": {
     "prefix": "cotrOperators",
     "body": [

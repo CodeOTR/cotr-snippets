@@ -21,6 +21,63 @@
     ],
     "description": "Creates the entry point of a Dart application."
   },
+  "Dart Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "// Recommended High-Level Dart Project Structure:",
+      "",
+      "// - lib/",
+      "//   - Contains all source code.",
+      "// - bin/",
+      "//   - Output directory for compiled executables (optional).",
+      "// - test/",
+      "//   - Contains unit tests.",
+      "// - web/",
+      "//   - Contains web-specific assets (if applicable).",
+      "",
+      "// Note:",
+      "// - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for Dart."
+  },
+  "Dart Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "// Recommended Dart Source Directory Organization (Feature/Module):",
+      "",
+      "// - lib/",
+      "//   - rendering/",
+      "//     - Contains source code for rendering features.",
+      "//   - physics/",
+      "//     - Contains source code for physics features.",
+      "//   - networking/",
+      "//     - Contains source code for networking features.",
+      "//   - ... (Organize by feature or module)",
+      "",
+      "// Note:",
+      "// - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for Dart."
+  },
+  "Dart Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "// Recommended Dart Source Directory Organization (File Type):",
+      "",
+      "// - lib/",
+      "//   - models/",
+      "//     - Contains data models and classes.",
+      "//   - views/",
+      "//     - Contains UI components and logic.",
+      "//   - controllers/",
+      "//     - Contains logic for handling user interactions.",
+      "//   - ... (Organize by file type)",
+      "",
+      "// Note:",
+      "// - This approach is common in web applications and MVC patterns."
+    ],
+    "description": "Explains a file type-based source directory organization for Dart."
+  },
   "Dart Mathematical Operators": {
     "prefix": "cotrOperators",
     "body": [

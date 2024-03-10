@@ -24,6 +24,65 @@
     ],
     "description": "Creates the entry point of a C++ application."
   },
+
+  "C++ Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "// Recommended High-Level C++ Project Structure:",
+      "",
+      "// - src/",
+      "//   - Contains all source code.",
+      "// - include/",
+      "//   - Contains header files.",
+      "// - build/",
+      "//   - Output directory for compiled files.",
+      "// - lib/",
+      "//   - Contains external libraries (if not using a package manager).",
+      "// - test/",
+      "//   - Contains unit tests.",
+      "",
+      "// Note:",
+      "// - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for C++."
+  },
+
+  "C++ Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "// Recommended C++ Source Directory Organization (Feature/Module):",
+      "",
+      "// - src/",
+      "//   - rendering/",
+      "//     - Contains source code for rendering features.",
+      "//   - physics/",
+      "//     - Contains source code for physics features.",
+      "//   - networking/",
+      "//     - Contains source code for networking features.",
+      "//   - ... (Organize by feature or module)",
+      "",
+      "// Note:",
+      "// - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for C++."
+  },
+  "C++ Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "// Recommended C++ Source Directory Organization (File Type):",
+      "",
+      "// - src/",
+      "//   - cpp/",
+      "//     - Contains all .cpp implementation files.",
+      "//   - h/",
+      "//     - Contains all .h header files.",
+      "",
+      "// Note:",
+      "// - This approach is simpler but may be less scalable for larger projects."
+    ],
+    "description": "Explains a file type-based source directory organization for C++."
+  },
+
   "C++ Mathematical Operators": {
     "prefix": "cotrOperators",
     "body": [

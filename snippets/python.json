@@ -8,7 +8,7 @@
       "Concurrency: Supports multi-threading and asynchronous programming with asyncio"
     ],
     "description": "Provides general information about the Python programming language."
-  },  
+  },
   "Python Entry Point": {
     "prefix": "cotrEntry",
     "body": [
@@ -20,7 +20,60 @@
       ""
     ],
     "description": "Creates the entry point of a Python application."
-  },  
+  },
+  "Python Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "# Recommended High-Level Python Project Structure:",
+      "",
+      "# - project_name/",
+      "#   - Contains all project files.",
+      "# - tests/",
+      "#   - Contains unit tests.",
+      "# - venv/",
+      "#   - Virtual environment directory (optional).",
+      "",
+      "# Note:",
+      "# - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for Python."
+  },
+  "Python Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "# Recommended Python Source Directory Organization (Feature/Module):",
+      "",
+      "# - project_name/",
+      "#   - rendering/",
+      "#     - Contains source code for rendering features.",
+      "#   - data_processing/",
+      "#     - Contains source code for data processing features.",
+      "#   - ... (Organize by feature or module)",
+      "",
+      "# Note:",
+      "# - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for Python."
+  },
+  "Python Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "# Recommended Python Source Directory Organization (File Type):",
+      "",
+      "# - project_name/",
+      "#   - models/",
+      "#     - Contains data models and classes.",
+      "#   - utils/",
+      "#     - Contains utility functions.",
+      "#   - scripts/",
+      "#     - Contains standalone scripts.",
+      "#   - ... (Organize by file type)",
+      "",
+      "# Note:",
+      "# - This approach can be helpful for smaller projects or specific use cases."
+    ],
+    "description": "Explains a file type-based source directory organization for Python."
+  },
   "Python Mathematical Operators": {
     "prefix": "cotrOperators",
     "body": [
@@ -44,7 +97,7 @@
       "# Floor Division assignment: //="
     ],
     "description": "Lists the mathematical operators in Python."
-  },  
+  },
   "Python Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -135,7 +188,9 @@
   },
   "Python Dynamic Type": {
     "prefix": "cotrTypesDynamic",
-    "body": ["Any # Note: Python is dynamically typed. Use the Typing module to specify types."],
+    "body": [
+      "Any # Note: Python is dynamically typed. Use the Typing module to specify types."
+    ],
     "description": "The Python dynamic type."
   },
   "Python Interpolate String": {
@@ -184,9 +239,15 @@
     "description": "Creates a string variable in Python."
   },
   "Python Create Multi-Line String Variable": {
-	"prefix": "cotrVarStringMulti",
-	"body": ["${1:myString} = '''", "${2:Line 1}", "${3:Line 2}", "${4:Line 3}", "'''"],
-	"description": "Creates a multi-line string variable in Python."
+    "prefix": "cotrVarStringMulti",
+    "body": [
+      "${1:myString} = '''",
+      "${2:Line 1}",
+      "${3:Line 2}",
+      "${4:Line 3}",
+      "'''"
+    ],
+    "description": "Creates a multi-line string variable in Python."
   },
   "Python Create Integer Variable": {
     "prefix": "cotrVarNum",
@@ -295,7 +356,7 @@
       ""
     ],
     "description": "Creates a function with arguments in Python, including an argument with a default value."
-  },  
+  },
   "Python Function Named Args": {
     "prefix": "cotrFuncArgsNamed",
     "body": [
@@ -306,12 +367,12 @@
     "description": "Creates a function with named arguments in Python."
   },
   "Python Arrow Function": {
-    "prefix":[ "cotrFuncArrow", "cotrFuncLambda", "cotrLambda", "cotrFuncAnon" ],
+    "prefix": ["cotrFuncArrow", "cotrFuncLambda", "cotrLambda", "cotrFuncAnon"],
     "body": [
       "${2:my_function} = lambda ${3:parameters}: ${4:// Your code here}"
     ],
     "description": "Creates an arrow function (lambda) in Python."
-  },  
+  },
   "Python Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [

@@ -22,7 +22,67 @@
       "}"
     ],
     "description": "Creates the entry point of a Kotlin application."
-  },  
+  }, 
+  "Kotlin Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "scope": "kotlin",
+    "body": [
+      "// Recommended High-Level Kotlin Project Structure:",
+      "",
+      "// - src/",
+      "//   - Contains all source code.",
+      "// - build/",
+      "//   - Output directory for compiled class files.",
+      "// - lib/",
+      "//   - Contains external libraries (JAR files).",
+      "// - test/",
+      "//   - Contains unit tests.",
+      "",
+      "// Note:",
+      "// - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for Kotlin."
+  }, 
+  "Kotlin Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "scope": "kotlin",
+    "body": [
+      "// Recommended Kotlin Source Directory Organization (Feature/Module):",
+      "",
+      "// - src/",
+      "//   - rendering/",
+      "//     - Contains source code for rendering features.",
+      "//   - physics/",
+      "//     - Contains source code for physics features.",
+      "//   - networking/",
+      "//     - Contains source code for networking features.",
+      "//   - ... (Organize by feature or module)",
+      "",
+      "// Note:",
+      "// - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for Kotlin."
+  },
+  "Kotlin Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "scope": "kotlin",
+    "body": [
+      "// Recommended Kotlin Source Directory Organization (File Type):",
+      "",
+      "// - src/",
+      "//   - models/",
+      "//     - Contains data models and classes.",
+      "//   - views/",
+      "//     - Contains UI components and logic.",
+      "//   - controllers/",
+      "//     - Contains logic for handling user interactions.",
+      "//   - ... (Organize by file type)",
+      "",
+      "// Note:",
+      "// - This approach is common in web applications and MVC patterns."
+    ],
+    "description": "Explains a file type-based source directory organization for Kotlin."
+  },
   "Kotlin Mathematical Operators": {
     "prefix": "cotrOperators",
     "scope": "kotlin",

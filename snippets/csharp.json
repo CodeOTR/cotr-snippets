@@ -25,6 +25,66 @@
     ],
     "description": "Creates the entry point of a C# application."
   },
+
+  "C# Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "// Recommended High-Level C# Project Structure:",
+      "",
+      "// - src/",
+      "//   - Contains all source code.",
+      "// - Properties/",
+      "//   - Contains project properties and settings.",
+      "// - bin/",
+      "//   - Output directory for compiled assemblies.",
+      "// - test/",
+      "//   - Contains unit tests.",
+      "",
+      "// Note:",
+      "// - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for C#."
+  },
+
+  "C# Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "// Recommended C# Source Directory Organization (Feature/Module):",
+      "",
+      "// - src/",
+      "//   - rendering/",
+      "//     - Contains source code for rendering features.",
+      "//   - physics/",
+      "//     - Contains source code for physics features.",
+      "//   - networking/",
+      "//     - Contains source code for networking features.",
+      "//   - ... (Organize by feature or module)",
+      "",
+      "// Note:",
+      "// - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for C#."
+  },
+
+  "C# Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "// Recommended C# Source Directory Organization (File Type):",
+      "",
+      "// - src/",
+      "//   - Models/",
+      "//     - Contains data models and classes.",
+      "//   - Views/",
+      "//     - Contains UI components and logic.",
+      "//   - Controllers/",
+      "//     - Contains logic for handling user interactions.",
+      "//   - ... (Organize by file type)",
+      "",
+      "// Note:",
+      "// - This approach is common in web applications and MVC patterns."
+    ],
+    "description": "Explains a file type-based source directory organization for C#."
+  },
   "C# Mathematical Operators": {
     "prefix": "cotrOperators",
     "body": [
