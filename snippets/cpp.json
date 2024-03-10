@@ -372,6 +372,22 @@
     ],
     "description": "Creates a date variable in C++ using std::chrono."
   },
+
+  "C++ Generate List": {
+    "prefix": "cotrGenList",
+    "body": [
+      "std::vector<${1:type}> ${2:listName}( ${3:size}, ${4:initialValue} );"
+    ],
+    "description": "Generates a list (vector) of a specific size and initial value in C++."
+  },
+  "C++ Generate Map": {
+    "prefix": "cotrGenMap",
+    "body": [
+      "// C++ does not have a built-in way to generate a map with a specific number of key-value pairs.",
+      "// You can use a loop or a custom function to achieve this."
+    ],
+    "description": "Explains how to generate a map in C++."
+  },
   "C++ Create Constant": {
     "prefix": "cotrConst",
     "body": ["const ${1:type} ${2:myConst} = ${3:value};"],
@@ -478,13 +494,28 @@
     "description": "C++ does not support named arguments in the same way as some other languages."
   },
   "C++ Lambda Function": {
-    "prefix": ["cotrFuncLambda", "cotrLambda"],
+    "prefix": [
+      "cotrFuncLambda",
+      "cotrFuncLambda",
+      "cotrLambda",
+      "cotrFuncArrow"
+    ],
     "body": [
       "auto ${1:myLambda} = [](${2:parameters}) -> ${3:returnType} {",
       "  // Your code here",
       "};"
     ],
     "description": "Creates a lambda function in C++."
+  },
+
+  "C++ Anonymous Function": {
+    "prefix": "cotrFuncAnon",
+    "body": [
+      "[](${1:parameters}) -> ${2:returnType} {",
+      "  ${3:// Your code here}",
+      "}"
+    ],
+    "description": "Creates an anonymous function (lambda) in C++."
   },
   "C++ Function Syntax": {
     "prefix": "cotrFuncSyntax",

@@ -57,7 +57,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrStructureFeatures | Outputs the basic structure for a project with feature-first organization |
 | cotrStructureFiles    | Outputs the basic structure for a project with file-first organization    |
 | cotrOperators         | Outputs the basic operators for the language                              |
-| cotrOperatorsBoolean  | Outputs the basic boolean operators for the language                      |
+| cotrOperatorsBool  | Outputs the basic boolean operators for the language                      |
 | cotrEqual             | Outputs the equality operator for the language                            |
 | cotrNotEqual          | Outputs the not equal operator for the language                           |
 | cotrEntry             | Creates a main entry point                                                |
@@ -76,7 +76,6 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrTypesMap          | The language's map data type                                              |
 | cotrTypesDynamic      | The language's dynamic data type                                          |
 | cotrTypesNull         | The language's nullable data type                                         |
-| cotrNull              | The language's null data type                                             |
 | cotrNow               | How the language represents the current time                              |
 | cotrVar               | Creates a variable                                                        |
 | cotrVarSyntax         | Outputs the basic syntax for a variable                                   |
