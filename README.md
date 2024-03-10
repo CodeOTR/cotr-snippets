@@ -1,5 +1,15 @@
 # Code on the Rocks
 
+![Rust](https://img.shields.io/badge/Rust-black?style=for-the-badge&logo=Rust) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=Dart&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=Go&logoColor=white) ![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=Kotlin&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white) ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=Ruby&logoColor=white) ![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=R&logoColor=white) ![Scala](https://img.shields.io/badge/Scala-DC322F?style=for-the-badge&logo=Scala&logoColor=white)
+
+<!-- This is a comment
+
+https://simpleicons.org/
+
+https://javascript.plainenglish.io/how-to-make-custom-language-badges-for-your-profile-using-shields-io-d2aeaf016b6b
+
+-->
+
 At [Code on the Rocks](https://codeontherocks.dev/) (COTR) our mission is to enable developers to code fluently in every programming language. We create tools and resources to help you apply your high-level programming knowledge in any code base.
 
 ## COTR Snippets
@@ -46,7 +56,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrNotEqual          | Outputs the not equal operator for the language                           |
 | cotrEntry             | Creates a main entry point                                                |
 | cotrTypeCheck         | Outputs the basic syntax for type checking                                |
-| cotrTypeCompare      | Outputs the basic syntax for type comparison                              |
+| cotrTypeCompare       | Outputs the basic syntax for type comparison                              |
 | cotrTypeConvert       | Outputs the basic syntax for type conversion                              |
 | cotrTypes             | The language's data types                                                 |
 | cotrTypesString       | The language's string data type                                           |
