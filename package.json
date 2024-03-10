@@ -79,6 +79,14 @@
       {
         "language": "ruby",
         "path": "./snippets/ruby.json"
+      },
+      {
+        "language": "scala",
+        "path": "./snippets/scala.json"
+      },
+      {
+        "language": "r",
+        "path": "./snippets/r.json"
       }
     ]
   }

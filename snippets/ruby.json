@@ -80,12 +80,12 @@
     "description": "The Ruby Integer type."
   },
   "Ruby Double Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "cotrTypesDouble"],
     "body": ["double"],
     "description": "The Ruby double type."
   },
   "Ruby Float Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNumAlt", "cotrTypesFloat"],
     "body": ["Float"],
     "description": "The Ruby Float type."
   },
@@ -143,6 +143,21 @@
     "prefix": "cotrVar",
     "body": ["${1:my_var} = $2"],
     "description": "Creates a variable in Ruby."
+  },
+  "Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "# Ruby Variable Declaration Syntax:",
+      "",
+      "# - Ruby is dynamically typed, so there is no explicit type declaration.",
+      "# - Variables are created when you first assign a value to them.",
+      "# - Variables can be reassigned to different types.",
+      "",
+      "# Note:",
+      "# - Ruby does not have direct equivalents to 'var', 'let', or 'const'.",
+      "# - Use descriptive variable names to improve code readability."
+    ],
+    "description": "Explains Ruby variable declaration syntax"
   },
   "Ruby Create Typed Variable": {
     "prefix": "cotrVarTyped",

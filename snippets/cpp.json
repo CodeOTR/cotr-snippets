@@ -44,7 +44,7 @@
       "// Modulus assignment: %="
     ],
     "description": "Lists the mathematical operators in C++."
-  },    
+  },
   "C++ Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -157,6 +157,31 @@
     "prefix": "cotrVar",
     "body": ["${1:type} ${2:myVar} = ${3:value};"],
     "description": "Creates a variable in C++."
+  },
+
+  "C++ Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "// C++ Variable Declaration Syntax:",
+      "",
+      "// - auto: (Scope: Block)",
+      "//   - Type is automatically inferred by the compiler.",
+      "//   - Preferred for most variable declarations.",
+      "",
+      "// - type: (Scope: Block)",
+      "//   - Explicitly specify the variable's type.",
+      "//   - Use when auto deduction is not desired or not possible.",
+      "",
+      "// - const: (Scope: Block)",
+      "//   - Cannot be reassigned or redeclared.",
+      "//   - Use for values that should remain constant.",
+      "",
+      "// Note:",
+      "// - C++ does not have a direct equivalent to 'var' or 'let'.",
+      "// - Use 'auto' for most variable declarations.",
+      "// - Use 'const' for values that should not change."
+    ],
+    "description": "Explains C++ variable declaration syntax"
   },
   "C++ Create Typed Variable": {
     "prefix": "cotrVarTyped",

@@ -1,0 +1,403 @@
+{
+  "Scala Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "// Typing: Statically typed",
+      "// Paradigm: Multi-paradigm: object-oriented, functional",
+      "// Compilation: Compiled to bytecode for the Java Virtual Machine (JVM)",
+      "// Concurrency: Supports multi-threading and concurrent programming with actors and futures"
+    ],
+    "description": "Provides general information about the Scala programming language."
+  },
+
+  "Scala Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "// Scala Entry Point",
+      "// To run this program, use: `scala Main.scala`",
+      "",
+      "object Main extends App {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Creates the entry point of a Scala application."
+  },
+
+  "Scala Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "// Scala Mathematical Operators",
+      "// Addition: +",
+      "// Subtraction: -",
+      "// Multiplication: *",
+      "// Exponentiation: Math.pow(base, exponent)",
+      "// Division: /",
+      "// Modulus (Remainder): %",
+      "// Increment: Use += 1",
+      "// Decrement: Use -= 1",
+      "// Assignment: =",
+      "// Addition assignment: +=",
+      "// Subtraction assignment: -=",
+      "// Multiplication assignment: *=",
+      "// Division assignment: /=",
+      "// Modulus assignment: %="
+    ],
+    "description": "Lists the mathematical operators in Scala."
+  },
+
+  "Scala Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "Scala is a statically typed language.",
+      "",
+      "Types in Scala include:",
+      "- Int: Integer",
+      "- Double: Double-precision floating-point number",
+      "- Float: Single-precision floating-point number",
+      "- Char: Character",
+      "- Boolean: Boolean",
+      "- String: String",
+      "- Array[T]: Array of type T",
+      "- List[T]: List of type T",
+      "- Set[T]: Set of unique elements of type T",
+      "- Map[K, V]: Map with key type K and value type V",
+      "- Any: Base type of all non-nullable types",
+      "- Unit: Type with only one value - Unit (similar to void)",
+      "- Nothing: Type with no values - used for functions that never return",
+      "- Option[T]: Type representing a value of type T or None",
+      "- Function types (e.g., (Int, Int) => Int): Types representing functions",
+      "- Case classes: Classes primarily used to hold data",
+      "- Sealed classes: Classes that restrict which other classes can inherit from them",
+      "- Enum classes: Enumeration classes",
+      "- Object: Singleton object",
+      "- Trait: Interface type",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists the types in Scala."
+  },
+
+  "Scala String Type": {
+    "prefix": "cotrTypesString",
+    "body": ["String"],
+    "description": "The Scala String type."
+  },
+
+  "Scala Integer Type": {
+    "prefix": "cotrTypesInt",
+    "body": ["Int"],
+    "description": "The Scala Int type."
+  },
+
+  "Scala Double Type": {
+    "prefix": "cotrTypesNum",
+    "body": ["Double"],
+    "description": "The Scala Double type."
+  },
+
+  "Scala Float Type": {
+    "prefix": "cotrTypesNumAlt",
+    "body": ["Float"],
+    "description": "The Scala Float type."
+  },
+
+  "Scala Boolean Type": {
+    "prefix": "cotrTypesBool",
+    "body": ["Boolean"],
+    "description": "The Scala Boolean type."
+  },
+
+  "Scala Boolean True": {
+    "prefix": "cotrTypesBoolTrue",
+    "body": ["true"],
+    "description": "The Scala true value."
+  },
+
+  "Scala Boolean False": {
+    "prefix": "cotrTypesBoolFalse",
+    "body": ["false"],
+    "description": "The Scala false value."
+  },
+
+  "Scala Date Type": {
+    "prefix": "cotrTypesDate",
+    "body": [
+      "// Scala does not have a built-in Date type. Use the java.time package or libraries like ScalaTime for date and time operations."
+    ],
+    "description": "Explains the absence of a built-in Date type in Scala."
+  },
+
+  "Scala Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["Map[${1:keyType}, ${2:valueType}]"],
+    "description": "The Scala Map type."
+  },
+
+  "Scala List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["List[${1:type}]"],
+    "description": "The Scala List type."
+  },
+
+  "Scala Date Now": {
+    "prefix": "cotrNow",
+    "body": ["// Use java.time or ScalaTime to get the current date and time."],
+    "description": "Explains how to get the current date and time in Scala."
+  },
+
+  "Scala Null Type": {
+    "prefix": "cotrNull",
+    "body": ["null"],
+    "description": "The Scala null value."
+  },
+
+  "Scala Dynamic Type": {
+    "prefix": "cotrDynamic",
+    "body": ["Any"],
+    "description": "The Scala Any type."
+  },
+
+  "Scala Create Variable": {
+    "prefix": "cotrVar",
+    "body": ["var ${1:myVar}: ${2:Type} = $3"],
+    "description": "Creates a variable in Scala."
+  },
+
+  "Scala Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "// Scala Variable Declaration Syntax:",
+      "",
+      "// - var: (Scope: Block or Class)",
+      "//   - Can be reassigned.",
+      "//   - Use for variables that need to be changed.",
+      "",
+      "// - val: (Scope: Block or Class)",
+      "//   - Cannot be reassigned after initialization.",
+      "//   - Preferred for values that should remain constant.",
+      "",
+      "// Note:",
+      "// - Use 'val' by default for values that won't change.",
+      "// - Use 'var' only when you need to reassign the variable."
+    ],
+    "description": "Explains Scala variable declaration syntax"
+  },
+
+  "Scala Create Typed Variable": {
+    "prefix": "cotrVarTyped",
+    "body": ["var ${1:myVar}: ${2:Type} = $3"],
+    "description": "Creates a typed variable in Scala."
+  },
+
+  "Scala Create Nullable Variable": {
+    "prefix": "cotrVarNullable",
+    "body": ["var ${1:myVar}: Option[${2:Type}] = None"],
+    "description": "Creates a nullable variable in Scala using the Option type."
+  },
+
+  "Scala Interpolate String": {
+    "prefix": "cotrInterpolate",
+    "body": ["s\"Your string here \\${${1:variable}}\""],
+    "description": "Interpolates a variable into a string in Scala."
+  },
+
+  "Scala Concatenate String": {
+    "prefix": "cotrConcat",
+    "body": ["${1:\"string1\"} + ${2:\"string2\"}"],
+    "description": "Concatenates two strings in Scala."
+  },
+
+  "Scala Create String Variable": {
+    "prefix": "cotrVarString",
+    "body": ["val ${1:myString} = \"${2:Your string here}\""],
+    "description": "Creates a string variable in Scala."
+  },
+
+  "Scala Create Multi-Line String Variable": {
+    "prefix": "cotrVarStringMulti",
+    "body": [
+      "val ${1:myString} = \"\"\"",
+      "${2:Line 1}",
+      "${3:Line 2}",
+      "${4:Line 3}",
+      "\"\"\""
+    ],
+    "description": "Creates a multi-line string variable in Scala."
+  },
+
+  "Scala Create Integer Variable": {
+    "prefix": "cotrVarInt",
+    "body": ["val ${1:myInt} = ${2:0}"],
+    "description": "Creates an integer variable in Scala."
+  },
+
+  "Scala Create Double Variable": {
+    "prefix": "cotrVarDouble",
+    "body": ["val ${1:myDouble} = ${2:0.0}"],
+    "description": "Creates a double variable in Scala."
+  },
+
+  "Scala Create Boolean Variable": {
+    "prefix": "cotrVarBool",
+    "body": ["val ${1:myBool} = ${2:true}"],
+    "description": "Creates a boolean variable in Scala."
+  },
+
+  "Scala Create Array Variable": {
+    "prefix": "cotrVarList",
+    "body": ["val ${1:myList} = List(${2:items})"],
+    "description": "Creates a list variable in Scala."
+  },
+
+  "Scala Create Map Variable": {
+    "prefix": "cotrVarMap",
+    "body": ["val ${1:myMap} = Map(${2:key} -> ${3:value})"],
+    "description": "Creates a map variable in Scala."
+  },
+
+  "Scala Create Constant": {
+    "prefix": "cotrConst",
+    "body": ["val ${1:myConst} = $2"],
+    "description": "Creates a constant variable in Scala using the val keyword."
+  },
+
+  "Scala Print": {
+    "prefix": "cotrPrint",
+    "body": ["println(${1:'Your message here'})"],
+    "description": "Prints a message to the console in Scala."
+  },
+
+  "Scala Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "println(\"\"\"",
+      "${1:Line 1}",
+      "${2:Line 2}",
+      "${3:Line 3}",
+      "\"\"\")"
+    ],
+    "description": "Prints a multi-line message to the console in Scala."
+  },
+
+  "Scala For Loop": {
+    "prefix": "cotrForLoop",
+    "body": ["for (i <- ${1:0 until 10}) {", "  // Your code here", "}"],
+    "description": "Creates a for loop that iterates through a set of numbers with the index in Scala."
+  },
+
+  "Scala For Each Loop": {
+    "prefix": "cotrForEachLoop",
+    "body": ["for (item <- ${1:iterable}) {", "  // Your code here", "}"],
+    "description": "Iterates over an iterable object in Scala."
+  },
+
+  "Scala While Loop": {
+    "prefix": "cotrWhileLoop",
+    "body": ["while (${1:condition}) {", "  // Your code here", "}"],
+    "description": "Creates a while loop in Scala."
+  },
+
+  "Scala If Statement": {
+    "prefix": "cotrIf",
+    "body": ["if (${1:condition}) {", "  // Your code here", "}"],
+    "description": "Creates an if statement in Scala."
+  },
+
+  "Scala If Else Statement": {
+    "prefix": "cotrIfElse",
+    "body": [
+      "if (${1:condition}) {",
+      "  // Your code here",
+      "} else {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Creates an if...else statement in Scala."
+  },
+
+  "Ternary Operator (Alternative)": {
+    "prefix": "cotrTernary",
+    "body": [
+      "// Scala does not have a ternary operator.",
+      "// Use an if-else expression instead:",
+      "",
+      "val result = if (${1:condition}) ${2:trueValue} else ${3:falseValue}"
+    ],
+    "description": "Provides an alternative to the ternary operator in Scala."
+  },
+
+  "Scala Function": {
+    "prefix": "cotrFunc",
+    "body": [
+      "def ${2:myFunction}(${3:parameters}): ${1:Unit} = {",
+      "  ${4:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function in Scala."
+  },
+
+  "Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "// Scala Function Syntax:",
+      "",
+      "// Basic function:",
+      "// def functionName(parameters): ReturnType = { ... }",
+      "",
+      "// Function with arguments:",
+      "// def functionName(arg1: Type1, arg2: Type2, ...): ReturnType = { ... }",
+      "",
+      "// Function with named arguments and default values:",
+      "// def functionName(arg1: Type1 = defaultValue1, arg2: Type2 = defaultValue2, ...): ReturnType = { ... }"
+    ],
+    "description": "Outlines the syntax for functions in Scala."
+  },
+
+  "Scala Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "// In Scala, functions can have arguments with default values.",
+      "def ${2:myFunction}(${3:arg1}: ${4:Type1}, ${5:arg2}: ${6:Type2} = ${7:defaultValue}): ${1:Unit} = {",
+      "  ${8:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in Scala, including an argument with a default value."
+  },
+
+  "Scala Function Named Args": {
+    "prefix": "cotrFuncArgsNamed",
+    "body": [
+      "def ${2:myFunction}(${3:arg1}: ${4:Type1} = ${5:defaultValue1}, ${6:arg2}: ${7:Type2} = ${8:defaultValue2}): ${1:Unit} = {",
+      "  ${9:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with named arguments and default values in Scala."
+  },
+
+  "Scala Lambda": {
+    "prefix": ["cotrFuncLambda", "cotrLambda"],
+    "body": ["(${1:parameters}) => ${2:expression}"],
+    "description": "Creates a lambda function in Scala."
+  },
+
+  "Scala Comment": {
+    "prefix": "cotrComment",
+    "body": ["// ${1:Your comment here}"],
+    "description": "Creates a single-line comment in Scala."
+  },
+
+  "Scala Multi-Line Comment": {
+    "prefix": "cotrCommentMulti",
+    "body": ["/*", " * ${1:Your comment here}", " */"],
+    "description": "Creates a multi-line comment in Scala."
+  },
+  "Scala Class Syntax": {
+    "prefix": "cotrClass",
+    "body": [
+      "class ${1:MyClass} {",
+      "  // Your code here",
+      "}"
+    ],
+    "description": "Creates a class in Scala."
+  }
+}

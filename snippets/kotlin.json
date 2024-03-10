@@ -186,6 +186,26 @@
     "body": ["var ${1:myVar} = $2"],
     "description": "Creates a variable in Kotlin using the var keyword."
   },
+  "Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "scope": "kotlin",
+    "body": [
+      "// Kotlin Variable Declaration Syntax:",
+      "",
+      "// - var: (Scope: Block or Class)",
+      "//   - Can be reassigned.",
+      "//   - Use for variables that need to be changed.",
+      "",
+      "// - val: (Scope: Block or Class)",
+      "//   - Cannot be reassigned after initialization.",
+      "//   - Preferred for values that should remain constant.",
+      "",
+      "// Note:",
+      "// - Use 'val' by default for values that won't change.",
+      "// - Use 'var' only when you need to reassign the variable."
+    ],
+    "description": "Explains Kotlin variable declaration syntax"
+  },
   "Kotlin Create Typed Variable": {
     "prefix": "cotrVarTyped",
     "scope": "kotlin",
@@ -269,8 +289,8 @@
     "description": "Creates a map variable in Kotlin."
   },
 
-  "Kotlin Create Constant": {
-    "prefix": "cotrConst",
+  "Kotlin Create Value (Constant)": {
+    "prefix": ["cotrConst","cotrVal"],
     "scope": "kotlin",
     "body": ["val ${1:myConst} = $2"],
     "description": "Creates a constant variable in Kotlin using the val keyword."

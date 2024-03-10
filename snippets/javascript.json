@@ -137,6 +137,29 @@
     "body": ["let ${1:myVar} = $2;"],
     "description": "Creates a variable in JavaScript using the let keyword."
   },
+  "Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "// JavaScript Variable Declaration Syntax:",
+      "",
+      "// - var: (Scope: Function or Global)",
+      "//   - Can be reassigned and redeclared within its scope.",
+      "//   - Use with caution due to potential scoping issues.",
+      "",
+      "// - let: (Scope: Block)",
+      "//   - Can be reassigned but not redeclared within its scope.",
+      "//   - Preferred for variables that need to be reassigned.",
+      "",
+      "// - const: (Scope: Block)",
+      "//   - Cannot be reassigned or redeclared.",
+      "//   - Use for values that should remain constant.",
+      "",
+      "// Note:",
+      "// - Use 'let' for most variable declarations.",
+      "// - Use 'const' for values that should not change."
+    ],
+    "description": "Explains JavaScript variable declaration syntax"
+  },
   "JavaScript Create Typed Variable": {
     "prefix": "cotrVarTyped",
     "body": ["let ${1:myVar} = $2; // Note: JavaScript is dynamically typed."],

@@ -148,6 +148,30 @@
     "body": ["var ${1:variableName} ${2:variableType} = ${3:variableValue}"],
     "description": "Creates a variable in Go using the var keyword"
   },
+  "Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "// Go Variable Declaration Syntax:",
+      "",
+      "// - var: (Scope: Block or Package)",
+      "//   - Explicitly declare the variable's type.",
+      "//   - Can be declared without initialization (zero value is assigned).",
+      "",
+      "// - :=: (Scope: Block)",
+      "//   - Short variable declaration and type inference.",
+      "//   - Requires initialization.",
+      "",
+      "// - const: (Scope: Package)",
+      "//   - Cannot be reassigned or redeclared.",
+      "//   - Use for values that should remain constant.",
+      "",
+      "// Note:",
+      "// - Use 'var' for package-level variables or when explicit type declaration is desired.",
+      "// - Use ':=' for most variable declarations within blocks.",
+      "// - Use 'const' for values that are known at compile time."
+    ],
+    "description": "Explains Go variable declaration syntax"
+  },
   "Go Create Typed Variable": {
     "prefix": "cotrVarTyped",
     "body": ["var ${1:myVar} ${2:Type} = $3"],

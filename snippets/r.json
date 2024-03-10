@@ -1,0 +1,348 @@
+{
+  "R Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "# Typing: Dynamically typed",
+      "# Paradigm: Multi-paradigm: functional, object-oriented, procedural, statistical",
+      "# Compilation: Interpreted",
+      "# Concurrency: Supports multi-threading with packages like 'parallel'"
+    ],
+    "description": "Provides general information about the R programming language."
+  },
+
+  "R Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "# R Entry Point",
+      "# To run this program, use: `Rscript filename.R`",
+      "",
+      "# Your code here"
+    ],
+    "description": "Creates the entry point of an R application."
+  },
+
+  "R Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "# R Mathematical Operators",
+      "# Addition: +",
+      "# Subtraction: -",
+      "# Multiplication: *",
+      "# Exponentiation: ^",
+      "# Division: /",
+      "# Modulus (Remainder): %%",
+      "# Integer Division: %/%",
+      "# Assignment: <- or =",
+      "# Addition assignment: +=",
+      "# Subtraction assignment: -=",
+      "# Multiplication assignment: *=",
+      "# Division assignment: /=",
+      "# Modulus assignment: %%=",
+      "# Exponentiation assignment: ^="
+    ],
+    "description": "Lists the mathematical operators in R."
+  },
+
+  "R Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "R is a dynamically typed language.",
+      "",
+      "Some common types in R include:",
+      "- numeric: Numeric data type (includes integers and floating-point numbers)",
+      "- character: String",
+      "- logical: Boolean",
+      "- vector: One-dimensional array",
+      "- list: Ordered collection of elements",
+      "- data.frame: Two-dimensional data structure",
+      "- matrix: Two-dimensional array",
+      "- factor: Categorical data",
+      "- NULL: Represents the absence of a value",
+      "- function: Function object",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists some common types in R."
+  },
+
+  "R String Type": {
+    "prefix": "cotrTypesString",
+    "body": ["character"],
+    "description": "The R character type."
+  },
+
+  "R Integer Type": {
+    "prefix": "cotrTypesInt",
+    "body": [
+      "# R uses 'numeric' for both integers and floating-point numbers."
+    ],
+    "description": "R uses 'numeric' for both integers and floating-point numbers."
+  },
+
+  "R Double Type": {
+    "prefix": "cotrTypesNum",
+    "body": [
+      "# R uses 'numeric' for both integers and floating-point numbers."
+    ],
+    "description": "R uses 'numeric' for both integers and floating-point numbers."
+  },
+
+  "R Boolean Type": {
+    "prefix": "cotrTypesBool",
+    "body": ["logical"],
+    "description": "The R logical type."
+  },
+
+  "R Boolean True": {
+    "prefix": "cotrTypesBoolTrue",
+    "body": ["TRUE"],
+    "description": "The R TRUE value."
+  },
+
+  "R Boolean False": {
+    "prefix": "cotrTypesBoolFalse",
+    "body": ["FALSE"],
+    "description": "The R FALSE value."
+  },
+
+  "R Date Type": {
+    "prefix": "cotrTypesDate",
+    "body": ["Date"],
+    "description": "The R Date class."
+  },
+
+  "R Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": [
+      "# R does not have a built-in Map type. Use lists or data.frames for similar functionality."
+    ],
+    "description": "Explains the absence of a built-in Map type in R."
+  },
+
+  "R List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["list"],
+    "description": "The R list type."
+  },
+
+  "R Date Now": {
+    "prefix": "cotrNow",
+    "body": ["Sys.Date()"],
+    "description": "Gets the current date in R."
+  },
+
+  "R Null Type": {
+    "prefix": "cotrNull",
+    "body": ["NULL"],
+    "description": "The R NULL value."
+  },
+
+  "R Dynamic Type": {
+    "prefix": "cotrDynamic",
+    "body": ["# R is a dynamically typed language."],
+    "description": "R is a dynamically typed language."
+  },
+
+  "R Create Variable": {
+    "prefix": "cotrVar",
+    "body": ["${1:my_var} <- $2"],
+    "description": "Creates a variable in R."
+  },
+
+  "R Create Typed Variable": {
+    "prefix": "cotrVarTyped",
+    "body": [
+      "# Note: R is dynamically typed; explicit type annotations are not used.",
+      "${1:my_var} <- $2"
+    ],
+    "description": "Creates a variable in R with a comment about dynamic typing."
+  },
+
+  "R Interpolate String": {
+    "prefix": "cotrInterpolate",
+    "body": ["paste0(\"Your string here \", ${1:variable})"],
+    "description": "Interpolates a variable into a string in R."
+  },
+
+  "R Concatenate String": {
+    "prefix": "cotrConcat",
+    "body": ["paste(${1:\"string1\"}, ${2:\"string2\"}, sep = \"\")"],
+    "description": "Concatenates strings in R."
+  },
+
+  "R Create String Variable": {
+    "prefix": "cotrVarString",
+    "body": ["${1:my_string} <- '${2:Your string here}'"],
+    "description": "Creates a string variable in R."
+  },
+
+  "R Create Multiline String Variable": {
+    "prefix": "cotrVarStringMulti",
+    "body": [
+      "${1:my_string} <- paste0(",
+      "${2:\"Line 1\",",
+      "${3:\"Line 2\",",
+      "${4:\"Line 3\")"
+    ],
+    "description": "Creates a multi-line string variable in R."
+  },
+
+  "R Create Integer Variable": {
+    "prefix": "cotrVarInt",
+    "body": ["${1:my_int} <- ${2:0}"],
+    "description": "Creates an integer variable in R."
+  },
+
+  "R Create Double Variable": {
+    "prefix": "cotrVarDouble",
+    "body": ["${1:my_double} <- ${2:0.0}"],
+    "description": "Creates a double variable in R."
+  },
+
+  "R Create Boolean Variable": {
+    "prefix": "cotrVarBool",
+    "body": ["${1:my_bool} <- ${2:TRUE}"],
+    "description": "Creates a boolean variable in R."
+  },
+
+  "R Create Array Variable": {
+    "prefix": "cotrVarList",
+    "body": ["${1:my_array} <- c(${2:items})"],
+    "description": "Creates an array variable in R."
+  },
+
+  "R Create List Variable": {
+    "prefix": "cotrVarListAlt",
+    "body": ["${1:my_list} <- list(${2:items})"],
+    "description": "Creates a list variable in R."
+  },
+
+  "R Create Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": ["${1:my_date} <- as.Date('${2:YYYY-MM-DD}')"],
+    "description": "Creates a date variable in R."
+  },
+
+  "R Create Constant": {
+    "prefix": "cotrConst",
+    "body": ["${1:MY_CONST} <- $2"],
+    "description": "Creates a constant variable in R."
+  },
+
+  "R Print": {
+    "prefix": "cotrPrint",
+    "body": ["print(${1:'Your message here'})"],
+    "description": "Prints a message to the console in R."
+  },
+
+  "R Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": ["cat(${1:\"Line 1\",", "${2:\"Line 2\",", "${3:\"Line 3\")"],
+    "description": "Prints a multi-line message to the console in R."
+  },
+
+  "R For Loop": {
+    "prefix": "cotrForLoop",
+    "body": ["for (${1:i} in ${2:1:10}) {", "  # Your code here", "}"],
+    "description": "Creates a for loop that iterates through a set of numbers with the index in R."
+  },
+
+  "R For Each Loop": {
+    "prefix": "cotrForEachLoop",
+    "body": ["for (item in ${1:iterable}) {", "  # Your code here", "}"],
+    "description": "Iterates over an iterable object in R."
+  },
+
+  "R While Loop": {
+    "prefix": "cotrWhileLoop",
+    "body": ["while (${1:condition}) {", "  # Your code here", "}"],
+    "description": "Creates a while loop in R."
+  },
+
+  "R If Statement": {
+    "prefix": "cotrIf",
+    "body": ["if (${1:condition}) {", "  # Your code here", "}"],
+    "description": "Creates an if statement in R."
+  },
+
+  "R If Else Statement": {
+    "prefix": "cotrIfElse",
+    "body": [
+      "if (${1:condition}) {",
+      "  # Your code here",
+      "} else {",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Creates an if...else statement in R."
+  },
+
+  "R Function": {
+    "prefix": "cotrFunc",
+    "body": [
+      "${2:my_function} <- function(${3:parameters}) {",
+      "  ${4:# Your code here}",
+      "}"
+    ],
+    "description": "Creates a function in R."
+  },
+
+  "R Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "# In R, functions can have arguments with default values.",
+      "${2:my_function} <- function(${3:arg1}, ${4:arg2} = ${5:'defaultVal'}) {",
+      "  ${6:# Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in R, including an argument with a default value."
+  },
+
+  "R Comment": {
+    "prefix": "cotrComment",
+    "body": ["# ${1:Your comment here}"],
+    "description": "Creates a single-line comment in R."
+  },
+
+  "R Multi-Line Comment": {
+    "prefix": "cotrCommentMulti",
+    "body": ["${1:comment}"],
+    "description": "Creates a multi-line comment in R."
+  },
+  "R Throw Exception": {
+    "prefix": "cotrThrow",
+    "body": ["stop(${1:'Your message here'})"],
+    "description": "Throws an exception in R."
+  },
+  "R Try Catch": {
+    "prefix": "cotrTryCatch",
+    "body": [
+      "tryCatch({",
+      "  # Your code here",
+      "}, error = function(e) {",
+      "  # Your code here",
+      "})"
+    ],
+    "description": "Creates a try...catch block in R."
+  },
+  "R Enum": {
+    "prefix": "cotrEnum",
+    "body": [
+      "# R does not have a built-in enum type. Use a list or vector instead."
+    ],
+    "description": "Explains the absence of a built-in enum type in R."
+  },
+  "R Class": {
+    "prefix": "cotrClass",
+    "body": [
+      "# R does not have a built-in class type. Use a list or vector instead."
+    ],
+    "description": "Explains the absence of a built-in class type in R."
+  },
+
+  "R Ternary Operator": {
+    "prefix": "cotrTernary",
+    "body": ["ifelse(${1:condition}, ${2:trueValue}, ${3:falseValue})"],
+    "description": "Creates a ternary operator in R."
+  }
+}

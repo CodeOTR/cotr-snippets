@@ -157,6 +157,31 @@
     "body": ["let ${1:myVar} = $2;"],
     "description": "Creates a variable in Rust using the let keyword."
   },
+  "Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "// Rust Variable Declaration Syntax:",
+      "",
+      "// - let: (Scope: Block)",
+      "//   - Declares an immutable variable by default.",
+      "//   - Use for values that should not change.",
+      "",
+      "// - let mut: (Scope: Block)",
+      "//   - Declares a mutable variable.",
+      "//   - Use for variables that need to be reassigned.",
+      "",
+      "// - const: (Scope: Global)",
+      "//   - Declares a constant value.",
+      "//   - Must be initialized with a constant expression.",
+      "",
+      "// Note:",
+      "// - Rust does not have a direct equivalent to 'var'.",
+      "// - Use 'let' for most variable declarations.",
+      "// - Use 'let mut' for variables that need to be reassigned.",
+      "// - Use 'const' for values that are known at compile time."
+    ],
+    "description": "Explains Rust variable declaration syntax"
+  },
   "Rust Create Typed Variable": {
     "prefix": "cotrVarTyped",
     "body": ["let ${1:my_var}: ${2:Type} = $3;"],

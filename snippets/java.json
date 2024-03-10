@@ -155,6 +155,26 @@
     "body": ["${1:Type} ${2:myVar} = ${3:value};"],
     "description": "Creates a variable in Java."
   },
+  "Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "// Java Variable Declaration Syntax:",
+      "",
+      "// - type: (Scope: Block or Class)",
+      "//   - Explicitly specify the variable's type.",
+      "//   - Can be declared without initialization (default value is assigned).",
+      "",
+      "// - final: (Scope: Block or Class)",
+      "//   - Cannot be reassigned after initialization.",
+      "//   - Use for values that should remain constant.",
+      "",
+      "// Note:",
+      "// - Java does not have a direct equivalent to 'var' or 'let'.",
+      "// - Use explicit type declaration for all variables.",
+      "// - Use 'final' for values that should not change."
+    ],
+    "description": "Explains Java variable declaration syntax"
+  },
   "Java Create Typed Variable": {
     "prefix": "cotrVarTyped",
     "body": ["${1:Type} ${2:myVar} = $3;"],

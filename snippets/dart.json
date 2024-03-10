@@ -8,7 +8,7 @@
       "Concurrency: Supports isolates for concurrent execution"
     ],
     "description": "Provides general information about the Dart programming language."
-  },  
+  },
   "Dart Entry Point": {
     "prefix": "cotrEntry",
     "body": [
@@ -20,7 +20,7 @@
       "}"
     ],
     "description": "Creates the entry point of a Dart application."
-  },  
+  },
   "Dart Mathematical Operators": {
     "prefix": "cotrOperators",
     "body": [
@@ -41,7 +41,7 @@
       "// Modulus assignment: %="
     ],
     "description": "Lists the mathematical operators in Dart."
-  },  
+  },
   "Dart Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -140,6 +140,34 @@
     "prefix": "cotrVar",
     "body": ["var ${1:myVar} = $2;"],
     "description": "Creates a variable in Dart using the var keyword."
+  },
+  "Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "// Dart Variable Declaration Syntax:",
+      "",
+      "// - var: (Scope: Block)",
+      "//   - Type is automatically inferred by the compiler.",
+      "//   - Preferred for most variable declarations.",
+      "",
+      "// - type: (Scope: Block)",
+      "//   - Explicitly specify the variable's type.",
+      "//   - Use when var deduction is not desired or not possible.",
+      "",
+      "// - const: (Scope: Block)",
+      "//   - Cannot be reassigned or redeclared.",
+      "//   - Use for values that should remain constant.",
+      "",
+      "// - final: (Scope: Block)",
+      "//   - Cannot be reassigned, but can be declared without initialization.",
+      "//   - Use for variables that will be assigned a value later but should not change after that.",
+      "",
+      "// Note:",
+      "// - Use 'var' for most variable declarations.",
+      "// - Use 'const' for values that are known at compile time.",
+      "// - Use 'final' for variables that will be assigned later but should not change."
+    ],
+    "description": "Explains Dart variable declaration syntax"
   },
   "Dart Create Typed Variable": {
     "prefix": "cotrVarTyped",
@@ -307,7 +335,7 @@
       "}"
     ],
     "description": "Creates a function with arguments in Dart, including an optional positional argument with a default value."
-  },  
+  },
   "Dart Function Named Args": {
     "prefix": "cotrFuncArgsNamed",
     "body": [

@@ -8,7 +8,7 @@
       "Concurrency: Supports multi-threading and concurrent programming with Grand Central Dispatch (GCD) and async/await"
     ],
     "description": "Provides general information about the Swift programming language."
-  },  
+  },
   "Swift Entry Point": {
     "prefix": "cotrEntry",
     "body": [
@@ -20,7 +20,29 @@
       "print(\"Hello, World!\")"
     ],
     "description": "Describes the entry point of a Swift application."
-  },  
+  },
+  "Swift Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "// Swift Mathematical Operators",
+      "// Addition: +",
+      "// Subtraction: -",
+      "// Multiplication: *",
+      "// Division: /",
+      "// Modulus (Remainder): %",
+      "// Exponentiation: **",
+      "// Increment: Use += 1",
+      "// Decrement: Use -= 1",
+      "// Assignment: =",
+      "// Addition assignment: +=",
+      "// Subtraction assignment: -=",
+      "// Multiplication assignment: *=",
+      "// Division assignment: /=",
+      "// Modulus assignment: %=",
+      "// Exponentiation assignment: **="
+    ],
+    "description": "Lists the mathematical operators in Swift."
+  },
   "Swift Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -48,7 +70,7 @@
       "$BLOCK_COMMENT_END"
     ],
     "description": "Lists the types in Swift."
-  },  
+  },
   "Swift String Type": {
     "prefix": "cotrTypesString",
     "body": ["String"],
@@ -88,7 +110,7 @@
     "prefix": "cotrTypesDate",
     "body": ["Date"],
     "description": "The Swift Date struct."
-  },  
+  },
   "Swift Map Type": {
     "prefix": "cotrTypesMap",
     "body": ["Dictionary<${1:KeyType}, ${2:ValueType}>"],
@@ -98,12 +120,12 @@
     "prefix": "cotrTypesList",
     "body": ["Array<${1:Type}>"],
     "description": "The Swift Array type, equivalent to a list."
-  },  
+  },
   "Swift Date Now": {
     "prefix": "cotrNow",
     "body": ["Date()"],
     "description": "Gets the current date and time in Swift."
-  },  
+  },
   "Swift Null Type": {
     "prefix": "cotrTypesNull",
     "body": ["nil"],
@@ -134,16 +156,35 @@
     "body": ["var ${1:myVar} = $2;"],
     "description": "Creates a variable in Swift using the var keyword."
   },
+  "Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "// Swift Variable Declaration Syntax:",
+      "",
+      "// - var: (Scope: Block or Global)",
+      "//   - Declares a mutable variable.",
+      "//   - Use for variables that need to be reassigned.",
+      "",
+      "// - let: (Scope: Block or Global)",
+      "//   - Declares an immutable variable.",
+      "//   - Preferred for values that should remain constant.",
+      "",
+      "// Note:",
+      "// - Use 'let' by default for values that won't change.",
+      "// - Use 'var' only when you need to reassign the variable."
+    ],
+    "description": "Explains Swift variable declaration syntax"
+  },
   "Swift Create Typed Variable": {
     "prefix": "cotrVarTyped",
     "body": ["var ${1:myVar}: ${2:Type} = $3"],
     "description": "Creates a typed variable in Swift."
-  },  
+  },
   "Swift Create Nullable Variable": {
     "prefix": "cotrVarNullable",
     "body": ["var ${1:myVar}: ${2:Type}? = $3"],
     "description": "Creates a nullable variable in Swift."
-  },  
+  },
   "Swift Create String Variable": {
     "prefix": "cotrVarString",
     "body": ["var ${1:myString} = ${2:'Your string here'};"],
@@ -182,16 +223,12 @@
   },
   "Swift Create Date Variable": {
     "prefix": "cotrVarDate",
-    "body": [
-      "let ${1:myDate} = Date()"
-    ],
+    "body": ["let ${1:myDate} = Date()"],
     "description": "Creates a date variable in Swift."
-  },  
+  },
   "Swift Create List Variable": {
     "prefix": "cotrVarList",
-    "body": [
-      "var ${1:myArray} = [${2:'item1'}, ${3:'item2'}, ${4:'item3'}];"
-    ],
+    "body": ["var ${1:myArray} = [${2:'item1'}, ${3:'item2'}, ${4:'item3'}];"],
     "description": "Creates an array variable in Swift."
   },
   "Swift Create Dictionary Variable": {
@@ -250,7 +287,7 @@
       "\"\"\")"
     ],
     "description": "Prints a multi-line message to the console in Swift."
-  },  
+  },
   "Swift For Loop": {
     "prefix": "cotrForLoop",
     "body": ["for ${1:i} in ${2:0..<10} {", "  // Your code here", "}"],
@@ -294,7 +331,7 @@
       "}"
     ],
     "description": "Creates a function in Swift."
-  }, 
+  },
   "Swift Function Args": {
     "prefix": "cotrFuncArgs",
     "body": [
@@ -304,7 +341,7 @@
       "}"
     ],
     "description": "Creates a function with arguments in Swift, including an argument with a default value."
-  },     
+  },
   "Swift Function Named Args": {
     "prefix": "cotrFuncArgsNamed",
     "body": [
@@ -313,7 +350,7 @@
       "}"
     ],
     "description": "Creates a function with named arguments in Swift."
-  },  
+  },
   "Swift Closure": {
     "prefix": ["cotrLambda", "cotrClosure", "cotrFuncLambda", "cortFuncArrow"],
     "body": [
@@ -331,7 +368,7 @@
       "}"
     ],
     "description": "Creates an anonymous function (closure) in Swift."
-  },  
+  },
   "Swift Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [
@@ -341,7 +378,7 @@
       "// Function with named arguments: func functionName(arg1Name arg1: Type1, arg2Name arg2: Type2, ...) -> ReturnType { ... }"
     ],
     "description": "Outlines the syntax for functions in Swift."
-  },  
+  },
   "Swift Comment": {
     "prefix": "cotrComment",
     "body": ["// ${1:Your comment here}"],

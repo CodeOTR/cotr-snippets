@@ -29,6 +29,8 @@ Its very simple, actually. Every supported language implements all snippets in a
 - [Java](https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html)
 - [PHP](https://www.php.net/)
 - [Ruby](https://www.ruby-lang.org/en/)
+- [R](https://www.r-project.org/)
+- [Scala](https://www.scala-lang.org/)
 
 ## Snippets
 
@@ -52,6 +54,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrNull           | The language's null data type                                        |
 | cotrNow            | How the language represents the current time                         |
 | cotrVar            | Creates a variable                                                   |
+| cotrVarSyntax      | Outputs the basic syntax for a variable                              |
 | cotrVarTyped       | Creates a statically typed variable                                  |
 | cotrVarNullable    | Creates a nullable variable                                          |
 | cotrVarString      | Creates a string variable                                            |

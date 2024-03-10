@@ -126,6 +126,27 @@
     "body": ["$${1:myVar} = $2;"],
     "description": "Creates a variable in PHP."
   },
+  "Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "// PHP Variable Declaration Syntax:",
+      "",
+      "// - $: (Scope: Global or Function)",
+      "//   - Variables start with a dollar sign.",
+      "//   - Can be reassigned and redeclared within their scope.",
+      "//   - Use with caution due to potential scoping issues.",
+      "",
+      "// - const: (Scope: Global)",
+      "//   - Cannot be reassigned or redeclared.",
+      "//   - Use for values that should remain constant.",
+      "",
+      "// Note:",
+      "// - PHP does not have a direct equivalent to 'let'.",
+      "// - Use '$' for most variable declarations.",
+      "// - Use 'const' for values that are known at compile time."
+    ],
+    "description": "Explains PHP variable declaration syntax"
+  },
   "PHP Create Typed Variable": {
     "prefix": "cotrVarTyped",
     "body": [

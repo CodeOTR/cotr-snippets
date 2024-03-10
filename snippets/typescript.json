@@ -20,6 +20,28 @@
     ],
     "description": "Describes the entry point of a TypeScript application."
   },
+  "TypeScript Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "// TypeScript Mathematical Operators",
+      "// Addition: +",
+      "// Subtraction: -",
+      "// Multiplication: *",
+      "// Division: /",
+      "// Modulus (Remainder): %",
+      "// Exponentiation: **",
+      "// Increment: Use ++ or +=",
+      "// Decrement: Use -- or -=",
+      "// Assignment: =",
+      "// Addition assignment: +=",
+      "// Subtraction assignment: -=",
+      "// Multiplication assignment: *=",
+      "// Division assignment: /=",
+      "// Modulus assignment: %=",
+      "// Exponentiation assignment: **="
+    ],
+    "description": "Lists the mathematical operators in TypeScript."
+  },
   "TypeScript Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -112,6 +134,29 @@
     "prefix": "cotrVar",
     "body": ["let ${1:myVar} = $2;"],
     "description": "Creates a variable in TypeScript using the let keyword."
+  },
+  "Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "// TypeScript Variable Declaration Syntax:",
+      "",
+      "// - var: (Scope: Function or Global)",
+      "//   - Can be reassigned and redeclared within its scope.",
+      "//   - Use with caution due to potential scoping issues.",
+      "",
+      "// - let: (Scope: Block)",
+      "//   - Can be reassigned but not redeclared within its scope.",
+      "//   - Preferred for variables that need to be reassigned.",
+      "",
+      "// - const: (Scope: Block)",
+      "//   - Cannot be reassigned or redeclared.",
+      "//   - Use for values that should remain constant.",
+      "",
+      "// Note:",
+      "// - Use 'let' for most variable declarations.",
+      "// - Use 'const' for values that should not change."
+    ],
+    "description": "Explains TypeScript variable declaration syntax"
   },
   "TypeScript Create Typed Variable": {
     "prefix": "cotrVarTyped",
