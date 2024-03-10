@@ -35,6 +35,7 @@ Its very simple, actually. Every supported language implements all snippets in a
 | Name               | Description                                                          |
 | ------------------ | -------------------------------------------------------------------- |
 | cotrInfo           | Outputs information about the language                               |
+| cotrOperators      | Outputs the basic operators for the language                         |
 | cotrEntry          | Creates a main entry point                                           |
 | cotrTypes          | The language's data types                                            |
 | cotrTypesString    | The language's string data type                                      |

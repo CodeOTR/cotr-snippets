@@ -21,6 +21,27 @@
     ],
     "description": "Creates the entry point of a Dart application."
   },  
+  "Dart Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "// Dart Mathematical Operators",
+      "// Addition: +",
+      "// Subtraction: -",
+      "// Multiplication: *",
+      "// Exponentiation: **",
+      "// Division: /",
+      "// Modulus: %",
+      "// Increment: ++",
+      "// Decrement: --",
+      "// Assignment: =",
+      "// Addition assignment: +=",
+      "// Subtraction assignment: -=",
+      "// Multiplication assignment: *=",
+      "// Division assignment: /=",
+      "// Modulus assignment: %="
+    ],
+    "description": "Lists the mathematical operators in Dart."
+  },  
   "Dart Types": {
     "prefix": "cotrTypes",
     "body": [

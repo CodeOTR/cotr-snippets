@@ -25,6 +25,27 @@
     ],
     "description": "Creates the entry point of a C# application."
   },
+  "C# Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "// C# Mathematical Operators",
+      "// Addition: +",
+      "// Subtraction: -",
+      "// Multiplication: *",
+      "// Exponentiation: **",
+      "// Division: /",
+      "// Modulus: %",
+      "// Increment: ++",
+      "// Decrement: --",
+      "// Assignment: =",
+      "// Addition assignment: +=",
+      "// Subtraction assignment: -=",
+      "// Multiplication assignment: *=",
+      "// Division assignment: /=",
+      "// Modulus assignment: %="
+    ],
+    "description": "Lists the mathematical operators in C#."
+  },  
   "C# Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -334,6 +355,11 @@
     "body": ["(${1:parameters}) => {", "    ${2:// Your code here}", "};"],
     "description": "Creates an anonymous function (lambda) in C#."
   },
+  "C# Lambda Function": {
+    "prefix": ["cotrFuncLambda", "cotrLambda"],
+    "body": ["(${1:parameters}) => ${2:expression}"],
+    "description": "Creates a lambda function in C#."
+  },
   "C# Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [
@@ -408,10 +434,5 @@
     "prefix": "cotrTernary",
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in C#."
-  },
-  "C# Lambda Function": {
-    "prefix": "cotrLambda",
-    "body": ["(${1:parameters}) => ${2:expression}"],
-    "description": "Creates a lambda function in C#."
   }
 }

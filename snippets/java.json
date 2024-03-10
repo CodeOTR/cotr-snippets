@@ -23,6 +23,27 @@
     ],
     "description": "Creates the entry point of a Java application."
   },  
+  "Java Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "// Java Mathematical Operators",
+      "// Addition: +",
+      "// Subtraction: -",
+      "// Multiplication: *",
+      "// Exponentiation: Math.pow(base, exponent)",
+      "// Division: /",
+      "// Modulus: %",
+      "// Increment: ++",
+      "// Decrement: --",
+      "// Assignment: =",
+      "// Addition assignment: +=",
+      "// Subtraction assignment: -=",
+      "// Multiplication assignment: *=",
+      "// Division assignment: /=",
+      "// Modulus assignment: %="
+    ],
+    "description": "Lists the mathematical operators in Java."
+  },  
   "Java Types": {
     "prefix": "cotrTypes",
     "body": [

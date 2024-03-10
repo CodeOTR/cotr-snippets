@@ -23,6 +23,28 @@
     ],
     "description": "Creates the entry point of a Kotlin application."
   },  
+  "Kotlin Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "scope": "kotlin",
+    "body": [
+      "// Kotlin Mathematical Operators",
+      "// Addition: +",
+      "// Subtraction: -",
+      "// Multiplication: *",
+      "// Exponentiation: **",
+      "// Division: /",
+      "// Modulus (Remainder): %",
+      "// Increment: ++",
+      "// Decrement: --",
+      "// Assignment: =",
+      "// Addition assignment: +=",
+      "// Subtraction assignment: -=",
+      "// Multiplication assignment: *=",
+      "// Division assignment: /=",
+      "// Modulus assignment: %="
+    ],
+    "description": "Lists the mathematical operators in Kotlin."
+  },  
   "Kotlin Types": {
     "prefix": "cotrTypes",
     "scope": "kotlin",

@@ -23,7 +23,28 @@
       "}"
     ],
     "description": "Creates the entry point of a C++ application."
-  },  
+  },
+  "C++ Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "// C++ Mathematical Operators",
+      "// Addition: +",
+      "// Subtraction: -",
+      "// Multiplication: *",
+      "// Exponentiation: **",
+      "// Division: /",
+      "// Modulus: %",
+      "// Increment: ++",
+      "// Decrement: --",
+      "// Assignment: =",
+      "// Addition assignment: +=",
+      "// Subtraction assignment: -=",
+      "// Multiplication assignment: *=",
+      "// Division assignment: /=",
+      "// Modulus assignment: %="
+    ],
+    "description": "Lists the mathematical operators in C++."
+  },    
   "C++ Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -309,6 +330,15 @@
     ],
     "description": "C++ does not support named arguments in the same way as some other languages."
   },
+  "C++ Lambda Function": {
+    "prefix": ["cotrFuncLambda", "cotrLambda"],
+    "body": [
+      "auto ${1:myLambda} = [](${2:parameters}) -> ${3:returnType} {",
+      "  // Your code here",
+      "};"
+    ],
+    "description": "Creates a lambda function in C++."
+  },
   "C++ Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [
@@ -383,14 +413,5 @@
     "prefix": "cotrTernary",
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in C++."
-  },
-  "C++ Lambda Function": {
-    "prefix": "cotrLambda",
-    "body": [
-      "auto ${1:myLambda} = [](${2:parameters}) -> ${3:returnType} {",
-      "  // Your code here",
-      "};"
-    ],
-    "description": "Creates a lambda function in C++."
   }
 }

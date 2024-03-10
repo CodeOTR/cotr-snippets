@@ -19,6 +19,28 @@
     ],
     "description": "Creates the entry point of a Ruby application."
   },  
+  "Ruby Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "# Ruby Mathematical Operators",
+      "# Addition: +",
+      "# Subtraction: -",
+      "# Multiplication: *",
+      "# Division: /",
+      "# Modulus (Remainder): %",
+      "# Exponentiation: **",
+      "# Increment: Use += 1",
+      "# Decrement: Use -= 1",
+      "# Assignment: =",
+      "# Addition assignment: +=",
+      "# Subtraction assignment: -=",
+      "# Multiplication assignment: *=",
+      "# Division assignment: /=",
+      "# Modulus assignment: %=",
+      "# Exponentiation assignment: **="
+    ],
+    "description": "Lists the mathematical operators in Ruby."
+  },  
   "Ruby Types": {
     "prefix": "cotrTypes",
     "body": [

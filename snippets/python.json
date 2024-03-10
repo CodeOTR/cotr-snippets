@@ -21,6 +21,30 @@
     ],
     "description": "Creates the entry point of a Python application."
   },  
+  "Python Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "# Python Mathematical Operators",
+      "# Addition: +",
+      "# Subtraction: -",
+      "# Multiplication: *",
+      "# Division: /",
+      "# Modulus (Remainder): %",
+      "# Exponentiation: **",
+      "# Floor Division: //",
+      "# Increment: Not supported in Python",
+      "# Decrement: Not supported in Python",
+      "# Assignment: =",
+      "# Addition assignment: +=",
+      "# Subtraction assignment: -=",
+      "# Multiplication assignment: *=",
+      "# Division assignment: /=",
+      "# Modulus assignment: %=",
+      "# Exponentiation assignment: **=",
+      "# Floor Division assignment: //="
+    ],
+    "description": "Lists the mathematical operators in Python."
+  },  
   "Python Types": {
     "prefix": "cotrTypes",
     "body": [

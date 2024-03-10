@@ -19,6 +19,27 @@
     ],
     "description": "Describes the entry point of a JavaScript application."
   },  
+  "JavaScript Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "// JavaScript Mathematical Operators",
+      "// Addition: +",
+      "// Subtraction: -",
+      "// Multiplication: *",
+      "// Exponentiation: **",
+      "// Division: /",
+      "// Modulus (Remainder): %",
+      "// Increment: ++",
+      "// Decrement: --",
+      "// Assignment: =",
+      "// Addition assignment: +=",
+      "// Subtraction assignment: -=",
+      "// Multiplication assignment: *=",
+      "// Division assignment: /=",
+      "// Modulus assignment: %="
+    ],
+    "description": "Lists the mathematical operators in JavaScript."
+  },  
   "JavaScript Types": {
     "prefix": "cotrTypes",
     "body": [

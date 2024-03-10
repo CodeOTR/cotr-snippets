@@ -25,6 +25,27 @@
     ],
     "description": "Creates the entry point of a Go application."
   },  
+  "Go Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "// Go Mathematical Operators",
+      "// Addition: +",
+      "// Subtraction: -",
+      "// Multiplication: *",
+      "// Exponentiation: **",
+      "// Division: /",
+      "// Modulus: %",
+      "// Increment: ++",
+      "// Decrement: --",
+      "// Assignment: =",
+      "// Addition assignment: +=",
+      "// Subtraction assignment: -=",
+      "// Multiplication assignment: *=",
+      "// Division assignment: /=",
+      "// Modulus assignment: %="
+    ],
+    "description": "Lists the mathematical operators in Go."
+  },  
   "Go Types": {
     "prefix": "cotrTypes",
     "body": [

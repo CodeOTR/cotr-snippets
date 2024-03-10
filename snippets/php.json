@@ -21,6 +21,27 @@
     ],
     "description": "Creates the entry point of a PHP application."
   },  
+  "PHP Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "// PHP Mathematical Operators",
+      "// Addition: +",
+      "// Subtraction: -",
+      "// Multiplication: *",
+      "// Exponentiation: **",
+      "// Division: /",
+      "// Modulus (Remainder): %",
+      "// Increment: ++",
+      "// Decrement: --",
+      "// Assignment: =",
+      "// Addition assignment: +=",
+      "// Subtraction assignment: -=",
+      "// Multiplication assignment: *=",
+      "// Division assignment: /=",
+      "// Modulus assignment: %="
+    ],
+    "description": "Lists the mathematical operators in PHP."
+  },  
   "PHP Types": {
     "prefix": "cotrTypes",
     "body": [
