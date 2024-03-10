@@ -87,6 +87,10 @@
       {
         "language": "r",
         "path": "./snippets/r.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./snippets/markdown.json"
       }
     ]
   }
