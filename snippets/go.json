@@ -299,6 +299,16 @@
     "body": ["// Go does not support named arguments in function definitions."],
     "description": "Go does not support named arguments in function definitions."
   },
+  "Go Function Literal": {
+    "prefix": ["cotrFuncAnon", "cotrFuncArrow", "cotrFuncLiteral"],
+    "body": [
+      "// Go does not support function literals (anonymous functions) with a return type.",
+      "var ${1:myFunction} = func(${2:parameters}) ${3:returnType} {",
+      "    ${4:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function literal (anonymous function) in Go."
+  },  
   "Go Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [

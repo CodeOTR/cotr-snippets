@@ -8,7 +8,7 @@
       "Concurrency: Inherits JavaScript's event loop model for asynchronous programming"
     ],
     "description": "Provides general information about the TypeScript programming language."
-  },   
+  },
   "TypeScript Entry Point": {
     "prefix": "cotrEntry",
     "body": [
@@ -19,7 +19,7 @@
       "console.log('Hello, World!');"
     ],
     "description": "Describes the entry point of a TypeScript application."
-  },  
+  },
   "TypeScript Types": {
     "prefix": "cotrTypes",
     "body": [
@@ -286,7 +286,7 @@
       "}"
     ],
     "description": "Creates a function with arguments in TypeScript, including an argument with a default value."
-  },  
+  },
   "TypeScript Function Named Args": {
     "prefix": "cotrFuncArgsNamed",
     "body": [
@@ -295,6 +295,29 @@
       "}"
     ],
     "description": "Creates a function with named arguments in TypeScript."
+  },
+  "TypeScript Arrow Function": {
+    "prefix": "cotrFuncArrow",
+    "body": [
+      "const ${2:myFunction} = (${3:parameters}): ${1:void} => {",
+      "  ${4:// Your code here}",
+      "};"
+    ],
+    "description": "Creates an arrow function in TypeScript."
+  },
+  "TypeScript Anonymous Function": {
+    "prefix": "cotrFuncAnon",
+    "body": [
+      "(${1:parameters}): ${2:void} => {",
+      "  ${3:// Your code here}",
+      "};"
+    ],
+    "description": "Creates an anonymous arrow function in TypeScript."
+  },
+  "TypeScript Lambda": {
+    "prefix": ["cotrFuncLambda", "cotrLambda"],
+    "body": ["const ${1:myLambda} = (${2:parameters}) => ${3:expression};"],
+    "description": "Creates a lambda function in TypeScript."
   },
   "TypeScript Function Syntax": {
     "prefix": "cotrFuncSyntax",
@@ -370,10 +393,5 @@
     "prefix": "cotrTernary",
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in TypeScript."
-  },
-  "TypeScript Lambda": {
-    "prefix": "cotrLambda",
-    "body": ["const ${1:myLambda} = (${2:parameters}) => ${3:expression};"],
-    "description": "Creates a lambda function in TypeScript."
   }
 }

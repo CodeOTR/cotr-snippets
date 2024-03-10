@@ -298,6 +298,24 @@
     ],
     "description": "Creates a function with named arguments in JavaScript using object destructuring."
   },
+  "JavaScript Arrow Function": {
+    "prefix": "cotrFuncArrow",
+    "body": [
+      "const ${2:myFunction} = (${3:parameters}) => {",
+      "  ${4:// Your code here}",
+      "};"
+    ],
+    "description": "Creates an arrow function in JavaScript."
+  },
+  "JavaScript Anonymous Function": {
+    "prefix": "cotrFuncAnon",
+    "body": [
+      "function(${1:parameters}) {",
+      "  ${2:// Your code here}",
+      "};"
+    ],
+    "description": "Creates an anonymous function in JavaScript."
+  },   
   "JavaScript Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [

@@ -282,6 +282,24 @@
     ],
     "description": "Creates a function with named arguments in Ruby."
   },
+  "Ruby Lambda Function": {
+    "prefix": ["cotrFuncLambda", "cotrLambda", "cotrFuncArrow"],
+    "body": [
+      "${2:my_function} = ->(${3:parameters}) {",
+      "  ${4:# Your code here}",
+      "}"
+    ],
+    "description": "Creates a lambda function in Ruby."
+  },
+  "Ruby Anonymous Function": {
+    "prefix": "cotrFuncAnon",
+    "body": [
+      "lambda { |${1:parameters}|",
+      "  ${2:# Your code here}",
+      "}"
+    ],
+    "description": "Creates an anonymous function (lambda) in Ruby."
+  },
   "Ruby Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [
@@ -354,10 +372,5 @@
     "prefix": "cotrTernary",
     "body": ["${1:condition} ? ${2:true_value} : ${3:false_value}"],
     "description": "Creates a ternary operator in Ruby."
-  },
-  "Ruby Lambda Function": {
-    "prefix": "cotrLambda",
-    "body": ["->(${1:parameters}) { ${2:# Your code here} }"],
-    "description": "Creates a lambda function in Ruby."
   }
 }

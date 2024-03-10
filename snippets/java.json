@@ -319,6 +319,32 @@
     ],
     "description": "Note about named arguments in Java."
   },
+  "Java Arrow Function": {
+    "prefix": "cotrFuncArrow",
+    "body": [
+      "(${2:parameters}) -> ${1:returnType} {",
+      "    ${3:// Your code here}",
+      "}"
+    ],
+    "description": "Creates an arrow function (lambda) in Java."
+  },  
+  "Java Anonymous Function": {
+    "prefix": "cotrFuncAnon",
+    "body": [
+      "new ${1:InterfaceName}() {",
+      "    @Override",
+      "    public ${2:returnType} ${3:methodName}(${4:parameters}) {",
+      "        ${5:// Your code here}",
+      "    }",
+      "}"
+    ],
+    "description": "Creates an anonymous function (anonymous inner class) in Java."
+  },  
+  "Java Lambda Function": {
+    "prefix": ["cotrFuncLambda", "cotrLambda"],
+    "body": ["(${1:parameters}) -> ${2:expression}"],
+    "description": "Creates a lambda function in Java."
+  },
   "Java Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [
@@ -393,10 +419,5 @@
     "prefix": "cotrTernary",
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in Java."
-  },
-  "Java Lambda Function": {
-    "prefix": "cotrLambda",
-    "body": ["(${1:parameters}) -> ${2:expression}"],
-    "description": "Creates a lambda function in Java."
   }
 }

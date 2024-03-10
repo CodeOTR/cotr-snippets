@@ -296,6 +296,16 @@
     ],
     "description": "Creates a function with named arguments in Dart."
   },
+  "Dart Function Arrow": {
+    "prefix": "cotrFuncArrow",
+    "body": ["${1:Type} ${2:myFunction}(${3:parameters}) => ${4:expression};"],
+    "description": "Creates a function using the arrow syntax in Dart."
+  },
+  "Dart Function Anonymous": {
+    "prefix": "cotrFuncAnon",
+    "body": ["(${1:parameters}) {", "  ${2:// Your code here}", "}"],
+    "description": "Creates an anonymous function in Dart."
+  },
   "Dart Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [

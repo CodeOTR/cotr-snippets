@@ -346,6 +346,20 @@
     ],
     "description": "Note about named arguments in Rust."
   },
+  "Rust Closure": {
+    "prefix": ["cotrClosure", "cotrFuncArrow", "cotrFuncLambda", "cotrLambda"],
+    "body": ["let ${1:my_closure} = |${2:parameters}| ${3:expression};"],
+    "description": "Creates a closure (lambda function) in Rust."
+  },
+  "Rust Anonymous Function": {
+    "prefix": "cotrFuncAnon",
+    "body": [
+      "|${1:parameters}| -> ${2:ReturnType} {",
+      "    ${3:// Your code here}",
+      "}"
+    ],
+    "description": "Creates an anonymous closure in Rust."
+  },  
   "Rust Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [
@@ -427,10 +441,5 @@
     "prefix": "cotrTernary",
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in Rust."
-  },
-  "Rust Closure": {
-    "prefix": "cotrLambda",
-    "body": ["let ${1:my_closure} = |${2:parameters}| ${3:expression};"],
-    "description": "Creates a closure (lambda function) in Rust."
   }
 }

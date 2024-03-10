@@ -75,8 +75,10 @@ Its very simple, actually. Every supported language implements all snippets in a
 | cotrFunc           | Creates a function                                                   |
 | cotrFuncArgs       | Creates a function with arguments                                    |
 | cotrFuncArgsNamed  | Creates a function with named arguments                              |
+| cotrFuncArrow      | Creates an arrow function                                            |
+| cotrFuncAnon       | Creates an anonymous function                                        |
+| cotrFuncLambda     | Creates a lambda function                                            |
 | cotrFuncSyntax     | Outputs the basic syntax for a function                              |
-| cotrLambda         | Creates a lambda function                                            |
 | cotrComment        | Creates a single-line comment                                        |
 | cotrCommentMulti   | Creates a multi-line comment                                         |
 | cotrThrow          | Throws an exception                                                  |

@@ -354,8 +354,29 @@
     ],
     "description": "Creates a function with named arguments and default values in Kotlin."
   },
+  "Kotlin Lambda": {
+    "prefix": ["cotrFuncLambda", "cotrLambda", "cotrFuncArrow"],
+    "scope": "kotlin",
+    "body": [
+      "val ${1:myLambda}: (${2:ParameterType}) -> ${3:ReturnType} = { ${4:parameters} ->",
+      "  ${5:expression}",
+      "}"
+    ],
+    "description": "Creates a lambda function in Kotlin."
+  },
+  "Kotlin Anonymous Function": {
+    "prefix": "cotrFuncAnon",
+    "scope": "kotlin",
+    "body": [
+      "fun(${1:parameters}): ${2:ReturnType} {",
+      "    ${3:// Your code here}",
+      "}"
+    ],
+    "description": "Creates an anonymous function in Kotlin."
+  },  
   "Kotlin Function Syntax": {
     "prefix": "cotrFuncSyntax",
+    "scope": "kotlin",
     "body": [
       "// Kotlin Function Syntax",
       "// Basic function: fun functionName(parameters): ReturnType { ... }",
@@ -437,14 +458,5 @@
     "scope": "kotlin",
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in Kotlin."
-  },
-  "Kotlin Lambda": {
-    "prefix": "cotrLambda",
-    "body": [
-      "val ${1:myLambda}: (${2:ParameterType}) -> ${3:ReturnType} = { ${4:parameters} ->",
-      "  ${5:expression}",
-      "}"
-    ],
-    "description": "Creates a lambda function in Kotlin."
   }
 }

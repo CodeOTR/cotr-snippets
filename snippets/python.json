@@ -266,6 +266,13 @@
     ],
     "description": "Creates a function with named arguments in Python."
   },
+  "Python Arrow Function": {
+    "prefix":[ "cotrFuncArrow", "cotrFuncLambda", "cotrLambda", "cotrFuncAnon" ],
+    "body": [
+      "${2:my_function} = lambda ${3:parameters}: ${4:// Your code here}"
+    ],
+    "description": "Creates an arrow function (lambda) in Python."
+  },  
   "Python Function Syntax": {
     "prefix": "cotrFuncSyntax",
     "body": [
@@ -315,10 +322,5 @@
       "  # Add more values here"
     ],
     "description": "Creates an enum in Python."
-  },
-  "Python Lambda Function": {
-    "prefix": "cotrLambda",
-    "body": ["${1:myLambda} = lambda ${2:parameters}: ${3:returnValue}"],
-    "description": "Creates a lambda function in Python."
   }
 }
