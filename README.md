@@ -22,7 +22,7 @@ How does it work?
 
 Its very simple, actually. Every supported language implements all snippets in a separate file. For example, the `dart.json` snippet file implements all of the snippets in Dart while the `typescript.json` file implements all of the snippets in TypeScript. **The key is that the snippet names are consistent across languages so you only need to remember the COTR snippet name**.
 
-![COTR Snippets](./cotr_snippts.png)
+![COTR Snippets](./cotr_snippets.png)
 
 ## Supported Languages
 
