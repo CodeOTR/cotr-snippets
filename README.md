@@ -47,6 +47,8 @@ Its very simple, actually. Every supported language implements all snippets in a
 | [Scala](https://www.scala-lang.org/) | `.scala`, `.sc` | [Scala (Metals)](https://marketplace.visualstudio.com/items?itemName=scalameta.metals) |
 | [Markdown](https://www.markdownguide.org/) | `.md` | Built-in |
 | [Haskell](https://www.haskell.org/) | `.hs` | [Haskell Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=haskell.haskell) |
+| [PowerShell](https://docs.microsoft.com/en-us/powershell/) | `.ps1` | [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell) |
+| [Perl](https://www.perl.org/) | `.pl` | [Perl](https://marketplace.visualstudio.com/items?itemName=henriiik.vscode-perl) |
 
 ## Snippets
 

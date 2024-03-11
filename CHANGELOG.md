@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.11
+
+- Update README
+
 ## 0.0.10
 
 - Added Markdown support

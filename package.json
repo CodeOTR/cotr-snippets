@@ -4,7 +4,7 @@
   "publisher": "CodeontheRocks",
   "repository": "https://github.com/CodeOTR/cotr-snippets",
   "description": "Write code in every language",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "icon": "cubes_with_background.png",
   "sponsor": {
     "url": "https://github.com/sponsors/jtmuller5"
@@ -91,6 +91,10 @@
       {
         "language": "markdown",
         "path": "./snippets/markdown.json"
+      },
+      {
+        "language": "powershell",
+        "path": "./snippets/powershell.json"
       }
     ]
   }

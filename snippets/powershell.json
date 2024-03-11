@@ -1,0 +1,659 @@
+{
+  "PowerShell Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "# Typing: Dynamically typed",
+      "# Paradigm: Object-oriented, imperative, scripting",
+      "# Compilation: Interpreted",
+      "# Concurrency: Supports multi-threading with the System.Threading namespace"
+    ],
+    "description": "Provides general information about the PowerShell scripting language."
+  },
+
+  "PowerShell Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "# PowerShell Entry Point",
+      "# To run this script, use: `powershell filename.ps1`",
+      "",
+      "Write-Host 'Hello, World!'"
+    ],
+    "description": "Creates the entry point of a PowerShell script."
+  },
+
+  "PowerShell Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "# PowerShell Mathematical Operators",
+      "# Addition: +",
+      "# Subtraction: -",
+      "# Multiplication: *",
+      "# Division: /",
+      "# Modulus (Remainder): %",
+      "# Exponentiation: Not directly supported, use [Math]::Pow(base, exponent)",
+      "# Increment: Use += 1",
+      "# Decrement: Use -= 1",
+      "# Assignment: =",
+      "# Addition assignment: +=",
+      "# Subtraction assignment: -=",
+      "# Multiplication assignment: *=",
+      "# Division assignment: /=",
+      "# Modulus assignment: %="
+    ],
+    "description": "Lists the mathematical operators in PowerShell."
+  },
+
+  "PowerShell Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["-eq"],
+    "description": "PowerShell equal to operator."
+  },
+
+  "PowerShell Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["-ne"],
+    "description": "PowerShell not equal to operator."
+  },
+
+  "PowerShell Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "# PowerShell Boolean Operators",
+      "# Logical AND: -and",
+      "# Logical OR: -or",
+      "# Logical NOT: -not",
+      "# Equality: -eq",
+      "# Inequality: -ne",
+      "# Greater than: -gt",
+      "# Less than: -lt",
+      "# Greater than or equal to: -ge",
+      "# Less than or equal to: -le"
+    ],
+    "description": "Lists the boolean operators in PowerShell."
+  },
+
+  "PowerShell Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["${1:variable}.GetType()"],
+    "description": "Gets the type of a variable in PowerShell."
+  },
+
+  "PowerShell Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "# Check if two variables have the same type:",
+      "if (${1:variable1}.GetType() -eq ${2:variable2}.GetType()) {",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in PowerShell."
+  },
+
+  "PowerShell Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "# PowerShell Type Conversion:",
+      "",
+      "# Explicit conversions:",
+      "# - [Type]variable  // Type casting (can throw an error if conversion fails)",
+      "# - variable.ToString()  // Converts to string",
+      "# - [int]variable  // Converts to integer",
+      "# - [double]variable  // Converts to double",
+      "# - ... (Various conversion methods and type accelerators)",
+      "",
+      "# Note:",
+      "# - Be cautious with type casting, as it can lead to errors if the conversion is not valid."
+    ],
+    "description": "Explains type conversion in PowerShell."
+  },
+
+  "PowerShell Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "PowerShell is a dynamically typed language.",
+      "",
+      "Some common types in PowerShell include:",
+      "- [int]: Integer",
+      "- [double]: Double-precision floating-point number",
+      "- [string]: String",
+      "- [bool]: Boolean",
+      "- [array]: Array",
+      "- [hashtable]: Hash table (associative array)",
+      "- [datetime]: Date and time",
+      "- [PSCustomObject]: Custom object",
+      "- [System.Collections.Hashtable]: .NET Hashtable",
+      "- [System.Collections.Generic.List[T]]: .NET Generic List",
+      "- [System.Management.Automation.PSObject]: PowerShell object",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists some common types in PowerShell."
+  },
+
+  "PowerShell String Type": {
+    "prefix": "cotrTypesString",
+    "body": ["[string]"],
+    "description": "The PowerShell string type."
+  },
+
+  "PowerShell Integer Type": {
+    "prefix": "cotrTypesInt",
+    "body": ["[int]"],
+    "description": "The PowerShell int type."
+  },
+
+  "PowerShell Double Type": {
+    "prefix": "cotrTypesNum",
+    "body": ["[double]"],
+    "description": "The PowerShell double type."
+  },
+
+  "PowerShell Boolean Type": {
+    "prefix": "cotrTypesBool",
+    "body": ["[bool]"],
+    "description": "The PowerShell bool type."
+  },
+
+  "PowerShell Boolean True": {
+    "prefix": "cotrTypesBoolTrue",
+    "body": ["$true"],
+    "description": "The PowerShell true value."
+  },
+
+  "PowerShell Boolean False": {
+    "prefix": "cotrTypesBoolFalse",
+    "body": ["$false"],
+    "description": "The PowerShell false value."
+  },
+
+  "PowerShell Date Type": {
+    "prefix": "cotrTypesDate",
+    "body": ["[datetime]"],
+    "description": "The PowerShell datetime type."
+  },
+
+  "PowerShell Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["[hashtable]"],
+    "description": "The PowerShell hashtable type, equivalent to a map."
+  },
+
+  "PowerShell List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["[array]"],
+    "description": "The PowerShell array type, equivalent to a list."
+  },
+
+  "PowerShell Date Now": {
+    "prefix": "cotrNow",
+    "body": ["Get-Date"],
+    "description": "Gets the current date and time in PowerShell."
+  },
+
+  "PowerShell Null Type": {
+    "prefix": ["cotrTypesNull", "cotrNull"],
+    "body": ["$null"],
+    "description": "The PowerShell null value."
+  },
+
+  "PowerShell Dynamic Type": {
+    "prefix": ["cotrTypesDynamic", "cotrDynamic"],
+    "body": ["# PowerShell is a dynamically typed language."],
+    "description": "PowerShell is a dynamically typed language."
+  },
+
+  "PowerShell Create Variable": {
+    "prefix": "cotrVar",
+    "body": ["$${1:myVar} = $2"],
+    "description": "Creates a variable in PowerShell."
+  },
+
+  "PowerShell Create Typed Variable": {
+    "prefix": "cotrVarTyped",
+    "body": ["[${1:Type}] $${2:myVar} = $3"],
+    "description": "Creates a typed variable in PowerShell."
+  },
+
+  "PowerShell Create Nullable Variable": {
+    "prefix": "cotrVarNullable",
+    "body": ["$${1:myVar} = $null"],
+    "description": "Creates a nullable variable in PowerShell."
+  },
+
+  "PowerShell Interpolate String": {
+    "prefix": "cotrInterpolate",
+    "body": ["\"Your string here $${1:variable}\""],
+    "description": "Interpolates a variable into a string in PowerShell."
+  },
+
+  "PowerShell Concatenate Strings": {
+    "prefix": "cotrConcat",
+    "body": ["\"${1:string1}\" + \"${2:string2}\""],
+    "description": "Concatenates two strings in PowerShell."
+  },
+
+  "PowerShell Create String Variable": {
+    "prefix": "cotrVarString",
+    "body": ["$${1:myString} = \"${2:Your string here}\""],
+    "description": "Creates a string variable in PowerShell."
+  },
+
+  "PowerShell Create Multi-Line String Variable": {
+    "prefix": "cotrVarStringMulti",
+    "body": [
+      "$${1:myString} = @\"",
+      "${2:Line 1}",
+      "${3:Line 2}",
+      "${4:Line 3}",
+      "\"@;"
+    ],
+    "description": "Creates a multi-line string variable in PowerShell."
+  },
+
+  "PowerShell Create Integer Variable": {
+    "prefix": "cotrVarInt",
+    "body": ["$${1:myInt} = ${2:0}"],
+    "description": "Creates an integer variable in PowerShell."
+  },
+
+  "PowerShell Create Double Variable": {
+    "prefix": "cotrVarNum",
+    "body": ["$${1:myDouble} = ${2:0.0}"],
+    "description": "Creates a double variable in PowerShell."
+  },
+
+  "PowerShell Create Boolean Variable": {
+    "prefix": "cotrVarBool",
+    "body": ["$${1:myBool} = ${2:$true}"],
+    "description": "Creates a boolean variable in PowerShell."
+  },
+
+  "PowerShell Create Array Variable": {
+    "prefix": "cotrVarList",
+    "body": ["$${1:myArray} = @(${2:items})"],
+    "description": "Creates an array variable in PowerShell."
+  },
+
+  "PowerShell Create Hash Table Variable": {
+    "prefix": "cotrVarMap",
+    "body": [
+      "$${1:myHashTable} = @{",
+      "  ${2:key1} = ${3:value1}",
+      "  ${4:key2} = ${5:value2}",
+      "  # Add more key-value pairs here",
+      "}"
+    ],
+    "description": "Creates a hash table variable in PowerShell."
+  },
+
+  "PowerShell Create Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": [
+      "$${1:myDate} = Get-Date -Year ${2:year} -Month ${3:month} -Day ${4:day}"
+    ],
+    "description": "Creates a date variable in PowerShell."
+  },
+
+  "PowerShell Create Constant": {
+    "prefix": "cotrConst",
+    "body": ["$${1:myConst} = $2"],
+    "description": "Creates a constant variable in PowerShell."
+  },
+
+  "PowerShell Print": {
+    "prefix": "cotrPrint",
+    "body": ["Write-Host ${1:'Your message here'}"],
+    "description": "Prints a message to the console in PowerShell."
+  },
+
+  "PowerShell Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "Write-Host @\"",
+      "${1:Line 1}",
+      "${2:Line 2}",
+      "${3:Line 3}",
+      "\"@;"
+    ],
+    "description": "Prints a multi-line message to the console in PowerShell."
+  },
+
+  "PowerShell For Loop": {
+    "prefix": ["cotrForLoop"],
+    "body": [
+      "for ($${1:i} = 0; $1 -lt ${2:10}; $1++) {",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Creates a for loop that iterates through a set of numbers with the index in PowerShell."
+  },
+
+  "PowerShell For Each Loop": {
+    "prefix": ["cotrForEachLoop", "cotrForIn"],
+    "body": [
+      "foreach ($${1:item} in ${2:iterable}) {",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Iterates over an iterable object in PowerShell."
+  },
+
+  "PowerShell While Loop": {
+    "prefix": "cotrWhileLoop",
+    "body": ["while (${1:condition}) {", "  # Your code here", "}"],
+    "description": "Creates a while loop in PowerShell."
+  },
+
+  "PowerShell Switch Statement": {
+    "prefix": "cotrSwitch",
+    "body": [
+      "switch (${1:variable}) {",
+      "  ${2:value1} {",
+      "    # Your code here",
+      "    break",
+      "  }",
+      "  ${3:value2} {",
+      "    # Your code here",
+      "    break",
+      "  }",
+      "  default {",
+      "    # Your code here",
+      "  }",
+      "}"
+    ],
+    "description": "Creates a switch statement in PowerShell."
+  },
+
+  "PowerShell Function": {
+    "prefix": "cotrFunc",
+    "body": [
+      "function ${2:myFunction} {",
+      "  param (",
+      "    ${3:parameters}",
+      "  )",
+      "",
+      "  ${4:# Your code here}",
+      "}"
+    ],
+    "description": "Creates a function in PowerShell."
+  },
+
+  "PowerShell Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "# In PowerShell, functions can have arguments with default values.",
+      "function ${2:myFunction} {",
+      "  param (",
+      "    [${3:Type}] $${4:arg1},",
+      "    [${5:Type}] $${6:arg2} = ${7:defaultValue}",
+      "  )",
+      "",
+      "  ${8:# Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in PowerShell, including an argument with a default value."
+  },
+
+  "PowerShell Named Arguments Function": {
+    "prefix": "cotrFuncArgsNamed",
+    "body": [
+      "function ${2:MyFunction} {",
+      "    param(",
+      "        [Parameter(Mandatory)]",
+      "        [${3:type}] ${4:$arg1},",
+      "        [Parameter(Mandatory)]",
+      "        [${5:type}] ${6:$arg2}",
+      "    )",
+      "    ${7:# Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with named arguments in PowerShell."
+  },  
+
+  "PowerShell Arrow Function": {
+    "prefix": "cotrFuncArrow",
+    "body": [
+      "{${1:parameters} ->",
+      "    ${2:# Your code here}",
+      "}"
+    ],
+    "description": "Represents an arrow function-like syntax using a script block in PowerShell."
+  },  
+
+  "PowerShell Anonymous Function": {
+    "prefix": "cotrFuncAnon",
+    "body": [
+      "{",
+      "    param(${1:parameters})",
+      "    ${2:# Your code here}",
+      "}"
+    ],
+    "description": "Creates an anonymous function (script block) in PowerShell."
+  },  
+
+
+  "PowerShell Comment": {
+    "prefix": "cotrComment",
+    "body": ["# ${1:Your comment here}"],
+    "description": "Creates a single-line comment in PowerShell."
+  },
+
+  "PowerShell Multi-Line Comment": {
+    "prefix": "cotrCommentMulti",
+    "body": ["<#", "${1:Your comment here}", "#>"],
+    "description": "Creates a multi-line comment in PowerShell."
+  },
+
+  "PowerShell Throw Exception": {
+    "prefix": "cotrThrow",
+    "body": ["throw '${1:Your message here}'"],
+    "description": "Throws an exception in PowerShell."
+  },
+
+  "PowerShell Try Catch": {
+    "prefix": "cotrTryCatch",
+    "body": [
+      "try {",
+      "  # Your code here",
+      "} catch {",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Creates a try...catch block in PowerShell."
+  },
+
+  "PowerShell Class": {
+    "prefix": "cotrClass",
+    "body": ["class ${1:MyClass} {", "  # Your code here", "}"],
+    "description": "Creates a class in PowerShell."
+  },
+
+  "PowerShell If Statement": {
+    "prefix": "cotrIf",
+    "body": ["if (${1:condition}) {", "  # Your code here", "}"],
+    "description": "Creates an if statement in PowerShell."
+  },
+
+  "PowerShell If Else Statement": {
+    "prefix": "cotrIfElse",
+    "body": [
+      "if (${1:condition}) {",
+      "  # Your code here",
+      "} else {",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Creates an if...else statement in PowerShell."
+  },
+
+  "PowerShell Ternary Operator": {
+    "prefix": "cotrTernary",
+    "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
+    "description": "Creates a ternary operator in PowerShell."
+  },
+
+  "PowerShell Function Arguments": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "# In PowerShell, functions can have arguments with default values.",
+      "function ${2:myFunction} {",
+      "  param (",
+      "    [${3:Type}] $${4:arg1},",
+      "    [${5:Type}] $${6:arg2} = ${7:defaultValue}",
+      "  )",
+      "",
+      "  ${8:# Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in PowerShell, including an argument with a default value."
+  },
+
+  "PowerShell Lambda Function (Script Block)": {
+    "prefix": "cotrFuncLambda",
+    "body": [
+      "# PowerShell does not have a 'lambda' keyword.",
+      "# Instead, script blocks are used as anonymous functions.",
+      "",
+      "$lambda = {",
+      "    param(${1:parameters})",
+      "    ${2:# Your code here}",
+      "}",
+      "",
+      "# Usage",
+      "$result = $lambda.Invoke(${3:arguments})",
+      "Write-Host \"Result: $result\""
+    ],
+    "description": "Creates a script block (similar to a lambda function) in PowerShell."
+  },  
+
+  "PowerShell Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "# PowerShell Function Syntax",
+      "# Basic function:",
+      "# function functionName {",
+      "#   param (",
+      "#     parameters",
+      "#   )",
+      "#   # Your code here",
+      "# }",
+      "",
+      "# Function with arguments:",
+      "# function functionName {",
+      "#   param (",
+      "#     [Type] $arg1,",
+      "#     [Type] $arg2,",
+      "#     ...",
+      "#   )",
+      "#   # Your code here",
+      "# }"
+    ],
+    "description": "Outlines the syntax for functions in PowerShell."
+  },
+
+  "PowerShell Generate List": {
+    "prefix": "cotrGenList",
+    "body": ["1..${1:length} | ForEach-Object { ${2:'item'} + $_ }"],
+    "description": "Generates a list of a specific length in PowerShell."
+  },
+
+  "PowerShell Generate Map": {
+    "prefix": "cotrGenMap",
+    "body": [
+      "# PowerShell does not have a built-in way to generate a map with a specific number of key-value pairs.",
+      "# You can use a loop or a custom function to achieve this."
+    ],
+    "description": "Explains how to generate a map in PowerShell."
+  },
+
+  "PowerShell Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "# Recommended High-Level PowerShell Project Structure:",
+      "",
+      "# - project_name/",
+      "#   - Contains all project files.",
+      "# - modules/",
+      "#   - Contains PowerShell modules.",
+      "# - scripts/",
+      "#   - Contains PowerShell scripts.",
+      "# - tests/",
+      "#   - Contains unit tests.",
+      "",
+      "# Note:",
+      "# - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for PowerShell."
+  },
+
+  "PowerShell Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "# Recommended PowerShell Source Directory Organization (Feature/Module):",
+      "",
+      "# - modules/",
+      "#   - rendering/",
+      "#     - Contains source code for rendering features.",
+      "#   - authentication/",
+      "#     - Contains source code for authentication features.",
+      "#   - database/",
+      "#     - Contains source code for database interactions.",
+      "#   - ... (Organize by feature or module)",
+      "",
+      "# Note:",
+      "# - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for PowerShell."
+  },
+
+  "PowerShell Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "# Recommended PowerShell Source Directory Organization (File Type):",
+      "",
+      "# - scripts/",
+      "#   - functions.ps1",
+      "#     - Contains custom functions.",
+      "#   - data_loading.ps1",
+      "#     - Contains scripts for loading data.",
+      "#   - analysis.ps1",
+      "#     - Contains scripts for data analysis.",
+      "#   - ... (Organize by file type)",
+      "",
+      "# Note:",
+      "# - This approach can be helpful for smaller projects or specific use cases."
+    ],
+    "description": "Explains a file type-based source directory organization for PowerShell."
+  },
+
+  "PowerShell Static Variable": {
+    "prefix": "cotrVarStatic",
+    "body": [
+      "# PowerShell does not have static variables in the same way as some other languages.",
+      "# You can use class variables or module variables to achieve similar functionality."
+    ],
+    "description": "Explains alternatives to static variables in PowerShell."
+  },
+
+  "PowerShell Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "# PowerShell Variable Declaration Syntax:",
+      "",
+      "# - $: (Scope: Global or Function)",
+      "#   - Variables start with a dollar sign.",
+      "#   - Can be reassigned and redeclared within their scope.",
+      "#   - Use with caution due to potential scoping issues.",
+      "",
+      "# - const: (Scope: Global)",
+      "#   - Cannot be reassigned or redeclared.",
+      "#   - Use for values that should remain constant.",
+      "",
+      "# Note:",
+      "# - PHP does not have a direct equivalent to 'let'.",
+      "# - Use '$' for most variable declarations.",
+      "# - Use 'const' for values that are known at compile time."
+    ],
+    "description": "Explains PowerShell variable declaration syntax"
+  }
+}

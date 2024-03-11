@@ -1,0 +1,618 @@
+{
+  "Perl Info": {
+    "prefix": "cotrInfo",
+    "body": [
+      "# Typing: Dynamically typed",
+      "# Paradigm: Multi-paradigm: procedural, object-oriented, scripting",
+      "# Compilation: Interpreted",
+      "# Concurrency: Supports multi-threading with the threads module"
+    ],
+    "description": "Provides general information about the Perl programming language."
+  },
+
+  "Perl Entry Point": {
+    "prefix": "cotrEntry",
+    "body": [
+      "# Perl Entry Point",
+      "# To run this program, use: `perl filename.pl`",
+      "",
+      "use strict;",
+      "use warnings;",
+      "",
+      "print \"Hello, World!\\n\";"
+    ],
+    "description": "Creates the entry point of a Perl script."
+  },
+
+  "Perl Project Structure (High-Level)": {
+    "prefix": "cotrStructure",
+    "body": [
+      "# Recommended High-Level Perl Project Structure:",
+      "",
+      "# - project_name/",
+      "#   - Contains all project files.",
+      "# - lib/",
+      "#   - Contains all source code.",
+      "# - bin/",
+      "#   - Contains executable scripts.",
+      "# - test/",
+      "#   - Contains unit tests.",
+      "",
+      "# Note:",
+      "# - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for Perl."
+  },
+
+  "Perl Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "# Recommended Perl Source Directory Organization (Feature/Module):",
+      "",
+      "# - lib/",
+      "#   - rendering/",
+      "#     - Contains source code for rendering features.",
+      "#   - authentication/",
+      "#     - Contains source code for authentication features.",
+      "#   - database/",
+      "#     - Contains source code for database interactions.",
+      "#   - ... (Organize by feature or module)",
+      "",
+      "# Note:",
+      "# - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for Perl."
+  },
+
+  "Perl Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "# Recommended Perl Source Directory Organization (File Type):",
+      "",
+      "# - lib/",
+      "#   - models/",
+      "#     - Contains data models and classes.",
+      "#   - helpers/",
+      "#     - Contains helper functions.",
+      "#   - services/",
+      "#     - Contains business logic.",
+      "#   - ... (Organize by file type)",
+      "",
+      "# Note:",
+      "# - This approach can be helpful for smaller projects or specific use cases."
+    ],
+    "description": "Explains a file type-based source directory organization for Perl."
+  },
+
+  "Perl Mathematical Operators": {
+    "prefix": "cotrOperators",
+    "body": [
+      "# Perl Mathematical Operators",
+      "# Addition: +",
+      "# Subtraction: -",
+      "# Multiplication: *",
+      "# Division: /",
+      "# Modulus (Remainder): %",
+      "# Exponentiation: **",
+      "# Increment: Use += 1",
+      "# Decrement: Use -= 1",
+      "# Assignment: =",
+      "# Addition assignment: +=",
+      "# Subtraction assignment: -=",
+      "# Multiplication assignment: *=",
+      "# Division assignment: /=",
+      "# Modulus assignment: %=",
+      "# Exponentiation assignment: **="
+    ],
+    "description": "Lists the mathematical operators in Perl."
+  },
+
+  "Perl Equal To": {
+    "prefix": "cotrEqual",
+    "body": ["=="],
+    "description": "Perl equal to operator."
+  },
+
+  "Perl Not Equal To": {
+    "prefix": "cotrNotEqual",
+    "body": ["!="],
+    "description": "Perl not equal to operator."
+  },
+
+  "Perl Boolean Operators": {
+    "prefix": "cotrOperatorsBool",
+    "body": [
+      "# Perl Boolean Operators",
+      "# Logical AND: && or and",
+      "# Logical OR: || or or",
+      "# Logical NOT: ! or not",
+      "# Equality: ==",
+      "# Inequality: !=",
+      "# Greater than: >",
+      "# Less than: <",
+      "# Greater than or equal to: >=",
+      "# Less than or equal to: <="
+    ],
+    "description": "Lists the boolean operators in Perl."
+  },
+
+  "Perl Type Check": {
+    "prefix": "cotrTypeCheck",
+    "body": ["ref ${1:variable}"],
+    "description": "Gets the type of a variable in Perl."
+  },
+
+  "Perl Type Comparison": {
+    "prefix": "cotrTypeCompare",
+    "body": [
+      "# Check if two variables have the same type:",
+      "if (ref ${1:variable1} eq ref ${2:variable2}) {",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Compares the types of two variables in Perl."
+  },
+
+  "Perl Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "# Perl Type Conversion:",
+      "",
+      "# Implicit conversions (Perl performs automatically):",
+      "# - Can be unpredictable, especially with loose equality (==).",
+      "",
+      "# Explicit conversions:",
+      "# - int(variable)  // Converts to integer",
+      "# - 0 + variable  // Converts to number",
+      "# - \"\" . variable  // Converts to string",
+      "",
+      "# Note:",
+      "# - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control."
+    ],
+    "description": "Explains type conversion in Perl."
+  },
+
+  "Perl Types": {
+    "prefix": "cotrTypes",
+    "body": [
+      "$BLOCK_COMMENT_START",
+      "Perl is a dynamically typed language.",
+      "",
+      "Some common types in Perl include:",
+      "- Scalar: Single value (numbers, strings, references)",
+      "- Array: Ordered list of scalars",
+      "- Hash: Unordered collection of key-value pairs",
+      "- Code: Subroutine reference",
+      "- Filehandle: File handle",
+      "- Regexp: Regular expression",
+      "- undef: Represents an undefined value",
+      "$BLOCK_COMMENT_END"
+    ],
+    "description": "Lists some common types in Perl."
+  },
+
+  "Perl String Type": {
+    "prefix": "cotrTypesString",
+    "body": ["# Perl uses scalars for strings."],
+    "description": "Perl uses scalars for strings."
+  },
+
+  "Perl Integer Type": {
+    "prefix": "cotrTypesInt",
+    "body": ["# Perl uses scalars for integers."],
+    "description": "Perl uses scalars for integers."
+  },
+
+  "Perl Double Type": {
+    "prefix": "cotrTypesNum",
+    "body": ["# Perl uses scalars for floating-point numbers."],
+    "description": "Perl uses scalars for floating-point numbers."
+  },
+
+  "Perl Boolean Type": {
+    "prefix": "cotrTypesBool",
+    "body": ["# Perl uses 1 and 0 for boolean values."],
+    "description": "Perl uses 1 and 0 for boolean values."
+  },
+
+  "Perl Boolean True": {
+    "prefix": "cotrTypesBoolTrue",
+    "body": ["1"],
+    "description": "The Perl true value."
+  },
+
+  "Perl Boolean False": {
+    "prefix": "cotrTypesBoolFalse",
+    "body": ["0"],
+    "description": "The Perl false value."
+  },
+
+  "Perl Date Type": {
+    "prefix": "cotrTypesDate",
+    "body": ["use DateTime"],
+    "description": "The Perl DateTime module."
+  },
+
+  "Perl Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": ["%hash"],
+    "description": "The Perl hash type, equivalent to a map."
+  },
+
+  "Perl List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["@array"],
+    "description": "The Perl array type, equivalent to a list."
+  },
+
+  "Perl Date Now": {
+    "prefix": "cotrNow",
+    "body": ["use DateTime", "", "DateTime->now"],
+    "description": "Gets the current date and time in Perl."
+  },
+
+  "Perl Null Type": {
+    "prefix": ["cotrTypesNull", "cotrNull"],
+    "body": ["undef"],
+    "description": "The Perl undef value."
+  },
+
+  "Perl Dynamic Type": {
+    "prefix": ["cotrTypesDynamic", "cotrDynamic"],
+    "body": ["# Perl is a dynamically typed language."],
+    "description": "Perl is a dynamically typed language."
+  },
+
+  "Perl Create Variable": {
+    "prefix": "cotrVar",
+    "body": ["my $${1:myVar} = $2;"],
+    "description": "Creates a variable in Perl."
+  },
+
+  "Perl Variable Declaration Syntax": {
+    "prefix": "cotrVarSyntax",
+    "body": [
+      "# Perl Variable Declaration Syntax:",
+      "",
+      "# - my: (Scope: Block)",
+      "#   - Declares a lexically scoped variable.",
+      "#   - Preferred for most variable declarations.",
+      "",
+      "# - our: (Scope: Package)",
+      "#   - Declares a package-scoped variable.",
+      "#   - Use for variables that need to be shared across the package.",
+      "",
+      "# - local: (Scope: Block)",
+      "#   - Declares a dynamically scoped variable.",
+      "#   - Use with caution due to potential scoping issues.",
+      "",
+      "# Note:",
+      "# - Use 'my' for most variable declarations.",
+      "# - Use 'our' for package-level variables.",
+      "# - Avoid using 'local' unless you have a specific reason."
+    ],
+    "description": "Explains Perl variable declaration syntax"
+  },
+
+  "Perl Create Nullable Variable": {
+    "prefix": "cotrVarNullable",
+    "body": ["my $${1:myVar};  # Variable can be undefined (undef)."],
+    "description": "Creates a nullable variable in Perl."
+  },
+
+  "Perl Static Variable": {
+    "prefix": "cotrVarStatic",
+    "body": [
+      "our $${1:myStaticVar} = ${2:value};",
+      "",
+      "# Perl does not have static variables in the traditional sense.",
+      "# Access the package variable",
+      "# $${1:myStaticVar}"
+    ],
+    "description": "Creates a package variable in Perl."
+  },
+
+  "Perl Create Typed Variable": {
+    "prefix": "cotrVarTyped",
+    "body": [
+      "# Note: Perl is dynamically typed; explicit type annotations are not used.",
+      "my $${1:myVar} = $2;"
+    ],
+    "description": "Creates a variable in Perl with a comment about dynamic typing."
+  },
+
+  "Perl Interpolate String": {
+    "prefix": "cotrInterpolate",
+    "body": ["\"Your string here $${1:variable}\""],
+    "description": "Interpolates a variable into a string in Perl."
+  },
+
+  "Perl Concatenate Strings": {
+    "prefix": "cotrConcat",
+    "body": ["\"${1:string1}\" . \"${2:string2}\""],
+    "description": "Concatenates two strings in Perl."
+  },
+
+  "Perl Create String Variable": {
+    "prefix": "cotrVarString",
+    "body": ["my $${1:myString} = \"${2:Your string here}\";"],
+    "description": "Creates a string variable in Perl."
+  },
+
+  "Perl Create Multi-Line String Variable": {
+    "prefix": "cotrVarStringMulti",
+    "body": [
+      "my $${1:myString} = <<'END_STRING';",
+      "${2:Line 1}",
+      "${3:Line 2}",
+      "${4:Line 3}",
+      "END_STRING"
+    ],
+    "description": "Creates a multi-line string variable in Perl."
+  },
+
+  "Perl Create Integer Variable": {
+    "prefix": "cotrVarInt",
+    "body": ["my $${1:myInt} = ${2:0};"],
+    "description": "Creates an integer variable in Perl."
+  },
+
+  "Perl Create Float Variable": {
+    "prefix": "cotrVarNum",
+    "body": ["my $${1:myFloat} = ${2:0.0};"],
+    "description": "Creates a float variable in Perl."
+  },
+
+  "Perl Create Boolean Variable": {
+    "prefix": "cotrVarBool",
+    "body": ["my $${1:myBool} = ${2:1};"],
+    "description": "Creates a boolean variable in Perl."
+  },
+
+  "Perl Create Array Variable": {
+    "prefix": "cotrVarList",
+    "body": ["my @${1:myArray} = (${2:items});"],
+    "description": "Creates an array variable in Perl."
+  },
+
+  "Perl Create Hash Variable": {
+    "prefix": "cotrVarMap",
+    "body": ["my %${1:myHash} = (${2:key} => ${3:value});"],
+    "description": "Creates a hash variable in Perl."
+  },
+
+  "Perl Create Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": [
+      "my $${1:myDate} = DateTime->new( year => ${2:year}, month => ${3:month}, day => ${4:day} );"
+    ],
+    "description": "Creates a date variable in Perl."
+  },
+
+  "Perl Create Constant": {
+    "prefix": "cotrConst",
+    "body": ["use constant ${1:MY_CONST} => $2;"],
+    "description": "Creates a constant variable in Perl using the constant pragma."
+  },
+
+  "Perl Print": {
+    "prefix": "cotrPrint",
+    "body": ["print '${1:Your message here}\\n';"],
+    "description": "Prints a message to the console in Perl."
+  },
+
+  "Perl Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "print <<'END_STRING';",
+      "${1:Line 1}",
+      "${2:Line 2}",
+      "${3:Line 3}",
+      "END_STRING"
+    ],
+    "description": "Prints a multi-line message to the console in Perl."
+  },
+
+  "Perl For Loop": {
+    "prefix": "cotrForLoop",
+    "body": [
+      "for (my $${1:i} = 0; $1 < ${2:10}; $1++) {",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Creates a for loop that iterates through a set of numbers with the index in Perl."
+  },
+
+  "Perl For Each Loop": {
+    "prefix": ["cotrForEach", "cotrForIn"],
+    "body": [
+      "foreach my $${1:item} (@${2:iterable}) {",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Iterates over an iterable object in Perl."
+  },
+
+  "Perl While Loop": {
+    "prefix": "cotrWhileLoop",
+    "body": ["while (${1:condition}) {", "  # Your code here", "}"],
+    "description": "Creates a while loop in Perl."
+  },
+
+  "Perl Case Statement": {
+    "prefix": "cotrSwitch",
+    "body": [
+      "case ${1:variable} {",
+      "when ${2:value1}",
+      "  # Your code here",
+      "when ${4:value2}",
+      "  # Your code here",
+      "else",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Creates a case statement in Perl."
+  },
+
+  "Perl If Statement": {
+    "prefix": "cotrIf",
+    "body": ["if (${1:condition}) {", "  # Your code here", "}"],
+    "description": "Creates an if statement in Perl."
+  },
+
+  "Perl If Else Statement": {
+    "prefix": "cotrIfElse",
+    "body": [
+      "if (${1:condition}) {",
+      "  # Your code here",
+      "} else {",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Creates an if...else statement in Perl."
+  },
+
+  "Perl Ternary Operator": {
+    "prefix": "cotrTernary",
+    "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
+    "description": "Creates a ternary operator in Perl."
+  },
+
+  "Perl Function": {
+    "prefix": "cotrFunc",
+    "body": [
+      "sub ${2:myFunction} {",
+      "  my (${3:parameters}) = @_;",
+      "",
+      "  ${4:# Your code here}",
+      "}"
+    ],
+    "description": "Creates a function in Perl."
+  },
+
+  "Perl Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "# Perl Function Syntax",
+      "# Basic function:",
+      "# sub functionName {",
+      "#   my ($parameters) = @_;",
+      "#   # Your code here",
+      "# }",
+      "",
+      "# Function with arguments:",
+      "# sub functionName {",
+      "#   my ($arg1, $arg2, ...) = @_;",
+      "#   # Your code here",
+      "# }"
+    ],
+    "description": "Outlines the syntax for functions in Perl."
+  },
+
+  "Perl Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "# In Perl, you can use default arguments in function definitions.",
+      "sub ${2:myFunction} {",
+      "  my (${3:$arg1}, ${4:$arg2} = ${5:'defaultVal'}) = @_;",
+      "",
+      "  ${6:# Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments in Perl, including an argument with a default value."
+  },
+
+  "Perl Named Arguments (Alternative)": {
+    "prefix": "cotrFuncArgsNamed",
+    "body": [
+      "# Perl does not have named arguments in the traditional sense.",
+      "# You can use record syntax or higher-order functions to achieve similar functionality."
+    ],
+    "description": "Explains alternatives to named arguments in Perl."
+  },
+  "Perl Arrow Function": {
+    "prefix": ["cotrFuncArrow"],
+    "body": [
+      "${2:my_function} = ->(${3:parameters}) {",
+      "  ${4:# Your code here}",
+      "}"
+    ],
+    "description": "Creates an arrow function (lambda) in Perl."
+  },
+
+  "Perl Lambda Function": {
+    "prefix": ["cotrFuncLambda"],
+    "body": [
+      "${2:my_function} = ->(${3:parameters}) {",
+      "  ${4:# Your code here}",
+      "}"
+    ],
+    "description": "Creates an arrow function (lambda) in Perl."
+  },
+
+  "Perl Anonymous Function": {
+    "prefix": "cotrFuncAnon",
+    "body": ["lambda { |${1:parameters}|", "  # Your code here", "}"],
+    "description": "Creates an anonymous function (lambda) in Perl."
+  },
+
+  "Perl Comment": {
+    "prefix": "cotrComment",
+    "body": ["# ${1:Your comment here}"],
+    "description": "Creates a single-line comment in Perl."
+  },
+
+  "Perl Multi-Line Comment": {
+    "prefix": "cotrCommentMulti",
+    "body": ["=begin", "${1:Your comment here}", "=end"],
+    "description": "Creates a multi-line comment in Perl."
+  },
+
+  "Perl Throw Exception": {
+    "prefix": "cotrThrow",
+    "body": ["die '${1:Your message here}';"],
+    "description": "Throws an exception in Perl."
+  },
+
+  "Perl Try Catch": {
+    "prefix": "cotrTryCatch",
+    "body": [
+      "eval {",
+      "  # Your code here",
+      "};",
+      "if ($@) {",
+      "  # Your code here",
+      "}"
+    ],
+    "description": "Creates a try...catch block in Perl."
+  },
+
+  "Perl Class": {
+    "prefix": "cotrClass",
+    "body": ["package ${1:MyClass};", "", "# Your code here"],
+    "description": "Creates a class in Perl."
+  },
+
+  "Perl Enum": {
+    "prefix": "cotrEnum",
+    "body": [
+      "# Perl does not have a built-in enum type. Use a list or hash instead."
+    ],
+    "description": "Explains the absence of a built-in enum type in Perl."
+  },
+
+  "Perl Generate List": {
+    "prefix": "cotrGenList",
+    "body": ["my @${1:listName} = (${2:initialValue}) x ${3:length};"],
+    "description": "Generates a list (array) of a specific length and initial value in Perl."
+  },
+
+  "Perl Generate Map": {
+    "prefix": "cotrGenMap",
+    "body": [
+      "# Perl does not have a built-in way to generate a map (hash) with a specific number of key-value pairs.",
+      "# You can use a loop or a custom function to achieve this."
+    ],
+    "description": "Explains how to generate a map in Perl."
+  }
+}
