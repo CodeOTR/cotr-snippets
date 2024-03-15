@@ -1,0 +1,558 @@
+{
+  "Bash Info": {
+    "prefix": ["cotrInfo", "languageInfo", "info"],
+    "body": [
+      "Typing: Dynamically typed",
+      "Paradigm: Imperative",
+      "Compilation: Interpreted",
+      "Concurrency: No"
+    ],
+    "description": "Provides general information about the Bash scripting language."
+  },
+  "Bash Shebang": {
+    "prefix": "cotrShebang",
+    "body": ["#!/bin/bash"],
+    "description": "Defines the interpreter for the script."
+  },
+  "Bash Comment": {
+    "prefix": "cotrComment",
+    "body": ["# ${1:Your comment here}"],
+    "description": "Creates a single-line comment."
+  },
+  "Bash Multi-Line Comment": {
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
+    "body": [
+      ": <<'END'",
+      "${1:Your comment here}",
+      "${2:Your comment here}",
+      "${3:Your comment here}",
+      "END"
+    ],
+    "description": "Creates a multi-line comment."
+  },
+  "Bash Print": {
+    "prefix": "cotrPrint",
+    "body": ["echo ${1:'Your message here'}"],
+    "description": "Prints a message to the console."
+  },
+  "Bash Variable": {
+    "prefix": "cotrVar",
+    "body": ["${1:myVar}=${2:value}"],
+    "description": "Creates a variable."
+  },
+  "Bash Read Input": {
+    "prefix": "cotrRead",
+    "body": ["read -p '${1:Prompt: }' ${2:varName}"],
+    "description": "Reads user input and stores it in a variable."
+  },
+  "Bash If Statement": {
+    "prefix": "cotrIf",
+    "body": ["if [ ${1:condition} ]; then", "  ${2:// Your code here}", "fi"],
+    "description": "Creates an if statement."
+  },
+  "Bash If Else Statement": {
+    "prefix": "cotrIfElse",
+    "body": [
+      "if [ ${1:condition} ]; then",
+      "  ${2:// Your code here}",
+      "else",
+      "  ${3:// Your code here}",
+      "fi"
+    ],
+    "description": "Creates an if...else statement."
+  },
+  "Bash For Loop": {
+    "prefix": "cotrForLoop",
+    "body": ["for ${1:i} in ${2:list}; do", "  ${3:// Your code here}", "done"],
+    "description": "Creates a for loop that iterates through a list."
+  },
+  "Bash While Loop": {
+    "prefix": "cotrWhileLoop",
+    "body": [
+      "while [ ${1:condition} ]; do",
+      "  ${2:// Your code here}",
+      "done"
+    ],
+    "description": "Creates a while loop."
+  },
+  "Bash Function": {
+    "prefix": "cotrFunc",
+    "body": ["${2:myFunction}() {", "  ${3:// Your code here}", "}"],
+    "description": "Creates a function."
+  },
+  "Bash Function Args": {
+    "prefix": "cotrFuncArgs",
+    "body": [
+      "${2:myFunction}() {",
+      "  local ${3:arg1}=${4:\\$1}",
+      "  local ${5:arg2}=${6:\\$2}",
+      "  ${7:// Your code here}",
+      "}"
+    ],
+    "description": "Creates a function with arguments."
+  },
+  "Bash Case Statement": {
+    "prefix": "cotrCase",
+    "body": [
+      "case ${1:variable} in",
+      "  ${2:pattern1})",
+      "    ${3:// Your code here}",
+      "    ;;",
+      "  ${4:pattern2})",
+      "    ${5:// Your code here}",
+      "    ;;",
+      "  *)",
+      "    ${6:// Your code here}",
+      "    ;;",
+      "esac"
+    ],
+    "description": "Creates a case statement."
+  },
+  "Bash Concatenate Strings": {
+    "prefix": "cotrConcat",
+    "body": [
+      "# Bash uses string juxtaposition for concatenation:",
+      "${1:var1}${2:var2}"
+    ],
+    "description": "Concatenates strings in Bash."
+  },
+  "Bash Constant": {
+    "prefix": "cotrConst",
+    "body": [
+      "# Bash uses readonly variables for constants:",
+      "readonly ${1:myConst}=${2:value}"
+    ],
+    "description": "Creates a constant variable in Bash using the readonly keyword."
+  },
+  "Bash Entry Point": {
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
+    "body": [
+      "# Bash scripts typically start with the shebang line:",
+      "#!/bin/bash"
+    ],
+    "description": "Defines the interpreter for the script."
+  },
+  "Bash Equal To": {
+    "prefix": ["cotrEqual", "equal"],
+    "body": [
+      "# Bash uses '==' for string equality and '-eq' for numeric equality:",
+      "[ ${1:var1} == ${2:var2} ]"
+    ],
+    "description": "Checks for equality in Bash."
+  },
+  "Bash For...In Loop": {
+    "prefix": "cotrForIn",
+    "body": [
+      "for ${1:item} in ${2:list}; do",
+      "  ${3:// Your code here}",
+      "done"
+    ],
+    "description": "Iterates over items in a list in Bash."
+  },
+  "Bash Anonymous Function": {
+    "prefix": "cotrFuncAnon",
+    "body": [
+      "# Bash doesn't have true anonymous functions, but you can use function expressions:",
+      "${1:myFunction}() { ${2:// Your code here} }"
+    ],
+    "description": "Creates a function expression in Bash."
+  },
+  "Bash Function Named Args": {
+    "prefix": "cotrFuncArgsNamed",
+    "body": [
+      "# Bash doesn't directly support named arguments, but you can simulate them using associative arrays or options parsing."
+    ],
+    "description": "Named arguments are not directly supported in Bash."
+  },
+  "Bash Arrow Function": {
+    "prefix": "cotrFuncArrow",
+    "body": ["# Bash doesn't have arrow functions."],
+    "description": "Arrow functions are not supported in Bash."
+  },
+  "Bash Lambda": {
+    "prefix": ["cotrFuncLambda", "cotrLambda"],
+    "body": ["# Bash doesn't have lambda functions."],
+    "description": "Lambda functions are not supported in Bash."
+  },
+  "Bash Function Syntax": {
+    "prefix": "cotrFuncSyntax",
+    "body": [
+      "# Bash Function Syntax:",
+      "function ${1:functionName} {",
+      "  ${2:// Your code here}",
+      "}"
+    ],
+    "description": "Outlines the syntax for functions in Bash."
+  },
+  "Bash Generate List": {
+    "prefix": ["cotrGenList", "generateList", "listGen"],
+    "body": [
+      "# Bash doesn't have built-in list generation, but you can use loops or command substitution:",
+      "${1:myList}=( $(for i in {1..${2:10}}; do echo item$i; done) )"
+    ],
+    "description": "Explains how to generate a list in Bash using loops or command substitution."
+  },
+  "Bash Generate Map": {
+    "prefix": "cotrGenMap",
+    "body": [
+      "# Bash doesn't have built-in map generation, but you can use associative arrays:",
+      "declare -A ${1:myMap}; for i in {1..${2:10}}; do myMap[key$i]=value$i; done"
+    ],
+    "description": "Explains how to generate a map in Bash using associative arrays."
+  },
+  "Bash Interpolate String": {
+    "prefix": "cotrInterpolate",
+    "body": [
+      "# Bash uses double quotes for variable interpolation:",
+      "echo \"Hello, ${1:name}!\""
+    ],
+    "description": "Interpolates a string in Bash."
+  },
+  "Bash Not Equal To": {
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
+    "body": [
+      "# Bash uses '!=' for string inequality and '-ne' for numeric inequality:",
+      "[ ${1:var1} != ${2:var2} ]"
+    ],
+    "description": "Checks for inequality in Bash."
+  },
+  "Bash Date Now": {
+    "prefix": "cotrNow",
+    "body": ["# Get the current date and time:", "now=$(date)"],
+    "description": "Gets the current date and time in Bash."
+  },
+  "Bash Mathematical Operators": {
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
+    "body": [
+      "# Bash Mathematical Operators:",
+      "- Addition: +",
+      "- Subtraction: -",
+      "- Multiplication: *",
+      "- Division: /",
+      "- Modulus (Remainder): %",
+      "- Exponentiation: **",
+      "- Increment: ((var++)) or ((var+=1))",
+      "- Decrement: ((var--)) or ((var-=1))",
+      "- Assignment: =",
+      "- Addition assignment: +=",
+      "- Subtraction assignment: -=",
+      "- Multiplication assignment: *=",
+      "- Division assignment: /=",
+      "- Modulus assignment: %=",
+      "- Exponentiation assignment: **="
+    ],
+    "description": "Lists the mathematical operators in Bash."
+  },
+  "Bash Boolean Operators": {
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
+    "body": [
+      "# Bash Boolean Operators:",
+      "- Logical AND: &&",
+      "- Logical OR: ||",
+      "- Logical NOT: !",
+      "- Equality: ==",
+      "- Inequality: !=",
+      "- Greater than: -gt",
+      "- Less than: -lt",
+      "- Greater than or equal to: -ge",
+      "- Less than or equal to: -le"
+    ],
+    "description": "Lists the boolean operators in Bash."
+  },
+  "Bash Print Multi": {
+    "prefix": "cotrPrintMulti",
+    "body": [
+      "# Use echo with -e for multi-line output:",
+      "echo -e \"${1:Line 1}\\n${2:Line 2}\\n${3:Line 3}\""
+    ],
+    "description": "Prints a multi-line message to the console in Bash."
+  },
+  "Bash Project Structure (High-Level)": {
+    "prefix": ["cotrStructure", "structure", "architecture"],
+    "body": [
+      "# Recommended High-Level Bash Project Structure:",
+      "",
+      "# - bin/",
+      "#   - Contains executable scripts.",
+      "# - lib/",
+      "#   - Contains reusable functions and libraries.",
+      "# - src/",
+      "#   - Contains source code for scripts.",
+      "# - test/",
+      "#   - Contains unit tests.",
+      "",
+      "# Note:",
+      "# - This is a basic structure; adjust based on project complexity and preferences."
+    ],
+    "description": "Explains a high-level project structure for Bash scripts."
+  },
+  "Bash Project Structure (Feature/Module)": {
+    "prefix": "cotrStructureFeatures",
+    "body": [
+      "# Organize source code by feature or module within src/:",
+      "",
+      "# - src/",
+      "#   - rendering/",
+      "#     - Contains scripts for rendering features.",
+      "#   - physics/",
+      "#     - Contains scripts for physics features.",
+      "#   - networking/",
+      "#     - Contains scripts for networking features.",
+      "#   - ... (Organize by feature or module)",
+      "",
+      "# Note:",
+      "# - This approach promotes modularity and is suitable for larger projects."
+    ],
+    "description": "Explains a feature/module-based source directory organization for Bash scripts."
+  },
+  "Bash Project Structure (File Type)": {
+    "prefix": "cotrStructureFiles",
+    "body": [
+      "# Organize source code by file type within src/:",
+      "",
+      "# - src/",
+      "#   - utils/",
+      "#     - Contains utility functions.",
+      "#   - data/",
+      "#     - Contains data processing scripts.",
+      "#   - tasks/",
+      "#     - Contains scripts for specific tasks.",
+      "#   - ... (Organize by file type)",
+      "",
+      "# Note:",
+      "# - This approach can be helpful for smaller projects or specific use cases."
+    ],
+    "description": "Explains a file type-based source directory organization for Bash scripts."
+  },
+  "Bash Switch Statement": {
+    "prefix": "cotrSwitch",
+    "body": [
+      "case ${1:variable} in",
+      "  ${2:pattern1})",
+      "    ${3:// Your code here}",
+      "    ;;",
+      "  ${4:pattern2})",
+      "    ${5:// Your code here}",
+      "    ;;",
+      "  *)",
+      "    ${6:// Your code here}",
+      "    ;;",
+      "esac"
+    ],
+    "description": "Creates a case statement in Bash."
+  },
+  "Bash Ternary Operator": {
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
+    "body": [
+      "# Bash doesn't have a ternary operator, but you can use an if statement:",
+      "${1:condition} && ${2:trueValue} || ${3:falseValue}"
+    ],
+    "description": "Explains how to simulate a ternary operator in Bash using an if statement."
+  },
+  "Bash Throw Exception": {
+    "prefix": ["cotrThrow", "throwError", "throwException"],
+    "body": [
+      "# Bash doesn't have exceptions, but you can exit with an error message:",
+      "echo \"Error: ${1:Your message here}\" >&2; exit 1"
+    ],
+    "description": "Explains how to simulate exception throwing in Bash."
+  },
+  "Bash Try Catch": {
+    "prefix": "cotrTryCatch",
+    "body": [
+      "# Bash doesn't have try/catch, but you can use set -e and trap ERR:",
+      "set -e; trap 'echo \"Error: ${1:Your message here}\" >&2; exit 1' ERR; ${2:// Your code here}"
+    ],
+    "description": "Explains how to simulate try/catch in Bash using set -e and trap ERR."
+  },
+  "Bash Type Check": {
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
+    "body": [
+      "# Bash is dynamically typed, but you can use file or grep for basic checks:",
+      "file ${1:variable} | grep -q '${2:type}'"
+    ],
+    "description": "Explains how to perform basic type checks in Bash."
+  },
+  "Bash Type Comparison": {
+    "prefix": ["cotrTypeCompare", "compareTypes"],
+    "body": [
+      "# Bash doesn't have direct type comparison, but you can use file or grep for basic checks."
+    ],
+    "description": "Bash doesn't have direct type comparison."
+  },
+  "Bash Type Conversion": {
+    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "body": [
+      "# Bash is dynamically typed, so explicit conversion is often not needed.",
+      "# However, you can use tools like awk or bc for specific conversions."
+    ],
+    "description": "Explains type conversion in Bash."
+  },
+  "Bash Types": {
+    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
+    "body": [
+      "# Bash is dynamically typed, but common data types include:",
+      "- string: Textual data",
+      "- integer: Numeric data (whole numbers)",
+      "- float: Numeric data (decimals)",
+      "- array: Ordered collection of values",
+      "- associative array: Key-value pairs"
+    ],
+    "description": "Describes common data types in Bash."
+  },
+  "Bash Boolean Type": {
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "body": ["# Bash uses 0 for false and non-zero values for true."],
+    "description": "Explains how Bash represents boolean values."
+  },
+  "Bash Boolean False": {
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
+    "body": ["# Bash represents false as 0."],
+    "description": "Indicates the representation of false in Bash."
+  },
+  "Bash Boolean True": {
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
+    "body": ["# Bash represents true as any non-zero value."],
+    "description": "Indicates the representation of true in Bash."
+  },
+  "Bash Date Type": {
+    "prefix": "cotrTypesDate",
+    "body": [
+      "# Bash doesn't have a dedicated date type, but you can use the 'date' command for date manipulation."
+    ],
+    "description": "Explains how to work with dates in Bash."
+  },
+  "Bash Dynamic Type": {
+    "prefix": "cotrTypesDynamic",
+    "body": [
+      "# Bash is dynamically typed; variables can hold different types of values."
+    ],
+    "description": "Highlights the dynamic nature of Bash variables."
+  },
+  "Bash Integer Type": {
+    "prefix": "cotrTypesInt",
+    "body": ["# Bash treats integers as numeric values without decimals."],
+    "description": "Describes integer representation in Bash."
+  },
+  "Bash List Type": {
+    "prefix": "cotrTypesList",
+    "body": ["# Bash uses arrays for lists:", "myList=(item1 item2 item3)"],
+    "description": "Describes list representation in Bash using arrays."
+  },
+  "Bash Map Type": {
+    "prefix": "cotrTypesMap",
+    "body": [
+      "# Bash uses associative arrays for maps:",
+      "declare -A myMap; myMap[key1]=value1; myMap[key2]=value2"
+    ],
+    "description": "Describes map representation in Bash using associative arrays."
+  },
+  "Bash Null Type": {
+    "prefix": "cotrTypesNull",
+    "body": [
+      "# Bash doesn't have a dedicated null type, but you can use an empty string or a special value like 'null' to represent null."
+    ],
+    "description": "Explains how to represent null values in Bash."
+  },
+  "Bash Number Type": {
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "body": [
+      "# Bash treats numbers as either integers or floating-point values."
+    ],
+    "description": "Describes number representation in Bash."
+  },
+  "Bash String Type": {
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "body": ["# Bash represents strings as sequences of characters."],
+    "description": "Describes string representation in Bash."
+  },
+  "Bash Create Boolean Variable": {
+    "prefix": "cotrVarBool",
+    "body": [
+      "# Bash uses 0 for false and non-zero values for true:",
+      "${1:myBoolean}=${2:0}"
+    ],
+    "description": "Creates a boolean variable in Bash."
+  },
+  "Bash Create Date Variable": {
+    "prefix": "cotrVarDate",
+    "body": [
+      "# Bash doesn't have a dedicated date type, but you can store date strings:",
+      "${1:myDate}=\\$(date)"
+    ],
+    "description": "Creates a variable holding a date string in Bash."
+  },
+  "Bash Create List Variable": {
+    "prefix": "cotrVarList",
+    "body": [
+      "# Create an array (list):",
+      "${1:myList}=( ${2:item1} ${3:item2} ${4:item3} )"
+    ],
+    "description": "Creates an array (list) variable in Bash."
+  },
+  "Bash Create Map Variable": {
+    "prefix": "cotrVarMap",
+    "body": [
+      "# Create an associative array (map):",
+      "declare -A ${1:myMap}",
+      "${1:myMap}[${2:key1}]=${3:value1}",
+      "${1:myMap}[${4:key2}]=${5:value2}"
+    ],
+    "description": "Creates an associative array (map) variable in Bash."
+  },
+  "Bash Create Nullable Variable": {
+    "prefix": "cotrVarNullable",
+    "body": [
+      "# Bash doesn't have null, but you can use an empty string or a special value:",
+      "${1:myVar}=${2:''}"
+    ],
+    "description": "Creates a variable that can hold an empty string or a special value to represent null in Bash."
+  },
+  "Bash Create Number Variable": {
+    "prefix": "cotrVarNum",
+    "body": ["# Assign a numeric value:", "${1:myNumber}=${2:10}"],
+    "description": "Creates a number variable in Bash."
+  },
+  "Bash Static Variable": {
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
+    "body": [
+      "# Bash doesn't have static variables in the same way as some other languages."
+    ],
+    "description": "Bash doesn't have static variables in the traditional sense."
+  },
+  "Bash Create String Variable": {
+    "prefix": "cotrVarString",
+    "body": ["# Assign a string value:", "${1:myString}=${2:'myValue'}"],
+    "description": "Creates a string variable in Bash."
+  },
+  "Bash Create Multi-Line String Variable": {
+    "prefix": "cotrVarStringMulti",
+    "body": [
+      "# Use a here document for multi-line strings:",
+      "${1:myString}<<EOF",
+      "${2:Line 1}",
+      "${3:Line 2}",
+      "${4:Line 3}",
+      "EOF"
+    ],
+    "description": "Creates a multi-line string variable in Bash using a here document."
+  },
+  "Bash Variable Declaration Syntax": {
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
+    "body": [
+      "# Bash Variable Declaration Syntax:",
+      "",
+      "# - varName=value: Assigns a value to a variable.",
+      "# - declare varName: Declares a variable without assigning a value.",
+      "# - readonly varName=value: Creates a read-only variable (constant)."
+    ],
+    "description": "Explains Bash variable declaration syntax."
+  },
+  "Bash Create Typed Variable": {
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
+    "body": [
+      "# Bash is dynamically typed, so variables don't have explicit types."
+    ],
+    "description": "Bash variables are dynamically typed."
+  }
+}

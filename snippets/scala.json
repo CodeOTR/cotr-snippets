@@ -1,6 +1,6 @@
 {
   "Scala Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "// Typing: Statically typed",
       "// Paradigm: Multi-paradigm: object-oriented, functional",
@@ -11,7 +11,7 @@
   },
 
   "Scala Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "// Scala Entry Point",
       "// To run this program, use: `scala Main.scala`",
@@ -24,68 +24,43 @@
   },
 
   "Scala Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "// Recommended High-Level Scala Project Structure:",
       "",
-      "// - src/",
-      "//   - Contains all source code.",
-      "// - target/",
-      "//   - Output directory for compiled class files.",
-      "// - lib/",
-      "//   - Contains external libraries (JAR files).",
+      "// - build.sbt: The build definition file for SBT (Scala Build Tool).",
       "// - project/",
-      "//   - Contains project configuration files.",
-      "// - test/",
-      "//   - Contains unit tests.",
+      "//   - Contains build-related scripts and configurations for SBT.",
+      "// - src/",
+      "//   - main/",
+      "//     - scala/",
+      "//       - Contains Scala source files organized by package.",
+      "//     - java/",
+      "//       - Optional: Contains Java source files if the project mixes Scala and Java.",
+      "//     - resources/",
+      "//       - Contains non-compiled resources like configurations, JSON files, etc.",
+      "//   - test/",
+      "//     - scala/",
+      "//       - Contains Scala test files, typically using frameworks like ScalaTest or Specs2.",
+      "//     - java/",
+      "//       - Optional: Contains Java test files if the project mixes Scala and Java.",
+      "//     - resources/",
+      "//       - Test-specific resources.",
+      "// - lib/",
+      "//   - Optional: Contains unmanaged library dependencies (jars).",
+      "// - target/",
+      "//   - Contains compiled bytecode and other build artifacts.",
       "",
       "// Note:",
-      "// - This is a basic structure; adjust based on project complexity and preferences."
+      "// - The structure is based on SBT's standard layout.",
+      "// - Use the 'lib' directory for unmanaged dependencies, although managed dependencies",
+      "//   in the build.sbt file are preferred."
     ],
     "description": "Explains a high-level project structure for Scala."
-  },
-
-  "Scala Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "// Recommended Scala Source Directory Organization (Feature/Module):",
-      "",
-      "// - src/",
-      "//   - rendering/",
-      "//     - Contains source code for rendering features.",
-      "//   - physics/",
-      "//     - Contains source code for physics features.",
-      "//   - networking/",
-      "//     - Contains source code for networking features.",
-      "//   - ... (Organize by feature or module)",
-      "",
-      "// Note:",
-      "// - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for Scala."
-  },
-  "Scala Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "// Recommended Scala Source Directory Organization (File Type):",
-      "",
-      "// - src/",
-      "//   - models/",
-      "//     - Contains data models and classes.",
-      "//   - utils/",
-      "//     - Contains utility functions.",
-      "//   - actors/",
-      "//     - Contains actor implementations.",
-      "//   - ... (Organize by file type)",
-      "",
-      "// Note:",
-      "// - This approach can be helpful for smaller projects or specific use cases."
-    ],
-    "description": "Explains a file type-based source directory organization for Scala."
-  },
+  },  
 
   "Scala Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "// Scala Mathematical Operators",
       "// Addition: +",
@@ -106,17 +81,17 @@
     "description": "Lists the mathematical operators in Scala."
   },
   "Scala Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "Scala equal to operator (structural equality for objects)."
   },
   "Scala Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!="],
     "description": "Scala not equal to operator."
   },
   "Scala Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "// Scala Boolean Operators",
       "// Logical AND: &&",
@@ -133,12 +108,12 @@
   }
 ,  
   "Scala Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["${1:variable}.getClass"],
     "description": "Gets the type of a variable in Scala."
   },
   "Scala Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "// Check if two variables have the same type:",
       "if (${1:variable1}.getClass == ${2:variable2}.getClass) {",
@@ -165,7 +140,7 @@
     "description": "Explains type conversion in Scala."
   },
   "Scala Types": {
-    "prefix": "cotrTypes",
+    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
     "body": [
       "$BLOCK_COMMENT_START",
       "Scala is a statically typed language.",
@@ -197,7 +172,7 @@
   },
 
   "Scala String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["String"],
     "description": "The Scala String type."
   },
@@ -209,31 +184,31 @@
   },
 
   "Scala Double Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": ["Double"],
     "description": "The Scala Double type."
   },
 
   "Scala Float Type": {
-    "prefix": "cotrTypesNumAlt",
+    "prefix": ["cotrTypesNumAlt", "floatType", "float", "typeFloat"],
     "body": ["Float"],
     "description": "The Scala Float type."
   },
 
   "Scala Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["Boolean"],
     "description": "The Scala Boolean type."
   },
 
   "Scala Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["true"],
     "description": "The Scala true value."
   },
 
   "Scala Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["false"],
     "description": "The Scala false value."
   },
@@ -283,7 +258,7 @@
   },
 
   "Scala Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "// Scala Variable Declaration Syntax:",
       "",
@@ -303,7 +278,7 @@
   },
 
   "Scala Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": ["var ${1:myVar}: ${2:Type} = $3"],
     "description": "Creates a typed variable in Scala."
   },
@@ -435,7 +410,7 @@
   },
 
   "Ternary Operator (Alternative)": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": [
       "// Scala does not have a ternary operator.",
       "// Use an if-else expression instead:",
@@ -506,12 +481,12 @@
   },
 
   "Scala Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in Scala."
   },
   "Scala Class Syntax": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["class ${1:MyClass} {", "  // Your code here", "}"],
     "description": "Creates a class in Scala."
   }

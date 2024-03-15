@@ -1,6 +1,6 @@
 {
   "Dart Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "Typing: Statically typed",
       "Paradigm: Multi-paradigm: object-oriented, functional, imperative, reflective",
@@ -10,7 +10,7 @@
     "description": "Provides general information about the Dart programming language."
   },
   "Dart Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "// Dart Entry Point",
       "// To run this program, use: `dart run filename.dart`",
@@ -22,64 +22,43 @@
     "description": "Creates the entry point of a Dart application."
   },
   "Dart Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "// Recommended High-Level Dart Project Structure:",
       "",
       "// - lib/",
-      "//   - Contains all source code.",
-      "// - bin/",
-      "//   - Output directory for compiled executables (optional).",
+      "//   - Contains the main Dart source files for the project.",
+      "//   - Organize by feature or functionality, for example:",
+      "//     - models/",
+      "//     - views/",
+      "//     - controllers/",
+      "//     - services/",
+      "",
+      "// - web/ or bin/",
+      "//   - For web projects, `web/` contains HTML, CSS, and client-side Dart.",
+      "//   - For command-line or server-side projects, `bin/` contains the main entry point scripts.",
+      "",
       "// - test/",
-      "//   - Contains unit tests.",
-      "// - web/",
-      "//   - Contains web-specific assets (if applicable).",
+      "//   - Contains test files for the project, mirroring the structure of `lib/`.",
+      "",
+      "// - pubspec.yaml",
+      "//   - The project's package and dependency management file.",
+      "",
+      "// - build/",
+      "//   - Contains the output of the Dart build system.",
+      "",
+      "// - doc/ or docs/",
+      "//   - Documentation for the project.",
       "",
       "// Note:",
-      "// - This is a basic structure; adjust based on project complexity and preferences."
+      "// - Adjust the structure as needed based on the specific project type and requirements.",
+      "// - Use `web/` for web projects and `bin/` for server-side or command-line projects."
     ],
     "description": "Explains a high-level project structure for Dart."
   },
-  "Dart Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "// Recommended Dart Source Directory Organization (Feature/Module):",
-      "",
-      "// - lib/",
-      "//   - rendering/",
-      "//     - Contains source code for rendering features.",
-      "//   - physics/",
-      "//     - Contains source code for physics features.",
-      "//   - networking/",
-      "//     - Contains source code for networking features.",
-      "//   - ... (Organize by feature or module)",
-      "",
-      "// Note:",
-      "// - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for Dart."
-  },
-  "Dart Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "// Recommended Dart Source Directory Organization (File Type):",
-      "",
-      "// - lib/",
-      "//   - models/",
-      "//     - Contains data models and classes.",
-      "//   - views/",
-      "//     - Contains UI components and logic.",
-      "//   - controllers/",
-      "//     - Contains logic for handling user interactions.",
-      "//   - ... (Organize by file type)",
-      "",
-      "// Note:",
-      "// - This approach is common in web applications and MVC patterns."
-    ],
-    "description": "Explains a file type-based source directory organization for Dart."
-  },
+
   "Dart Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "// Dart Mathematical Operators",
       "// Addition: +",
@@ -100,17 +79,17 @@
     "description": "Lists the mathematical operators in Dart."
   },
   "Dart Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "Dart equal to operator (structural equality for objects)."
   },
   "Dart Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!="],
     "description": "Dart not equal to operator."
   },
   "Dart Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "// Dart Boolean Operators",
       "// Logical AND: &&",
@@ -126,12 +105,12 @@
     "description": "Lists the boolean operators in Dart."
   },
   "Dart Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["${1:variable}.runtimeType"],
     "description": "Gets the type of a variable in Dart."
   },
   "Dart Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "// Check if two variables have the same type:",
       "if (${1:variable1}.runtimeType == ${2:variable2}.runtimeType) {",
@@ -158,7 +137,7 @@
     "description": "Explains type conversion in Dart."
   },
   "Dart Types": {
-    "prefix": "cotrTypes",
+    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
     "body": [
       "$BLOCK_COMMENT_START",
       "Dart is a statically typed language.",
@@ -182,7 +161,7 @@
     "description": "Prints out all the basic types in Dart."
   },
   "Dart String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["String"],
     "description": "The Dart String type."
   },
@@ -192,27 +171,27 @@
     "description": "The Dart int type."
   },
   "Dart Double Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": ["double"],
     "description": "The Dart double type."
   },
   "Dart Float Type": {
-    "prefix": "cotrTypesNumAlt",
+    "prefix": ["cotrTypesNumAlt", "floatType", "float", "typeFloat"],
     "body": ["float"],
     "description": "The Dart float type."
   },
   "Dart Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["bool"],
     "description": "The Dart bool type."
   },
   "Dart Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["true"],
     "description": "The Dart true value."
   },
   "Dart Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["false"],
     "description": "The Dart false value."
   },
@@ -257,7 +236,7 @@
     "description": "Creates a variable in Dart using the var keyword."
   },
   "Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "// Dart Variable Declaration Syntax:",
       "",
@@ -285,7 +264,7 @@
     "description": "Explains Dart variable declaration syntax"
   },
   "Dart Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": ["${1:Type} ${2:myVar} = $3;"],
     "description": "Creates a typed variable in Dart."
   },
@@ -357,7 +336,7 @@
     "description": "Creates a constant variable in Dart using the const keyword."
   },
   "Dart Static Variable": {
-    "prefix": "cotrVarStatic",
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
     "body": [
       "static ${2:var} ${3:myStaticVar} = ${4:value};",
       "",
@@ -377,7 +356,7 @@
     "description": "Generates a map with a specific number of key-value pairs in Dart."
   },
   "Dart Generate List": {
-    "prefix": "cotrGenList",
+    "prefix": ["cotrGenList", "generateList", "listGen"],
     "body": [
       "var ${1:myList} = List.generate(${2:length}, (index) => ${3:'item'} + index.toString());"
     ],
@@ -486,12 +465,12 @@
     "description": "Creates a single-line comment in Dart."
   },
   "Dart Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in Dart."
   },
   "Dart Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["throw ${1:Exception('Your message here')};"],
     "description": "Throws an exception in Dart."
   },
@@ -518,7 +497,7 @@
     "description": "Creates an enum in Dart."
   },
   "Dart Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["class ${1:MyClass} {", "  ${2:// Your code here}", "}"],
     "description": "Creates a class in Dart."
   },
@@ -541,7 +520,7 @@
     "description": "Creates an if...else statement in Dart."
   },
   "Dart Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in Dart."
   },

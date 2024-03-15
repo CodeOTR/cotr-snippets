@@ -1,6 +1,6 @@
 {
   "C++ Static Variable": {
-    "prefix": "cotrVarStatic",
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
     "body": [
       "static ${2:type} ${3:myStaticVar} = ${4:value};",
       "",

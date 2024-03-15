@@ -1,6 +1,6 @@
 {
   "C# Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "// Typing: Statically typed",
       "// Paradigm: Multi-paradigm: structured, imperative, object-oriented, event-driven, task-driven, functional, generic, reflective, concurrent",
@@ -10,7 +10,7 @@
     "description": "General information about C#."
   },
   "C# Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "// C# Entry Point",
       "// To run this program, use: `dotnet run` within the project directory",
@@ -27,66 +27,44 @@
   },
 
   "C# Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "// Recommended High-Level C# Project Structure:",
       "",
       "// - src/",
-      "//   - Contains all source code.",
-      "// - Properties/",
-      "//   - Contains project properties and settings.",
-      "// - bin/",
-      "//   - Output directory for compiled assemblies.",
-      "// - test/",
-      "//   - Contains unit tests.",
+      "//   - Contains the source code for the application.",
+      "//   - Organize by feature or purpose within separate directories or projects,",
+      "//     such as:",
+      "//     - Services/",
+      "//     - Controllers/",
+      "//     - Models/",
+      "//     - Views/ (for web applications)",
+      "",
+      "// - lib/",
+      "//   - Contains external libraries or dependencies, typically managed by NuGet.",
+      "",
+      "// - tests/",
+      "//   - Contains unit tests, integration tests, etc.",
+      "//   - Organize tests to reflect the structure of the src/ directory.",
+      "",
+      "// - docs/",
+      "//   - Documentation related to the project.",
+      "",
+      "// - tools/",
+      "//   - Contains scripts and other tools for the project (e.g., build scripts).",
+      "",
+      "// - build/",
+      "//   - Contains build output.",
       "",
       "// Note:",
-      "// - This is a basic structure; adjust based on project complexity and preferences."
+      "// - Projects in C# are often structured as solutions containing multiple",
+      "//   projects (class libraries, web applications, etc.).",
+      "// - This structure can vary depending on the project type and developer preferences."
     ],
     "description": "Explains a high-level project structure for C#."
   },
-
-  "C# Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "// Recommended C# Source Directory Organization (Feature/Module):",
-      "",
-      "// - src/",
-      "//   - rendering/",
-      "//     - Contains source code for rendering features.",
-      "//   - physics/",
-      "//     - Contains source code for physics features.",
-      "//   - networking/",
-      "//     - Contains source code for networking features.",
-      "//   - ... (Organize by feature or module)",
-      "",
-      "// Note:",
-      "// - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for C#."
-  },
-
-  "C# Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "// Recommended C# Source Directory Organization (File Type):",
-      "",
-      "// - src/",
-      "//   - Models/",
-      "//     - Contains data models and classes.",
-      "//   - Views/",
-      "//     - Contains UI components and logic.",
-      "//   - Controllers/",
-      "//     - Contains logic for handling user interactions.",
-      "//   - ... (Organize by file type)",
-      "",
-      "// Note:",
-      "// - This approach is common in web applications and MVC patterns."
-    ],
-    "description": "Explains a file type-based source directory organization for C#."
-  },
   "C# Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "// C# Mathematical Operators",
       "// Addition: +",
@@ -107,17 +85,17 @@
     "description": "Lists the mathematical operators in C#."
   },
   "C# Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "C# equal to operator."
   },
   "C# Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!="],
     "description": "C# not equal to operator."
   },
   "C# Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "// C# Boolean Operators",
       "// Logical AND: &&",
@@ -133,12 +111,12 @@
     "description": "Lists the boolean operators in C#."
   },
   "C# Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["${1:variable}.GetType()"],
     "description": "Gets the type of a variable in C#."
   },
   "C# Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "// Check if two variables have the same type:",
       "if (${1:variable1}.GetType() == ${2:variable2}.GetType()) {",
@@ -166,7 +144,7 @@
     "description": "Explains type conversion in C#."
   },
   "C# Types": {
-    "prefix": "cotrTypes",
+    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
     "body": [
       "$BLOCK_COMMENT_START",
       "C# is a statically typed language.",
@@ -197,7 +175,7 @@
     "description": "Lists the types in C#."
   },
   "C# String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["string"],
     "description": "The C# string type."
   },
@@ -207,12 +185,12 @@
     "description": "The C# int type."
   },
   "C# Double Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": ["double"],
     "description": "The C# double type."
   },
   "C# Float Type": {
-    "prefix": "cotrTypesNumAlt",
+    "prefix": ["cotrTypesNumAlt", "floatType", "float", "typeFloat"],
     "body": ["float"],
     "description": "The C# float type."
   },
@@ -222,12 +200,12 @@
     "description": "The C# boolean type."
   },
   "C# Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["true"],
     "description": "The C# true value."
   },
   "C# Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["false"],
     "description": "The C# false value."
   },
@@ -280,7 +258,7 @@
   },
 
   "C# Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "// C# Variable Declaration Syntax:",
       "",
@@ -304,7 +282,7 @@
     "description": "Explains C# variable declaration syntax"
   },
   "C# Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": ["${1:Type} ${2:myVar} = $3;"],
     "description": "Creates a typed variable in C#."
   },
@@ -364,7 +342,7 @@
     "description": "Creates a dictionary variable in C#."
   },
   "C# Generate List": {
-    "prefix": "cotrGenList",
+    "prefix": ["cotrGenList", "generateList", "listGen"],
     "body": [
       "var ${1:myList} = Enumerable.Range(0, ${2:length}).Select(i => ${3:'item'} + i.ToString()).ToList();"
     ],
@@ -383,7 +361,7 @@
     "description": "Creates a constant variable in C#."
   },
   "C# Static Variable": {
-    "prefix": "cotrVarStatic",
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
     "body": [
       "static ${2:Type} ${3:myStaticVar} = ${4:value};",
       "",
@@ -520,12 +498,12 @@
     "description": "Creates a single-line comment in C#."
   },
   "C# Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in C#."
   },
   "C# Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["throw new ${1:Exception}(${2:'Your message here'});"],
     "description": "Throws an exception in C#."
   },
@@ -552,7 +530,7 @@
     "description": "Creates an enum in C#."
   },
   "C# Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["public class ${1:MyClass} {", "  ${2:// Your code here}", "}"],
     "description": "Creates a class in C#."
   },
@@ -575,7 +553,7 @@
     "description": "Creates an if...else statement in C#."
   },
   "C# Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in C#."
   }

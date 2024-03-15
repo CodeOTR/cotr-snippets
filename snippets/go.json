@@ -1,6 +1,6 @@
 {
   "Go Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "Typing: Statically typed",
       "Paradigm: Multi-paradigm: procedural, concurrent",
@@ -10,7 +10,7 @@
     "description": "Provides general information about the Go programming language."
   },
   "Go Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "// Go Entry Point",
       "// To run this program, use: `go run filename.go`",
@@ -26,7 +26,7 @@
     "description": "Creates the entry point of a Go application."
   },
   "Go Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "// Go Mathematical Operators:",
       "// Addition: +",
@@ -47,17 +47,17 @@
     "description": "Lists the mathematical operators in Go."
   },
   "Go Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "Go equal to operator."
   },
   "Go Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!="],
     "description": "Go not equal to operator."
   },
   "Go Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "// Go Boolean Operators:",
       "// Logical AND: &&",
@@ -73,12 +73,12 @@
     "description": "Lists the boolean operators in Go."
   },
   "Go Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["fmt.Printf(\"%T\", ${1:variable})"],
     "description": "Prints the type of a variable in Go."
   },
   "Go Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "// Check if two variables have the same type:",
       "if reflect.TypeOf(${1:variable1}) == reflect.TypeOf(${2:variable2}) {",
@@ -106,7 +106,7 @@
     "description": "Explains type conversion in Go."
   },
   "Go Types": {
-    "prefix": "cotrTypes",
+    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
     "body": [
       "$BLOCK_COMMENT_START",
       "Go is a statically typed language.",
@@ -133,7 +133,7 @@
     "description": "Lists the types in Go."
   },
   "Go String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["string"],
     "description": "The Go string type."
   },
@@ -143,22 +143,22 @@
     "description": "The Go int type."
   },
   "Go Float Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": ["float64"],
     "description": "The Go float64 type."
   },
   "Go Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["bool"],
     "description": "The Go bool type."
   },
   "Go Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["true"],
     "description": "The Go true boolean value."
   },
   "Go Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["false"],
     "description": "The Go false boolean value."
   },
@@ -208,7 +208,7 @@
     "description": "Creates a variable in Go using the var keyword"
   },
   "Go Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "// Go Variable Declaration Syntax:",
       "",
@@ -232,62 +232,53 @@
     "description": "Explains Go variable declaration syntax"
   },
   "Go Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "// Recommended High-Level Go Project Structure:",
       "",
       "// - cmd/",
-      "//   - Contains main applications.",
+      "//   - Contains the main applications for the project.",
+      "//   - Each application has its own subdirectory.",
+      "//   - For example, if your project has two main applications, 'webserver' and 'datasync',",
+      "//     you might have cmd/webserver/ and cmd/datasync/ directories.",
+      "",
       "// - pkg/",
-      "//   - Contains reusable packages.",
+      "//   - Contains library code that's ok to use by external applications.",
+      "//   - Other projects will import these libraries.",
+      "",
+      "// - internal/",
+      "//   - Contains private application and library code.",
+      "//   - The code here is not intended to be used by other applications.",
+      "",
+      "// - api/",
+      "//   - Contains the API definitions for the project.",
+      "//   - For example, OpenAPI/Swagger specs, Protocol Buffers files.",
+      "",
+      "// - web/",
+      "//   - Contains web application specific components: static files, templates, etc.",
+      "",
+      "// - scripts/",
+      "//   - Contains scripts that perform various build, install, analysis, etc operations.",
+      "",
+      "// - configs/",
+      "//   - Contains configuration files.",
+      "",
+      "// - deployments/",
+      "//   - Contains configuration and scripts for deploying the application.",
+      "",
       "// - test/",
-      "//   - Contains unit tests.",
+      "//   - Contains additional external test apps and test data.",
+      "//   - It might also include test utilities.",
       "",
       "// Note:",
-      "// - This is a basic structure; adjust based on project complexity and preferences."
+      "// - This structure is particularly common in larger projects or projects that produce",
+      "//   multiple executables.",
+      "// - Smaller projects might have a simpler structure."
     ],
     "description": "Explains a high-level project structure for Go."
   },
-  "Go Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "// Recommended Go Source Directory Organization (Feature/Module):",
-      "",
-      "// - pkg/",
-      "//   - rendering/",
-      "//     - Contains source code for rendering features.",
-      "//   - physics/",
-      "//     - Contains source code for physics features.",
-      "//   - networking/",
-      "//     - Contains source code for networking features.",
-      "//   - ... (Organize by feature or module)",
-      "",
-      "// Note:",
-      "// - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for Go."
-  },
-  "Go Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "// Recommended Go Source Directory Organization (File Type):",
-      "",
-      "// - pkg/",
-      "//   - models/",
-      "//     - Contains data models and structs.",
-      "//   - utils/",
-      "//     - Contains utility functions.",
-      "//   - handlers/",
-      "//     - Contains request handlers.",
-      "//   - ... (Organize by file type)",
-      "",
-      "// Note:",
-      "// - This approach can be helpful for smaller projects or specific use cases."
-    ],
-    "description": "Explains a file type-based source directory organization for Go."
-  },
   "Go Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": ["var ${1:myVar} ${2:Type} = $3"],
     "description": "Creates a typed variable in Go."
   },
@@ -370,7 +361,7 @@
     "description": "Generates a map in Go"
   },
   "Go Generate Array": {
-    "prefix": "cotrGenList",
+    "prefix": ["cotrGenList", "generateList", "listGen"],
     "body": [
       "var ${1:arrayName} = []${2:arrayType}{",
       "    ${3:value1},",
@@ -484,12 +475,12 @@
     "description": "Creates a single-line comment in Go"
   },
   "Go Multi-line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["/*", " * ${1:comment}", " */"],
     "description": "Creates a multi-line comment in Go"
   },
   "Go Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["panic('Your message here')"],
     "description": "Throws an exception in Go."
   },
@@ -518,7 +509,7 @@
     "description": "Creates an iota in Go."
   },
   "Go Struct": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": [
       "type ${1:MyStruct} struct {",
       "  ${2:field1} ${3:type1}",
@@ -547,7 +538,7 @@
     "description": "Creates an if...else statement in Go."
   },
   "Go Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in Go."
   },

@@ -1,6 +1,6 @@
 {
   "TypeScript Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "Typing: Statically typed (superset of JavaScript)",
       "Paradigm: Multi-paradigm: event-driven, functional, imperative, object-oriented",
@@ -10,7 +10,7 @@
     "description": "Provides general information about the TypeScript programming language."
   },
   "TypeScript Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "// TypeScript Entry Point",
       "// To run this program, use: `ts-node filename.ts`",
@@ -21,64 +21,44 @@
     "description": "Describes the entry point of a TypeScript application."
   },
   "TypeScript Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "// Recommended High-Level TypeScript Project Structure:",
       "",
       "// - src/",
-      "//   - Contains all source code.",
+      "//   - Contains the TypeScript source files.",
+      "//   - Organize code into modules or features.",
+      "",
+      "// - dist/",
+      "//   - Contains the compiled JavaScript files.",
+      "//   - This directory is generated after transpilation.",
+      "",
+      "// - tests/",
+      "//   - Contains test files, often mirroring the structure of the src/ directory.",
+      "",
       "// - node_modules/",
-      "//   - Contains installed dependencies (if using a package manager).",
-      "// - public/",
-      "//   - Contains static assets (HTML, CSS, images).",
-      "// - test/",
-      "//   - Contains unit tests.",
+      "//   - Contains all the npm dependencies.",
+      "",
+      "// - package.json",
+      "//   - Manages project metadata, scripts, and dependencies.",
+      "",
+      "// - tsconfig.json",
+      "//   - Configuration for the TypeScript compiler.",
+      "",
+      "// - .gitignore",
+      "//   - Specifies intentionally untracked files to ignore.",
+      "",
+      "// - README.md",
+      "//   - Project overview, setup instructions, and other essential information.",
       "",
       "// Note:",
-      "// - This is a basic structure; adjust based on project complexity and preferences."
+      "// - Adjust the structure as needed based on project size and complexity.",
+      "// - Consider separate directories for assets, styles, or utilities if necessary."
     ],
     "description": "Explains a high-level project structure for TypeScript."
   },
-  "TypeScript Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "// Recommended TypeScript Source Directory Organization (Feature/Module):",
-      "",
-      "// - src/",
-      "//   - rendering/",
-      "//     - Contains source code for rendering features.",
-      "//   - physics/",
-      "//     - Contains source code for physics features.",
-      "//   - networking/",
-      "//     - Contains source code for networking features.",
-      "//   - ... (Organize by feature or module)",
-      "",
-      "// Note:",
-      "// - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for TypeScript."
-  },
-  "TypeScript Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "// Recommended TypeScript Source Directory Organization (File Type):",
-      "",
-      "// - src/",
-      "//   - models/",
-      "//     - Contains data models and classes.",
-      "//   - utils/",
-      "//     - Contains utility functions.",
-      "//   - components/",
-      "//     - Contains UI components.",
-      "//   - ... (Organize by file type)",
-      "",
-      "// Note:",
-      "// - This approach can be helpful for smaller projects or specific use cases."
-    ],
-    "description": "Explains a file type-based source directory organization for TypeScript."
-  },
   "TypeScript Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "// TypeScript Mathematical Operators",
       "// Addition: +",
@@ -100,17 +80,17 @@
     "description": "Lists the mathematical operators in TypeScript."
   },
   "TypeScript Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["==="],
     "description": "TypeScript strict equal to operator."
   },
   "TypeScript Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!=="],
     "description": "TypeScript strict not equal to operator."
   },
   "TypeScript Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "// TypeScript Boolean Operators",
       "// Logical AND: &&",
@@ -126,14 +106,14 @@
       "// Less than or equal to: <="
     ],
     "description": "Lists the boolean operators in TypeScript."
-  },  
+  },
   "TypeScript Type Check": {
-    "prefix": "cotrTypeCheck",
-    "body": ["typeof ${1:variable}"],
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
+    "body": ["typeof ${1:variable}  // Note: This checks the runtime type."],
     "description": "Gets the type of a variable in TypeScript."
   },
   "TypeScript Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "// Check if two variables have the same type:",
       "if (typeof ${1:variable1} === typeof ${2:variable2}) {",
@@ -160,7 +140,14 @@
     "description": "Explains type conversion in TypeScript."
   },
   "TypeScript Types": {
-    "prefix": "cotrTypes",
+    "prefix": [
+      "cotrTypes",
+      "types",
+      "allTypes",
+      "languageTypes",
+      "builtInTypes",
+      "dataTypes"
+    ],
     "body": [
       "$BLOCK_COMMENT_START",
       "TypeScript is a statically typed language.",
@@ -183,27 +170,27 @@
     "description": "Prints out all the basic types in TypeScript."
   },
   "TypeScript String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["string"],
     "description": "The TypeScript string type."
   },
   "TypeScript Number Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": ["number"],
     "description": "The TypeScript number type."
   },
   "TypeScript Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["boolean"],
     "description": "The TypeScript boolean type."
   },
   "TypeScript Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["true"],
     "description": "The TypeScript true value."
   },
   "TypeScript Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["false"],
     "description": "The TypeScript false value."
   },
@@ -253,7 +240,7 @@
     "description": "Creates a variable in TypeScript using the let keyword."
   },
   "Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "// TypeScript Variable Declaration Syntax:",
       "",
@@ -276,7 +263,7 @@
     "description": "Explains TypeScript variable declaration syntax"
   },
   "TypeScript Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": ["let ${1:myVar}: ${2:Type} = $3;"],
     "description": "Creates a typed variable in TypeScript."
   },
@@ -350,7 +337,7 @@
     "description": "Creates a constant variable in TypeScript using the const keyword."
   },
   "TypeScript Static Variable": {
-    "prefix": "cotrVarStatic",
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
     "body": [
       "static ${3:myStaticVar}: ${2:type} = ${4:value};",
       "",
@@ -369,7 +356,7 @@
     "description": "Generates an object map with a specific number of key-value pairs in TypeScript."
   },
   "TypeScript Generate Array": {
-    "prefix": "cotrGenList",
+    "prefix": ["cotrGenList", "generateList", "listGen"],
     "body": [
       "const ${1:myList} = Array.from({ length: ${2:length} }, (_, index) => ${3:'item'} + index);"
     ],
@@ -497,12 +484,17 @@
     "description": "Creates a single-line comment in TypeScript."
   },
   "TypeScript Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": [
+      "cotrCommentMulti",
+      "multiLineComment",
+      "commentMultiLine",
+      "blockComment"
+    ],
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in TypeScript."
   },
   "TypeScript Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["throw new Error('Your message here');"],
     "description": "Throws an exception in TypeScript."
   },
@@ -529,7 +521,7 @@
     "description": "Creates an enum in TypeScript."
   },
   "TypeScript Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["class ${1:MyClass} {", "  ${2:// Your code here}", "}"],
     "description": "Creates a class in TypeScript."
   },
@@ -552,7 +544,7 @@
     "description": "Creates an if...else statement in TypeScript."
   },
   "TypeScript Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in TypeScript."
   }

@@ -1,6 +1,6 @@
 {
   "Python Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "Typing: Dynamically typed. Use the Typing module to specify types.",
       "Paradigm: Multi-paradigm: object-oriented, imperative, functional, procedural, reflective",
@@ -10,7 +10,7 @@
     "description": "Provides general information about the Python programming language."
   },
   "Python Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "# Python Entry Point",
       "# To run this program, use: `python filename.py`",
@@ -22,60 +22,47 @@
     "description": "Creates the entry point of a Python application."
   },
   "Python Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "# Recommended High-Level Python Project Structure:",
       "",
-      "# - project_name/",
-      "#   - Contains all project files.",
+      "# - /",
+      "#   - README.md: Project description and instructions.",
+      "#   - setup.py: Package and dependency configuration.",
+      "#   - requirements.txt: List of dependencies for pip.",
+      "#   - .env: Environment-specific configurations.",
+      "",
+      "# - src/",
+      "#   - Contains all the source code of the project.",
+      "#   - /package_name/",
+      "#     - __init__.py: Makes Python treat directories as containing packages.",
+      "#     - main.py: Entry point of the application.",
+      "#     - /module1/",
+      "#     - /module2/",
+      "",
       "# - tests/",
-      "#   - Contains unit tests.",
-      "# - venv/",
-      "#   - Virtual environment directory (optional).",
+      "#   - Contains test files.",
+      "#   - /unit/",
+      "#   - /integration/",
+      "",
+      "# - docs/",
+      "#   - Documentation files for the project.",
+      "",
+      "# - data/",
+      "#   - Data files used in the project (if applicable).",
+      "",
+      "# - scripts/",
+      "#   - Utility scripts for deployment, setup, etc.",
       "",
       "# Note:",
-      "# - This is a basic structure; adjust based on project complexity and preferences."
+      "# - This structure is adaptable and can be modified according to the project's needs.",
+      "# - Use virtual environments to isolate project-specific dependencies."
     ],
     "description": "Explains a high-level project structure for Python."
-  },
-  "Python Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "# Recommended Python Source Directory Organization (Feature/Module):",
-      "",
-      "# - project_name/",
-      "#   - rendering/",
-      "#     - Contains source code for rendering features.",
-      "#   - data_processing/",
-      "#     - Contains source code for data processing features.",
-      "#   - ... (Organize by feature or module)",
-      "",
-      "# Note:",
-      "# - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for Python."
-  },
-  "Python Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "# Recommended Python Source Directory Organization (File Type):",
-      "",
-      "# - project_name/",
-      "#   - models/",
-      "#     - Contains data models and classes.",
-      "#   - utils/",
-      "#     - Contains utility functions.",
-      "#   - scripts/",
-      "#     - Contains standalone scripts.",
-      "#   - ... (Organize by file type)",
-      "",
-      "# Note:",
-      "# - This approach can be helpful for smaller projects or specific use cases."
-    ],
-    "description": "Explains a file type-based source directory organization for Python."
-  },
+  }
+,  
   "Python Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "# Python Mathematical Operators",
       "# Addition: +",
@@ -99,17 +86,17 @@
     "description": "Lists the mathematical operators in Python."
   },
   "Python Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "Python equal to operator."
   },
   "Python Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!="],
     "description": "Python not equal to operator."
   },
   "Python Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "# Python Boolean Operators",
       "# Logical AND: and",
@@ -125,12 +112,12 @@
     "description": "Lists the boolean operators in Python."
   },
   "Python Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["type(${1:variable})"],
     "description": "Gets the type of a variable in Python."
   },
   "Python Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "# Check if two variables have the same type:",
       "if type(${1:variable1}) is type(${2:variable2}):",
@@ -158,7 +145,7 @@
     "description": "Explains type conversion in Python."
   },
   "Python Types": {
-    "prefix": "cotrTypes",
+    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
     "body": [
       "$BLOCK_COMMENT_START",
       "Python is a dynamically typed language.",
@@ -191,7 +178,7 @@
     "description": "Lists some common types in Python."
   },
   "Python String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["str"],
     "description": "The Python string type."
   },
@@ -201,22 +188,22 @@
     "description": "The Python int type."
   },
   "Python Float Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": ["float"],
     "description": "The Python float type."
   },
   "Python Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["bool"],
     "description": "The Python bool type."
   },
   "Python Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["True"],
     "description": "The Python True value."
   },
   "Python Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["False"],
     "description": "The Python False value."
   },
@@ -268,7 +255,7 @@
     "description": "Creates a variable in Python."
   },
   "Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "# Python Variable Declaration Syntax:",
       "",
@@ -283,7 +270,7 @@
     "description": "Explains Python variable declaration syntax"
   },
   "Python Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": ["${1:my_var} = $2  # Note: Python is dynamically typed."],
     "description": "Creates a variable in Python."
   },
@@ -393,7 +380,7 @@
     "description": "Creates an if...else statement in Python."
   },
   "Python Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:trueValue} if ${2:condition} else ${3:falseValue}"],
     "description": "Creates a ternary operator in Python."
   },
@@ -448,12 +435,12 @@
     "description": "Creates a single-line comment in Python."
   },
   "Python Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["'''", "${1:Your comment here}", "'''"],
     "description": "Creates a multi-line comment in Python."
   },
   "Python Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["raise ${1:Exception('Your message here')}"],
     "description": "Throws an exception in Python."
   },
@@ -468,7 +455,7 @@
     "description": "Creates a try...except block in Python."
   },
   "Python Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["class ${1:MyClass}:", "  # Your code here"],
     "description": "Creates a class in Python."
   },

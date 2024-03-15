@@ -1,6 +1,6 @@
 {
   "PHP Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "Typing: Dynamically typed",
       "Paradigm: Multi-paradigm: imperative, object-oriented, procedural, reflective",
@@ -10,7 +10,7 @@
     "description": "Provides general information about the PHP programming language."
   },
   "PHP Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "// PHP Entry Point",
       "// To run this program, use: `php filename.php`",
@@ -22,64 +22,44 @@
     "description": "Creates the entry point of a PHP application."
   },
   "PHP Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "// Recommended High-Level PHP Project Structure:",
       "",
       "// - public/",
-      "//   - Contains publicly accessible files (e.g., index.php).",
+      "//   - Contains the entry point of the application (e.g., index.php) and static files.",
+      "",
       "// - src/",
-      "//   - Contains all source code.",
+      "//   - Contains the PHP source files and classes.",
+      "//   - Organize by feature or component.",
+      "",
       "// - vendor/",
-      "//   - Contains installed dependencies (if using Composer).",
+      "//   - Contains third-party dependencies managed by Composer.",
+      "",
+      "// - config/",
+      "//   - Configuration files for the application.",
+      "",
+      "// - templates/",
+      "//   - View templates for the application (if using a traditional MVC structure).",
+      "",
+      "// - resources/",
+      "//   - Other resources like language files, not directly accessed by the public.",
+      "",
       "// - tests/",
-      "//   - Contains unit tests.",
+      "//   - Unit and functional tests for the application.",
+      "",
+      "// - storage/",
+      "//   - Used for logs, cache, and other generated files.",
       "",
       "// Note:",
-      "// - This is a basic structure; adjust based on project complexity and preferences."
+      "// - This structure can be adapted based on the framework or libraries you are using.",
+      "// - Ensure that the public directory is the document root for the web server to secure application internals."
     ],
     "description": "Explains a high-level project structure for PHP."
   },
-  "PHP Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "// Recommended PHP Source Directory Organization (Feature/Module):",
-      "",
-      "// - src/",
-      "//   - rendering/",
-      "//     - Contains source code for rendering features.",
-      "//   - authentication/",
-      "//     - Contains source code for authentication features.",
-      "//   - database/",
-      "//     - Contains source code for database interactions.",
-      "//   - ... (Organize by feature or module)",
-      "",
-      "// Note:",
-      "// - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for PHP."
-  },
-  "PHP Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "// Recommended PHP Source Directory Organization (File Type):",
-      "",
-      "// - src/",
-      "//   - models/",
-      "//     - Contains data models and classes.",
-      "//   - views/",
-      "//     - Contains templates and presentation logic.",
-      "//   - controllers/",
-      "//     - Contains logic for handling requests.",
-      "//   - ... (Organize by file type)",
-      "",
-      "// Note:",
-      "// - This approach is common in web applications and MVC patterns."
-    ],
-    "description": "Explains a file type-based source directory organization for PHP."
-  },
+
   "PHP Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "// PHP Mathematical Operators",
       "// Addition: +",
@@ -100,17 +80,17 @@
     "description": "Lists the mathematical operators in PHP."
   },
   "PHP Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "PHP equal to operator."
   },
   "PHP Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!="],
     "description": "PHP not equal to operator."
   },
   "PHP Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "// PHP Boolean Operators",
       "// Logical AND: && or and",
@@ -128,12 +108,12 @@
     "description": "Lists the boolean operators in PHP."
   },
   "PHP Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["gettype(${1:variable})"],
     "description": "Gets the type of a variable in PHP."
   },
   "PHP Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "// Check if two variables have the same type:",
       "if (gettype(${1:variable1}) === gettype(${2:variable2})) {",
@@ -165,7 +145,14 @@
     "description": "Explains type conversion in PHP."
   },
   "PHP Types": {
-    "prefix": "cotrTypes",
+    "prefix": [
+      "cotrTypes",
+      "types",
+      "allTypes",
+      "languageTypes",
+      "builtInTypes",
+      "dataTypes"
+    ],
     "body": [
       "$BLOCK_COMMENT_START",
       "PHP is a dynamically typed language.",
@@ -189,7 +176,7 @@
     "description": "Lists all types in PHP."
   },
   "PHP String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["string"],
     "description": "The PHP string type."
   },
@@ -199,22 +186,22 @@
     "description": "The PHP int type."
   },
   "PHP Float Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": ["float"],
     "description": "The PHP float type."
   },
   "PHP Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["bool"],
     "description": "The PHP bool type."
   },
   "PHP Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["true"],
     "description": "The PHP true value."
   },
   "PHP Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["false"],
     "description": "The PHP false value."
   },
@@ -249,7 +236,7 @@
     "description": "Creates a variable in PHP."
   },
   "Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "// PHP Variable Declaration Syntax:",
       "",
@@ -270,7 +257,7 @@
     "description": "Explains PHP variable declaration syntax"
   },
   "PHP Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": [
       "// PHP is a dynamically typed language, which means that by default there is no need to specify the type",
       "//  of a variable, as this will be determined at runtime.",
@@ -340,12 +327,12 @@
     "description": "Creates a constant variable in PHP using the const keyword."
   },
   "PHP Static Variable": {
-    "prefix": "cotrVarStatic",
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
     "body": ["static $${1:myStaticVar} = $2;"],
     "description": "Creates a static variable in a PHP class."
   },
   "PHP Generate Array": {
-    "prefix": "cotrGenList",
+    "prefix": ["cotrGenList", "generateList", "listGen"],
     "body": ["$${1:myArray} = range(${2:0}, ${3:10});"],
     "description": "Generates an array of a specific length in PHP."
   },
@@ -479,12 +466,12 @@
     "description": "Creates a single-line comment in PHP."
   },
   "PHP Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in PHP."
   },
   "PHP Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["throw new ${1:Exception}('${2:Your message here}');"],
     "description": "Throws an exception in PHP."
   },
@@ -500,7 +487,7 @@
     "description": "Creates a try...catch block in PHP."
   },
   "PHP Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["class ${1:MyClass} {", "  ${2:// Your code here}", "}"],
     "description": "Creates a class in PHP."
   },
@@ -532,7 +519,7 @@
     "description": "Creates an if...else statement in PHP."
   },
   "PHP Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in PHP."
   }

@@ -1,6 +1,6 @@
 {
   "C++ Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "// Typing: Statically typed",
       "// Paradigm: Multi-paradigm: procedural, object-oriented, functional, generic, imperative",
@@ -10,7 +10,7 @@
     "description": "General information about C++."
   },
   "C++ Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "// C++ Entry Point",
       "// To compile and run this program, use: `g++ filename.cpp -o output && ./output`",
@@ -26,11 +26,23 @@
   },
 
   "C++ Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "// Recommended High-Level C++ Project Structure:",
       "",
       "// - src/",
+      "//   For Feature or Module-based Organization:",
+      "//   - rendering/",
+      "//     - Contains source code for rendering features.",
+      "//   - physics/",
+      "//     - Contains source code for physics features.",
+      "//   - networking/",
+      "//     - Contains source code for networking features.",
+      "//   For File Type-based Organization:",
+      "//   - cpp/",
+      "//     - Contains all .cpp implementation files.",
+      "//   - h/",
+      "//     - Contains all .h header files.",
       "//   - Contains all source code.",
       "// - include/",
       "//   - Contains header files.",
@@ -47,44 +59,8 @@
     "description": "Explains a high-level project structure for C++."
   },
 
-  "C++ Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "// Recommended C++ Source Directory Organization (Feature/Module):",
-      "",
-      "// - src/",
-      "//   - rendering/",
-      "//     - Contains source code for rendering features.",
-      "//   - physics/",
-      "//     - Contains source code for physics features.",
-      "//   - networking/",
-      "//     - Contains source code for networking features.",
-      "//   - ... (Organize by feature or module)",
-      "",
-      "// Note:",
-      "// - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for C++."
-  },
-  "C++ Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "// Recommended C++ Source Directory Organization (File Type):",
-      "",
-      "// - src/",
-      "//   - cpp/",
-      "//     - Contains all .cpp implementation files.",
-      "//   - h/",
-      "//     - Contains all .h header files.",
-      "",
-      "// Note:",
-      "// - This approach is simpler but may be less scalable for larger projects."
-    ],
-    "description": "Explains a file type-based source directory organization for C++."
-  },
-
   "C++ Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "// C++ Mathematical Operators",
       "// Addition: +",
@@ -105,17 +81,17 @@
     "description": "Lists the mathematical operators in C++."
   },
   "C++ Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "C++ equal to operator."
   },
   "C++ Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!="],
     "description": "C++ not equal to operator."
   },
   "C++ Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "// C++ Boolean Operators",
       "// Logical AND: &&",
@@ -131,7 +107,7 @@
     "description": "Lists the boolean operators in C++."
   },
   "C++ Types": {
-    "prefix": "cotrTypes",
+    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
     "body": [
       "$BLOCK_COMMENT_START",
       "C++ is a statically typed language.",
@@ -160,12 +136,12 @@
   },
 
   "C++ Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["typeid(${1:variable})"],
     "description": "Gets the type of a variable in C++."
   },
   "C++ Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "// Check if two variables have the same type:",
       "if (typeid(${1:variable1}) == typeid(${2:variable2})) {",
@@ -196,7 +172,7 @@
     "description": "Explains type conversion in C++."
   },
   "C++ String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["std::string"],
     "description": "The C++ string type."
   },
@@ -206,27 +182,27 @@
     "description": "The C++ int type."
   },
   "C++ Double Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": ["double"],
     "description": "The C++ double type."
   },
   "C++ Float Type": {
-    "prefix": "cotrTypesNumAlt",
+    "prefix": ["cotrTypesNumAlt", "floatType", "float", "typeFloat"],
     "body": ["float"],
     "description": "The C++ float type."
   },
   "C++ Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["bool"],
     "description": "The C++ bool type."
   },
   "C++ Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["true"],
     "description": "The C++ true boolean value."
   },
   "C++ Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["false"],
     "description": "The C++ false boolean value."
   },
@@ -282,7 +258,7 @@
   },
 
   "C++ Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "// C++ Variable Declaration Syntax:",
       "",
@@ -306,7 +282,7 @@
     "description": "Explains C++ variable declaration syntax"
   },
   "C++ Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": ["${1:Type} ${2:myVar} = $3;"],
     "description": "Creates a typed variable in C++."
   },
@@ -374,7 +350,7 @@
   },
 
   "C++ Generate List": {
-    "prefix": "cotrGenList",
+    "prefix": ["cotrGenList", "generateList", "listGen"],
     "body": [
       "std::vector<${1:type}> ${2:listName}( ${3:size}, ${4:initialValue} );"
     ],
@@ -394,7 +370,7 @@
     "description": "Creates a constant variable in C++."
   },
   "C++ Static Variable": {
-    "prefix": "cotrVarStatic",
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
     "body": [
       "static ${2:type} ${3:myStaticVar} = ${4:value};",
       "",
@@ -533,12 +509,12 @@
     "description": "Creates a single-line comment in C++."
   },
   "C++ Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in C++."
   },
   "C++ Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["throw ${1:Exception('Your message here')};"],
     "description": "Throws an exception in C++."
   },
@@ -565,7 +541,7 @@
     "description": "Creates an enum in C++."
   },
   "C++ Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["class ${1:MyClass} {", "  // Your code here", "};"],
     "description": "Creates a class in C++."
   },
@@ -588,7 +564,7 @@
     "description": "Creates an if...else statement in C++."
   },
   "C++ Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in C++."
   }

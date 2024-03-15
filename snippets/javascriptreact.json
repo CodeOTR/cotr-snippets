@@ -1,6 +1,6 @@
 {
   "JavaScript Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "Typing: Dynamically typed",
       "Paradigm: Multi-paradigm: event-driven, functional, imperative, prototype-based",
@@ -10,7 +10,7 @@
     "description": "Provides general information about the JavaScript programming language."
   },
   "JavaScript Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "// JavaScript Entry Point",
       "// To run this program, use: `node filename.js`",
@@ -19,65 +19,49 @@
     ],
     "description": "Describes the entry point of a JavaScript application."
   },
-  "JavaScript Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+  "JavaScript with React Project Structure (High-Level)": {
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
-      "// Recommended High-Level JavaScript Project Structure:",
+      "// Recommended High-Level JavaScript with React Project Structure:",
       "",
-      "// - src/",
-      "//   - Contains all source code.",
-      "// - node_modules/",
-      "//   - Contains installed dependencies (if using a package manager).",
       "// - public/",
-      "//   - Contains static assets (HTML, CSS, images).",
-      "// - test/",
-      "//   - Contains unit tests.",
-      "",
-      "// Note:",
-      "// - This is a basic structure; adjust based on project complexity and preferences."
-    ],
-    "description": "Explains a high-level project structure for JavaScript."
-  },
-  "JavaScript Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "// Recommended JavaScript Source Directory Organization (Feature/Module):",
+      "//   - Contains the HTML file and static assets like images and fonts.",
       "",
       "// - src/",
-      "//   - rendering/",
-      "//     - Contains source code for rendering features.",
-      "//   - physics/",
-      "//     - Contains source code for physics features.",
-      "//   - networking/",
-      "//     - Contains source code for networking features.",
-      "//   - ... (Organize by feature or module)",
+      "//   - App.jsx: The root React component.",
+      "//   - index.tsx: Entry point that renders the React app.",
+      "//   - /components/",
+      "//     - Reusable UI components.",
+      "//   - /containers/",
+      "//     - Components connected to the Redux store or context providers.",
+      "//   - /hooks/",
+      "//     - Custom React hooks.",
+      "//   - /pages/",
+      "//     - Components representing pages or routes.",
+      "//   - /utils/",
+      "//     - Utility functions and helpers.",
+      "//   - /services/",
+      "//     - API calls, data fetching, and other services.",
+      "//   - /store/",
+      "//     - Redux store, actions, and reducers.",
+      "//   - /styles/",
+      "//     - CSS/SCSS files or styled-components.",
+      "",
+      "// - .env files",
+      "//   - Environment-specific configurations.",
+      "",
+      "// - package.json",
+      "//   - Project metadata and dependencies.",
       "",
       "// Note:",
-      "// - This approach promotes modularity and is suitable for larger projects."
+      "// - This structure is common for larger React applications and can be scaled according to the project size.",
+      "// - Smaller projects might not need separate directories for hooks, services, or containers."
     ],
-    "description": "Explains a feature/module-based source directory organization for JavaScript."
-  },
-  "JavaScript Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "// Recommended JavaScript Source Directory Organization (File Type):",
-      "",
-      "// - src/",
-      "//   - models/",
-      "//     - Contains data models and classes.",
-      "//   - utils/",
-      "//     - Contains utility functions.",
-      "//   - components/",
-      "//     - Contains UI components.",
-      "//   - ... (Organize by file type)",
-      "",
-      "// Note:",
-      "// - This approach can be helpful for smaller projects or specific use cases."
-    ],
-    "description": "Explains a file type-based source directory organization for JavaScript."
-  },
+    "description": "Explains a high-level project structure for JavaScript with React."
+  }
+,  
   "JavaScript Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "// JavaScript Mathematical Operators",
       "// Addition: +",
@@ -97,18 +81,19 @@
     ],
     "description": "Lists the mathematical operators in JavaScript."
   },
+  
   "JavaScript Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["==="],
     "description": "JavaScript strict equal to operator."
   },
   "JavaScript Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!=="],
     "description": "JavaScript strict not equal to operator."
   },
   "JavaScript Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "// JavaScript Boolean Operators",
       "// Logical AND: &&",
@@ -126,12 +111,12 @@
     "description": "Lists the boolean operators in JavaScript."
   },
   "JavaScript Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["typeof ${1:variable}"],
     "description": "Gets the type of a variable in JavaScript."
   },
   "JavaScript Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "// Check if two variables have the same type:",
       "if (typeof ${1:variable1} === typeof ${2:variable2}) {",
@@ -161,7 +146,7 @@
     "description": "Explains type conversion in JavaScript."
   },
   "JavaScript Types": {
-    "prefix": "cotrTypes",
+    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
     "body": [
       "$BLOCK_COMMENT_START",
       "JavaScript is a dynamically typed language. It does not have static types.",
@@ -181,22 +166,22 @@
     "description": "Explains that JavaScript is dynamically typed and lists its built-in types."
   },
   "JavaScript String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["let text = \"John Doe\";"],
     "description": "JavaScript does not have types."
   },
   "JavaScript Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["let flag = Boolean($1);"],
     "description": "JavaScript does not have types."
   },
   "JavaScript Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["true;"],
     "description": "JavaScript does not have types."
   },
   "JavaScript Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["false;"],
     "description": "JavaScript does not have types."
   },
@@ -211,7 +196,7 @@
     "description": "JavaScript does not have types."
   },
   "JavaScript Number Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": ["let number = $1;"],
     "description": "JavaScript does not have types."
   },
@@ -258,7 +243,7 @@
     "description": "Creates a variable in JavaScript using the let keyword."
   },
   "Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "// JavaScript Variable Declaration Syntax:",
       "",
@@ -281,7 +266,7 @@
     "description": "Explains JavaScript variable declaration syntax"
   },
   "JavaScript Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": ["let ${1:myVar} = $2; // Note: JavaScript is dynamically typed."],
     "description": "Creates a variable in JavaScript."
   },
@@ -354,7 +339,7 @@
     "description": "Creates a constant variable in JavaScript using the const keyword."
   },
   "JavaScript Static Variable": {
-    "prefix": "cotrVarStatic",
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
     "body": [
       "static ${3:myStaticVar} = ${4:value};",
       "",
@@ -373,7 +358,7 @@
     "description": "Generates an object map with a specific number of key-value pairs in JavaScript."
   },
   "JavaScript Generate Array": {
-    "prefix": "cotrGenList",
+    "prefix": ["cotrGenList", "generateList", "listGen"],
     "body": [
       "const ${1:myList} = Array.from({ length: ${2:length} }, (_, index) => ${3:'item'} + index);"
     ],
@@ -497,7 +482,7 @@
     "description": "Creates a multi-line comment in JSX."
   },
   "JavaScript Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["throw new Error('Your message here');"],
     "description": "Throws an exception in JavaScript."
   },
@@ -513,7 +498,7 @@
     "description": "Creates a try...catch block in JavaScript."
   },
   "JavaScript Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["class ${1:MyClass} {", "  ${2:// Your code here}", "}"],
     "description": "Creates a class in JavaScript."
   },
@@ -536,7 +521,7 @@
     "description": "Creates an if...else statement in JavaScript."
   },
   "JavaScript Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in JavaScript."
   },

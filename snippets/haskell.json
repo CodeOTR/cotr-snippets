@@ -1,6 +1,6 @@
 {
   "Haskell Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "-- Typing: Statically typed, strong, inferred",
       "-- Paradigm: Functional",
@@ -11,7 +11,7 @@
   },
 
   "Haskell Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "-- Haskell Entry Point",
       "-- To run this program, use: `ghc filename.hs` or `runhaskell filename.hs`",
@@ -25,59 +25,43 @@
   },
 
   "Haskell Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
-      "-- Recommended High-Level Haskell Project Structure:",
+      "// Recommended High-Level Haskell Project Structure:",
       "",
-      "-- - src/",
-      "--   - Contains all source code (.hs files).",
-      "-- - tests/",
-      "--   - Contains unit tests.",
+      "// - src/",
+      "//   - Contains the source code of the application.",
+      "//   - Typically organized by functionality or module,",
+      "//     with a Main.hs file for the executable entry point.",
       "",
-      "-- Note:",
-      "-- - This is a basic structure; adjust based on project complexity and preferences."
+      "// - app/",
+      "//   - Contains the main application entry point, often linking to the library in src/.",
+      "",
+      "// - lib/",
+      "//   - If the project includes a library that should be separable from the main application,",
+      "//     its code goes here.",
+      "",
+      "// - test/",
+      "//   - Contains the test suites, often using a framework like HUnit or QuickCheck.",
+      "",
+      "// - bench/",
+      "//   - Contains benchmarking code, often using a framework like Criterion.",
+      "",
+      "// - doc/",
+      "//   - Contains documentation files.",
+      "",
+      "// - scripts/",
+      "//   - Contains utility scripts for tasks like building, running, or testing.",
+      "",
+      "// Note:",
+      "// - This structure may vary based on the build tool (like Stack or Cabal) and",
+      "//   the complexity and needs of the project.",
+      "// - The 'app' directory is often used in Stack-based projects."
     ],
     "description": "Explains a high-level project structure for Haskell."
   },
-  "Haskell Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "-- Recommended Haskell Source Directory Organization (Feature/Module):",
-      "",
-      "-- - src/",
-      "--   - rendering/",
-      "--     - Contains source code for rendering features.",
-      "--   - data_processing/",
-      "--     - Contains source code for data processing features.",
-      "--   - ... (Organize by feature or module)",
-      "",
-      "-- Note:",
-      "-- - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for Haskell."
-  },
-
-  "Haskell Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "-- Recommended Haskell Source Directory Organization (File Type):",
-      "",
-      "-- - src/",
-      "--   - types.hs",
-      "--     - Contains type definitions.",
-      "--   - functions.hs",
-      "--     - Contains function definitions.",
-      "--   - main.hs",
-      "--     - Contains the main entry point.",
-      "--   - ... (Organize by file type)",
-      "",
-      "-- Note:",
-      "-- - This approach can be helpful for smaller projects or specific use cases."
-    ],
-    "description": "Explains a file type-based source directory organization for Haskell."
-  },
   "Haskell Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "-- Haskell Mathematical Operators",
       "-- Addition: +",
@@ -99,7 +83,7 @@
   },
 
   "Haskell Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "-- Haskell Boolean Operators:",
       "",
@@ -110,23 +94,23 @@
     "description": "Lists the boolean operators in Haskell."
   },
   "Haskell Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "Haskell equal to operator."
   },
 
   "Haskell Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["/="],
     "description": "Haskell not equal to operator."
   },
   "Haskell Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["${1:variable} :: ${2:Type}"],
     "description": "Checks the type of a variable in Haskell."
   },
   "Haskell Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "-- Haskell does not have a built-in function for comparing types directly.",
       "-- You can use type classes or custom functions to achieve this."
@@ -151,7 +135,7 @@
   },
 
   "Haskell Types": {
-    "prefix": "cotrTypes",
+    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
     "body": [
       "$BLOCK_COMMENT_START",
       "Haskell is a statically typed language with strong type inference.",
@@ -177,7 +161,7 @@
   },
 
   "Haskell String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["String"],
     "description": "The Haskell String type."
   },
@@ -189,31 +173,31 @@
   },
 
   "Haskell Double Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": ["Double"],
     "description": "The Haskell Double type."
   },
 
   "Haskell Float Type": {
-    "prefix": "cotrTypesNumAlt",
+    "prefix": ["cotrTypesNumAlt", "floatType", "float", "typeFloat"],
     "body": ["Float"],
     "description": "The Haskell Float type."
   },
 
   "Haskell Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["Bool"],
     "description": "The Haskell Bool type."
   },
 
   "Haskell Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["True"],
     "description": "The Haskell True value."
   },
 
   "Haskell Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["False"],
     "description": "The Haskell False value."
   },
@@ -276,7 +260,7 @@
   },
 
   "Haskell Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "-- Haskell Variable Declaration Syntax:",
       "",
@@ -296,13 +280,13 @@
   },
 
   "Haskell Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": ["let ${1:myVar} :: ${2:Type} = $3"],
     "description": "Creates a typed variable in Haskell."
   },
 
   "Haskell Static Variable (Alternative)": {
-    "prefix": "cotrVarStatic",
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
     "body": [
       "-- Haskell does not have static variables in the same way as imperative languages.",
       "-- You can use top-level definitions or modules to achieve similar functionality."
@@ -386,7 +370,7 @@
   },
 
   "Haskell Generate List": {
-    "prefix": "cotrGenList",
+    "prefix": ["cotrGenList", "generateList", "listGen"],
     "body": ["[${1:start}..${2:end}]"],
     "description": "Generates a list of numbers in Haskell."
   },
@@ -538,7 +522,7 @@
   },
 
   "Haskell Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["{-", " ${1:Your comment here}", "-}"],
     "description": "Creates a multi-line comment in Haskell."
   },
@@ -564,7 +548,7 @@
   },
 
   "Haskell Ternary Operator (Alternative)": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": [
       "-- Haskell does not have a ternary operator.",
       "-- Use a case expression or an if-then-else expression instead:",
@@ -577,7 +561,7 @@
   },
 
   "Haskell Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["error \"${1:Your error message here}\""],
     "description": "Throws an exception in Haskell."
   },

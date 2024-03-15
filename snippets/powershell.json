@@ -1,6 +1,6 @@
 {
   "PowerShell Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "# Typing: Dynamically typed",
       "# Paradigm: Object-oriented, imperative, scripting",
@@ -11,7 +11,7 @@
   },
 
   "PowerShell Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "# PowerShell Entry Point",
       "# To run this script, use: `powershell filename.ps1`",
@@ -22,7 +22,7 @@
   },
 
   "PowerShell Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "# PowerShell Mathematical Operators",
       "# Addition: +",
@@ -44,19 +44,19 @@
   },
 
   "PowerShell Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["-eq"],
     "description": "PowerShell equal to operator."
   },
 
   "PowerShell Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["-ne"],
     "description": "PowerShell not equal to operator."
   },
 
   "PowerShell Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "# PowerShell Boolean Operators",
       "# Logical AND: -and",
@@ -73,13 +73,13 @@
   },
 
   "PowerShell Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["${1:variable}.GetType()"],
     "description": "Gets the type of a variable in PowerShell."
   },
 
   "PowerShell Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "# Check if two variables have the same type:",
       "if (${1:variable1}.GetType() -eq ${2:variable2}.GetType()) {",
@@ -108,7 +108,14 @@
   },
 
   "PowerShell Types": {
-    "prefix": "cotrTypes",
+    "prefix": [
+      "cotrTypes",
+      "types",
+      "allTypes",
+      "languageTypes",
+      "builtInTypes",
+      "dataTypes"
+    ],
     "body": [
       "$BLOCK_COMMENT_START",
       "PowerShell is a dynamically typed language.",
@@ -131,7 +138,16 @@
   },
 
   "PowerShell String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": [
+      "cotrTypesString",
+      "string",
+      "stringType",
+      "typeString",
+      "str",
+      "text",
+      "textType",
+      "typeText"
+    ],
     "body": ["[string]"],
     "description": "The PowerShell string type."
   },
@@ -143,25 +159,33 @@
   },
 
   "PowerShell Double Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": [
+      "cotrTypesNum",
+      "number",
+      "numberType",
+      "typeNumber",
+      "double",
+      "doubleType",
+      "typeDouble"
+    ],
     "body": ["[double]"],
     "description": "The PowerShell double type."
   },
 
   "PowerShell Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["[bool]"],
     "description": "The PowerShell bool type."
   },
 
   "PowerShell Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["$true"],
     "description": "The PowerShell true value."
   },
 
   "PowerShell Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["$false"],
     "description": "The PowerShell false value."
   },
@@ -209,7 +233,7 @@
   },
 
   "PowerShell Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": ["[${1:Type}] $${2:myVar} = $3"],
     "description": "Creates a typed variable in PowerShell."
   },
@@ -408,17 +432,13 @@
       "}"
     ],
     "description": "Creates a function with named arguments in PowerShell."
-  },  
+  },
 
   "PowerShell Arrow Function": {
     "prefix": "cotrFuncArrow",
-    "body": [
-      "{${1:parameters} ->",
-      "    ${2:# Your code here}",
-      "}"
-    ],
+    "body": ["{${1:parameters} ->", "    ${2:# Your code here}", "}"],
     "description": "Represents an arrow function-like syntax using a script block in PowerShell."
-  },  
+  },
 
   "PowerShell Anonymous Function": {
     "prefix": "cotrFuncAnon",
@@ -429,8 +449,7 @@
       "}"
     ],
     "description": "Creates an anonymous function (script block) in PowerShell."
-  },  
-
+  },
 
   "PowerShell Comment": {
     "prefix": "cotrComment",
@@ -439,13 +458,18 @@
   },
 
   "PowerShell Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": [
+      "cotrCommentMulti",
+      "multiLineComment",
+      "commentMultiLine",
+      "blockComment"
+    ],
     "body": ["<#", "${1:Your comment here}", "#>"],
     "description": "Creates a multi-line comment in PowerShell."
   },
 
   "PowerShell Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["throw '${1:Your message here}'"],
     "description": "Throws an exception in PowerShell."
   },
@@ -463,7 +487,7 @@
   },
 
   "PowerShell Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["class ${1:MyClass} {", "  # Your code here", "}"],
     "description": "Creates a class in PowerShell."
   },
@@ -487,7 +511,7 @@
   },
 
   "PowerShell Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in PowerShell."
   },
@@ -524,7 +548,7 @@
       "Write-Host \"Result: $result\""
     ],
     "description": "Creates a script block (similar to a lambda function) in PowerShell."
-  },  
+  },
 
   "PowerShell Function Syntax": {
     "prefix": "cotrFuncSyntax",
@@ -552,7 +576,7 @@
   },
 
   "PowerShell Generate List": {
-    "prefix": "cotrGenList",
+    "prefix": ["cotrGenList", "generateList", "listGen"],
     "body": ["1..${1:length} | ForEach-Object { ${2:'item'} + $_ }"],
     "description": "Generates a list of a specific length in PowerShell."
   },
@@ -567,67 +591,40 @@
   },
 
   "PowerShell Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "# Recommended High-Level PowerShell Project Structure:",
       "",
-      "# - project_name/",
-      "#   - Contains all project files.",
-      "# - modules/",
-      "#   - Contains PowerShell modules.",
-      "# - scripts/",
-      "#   - Contains PowerShell scripts.",
-      "# - tests/",
-      "#   - Contains unit tests.",
+      "# - /",
+      "#   - README.md: Documentation about the project.",
+      "#   - .ps1 files: Individual PowerShell script files.",
+      "",
+      "# - /src",
+      "#   - Contains PowerShell modules or scripts organized by functionality.",
+      "",
+      "# - /tests",
+      "#   - Contains Pester tests for testing your PowerShell scripts and modules.",
+      "",
+      "# - /lib",
+      "#   - Optional: Contains third-party libraries or scripts used in the project.",
+      "",
+      "# - /docs",
+      "#   - Optional: Additional documentation, help files, or related documents.",
+      "",
+      "# - /tools",
+      "#   - Optional: Utility and helper scripts that assist with project tasks.",
+      "",
+      "# - /output",
+      "#   - Optional: A location to store output files generated by scripts.",
       "",
       "# Note:",
-      "# - This is a basic structure; adjust based on project complexity and preferences."
+      "# - Organize .ps1 script files and modules in the src folder for clarity.",
+      "# - Use descriptive names for script files to indicate their purpose or function."
     ],
     "description": "Explains a high-level project structure for PowerShell."
   },
-
-  "PowerShell Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "# Recommended PowerShell Source Directory Organization (Feature/Module):",
-      "",
-      "# - modules/",
-      "#   - rendering/",
-      "#     - Contains source code for rendering features.",
-      "#   - authentication/",
-      "#     - Contains source code for authentication features.",
-      "#   - database/",
-      "#     - Contains source code for database interactions.",
-      "#   - ... (Organize by feature or module)",
-      "",
-      "# Note:",
-      "# - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for PowerShell."
-  },
-
-  "PowerShell Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "# Recommended PowerShell Source Directory Organization (File Type):",
-      "",
-      "# - scripts/",
-      "#   - functions.ps1",
-      "#     - Contains custom functions.",
-      "#   - data_loading.ps1",
-      "#     - Contains scripts for loading data.",
-      "#   - analysis.ps1",
-      "#     - Contains scripts for data analysis.",
-      "#   - ... (Organize by file type)",
-      "",
-      "# Note:",
-      "# - This approach can be helpful for smaller projects or specific use cases."
-    ],
-    "description": "Explains a file type-based source directory organization for PowerShell."
-  },
-
   "PowerShell Static Variable": {
-    "prefix": "cotrVarStatic",
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
     "body": [
       "# PowerShell does not have static variables in the same way as some other languages.",
       "# You can use class variables or module variables to achieve similar functionality."
@@ -636,7 +633,7 @@
   },
 
   "PowerShell Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "# PowerShell Variable Declaration Syntax:",
       "",

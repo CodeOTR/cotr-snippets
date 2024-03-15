@@ -1,6 +1,6 @@
 {
   "C++ Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "// Typing: Statically typed",
       "// Paradigm: Multi-paradigm: procedural, object-oriented, functional, generic, imperative",

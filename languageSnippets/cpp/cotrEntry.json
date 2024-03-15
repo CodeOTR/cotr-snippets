@@ -1,6 +1,6 @@
 {
   "C++ Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "// C++ Entry Point",
       "// To compile and run this program, use: `g++ filename.cpp -o output && ./output`",

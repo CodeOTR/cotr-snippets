@@ -1,6 +1,6 @@
 {
   "C++ Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["class ${1:MyClass} {", "  // Your code here", "};"],
     "description": "Creates a class in C++."
   }

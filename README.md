@@ -56,8 +56,6 @@ Its very simple, actually. Every supported language implements all snippets in a
 | --------------------- | ------------------------------------------------------------------------- |
 | cotrInfo              | Outputs information about the language                                    |
 | cotrStructure         | Outputs the basic structure for a project                                 |
-| cotrStructureFeatures | Outputs the basic structure for a project with feature-first organization |
-| cotrStructureFiles    | Outputs the basic structure for a project with file-first organization    |
 | cotrOperators         | Outputs the basic operators for the language                              |
 | cotrOperatorsBool  | Outputs the basic boolean operators for the language                      |
 | cotrEqual             | Outputs the equality operator for the language                            |

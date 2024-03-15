@@ -1,6 +1,6 @@
 {
   "R Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "# Typing: Dynamically typed",
       "# Paradigm: Multi-paradigm: functional, object-oriented, procedural, statistical",
@@ -11,7 +11,7 @@
   },
 
   "R Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "# R Entry Point",
       "# To run this program, use: `Rscript filename.R`",
@@ -21,7 +21,7 @@
     "description": "Creates the entry point of an R application."
   },
   "R Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "# Recommended High-Level R Project Structure:",
       "",
@@ -80,7 +80,7 @@
   },
 
   "R Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "# R Mathematical Operators",
       "# Addition: +",
@@ -101,17 +101,17 @@
     "description": "Lists the mathematical operators in R."
   },
   "R Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "R equal to operator."
   },
   "R Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!="],
     "description": "R not equal to operator."
   },
   "R Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "# R Boolean Operators",
       "# Logical AND: & or &&",
@@ -127,12 +127,12 @@
     "description": "Lists the boolean operators in R."
   },
   "R Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["class(${1:variable})"],
     "description": "Gets the type of a variable in R."
   },
   "R Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "# Check if two variables have the same type:",
       "if (identical(class(${1:variable1}), class(${2:variable2}))) {",
@@ -162,7 +162,7 @@
     "description": "Explains type conversion in R."
   },
   "R Types": {
-    "prefix": "cotrTypes",
+    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
     "body": [
       "$BLOCK_COMMENT_START",
       "R is a dynamically typed language.",
@@ -184,7 +184,7 @@
   },
 
   "R String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["character"],
     "description": "The R character type."
   },
@@ -198,7 +198,7 @@
   },
 
   "R Double Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": [
       "# R uses 'numeric' for both integers and floating-point numbers."
     ],
@@ -206,19 +206,19 @@
   },
 
   "R Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["logical"],
     "description": "The R logical type."
   },
 
   "R Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["TRUE"],
     "description": "The R TRUE value."
   },
 
   "R Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["FALSE"],
     "description": "The R FALSE value."
   },
@@ -268,7 +268,7 @@
   },
 
   "R Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": [
       "# Note: R is dynamically typed; explicit type annotations are not used.",
       "${1:my_var} <- $2"
@@ -423,12 +423,12 @@
   },
 
   "R Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["${1:comment}"],
     "description": "Creates a multi-line comment in R."
   },
   "R Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["stop(${1:'Your message here'})"],
     "description": "Throws an exception in R."
   },
@@ -451,7 +451,7 @@
     "description": "Explains the absence of a built-in enum type in R."
   },
   "R Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": [
       "# R does not have a built-in class type. Use a list or vector instead."
     ],
@@ -459,7 +459,7 @@
   },
 
   "R Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["ifelse(${1:condition}, ${2:trueValue}, ${3:falseValue})"],
     "description": "Creates a ternary operator in R."
   }

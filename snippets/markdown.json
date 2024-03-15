@@ -1,6 +1,6 @@
 {
   "Markdown Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "# Markdown Syntax Reference:",
       "",
@@ -19,7 +19,7 @@
   },
 
   "Markdown Multi-Line Comment (HTML)": {
-    "prefix": "cotrCommentMulti",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["<!--", "  ${1:Your comment here}", "-->"],
     "description": "Creates a multi-line HTML comment within Markdown."
   },

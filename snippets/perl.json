@@ -1,6 +1,6 @@
 {
   "Perl Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "# Typing: Dynamically typed",
       "# Paradigm: Multi-paradigm: procedural, object-oriented, scripting",
@@ -11,7 +11,7 @@
   },
 
   "Perl Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "# Perl Entry Point",
       "# To run this program, use: `perl filename.pl`",
@@ -25,67 +25,39 @@
   },
 
   "Perl Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "# Recommended High-Level Perl Project Structure:",
       "",
-      "# - project_name/",
-      "#   - Contains all project files.",
       "# - lib/",
-      "#   - Contains all source code.",
+      "#   - Contains Perl module files (`.pm`).",
+      "#   - Organize modules into directories, mirroring the module's namespace.",
+      "",
       "# - bin/",
-      "#   - Contains executable scripts.",
-      "# - test/",
-      "#   - Contains unit tests.",
+      "#   - Contains executable Perl scripts.",
+      "",
+      "# - t/",
+      "#   - Contains test scripts written using Perl's testing frameworks (like Test::More).",
+      "",
+      "# - docs/",
+      "#   - Documentation for the project.",
+      "",
+      "# - scripts/",
+      "#   - Contains utility scripts that are not part of the main application logic.",
+      "",
+      "# - data/",
+      "#   - Contains data files used by the application.",
       "",
       "# Note:",
-      "# - This is a basic structure; adjust based on project complexity and preferences."
+      "# - This structure is flexible and can be adjusted based on the project's requirements.",
+      "# - Ensure that the `lib` directory is included in the `@INC` array or use the `use lib`",
+      "#   directive in scripts to include the library path."
     ],
     "description": "Explains a high-level project structure for Perl."
-  },
-
-  "Perl Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "# Recommended Perl Source Directory Organization (Feature/Module):",
-      "",
-      "# - lib/",
-      "#   - rendering/",
-      "#     - Contains source code for rendering features.",
-      "#   - authentication/",
-      "#     - Contains source code for authentication features.",
-      "#   - database/",
-      "#     - Contains source code for database interactions.",
-      "#   - ... (Organize by feature or module)",
-      "",
-      "# Note:",
-      "# - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for Perl."
-  },
-
-  "Perl Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "# Recommended Perl Source Directory Organization (File Type):",
-      "",
-      "# - lib/",
-      "#   - models/",
-      "#     - Contains data models and classes.",
-      "#   - helpers/",
-      "#     - Contains helper functions.",
-      "#   - services/",
-      "#     - Contains business logic.",
-      "#   - ... (Organize by file type)",
-      "",
-      "# Note:",
-      "# - This approach can be helpful for smaller projects or specific use cases."
-    ],
-    "description": "Explains a file type-based source directory organization for Perl."
-  },
-
+  }
+,  
   "Perl Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "# Perl Mathematical Operators",
       "# Addition: +",
@@ -108,19 +80,19 @@
   },
 
   "Perl Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "Perl equal to operator."
   },
 
   "Perl Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!="],
     "description": "Perl not equal to operator."
   },
 
   "Perl Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "# Perl Boolean Operators",
       "# Logical AND: && or and",
@@ -137,13 +109,13 @@
   },
 
   "Perl Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["ref ${1:variable}"],
     "description": "Gets the type of a variable in Perl."
   },
 
   "Perl Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "# Check if two variables have the same type:",
       "if (ref ${1:variable1} eq ref ${2:variable2}) {",
@@ -173,7 +145,7 @@
   },
 
   "Perl Types": {
-    "prefix": "cotrTypes",
+    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
     "body": [
       "$BLOCK_COMMENT_START",
       "Perl is a dynamically typed language.",
@@ -192,7 +164,7 @@
   },
 
   "Perl String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["# Perl uses scalars for strings."],
     "description": "Perl uses scalars for strings."
   },
@@ -204,25 +176,25 @@
   },
 
   "Perl Double Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": ["# Perl uses scalars for floating-point numbers."],
     "description": "Perl uses scalars for floating-point numbers."
   },
 
   "Perl Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["# Perl uses 1 and 0 for boolean values."],
     "description": "Perl uses 1 and 0 for boolean values."
   },
 
   "Perl Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["1"],
     "description": "The Perl true value."
   },
 
   "Perl Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["0"],
     "description": "The Perl false value."
   },
@@ -270,7 +242,7 @@
   },
 
   "Perl Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "# Perl Variable Declaration Syntax:",
       "",
@@ -301,7 +273,7 @@
   },
 
   "Perl Static Variable": {
-    "prefix": "cotrVarStatic",
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
     "body": [
       "our $${1:myStaticVar} = ${2:value};",
       "",
@@ -313,7 +285,7 @@
   },
 
   "Perl Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": [
       "# Note: Perl is dynamically typed; explicit type annotations are not used.",
       "my $${1:myVar} = $2;"
@@ -473,7 +445,7 @@
   },
 
   "Perl Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in Perl."
   },
@@ -563,13 +535,13 @@
   },
 
   "Perl Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["=begin", "${1:Your comment here}", "=end"],
     "description": "Creates a multi-line comment in Perl."
   },
 
   "Perl Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["die '${1:Your message here}';"],
     "description": "Throws an exception in Perl."
   },
@@ -588,7 +560,7 @@
   },
 
   "Perl Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["package ${1:MyClass};", "", "# Your code here"],
     "description": "Creates a class in Perl."
   },
@@ -602,7 +574,7 @@
   },
 
   "Perl Generate List": {
-    "prefix": "cotrGenList",
+    "prefix": ["cotrGenList", "generateList", "listGen"],
     "body": ["my @${1:listName} = (${2:initialValue}) x ${3:length};"],
     "description": "Generates a list (array) of a specific length and initial value in Perl."
   },

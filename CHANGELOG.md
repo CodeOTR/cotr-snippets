@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.0.12
+
+- Add Perl, PowerShell, and Haskell support
+- Fixed Scala language definition
+
 ## 0.0.11
 
 - Update README

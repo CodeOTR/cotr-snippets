@@ -1,6 +1,6 @@
 {
   "Java Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "Typing: Statically typed",
       "Paradigm: Multi-paradigm: object-oriented, imperative, concurrent",
@@ -10,7 +10,7 @@
     "description": "Provides general information about the Java programming language."
   },
   "Java Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "// Java Entry Point",
       "// To run this program, use: `java Main.java`",
@@ -24,64 +24,46 @@
     "description": "Creates the entry point of a Java application."
   },
   "Java Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "// Recommended High-Level Java Project Structure:",
       "",
       "// - src/",
-      "//   - Contains all source code.",
-      "// - bin/",
-      "//   - Output directory for compiled class files.",
+      "//   - main/",
+      "//     - java/",
+      "//       - Contains all Java source files organized by package, e.g.,",
+      "//         - com/example/myapp/",
+      "//     - resources/",
+      "//       - Contains resources such as properties files, XML configurations, etc.",
+      "//   - test/",
+      "//     - java/",
+      "//       - Contains all Java test files organized similarly to the main source files.",
+      "//     - resources/",
+      "//       - Contains resources used for testing, such as test configurations.",
+      "",
       "// - lib/",
-      "//   - Contains external libraries (JAR files).",
-      "// - test/",
-      "//   - Contains unit tests.",
+      "//   - Contains external libraries or JAR files if not using a build tool like Maven or Gradle.",
+      "",
+      "// - build/ or target/",
+      "//   - Contains compiled bytecode and other build artifacts. 'target' is common with Maven.",
+      "",
+      "// - docs/",
+      "//   - Documentation related to the project.",
+      "",
+      "// - scripts/",
+      "//   - Contains build scripts, utility scripts, etc.",
+      "",
+      "// Build Tools:",
+      "// - For Maven projects, the pom.xml file at the root defines build configurations and dependencies.",
+      "// - For Gradle projects, the build.gradle file at the root defines build configurations and dependencies.",
       "",
       "// Note:",
-      "// - This is a basic structure; adjust based on project complexity and preferences."
+      "// - This structure can vary depending on the build tool (Maven, Gradle, etc.) and project needs."
     ],
     "description": "Explains a high-level project structure for Java."
   },
-  "Java Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "// Recommended Java Source Directory Organization (Feature/Module):",
-      "",
-      "// - src/",
-      "//   - rendering/",
-      "//     - Contains source code for rendering features.",
-      "//   - physics/",
-      "//     - Contains source code for physics features.",
-      "//   - networking/",
-      "//     - Contains source code for networking features.",
-      "//   - ... (Organize by feature or module)",
-      "",
-      "// Note:",
-      "// - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for Java."
-  },
-  "Java Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "// Recommended Java Source Directory Organization (File Type):",
-      "",
-      "// - src/",
-      "//   - models/",
-      "//     - Contains data models and classes.",
-      "//   - views/",
-      "//     - Contains UI components and logic.",
-      "//   - controllers/",
-      "//     - Contains logic for handling user interactions.",
-      "//   - ... (Organize by file type)",
-      "",
-      "// Note:",
-      "// - This approach is common in web applications and MVC patterns."
-    ],
-    "description": "Explains a file type-based source directory organization for Java."
-  },
   "Java Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "// Java Mathematical Operators",
       "// Addition: +",
@@ -102,17 +84,17 @@
     "description": "Lists the mathematical operators in Java."
   },
   "Java Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "Java equal to operator."
   },
   "Java Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!="],
     "description": "Java not equal to operator."
   },
   "Java Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "// Java Boolean Operators",
       "// Logical AND: &&",
@@ -128,12 +110,12 @@
     "description": "Lists the boolean operators in Java."
   },
   "Java Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["${1:variable}.getClass()"],
     "description": "Gets the type of a variable in Java."
   },
   "Java Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "// Check if two variables have the same type:",
       "if (${1:variable1}.getClass() == ${2:variable2}.getClass()) {",
@@ -164,7 +146,7 @@
     "description": "Explains type conversion in Java."
   },
   "Java Types": {
-    "prefix": "cotrTypes",
+    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
     "body": [
       "$BLOCK_COMMENT_START",
       "Java is a statically typed language.",
@@ -191,7 +173,7 @@
     "description": "Lists the types in Java."
   },
   "Java String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["String"],
     "description": "The Java String type."
   },
@@ -201,12 +183,12 @@
     "description": "The Java int type."
   },
   "Java Double Type": {
-    "prefix": "cotrTypesNum",
+    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
     "body": ["double"],
     "description": "The Java double type."
   },
   "Java Float Type": {
-    "prefix": "cotrTypesNumAlt",
+    "prefix": ["cotrTypesNumAlt", "floatType", "float", "typeFloat"],
     "body": ["float"],
     "description": "The Java float type."
   },
@@ -216,12 +198,12 @@
     "description": "The Java boolean type."
   },
   "Java Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["true"],
     "description": "The Java true value."
   },
   "Java Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["false"],
     "description": "The Java false value."
   },
@@ -275,7 +257,7 @@
     "description": "Creates a variable in Java."
   },
   "Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "// Java Variable Declaration Syntax:",
       "",
@@ -295,7 +277,7 @@
     "description": "Explains Java variable declaration syntax"
   },
   "Java Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": ["${1:Type} ${2:myVar} = $3;"],
     "description": "Creates a typed variable in Java."
   },
@@ -365,7 +347,7 @@
     "description": "Creates a constant variable in Java."
   },
   "Java Static Variable": {
-    "prefix": "cotrVarStatic",
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
     "body": [
       "static ${2:Type} ${3:myStaticVar} = ${4:value};",
       "",
@@ -375,7 +357,7 @@
     "description": "Creates a static variable in a Java class."
   },
   "Java Generate List": {
-    "prefix": "cotrGenList",
+    "prefix": ["cotrGenList", "generateList", "listGen"],
     "body": [
       "List<${1:Type}> ${2:myList} = IntStream.range(0, ${3:length}).mapToObj(i -> ${4:value}).collect(Collectors.toList());"
     ],
@@ -521,12 +503,12 @@
     "description": "Creates a single-line comment in Java."
   },
   "Java Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in Java."
   },
   "Java Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["throw new ${1:Exception}(${2:'Your message here'});"],
     "description": "Throws an exception in Java."
   },
@@ -553,7 +535,7 @@
     "description": "Creates an enum in Java."
   },
   "Java Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["public class ${1:MyClass} {", "  ${2:// Your code here}", "}"],
     "description": "Creates a class in Java."
   },
@@ -576,7 +558,7 @@
     "description": "Creates an if...else statement in Java."
   },
   "Java Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in Java."
   }

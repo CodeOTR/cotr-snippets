@@ -1,6 +1,6 @@
 {
   "Ruby Info": {
-    "prefix": "cotrInfo",
+    "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "Typing: Dynamically typed",
       "Paradigm: Multi-paradigm: object-oriented, imperative, functional, reflective",
@@ -10,7 +10,7 @@
     "description": "Provides general information about the Ruby programming language."
   },
   "Ruby Entry Point": {
-    "prefix": "cotrEntry",
+    "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "# Ruby Entry Point",
       "# To run this program, use: `ruby filename.rb`",
@@ -20,62 +20,44 @@
     "description": "Creates the entry point of a Ruby application."
   },
   "Ruby Project Structure (High-Level)": {
-    "prefix": "cotrStructure",
+    "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "# Recommended High-Level Ruby Project Structure:",
       "",
+      "# - /",
+      "#   - Gemfile: Defines project dependencies.",
+      "#   - Rakefile: Provides automated tasks like database migrations, running tests, etc.",
+      "#   - config.ru: Rack configuration file for Rack-based applications.",
+      "",
+      "# - app/",
+      "#   - Contains the main application code.",
+      "#   - models/: Contains the models for an MVC framework.",
+      "#   - controllers/: Contains the controllers for an MVC framework.",
+      "#   - views/: Contains the views for an MVC framework.",
+      "",
+      "# - config/",
+      "#   - Configuration files for the application.",
+      "",
+      "# - db/",
+      "#   - Database related files, like migrations and seeds.",
+      "",
       "# - lib/",
-      "#   - Contains all source code.",
-      "# - bin/",
-      "#   - Contains executable scripts.",
-      "# - test/",
-      "#   - Contains unit tests.",
+      "#   - Library code that can be reused in other projects.",
+      "",
+      "# - public/",
+      "#   - Static files like images, stylesheets, and JavaScript files.",
+      "",
+      "# - test/ or spec/",
+      "#   - Test files, following the naming convention of the testing framework (e.g., RSpec uses `spec`).",
       "",
       "# Note:",
-      "# - This is a basic structure; adjust based on project complexity and preferences."
+      "# - This structure can vary, especially with different frameworks like Rails, Sinatra, etc.",
+      "# - Ensure that the project structure aligns with the conventions of the used framework."
     ],
     "description": "Explains a high-level project structure for Ruby."
   },
-  "Ruby Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "# Recommended Ruby Source Directory Organization (Feature/Module):",
-      "",
-      "# - lib/",
-      "#   - rendering/",
-      "#     - Contains source code for rendering features.",
-      "#   - authentication/",
-      "#     - Contains source code for authentication features.",
-      "#   - database/",
-      "#     - Contains source code for database interactions.",
-      "#   - ... (Organize by feature or module)",
-      "",
-      "# Note:",
-      "# - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for Ruby."
-  },
-  "Ruby Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "# Recommended Ruby Source Directory Organization (File Type):",
-      "",
-      "# - lib/",
-      "#   - models/",
-      "#     - Contains data models and classes.",
-      "#   - helpers/",
-      "#     - Contains helper functions.",
-      "#   - services/",
-      "#     - Contains business logic.",
-      "#   - ... (Organize by file type)",
-      "",
-      "# Note:",
-      "# - This approach can be helpful for smaller projects or specific use cases."
-    ],
-    "description": "Explains a file type-based source directory organization for Ruby."
-  },
   "Ruby Mathematical Operators": {
-    "prefix": "cotrOperators",
+    "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "# Ruby Mathematical Operators",
       "# Addition: +",
@@ -97,17 +79,17 @@
     "description": "Lists the mathematical operators in Ruby."
   },
   "Ruby Equal To": {
-    "prefix": "cotrEqual",
+    "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "Ruby equal to operator."
   },
   "Ruby Not Equal To": {
-    "prefix": "cotrNotEqual",
+    "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!="],
     "description": "Ruby not equal to operator."
   },
   "Ruby Boolean Operators": {
-    "prefix": "cotrOperatorsBool",
+    "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "# Ruby Boolean Operators",
       "# Logical AND: && or and",
@@ -121,15 +103,14 @@
       "# Less than or equal to: <="
     ],
     "description": "Lists the boolean operators in Ruby."
-  }
-,  
+  },
   "Ruby Type Check": {
-    "prefix": "cotrTypeCheck",
+    "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["${1:variable}.class"],
     "description": "Gets the type of a variable in Ruby."
   },
   "Ruby Type Comparison": {
-    "prefix": "cotrTypeCompare",
+    "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "# Check if two variables have the same type:",
       "if ${1:variable1}.class == ${2:variable2}.class",
@@ -159,7 +140,14 @@
   },
 
   "Ruby Types": {
-    "prefix": "cotrTypes",
+    "prefix": [
+      "cotrTypes",
+      "types",
+      "allTypes",
+      "languageTypes",
+      "builtInTypes",
+      "dataTypes"
+    ],
     "body": [
       "$BLOCK_COMMENT_START",
       "Ruby is a dynamically typed language.",
@@ -187,7 +175,7 @@
     "description": "Lists some common types in Ruby."
   },
   "Ruby String Type": {
-    "prefix": "cotrTypesString",
+    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
     "body": ["String"],
     "description": "The Ruby String type."
   },
@@ -207,17 +195,17 @@
     "description": "The Ruby Float type."
   },
   "Ruby Boolean Type": {
-    "prefix": "cotrTypesBool",
+    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
     "body": ["# Ruby uses true and false for boolean values."],
     "description": "Ruby uses true and false for boolean values."
   },
   "Ruby Boolean True": {
-    "prefix": "cotrTypesBoolTrue",
+    "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["true"],
     "description": "The Ruby true value."
   },
   "Ruby Boolean False": {
-    "prefix": "cotrTypesBoolFalse",
+    "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["false"],
     "description": "The Ruby false value."
   },
@@ -262,7 +250,7 @@
     "description": "Creates a variable in Ruby."
   },
   "Variable Declaration Syntax": {
-    "prefix": "cotrVarSyntax",
+    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "# Ruby Variable Declaration Syntax:",
       "",
@@ -277,7 +265,7 @@
     "description": "Explains Ruby variable declaration syntax"
   },
   "Ruby Create Typed Variable": {
-    "prefix": "cotrVarTyped",
+    "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": [
       "# Note: Ruby is dynamically typed; explicit type annotations are not used.",
       "${1:my_var} = $2"
@@ -352,7 +340,7 @@
     "description": "Creates a constant variable in Ruby."
   },
   "Ruby Static Variable": {
-    "prefix": "cotrVarStatic",
+    "prefix": ["cotrVarStatic", "staticVariable", "associatedConstant"],
     "body": [
       "@@${1:my_static_var} = ${2:value}",
       "",
@@ -362,7 +350,7 @@
     "description": "Creates a class variable in Ruby."
   },
   "Ruby Generate Array": {
-    "prefix": "cotrGenList",
+    "prefix": ["cotrGenList", "generateList", "listGen"],
     "body": [
       "${1:my_array} = Array.new(${2:length}) { |i| ${3:'item'} + i.to_s }"
     ],
@@ -466,12 +454,17 @@
     "description": "Creates a single-line comment in Ruby."
   },
   "Ruby Multi-Line Comment": {
-    "prefix": "cotrCommentMulti",
+    "prefix": [
+      "cotrCommentMulti",
+      "multiLineComment",
+      "commentMultiLine",
+      "blockComment"
+    ],
     "body": ["=begin", "${1:Your comment here}", "=end"],
     "description": "Creates a multi-line comment in Ruby."
   },
   "Ruby Throw Exception": {
-    "prefix": "cotrThrow",
+    "prefix": ["cotrThrow", "throwError", "throwException"],
     "body": ["raise ${1:'Your message here'}"],
     "description": "Throws an exception in Ruby."
   },
@@ -496,7 +489,7 @@
   },
 
   "Ruby Class": {
-    "prefix": "cotrClass",
+    "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["class ${1:MyClass}", "  ${2:# Your code here}", "end"],
     "description": "Creates a class in Ruby."
   },
@@ -519,7 +512,7 @@
     "description": "Creates an if...else statement in Ruby."
   },
   "Ruby Ternary Operator": {
-    "prefix": "cotrTernary",
+    "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:condition} ? ${2:true_value} : ${3:false_value}"],
     "description": "Creates a ternary operator in Ruby."
   }
