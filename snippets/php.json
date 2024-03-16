@@ -112,6 +112,11 @@
     "body": ["gettype(${1:variable})"],
     "description": "Gets the type of a variable in PHP."
   },
+  "PHP This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": ["gettype($CLIPBOARD)"],
+    "description": "Gets the type of the variable in the clipboard in PHP."
+  },  
   "PHP Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [

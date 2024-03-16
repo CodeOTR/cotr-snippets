@@ -112,6 +112,11 @@
     "body": ["${1:variable}.getClass"],
     "description": "Gets the type of a variable in Scala."
   },
+  "Scala This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": ["$CLIPBOARD.getClass.getSimpleName"],
+    "description": "Gets the simple name of the class of the variable in the clipboard in Scala."
+  },  
   "Scala Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [

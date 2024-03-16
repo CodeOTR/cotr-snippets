@@ -119,7 +119,14 @@
     "scope": "kotlin",
     "body": ["${1:variable}::class"],
     "description": "Gets the type of a variable in Kotlin."
-  },
+  },"Kotlin This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "scope": "kotlin",
+    "body": ["$CLIPBOARD::class.simpleName"],
+    "description": "Gets the simple name of the class of the variable in the clipboard in Kotlin."
+  }
+,  
+
   "Kotlin Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "scope": "kotlin",

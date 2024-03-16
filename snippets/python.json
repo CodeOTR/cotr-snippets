@@ -116,6 +116,11 @@
     "body": ["type(${1:variable})"],
     "description": "Gets the type of a variable in Python."
   },
+  "Python This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": ["type($CLIPBOARD).__name__"],
+    "description": "Gets the type of the variable in the clipboard in Python."
+  },  
   "Python Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [

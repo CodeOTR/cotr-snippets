@@ -52,6 +52,8 @@ Its very simple, actually. Every supported language implements all snippets in a
 
 ## Snippets
 
+Each snippet has multiple aliases but you can see them all by typing the "cotr" prefix. Aliases are written in plain english and are easy to remember. For example, the `cotrPrint` snippet can be accessed by typing "cotrPrint", "print", "log", "out", and "write".
+
 | Name                  | Description                                                               |
 | --------------------- | ------------------------------------------------------------------------- |
 | cotrInfo              | Outputs information about the language                                    |

@@ -109,6 +109,11 @@
     "body": ["${1:variable}.class"],
     "description": "Gets the type of a variable in Ruby."
   },
+  "Ruby This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": ["$CLIPBOARD.class"],
+    "description": "Gets the class of the variable in the clipboard in Ruby."
+  },  
   "Ruby Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [

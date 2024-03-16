@@ -112,6 +112,13 @@
     "body": ["typeof ${1:variable}  // Note: This checks the runtime type."],
     "description": "Gets the type of a variable in TypeScript."
   },
+  "TypeScript This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": [
+      "typeof $CLIPBOARD // Note: This checks the runtime type."
+    ],
+    "description": "Gets the type of the variable in the clipboard in TypeScript."
+  },
   "TypeScript Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
@@ -170,12 +177,24 @@
     "description": "Prints out all the basic types in TypeScript."
   },
   "TypeScript String Type": {
-    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
+    "prefix": [
+      "cotrTypesString",
+      "stringType",
+      "typeString",
+      "textType",
+      "typeText"
+    ],
     "body": ["string"],
     "description": "The TypeScript string type."
   },
   "TypeScript Number Type": {
-    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
+    "prefix": [
+      "cotrTypesNum",
+      "numberType",
+      "typeNumber",
+      "doubleType",
+      "typeDouble"
+    ],
     "body": ["number"],
     "description": "The TypeScript number type."
   },
@@ -195,12 +214,28 @@
     "description": "The TypeScript false value."
   },
   "TypeScript Date Type": {
-    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
+    "prefix": [
+      "cotrTypesDate",
+      "dateType",
+      "typeDate",
+      "timeType",
+      "timestampType",
+      "dateTimeType"
+    ],
     "body": ["Date"],
     "description": "The TypeScript Date object."
   },
   "TypeScript Map Type": {
-    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
+    "prefix": [
+      "cotrTypesMap",
+      "mapType",
+      "typeMap",
+      "hashmapType",
+      "structType",
+      "dictType",
+      "typeDict",
+      "typeScruct"
+    ],
     "body": ["Map<${1:KeyType}, ${2:ValueType}>"],
     "description": "The TypeScript Map type."
   },
@@ -225,7 +260,14 @@
     "description": "The TypeScript any type."
   },
   "TypeScript Interpolate String": {
-    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
+    "prefix": [
+      "cotrInterpolate",
+      "interpolate",
+      "variableExpansion",
+      "variableSubstitution",
+      "stringPlaceholders",
+      "stringInterpolation"
+    ],
     "body": ["`Hello, ${1:name}!`"],
     "description": "Interpolates a string in TypeScript."
   },
@@ -240,7 +282,12 @@
     "description": "Creates a variable in TypeScript using the let keyword."
   },
   "Variable Declaration Syntax": {
-    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
+    "prefix": [
+      "cotrVarSyntax",
+      "variableSyntax",
+      "howToVariables",
+      "letSyntax"
+    ],
     "body": [
       "// TypeScript Variable Declaration Syntax:",
       "",
@@ -273,12 +320,26 @@
     "description": "Creates a nullable variable in TypeScript."
   },
   "TypeScript Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
+    "prefix": [
+      "cotrVarString",
+      "string",
+      "stringVariable",
+      "variableString",
+      "text",
+      "createString",
+      "createText"
+    ],
     "body": ["let ${1:myString}: string = ${2:'myValue'};"],
     "description": "Creates a string variable in TypeScript."
   },
   "TypeScript Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
+    "prefix": [
+      "cotrVarStringMulti",
+      "multiLineString",
+      "varStringMulti",
+      "stringVariableMulti",
+      "createMultiLineString"
+    ],
     "body": [
       "let ${1:myString}: string = `",
       "${2:Line 1}",
@@ -294,7 +355,13 @@
     "description": "Creates a number variable in TypeScript."
   },
   "TypeScript Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
+    "prefix": [
+      "cotrVarBool",
+      "variableBool",
+      "bool",
+      "boolVariable",
+      "createBool"
+    ],
     "body": ["let ${1:myBoolean}: boolean = ${2:true};"],
     "description": "Creates a boolean variable in TypeScript."
   },
@@ -306,12 +373,32 @@
     "description": "Creates a date variable in TypeScript."
   },
   "TypeScript Create List Variable": {
-    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
+    "prefix": [
+      "cotrVarList",
+      "createList",
+      "listVariable",
+      "arrayVariable",
+      "variableList",
+      "variableArray",
+      "list",
+      "array"
+    ],
     "body": ["let ${1:myList}: ${2:type}[] = [${3:'item1'}, ${4:'item2'}];"],
     "description": "Creates an array (list) variable in TypeScript."
   },
   "TypeScript Create Map Variable": {
-    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
+    "prefix": [
+      "cotrVarMap",
+      "createMap",
+      "createStruct",
+      "variableMap",
+      "variableStruct",
+      "mapVariable",
+      "structVariable",
+      "dictVariable",
+      "variableDict",
+      "createDict"
+    ],
     "body": [
       "let ${1:myMap}: { [key: string]: ${2:type} } = {",
       "  ${3:'key1'}: ${4:'value1'},",
@@ -363,7 +450,7 @@
     "description": "Generates an array (list) of a specific length in TypeScript."
   },
   "TypeScript Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+    "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["console.log(${1:'Your message here'});"],
     "description": "Prints a message to the console in TypeScript."
   },
@@ -418,7 +505,14 @@
     "description": "Creates a switch statement in TypeScript."
   },
   "TypeScript Function": {
-    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
+    "prefix": [
+      "cotrFunc",
+      "function",
+      "subprogram",
+      "procedure",
+      "subroutine",
+      "method"
+    ],
     "body": [
       "function ${2:myFunction}(${3:parameters}): ${1:void} {",
       "  ${4:// Your code here}",
@@ -455,7 +549,15 @@
     "description": "Creates an arrow function in TypeScript."
   },
   "TypeScript Anonymous Function": {
-    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
+    "prefix": [
+      "cotrFuncAnon",
+      "anonFunc",
+      "anonymous",
+      "closure",
+      "lambda",
+      "functionLiteral",
+      "cotrFuncLambda"
+    ],
     "body": [
       "(${1:parameters}): ${2:void} => {",
       "  ${3:// Your code here}",

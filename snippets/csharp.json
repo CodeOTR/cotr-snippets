@@ -115,6 +115,11 @@
     "body": ["${1:variable}.GetType()"],
     "description": "Gets the type of a variable in C#."
   },
+  "C# This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": ["$CLIPBOARD.GetType().Name"],
+    "description": "Gets the type of the variable in the clipboard in C#."
+  },  
   "C# Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [

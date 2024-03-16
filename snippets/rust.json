@@ -107,6 +107,12 @@
     "body": ["${1:variable}.type()"],
     "description": "Gets the type of a variable in Rust."
   },
+  "Rust This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": ["$CLIPBOARD.type_id()"],
+    "description": "Gets the type of the variable in the clipboard in Rust."
+  },
+
   "Rust Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
@@ -171,7 +177,13 @@
     "description": "Lists the types in Rust."
   },
   "Rust String Type (String)": {
-    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
+    "prefix": [
+      "cotrTypesString",
+      "stringType",
+      "typeString",
+      "textType",
+      "typeText"
+    ],
     "body": ["String"],
     "description": "The Rust String type."
   },
@@ -191,7 +203,13 @@
     "description": "The Rust i64 type."
   },
   "Rust Float Type (f32)": {
-    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
+    "prefix": [
+      "cotrTypesNum",
+      "numberType",
+      "typeNumber",
+      "doubleType",
+      "typeDouble"
+    ],
     "body": ["f32"],
     "description": "The Rust f32 type."
   },
@@ -216,7 +234,14 @@
     "description": "The Rust false value."
   },
   "Rust Date Type": {
-    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
+    "prefix": [
+      "cotrTypesDate",
+      "dateType",
+      "typeDate",
+      "timeType",
+      "timestampType",
+      "dateTimeType"
+    ],
     "body": [
       "// Rust does not have a built-in Date type.",
       "// Use the chrono crate for date and time operations.",
@@ -225,7 +250,16 @@
     "description": "Explains the absence of a built-in Date type in Rust."
   },
   "Rust Map Type": {
-    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
+    "prefix": [
+      "cotrTypesMap",
+      "mapType",
+      "typeMap",
+      "hashmapType",
+      "structType",
+      "dictType",
+      "typeDict",
+      "typeScruct"
+    ],
     "body": ["std::collections::HashMap<${1:KeyType}, ${2:ValueType}>"],
     "description": "The Rust HashMap type, equivalent to a map."
   },
@@ -261,7 +295,14 @@
     "description": "The Rust dyn Any type."
   },
   "Rust Interpolate String": {
-    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
+    "prefix": [
+      "cotrInterpolate",
+      "interpolate",
+      "variableExpansion",
+      "variableSubstitution",
+      "stringPlaceholders",
+      "stringInterpolation"
+    ],
     "body": ["format!(\"${1:Your message here}\")"],
     "description": "Interpolates a string in Rust."
   },
@@ -276,7 +317,12 @@
     "description": "Creates a variable in Rust using the let keyword."
   },
   "Variable Declaration Syntax": {
-    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
+    "prefix": [
+      "cotrVarSyntax",
+      "variableSyntax",
+      "howToVariables",
+      "letSyntax"
+    ],
     "body": [
       "// Rust Variable Declaration Syntax:",
       "",
@@ -311,12 +357,26 @@
     "description": "Creates a nullable variable in Rust using the Option type."
   },
   "Rust Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
+    "prefix": [
+      "cotrVarString",
+      "string",
+      "stringVariable",
+      "variableString",
+      "text",
+      "createString",
+      "createText"
+    ],
     "body": ["let ${1:myStr} = String::from(${2:\"myString\"});"],
     "description": "Creates a string variable in Rust using the String class."
   },
   "Rust Create Multi-line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
+    "prefix": [
+      "cotrVarStringMulti",
+      "multiLineString",
+      "varStringMulti",
+      "stringVariableMulti",
+      "createMultiLineString"
+    ],
     "body": [
       "let ${1:myStr} = String::from(",
       "  ${2:'Line 1'}",
@@ -327,7 +387,14 @@
     "description": "Creates a multi-line string variable in Rust using the String class."
   },
   " Rust Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
+    "prefix": [
+      "cotrVarInt",
+      "integer",
+      "int",
+      "variableInt",
+      "intVariable",
+      "createInt"
+    ],
     "body": ["let ${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in Rust."
   },
@@ -337,7 +404,13 @@
     "description": "Creates a float variable in Rust."
   },
   "Rust Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
+    "prefix": [
+      "cotrVarBool",
+      "variableBool",
+      "bool",
+      "boolVariable",
+      "createBool"
+    ],
     "body": ["let ${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in Rust."
   },
@@ -353,7 +426,16 @@
     "description": "Creates a date variable in Rust using the chrono crate."
   },
   "Rust Create List Variable": {
-    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
+    "prefix": [
+      "cotrVarList",
+      "createList",
+      "listVariable",
+      "arrayVariable",
+      "variableList",
+      "variableArray",
+      "list",
+      "array"
+    ],
     "body": [
       "let ${1:myList} = [",
       "  ${2:'item1'},",
@@ -364,7 +446,18 @@
     "description": "Creates a list variable in Rust."
   },
   "Rust Create Map Variable (Hashmap)": {
-    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
+    "prefix": [
+      "cotrVarMap",
+      "createMap",
+      "createStruct",
+      "variableMap",
+      "variableStruct",
+      "mapVariable",
+      "structVariable",
+      "dictVariable",
+      "variableDict",
+      "createDict"
+    ],
     "body": [
       "use std::collections::HashMap;",
       "",
@@ -414,7 +507,7 @@
     "description": "Generates an array (list) of a specific length in Rust."
   },
   "Rust Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+    "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["println!(\"{${1:'Your message here'}}\");"],
     "description": "Prints a message to the console in Rust."
   },
@@ -464,7 +557,14 @@
     "description": "Creates a match statement in Rust."
   },
   "Rust Function": {
-    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
+    "prefix": [
+      "cotrFunc",
+      "function",
+      "subprogram",
+      "procedure",
+      "subroutine",
+      "method"
+    ],
     "body": [
       "fn ${2:my_function}(${3:parameters}) -> ${1:void} {",
       "    ${4:// Your code here}",
@@ -495,7 +595,15 @@
     "description": "Creates a closure (lambda function) in Rust."
   },
   "Rust Anonymous Function": {
-    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
+    "prefix": [
+      "cotrFuncAnon",
+      "anonFunc",
+      "anonymous",
+      "closure",
+      "lambda",
+      "functionLiteral",
+      "cotrFuncLambda"
+    ],
     "body": [
       "|${1:parameters}| -> ${2:ReturnType} {",
       "    ${3:// Your code here}",

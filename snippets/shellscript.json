@@ -373,6 +373,19 @@
     ],
     "description": "Explains how to perform basic type checks in Bash."
   },
+  "Bash This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": [
+      "if [[ $CLIPBOARD =~ ^-?[0-9]+$ ]]; then",
+      "  echo 'integer'",
+      "elif [[ $CLIPBOARD =~ ^-?[0-9]*\\.[0-9]+$ ]]; then",
+      "  echo 'float'",
+      "else",
+      "  echo 'string'",
+      "fi"
+    ],
+    "description": "Infers the type of the variable in the clipboard in Bash."
+  },  
   "Bash Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [

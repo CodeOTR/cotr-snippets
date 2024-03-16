@@ -109,6 +109,11 @@
     "body": ["${1:variable}.runtimeType"],
     "description": "Gets the type of a variable in Dart."
   },
+  "Dart This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": ["$CLIPBOARD.runtimeType"],
+    "description": "Gets the type of the variable in the clipboard in Dart."
+  },  
   "Dart Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [

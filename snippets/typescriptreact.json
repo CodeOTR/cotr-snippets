@@ -118,6 +118,13 @@
     "body": ["typeof ${1:variable}  // Note: This checks the runtime type."],
     "description": "Gets the type of a variable in TypeScript."
   },
+  "TypeScript This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": [
+      "typeof $CLIPBOARD // Note: This checks the runtime type."
+    ],
+    "description": "Gets the type of the variable in the clipboard in TypeScript."
+  },
   "TypeScript Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [

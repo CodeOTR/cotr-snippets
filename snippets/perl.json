@@ -113,6 +113,11 @@
     "body": ["ref ${1:variable}"],
     "description": "Gets the type of a variable in Perl."
   },
+  "Perl This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": ["ref($CLIPBOARD)"],
+    "description": "Gets the type of the reference in the clipboard in Perl."
+  },  
 
   "Perl Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],

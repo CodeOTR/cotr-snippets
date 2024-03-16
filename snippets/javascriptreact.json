@@ -115,6 +115,11 @@
     "body": ["typeof ${1:variable}"],
     "description": "Gets the type of a variable in JavaScript."
   },
+  "JavaScript This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": ["typeof $CLIPBOARD"],
+    "description": "Gets the type of the variable in the clipboard in JavaScript."
+  },  
   "JavaScript Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [

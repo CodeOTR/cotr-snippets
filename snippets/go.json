@@ -77,6 +77,11 @@
     "body": ["fmt.Printf(\"%T\", ${1:variable})"],
     "description": "Prints the type of a variable in Go."
   },
+  "Go This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": ["reflect.TypeOf($CLIPBOARD).String()"],
+    "description": "Gets the type of the variable in the clipboard in Go."
+  },  
   "Go Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [

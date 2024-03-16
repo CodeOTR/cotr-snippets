@@ -77,6 +77,11 @@
     "body": ["${1:variable}.GetType()"],
     "description": "Gets the type of a variable in PowerShell."
   },
+  "PowerShell This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": ["$CLIPBOARD.GetType().FullName"],
+    "description": "Gets the full type name of the variable in the clipboard in PowerShell."
+  },  
 
   "PowerShell Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],

@@ -109,6 +109,15 @@
     "body": ["${1:variable} :: ${2:Type}"],
     "description": "Checks the type of a variable in Haskell."
   },
+  "Haskell This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": [
+      "import Data.Typeable",
+      "",
+      "typeOf $CLIPBOARD"
+    ],
+    "description": "Gets the type of the variable in the clipboard in Haskell using Data.Typeable."
+  },    
   "Haskell Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [

@@ -114,6 +114,11 @@
     "body": ["${1:variable}.getClass()"],
     "description": "Gets the type of a variable in Java."
   },
+  "Java This Type Check": {
+    "prefix": ["thisTypeCheck", "thisType", "getThisType"],
+    "body": ["$CLIPBOARD.getClass().getName()"],
+    "description": "Gets the class name of the variable in the clipboard in Java."
+  },  
   "Java Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
