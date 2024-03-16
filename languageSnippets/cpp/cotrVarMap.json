@@ -1,6 +1,6 @@
 {
   "C++ Create Map Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "std::map<${1:keyType}, ${2:valueType}> ${3:myMap} = {",
       "  {${4:key1}, ${5:value1}},",

@@ -1,6 +1,6 @@
 {
   "C++ Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["std::string ${1:myString} = ${2:value};"],
     "description": "Creates a string variable in C++."
   }

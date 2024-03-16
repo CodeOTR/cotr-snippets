@@ -193,7 +193,7 @@
     "description": "The Go time.Now() function."
   },
   "Go Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["`${1:string}`"],
     "description": "Interpolates a string in Go."
   },
@@ -283,12 +283,12 @@
     "description": "Creates a typed variable in Go."
   },
   "Go Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["var ${1:myVar} *${2:Type} = $3"],
     "description": "Creates a nullable variable in Go using pointers."
   },
   "Go Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["var ${1:variableName} string = ${2:variableValue}"],
     "description": "Creates a string variable in Go using the var keyword"
   },
@@ -304,7 +304,7 @@
     "description": "Creates a multi-line string variable in Go using the var keyword"
   },
   "Go Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["var ${1:variableName} int = ${2:variableValue}"],
     "description": "Creates an integer variable in Go using the var keyword"
   },
@@ -314,7 +314,7 @@
     "description": "Creates a float variable in Go using the var keyword"
   },
   "Go Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["var ${1:variableName} bool = ${2:variableValue}"],
     "description": "Creates a boolean variable in Go using the var keyword"
   },
@@ -337,7 +337,7 @@
     "description": "Creates a list variable in Go using the var keyword"
   },
   "Go Create Map Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "var ${1:mapName} = map[${2:keyType}]${3:valueType}{",
       "    ${4:key1}: ${5:value1},",
@@ -435,7 +435,7 @@
     "description": "Creates a function in Go."
   },
   "Go Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "// In Go, functions do not support default argument values in definitions.",
       "func ${2:MyFunction}(${3:arg1} ${4:type1}, ${5:arg2} ${6:type2}) ${1:void} {",
@@ -445,7 +445,7 @@
     "description": "Creates a function with arguments in Go, with a note about default argument values."
   },
   "Go Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": ["// Go does not support named arguments in function definitions."],
     "description": "Go does not support named arguments in function definitions."
   },

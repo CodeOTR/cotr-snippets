@@ -242,7 +242,7 @@
     "description": "The Haskell Nothing value, representing the absence of a value."
   },
   "Haskell Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["show ${1:variable}"],
     "description": "Interpolates a variable into a string in Haskell."
   },
@@ -295,19 +295,19 @@
   },
 
   "Haskell Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["let ${1:myVar} :: Maybe ${2:Type} = Nothing"],
     "description": "Creates a nullable variable in Haskell using the Maybe type."
   },
 
   "Haskell Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["let ${1:myString} = \"${2:Your string here}\""],
     "description": "Creates a string variable in Haskell."
   },
 
   "Haskell Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": [
       "let ${1:myString} = \"\"\"",
       "${2:Line 1}",
@@ -319,13 +319,13 @@
   },
 
   "Haskell Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["let ${1:myInt} = ${2:0}"],
     "description": "Creates an integer variable in Haskell."
   },
 
   "Haskell Create Double Variable": {
-    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble"],
+    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble", "createDouble"],
     "body": ["let ${1:myDouble} = ${2:0.0}"],
     "description": "Creates a double variable in Haskell."
   },
@@ -337,7 +337,7 @@
   },
 
   "Haskell Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["let ${1:myBool} = ${2:True}"],
     "description": "Creates a boolean variable in Haskell."
   },
@@ -361,7 +361,7 @@
   },
 
   "Haskell Create Map Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "let ${1:myMap} = Map.fromList [(${2:key}, ${3:value})]",
       "  -- Add more key-value pairs here"
@@ -457,7 +457,7 @@
   },
 
   "Haskell Named Arguments (Alternative)": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "-- Haskell does not have named arguments in the traditional sense.",
       "-- You can use record syntax or higher-order functions to achieve similar functionality."
@@ -465,7 +465,7 @@
     "description": "Explains alternatives to named arguments in Haskell."
   },
   "Haskell Function Arguments": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "-- Haskell functions typically use pattern matching to handle arguments.",
       "-- Example:",

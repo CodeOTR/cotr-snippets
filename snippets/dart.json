@@ -269,12 +269,12 @@
     "description": "Creates a typed variable in Dart."
   },
   "Dart Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["${1:Type}? ${2:myVar} = $3;"],
     "description": "Creates a nullable variable in Dart."
   },
   "Dart Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["'Your string here \\${${1:variable}}'"],
     "description": "Interpolates a variable into a string in Dart."
   },
@@ -284,27 +284,27 @@
     "description": "Concatenates two strings in Dart."
   },
   "Dart Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["String ${1:myString} = ${2:'Your string here'};"],
     "description": "Creates a string variable in Dart."
   },
   "Dart Create Multiline String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": ["String ${1:myString} = '''", "${2:Your string here}", "''';"],
     "description": "Creates a multi-line string variable in Dart."
   },
   "Dart Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["int ${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in Dart."
   },
   "Dart Create Double Variable": {
-    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble"],
+    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble", "createDouble"],
     "body": ["double ${1:myDouble} = ${2:0.0};"],
     "description": "Creates a double variable in Dart."
   },
   "Dart Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["bool ${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in Dart."
   },
@@ -314,7 +314,7 @@
     "description": "Creates a list variable in Dart."
   },
   "Dart Create Map Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "Map<${1:KeyType}, ${2:ValueType}> ${3:myMap} = {",
       "  ${4:key1}: ${5:value1},",
@@ -421,7 +421,7 @@
     "description": "Creates a function in Dart."
   },
   "Dart Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "// In Dart, functions can have optional named or positional parameters with default values.",
       "${1:void} ${2:myFunction}(${3:Type} ${4:arg1}, [${5:Type} ${6:arg2} = ${7:defaultValue}]) {",
@@ -431,7 +431,7 @@
     "description": "Creates a function with arguments in Dart, including an optional positional argument with a default value."
   },
   "Dart Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "${1:void} ${2:myFunction}({${3:arg1}, ${4:arg2}}) {",
       "  ${5:// Your code here}",

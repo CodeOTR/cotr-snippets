@@ -240,7 +240,7 @@
     "description": "The Python dynamic type."
   },
   "Python Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["f\"${1:Your message here}\""],
     "description": "Interpolates a string in Python."
   },
@@ -275,17 +275,17 @@
     "description": "Creates a variable in Python."
   },
   "Python Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["${1:my_var} = None  # Variable can be set to None."],
     "description": "Creates a nullable variable in Python."
   },
   "Python Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["${1:myString} = ${2:''}"],
     "description": "Creates a string variable in Python."
   },
   "Python Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": [
       "${1:myString} = '''",
       "${2:Line 1}",
@@ -306,7 +306,7 @@
     "description": "Creates a float variable in Python."
   },
   "Python Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["${1:myBool} = ${2:True}"],
     "description": "Creates a boolean variable in Python."
   },
@@ -325,7 +325,7 @@
     "description": "Creates a list variable in Python."
   },
   "Python Create Dictionary Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "${1:myDict} = {",
       "    '${2:key1}': ${3:value1},",
@@ -394,7 +394,7 @@
     "description": "Creates a function in Python."
   },
   "Python Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "# In Python, functions can have arguments with default values.",
       "def ${2:my_function}(${3:arg1}, ${4:arg2}=${5:'defaultVal'}):",
@@ -404,7 +404,7 @@
     "description": "Creates a function with arguments in Python, including an argument with a default value."
   },
   "Python Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "def ${2:my_function}(*, ${3:arg1}=${4:value1}, ${5:arg2}=${6:value2}):",
       "    ${7:# Your code here}",

@@ -225,7 +225,7 @@
     "description": "The TypeScript any type."
   },
   "TypeScript Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["`Hello, ${1:name}!`"],
     "description": "Interpolates a string in TypeScript."
   },
@@ -268,17 +268,17 @@
     "description": "Creates a typed variable in TypeScript."
   },
   "TypeScript Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["let ${1:myVar}: ${2:Type} | null = $3;"],
     "description": "Creates a nullable variable in TypeScript."
   },
   "TypeScript Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["let ${1:myString}: string = ${2:'myValue'};"],
     "description": "Creates a string variable in TypeScript."
   },
   "TypeScript Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": [
       "let ${1:myString}: string = `",
       "${2:Line 1}",
@@ -294,7 +294,7 @@
     "description": "Creates a number variable in TypeScript."
   },
   "TypeScript Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["let ${1:myBoolean}: boolean = ${2:true};"],
     "description": "Creates a boolean variable in TypeScript."
   },
@@ -311,7 +311,7 @@
     "description": "Creates an array (list) variable in TypeScript."
   },
   "TypeScript Create Map Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "let ${1:myMap}: { [key: string]: ${2:type} } = {",
       "  ${3:'key1'}: ${4:'value1'},",
@@ -427,7 +427,7 @@
     "description": "Creates a function in TypeScript."
   },
   "TypeScript Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "// In TypeScript, functions can have arguments with default values.",
       "function ${2:myFunction}(${3:arg1}: ${4:type1}, ${5:arg2}: ${6:type2} = ${7:defaultValue}): ${1:void} {",
@@ -437,7 +437,7 @@
     "description": "Creates a function with arguments in TypeScript, including an argument with a default value."
   },
   "TypeScript Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "function ${2:myFunction}({${3:arg1}, ${4:arg2}}: {${3:arg1}: ${5:type1}, ${4:arg2}: ${6:type2}}): ${1:void} {",
       "  ${7:// Your code here}",

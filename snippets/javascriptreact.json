@@ -228,7 +228,7 @@
     "description": "Gets the current date and time in JavaScript."
   },
   "JavaScript Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["let text = `Hello, ${1:name}!`;"],
     "description": "Interpolates a string in JavaScript."
   },
@@ -271,12 +271,12 @@
     "description": "Creates a variable in JavaScript."
   },
   "JavaScript Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["let ${1:myVar} = null;"],
     "description": "Creates a nullable variable in JavaScript."
   },
   "JavaScript Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["let ${1:myString} = \"${2:Your string here}\";"],
     "description": "Creates a string variable in JavaScript."
   },
@@ -297,7 +297,7 @@
     "description": "Creates a number variable in JavaScript."
   },
   "JavaScript Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["let ${1:myBoolean} = ${2:true};"],
     "description": "Creates a boolean variable in JavaScript."
   },
@@ -314,7 +314,7 @@
     "description": "Creates an array (list) variable in JavaScript."
   },
   "JavaScript Create Map Variable (Object)": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "let ${1:myObject} = {",
       "  ${2:'key1'}: ${3:'value1'},",
@@ -429,7 +429,7 @@
     "description": "Creates a function in JavaScript."
   },
   "JavaScript Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "// In JavaScript, functions can have arguments with default values.",
       "function ${2:myFunction}(${3:arg1}, ${4:arg2} = ${5:defaultValue}) {",
@@ -439,7 +439,7 @@
     "description": "Creates a function with arguments in JavaScript, including an argument with a default value."
   },
   "JavaScript Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "function ${2:myFunction}({${3:arg1}, ${4:arg2}}) {",
       "  ${5:// Your code here}",

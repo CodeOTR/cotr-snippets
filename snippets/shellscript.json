@@ -81,7 +81,7 @@
     "description": "Creates a function."
   },
   "Bash Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "${2:myFunction}() {",
       "  local ${3:arg1}=${4:\\$1}",
@@ -158,7 +158,7 @@
     "description": "Creates a function expression in Bash."
   },
   "Bash Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "# Bash doesn't directly support named arguments, but you can simulate them using associative arrays or options parsing."
     ],
@@ -201,7 +201,7 @@
     "description": "Explains how to generate a map in Bash using associative arrays."
   },
   "Bash Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": [
       "# Bash uses double quotes for variable interpolation:",
       "echo \"Hello, ${1:name}!\""
@@ -467,7 +467,7 @@
     "description": "Describes string representation in Bash."
   },
   "Bash Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": [
       "# Bash uses 0 for false and non-zero values for true:",
       "${1:myBoolean}=${2:0}"
@@ -491,7 +491,7 @@
     "description": "Creates an array (list) variable in Bash."
   },
   "Bash Create Map Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "# Create an associative array (map):",
       "declare -A ${1:myMap}",
@@ -501,7 +501,7 @@
     "description": "Creates an associative array (map) variable in Bash."
   },
   "Bash Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": [
       "# Bash doesn't have null, but you can use an empty string or a special value:",
       "${1:myVar}=${2:''}"
@@ -521,12 +521,12 @@
     "description": "Bash doesn't have static variables in the traditional sense."
   },
   "Bash Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["# Assign a string value:", "${1:myString}=${2:'myValue'}"],
     "description": "Creates a string variable in Bash."
   },
   "Bash Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": [
       "# Use a here document for multi-line strings:",
       "${1:myString}<<EOF",

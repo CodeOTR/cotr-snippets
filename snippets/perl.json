@@ -267,7 +267,7 @@
   },
 
   "Perl Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["my $${1:myVar};  # Variable can be undefined (undef)."],
     "description": "Creates a nullable variable in Perl."
   },
@@ -294,7 +294,7 @@
   },
 
   "Perl Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["\"Your string here $${1:variable}\""],
     "description": "Interpolates a variable into a string in Perl."
   },
@@ -306,13 +306,13 @@
   },
 
   "Perl Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["my $${1:myString} = \"${2:Your string here}\";"],
     "description": "Creates a string variable in Perl."
   },
 
   "Perl Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": [
       "my $${1:myString} = <<'END_STRING';",
       "${2:Line 1}",
@@ -324,7 +324,7 @@
   },
 
   "Perl Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["my $${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in Perl."
   },
@@ -336,7 +336,7 @@
   },
 
   "Perl Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["my $${1:myBool} = ${2:1};"],
     "description": "Creates a boolean variable in Perl."
   },
@@ -348,7 +348,7 @@
   },
 
   "Perl Create Hash Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": ["my %${1:myHash} = (${2:key} => ${3:value});"],
     "description": "Creates a hash variable in Perl."
   },
@@ -482,7 +482,7 @@
   },
 
   "Perl Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "# In Perl, you can use default arguments in function definitions.",
       "sub ${2:myFunction} {",
@@ -495,7 +495,7 @@
   },
 
   "Perl Named Arguments (Alternative)": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "# Perl does not have named arguments in the traditional sense.",
       "# You can use record syntax or higher-order functions to achieve similar functionality."

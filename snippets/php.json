@@ -267,12 +267,12 @@
     "description": "Creates a typed variable in PHP."
   },
   "PHP Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["${1:Type}? $${2:myVar} = $3;"],
     "description": "Creates a nullable variable in PHP."
   },
   "PHP Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["$${1:myString} = '${2:Your string here}';"],
     "description": "Creates a string variable in PHP."
   },
@@ -282,7 +282,7 @@
     "description": "Creates a multi-line string variable in PHP."
   },
   "PHP Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["'Your string here \\${${1:variable}}'"],
     "description": "Interpolates a variable into a string in PHP."
   },
@@ -292,7 +292,7 @@
     "description": "Concatenates two strings in PHP."
   },
   "PHP Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["$${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in PHP."
   },
@@ -302,7 +302,7 @@
     "description": "Creates a float variable in PHP."
   },
   "PHP Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["$${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in PHP."
   },
@@ -312,7 +312,7 @@
     "description": "Creates an array variable in PHP."
   },
   "PHP Create Map Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": ["$${1:myMap} = [${2:key} => ${3:value}];"],
     "description": "Creates a map variable in PHP."
   },
@@ -413,7 +413,7 @@
     "description": "Creates a function in PHP."
   },
   "PHP Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "// In PHP, functions can have arguments with default values.",
       "function ${2:myFunction}(${3:$arg1}, ${4:$arg2} = '${5:defaultVal}') {",
@@ -423,7 +423,7 @@
     "description": "Creates a function with arguments in PHP, including an argument with a default value."
   },
   "PHP Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "// Note: PHP does not support named arguments in function definitions."
     ],

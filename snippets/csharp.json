@@ -278,7 +278,7 @@
     "description": "The C# DateTime.Now property."
   },
   "C# Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["$\"${1:Your string here}\""],
     "description": "Interpolates a string in C#."
   },
@@ -330,17 +330,17 @@
     "description": "Creates a typed variable in C#."
   },
   "C# Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["${1:Type}? ${2:myVar} = $3;"],
     "description": "Creates a nullable variable in C#."
   },
   "C# Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["string ${1:myString} = ${2:'Your string here'};"],
     "description": "Creates a string variable in C#."
   },
   "C# Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": [
       "string ${1:myString} = @\"\"\"",
       "${2:Line 1}",
@@ -351,17 +351,17 @@
     "description": "Creates a multi-line string variable in C#."
   },
   "C# Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["int ${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in C#."
   },
   "C# Create Double Variable": {
-    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble"],
+    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble", "createDouble"],
     "body": ["double ${1:myDouble} = ${2:0.0};"],
     "description": "Creates a double variable in C#."
   },
   "C# Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["bool ${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in C#."
   },
@@ -378,7 +378,7 @@
     "description": "Creates a list variable in C#."
   },
   "C# Create Dictionary Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "Dictionary<${1:Key}, ${2:Value}> ${3:myDict} = new Dictionary<${1:Key}, ${2:Value}>();"
     ],
@@ -484,7 +484,7 @@
     "description": "Creates a function in C#."
   },
   "C# Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "// In C#, functions can have arguments with default values.",
       "public ${1:void} ${2:MyFunction}(${3:type1} ${4:arg1}, ${5:type2} ${6:arg2} = ${7:defaultValue})",
@@ -495,7 +495,7 @@
     "description": "Creates a function with arguments in C#, including an argument with a default value."
   },
   "C# Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "// Note: C# does not have named arguments in function definitions.",
       "// You can use named parameters in method calls.",

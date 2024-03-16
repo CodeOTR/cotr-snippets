@@ -261,7 +261,7 @@
     "description": "The Rust dyn Any type."
   },
   "Rust Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["format!(\"${1:Your message here}\")"],
     "description": "Interpolates a string in Rust."
   },
@@ -306,17 +306,17 @@
     "description": "Creates a typed variable in Rust."
   },
   "Rust Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["let ${1:my_var}: Option<${2:Type}> = $3;"],
     "description": "Creates a nullable variable in Rust using the Option type."
   },
   "Rust Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["let ${1:myStr} = String::from(${2:\"myString\"});"],
     "description": "Creates a string variable in Rust using the String class."
   },
   "Rust Create Multi-line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": [
       "let ${1:myStr} = String::from(",
       "  ${2:'Line 1'}",
@@ -327,7 +327,7 @@
     "description": "Creates a multi-line string variable in Rust using the String class."
   },
   " Rust Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["let ${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in Rust."
   },
@@ -337,7 +337,7 @@
     "description": "Creates a float variable in Rust."
   },
   "Rust Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["let ${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in Rust."
   },
@@ -364,7 +364,7 @@
     "description": "Creates a list variable in Rust."
   },
   "Rust Create Map Variable (Hashmap)": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "use std::collections::HashMap;",
       "",
@@ -473,7 +473,7 @@
     "description": "Creates a function in Rust."
   },
   "Rust Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "// In Rust, default arguments are not supported but you can set default values using patterns like Option<T> or custom types.",
       "fn ${2:my_function}(${3:arg1}: ${4:type1}, ${5:arg2}: Option<${6:type2}> = None) -> ${1:void} {",
@@ -483,7 +483,7 @@
     "description": "Creates a function with arguments in Rust, including an argument with an optional default value."
   },
   "Rust Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "// Note: Rust does not support named arguments in function definitions."
     ],

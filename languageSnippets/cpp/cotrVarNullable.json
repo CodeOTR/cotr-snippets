@@ -1,6 +1,6 @@
 {
   "C++ Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["std::optional<${1:Type}> ${2:myVar} = $3;"],
     "description": "Creates a nullable variable in C++ using std::optional."
   }

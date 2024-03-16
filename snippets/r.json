@@ -277,7 +277,7 @@
   },
 
   "R Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["paste0(\"Your string here \", ${1:variable})"],
     "description": "Interpolates a variable into a string in R."
   },
@@ -289,13 +289,13 @@
   },
 
   "R Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["${1:my_string} <- '${2:Your string here}'"],
     "description": "Creates a string variable in R."
   },
 
   "R Create Multiline String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": [
       "${1:my_string} <- paste0(",
       "${2:\"Line 1\",",
@@ -306,19 +306,19 @@
   },
 
   "R Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["${1:my_int} <- ${2:0}"],
     "description": "Creates an integer variable in R."
   },
 
   "R Create Double Variable": {
-    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble"],
+    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble", "createDouble"],
     "body": ["${1:my_double} <- ${2:0.0}"],
     "description": "Creates a double variable in R."
   },
 
   "R Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["${1:my_bool} <- ${2:TRUE}"],
     "description": "Creates a boolean variable in R."
   },
@@ -406,7 +406,7 @@
   },
 
   "R Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "# In R, functions can have arguments with default values.",
       "${2:my_function} <- function(${3:arg1}, ${4:arg2} = ${5:'defaultVal'}) {",

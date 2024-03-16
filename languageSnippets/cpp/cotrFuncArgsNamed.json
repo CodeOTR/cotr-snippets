@@ -1,6 +1,6 @@
 {
   "C++ Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "// C++ does not support named arguments in the same way as some other languages."
     ],

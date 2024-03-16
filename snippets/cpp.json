@@ -287,12 +287,12 @@
     "description": "Creates a typed variable in C++."
   },
   "C++ Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["std::optional<${1:Type}> ${2:myVar} = $3;"],
     "description": "Creates a nullable variable in C++ using std::optional."
   },
   "C++ Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["int ${1:myInt} = ${2:value};"],
     "description": "Creates an integer variable in C++."
   },
@@ -307,17 +307,17 @@
     "description": "Creates a float variable in C++."
   },
   "C++ Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["bool ${1:myBool} = ${2:value};"],
     "description": "Creates a boolean variable in C++."
   },
   "C++ Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["std::string ${1:myString} = ${2:value};"],
     "description": "Creates a string variable in C++."
   },
   "C++ Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": [
       "std::string ${1:myString} = R\"(${2:Your multi-line message here})\";"
     ],
@@ -329,7 +329,7 @@
     "description": "Creates a list variable in C++."
   },
   "C++ Create Map Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "std::map<${1:keyType}, ${2:valueType}> ${3:myMap} = {",
       "  {${4:key1}, ${5:value1}},",
@@ -453,7 +453,7 @@
     "description": "Creates a function in C++."
   },
   "C++ Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "// In C++, you can use default arguments in function definitions.",
       "void ${2:myFunction}(${3:Type} ${4:arg1}, ${5:Type} ${6:arg2} = ${7:defaultValue}) {",
@@ -463,7 +463,7 @@
     "description": "Creates a function with arguments in C++, including an argument with a default value in the definition."
   },
   "C++ Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "// C++ does not support named arguments in the same way as some other languages."
     ],

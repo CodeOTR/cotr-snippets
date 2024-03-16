@@ -242,7 +242,7 @@
     "description": "Gets the current date in Java."
   },
   "Java Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["String.format(\"${1:%s}\", ${2:value})"],
     "description": "Interpolates a string in Java."
   },
@@ -282,12 +282,12 @@
     "description": "Creates a typed variable in Java."
   },
   "Java Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["${1:Type} ${2:myVar} = null;"],
     "description": "Creates a nullable variable in Java."
   },
   "Java Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["String ${1:myString} = ${2:'Your string here'};"],
     "description": "Creates a string variable in Java."
   },
@@ -302,17 +302,17 @@
     "description": "Creates a multi-line string variable in Java."
   },
   "Java Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["int ${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in Java."
   },
   "Java Create Double Variable": {
-    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble"],
+    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble", "createDouble"],
     "body": ["double ${1:myDouble} = ${2:0.0};"],
     "description": "Creates a double variable in Java."
   },
   "Java Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["boolean ${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in Java."
   },
@@ -334,7 +334,7 @@
     "description": "Creates a list variable in Java."
   },
   "Java Create Map Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "Map<${1:Key}, ${2:Value}> ${3:myMap} = new HashMap<>();",
       "${3:myMap}.put(${4:key}, ${5:value});"
@@ -438,7 +438,7 @@
     "description": "Creates a function in Java."
   },
   "Java Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "// In Java, functions do not support default argument values in definitions.",
       "// You can achieve similar functionality using method overloading.",
@@ -455,7 +455,7 @@
     "description": "Creates a function with arguments in Java, with a note about default argument values."
   },
   "Java Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "// Note: Java does not support named arguments in function definitions."
     ],

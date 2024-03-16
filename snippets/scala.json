@@ -284,13 +284,13 @@
   },
 
   "Scala Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["var ${1:myVar}: Option[${2:Type}] = None"],
     "description": "Creates a nullable variable in Scala using the Option type."
   },
 
   "Scala Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["s\"Your string here \\${${1:variable}}\""],
     "description": "Interpolates a variable into a string in Scala."
   },
@@ -302,13 +302,13 @@
   },
 
   "Scala Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["val ${1:myString} = \"${2:Your string here}\""],
     "description": "Creates a string variable in Scala."
   },
 
   "Scala Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": [
       "val ${1:myString} = \"\"\"",
       "${2:Line 1}",
@@ -320,19 +320,19 @@
   },
 
   "Scala Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["val ${1:myInt} = ${2:0}"],
     "description": "Creates an integer variable in Scala."
   },
 
   "Scala Create Double Variable": {
-    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble"],
+    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble", "createDouble"],
     "body": ["val ${1:myDouble} = ${2:0.0}"],
     "description": "Creates a double variable in Scala."
   },
 
   "Scala Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["val ${1:myBool} = ${2:true}"],
     "description": "Creates a boolean variable in Scala."
   },
@@ -344,7 +344,7 @@
   },
 
   "Scala Create Map Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": ["val ${1:myMap} = Map(${2:key} -> ${3:value})"],
     "description": "Creates a map variable in Scala."
   },
@@ -448,7 +448,7 @@
   },
 
   "Scala Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "// In Scala, functions can have arguments with default values.",
       "def ${2:myFunction}(${3:arg1}: ${4:Type1}, ${5:arg2}: ${6:Type2} = ${7:defaultValue}): ${1:Unit} = {",
@@ -459,7 +459,7 @@
   },
 
   "Scala Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "def ${2:myFunction}(${3:arg1}: ${4:Type1} = ${5:defaultValue1}, ${6:arg2}: ${7:Type2} = ${8:defaultValue2}): ${1:Unit} = {",
       "  ${9:// Your code here}",

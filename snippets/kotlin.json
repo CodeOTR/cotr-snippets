@@ -273,7 +273,7 @@
     "description": "The Kotlin Char type."
   },
   "Kotlin Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "scope": "kotlin",
     "body": ["\"${1:Your message here}\""],
     "description": "Interpolates a string in Kotlin."
@@ -317,19 +317,19 @@
     "description": "Creates a typed variable in Kotlin."
   },
   "Kotlin Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "scope": "kotlin",
     "body": ["var ${1:myVar}: ${2:Type}? = null"],
     "description": "Creates a nullable variable in Kotlin."
   },
   "Kotlin Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "scope": "kotlin",
     "body": ["var ${1:myString} = \"${2:myValue}\""],
     "description": "Creates a string variable in Kotlin using the var keyword."
   },
   "Kotlin Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "scope": "kotlin",
     "body": [
       "var ${1:myString} = \"\"\"",
@@ -341,7 +341,7 @@
     "description": "Creates a multi-line string variable in Kotlin using the var keyword."
   },
   "Kotlin Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "scope": "kotlin",
     "body": ["var ${1:myInt} = ${2:0}"],
     "description": "Creates an integer variable in Kotlin using the var keyword."
@@ -359,7 +359,7 @@
     "description": "Creates a float variable in Kotlin using the var keyword."
   },
   "Kotlin Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "scope": "kotlin",
     "body": ["var ${1:myBool} = ${2:true}"],
     "description": "Creates a boolean variable in Kotlin using the var keyword."
@@ -381,7 +381,7 @@
     "description": "Creates a list variable in Kotlin."
   },
   "Kotlin Create Map Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "scope": "kotlin",
     "body": [
       "var ${1:myMap} = mapOf(",
@@ -480,7 +480,7 @@
     "description": "Creates a function in Kotlin."
   },
   "Kotlin Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "scope": "kotlin",
     "body": [
       "// In Kotlin, functions can have arguments with default values.",
@@ -491,7 +491,7 @@
     "description": "Creates a function with arguments in Kotlin, including an argument with a default value."
   },
   "Kotlin Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "scope": "kotlin",
     "body": [
       "fun ${2:myFunction}(${3:arg1}: ${4:Type1} = ${5:defaultValue1}, ${6:arg2}: ${7:Type2} = ${8:defaultValue2}): ${1:Unit} {",

@@ -236,13 +236,13 @@
   },
 
   "PowerShell Create Nullable Variable": {
-    "prefix": "cotrVarNullable",
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["$${1:myVar} = $null"],
     "description": "Creates a nullable variable in PowerShell."
   },
 
   "PowerShell Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["\"Your string here $${1:variable}\""],
     "description": "Interpolates a variable into a string in PowerShell."
   },
@@ -254,13 +254,13 @@
   },
 
   "PowerShell Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["$${1:myString} = \"${2:Your string here}\""],
     "description": "Creates a string variable in PowerShell."
   },
 
   "PowerShell Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": [
       "$${1:myString} = @\"",
       "${2:Line 1}",
@@ -272,7 +272,7 @@
   },
 
   "PowerShell Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["$${1:myInt} = ${2:0}"],
     "description": "Creates an integer variable in PowerShell."
   },
@@ -284,7 +284,7 @@
   },
 
   "PowerShell Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["$${1:myBool} = ${2:$true}"],
     "description": "Creates a boolean variable in PowerShell."
   },
@@ -296,7 +296,7 @@
   },
 
   "PowerShell Create Hash Table Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "$${1:myHashTable} = @{",
       "  ${2:key1} = ${3:value1}",
@@ -400,7 +400,7 @@
   },
 
   "PowerShell Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "# In PowerShell, functions can have arguments with default values.",
       "function ${2:myFunction} {",
@@ -416,7 +416,7 @@
   },
 
   "PowerShell Named Arguments Function": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "function ${2:MyFunction} {",
       "    param(",
@@ -514,7 +514,7 @@
   },
 
   "PowerShell Function Arguments": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "# In PowerShell, functions can have arguments with default values.",
       "function ${2:myFunction} {",

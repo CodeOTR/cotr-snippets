@@ -273,7 +273,7 @@
     "description": "Creates a variable in Ruby with a comment about dynamic typing."
   },
   "Ruby Interpolate String": {
-    "prefix": "cotrInterpolate",
+    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["\"Your string here \\#{${1:variable}}\""],
     "description": "Interpolates a variable into a string in Ruby."
   },
@@ -283,17 +283,17 @@
     "description": "Concatenates two strings in Ruby."
   },
   "Ruby Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["${1:my_string} = ${2:'Your string here'}"],
     "description": "Creates a string variable in Ruby."
   },
   "Ruby Create Multiline String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": ["${1:my_string} = <<~HEREDOC", "${2:Your string here}", "HEREDOC"],
     "description": "Creates a multi-line string variable in Ruby."
   },
   "Ruby Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["${1:my_int} = ${2:0}"],
     "description": "Creates an integer variable in Ruby."
   },
@@ -303,7 +303,7 @@
     "description": "Creates a float variable in Ruby."
   },
   "Ruby Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["${1:my_bool} = ${2:true}"],
     "description": "Creates a boolean variable in Ruby."
   },
@@ -319,7 +319,7 @@
     "description": "Creates an array variable in Ruby."
   },
   "Ruby Create Hash Variable": {
-    "prefix": "cotrVarMap",
+    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
     "body": [
       "${1:my_hash} = {",
       "  ${2:key1}: ${3:value1},",
@@ -406,7 +406,7 @@
     "description": "Creates a function in Ruby."
   },
   "Ruby Function Args": {
-    "prefix": "cotrFuncArgs",
+    "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "# In Ruby, functions can have arguments with default values.",
       "def ${2:my_function}(${3:arg1}, ${4:arg2}=${5:'defaultVal'})",
@@ -416,7 +416,7 @@
     "description": "Creates a function with arguments in Ruby, including an argument with a default value."
   },
   "Ruby Function Named Args": {
-    "prefix": "cotrFuncArgsNamed",
+    "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "def ${2:my_function}(${3:arg1}: ${4:value1}, ${5:arg2}: ${6:value2})",
       "  ${7:# Your code here}",
