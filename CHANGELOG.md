@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.0.13
+
+- Added aliases to all snippets
+- Added `thisType` snippet
+
 ## 0.0.12
 
 - Add Perl, PowerShell, and Haskell support

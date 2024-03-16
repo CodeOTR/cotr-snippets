@@ -1,5 +1,6 @@
 {
   "Scala Info": {
+    "scope": "scala",
     "prefix": ["cotrInfo", "languageInfo", "info"],
     "body": [
       "// Typing: Statically typed",
@@ -11,6 +12,7 @@
   },
 
   "Scala Entry Point": {
+    "scope": "scala",
     "prefix": ["cotrEntry", "entry", "start", "startingPoint"],
     "body": [
       "// Scala Entry Point",
@@ -24,6 +26,7 @@
   },
 
   "Scala Project Structure (High-Level)": {
+    "scope": "scala",
     "prefix": ["cotrStructure", "structure", "architecture"],
     "body": [
       "// Recommended High-Level Scala Project Structure:",
@@ -60,6 +63,7 @@
   },  
 
   "Scala Mathematical Operators": {
+    "scope": "scala",
     "prefix": ["cotrOperators", "operators", "mathDocs"],
     "body": [
       "// Scala Mathematical Operators",
@@ -81,16 +85,19 @@
     "description": "Lists the mathematical operators in Scala."
   },
   "Scala Equal To": {
+    "scope": "scala",
     "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
     "description": "Scala equal to operator (structural equality for objects)."
   },
   "Scala Not Equal To": {
+    "scope": "scala",
     "prefix": ["cotrNotEqual", "notEqual", "doesNotEqual"],
     "body": ["!="],
     "description": "Scala not equal to operator."
   },
   "Scala Boolean Operators": {
+    "scope": "scala",
     "prefix": ["cotrOperatorsBool", "booleanOperators", "logic"],
     "body": [
       "// Scala Boolean Operators",
@@ -108,16 +115,19 @@
   }
 ,  
   "Scala Type Check": {
+    "scope": "scala",
     "prefix": ["cotrTypeCheck", "checkType", "getType", "typeOf"],
     "body": ["${1:variable}.getClass"],
     "description": "Gets the type of a variable in Scala."
   },
   "Scala This Type Check": {
+    "scope": "scala",
     "prefix": ["thisTypeCheck", "thisType", "getThisType"],
     "body": ["$CLIPBOARD.getClass.getSimpleName"],
     "description": "Gets the simple name of the class of the variable in the clipboard in Scala."
   },  
   "Scala Type Comparison": {
+    "scope": "scala",
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
       "// Check if two variables have the same type:",
@@ -128,6 +138,7 @@
     "description": "Compares the types of two variables in Scala."
   },
   "Scala Type Conversion": {
+    "scope": "scala",
     "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
     "body": [
       "// Scala Type Conversion:",
@@ -145,6 +156,7 @@
     "description": "Explains type conversion in Scala."
   },
   "Scala Types": {
+    "scope": "scala",
     "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
     "body": [
       "$BLOCK_COMMENT_START",
@@ -177,48 +189,56 @@
   },
 
   "Scala String Type": {
+    "scope": "scala",
     "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["String"],
     "description": "The Scala String type."
   },
 
   "Scala Integer Type": {
+    "scope": "scala",
     "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["Int"],
     "description": "The Scala Int type."
   },
 
   "Scala Double Type": {
+    "scope": "scala",
     "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "body": ["Double"],
     "description": "The Scala Double type."
   },
 
   "Scala Float Type": {
+    "scope": "scala",
     "prefix": ["cotrTypesNumAlt", "floatType", "typeFloat"],
     "body": ["Float"],
     "description": "The Scala Float type."
   },
 
   "Scala Boolean Type": {
+    "scope": "scala",
     "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["Boolean"],
     "description": "The Scala Boolean type."
   },
 
   "Scala Boolean True": {
+    "scope": "scala",
     "prefix": ["cotrTypesBoolTrue", "true", "booleanTrue", "on"],
     "body": ["true"],
     "description": "The Scala true value."
   },
 
   "Scala Boolean False": {
+    "scope": "scala",
     "prefix": ["cotrTypesBoolFalse", "false", "off", "booleanFalse"],
     "body": ["false"],
     "description": "The Scala false value."
   },
 
   "Scala Date Type": {
+    "scope": "scala",
     "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": [
       "// Scala does not have a built-in Date type. Use the java.time package or libraries like ScalaTime for date and time operations."
@@ -227,42 +247,49 @@
   },
 
   "Scala Map Type": {
+    "scope": "scala",
     "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["Map[${1:keyType}, ${2:valueType}]"],
     "description": "The Scala Map type."
   },
 
   "Scala List Type": {
+    "scope": "scala",
     "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["List[${1:type}]"],
     "description": "The Scala List type."
   },
 
   "Scala Date Now": {
+    "scope": "scala",
     "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": ["// Use java.time or ScalaTime to get the current date and time."],
     "description": "Explains how to get the current date and time in Scala."
   },
 
   "Scala Null Type": {
+    "scope": "scala",
     "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
     "body": ["null"],
     "description": "The Scala null value."
   },
 
   "Scala Dynamic Type": {
+    "scope": "scala",
     "prefix": ["cotrDynamic", "dynamicType", "typeDynamic", "anyType", "typeAny"],
     "body": ["Any"],
     "description": "The Scala Any type."
   },
 
   "Scala Create Variable": {
+    "scope": "scala",
     "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["var ${1:myVar}: ${2:Type} = $3"],
     "description": "Creates a variable in Scala."
   },
 
   "Scala Variable Declaration Syntax": {
+    "scope": "scala",
     "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
     "body": [
       "// Scala Variable Declaration Syntax:",
@@ -283,36 +310,42 @@
   },
 
   "Scala Create Typed Variable": {
+    "scope": "scala",
     "prefix": ["cotrVarTyped", "typedVariable", "variableWithType"],
     "body": ["var ${1:myVar}: ${2:Type} = $3"],
     "description": "Creates a typed variable in Scala."
   },
 
   "Scala Create Nullable Variable": {
+    "scope": "scala",
     "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
     "body": ["var ${1:myVar}: Option[${2:Type}] = None"],
     "description": "Creates a nullable variable in Scala using the Option type."
   },
 
   "Scala Interpolate String": {
+    "scope": "scala",
     "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
     "body": ["s\"Your string here \\${${1:variable}}\""],
     "description": "Interpolates a variable into a string in Scala."
   },
 
   "Scala Concatenate String": {
+    "scope": "scala",
     "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["${1:\"string1\"} + ${2:\"string2\"}"],
     "description": "Concatenates two strings in Scala."
   },
 
   "Scala Create String Variable": {
+    "scope": "scala",
     "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
     "body": ["val ${1:myString} = \"${2:Your string here}\""],
     "description": "Creates a string variable in Scala."
   },
 
   "Scala Create Multi-Line String Variable": {
+    "scope": "scala",
     "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
     "body": [
       "val ${1:myString} = \"\"\"",
@@ -325,24 +358,28 @@
   },
 
   "Scala Create Integer Variable": {
+    "scope": "scala",
     "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
     "body": ["val ${1:myInt} = ${2:0}"],
     "description": "Creates an integer variable in Scala."
   },
 
   "Scala Create Double Variable": {
+    "scope": "scala",
     "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble", "createDouble"],
     "body": ["val ${1:myDouble} = ${2:0.0}"],
     "description": "Creates a double variable in Scala."
   },
 
   "Scala Create Boolean Variable": {
+    "scope": "scala",
     "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
     "body": ["val ${1:myBool} = ${2:true}"],
     "description": "Creates a boolean variable in Scala."
   },
 
   "Scala Create Array Variable": {
+    "scope": "scala",
     "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": ["val ${1:myList} = List(${2:items})"],
     "description": "Creates a list variable in Scala."
@@ -355,18 +392,21 @@
   },
 
   "Scala Create Constant": {
+    "scope": "scala",
     "prefix": ["cotrConst", "constant"],
     "body": ["val ${1:myConst} = $2"],
     "description": "Creates a constant variable in Scala using the val keyword."
   },
 
   "Scala Print": {
+    "scope": "scala",
    "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["println(${1:'Your message here'})"],
     "description": "Prints a message to the console in Scala."
   },
 
   "Scala Print Multi": {
+    "scope": "scala",
     "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "println(\"\"\"",
@@ -379,6 +419,7 @@
   },
 
   "Scala For Loop": {
+    "scope": "scala",
     "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": ["for (i <- ${1:0 until 10}) {", "  // Your code here", "}"],
     "description": "Creates a for loop that iterates through a set of numbers with the index in Scala."
@@ -403,6 +444,7 @@
   },
 
   "Scala If Else Statement": {
+    "scope": "scala",
     "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if (${1:condition}) {",
@@ -415,6 +457,7 @@
   },
 
   "Ternary Operator (Alternative)": {
+    "scope": "scala",
     "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": [
       "// Scala does not have a ternary operator.",
@@ -426,6 +469,7 @@
   },
 
   "Scala Function": {
+    "scope": "scala",
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "def ${2:myFunction}(${3:parameters}): ${1:Unit} = {",
@@ -436,6 +480,7 @@
   },
 
   "Function Syntax": {
+    "scope": "scala",
     "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "// Scala Function Syntax:",
@@ -453,6 +498,7 @@
   },
 
   "Scala Function Args": {
+    "scope": "scala",
     "prefix": ["cotrFuncArgs", "functionArgs", "functionWithArgs"],
     "body": [
       "// In Scala, functions can have arguments with default values.",
@@ -464,6 +510,7 @@
   },
 
   "Scala Function Named Args": {
+    "scope": "scala",
     "prefix": ["cotrFuncArgsNamed", "functionNamedArgs"],
     "body": [
       "def ${2:myFunction}(${3:arg1}: ${4:Type1} = ${5:defaultValue1}, ${6:arg2}: ${7:Type2} = ${8:defaultValue2}): ${1:Unit} = {",
@@ -474,23 +521,27 @@
   },
 
   "Scala Lambda": {
+    "scope": "scala",
     "prefix": ["cotrFuncLambda", "cotrLambda"],
     "body": ["(${1:parameters}) => ${2:expression}"],
     "description": "Creates a lambda function in Scala."
   },
 
   "Scala Comment": {
+    "scope": "scala",
     "prefix": ["cotrComment", "comment", "note"],
     "body": ["// ${1:Your comment here}"],
     "description": "Creates a single-line comment in Scala."
   },
 
   "Scala Multi-Line Comment": {
+    "scope": "scala",
     "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in Scala."
   },
   "Scala Class Syntax": {
+    "scope": "scala",
     "prefix": ["cotrClass", "class", "objectTemplate"],
     "body": ["class ${1:MyClass} {", "  // Your code here", "}"],
     "description": "Creates a class in Scala."
