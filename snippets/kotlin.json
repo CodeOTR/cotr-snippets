@@ -185,31 +185,31 @@
     "description": "Lists the types in Kotlin."
   },
   "Kotlin String Type": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "scope": "kotlin",
     "body": ["String"],
     "description": "The Kotlin String type."
   },
   "Kotlin Integer Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "scope": "kotlin",
     "body": ["Int"],
     "description": "The Kotlin Int type."
   },
   "Kotlin Double Type": {
-    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "scope": "kotlin",
     "body": ["Double"],
     "description": "The Kotlin Double type."
   },
   "Kotlin Float Type": {
-    "prefix": ["cotrTypesNumAlt", "floatType", "float", "typeFloat"],
+    "prefix": ["cotrTypesNumAlt", "floatType", "typeFloat"],
     "scope": "kotlin",
     "body": ["Float"],
     "description": "The Kotlin Float type."
   },
   "Kotlin Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "scope": "kotlin",
     "body": ["Boolean"],
     "description": "The Kotlin Boolean type."
@@ -227,19 +227,19 @@
     "description": "The Kotlin false value."
   },
   "Kotlin Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "scope": "kotlin",
     "body": ["import java.time.LocalDate"],
     "description": "The Kotlin LocalDate class from the java.time package."
   },
   "Kotlin Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "scope": "kotlin",
     "body": ["Map<${1:keyType}, ${2:valueType}>"],
     "description": "The Kotlin Map type."
   },
   "Kotlin List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "scope": "kotlin",
     "body": ["List<${1:type}>"],
     "description": "The Kotlin List type."
@@ -257,7 +257,7 @@
     "description": "The Kotlin Any type."
   },
   "Kotlin Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "scope": "kotlin",
     "body": [
       "import java.time.LocalDate",
@@ -279,13 +279,13 @@
     "description": "Interpolates a string in Kotlin."
   },
   "Kotlin Concatenate String": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "scope": "kotlin",
     "body": ["\"${1:Your message here}\" + \"${2:another message}\""],
     "description": "Concatenates two strings in Kotlin."
   },
   "Kotlin Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "scope": "kotlin",
     "body": ["var ${1:myVar} = $2"],
     "description": "Creates a variable in Kotlin using the var keyword."
@@ -323,13 +323,13 @@
     "description": "Creates a nullable variable in Kotlin."
   },
   "Kotlin Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "scope": "kotlin",
     "body": ["var ${1:myString} = \"${2:myValue}\""],
     "description": "Creates a string variable in Kotlin using the var keyword."
   },
   "Kotlin Create Multi-Line String Variable": {
-    "prefix": "cotrVarStringMulti",
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
     "scope": "kotlin",
     "body": [
       "var ${1:myString} = \"\"\"",
@@ -341,13 +341,13 @@
     "description": "Creates a multi-line string variable in Kotlin using the var keyword."
   },
   "Kotlin Create Integer Variable": {
-    "prefix": "cotrVarInt",
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
     "scope": "kotlin",
     "body": ["var ${1:myInt} = ${2:0}"],
     "description": "Creates an integer variable in Kotlin using the var keyword."
   },
   "Kotlin Create Double Variable": {
-    "prefix": "cotrVarNum",
+    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
     "scope": "kotlin",
     "body": ["var ${1:myDouble} = ${2:0.0}"],
     "description": "Creates a double variable in Kotlin using the var keyword."
@@ -359,13 +359,13 @@
     "description": "Creates a float variable in Kotlin using the var keyword."
   },
   "Kotlin Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "scope": "kotlin",
     "body": ["var ${1:myBool} = ${2:true}"],
     "description": "Creates a boolean variable in Kotlin using the var keyword."
   },
   "Kotlin Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "scope": "kotlin",
     "body": [
       "import java.time.LocalDate",
@@ -375,7 +375,7 @@
     "description": "Creates a date variable in Kotlin."
   },
   "Kotlin Create List Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "scope": "kotlin",
     "body": ["var ${1:myList} = listOf(${2:'item1'}, ${3:'item2'})"],
     "description": "Creates a list variable in Kotlin."
@@ -400,7 +400,7 @@
     "description": "Creates a constant variable in Kotlin using the val keyword."
   },
   "Kotlin Generate Map": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "scope": "kotlin",
     "body": [
       "val ${1:myMap} = (0 until ${2:length}).associate {",
@@ -416,13 +416,13 @@
     "description": "Generates a list of a specific length in Kotlin."
   },
   "Kotlin Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "scope": "kotlin",
     "body": ["println(${1:'Your message here'})"],
     "description": "Prints a message to the console in Kotlin."
   },
   "Kotlin Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "scope": "kotlin",
     "body": [
       "println(\"\"\"",
@@ -434,7 +434,7 @@
     "description": "Prints a multi-line message to the console in Kotlin."
   },
   "Kotlin For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "scope": "kotlin",
     "body": ["for (i in ${1:0 until 10}) {", "  // Your code here", "}"],
     "description": "Creates a for loop that iterates through a set of numbers with the index in Kotlin."
@@ -446,7 +446,7 @@
     "description": "Iterates over an iterable object in Kotlin."
   },
   "Kotlin While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "scope": "kotlin",
     "body": ["while (${1:condition}) {", "  // Your code here", "}"],
     "description": "Creates a while loop in Kotlin."
@@ -470,7 +470,7 @@
     "description": "Creates a when expression in Kotlin."
   },
   "Kotlin Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "scope": "kotlin",
     "body": [
       "fun ${2:myFunction}(${3:parameters}): ${1:Unit} {",
@@ -511,7 +511,7 @@
     "description": "Creates a lambda function in Kotlin."
   },
   "Kotlin Anonymous Function": {
-    "prefix": "cotrFuncAnon",
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
     "scope": "kotlin",
     "body": [
       "fun(${1:parameters}): ${2:ReturnType} {",
@@ -521,7 +521,7 @@
     "description": "Creates an anonymous function in Kotlin."
   },
   "Kotlin Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "scope": "kotlin",
     "body": [
       "// Kotlin Function Syntax",
@@ -532,7 +532,7 @@
     "description": "Outlines the syntax for functions in Kotlin."
   },
   "Kotlin Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "scope": "kotlin",
     "body": ["// ${1:Your comment here}"],
     "description": "Creates a single-line comment in Kotlin."
@@ -550,7 +550,7 @@
     "description": "Throws an exception in Kotlin."
   },
   "Kotlin Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "scope": "kotlin",
     "body": [
       "try {",
@@ -562,7 +562,7 @@
     "description": "Creates a try...catch block in Kotlin."
   },
   "Kotlin Enum": {
-    "prefix": "cotrEnum",
+    "prefix": ["cotrEnum", "enum"],
     "scope": "kotlin",
     "body": [
       "enum class ${1:MyEnum} {",
@@ -580,13 +580,13 @@
     "description": "Creates a class in Kotlin."
   },
   "Kotlin If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "scope": "kotlin",
     "body": ["if (${1:condition}) {", "  // Your code here", "}"],
     "description": "Creates an if statement in Kotlin."
   },
   "Kotlin If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "scope": "kotlin",
     "body": [
       "if (${1:condition}) {",

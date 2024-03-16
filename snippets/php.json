@@ -176,22 +176,22 @@
     "description": "Lists all types in PHP."
   },
   "PHP String Type": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["string"],
     "description": "The PHP string type."
   },
   "PHP Integer Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["int"],
     "description": "The PHP int type."
   },
   "PHP Float Type": {
-    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "body": ["float"],
     "description": "The PHP float type."
   },
   "PHP Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["bool"],
     "description": "The PHP bool type."
   },
@@ -206,22 +206,22 @@
     "description": "The PHP false value."
   },
   "PHP Null Type": {
-    "prefix": "cotrNull",
+    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
     "body": ["null"],
     "description": "The PHP null value."
   },
   "PHP Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": ["DateTime"],
     "description": "The PHP DateTime type."
   },
   "PHP Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["// In PHP, associative arrays are used as maps."],
     "description": "Explains the use of associative arrays as maps in PHP."
   },
   "PHP List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["// In PHP, indexed arrays are used as lists."],
     "description": "Explains the use of indexed arrays as lists in PHP."
   },
@@ -231,7 +231,7 @@
     "description": "Explains that PHP is a dynamically typed language."
   },
   "PHP Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["$${1:myVar} = $2;"],
     "description": "Creates a variable in PHP."
   },
@@ -272,7 +272,7 @@
     "description": "Creates a nullable variable in PHP."
   },
   "PHP Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["$${1:myString} = '${2:Your string here}';"],
     "description": "Creates a string variable in PHP."
   },
@@ -287,12 +287,12 @@
     "description": "Interpolates a variable into a string in PHP."
   },
   "PHP Concatenate Strings": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["'${1:string1}' . '${2:string2}'"],
     "description": "Concatenates two strings in PHP."
   },
   "PHP Create Integer Variable": {
-    "prefix": "cotrVarInt",
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
     "body": ["$${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in PHP."
   },
@@ -302,12 +302,12 @@
     "description": "Creates a float variable in PHP."
   },
   "PHP Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["$${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in PHP."
   },
   "PHP Create Array Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": ["$${1:myArray} = [${2:items}];"],
     "description": "Creates an array variable in PHP."
   },
@@ -317,12 +317,12 @@
     "description": "Creates a map variable in PHP."
   },
   "PHP Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": ["$${1:myDate} = new DateTime('${2:Y-m-d}');"],
     "description": "Creates a date variable in PHP."
   },
   "PHP Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": ["const $${1:myConst} = $2;"],
     "description": "Creates a constant variable in PHP using the const keyword."
   },
@@ -337,19 +337,19 @@
     "description": "Generates an array of a specific length in PHP."
   },
   "PHP Generate Map": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "body": [
       "$${1:myMap} = array_combine(range(${2:0}, ${3:10}), range(${4:0}, ${5:10}));"
     ],
     "description": "Generates a map with a specific number of key-value pairs in PHP."
   },
   "PHP Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["print('${1:Your message here}');"],
     "description": "Prints a message to the console in PHP."
   },
   "PHP Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "echo <<<EOT",
       "${1:Line 1}",
@@ -360,7 +360,7 @@
     "description": "Prints a multi-line message to the console in PHP."
   },
   "PHP For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": [
       "for ($${1:i} = 0; $1 < ${2:10}; $1++) {",
       "  // Your code here",
@@ -369,7 +369,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in PHP."
   },
   "PHP For Each Loop": {
-    "prefix": "cotrForEachLoop",
+    "prefix": ["cotrForEachLoop", "forEach"],
     "body": [
       "foreach ($${1:iterable} as $${2:item}) {",
       "  ${3:// Your code here}",
@@ -378,7 +378,7 @@
     "description": "Iterates over an iterable object in PHP."
   },
   "PHP While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": ["while ($${1:condition}) {", "  ${2:// Your code here}", "}"],
     "description": "Creates a while loop in PHP."
   },
@@ -388,7 +388,7 @@
     "description": "Creates a do...while loop in PHP."
   },
   "PHP Switch Statement": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "switch ($${1:variable}) {",
       "  case ${2:value1}:",
@@ -404,7 +404,7 @@
     "description": "Creates a switch statement in PHP."
   },
   "PHP Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "function ${2:myFunction}(${3:parameters}) {",
       "  ${4:// Your code here}",
@@ -437,7 +437,7 @@
     "description": "Creates an arrow function in PHP."
   },
   "PHP Anonymous Function": {
-    "prefix": "cotrFuncAnon",
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
     "body": [
       "$${2:myFunction} = function(${3:parameters}) {",
       "    ${4:// Your code here}",
@@ -451,7 +451,7 @@
     "description": "Creates a lambda function in PHP."
   },
   "PHP Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "// PHP Function Syntax",
       "// Basic function: function functionName(parameters) { ... }",
@@ -461,7 +461,7 @@
     "description": "Outlines the syntax for functions in PHP."
   },
   "PHP Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["// ${1:Your comment here}"],
     "description": "Creates a single-line comment in PHP."
   },
@@ -476,7 +476,7 @@
     "description": "Throws an exception in PHP."
   },
   "PHP Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "try {",
       "  ${1:// Your code here}",
@@ -492,7 +492,7 @@
     "description": "Creates a class in PHP."
   },
   "PHP Enum": {
-    "prefix": "cotrEnum",
+    "prefix": ["cotrEnum", "enum"],
     "body": [
       "abstract class ${1:MyEnum} {",
       "  const ${2:VALUE1} = ${3:0};",
@@ -503,12 +503,12 @@
     "description": "Creates an enum in PHP."
   },
   "PHP If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if (${1:condition}) {", "  ${2:// Your code here}", "}"],
     "description": "Creates an if statement in PHP."
   },
   "PHP If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if (${1:condition}) {",
       "  ${2:// Your code here}",

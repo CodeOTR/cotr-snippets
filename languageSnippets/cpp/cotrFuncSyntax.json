@@ -1,6 +1,6 @@
 {
   "C++ Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "// C++ Function Syntax",
       "// Basic function: returnType functionName(parameters) { ... }",

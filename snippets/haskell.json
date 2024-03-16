@@ -161,31 +161,31 @@
   },
 
   "Haskell String Type": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["String"],
     "description": "The Haskell String type."
   },
 
   "Haskell Integer Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["Int"],
     "description": "The Haskell Int type."
   },
 
   "Haskell Double Type": {
-    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "body": ["Double"],
     "description": "The Haskell Double type."
   },
 
   "Haskell Float Type": {
-    "prefix": ["cotrTypesNumAlt", "floatType", "float", "typeFloat"],
+    "prefix": ["cotrTypesNumAlt", "floatType", "typeFloat"],
     "body": ["Float"],
     "description": "The Haskell Float type."
   },
 
   "Haskell Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["Bool"],
     "description": "The Haskell Bool type."
   },
@@ -203,7 +203,7 @@
   },
 
   "Haskell Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": [
       "-- Haskell does not have a built-in Date type. Use the 'time' package for date and time operations."
     ],
@@ -211,19 +211,19 @@
   },
 
   "Haskell Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["Map k v"],
     "description": "The Haskell Map type."
   },
 
   "Haskell List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["[a]"],
     "description": "The Haskell List type."
   },
 
   "Haskell Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": ["-- Use the 'time' package to get the current date and time."],
     "description": "Explains how to get the current date and time in Haskell."
   },
@@ -248,13 +248,13 @@
   },
 
   "Haskell Concatenate Strings": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["${1:string1} ++ ${2:string2}"],
     "description": "Concatenates two strings in Haskell."
   },
 
   "Haskell Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["let ${1:myVar} = $2"],
     "description": "Creates a variable in Haskell."
   },
@@ -301,13 +301,13 @@
   },
 
   "Haskell Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["let ${1:myString} = \"${2:Your string here}\""],
     "description": "Creates a string variable in Haskell."
   },
 
   "Haskell Create Multi-Line String Variable": {
-    "prefix": "cotrVarStringMulti",
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
     "body": [
       "let ${1:myString} = \"\"\"",
       "${2:Line 1}",
@@ -319,31 +319,31 @@
   },
 
   "Haskell Create Integer Variable": {
-    "prefix": "cotrVarInt",
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
     "body": ["let ${1:myInt} = ${2:0}"],
     "description": "Creates an integer variable in Haskell."
   },
 
   "Haskell Create Double Variable": {
-    "prefix": "cotrVarDouble",
+    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble"],
     "body": ["let ${1:myDouble} = ${2:0.0}"],
     "description": "Creates a double variable in Haskell."
   },
 
   "Haskell Number Variable": {
-    "prefix": "cotrVarNum",
+    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
     "body": ["let ${1:myNum} :: ${2:NumType} = $3"],
     "description": "Creates a number variable in Haskell."
   },
 
   "Haskell Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["let ${1:myBool} = ${2:True}"],
     "description": "Creates a boolean variable in Haskell."
   },
 
   "Haskell Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": [
       "-- Use the 'time' package to create a date variable:",
       "",
@@ -355,7 +355,7 @@
   },
 
   "Haskell Create List Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": ["let ${1:myList} = [${2:items}]"],
     "description": "Creates a list variable in Haskell."
   },
@@ -376,7 +376,7 @@
   },
 
   "Haskell Generate Map": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "body": [
       "-- Haskell does not have a built-in way to generate a map with a specific number of key-value pairs.",
       "-- You can use a list comprehension or a custom function to achieve this."
@@ -385,7 +385,7 @@
   },
 
   "Haskell Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": [
       "-- Haskell does not have a 'const' keyword. Use 'let' for immutable values."
     ],
@@ -393,13 +393,13 @@
   },
 
   "Haskell Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["putStrLn ${1:'Your message here'}"],
     "description": "Prints a message to the console in Haskell."
   },
 
   "Haskell Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "putStrLn $ unlines [",
       "  ${1:\"Line 1\"},",
@@ -410,16 +410,8 @@
     "description": "Prints a multi-line message to the console in Haskell."
   },
 
-  "Haskell For Loop": {
-    "prefix": "cotrForLoop",
-    "body": [
-      "-- Haskell does not have a traditional for loop. Use recursion or higher-order functions like 'map' or 'forM'."
-    ],
-    "description": "Explains how to iterate in Haskell."
-  },
-
   "Haskell For...In Loop (Alternative)": {
-    "prefix": "cotrForIn",
+    "prefix": ["cotrForIn", "forIn"],
     "body": [
       "-- Haskell does not have a direct for...in loop.",
       "-- Use higher-order functions like 'map' or 'forM' instead:",
@@ -431,13 +423,13 @@
   },
 
   "Haskell For Each Loop": {
-    "prefix": "cotrForEachLoop",
+    "prefix": ["cotrForEachLoop", "forLoop", "forEach", "cotrForLoop"],
     "body": ["forM ${1:iterable} \\${2:item} -> do", "  -- Your code here"],
     "description": "Iterates over an iterable object in Haskell."
   },
 
   "Haskell While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": [
       "-- Haskell does not have a traditional while loop. Use recursion or higher-order functions like 'until'."
     ],
@@ -445,7 +437,7 @@
   },
 
   "Haskell Case Expression": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "case ${1:variable} of",
       "  ${2:pattern1} -> ${3:expression1}",
@@ -456,7 +448,7 @@
   },
 
   "Haskell Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "${1:functionName} :: ${2:parameterTypes} -> ${3:returnType}",
       "${1:functionName} ${2:parameters} = ${4:expression}"
@@ -483,25 +475,19 @@
     ],
     "description": "Explains how to pass arguments to functions in Haskell."
   },
-  "Haskell Anonymous Function": {
-    "prefix": ["cotrFuncAnon"],
-    "body": ["\\${1:parameters} -> ${2:expression}"],
-    "description": "Creates an anonymous function (lambda) in Haskell."
-  },
-
   "Haskell Lambda Function": {
-    "prefix": ["cotrFuncLambda", "cotrLambda"],
-    "body": ["\\${1:parameters} -> ${2:expression}"],
-    "description": "Creates an anonymous function (lambda) in Haskell."
-  },
-  "Haskell Arrow Function": {
-    "prefix": "cotrFuncArrow",
-    "body": ["${1:functionName} = \\${2:parameters} -> ${3:expression}"],
-    "description": "Creates an arrow function (lambda) in Haskell."
-  },
-
+    "prefix": ["cotrFuncLambda", "cotrFuncAnon", "cotrFuncArrow", "lambda", "anonymous", "arrowFunc", "closure"],
+    "body": [
+      "\\${1:parameters} -> ${2:expression}",
+      "",
+      "-- Usage example",
+      "let ${3:myFunc} = \\${1:parameters} -> ${2:expression}",
+      "in ${3:myFunc} ${4:arguments}"
+    ],
+    "description": "Creates a lambda (anonymous) function in Haskell."
+  },  
   "Haskell Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "-- Haskell Function Syntax:",
       "",
@@ -516,7 +502,7 @@
   },
 
   "Haskell Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["-- ${1:Your comment here}"],
     "description": "Creates a single-line comment in Haskell."
   },
@@ -528,7 +514,7 @@
   },
 
   "Haskell If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": [
       "if ${1:condition}",
       "  then ${2:expression1}",
@@ -538,7 +524,7 @@
   },
 
   "Haskell If-Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if ${1:condition}",
       "  then ${2:expression1}",
@@ -567,7 +553,7 @@
   },
 
   "Haskell Try-Catch ": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "-- Haskell does not have a traditional try-catch mechanism.",
       "-- Use the 'Either' or 'Maybe' types for error handling."

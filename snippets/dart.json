@@ -161,27 +161,27 @@
     "description": "Prints out all the basic types in Dart."
   },
   "Dart String Type": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["String"],
     "description": "The Dart String type."
   },
   "Dart Integer Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["int"],
     "description": "The Dart int type."
   },
   "Dart Double Type": {
-    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "body": ["double"],
     "description": "The Dart double type."
   },
   "Dart Float Type": {
-    "prefix": ["cotrTypesNumAlt", "floatType", "float", "typeFloat"],
+    "prefix": ["cotrTypesNumAlt", "floatType", "typeFloat"],
     "body": ["float"],
     "description": "The Dart float type."
   },
   "Dart Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["bool"],
     "description": "The Dart bool type."
   },
@@ -201,17 +201,17 @@
     "description": "The Dart char type."
   },
   "Dart Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": ["DateTime"],
     "description": "The Dart DateTime type."
   },
   "Dart Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["Map<${1:keyType}, ${2:valueType}>"],
     "description": "The Dart Map type."
   },
   "Dart List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["List<${1:type}>"],
     "description": "The Dart List type."
   },
@@ -221,17 +221,17 @@
     "description": "The Dart dynamic type."
   },
   "Dart Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": ["DateTime.now()"],
     "description": "The Dart DateTime.now() method."
   },
   "Dart Null Type": {
-    "prefix": "cotrNull",
+    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
     "body": ["null"],
     "description": "The Dart null value."
   },
   "Dart Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["var ${1:myVar} = $2;"],
     "description": "Creates a variable in Dart using the var keyword."
   },
@@ -279,37 +279,37 @@
     "description": "Interpolates a variable into a string in Dart."
   },
   "Dart Concatenate Strings": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["'Your string here ' + ${1:variable}"],
     "description": "Concatenates two strings in Dart."
   },
   "Dart Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["String ${1:myString} = ${2:'Your string here'};"],
     "description": "Creates a string variable in Dart."
   },
   "Dart Create Multiline String Variable": {
-    "prefix": "cotrVarStringMulti",
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
     "body": ["String ${1:myString} = '''", "${2:Your string here}", "''';"],
     "description": "Creates a multi-line string variable in Dart."
   },
   "Dart Create Integer Variable": {
-    "prefix": "cotrVarInt",
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
     "body": ["int ${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in Dart."
   },
   "Dart Create Double Variable": {
-    "prefix": "cotrVarDouble",
+    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble"],
     "body": ["double ${1:myDouble} = ${2:0.0};"],
     "description": "Creates a double variable in Dart."
   },
   "Dart Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["bool ${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in Dart."
   },
   "Dart Create List Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": ["List<${1:Type}> ${2:myList} = [${3:items}];"],
     "description": "Creates a list variable in Dart."
   },
@@ -324,14 +324,14 @@
     "description": "Creates a map variable in Dart."
   },
   "Dart Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": [
       "DateTime ${1:myDate} = DateTime(${2:year}, ${3:month}, ${4:day});"
     ],
     "description": "Creates a date variable in Dart."
   },
   "Dart Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": ["const ${1:myConst} = $2;"],
     "description": "Creates a constant variable in Dart using the const keyword."
   },
@@ -346,7 +346,7 @@
     "description": "Creates a static variable in a Dart class."
   },
   "Dart Generate Map": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "body": [
       "var ${1:myMap} = Map.fromIterable(List.generate(${2:length}, (index) => index),",
       "  key: (item) => 'key' + item.toString(),",
@@ -363,17 +363,17 @@
     "description": "Generates a list of a specific length in Dart."
   },
   "Dart Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["print(${1:'Your message here'});"],
     "description": "Prints a message to the console in Dart."
   },
   "Dart Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": ["print('''", "${1:Line 1}", "${2:Line 2}", "${3:Line 3}", "''');"],
     "description": "Prints a multi-line message to the console in Dart."
   },
   "Dart For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": [
       "for (int ${1:i} = 0; $1 < ${2:10}; $1++) {",
       "  // Your code here",
@@ -391,12 +391,12 @@
     "description": "Iterates over an iterable object in Dart."
   },
   "Dart While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": ["while (${1:condition}) {", "  ${2:// Your code here}", "}"],
     "description": "Creates a while loop in Dart."
   },
   "Dart Switch Statement": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "switch (${1:variable}) {",
       "  case ${2:value1}:",
@@ -412,7 +412,7 @@
     "description": "Creates a switch statement in Dart."
   },
   "Dart Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "${1:void} ${2:myFunction}(${3:parameters}) {",
       "  ${4:// Your code here}",
@@ -445,12 +445,12 @@
     "description": "Creates a function using the arrow syntax in Dart."
   },
   "Dart Function Anonymous": {
-    "prefix": "cotrFuncAnon",
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
     "body": ["(${1:parameters}) {", "  ${2:// Your code here}", "}"],
     "description": "Creates an anonymous function in Dart."
   },
   "Dart Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "// Dart Function Syntax",
       "// Basic function: returnType functionName(parameters) { ... }",
@@ -460,7 +460,7 @@
     "description": "Outlines the syntax for functions in Dart."
   },
   "Dart Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["// ${1:Your comment here}"],
     "description": "Creates a single-line comment in Dart."
   },
@@ -475,7 +475,7 @@
     "description": "Throws an exception in Dart."
   },
   "Dart Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "try {",
       "  ${1:// Your code here}",
@@ -486,7 +486,7 @@
     "description": "Creates a try...catch block in Dart."
   },
   "Dart Enum": {
-    "prefix": "cotrEnum",
+    "prefix": ["cotrEnum", "enum"],
     "body": [
       "enum ${1:MyEnum} {",
       "  ${2:value1},",
@@ -502,12 +502,12 @@
     "description": "Creates a class in Dart."
   },
   "Dart If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if (${1:condition}) {", "  ${2:// Your code here}", "}"],
     "description": "Creates an if statement in Dart."
   },
   "Dart If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if (${1:condition}) {",
       "  ${2:// Your code here}",

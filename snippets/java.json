@@ -173,22 +173,22 @@
     "description": "Lists the types in Java."
   },
   "Java String Type": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["String"],
     "description": "The Java String type."
   },
   "Java Integer Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["int"],
     "description": "The Java int type."
   },
   "Java Double Type": {
-    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "body": ["double"],
     "description": "The Java double type."
   },
   "Java Float Type": {
-    "prefix": ["cotrTypesNumAlt", "floatType", "float", "typeFloat"],
+    "prefix": ["cotrTypesNumAlt", "floatType", "typeFloat"],
     "body": ["float"],
     "description": "The Java float type."
   },
@@ -208,17 +208,17 @@
     "description": "The Java false value."
   },
   "Java Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": ["import java.time.LocalDate;"],
     "description": "The Java LocalDate class from the java.time package."
   },
   "Java Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["Map<${1:keyType}, ${2:valueType}>"],
     "description": "The Java Map type."
   },
   "Java List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["List<${1:type}>"],
     "description": "The Java List type."
   },
@@ -233,7 +233,7 @@
     "description": "The Java Object type."
   },
   "Java Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": [
       "import java.time.LocalDate;",
       "",
@@ -247,12 +247,12 @@
     "description": "Interpolates a string in Java."
   },
   "Java Concatenate String": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["${1:\"String1\"} + ${2:\"String2\"}"],
     "description": "Concatenates two strings in Java."
   },
   "Java Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["${1:Type} ${2:myVar} = ${3:value};"],
     "description": "Creates a variable in Java."
   },
@@ -287,7 +287,7 @@
     "description": "Creates a nullable variable in Java."
   },
   "Java Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["String ${1:myString} = ${2:'Your string here'};"],
     "description": "Creates a string variable in Java."
   },
@@ -302,22 +302,22 @@
     "description": "Creates a multi-line string variable in Java."
   },
   "Java Create Integer Variable": {
-    "prefix": "cotrVarInt",
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
     "body": ["int ${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in Java."
   },
   "Java Create Double Variable": {
-    "prefix": "cotrVarDouble",
+    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble"],
     "body": ["double ${1:myDouble} = ${2:0.0};"],
     "description": "Creates a double variable in Java."
   },
   "Java Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["boolean ${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in Java."
   },
   "Java Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": [
       "import java.time.LocalDate;",
       "",
@@ -326,7 +326,7 @@
     "description": "Creates a date variable in Java."
   },
   "Java Create List Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": [
       "List<${1:Type}> ${2:myList} = new ArrayList<>();",
       "${2:myList}.add(${3:value});"
@@ -342,7 +342,7 @@
     "description": "Creates a map variable in Java."
   },
   "Java Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": ["final ${1:Type} ${2:myConst} = ${3:value};"],
     "description": "Creates a constant variable in Java."
   },
@@ -364,19 +364,19 @@
     "description": "Generates a list of a specific length in Java."
   },
   "Java Generate Map": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "body": [
       "Map<${1:Key}, ${2:Value}> ${3:myMap} = IntStream.range(0, ${4:length}).boxed().collect(Collectors.toMap(i -> ${5:key}, i -> ${6:value}));"
     ],
     "description": "Generates a map of a specific length in Java."
   },
   "Java Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["System.out.println(${1:'Your message here'});"],
     "description": "Prints a message to the console in Java."
   },
   "Java Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "System.out.println(${1:\"Line 1\"} +",
       "    ${2:\"\\nLine 2\"} +",
@@ -385,7 +385,7 @@
     "description": "Prints a multi-line message to the console in Java."
   },
   "Java For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": [
       "for (int ${1:i} = 0; $1 < ${2:10}; $1++) {",
       "  // Your code here",
@@ -394,7 +394,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in Java."
   },
   "Java For Each Loop": {
-    "prefix": "cotrForEachLoop",
+    "prefix": ["cotrForEachLoop", "forEach"],
     "body": [
       "for (${1:Type} ${2:item} : ${3:iterable}) {",
       "  ${4:// Your code here}",
@@ -403,7 +403,7 @@
     "description": "Iterates over an iterable object in Java."
   },
   "Java While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": ["while (${1:condition}) {", "  ${2:// Your code here}", "}"],
     "description": "Creates a while loop in Java."
   },
@@ -413,7 +413,7 @@
     "description": "Creates a do...while loop in Java."
   },
   "Java Switch Statement": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "switch (${1:variable}) {",
       "  case ${2:value1}:",
@@ -429,7 +429,7 @@
     "description": "Creates a switch statement in Java."
   },
   "Java Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "public ${1:void} ${2:myFunction}(${3:parameters}) {",
       "    ${4:// Your code here}",
@@ -471,7 +471,7 @@
     "description": "Creates an arrow function (lambda) in Java."
   },
   "Java Anonymous Function": {
-    "prefix": "cotrFuncAnon",
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
     "body": [
       "new ${1:InterfaceName}() {",
       "    @Override",
@@ -488,7 +488,7 @@
     "description": "Creates a lambda function in Java."
   },
   "Java Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "// Java Function Syntax",
       "// Basic function: public returnType functionName(parameters) { ... }",
@@ -498,7 +498,7 @@
     "description": "Outlines the syntax for functions in Java."
   },
   "Java Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["// ${1:Your comment here}"],
     "description": "Creates a single-line comment in Java."
   },
@@ -513,7 +513,7 @@
     "description": "Throws an exception in Java."
   },
   "Java Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "try {",
       "  ${1:// Your code here}",
@@ -524,7 +524,7 @@
     "description": "Creates a try...catch block in Java."
   },
   "Java Enum": {
-    "prefix": "cotrEnum",
+    "prefix": ["cotrEnum", "enum"],
     "body": [
       "enum ${1:MyEnum} {",
       "  ${2:value1},",
@@ -540,12 +540,12 @@
     "description": "Creates a class in Java."
   },
   "Java If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if (${1:condition}) {", "  ${2:// Your code here}", "}"],
     "description": "Creates an if statement in Java."
   },
   "Java If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if (${1:condition}) {",
       "  ${2:// Your code here}",

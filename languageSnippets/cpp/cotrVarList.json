@@ -1,6 +1,6 @@
 {
   "C++ Create List Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": ["std::vector<${1:type}> ${2:myList} = {${3:values}};"],
     "description": "Creates a list variable in C++."
   }

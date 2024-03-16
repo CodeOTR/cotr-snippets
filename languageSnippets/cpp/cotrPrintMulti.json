@@ -1,6 +1,6 @@
 {
   "C++ Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "#include <iostream>",
       "",

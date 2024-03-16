@@ -1,6 +1,6 @@
 {
   "C++ Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": [
       "#include <iostream>",
       "",

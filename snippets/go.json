@@ -133,22 +133,22 @@
     "description": "Lists the types in Go."
   },
   "Go String Type": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["string"],
     "description": "The Go string type."
   },
   "Go Integer Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["int"],
     "description": "The Go int type."
   },
   "Go Float Type": {
-    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "body": ["float64"],
     "description": "The Go float64 type."
   },
   "Go Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["bool"],
     "description": "The Go bool type."
   },
@@ -163,17 +163,17 @@
     "description": "The Go false boolean value."
   },
   "Go Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": ["time.Time"],
     "description": "The Go time.Time type."
   },
   "Go Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["map[${1:keyType}]${2:valueType}"],
     "description": "The Go map type."
   },
   "Go List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["[]${1:type}"],
     "description": "The Go slice type, commonly used as a list."
   },
@@ -198,12 +198,12 @@
     "description": "Interpolates a string in Go."
   },
   "Go Concatenate Strings": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["${1:string1} + ${2:string2}"],
     "description": "Concatenates two strings in Go."
   },
   "Go Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["var ${1:variableName} ${2:variableType} = ${3:variableValue}"],
     "description": "Creates a variable in Go using the var keyword"
   },
@@ -288,7 +288,7 @@
     "description": "Creates a nullable variable in Go using pointers."
   },
   "Go Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["var ${1:variableName} string = ${2:variableValue}"],
     "description": "Creates a string variable in Go using the var keyword"
   },
@@ -304,22 +304,22 @@
     "description": "Creates a multi-line string variable in Go using the var keyword"
   },
   "Go Create Integer Variable": {
-    "prefix": "cotrVarInt",
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
     "body": ["var ${1:variableName} int = ${2:variableValue}"],
     "description": "Creates an integer variable in Go using the var keyword"
   },
   "Go Create Float Variable": {
-    "prefix": "cotrVarNum",
+    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
     "body": ["var ${1:variableName} float64 = ${2:variableValue}"],
     "description": "Creates a float variable in Go using the var keyword"
   },
   "Go Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["var ${1:variableName} bool = ${2:variableValue}"],
     "description": "Creates a boolean variable in Go using the var keyword"
   },
   "Go Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": [
       "// import \"time\"",
       "var ${1:myDate} = time.Date(${2:year}, time.${3:Month}, ${4:day}, ${5:0}, ${6:0}, ${7:0}, ${8:0}, time.UTC)"
@@ -327,7 +327,7 @@
     "description": "Creates a date variable in Go."
   },
   "Go Create List Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": [
       "var ${1:variableName} = []${2:variableType}{",
       "    ${3:value1},",
@@ -347,12 +347,12 @@
     "description": "Creates a map variable in Go using the var keyword"
   },
   "Go Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": ["const ${1:variableName} ${2:variableType} = ${3:variableValue}"],
     "description": "Creates a constant variable in Go using the const keyword"
   },
   "Go Generate Map": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "body": [
       "var ${1:mapName} = make(map[${2:keyType}]${3:valueType})",
       "${1:mapName}[${4:key1}] = ${5:value1}",
@@ -371,12 +371,12 @@
     "description": "Generates an array in Go"
   },
   "Go Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["fmt.Println(${1:message})"],
     "description": "Prints a message to the console in Go"
   },
   "Go Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "fmt.Println(`",
       "${1:Line 1}",
@@ -387,7 +387,7 @@
     "description": "Prints a multi-line message to the console in Go."
   },
   "Go For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": [
       "for ${1:i} := ${2:0}; $1 < ${3:10}; $1++ {",
       "    ${4:// Your code here}",
@@ -405,12 +405,12 @@
     "description": "Iterates over an iterable object in Go"
   },
   "Go While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": ["for ${1:condition} {", "    ${2:// Your code here}", "}"],
     "description": "Creates a while loop in Go"
   },
   "Go Switch Statement": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "switch ${1:variable} {",
       "    case ${2:value1}:",
@@ -426,7 +426,7 @@
     "description": "Creates a switch statement in Go"
   },
   "Go Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "func ${2:MyFunction}(${3:parameters}) ${1:void} {",
       "    ${4:// Your code here}",
@@ -449,18 +449,21 @@
     "body": ["// Go does not support named arguments in function definitions."],
     "description": "Go does not support named arguments in function definitions."
   },
-  "Go Function Literal": {
-    "prefix": ["cotrFuncAnon", "cotrFuncArrow", "cotrFuncLiteral"],
+  "Go Anonymous Function": {
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda", "cotrFuncArrow"],
     "body": [
-      "// Go does not support function literals (anonymous functions) with a return type.",
-      "var ${1:myFunction} = func(${2:parameters}) ${3:returnType} {",
+      "var ${1:myFunc} = func(${2:parameters}) ${3:returnType} {",
       "    ${4:// Your code here}",
-      "}"
+      "    return ${5:value}",
+      "}",
+      "",
+      "// Usage",
+      "${1:myFunc}(${6:arguments})"
     ],
-    "description": "Creates a function literal (anonymous function) in Go."
-  },
+    "description": "Creates an anonymous function or closure in Go."
+  },  
   "Go Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "// Go Function Syntax",
       "// Basic function: func FunctionName(parameters) returnType { ... }",
@@ -470,7 +473,7 @@
     "description": "Outlines the syntax for functions in Go."
   },
   "Go Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["// ${1:comment}"],
     "description": "Creates a single-line comment in Go"
   },
@@ -485,7 +488,7 @@
     "description": "Throws an exception in Go."
   },
   "Go Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "defer func() {",
       "  if r := recover(); r != nil {",
@@ -497,7 +500,7 @@
     "description": "Creates a try...catch block in Go."
   },
   "Go Iota": {
-    "prefix": "cotrEnum",
+    "prefix": ["cotrEnum", "enum"],
     "body": [
       "const (",
       "  ${1:variable1} = iota",
@@ -520,12 +523,12 @@
     "description": "Creates a struct in Go."
   },
   "Go If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if ${1:condition} {", "  ${2:// Your code here}", "}"],
     "description": "Creates an if statement in Go."
   },
   "Go If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if ${1:condition} {",
       "  ${2:// Your code here}",
@@ -541,14 +544,5 @@
     "prefix": ["cotrTernary", "ternary", "conditionalOperator"],
     "body": ["${1:condition} ? ${2:trueValue} : ${3:falseValue}"],
     "description": "Creates a ternary operator in Go."
-  },
-  "Go Lambda Function": {
-    "prefix": "cotrLambda",
-    "body": [
-      "func(${1:parameters}) ${2:returnType} {",
-      "  return ${3:expression}",
-      "}"
-    ],
-    "description": "Creates a lambda function in Go."
   }
 }

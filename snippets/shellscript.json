@@ -15,7 +15,7 @@
     "description": "Defines the interpreter for the script."
   },
   "Bash Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["# ${1:Your comment here}"],
     "description": "Creates a single-line comment."
   },
@@ -31,12 +31,12 @@
     "description": "Creates a multi-line comment."
   },
   "Bash Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["echo ${1:'Your message here'}"],
     "description": "Prints a message to the console."
   },
   "Bash Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["${1:myVar}=${2:value}"],
     "description": "Creates a variable."
   },
@@ -46,12 +46,12 @@
     "description": "Reads user input and stores it in a variable."
   },
   "Bash If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if [ ${1:condition} ]; then", "  ${2:// Your code here}", "fi"],
     "description": "Creates an if statement."
   },
   "Bash If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if [ ${1:condition} ]; then",
       "  ${2:// Your code here}",
@@ -62,12 +62,12 @@
     "description": "Creates an if...else statement."
   },
   "Bash For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": ["for ${1:i} in ${2:list}; do", "  ${3:// Your code here}", "done"],
     "description": "Creates a for loop that iterates through a list."
   },
   "Bash While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": [
       "while [ ${1:condition} ]; do",
       "  ${2:// Your code here}",
@@ -76,7 +76,7 @@
     "description": "Creates a while loop."
   },
   "Bash Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": ["${2:myFunction}() {", "  ${3:// Your code here}", "}"],
     "description": "Creates a function."
   },
@@ -109,7 +109,7 @@
     "description": "Creates a case statement."
   },
   "Bash Concatenate Strings": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": [
       "# Bash uses string juxtaposition for concatenation:",
       "${1:var1}${2:var2}"
@@ -117,7 +117,7 @@
     "description": "Concatenates strings in Bash."
   },
   "Bash Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": [
       "# Bash uses readonly variables for constants:",
       "readonly ${1:myConst}=${2:value}"
@@ -150,7 +150,7 @@
     "description": "Iterates over items in a list in Bash."
   },
   "Bash Anonymous Function": {
-    "prefix": "cotrFuncAnon",
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
     "body": [
       "# Bash doesn't have true anonymous functions, but you can use function expressions:",
       "${1:myFunction}() { ${2:// Your code here} }"
@@ -175,7 +175,7 @@
     "description": "Lambda functions are not supported in Bash."
   },
   "Bash Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "# Bash Function Syntax:",
       "function ${1:functionName} {",
@@ -193,7 +193,7 @@
     "description": "Explains how to generate a list in Bash using loops or command substitution."
   },
   "Bash Generate Map": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "body": [
       "# Bash doesn't have built-in map generation, but you can use associative arrays:",
       "declare -A ${1:myMap}; for i in {1..${2:10}}; do myMap[key$i]=value$i; done"
@@ -217,7 +217,7 @@
     "description": "Checks for inequality in Bash."
   },
   "Bash Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": ["# Get the current date and time:", "now=$(date)"],
     "description": "Gets the current date and time in Bash."
   },
@@ -260,7 +260,7 @@
     "description": "Lists the boolean operators in Bash."
   },
   "Bash Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "# Use echo with -e for multi-line output:",
       "echo -e \"${1:Line 1}\\n${2:Line 2}\\n${3:Line 3}\""
@@ -325,7 +325,7 @@
     "description": "Explains a file type-based source directory organization for Bash scripts."
   },
   "Bash Switch Statement": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "case ${1:variable} in",
       "  ${2:pattern1})",
@@ -358,7 +358,7 @@
     "description": "Explains how to simulate exception throwing in Bash."
   },
   "Bash Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "# Bash doesn't have try/catch, but you can use set -e and trap ERR:",
       "set -e; trap 'echo \"Error: ${1:Your message here}\" >&2; exit 1' ERR; ${2:// Your code here}"
@@ -401,7 +401,7 @@
     "description": "Describes common data types in Bash."
   },
   "Bash Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["# Bash uses 0 for false and non-zero values for true."],
     "description": "Explains how Bash represents boolean values."
   },
@@ -416,7 +416,7 @@
     "description": "Indicates the representation of true in Bash."
   },
   "Bash Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": [
       "# Bash doesn't have a dedicated date type, but you can use the 'date' command for date manipulation."
     ],
@@ -430,17 +430,17 @@
     "description": "Highlights the dynamic nature of Bash variables."
   },
   "Bash Integer Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["# Bash treats integers as numeric values without decimals."],
     "description": "Describes integer representation in Bash."
   },
   "Bash List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["# Bash uses arrays for lists:", "myList=(item1 item2 item3)"],
     "description": "Describes list representation in Bash using arrays."
   },
   "Bash Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": [
       "# Bash uses associative arrays for maps:",
       "declare -A myMap; myMap[key1]=value1; myMap[key2]=value2"
@@ -455,19 +455,19 @@
     "description": "Explains how to represent null values in Bash."
   },
   "Bash Number Type": {
-    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "body": [
       "# Bash treats numbers as either integers or floating-point values."
     ],
     "description": "Describes number representation in Bash."
   },
   "Bash String Type": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["# Bash represents strings as sequences of characters."],
     "description": "Describes string representation in Bash."
   },
   "Bash Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": [
       "# Bash uses 0 for false and non-zero values for true:",
       "${1:myBoolean}=${2:0}"
@@ -475,7 +475,7 @@
     "description": "Creates a boolean variable in Bash."
   },
   "Bash Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": [
       "# Bash doesn't have a dedicated date type, but you can store date strings:",
       "${1:myDate}=\\$(date)"
@@ -483,7 +483,7 @@
     "description": "Creates a variable holding a date string in Bash."
   },
   "Bash Create List Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": [
       "# Create an array (list):",
       "${1:myList}=( ${2:item1} ${3:item2} ${4:item3} )"
@@ -509,7 +509,7 @@
     "description": "Creates a variable that can hold an empty string or a special value to represent null in Bash."
   },
   "Bash Create Number Variable": {
-    "prefix": "cotrVarNum",
+    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
     "body": ["# Assign a numeric value:", "${1:myNumber}=${2:10}"],
     "description": "Creates a number variable in Bash."
   },
@@ -521,12 +521,12 @@
     "description": "Bash doesn't have static variables in the traditional sense."
   },
   "Bash Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["# Assign a string value:", "${1:myString}=${2:'myValue'}"],
     "description": "Creates a string variable in Bash."
   },
   "Bash Create Multi-Line String Variable": {
-    "prefix": "cotrVarStringMulti",
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
     "body": [
       "# Use a here document for multi-line strings:",
       "${1:myString}<<EOF",

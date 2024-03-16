@@ -171,7 +171,7 @@
     "description": "Lists the types in Rust."
   },
   "Rust String Type (String)": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["String"],
     "description": "The Rust String type."
   },
@@ -181,7 +181,7 @@
     "description": "The Rust &str type."
   },
   "Rust Integer Type (i32)": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["i32"],
     "description": "The Rust i32 type."
   },
@@ -191,17 +191,17 @@
     "description": "The Rust i64 type."
   },
   "Rust Float Type (f32)": {
-    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "body": ["f32"],
     "description": "The Rust f32 type."
   },
   "Rust Float Type (f64)": {
-    "prefix": ["cotrTypesNumAlt", "floatType", "float", "typeFloat"],
+    "prefix": ["cotrTypesNumAlt", "floatType", "typeFloat"],
     "body": ["f64"],
     "description": "The Rust f64 type."
   },
   "Rust Boolean Type (bool)": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["bool"],
     "description": "The Rust bool type."
   },
@@ -216,7 +216,7 @@
     "description": "The Rust false value."
   },
   "Rust Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": [
       "// Rust does not have a built-in Date type.",
       "// Use the chrono crate for date and time operations.",
@@ -225,17 +225,17 @@
     "description": "Explains the absence of a built-in Date type in Rust."
   },
   "Rust Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["std::collections::HashMap<${1:KeyType}, ${2:ValueType}>"],
     "description": "The Rust HashMap type, equivalent to a map."
   },
   "Rust List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["Vec<${1:Type}>"],
     "description": "The Rust Vec type, commonly used as a list."
   },
   "Rust Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": [
       "// Rust does not have a built-in Date type.",
       "// Use the chrono crate to get the current date and time.",
@@ -251,7 +251,7 @@
     "description": "The Rust char type."
   },
   "Rust Null Type (Option)": {
-    "prefix": "cotrNull",
+    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
     "body": ["None"],
     "description": "The Rust Option type."
   },
@@ -266,12 +266,12 @@
     "description": "Interpolates a string in Rust."
   },
   "Rust Concatenate String": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["format!(\"${1:Your message here} ${2:and} ${3:more}\")"],
     "description": "Concatenates strings in Rust."
   },
   "Rust Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["let ${1:myVar} = $2;"],
     "description": "Creates a variable in Rust using the let keyword."
   },
@@ -311,12 +311,12 @@
     "description": "Creates a nullable variable in Rust using the Option type."
   },
   "Rust Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["let ${1:myStr} = String::from(${2:\"myString\"});"],
     "description": "Creates a string variable in Rust using the String class."
   },
   "Rust Create Multi-line String Variable": {
-    "prefix": "cotrVarStringMulti",
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
     "body": [
       "let ${1:myStr} = String::from(",
       "  ${2:'Line 1'}",
@@ -327,22 +327,22 @@
     "description": "Creates a multi-line string variable in Rust using the String class."
   },
   " Rust Create Integer Variable": {
-    "prefix": "cotrVarInt",
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
     "body": ["let ${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in Rust."
   },
   "Rust Create Float Variable": {
-    "prefix": "cotrVarNum",
+    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
     "body": ["let ${1:myFloat} = ${2:0.0};"],
     "description": "Creates a float variable in Rust."
   },
   "Rust Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["let ${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in Rust."
   },
   "Rust Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": [
       "// Rust does not have a built-in Date type.",
       "// Use the chrono crate to create a date variable.",
@@ -353,7 +353,7 @@
     "description": "Creates a date variable in Rust using the chrono crate."
   },
   "Rust Create List Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": [
       "let ${1:myList} = [",
       "  ${2:'item1'},",
@@ -382,7 +382,7 @@
     "description": "Creates a map variable in Rust using the BTreeMap class."
   },
   "Rust Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": ["const ${1:myConst}: ${2:type} = $3;"],
     "description": "Creates a constant variable in Rust using the const keyword."
   },
@@ -392,7 +392,7 @@
     "description": "Creates a mutable variable in Rust using the let mut keywords."
   },
   "Rust Generate Object Map": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "body": [
       "let ${1:myMap} = [",
       "  ${2:'key1'}: ${3:'value1'},",
@@ -414,12 +414,12 @@
     "description": "Generates an array (list) of a specific length in Rust."
   },
   "Rust Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["println!(\"{${1:'Your message here'}}\");"],
     "description": "Prints a message to the console in Rust."
   },
   "Rust Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "println!(\"{}",
       "{}",
@@ -432,7 +432,7 @@
     "description": "Prints a multi-line message to the console in Rust."
   },
   "Rust For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": ["for ${1:i} in ${2:0..10} {", "  // Your code here", "}"],
     "description": "Creates a for loop that iterates through a set of numbers with the index in Rust."
   },
@@ -442,12 +442,12 @@
     "description": "Iterates over an iterable object in Rust."
   },
   "Rust While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": ["while ${1:condition} {", "  // Your code here", "}"],
     "description": "Creates a while loop in Rust."
   },
   "Rust Match Statement": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "match ${1:variable} {",
       "  ${2:value1} => {",
@@ -464,7 +464,7 @@
     "description": "Creates a match statement in Rust."
   },
   "Rust Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "fn ${2:my_function}(${3:parameters}) -> ${1:void} {",
       "    ${4:// Your code here}",
@@ -495,7 +495,7 @@
     "description": "Creates a closure (lambda function) in Rust."
   },
   "Rust Anonymous Function": {
-    "prefix": "cotrFuncAnon",
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
     "body": [
       "|${1:parameters}| -> ${2:ReturnType} {",
       "    ${3:// Your code here}",
@@ -504,7 +504,7 @@
     "description": "Creates an anonymous closure in Rust."
   },
   "Rust Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "// Rust Function Syntax",
       "// Basic function: fn function_name(parameters) -> return_type { ... }",
@@ -514,7 +514,7 @@
     "description": "Outlines the syntax for functions in Rust."
   },
   "Rust Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["// ${1:comment}"],
     "description": "Creates a single line comment in Rust."
   },
@@ -534,7 +534,7 @@
     "description": "Throws an exception in Rust."
   },
   "Rust Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "let result = std::panic::catch_unwind(|| {",
       "  ${1:// Your code here}",
@@ -546,7 +546,7 @@
     "description": "Creates a try...catch block in Rust."
   },
   "Rust Enum": {
-    "prefix": "cotrEnum",
+    "prefix": ["cotrEnum", "enum"],
     "body": [
       "enum ${1:MyEnum} {",
       "  ${2:Variant1},",
@@ -568,12 +568,12 @@
     "description": "Creates a struct in Rust."
   },
   "Rust If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if ${1:condition} {", "  ${2:// Your code here}", "}"],
     "description": "Creates an if statement in Rust."
   },
   "Rust If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if ${1:condition} {",
       "  ${2:// Your code here}",

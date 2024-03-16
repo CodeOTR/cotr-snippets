@@ -1,6 +1,6 @@
 {
   "C++ Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": [
       "#include <chrono>",
       "",

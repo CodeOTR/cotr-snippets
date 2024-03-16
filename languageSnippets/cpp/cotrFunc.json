@@ -1,6 +1,6 @@
 {
   "C++ Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "void ${2:myFunction}(${3:parameters}) {",
       "  ${4:// Your code here}",

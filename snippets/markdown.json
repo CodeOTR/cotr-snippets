@@ -13,7 +13,7 @@
   },
 
   "Markdown Comment (HTML)": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["<!-- ${1:Your comment here} -->"],
     "description": "Creates an HTML comment within Markdown."
   },

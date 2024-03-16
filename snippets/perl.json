@@ -164,25 +164,25 @@
   },
 
   "Perl String Type": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["# Perl uses scalars for strings."],
     "description": "Perl uses scalars for strings."
   },
 
   "Perl Integer Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["# Perl uses scalars for integers."],
     "description": "Perl uses scalars for integers."
   },
 
   "Perl Double Type": {
-    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "body": ["# Perl uses scalars for floating-point numbers."],
     "description": "Perl uses scalars for floating-point numbers."
   },
 
   "Perl Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["# Perl uses 1 and 0 for boolean values."],
     "description": "Perl uses 1 and 0 for boolean values."
   },
@@ -200,25 +200,25 @@
   },
 
   "Perl Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": ["use DateTime"],
     "description": "The Perl DateTime module."
   },
 
   "Perl Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["%hash"],
     "description": "The Perl hash type, equivalent to a map."
   },
 
   "Perl List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["@array"],
     "description": "The Perl array type, equivalent to a list."
   },
 
   "Perl Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": ["use DateTime", "", "DateTime->now"],
     "description": "Gets the current date and time in Perl."
   },
@@ -236,7 +236,7 @@
   },
 
   "Perl Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["my $${1:myVar} = $2;"],
     "description": "Creates a variable in Perl."
   },
@@ -300,19 +300,19 @@
   },
 
   "Perl Concatenate Strings": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["\"${1:string1}\" . \"${2:string2}\""],
     "description": "Concatenates two strings in Perl."
   },
 
   "Perl Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["my $${1:myString} = \"${2:Your string here}\";"],
     "description": "Creates a string variable in Perl."
   },
 
   "Perl Create Multi-Line String Variable": {
-    "prefix": "cotrVarStringMulti",
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
     "body": [
       "my $${1:myString} = <<'END_STRING';",
       "${2:Line 1}",
@@ -324,25 +324,25 @@
   },
 
   "Perl Create Integer Variable": {
-    "prefix": "cotrVarInt",
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
     "body": ["my $${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in Perl."
   },
 
   "Perl Create Float Variable": {
-    "prefix": "cotrVarNum",
+    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
     "body": ["my $${1:myFloat} = ${2:0.0};"],
     "description": "Creates a float variable in Perl."
   },
 
   "Perl Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["my $${1:myBool} = ${2:1};"],
     "description": "Creates a boolean variable in Perl."
   },
 
   "Perl Create Array Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": ["my @${1:myArray} = (${2:items});"],
     "description": "Creates an array variable in Perl."
   },
@@ -354,7 +354,7 @@
   },
 
   "Perl Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": [
       "my $${1:myDate} = DateTime->new( year => ${2:year}, month => ${3:month}, day => ${4:day} );"
     ],
@@ -362,19 +362,19 @@
   },
 
   "Perl Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": ["use constant ${1:MY_CONST} => $2;"],
     "description": "Creates a constant variable in Perl using the constant pragma."
   },
 
   "Perl Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["print '${1:Your message here}\\n';"],
     "description": "Prints a message to the console in Perl."
   },
 
   "Perl Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "print <<'END_STRING';",
       "${1:Line 1}",
@@ -386,7 +386,7 @@
   },
 
   "Perl For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": [
       "for (my $${1:i} = 0; $1 < ${2:10}; $1++) {",
       "  # Your code here",
@@ -406,13 +406,13 @@
   },
 
   "Perl While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": ["while (${1:condition}) {", "  # Your code here", "}"],
     "description": "Creates a while loop in Perl."
   },
 
   "Perl Case Statement": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "case ${1:variable} {",
       "when ${2:value1}",
@@ -427,13 +427,13 @@
   },
 
   "Perl If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if (${1:condition}) {", "  # Your code here", "}"],
     "description": "Creates an if statement in Perl."
   },
 
   "Perl If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if (${1:condition}) {",
       "  # Your code here",
@@ -451,7 +451,7 @@
   },
 
   "Perl Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "sub ${2:myFunction} {",
       "  my (${3:parameters}) = @_;",
@@ -463,7 +463,7 @@
   },
 
   "Perl Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "# Perl Function Syntax",
       "# Basic function:",
@@ -503,17 +503,7 @@
     "description": "Explains alternatives to named arguments in Perl."
   },
   "Perl Arrow Function": {
-    "prefix": ["cotrFuncArrow"],
-    "body": [
-      "${2:my_function} = ->(${3:parameters}) {",
-      "  ${4:# Your code here}",
-      "}"
-    ],
-    "description": "Creates an arrow function (lambda) in Perl."
-  },
-
-  "Perl Lambda Function": {
-    "prefix": ["cotrFuncLambda"],
+    "prefix": ["cotrFuncArrow", "arrowFunction"],
     "body": [
       "${2:my_function} = ->(${3:parameters}) {",
       "  ${4:# Your code here}",
@@ -523,13 +513,13 @@
   },
 
   "Perl Anonymous Function": {
-    "prefix": "cotrFuncAnon",
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
     "body": ["lambda { |${1:parameters}|", "  # Your code here", "}"],
     "description": "Creates an anonymous function (lambda) in Perl."
   },
 
   "Perl Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["# ${1:Your comment here}"],
     "description": "Creates a single-line comment in Perl."
   },
@@ -547,7 +537,7 @@
   },
 
   "Perl Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "eval {",
       "  # Your code here",
@@ -566,7 +556,7 @@
   },
 
   "Perl Enum": {
-    "prefix": "cotrEnum",
+    "prefix": ["cotrEnum", "enum"],
     "body": [
       "# Perl does not have a built-in enum type. Use a list or hash instead."
     ],
@@ -580,7 +570,7 @@
   },
 
   "Perl Generate Map": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "body": [
       "# Perl does not have a built-in way to generate a map (hash) with a specific number of key-value pairs.",
       "# You can use a loop or a custom function to achieve this."

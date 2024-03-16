@@ -164,12 +164,12 @@
     "description": "Explains that JavaScript is dynamically typed and lists its built-in types."
   },
   "JavaScript String Type": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["let text = \"John Doe\";"],
     "description": "JavaScript does not have types."
   },
   "JavaScript Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["let flag = Boolean($1);"],
     "description": "JavaScript does not have types."
   },
@@ -184,37 +184,37 @@
     "description": "JavaScript does not have types."
   },
   "JavaScript Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": ["Date"],
     "description": "JavaScript uses the Date object for date and time operations."
   },
   "JavaScript Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["new Map()"],
     "description": "The JavaScript Map type."
   },
   "JavaScript List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["[]"],
     "description": "The JavaScript array type, commonly used as a list."
   },
   "JavaScript Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": ["new Date()"],
     "description": "Gets the current date and time in JavaScript."
   },
   "JavaScript Null Type": {
-    "prefix": "cotrNull",
+    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
     "body": ["null"],
     "description": "JavaScript does not have types."
   },
   "JavaScript Int Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["let integer = Math.floor($1);"],
     "description": "JavaScript does not have types."
   },
   "JavaScript Number Type": {
-    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "body": ["let number = $1;"],
     "description": "JavaScript does not have types."
   },
@@ -231,12 +231,12 @@
     "description": "Interpolates a string in JavaScript."
   },
   "JavaScript Concatenate String": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["let text = 'Hello, ' + ${1:name} + '!';"],
     "description": "Concatenates a string in JavaScript."
   },
   "JavaScript Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["let ${1:myVar} = $2;"],
     "description": "Creates a variable in JavaScript using the let keyword."
   },
@@ -274,7 +274,7 @@
     "description": "Creates a nullable variable in JavaScript."
   },
   "JavaScript Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["let ${1:myString} = \"${2:Your string here}\";"],
     "description": "Creates a string variable in JavaScript."
   },
@@ -290,24 +290,24 @@
     "description": "Creates a multi-line string variable in JavaScript."
   },
   "JavaScript Create Number Variable": {
-    "prefix": "cotrVarNum",
+    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
     "body": ["let ${1:myNumber} = ${2:0};"],
     "description": "Creates a number variable in JavaScript."
   },
   "JavaScript Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["let ${1:myBoolean} = ${2:true};"],
     "description": "Creates a boolean variable in JavaScript."
   },
   "JavaScript Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": [
       "let ${1:myDate} = new Date(${2:year}, ${3:month} - 1, ${4:day});"
     ],
     "description": "Creates a date variable in JavaScript."
   },
   "JavaScript Create Array Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": ["let ${1:myList} = [${2:'item1'}, ${3:'item2'}];"],
     "description": "Creates an array (list) variable in JavaScript."
   },
@@ -332,7 +332,7 @@
     "description": "Creates a map variable in JavaScript."
   },
   "JavaScript Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": ["const ${1:myConst} = $2;"],
     "description": "Creates a constant variable in JavaScript using the const keyword."
   },
@@ -347,7 +347,7 @@
     "description": "Creates a static variable in a JavaScript class."
   },
   "JavaScript Generate Object Map": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "body": [
       "const ${1:myMap} = Object.fromEntries(",
       "  Array.from({ length: ${2:length} }, (_, index) => [`key${index}`, `value${index}`])",
@@ -363,12 +363,12 @@
     "description": "Generates an array (list) of a specific length in JavaScript."
   },
   "JavaScript Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["console.log(${1:'Your message here'});"],
     "description": "Prints a message to the console in JavaScript."
   },
   "JavaScript Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "console.log(`",
       "${1:Line 1}",
@@ -379,7 +379,7 @@
     "description": "Prints a multi-line message to the console in JavaScript."
   },
   "JavaScript For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": [
       "for (let ${1:i} = 0; $1 < ${2:10}; $1++) {",
       "  // Your code here",
@@ -397,12 +397,12 @@
     "description": "Iterates over an iterable object in JavaScript."
   },
   "JavaScript While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": ["while (${1:condition}) {", "  ${2:// Your code here}", "}"],
     "description": "Creates a while loop in JavaScript."
   },
   "JavaScript Switch Statement": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "switch (${1:variable}) {",
       "  case ${2:value1}:",
@@ -418,7 +418,7 @@
     "description": "Creates a switch statement in JavaScript."
   },
   "JavaScript Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "function ${2:myFunction}(${3:parameters}) {",
       "  ${4:// Your code here}",
@@ -455,12 +455,12 @@
     "description": "Creates an arrow function in JavaScript."
   },
   "JavaScript Anonymous Function": {
-    "prefix": "cotrFuncAnon",
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
     "body": ["function(${1:parameters}) {", "  ${2:// Your code here}", "};"],
     "description": "Creates an anonymous function in JavaScript."
   },
   "JavaScript Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "// JavaScript Function Syntax",
       "// Basic function: function functionName(parameters) { ... }",
@@ -470,7 +470,7 @@
     "description": "Outlines the syntax for functions in JavaScript."
   },
   "JavaScript Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["// ${1:Your comment here}"],
     "description": "Creates a single-line comment in JavaScript."
   },
@@ -485,7 +485,7 @@
     "description": "Throws an exception in JavaScript."
   },
   "JavaScript Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "try {",
       "  ${1:// Your code here}",
@@ -501,12 +501,12 @@
     "description": "Creates a class in JavaScript."
   },
   "JavaScript If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if (${1:condition}) {", "  ${2:// Your code here}", "}"],
     "description": "Creates an if statement in JavaScript."
   },
   "JavaScript If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if (${1:condition}) {",
       "  ${2:// Your code here}",

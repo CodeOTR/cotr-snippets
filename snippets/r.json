@@ -184,13 +184,13 @@
   },
 
   "R String Type": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["character"],
     "description": "The R character type."
   },
 
   "R Integer Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": [
       "# R uses 'numeric' for both integers and floating-point numbers."
     ],
@@ -198,7 +198,7 @@
   },
 
   "R Double Type": {
-    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "body": [
       "# R uses 'numeric' for both integers and floating-point numbers."
     ],
@@ -206,7 +206,7 @@
   },
 
   "R Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["logical"],
     "description": "The R logical type."
   },
@@ -224,13 +224,13 @@
   },
 
   "R Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": ["Date"],
     "description": "The R Date class."
   },
 
   "R Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": [
       "# R does not have a built-in Map type. Use lists or data.frames for similar functionality."
     ],
@@ -238,31 +238,31 @@
   },
 
   "R List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["list"],
     "description": "The R list type."
   },
 
   "R Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": ["Sys.Date()"],
     "description": "Gets the current date in R."
   },
 
   "R Null Type": {
-    "prefix": "cotrNull",
+    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
     "body": ["NULL"],
     "description": "The R NULL value."
   },
 
   "R Dynamic Type": {
-    "prefix": "cotrDynamic",
+    "prefix": ["cotrDynamic", "dynamicType", "typeDynamic", "anyType", "typeAny"],
     "body": ["# R is a dynamically typed language."],
     "description": "R is a dynamically typed language."
   },
 
   "R Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["${1:my_var} <- $2"],
     "description": "Creates a variable in R."
   },
@@ -283,19 +283,19 @@
   },
 
   "R Concatenate String": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["paste(${1:\"string1\"}, ${2:\"string2\"}, sep = \"\")"],
     "description": "Concatenates strings in R."
   },
 
   "R Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["${1:my_string} <- '${2:Your string here}'"],
     "description": "Creates a string variable in R."
   },
 
   "R Create Multiline String Variable": {
-    "prefix": "cotrVarStringMulti",
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
     "body": [
       "${1:my_string} <- paste0(",
       "${2:\"Line 1\",",
@@ -306,25 +306,25 @@
   },
 
   "R Create Integer Variable": {
-    "prefix": "cotrVarInt",
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
     "body": ["${1:my_int} <- ${2:0}"],
     "description": "Creates an integer variable in R."
   },
 
   "R Create Double Variable": {
-    "prefix": "cotrVarDouble",
+    "prefix": ["cotrVarDouble", "double", "doubleVariable", "variableDouble"],
     "body": ["${1:my_double} <- ${2:0.0}"],
     "description": "Creates a double variable in R."
   },
 
   "R Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["${1:my_bool} <- ${2:TRUE}"],
     "description": "Creates a boolean variable in R."
   },
 
   "R Create Array Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": ["${1:my_array} <- c(${2:items})"],
     "description": "Creates an array variable in R."
   },
@@ -336,55 +336,55 @@
   },
 
   "R Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": ["${1:my_date} <- as.Date('${2:YYYY-MM-DD}')"],
     "description": "Creates a date variable in R."
   },
 
   "R Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": ["${1:MY_CONST} <- $2"],
     "description": "Creates a constant variable in R."
   },
 
   "R Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["print(${1:'Your message here'})"],
     "description": "Prints a message to the console in R."
   },
 
   "R Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": ["cat(${1:\"Line 1\",", "${2:\"Line 2\",", "${3:\"Line 3\")"],
     "description": "Prints a multi-line message to the console in R."
   },
 
   "R For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": ["for (${1:i} in ${2:1:10}) {", "  # Your code here", "}"],
     "description": "Creates a for loop that iterates through a set of numbers with the index in R."
   },
 
   "R For Each Loop": {
-    "prefix": "cotrForEachLoop",
+    "prefix": ["cotrForEachLoop", "forEach"],
     "body": ["for (item in ${1:iterable}) {", "  # Your code here", "}"],
     "description": "Iterates over an iterable object in R."
   },
 
   "R While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": ["while (${1:condition}) {", "  # Your code here", "}"],
     "description": "Creates a while loop in R."
   },
 
   "R If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if (${1:condition}) {", "  # Your code here", "}"],
     "description": "Creates an if statement in R."
   },
 
   "R If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if (${1:condition}) {",
       "  # Your code here",
@@ -396,7 +396,7 @@
   },
 
   "R Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "${2:my_function} <- function(${3:parameters}) {",
       "  ${4:# Your code here}",
@@ -417,7 +417,7 @@
   },
 
   "R Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["# ${1:Your comment here}"],
     "description": "Creates a single-line comment in R."
   },
@@ -433,7 +433,7 @@
     "description": "Throws an exception in R."
   },
   "R Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "tryCatch({",
       "  # Your code here",
@@ -444,7 +444,7 @@
     "description": "Creates a try...catch block in R."
   },
   "R Enum": {
-    "prefix": "cotrEnum",
+    "prefix": ["cotrEnum", "enum"],
     "body": [
       "# R does not have a built-in enum type. Use a list or vector instead."
     ],

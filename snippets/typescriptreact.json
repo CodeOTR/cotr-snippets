@@ -176,11 +176,8 @@
   "TypeScript String Type": {
     "prefix": [
       "cotrTypesString",
-      "string",
       "stringType",
       "typeString",
-      "str",
-      "text",
       "textType",
       "typeText"
     ],
@@ -201,7 +198,7 @@
     "description": "The TypeScript number type."
   },
   "TypeScript Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["boolean"],
     "description": "The TypeScript boolean type."
   },
@@ -216,27 +213,27 @@
     "description": "The TypeScript false value."
   },
   "TypeScript Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": ["Date"],
     "description": "The TypeScript Date object."
   },
   "TypeScript Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["Map<${1:KeyType}, ${2:ValueType}>"],
     "description": "The TypeScript Map type."
   },
   "TypeScript List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["Array<${1:Type}>"],
     "description": "The TypeScript Array type, commonly used as a list."
   },
   "TypeScript Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": ["new Date()"],
     "description": "Gets the current date and time in TypeScript."
   },
   "TypeScript Null Type": {
-    "prefix": "cotrNull",
+    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
     "body": ["null"],
     "description": "The TypeScript null type."
   },
@@ -251,12 +248,12 @@
     "description": "Interpolates a string in TypeScript."
   },
   "TypeScript Concatenate Strings": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["'Hello, ' + ${1:name} + '!'"],
     "description": "Concatenates strings in TypeScript."
   },
   "TypeScript Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["let ${1:myVar} = $2;"],
     "description": "Creates a variable in TypeScript using the let keyword."
   },
@@ -294,12 +291,12 @@
     "description": "Creates a nullable variable in TypeScript."
   },
   "TypeScript Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["let ${1:myString}: string = ${2:'myValue'};"],
     "description": "Creates a string variable in TypeScript."
   },
   "TypeScript Create Multi-Line String Variable": {
-    "prefix": "cotrVarStringMulti",
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
     "body": [
       "let ${1:myString}: string = `",
       "${2:Line 1}",
@@ -315,12 +312,12 @@
     "description": "Creates a number variable in TypeScript."
   },
   "TypeScript Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["let ${1:myBoolean}: boolean = ${2:true};"],
     "description": "Creates a boolean variable in TypeScript."
   },
   "TypeScript Create List Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": [
       "let ${1:myList}: ${2:type}[] = [",
       "  ${3:'item1'},",
@@ -331,7 +328,7 @@
     "description": "Creates an array (list) variable in TypeScript."
   },
   "TypeScript Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": [
       "let ${1:myDate}: Date = new Date(${2:year}, ${3:month} - 1, ${4:day});"
     ],
@@ -359,7 +356,7 @@
     "description": "Creates a map variable using the Map class in TypeScript."
   },
   "TypeScript Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": ["const ${1:myConst} = $2;"],
     "description": "Creates a constant variable in TypeScript using the const keyword."
   },
@@ -374,7 +371,7 @@
     "description": "Creates a static variable in a TypeScript class."
   },
   "TypeScript Generate Object Map": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "body": [
       "const ${1:myMap} = Object.fromEntries(",
       "  Array.from({ length: ${2:length} }, (_, index) => [`key${index}`, `value${index}`])",
@@ -390,12 +387,12 @@
     "description": "Generates an array (list) of a specific length in TypeScript."
   },
   "TypeScript Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["console.log(${1:'Your message here'});"],
     "description": "Prints a message to the console in TypeScript."
   },
   "TypeScript Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "console.log(`",
       "${1:Line 1}",
@@ -406,7 +403,7 @@
     "description": "Prints a multi-line message to the console in TypeScript."
   },
   "TypeScript For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": [
       "for (let ${1:i} = 0; $1 < ${2:10}; $1++) {",
       "  // Your code here",
@@ -424,12 +421,12 @@
     "description": "Iterates over an iterable object in TypeScript."
   },
   "TypeScript While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": ["while (${1:condition}) {", "  ${2:// Your code here}", "}"],
     "description": "Creates a while loop in TypeScript."
   },
   "TypeScript Switch Statement": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "switch (${1:variable}) {",
       "  case ${2:value1}:",
@@ -445,7 +442,7 @@
     "description": "Creates a switch statement in TypeScript."
   },
   "TypeScript Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "function ${2:myFunction}(${3:parameters}): ${1:void} {",
       "  ${4:// Your code here}",
@@ -482,7 +479,7 @@
     "description": "Creates an arrow function in TypeScript."
   },
   "TypeScript Anonymous Function": {
-    "prefix": "cotrFuncAnon",
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
     "body": [
       "(${1:parameters}): ${2:void} => {",
       "  ${3:// Your code here}",
@@ -496,7 +493,7 @@
     "description": "Creates a lambda function in TypeScript."
   },
   "TypeScript Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "// TypeScript Function Syntax",
       "// Basic function: function functionName(parameters): ReturnType { ... }",
@@ -506,7 +503,7 @@
     "description": "Outlines the syntax for functions in TypeScript."
   },
   "TSX Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["{/* ${1:Your comment here} */}"],
     "description": "Creates a comment in a TSX file."
   },
@@ -532,7 +529,7 @@
     "description": "Throws an exception in a TSX file."
   },
   "TSX Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "try {",
       "  ${1:// Your code here}",
@@ -543,7 +540,7 @@
     "description": "Creates a try...catch block in a TSX file."
   },
   "TypeScript Enum": {
-    "prefix": "cotrEnum",
+    "prefix": ["cotrEnum", "enum"],
     "body": [
       "enum ${1:MyEnum} {",
       "  ${2:value1},",
@@ -559,12 +556,12 @@
     "description": "Creates a class in TypeScript."
   },
   "TypeScript If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if (${1:condition}) {", "  ${2:// Your code here}", "}"],
     "description": "Creates an if statement in TypeScript."
   },
   "TypeScript If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if (${1:condition}) {",
       "  ${2:// Your code here}",

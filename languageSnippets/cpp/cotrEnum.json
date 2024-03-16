@@ -1,6 +1,6 @@
 {
   "C++ Enum": {
-    "prefix": "cotrEnum",
+    "prefix": ["cotrEnum", "enum"],
     "body": [
       "enum class ${1:MyEnum} {",
       "  ${2:value1},",

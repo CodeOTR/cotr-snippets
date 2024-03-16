@@ -170,27 +170,27 @@
     "description": "Lists the types in Swift."
   },
   "Swift String Type": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["String"],
     "description": "The Swift String type."
   },
   "Swift Integer Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["Int"],
     "description": "The Swift Int type."
   },
   "Swift Double Type": {
-    "prefix": ["cotrTypesNum", "number", "numberType", "typeNumber", "double", "doubleType", "typeDouble"],
+    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
     "body": ["Double"],
     "description": "The Swift Double type."
   },
   "Swift Float Type": {
-    "prefix": ["cotrTypesNumAlt", "floatType", "float", "typeFloat"],
+    "prefix": ["cotrTypesNumAlt", "floatType", "typeFloat"],
     "body": ["Float"],
     "description": "The Swift Float type."
   },
   "Swift Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["Bool"],
     "description": "The Swift Bool type."
   },
@@ -205,22 +205,22 @@
     "description": "The Swift false value."
   },
   "Swift Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": ["Date"],
     "description": "The Swift Date struct."
   },
   "Swift Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["Dictionary<${1:KeyType}, ${2:ValueType}>"],
     "description": "The Swift Dictionary type, equivalent to a map."
   },
   "Swift List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["Array<${1:Type}>"],
     "description": "The Swift Array type, equivalent to a list."
   },
   "Swift Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": ["Date()"],
     "description": "Gets the current date and time in Swift."
   },
@@ -245,12 +245,12 @@
     "description": "Interpolates a variable into a string in Swift."
   },
   "Swift Concatenate Strings": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["\"${1:string1}\" + \"${2:string2}\""],
     "description": "Concatenates two strings in Swift."
   },
   "Swift Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["var ${1:myVar} = $2;"],
     "description": "Creates a variable in Swift using the var keyword."
   },
@@ -284,12 +284,12 @@
     "description": "Creates a nullable variable in Swift."
   },
   "Swift Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["var ${1:myString} = ${2:'Your string here'};"],
     "description": "Creates a string variable in Swift."
   },
   "Swift Create Multi-Line String Variable": {
-    "prefix": "cotrVarStringMulti",
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
     "body": [
       "var ${1:myString} = \"\"\"",
       "${2:Line 1}",
@@ -300,12 +300,12 @@
     "description": "Creates a multi-line string variable in Swift."
   },
   "Swift Create Integer Variable": {
-    "prefix": "cotrVarInt",
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
     "body": ["var ${1:myInt} = ${2:0};"],
     "description": "Creates an integer variable in Swift."
   },
   "Swift Create Double Variable": {
-    "prefix": "cotrVarNum",
+    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
     "body": ["var ${1:myDouble} = ${2:0.0};"],
     "description": "Creates a double variable in Swift."
   },
@@ -315,17 +315,17 @@
     "description": "Creates a float variable in Swift."
   },
   "Swift Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["var ${1:myBool} = ${2:true};"],
     "description": "Creates a boolean variable in Swift."
   },
   "Swift Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": ["let ${1:myDate} = Date()"],
     "description": "Creates a date variable in Swift."
   },
   "Swift Create List Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": ["var ${1:myArray} = [${2:'item1'}, ${3:'item2'}, ${4:'item3'}];"],
     "description": "Creates an array variable in Swift."
   },
@@ -340,7 +340,7 @@
     "description": "Creates a dictionary variable in Swift."
   },
   "Swift Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": ["let ${1:myConst} = $2;"],
     "description": "Creates a constant variable in Swift using the let keyword."
   },
@@ -362,7 +362,7 @@
     "description": "Generates an array of a specific length in Swift."
   },
   "Swift Generate Dictionary": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "body": [
       "var ${1:myDictionary} = ",
       "Dictionary(uniqueKeysWithValues: zip([${2:'key1'}, ${3:'key",
@@ -371,12 +371,12 @@
     "description": "Generates a dictionary with a specific number of key-value pairs in Swift."
   },
   "Swift Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["print(${1:\"Your message here\"})"],
     "description": "Prints a message to the console in Swift."
   },
   "Swift Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "print(\"\"\"",
       "${1:Line 1}",
@@ -387,7 +387,7 @@
     "description": "Prints a multi-line message to the console in Swift."
   },
   "Swift For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": ["for ${1:i} in ${2:0..<10} {", "  // Your code here", "}"],
     "description": "Creates a for loop that iterates through a set of numbers with the index in Swift."
   },
@@ -401,12 +401,12 @@
     "description": "Iterates over an iterable object in Swift."
   },
   "Swift While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": ["while ${1:condition} {", "  ${2:// Your code here}", "}"],
     "description": "Creates a while loop in Swift."
   },
   "Swift Switch Statement": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "switch ${1:variable} {",
       "  case ${2:value1}:",
@@ -422,7 +422,7 @@
     "description": "Creates a switch statement in Swift."
   },
   "Swift Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "func ${2:myFunction}(${3:parameters}) -> ${1:Void} {",
       "    ${4:// Your code here}",
@@ -459,7 +459,7 @@
     "description": "Creates a closure (lambda function) in Swift."
   },
   "Swift Anonymous Function": {
-    "prefix": "cotrFuncAnon",
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
     "body": [
       "{ (${1:parameters}) -> ${2:ReturnType} in",
       "    ${3:// Your code here}",
@@ -468,7 +468,7 @@
     "description": "Creates an anonymous function (closure) in Swift."
   },
   "Swift Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "// Swift Function Syntax",
       "// Basic function: func functionName(parameters) -> ReturnType { ... }",
@@ -478,7 +478,7 @@
     "description": "Outlines the syntax for functions in Swift."
   },
   "Swift Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["// ${1:Your comment here}"],
     "description": "Creates a single-line comment in Swift."
   },
@@ -498,7 +498,7 @@
     "description": "Throws an exception in Swift."
   },
   "Swift Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "do {",
       "  ${1:// Your code here}",
@@ -509,7 +509,7 @@
     "description": "Creates a try...catch block in Swift."
   },
   "Swift Enum": {
-    "prefix": "cotrEnum",
+    "prefix": ["cotrEnum", "enum"],
     "body": [
       "enum ${1:MyEnum} {",
       "  ${2:value1},",
@@ -525,12 +525,12 @@
     "description": "Creates a class in Swift."
   },
   "Swift If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if ${1:condition} {", "  ${2:// Your code here}", "}"],
     "description": "Creates an if statement in Swift."
   },
   "Swift If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if ${1:condition} {",
       "  ${2:// Your code here}",

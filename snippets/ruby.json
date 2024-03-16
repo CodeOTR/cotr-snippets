@@ -175,12 +175,12 @@
     "description": "Lists some common types in Ruby."
   },
   "Ruby String Type": {
-    "prefix": ["cotrTypesString", "string", "stringType", "typeString", "str", "text", "textType", "typeText"],
+    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
     "body": ["String"],
     "description": "The Ruby String type."
   },
   "Ruby Integer Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["Integer"],
     "description": "The Ruby Integer type."
   },
@@ -195,7 +195,7 @@
     "description": "The Ruby Float type."
   },
   "Ruby Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["# Ruby uses true and false for boolean values."],
     "description": "Ruby uses true and false for boolean values."
   },
@@ -215,37 +215,37 @@
     "description": "Ruby does not have a separate char type; use String instead."
   },
   "Ruby Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": ["require 'date'", "", "Date"],
     "description": "The Ruby Date class."
   },
   "Ruby Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["Hash"],
     "description": "The Ruby Hash type, equivalent to a map."
   },
   "Ruby List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["Array"],
     "description": "The Ruby Array type, equivalent to a list."
   },
   "Ruby Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": ["require 'date'", "", "Date.today"],
     "description": "Gets the current date in Ruby."
   },
   "Ruby Null Type": {
-    "prefix": "cotrNull",
+    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
     "body": ["nil"],
     "description": "The Ruby nil value."
   },
   "Ruby Dynamic Type": {
-    "prefix": "cotrDynamic",
+    "prefix": ["cotrDynamic", "dynamicType", "typeDynamic", "anyType", "typeAny"],
     "body": ["# Ruby is a dynamically typed language."],
     "description": "Ruby is a dynamically typed language."
   },
   "Ruby Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["${1:my_var} = $2"],
     "description": "Creates a variable in Ruby."
   },
@@ -278,22 +278,22 @@
     "description": "Interpolates a variable into a string in Ruby."
   },
   "Ruby Concatenate Strings": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["\"${1:string1}\" + \"${2:string2}\""],
     "description": "Concatenates two strings in Ruby."
   },
   "Ruby Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["${1:my_string} = ${2:'Your string here'}"],
     "description": "Creates a string variable in Ruby."
   },
   "Ruby Create Multiline String Variable": {
-    "prefix": "cotrVarStringMulti",
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
     "body": ["${1:my_string} = <<~HEREDOC", "${2:Your string here}", "HEREDOC"],
     "description": "Creates a multi-line string variable in Ruby."
   },
   "Ruby Create Integer Variable": {
-    "prefix": "cotrVarInt",
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
     "body": ["${1:my_int} = ${2:0}"],
     "description": "Creates an integer variable in Ruby."
   },
@@ -303,12 +303,12 @@
     "description": "Creates a float variable in Ruby."
   },
   "Ruby Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["${1:my_bool} = ${2:true}"],
     "description": "Creates a boolean variable in Ruby."
   },
   "Ruby Create Array Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": [
       "${1:my_array} = [",
       "  ${2:'item1'},",
@@ -330,12 +330,12 @@
     "description": "Creates a hash variable in Ruby."
   },
   "Ruby Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": ["${1:my_date} = Date.new(${2:year}, ${3:month}, ${4:day})"],
     "description": "Creates a date variable in Ruby."
   },
   "Ruby Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": ["${1:MY_CONST} = $2"],
     "description": "Creates a constant variable in Ruby."
   },
@@ -357,18 +357,18 @@
     "description": "Generates an array of a specific length in Ruby."
   },
   "Ruby Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["puts ${1:'Your message here'}"],
     "description": "Prints a message to the console in Ruby."
   },
 
   "Ruby Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": ["puts ${1:\"\"\"Line 1}", "${2:Line 2}", "${3:Line 3}\"\"\"}"],
     "description": "Prints a multi-line message to the console in Ruby."
   },
   "Ruby For Loop": {
-    "prefix": "cotrForLoop",
+    "prefix": ["cotrForLoop", "forLoop", "forX"],
     "body": ["${1:10}.times do |${2:i}|", "  # Your code here", "end"],
     "descriptin": "Creates a for loop that iterates through a set of numbers with the index in Ruby."
   },
@@ -378,12 +378,12 @@
     "description": "Iterates over an iterable object in Ruby."
   },
   "Ruby While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": ["while ${1:condition} do", "  # Your code here", "end"],
     "description": "Creates a while loop in Ruby."
   },
   "Ruby Case Statement": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "case ${1:variable}",
       "when ${2:value1}",
@@ -397,7 +397,7 @@
     "description": "Creates a case statement in Ruby."
   },
   "Ruby Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "def ${2:my_function}(${3:parameters})",
       "  ${4:# Your code here}",
@@ -434,12 +434,12 @@
     "description": "Creates a lambda function in Ruby."
   },
   "Ruby Anonymous Function": {
-    "prefix": "cotrFuncAnon",
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
     "body": ["lambda { |${1:parameters}|", "  ${2:# Your code here}", "}"],
     "description": "Creates an anonymous function (lambda) in Ruby."
   },
   "Ruby Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "# Ruby Function Syntax",
       "# Basic function: def function_name(parameters) ... end",
@@ -449,7 +449,7 @@
     "description": "Outlines the syntax for functions in Ruby."
   },
   "Ruby Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["# ${1:Your comment here}"],
     "description": "Creates a single-line comment in Ruby."
   },
@@ -469,7 +469,7 @@
     "description": "Throws an exception in Ruby."
   },
   "Ruby Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "begin",
       "  ${1:# Your code here}",
@@ -480,7 +480,7 @@
     "description": "Creates a begin...rescue block in Ruby."
   },
   "Ruby Enum (with Symbols)": {
-    "prefix": "cotrEnum",
+    "prefix": ["cotrEnum", "enum"],
     "body": [
       "${1:MyEnum} = [:${2:value1}, :${3:value2}]",
       "# Access: ${1:MyEnum}[0] # :${2:value1}"
@@ -494,12 +494,12 @@
     "description": "Creates a class in Ruby."
   },
   "Ruby If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if ${1:condition}", "  ${2:# Your code here}", "end"],
     "description": "Creates an if statement in Ruby."
   },
   "Ruby If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if ${1:condition}",
       "  ${2:# Your code here}",

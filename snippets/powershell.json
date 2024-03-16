@@ -140,11 +140,8 @@
   "PowerShell String Type": {
     "prefix": [
       "cotrTypesString",
-      "string",
       "stringType",
       "typeString",
-      "str",
-      "text",
       "textType",
       "typeText"
     ],
@@ -153,7 +150,7 @@
   },
 
   "PowerShell Integer Type": {
-    "prefix": "cotrTypesInt",
+    "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["[int]"],
     "description": "The PowerShell int type."
   },
@@ -173,7 +170,7 @@
   },
 
   "PowerShell Boolean Type": {
-    "prefix": ["cotrTypesBool", "boolean", "booleanType", "typeBool"],
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["[bool]"],
     "description": "The PowerShell bool type."
   },
@@ -191,25 +188,25 @@
   },
 
   "PowerShell Date Type": {
-    "prefix": "cotrTypesDate",
+    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
     "body": ["[datetime]"],
     "description": "The PowerShell datetime type."
   },
 
   "PowerShell Map Type": {
-    "prefix": "cotrTypesMap",
+    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
     "body": ["[hashtable]"],
     "description": "The PowerShell hashtable type, equivalent to a map."
   },
 
   "PowerShell List Type": {
-    "prefix": "cotrTypesList",
+    "prefix": ["cotrTypesList", "listType", "typeList", "typeArray"],
     "body": ["[array]"],
     "description": "The PowerShell array type, equivalent to a list."
   },
 
   "PowerShell Date Now": {
-    "prefix": "cotrNow",
+    "prefix": ["cotrNow", "now", "currentTime", "dateNow"],
     "body": ["Get-Date"],
     "description": "Gets the current date and time in PowerShell."
   },
@@ -227,7 +224,7 @@
   },
 
   "PowerShell Create Variable": {
-    "prefix": "cotrVar",
+    "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
     "body": ["$${1:myVar} = $2"],
     "description": "Creates a variable in PowerShell."
   },
@@ -251,19 +248,19 @@
   },
 
   "PowerShell Concatenate Strings": {
-    "prefix": "cotrConcat",
+    "prefix": ["cotrConcat", "concatenate", "combine"],
     "body": ["\"${1:string1}\" + \"${2:string2}\""],
     "description": "Concatenates two strings in PowerShell."
   },
 
   "PowerShell Create String Variable": {
-    "prefix": "cotrVarString",
+    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text"],
     "body": ["$${1:myString} = \"${2:Your string here}\""],
     "description": "Creates a string variable in PowerShell."
   },
 
   "PowerShell Create Multi-Line String Variable": {
-    "prefix": "cotrVarStringMulti",
+    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti"],
     "body": [
       "$${1:myString} = @\"",
       "${2:Line 1}",
@@ -275,25 +272,25 @@
   },
 
   "PowerShell Create Integer Variable": {
-    "prefix": "cotrVarInt",
+    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable"],
     "body": ["$${1:myInt} = ${2:0}"],
     "description": "Creates an integer variable in PowerShell."
   },
 
   "PowerShell Create Double Variable": {
-    "prefix": "cotrVarNum",
+    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
     "body": ["$${1:myDouble} = ${2:0.0}"],
     "description": "Creates a double variable in PowerShell."
   },
 
   "PowerShell Create Boolean Variable": {
-    "prefix": "cotrVarBool",
+    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable"],
     "body": ["$${1:myBool} = ${2:$true}"],
     "description": "Creates a boolean variable in PowerShell."
   },
 
   "PowerShell Create Array Variable": {
-    "prefix": "cotrVarList",
+    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
     "body": ["$${1:myArray} = @(${2:items})"],
     "description": "Creates an array variable in PowerShell."
   },
@@ -311,7 +308,7 @@
   },
 
   "PowerShell Create Date Variable": {
-    "prefix": "cotrVarDate",
+    "prefix": ["cotrVarDate", "dateVariable", "variableDate", "date"],
     "body": [
       "$${1:myDate} = Get-Date -Year ${2:year} -Month ${3:month} -Day ${4:day}"
     ],
@@ -319,19 +316,19 @@
   },
 
   "PowerShell Create Constant": {
-    "prefix": "cotrConst",
+    "prefix": ["cotrConst", "constant"],
     "body": ["$${1:myConst} = $2"],
     "description": "Creates a constant variable in PowerShell."
   },
 
   "PowerShell Print": {
-    "prefix": "cotrPrint",
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": ["Write-Host ${1:'Your message here'}"],
     "description": "Prints a message to the console in PowerShell."
   },
 
   "PowerShell Print Multi": {
-    "prefix": "cotrPrintMulti",
+    "prefix": ["cotrPrintMulti", "printMultiLine"],
     "body": [
       "Write-Host @\"",
       "${1:Line 1}",
@@ -363,13 +360,13 @@
   },
 
   "PowerShell While Loop": {
-    "prefix": "cotrWhileLoop",
+    "prefix": ["cotrWhileLoop", "whileLoop", "whileTrue"],
     "body": ["while (${1:condition}) {", "  # Your code here", "}"],
     "description": "Creates a while loop in PowerShell."
   },
 
   "PowerShell Switch Statement": {
-    "prefix": "cotrSwitch",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
     "body": [
       "switch (${1:variable}) {",
       "  ${2:value1} {",
@@ -389,7 +386,7 @@
   },
 
   "PowerShell Function": {
-    "prefix": "cotrFunc",
+    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "function ${2:myFunction} {",
       "  param (",
@@ -441,7 +438,7 @@
   },
 
   "PowerShell Anonymous Function": {
-    "prefix": "cotrFuncAnon",
+    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
     "body": [
       "{",
       "    param(${1:parameters})",
@@ -452,7 +449,7 @@
   },
 
   "PowerShell Comment": {
-    "prefix": "cotrComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["# ${1:Your comment here}"],
     "description": "Creates a single-line comment in PowerShell."
   },
@@ -475,7 +472,7 @@
   },
 
   "PowerShell Try Catch": {
-    "prefix": "cotrTryCatch",
+    "prefix": ["cotrTryCatch", "tryCatch"],
     "body": [
       "try {",
       "  # Your code here",
@@ -493,13 +490,13 @@
   },
 
   "PowerShell If Statement": {
-    "prefix": "cotrIf",
+    "prefix": ["cotrIf", "ifStatement"],
     "body": ["if (${1:condition}) {", "  # Your code here", "}"],
     "description": "Creates an if statement in PowerShell."
   },
 
   "PowerShell If Else Statement": {
-    "prefix": "cotrIfElse",
+    "prefix": ["cotrIfElse", "ifElseStatement"],
     "body": [
       "if (${1:condition}) {",
       "  # Your code here",
@@ -533,7 +530,7 @@
   },
 
   "PowerShell Lambda Function (Script Block)": {
-    "prefix": "cotrFuncLambda",
+    "prefix": ["cotrFuncLambda","lambda", "functionLiteral"],
     "body": [
       "# PowerShell does not have a 'lambda' keyword.",
       "# Instead, script blocks are used as anonymous functions.",
@@ -551,7 +548,7 @@
   },
 
   "PowerShell Function Syntax": {
-    "prefix": "cotrFuncSyntax",
+    "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
       "# PowerShell Function Syntax",
       "# Basic function:",
@@ -582,7 +579,7 @@
   },
 
   "PowerShell Generate Map": {
-    "prefix": "cotrGenMap",
+    "prefix": ["cotrGenMap", "generateMap"],
     "body": [
       "# PowerShell does not have a built-in way to generate a map with a specific number of key-value pairs.",
       "# You can use a loop or a custom function to achieve this."
