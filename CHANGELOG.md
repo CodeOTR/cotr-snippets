@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.14
+
+- Fix scala snippet scope
+
 ## 0.0.13
 
 - Added aliases to all snippets

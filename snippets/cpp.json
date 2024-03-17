@@ -107,7 +107,14 @@
     "description": "Lists the boolean operators in C++."
   },
   "C++ Types": {
-    "prefix": ["cotrTypes", "types", "allTypes", "languageTypes", "builtInTypes", "dataTypes"],
+    "prefix": [
+      "cotrTypes",
+      "types",
+      "allTypes",
+      "languageTypes",
+      "builtInTypes",
+      "dataTypes"
+    ],
     "body": [
       "$BLOCK_COMMENT_START",
       "C++ is a statically typed language.",
@@ -144,7 +151,7 @@
     "prefix": ["thisTypeCheck", "thisType", "getThisType"],
     "body": ["typeid($CLIPBOARD).name()"],
     "description": "Gets the type of the variable in the clipboard in C++."
-  },  
+  },
   "C++ Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
     "body": [
@@ -177,7 +184,13 @@
     "description": "Explains type conversion in C++."
   },
   "C++ String Type": {
-    "prefix": ["cotrTypesString", "stringType", "typeString", "textType", "typeText"],
+    "prefix": [
+      "cotrTypesString",
+      "stringType",
+      "typeString",
+      "textType",
+      "typeText"
+    ],
     "body": ["std::string"],
     "description": "The C++ string type."
   },
@@ -187,7 +200,13 @@
     "description": "The C++ int type."
   },
   "C++ Double Type": {
-    "prefix": ["cotrTypesNum", "numberType", "typeNumber", "doubleType", "typeDouble"],
+    "prefix": [
+      "cotrTypesNum",
+      "numberType",
+      "typeNumber",
+      "doubleType",
+      "typeDouble"
+    ],
     "body": ["double"],
     "description": "The C++ double type."
   },
@@ -212,7 +231,16 @@
     "description": "The C++ false boolean value."
   },
   "C++ Map Type": {
-    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
+    "prefix": [
+      "cotrTypesMap",
+      "mapType",
+      "typeMap",
+      "hashmapType",
+      "structType",
+      "dictType",
+      "typeDict",
+      "typeScruct"
+    ],
     "body": ["std::map<${1:keyType}, ${2:valueType}>"],
     "description": "The C++ map type."
   },
@@ -227,7 +255,14 @@
     "description": "The C++ char type."
   },
   "C++ Date Type": {
-    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
+    "prefix": [
+      "cotrTypesDate",
+      "dateType",
+      "typeDate",
+      "timeType",
+      "timestampType",
+      "dateTimeType"
+    ],
     "body": ["#include <chrono>\n\nstd::chrono::system_clock::time_point"],
     "description": "C++ doesn't have a built-in Date type. Use std::chrono for date and time operations."
   },
@@ -247,7 +282,14 @@
     "description": "Gets the current date and time in C++ using std::chrono."
   },
   "C++ Interpolate String": {
-    "prefix": "cotrInterpolateString",
+    "prefix": [
+      "cotrInterpolate",
+      "interpolate",
+      "variableExpansion",
+      "variableSubstitution",
+      "stringPlaceholders",
+      "stringInterpolation"
+    ],
     "body": ["std::string ${1:myString} = \"${2:Your message here}\";"],
     "description": "Creates an interpolated string in C++."
   },
@@ -263,7 +305,12 @@
   },
 
   "C++ Variable Declaration Syntax": {
-    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
+    "prefix": [
+      "cotrVarSyntax",
+      "variableSyntax",
+      "howToVariables",
+      "letSyntax"
+    ],
     "body": [
       "// C++ Variable Declaration Syntax:",
       "",
@@ -297,7 +344,14 @@
     "description": "Creates a nullable variable in C++ using std::optional."
   },
   "C++ Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
+    "prefix": [
+      "cotrVarInt",
+      "integer",
+      "int",
+      "variableInt",
+      "intVariable",
+      "createInt"
+    ],
     "body": ["int ${1:myInt} = ${2:value};"],
     "description": "Creates an integer variable in C++."
   },
@@ -312,29 +366,69 @@
     "description": "Creates a float variable in C++."
   },
   "C++ Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
+    "prefix": [
+      "cotrVarBool",
+      "variableBool",
+      "bool",
+      "boolVariable",
+      "createBool"
+    ],
     "body": ["bool ${1:myBool} = ${2:value};"],
     "description": "Creates a boolean variable in C++."
   },
   "C++ Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
+    "prefix": [
+      "cotrVarString",
+      "string",
+      "stringVariable",
+      "variableString",
+      "text",
+      "createString",
+      "createText"
+    ],
     "body": ["std::string ${1:myString} = ${2:value};"],
     "description": "Creates a string variable in C++."
   },
   "C++ Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
+    "prefix": [
+      "cotrVarStringMulti",
+      "multiLineString",
+      "varStringMulti",
+      "stringVariableMulti",
+      "createMultiLineString"
+    ],
     "body": [
       "std::string ${1:myString} = R\"(${2:Your multi-line message here})\";"
     ],
     "description": "Creates a multi-line string variable in C++."
   },
   "C++ Create List Variable": {
-    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
+    "prefix": [
+      "cotrVarList",
+      "createList",
+      "listVariable",
+      "arrayVariable",
+      "variableList",
+      "variableArray",
+      "list",
+      "array"
+    ],
     "body": ["std::vector<${1:type}> ${2:myList} = {${3:values}};"],
     "description": "Creates a list variable in C++."
   },
   "C++ Create Map Variable": {
-    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
+    "prefix": [
+      "cotrVarMap",
+      "createMap",
+      "createStruct",
+      "variableMap",
+      "variableStruct",
+      "mapVariable",
+      "structVariable",
+      "dictVariable",
+      "variableDict",
+      "createDict"
+    ],
     "body": [
       "std::map<${1:keyType}, ${2:valueType}> ${3:myMap} = {",
       "  {${4:key1}, ${5:value1}},",
@@ -385,7 +479,7 @@
     "description": "Creates a static variable in a C++ class."
   },
   "C++ Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+    "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
     "body": [
       "#include <iostream>",
       "",
@@ -449,7 +543,14 @@
     "description": "Creates a switch statement in C++."
   },
   "C++ Function": {
-    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
+    "prefix": [
+      "cotrFunc",
+      "function",
+      "subprogram",
+      "procedure",
+      "subroutine",
+      "method"
+    ],
     "body": [
       "void ${2:myFunction}(${3:parameters}) {",
       "  ${4:// Your code here}",
@@ -495,7 +596,7 @@
       "}"
     ],
     "description": "Creates a lambda function in C++. Can also represent an anonymous function."
-},
+  },
   "C++ Function Syntax": {
     "prefix": ["cotrFuncSyntax", "functionSyntax", "functionDocs"],
     "body": [
@@ -512,7 +613,12 @@
     "description": "Creates a single-line comment in C++."
   },
   "C++ Multi-Line Comment": {
-    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
+    "prefix": [
+      "cotrCommentMulti",
+      "multiLineComment",
+      "commentMultiLine",
+      "blockComment"
+    ],
     "body": ["/*", " * ${1:Your comment here}", " */"],
     "description": "Creates a multi-line comment in C++."
   },

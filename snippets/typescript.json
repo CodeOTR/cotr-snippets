@@ -350,7 +350,7 @@
     "description": "Creates a multi-line string variable in TypeScript."
   },
   "TypeScript Create Number Variable": {
-    "prefix": "cotrVarNumber",
+    "prefix": ["cotrVarNumber", "integer", "number", "createInt", "createNumber", "intVariable", "variableInt"],
     "body": ["let ${1:myNumber}: number = ${2:0};"],
     "description": "Creates a number variable in TypeScript."
   },
