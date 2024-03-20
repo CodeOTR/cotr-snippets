@@ -3,7 +3,7 @@ title: cotrTypesString
 description: The cotrTypesString snippet.
 ---
 
-The Python string type.
+The C++ string type.
 
 **Aliases**:
 - cotrTypesString

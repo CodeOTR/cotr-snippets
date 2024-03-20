@@ -3,7 +3,7 @@ title: cotrTypesNull
 description: The cotrTypesNull snippet.
 ---
 
-The C++ null type.
+The C# null value.
 
 **Aliases**:
 - cotrTypesNull

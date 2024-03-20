@@ -272,7 +272,7 @@
   },
 
   "Perl Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["my $${1:myVar};  # Variable can be undefined (undef)."],
     "description": "Creates a nullable variable in Perl."
   },
@@ -459,7 +459,7 @@
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
       "sub ${2:myFunction} {",
-      "  my (${3:parameters}) = @_;",
+      "  my (${3:}) = @_;",
       "",
       "  ${4:# Your code here}",
       "}"
@@ -510,7 +510,7 @@
   "Perl Arrow Function": {
     "prefix": ["cotrFuncArrow", "arrowFunction"],
     "body": [
-      "${2:my_function} = ->(${3:parameters}) {",
+      "${2:my_function} = ->(${3:}) {",
       "  ${4:# Your code here}",
       "}"
     ],

@@ -3,7 +3,7 @@ title: cotrTypesList
 description: The cotrTypesList snippet.
 ---
 
-The Java List type.
+The C++ list type.
 
 **Aliases**:
 - cotrTypesList

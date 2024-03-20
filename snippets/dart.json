@@ -231,7 +231,7 @@
     "description": "The Dart DateTime.now() method."
   },
   "Dart Null Type": {
-    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["null"],
     "description": "The Dart null value."
   },
@@ -274,7 +274,7 @@
     "description": "Creates a typed variable in Dart."
   },
   "Dart Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["${1:Type}? ${2:myVar} = $3;"],
     "description": "Creates a nullable variable in Dart."
   },
@@ -387,7 +387,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in Dart."
   },
   "Dart For...In Loop": {
-    "prefix": ["cotrForInLoop", "forIn"],
+    "prefix": ["cotrForInLoop", "forIn", "forOf"],
     "body": [
       "for (var item in ${1:iterable}) {",
       "  ${2:// Your code here}",
@@ -419,7 +419,7 @@
   "Dart Function": {
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
-      "${1:void} ${2:myFunction}(${3:parameters}) {",
+      "${1:void} ${2:myFunction}(${3:}) {",
       "  ${4:// Your code here}",
       "}"
     ],

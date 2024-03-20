@@ -3,7 +3,7 @@ title: cotrTypesInt
 description: The cotrTypesInt snippet.
 ---
 
-The Haskell Int type.
+The PHP int type.
 
 **Aliases**:
 - cotrTypesInt

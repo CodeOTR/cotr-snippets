@@ -3,7 +3,7 @@ title: cotrTypesBoolTrue
 description: The cotrTypesBoolTrue snippet.
 ---
 
-The Dart true value.
+The C++ true boolean value.
 
 **Aliases**:
 - cotrTypesBoolTrue

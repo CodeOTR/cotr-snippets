@@ -3,7 +3,7 @@ title: cotrNull
 description: The cotrNull snippet.
 ---
 
-JavaScript does not have types.
+The Rust Option type.
 
 **Aliases**:
 - cotrNull

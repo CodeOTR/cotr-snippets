@@ -92,7 +92,7 @@
     "description": "Creates a function with arguments."
   },
   "Bash Case Statement": {
-    "prefix": "cotrCase",
+    "prefix": ["cotrSwitch", "case", "switch"],
     "body": [
       "case ${1:variable} in",
       "  ${2:pattern1})",
@@ -514,7 +514,7 @@
     "description": "Creates an associative array (map) variable in Bash."
   },
   "Bash Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": [
       "# Bash doesn't have null, but you can use an empty string or a special value:",
       "${1:myVar}=${2:''}"

@@ -3,7 +3,7 @@ title: cotrGenList
 description: The cotrGenList snippet.
 ---
 
-Generates an array of a specific length
+Generates an array (list) of a specific length
 
 **Aliases**:
 - cotrGenList

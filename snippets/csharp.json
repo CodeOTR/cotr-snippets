@@ -335,7 +335,7 @@
     "description": "Creates a typed variable in C#."
   },
   "C# Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["${1:Type}? ${2:myVar} = $3;"],
     "description": "Creates a nullable variable in C#."
   },
@@ -481,7 +481,7 @@
   "C# Function": {
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
-      "public ${1:void} ${2:MyFunction}(${3:parameters})",
+      "public ${1:void} ${2:MyFunction}(${3:})",
       "{",
       "    ${4:// Your code here}",
       "}"

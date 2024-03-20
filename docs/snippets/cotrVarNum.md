@@ -3,7 +3,7 @@ title: cotrVarNum
 description: The cotrVarNum snippet.
 ---
 
-Creates a double variable
+Creates a float variable
 
 **Aliases**:
 - cotrVarNum

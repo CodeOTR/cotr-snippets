@@ -3,7 +3,7 @@ title: cotrTypesDynamic
 description: The cotrTypesDynamic snippet.
 ---
 
-The Java Object type.
+Explains the use of 'Any' for dynamic values
 
 **Aliases**:
 - cotrTypesDynamic
@@ -82,6 +82,11 @@ Any # Note: Python is dynamically typed. Use the Typing module to specify types.
 # Ruby is a dynamically typed language.
 ```
 
+## rust
+```rust
+dyn Any // There is no built-in Any type in Rust.
+```
+
 ## scala
 ```scala
 Any
@@ -90,5 +95,15 @@ Any
 ## shellscript
 ```shellscript
 # Bash is dynamically typed; variables can hold different types of values.
+```
+
+## typescript
+```typescript
+any
+```
+
+## typescriptreact
+```typescriptreact
+any
 ```
 

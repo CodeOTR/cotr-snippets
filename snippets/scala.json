@@ -269,7 +269,7 @@
 
   "Scala Null Type": {
     "scope": "scala",
-    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["null"],
     "description": "The Scala null value."
   },
@@ -318,7 +318,7 @@
 
   "Scala Create Nullable Variable": {
     "scope": "scala",
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["var ${1:myVar}: Option[${2:Type}] = None"],
     "description": "Creates a nullable variable in Scala using the Option type."
   },
@@ -472,7 +472,7 @@
     "scope": "scala",
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
-      "def ${2:myFunction}(${3:parameters}): ${1:Unit} = {",
+      "def ${2:myFunction}(${3:}): ${1:Unit} = {",
       "  ${4:// Your code here}",
       "}"
     ],

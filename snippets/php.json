@@ -211,7 +211,7 @@
     "description": "The PHP false value."
   },
   "PHP Null Type": {
-    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["null"],
     "description": "The PHP null value."
   },
@@ -272,7 +272,7 @@
     "description": "Creates a typed variable in PHP."
   },
   "PHP Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["${1:Type}? $${2:myVar} = $3;"],
     "description": "Creates a nullable variable in PHP."
   },
@@ -412,7 +412,7 @@
   "PHP Function": {
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
-      "function ${2:myFunction}(${3:parameters}) {",
+      "function ${2:myFunction}(${3:}) {",
       "  ${4:// Your code here}",
       "}"
     ],

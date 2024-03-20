@@ -287,7 +287,7 @@
     "description": "Creates a typed variable in Java."
   },
   "Java Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["${1:Type} ${2:myVar} = null;"],
     "description": "Creates a nullable variable in Java."
   },
@@ -436,7 +436,7 @@
   "Java Function": {
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
-      "public ${1:void} ${2:myFunction}(${3:parameters}) {",
+      "public ${1:void} ${2:myFunction}(${3:}) {",
       "    ${4:// Your code here}",
       "}"
     ],

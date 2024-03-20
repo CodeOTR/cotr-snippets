@@ -3,7 +3,7 @@ title: cotrVarSyntax
 description: The cotrVarSyntax snippet.
 ---
 
-Explains PowerShell variable declaration syntax
+Explains Dart variable declaration syntax
 
 **Aliases**:
 - cotrVarSyntax

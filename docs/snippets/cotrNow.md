@@ -3,7 +3,7 @@ title: cotrNow
 description: The cotrNow snippet.
 ---
 
-The Dart DateTime.now() method.
+The C# DateTime.Now property.
 
 **Aliases**:
 - cotrNow

@@ -3,13 +3,13 @@ title: cotrFuncArrow
 description: The cotrFuncArrow snippet.
 ---
 
-Arrow functions are not supported
+Creates an arrow function (lambda)
 
 **Aliases**:
 - cotrFuncArrow
-- arrowFunc
 - arrowFunction
 - functionArrow
+- arrowFunc
 
 ## csharp
 ```csharp
@@ -46,7 +46,7 @@ const myFunction = (parameters) => {
 
 ## perl
 ```perl
-my_function = ->(parameters) {
+my_function = ->() {
   # Your code here
 }
 ```

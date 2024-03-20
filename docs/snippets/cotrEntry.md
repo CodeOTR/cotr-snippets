@@ -3,7 +3,7 @@ title: cotrEntry
 description: The cotrEntry snippet.
 ---
 
-Creates the entry point of a Dart application.
+Describes the entry point of a TypeScript application.
 
 **Aliases**:
 - cotrEntry

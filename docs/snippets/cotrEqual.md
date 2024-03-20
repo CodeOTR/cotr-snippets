@@ -3,7 +3,7 @@ title: cotrEqual
 description: The cotrEqual snippet.
 ---
 
-Dart equal to operator (structural equality for objects).
+JavaScript strict equal to operator.
 
 **Aliases**:
 - cotrEqual

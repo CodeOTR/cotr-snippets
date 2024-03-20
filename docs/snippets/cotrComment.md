@@ -3,7 +3,7 @@ title: cotrComment
 description: The cotrComment snippet.
 ---
 
-Creates an HTML comment within Markdown.
+Creates a comment
 
 **Aliases**:
 - cotrComment

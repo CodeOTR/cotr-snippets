@@ -3,7 +3,7 @@ title: cotrStructure
 description: The cotrStructure snippet.
 ---
 
-Explains a high-level project structure for Perl.
+Explains a high-level project structure for C++.
 
 **Aliases**:
 - cotrStructure

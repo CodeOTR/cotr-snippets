@@ -3,7 +3,7 @@ title: cotrTypes
 description: The cotrTypes snippet.
 ---
 
-Lists some common types
+Lists the types
 
 **Aliases**:
 - cotrTypes

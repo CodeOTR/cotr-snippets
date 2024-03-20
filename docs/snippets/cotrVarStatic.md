@@ -3,7 +3,7 @@ title: cotrVarStatic
 description: The cotrVarStatic snippet.
 ---
 
-Creates a static variable
+Explains alternatives to static variables
 
 **Aliases**:
 - cotrVarStatic

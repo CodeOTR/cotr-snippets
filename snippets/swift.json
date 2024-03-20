@@ -284,7 +284,7 @@
     "description": "Creates a typed variable in Swift."
   },
   "Swift Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["var ${1:myVar}: ${2:Type}? = $3"],
     "description": "Creates a nullable variable in Swift."
   },
@@ -397,7 +397,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in Swift."
   },
   "Swift For...In Loop": {
-    "prefix": ["cotrForInLoop", "forIn"],
+    "prefix": ["cotrForInLoop", "forIn", "forOf"],
     "body": [
       "for ${1:item} in ${2:iterable} {",
       "  ${3:// Your code here}",
@@ -429,7 +429,7 @@
   "Swift Function": {
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
-      "func ${2:myFunction}(${3:parameters}) -> ${1:Void} {",
+      "func ${2:myFunction}(${3:}) -> ${1:Void} {",
       "    ${4:// Your code here}",
       "}"
     ],

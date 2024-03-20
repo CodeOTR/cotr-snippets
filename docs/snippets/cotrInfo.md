@@ -3,7 +3,7 @@ title: cotrInfo
 description: The cotrInfo snippet.
 ---
 
-Provides general information about the Go programming language.
+General information about C++.
 
 **Aliases**:
 - cotrInfo

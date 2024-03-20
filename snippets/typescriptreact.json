@@ -240,12 +240,12 @@
     "description": "Gets the current date and time in TypeScript."
   },
   "TypeScript Null Type": {
-    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["null"],
     "description": "The TypeScript null type."
   },
   "TypeScript Dynamic Type": {
-    "prefix": "cotrAny",
+    "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": ["any"],
     "description": "The TypeScript any type."
   },
@@ -293,7 +293,7 @@
     "description": "Creates a typed variable in TypeScript."
   },
   "TypeScript Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["let ${1:myVar}: ${2:Type} | null = $3;"],
     "description": "Creates a nullable variable in TypeScript."
   },
@@ -419,7 +419,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in TypeScript."
   },
   "TypeScript For...Of Loop": {
-    "prefix": "cotrForOfLoop",
+    "prefix": ["cotrForInLoop", "forIn", "forOf"],
     "body": [
       "for (const item of ${1:iterable}) {",
       "  ${2:// Your code here}",
@@ -451,7 +451,7 @@
   "TypeScript Function": {
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
-      "function ${2:myFunction}(${3:parameters}): ${1:void} {",
+      "function ${2:myFunction}(${3:}): ${1:void} {",
       "  ${4:// Your code here}",
       "}"
     ],

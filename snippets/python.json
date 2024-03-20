@@ -223,7 +223,7 @@
     "description": "Gets the current date and time in Python."
   },
   "Python Null Type": {
-    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["None"],
     "description": "The Python None type."
   },
@@ -280,7 +280,7 @@
     "description": "Creates a variable in Python."
   },
   "Python Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["${1:my_var} = None  # Variable can be set to None."],
     "description": "Creates a nullable variable in Python."
   },
@@ -360,7 +360,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in Python."
   },
   "Python For...In Loop": {
-    "prefix": ["cotrForInLoop", "forIn"],
+    "prefix": ["cotrForInLoop", "forIn", "forOf"],
     "body": ["for ${1:item} in ${2:iterable}:", "  # Your code here"],
     "description": "Iterates over an iterable object in Python."
   },
@@ -392,7 +392,7 @@
   "Python Function": {
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
-      "def ${2:my_function}(${3:parameters}):",
+      "def ${2:my_function}(${3:}):",
       "    ${4:# Your code here}",
       ""
     ],

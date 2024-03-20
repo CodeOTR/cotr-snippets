@@ -8,9 +8,9 @@ Iterates over an iterable object
 **Aliases**:
 - cotrForEachLoop
 - forEach
+- cotrForIn
 - forLoop
 - cotrForLoop
-- cotrForIn
 
 ## csharp
 ```csharp

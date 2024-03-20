@@ -3,7 +3,7 @@ title: cotrGenMap
 description: The cotrGenMap snippet.
 ---
 
-Generates a dictionary of a specific length
+Generates an object map with a specific number of key-value pairs
 
 **Aliases**:
 - cotrGenMap

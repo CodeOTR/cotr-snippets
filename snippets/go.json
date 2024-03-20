@@ -199,7 +199,9 @@
   },
   "Go Interpolate String": {
     "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
-    "body": ["`${1:string}`"],
+    "body": [
+      "fmt.Sprintf(\"${1:Your string here}\", ${2:variable1}, ${3:variable2})"
+    ],
     "description": "Interpolates a string in Go."
   },
   "Go Concatenate Strings": {
@@ -288,7 +290,7 @@
     "description": "Creates a typed variable in Go."
   },
   "Go Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["var ${1:myVar} *${2:Type} = $3"],
     "description": "Creates a nullable variable in Go using pointers."
   },
@@ -433,7 +435,7 @@
   "Go Function": {
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
-      "func ${2:MyFunction}(${3:parameters}) ${1:void} {",
+      "func ${2:MyFunction}(${3:}) ${1:void} {",
       "    ${4:// Your code here}",
       "}"
     ],

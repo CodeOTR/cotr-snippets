@@ -3,7 +3,7 @@ title: cotrNotEqual
 description: The cotrNotEqual snippet.
 ---
 
-C# not equal to operator.
+Haskell not equal to operator.
 
 **Aliases**:
 - cotrNotEqual

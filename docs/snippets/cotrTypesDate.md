@@ -3,7 +3,7 @@ title: cotrTypesDate
 description: The cotrTypesDate snippet.
 ---
 
-The Perl DateTime module.
+The Dart DateTime type.
 
 **Aliases**:
 - cotrTypesDate

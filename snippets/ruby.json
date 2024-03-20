@@ -240,7 +240,7 @@
     "description": "Gets the current date in Ruby."
   },
   "Ruby Null Type": {
-    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["nil"],
     "description": "The Ruby nil value."
   },
@@ -379,7 +379,7 @@
     "descriptin": "Creates a for loop that iterates through a set of numbers with the index in Ruby."
   },
   "Ruby For...In Loop": {
-    "prefix": ["cotrForInLoop", "forIn"],
+    "prefix": ["cotrForInLoop", "forIn", "forOf"],
     "body": ["${1:iterable}.each do |item|", "  # Your code here", "end"],
     "description": "Iterates over an iterable object in Ruby."
   },
@@ -405,7 +405,7 @@
   "Ruby Function": {
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
-      "def ${2:my_function}(${3:parameters})",
+      "def ${2:my_function}(${3:})",
       "  ${4:# Your code here}",
       "end"
     ],

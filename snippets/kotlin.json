@@ -324,7 +324,7 @@
     "description": "Creates a typed variable in Kotlin."
   },
   "Kotlin Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "scope": "kotlin",
     "body": ["var ${1:myVar}: ${2:Type}? = null"],
     "description": "Creates a nullable variable in Kotlin."
@@ -447,7 +447,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in Kotlin."
   },
   "Kotlin For...In Loop": {
-    "prefix": ["cotrForInLoop", "forIn"],
+    "prefix": ["cotrForInLoop", "forIn", "forOf"],
     "scope": "kotlin",
     "body": ["for (item in ${1:iterable}) {", "  // Your code here", "}"],
     "description": "Iterates over an iterable object in Kotlin."
@@ -480,7 +480,7 @@
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "scope": "kotlin",
     "body": [
-      "fun ${2:myFunction}(${3:parameters}): ${1:Unit} {",
+      "fun ${2:myFunction}(${3:}): ${1:Unit} {",
       "    ${4:// Your code here}",
       "}"
     ],

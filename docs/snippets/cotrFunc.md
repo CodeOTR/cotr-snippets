@@ -50,28 +50,28 @@ functionName parameters = expression
 
 ## java
 ```java
-public void myFunction(parameters) {
+public void myFunction() {
     // Your code here
 }
 ```
 
 ## javascript
 ```javascript
-function myFunction(parameters) {
+function myFunction() {
   // Your code here
 }
 ```
 
 ## javascriptreact
 ```javascriptreact
-function myFunction(parameters) {
+function myFunction() {
   // Your code here
 }
 ```
 
 ## kotlin
 ```kotlin
-fun myFunction(parameters): Unit {
+fun myFunction(): Unit {
     // Your code here
 }
 ```
@@ -79,7 +79,7 @@ fun myFunction(parameters): Unit {
 ## perl
 ```perl
 sub myFunction {
-  my (parameters) = @_;
+  my () = @_;
 
   # Your code here
 }
@@ -87,7 +87,7 @@ sub myFunction {
 
 ## php
 ```php
-function myFunction(parameters) {
+function myFunction() {
   // Your code here
 }
 ```
@@ -96,7 +96,7 @@ function myFunction(parameters) {
 ```powershell
 function myFunction {
   param (
-    parameters
+    
   )
 
   # Your code here
@@ -105,35 +105,35 @@ function myFunction {
 
 ## python
 ```python
-def my_function(parameters):
+def my_function():
     # Your code here
 
 ```
 
 ## r
 ```r
-my_function <- function(parameters) {
+my_function <- function() {
   # Your code here
 }
 ```
 
 ## ruby
 ```ruby
-def my_function(parameters)
+def my_function()
   # Your code here
 end
 ```
 
 ## rust
 ```rust
-fn my_function(parameters) -> void {
+fn my_function() -> void {
     // Your code here
 }
 ```
 
 ## scala
 ```scala
-def myFunction(parameters): Unit = {
+def myFunction(): Unit = {
   // Your code here
 }
 ```
@@ -147,21 +147,21 @@ myFunction() {
 
 ## swift
 ```swift
-func myFunction(parameters) -> Void {
+func myFunction() -> Void {
     // Your code here
 }
 ```
 
 ## typescript
 ```typescript
-function myFunction(parameters): void {
+function myFunction(): void {
   // Your code here
 }
 ```
 
 ## typescriptreact
 ```typescriptreact
-function myFunction(parameters): void {
+function myFunction(): void {
   // Your code here
 }
 ```

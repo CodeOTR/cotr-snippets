@@ -339,7 +339,7 @@
     "description": "Creates a typed variable in C++."
   },
   "C++ Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["std::optional<${1:Type}> ${2:myVar} = $3;"],
     "description": "Creates a nullable variable in C++ using std::optional."
   },
@@ -508,7 +508,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in C++."
   },
   "C++ For...In Loop": {
-    "prefix": ["cotrForInLoop", "forIn"],
+    "prefix": ["cotrForInLoop", "forIn", "forOf"],
     "body": [
       "for (auto ${1:item} : ${2:iterable}) {",
       "  // Your code here",
@@ -552,7 +552,7 @@
       "method"
     ],
     "body": [
-      "void ${2:myFunction}(${3:parameters}) {",
+      "void ${2:myFunction}(${3:}) {",
       "  ${4:// Your code here}",
       "}"
     ],

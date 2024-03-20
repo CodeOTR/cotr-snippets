@@ -3,7 +3,7 @@ title: cotrTypesChar
 description: The cotrTypesChar snippet.
 ---
 
-The C++ char type.
+The Swift Character type.
 
 **Aliases**:
 - cotrTypesChar

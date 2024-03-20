@@ -263,7 +263,7 @@
   },
 
   "PowerShell Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["$${1:myVar} = $null"],
     "description": "Creates a nullable variable in PowerShell."
   },
@@ -486,7 +486,7 @@
     "body": [
       "function ${2:myFunction} {",
       "  param (",
-      "    ${3:parameters}",
+      "    ${3:}",
       "  )",
       "",
       "  ${4:# Your code here}",

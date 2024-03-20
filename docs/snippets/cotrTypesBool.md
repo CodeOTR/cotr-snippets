@@ -3,7 +3,7 @@ title: cotrTypesBool
 description: The cotrTypesBool snippet.
 ---
 
-The Haskell Bool type.
+The R logical type.
 
 **Aliases**:
 - cotrTypesBool

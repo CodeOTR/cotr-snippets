@@ -3,7 +3,7 @@ title: cotrTypesNumAlt
 description: The cotrTypesNumAlt snippet.
 ---
 
-The Kotlin Float type.
+The C++ float type.
 
 **Aliases**:
 - cotrTypesNumAlt

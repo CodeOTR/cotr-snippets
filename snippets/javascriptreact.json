@@ -191,7 +191,7 @@
     "description": "JavaScript does not have types."
   },
   "JavaScript Null Type": {
-    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["null"],
     "description": "JavaScript does not have types."
   },
@@ -276,7 +276,7 @@
     "description": "Creates a variable in JavaScript."
   },
   "JavaScript Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["let ${1:myVar} = null;"],
     "description": "Creates a nullable variable in JavaScript."
   },
@@ -395,7 +395,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in JavaScript."
   },
   "JavaScript For...Of Loop": {
-    "prefix": "cotrForOfLoop",
+    "prefix": ["cotrForInLoop", "forIn", "forOf"],
     "body": [
       "for (const item of ${1:iterable}) {",
       "  ${2:// Your code here}",
@@ -427,7 +427,7 @@
   "JavaScript Function": {
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
-      "function ${2:myFunction}(${3:parameters}) {",
+      "function ${2:myFunction}(${3:}) {",
       "  ${4:// Your code here}",
       "}"
     ],

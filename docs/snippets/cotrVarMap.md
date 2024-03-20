@@ -3,7 +3,7 @@ title: cotrVarMap
 description: The cotrVarMap snippet.
 ---
 
-Creates a map variable
+Creates a dictionary variable
 
 **Aliases**:
 - cotrVarMap

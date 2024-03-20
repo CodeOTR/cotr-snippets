@@ -304,7 +304,7 @@
   },
 
   "Haskell Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["let ${1:myVar} :: Maybe ${2:Type} = Nothing"],
     "description": "Creates a nullable variable in Haskell using the Maybe type."
   },

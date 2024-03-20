@@ -285,12 +285,12 @@
     "description": "The Rust char type."
   },
   "Rust Null Type (Option)": {
-    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["None"],
     "description": "The Rust Option type."
   },
   "Rust Dynamic Type (Any)": {
-    "prefix": "cotrAny",
+    "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": ["dyn Any // There is no built-in Any type in Rust."],
     "description": "The Rust dyn Any type."
   },
@@ -352,7 +352,7 @@
     "description": "Creates a typed variable in Rust."
   },
   "Rust Create Nullable Variable": {
-    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable"],
+    "prefix": ["cotrVarNullable", "variableNullable", "nullableVariable", "nil", "none", "nothing", "null", "option"],
     "body": ["let ${1:my_var}: Option<${2:Type}> = $3;"],
     "description": "Creates a nullable variable in Rust using the Option type."
   },
@@ -530,7 +530,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in Rust."
   },
   "Rust For...Of Loop": {
-    "prefix": "cotrForOfLoop",
+    "prefix": ["cotrForInLoop", "forIn", "forOf"],
     "body": ["for ${1:item} in ${2:iterable} {", "  // Your code here", "}"],
     "description": "Iterates over an iterable object in Rust."
   },
@@ -566,7 +566,7 @@
       "method"
     ],
     "body": [
-      "fn ${2:my_function}(${3:parameters}) -> ${1:void} {",
+      "fn ${2:my_function}(${3:}) -> ${1:void} {",
       "    ${4:// Your code here}",
       "}"
     ],

@@ -234,7 +234,7 @@
   },
 
   "R Null Type": {
-    "prefix": ["cotrNull", "null", "nil", "none", "nothing", "option"],
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["NULL"],
     "description": "The R NULL value."
   },
@@ -382,7 +382,7 @@
   "R Function": {
     "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
     "body": [
-      "${2:my_function} <- function(${3:parameters}) {",
+      "${2:my_function} <- function(${3:}) {",
       "  ${4:# Your code here}",
       "}"
     ],

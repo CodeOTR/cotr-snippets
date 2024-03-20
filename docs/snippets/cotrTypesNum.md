@@ -3,7 +3,7 @@ title: cotrTypesNum
 description: The cotrTypesNum snippet.
 ---
 
-The Ruby double type.
+Perl uses scalars for floating-point numbers.
 
 **Aliases**:
 - cotrTypesNum
@@ -11,9 +11,9 @@ The Ruby double type.
 - typeNumber
 - doubleType
 - typeDouble
-- cotrTypesDouble
 - number
 - double
+- cotrTypesDouble
 
 ## cpp
 ```cpp
