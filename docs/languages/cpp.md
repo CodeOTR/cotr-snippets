@@ -1,49 +1,390 @@
-## C++ Throw Exception
+---
+title: Cpp
+description: Cpp snippets on the rocks.
+---
 
-### [cotrThrow](/snippets/cotrThrow)
+## [cotrPrint](/snippets/cotrprint)
+
+C++ Print
+
+```cpp
+#include <iostream>
+
+std::cout << ${1:"Your message here"} << std::endl;
+```
+
+## [cotrIf](/snippets/cotrif)
+
+C++ If Statement
+
+```cpp
+if (${1:condition}) {
+  // Your code here
+}
+```
+
+## [cotrTypesDynamic](/snippets/cotrtypesdynamic)
+
+C++ Dynamic Type
+
+```cpp
+std::any
+```
+
+## [cotrVarNum](/snippets/cotrvarnum)
+
+C++ Create Double Variable
+
+```cpp
+double ${1:myDouble} = ${2:value};
+```
+
+## [cotrVarList](/snippets/cotrvarlist)
+
+C++ Create List Variable
+
+```cpp
+std::vector<${1:type}> ${2:myList} = {${3:values}};
+```
+
+## [cotrTypesNumAlt](/snippets/cotrtypesnumalt)
+
+C++ Float Type
+
+```cpp
+float
+```
+
+## [cotrVarMap](/snippets/cotrvarmap)
+
+C++ Create Map Variable
+
+```cpp
+std::map<${1:keyType}, ${2:valueType}> ${3:myMap} = {
+  {${4:key1}, ${5:value1}},
+  {${6:key2}, ${7:value2}},
+  // Add more key-value pairs here
+};
+```
+
+## [cotrIfElse](/snippets/cotrifelse)
+
+C++ If Else Statement
+
+```cpp
+if (${1:condition}) {
+  // Your code here
+} else if (${2:condition}) {
+  // Your code here
+} else {
+  // Your code here
+}
+```
+
+## [cotrVarDate](/snippets/cotrvardate)
+
+C++ Create Date Variable
+
+```cpp
+#include <chrono>
+
+auto ${1:myDate} = std::chrono::system_clock::now();
+```
+
+## [cotrTypesDate](/snippets/cotrtypesdate)
+
+C++ Date Type
+
+```cpp
+#include <chrono>
+
+std::chrono::system_clock::time_point
+```
+
+## [cotrVarNullable](/snippets/cotrvarnullable)
+
+C++ Create Nullable Variable
+
+```cpp
+std::optional<${1:Type}> ${2:myVar} = $3;
+```
+
+## [cotrVarInt](/snippets/cotrvarint)
+
+C++ Create Integer Variable
+
+```cpp
+int ${1:myInt} = ${2:value};
+```
+
+## [cotrTypeCheck](/snippets/cotrtypecheck)
+
+C++ Type Check
+
+```cpp
+typeid(${1:variable})
+```
+
+## [cotrDoWhileLoop](/snippets/cotrdowhileloop)
+
+C++ Do...While Loop
+
+```cpp
+do {
+  // Your code here
+} while (${1:condition});
+```
+
+## [cotrTypesNull](/snippets/cotrtypesnull)
+
+C++ Null Type
+
+```cpp
+nullptr
+```
+
+## [cotrForLoop](/snippets/cotrforloop)
+
+C++ For Loop
+
+```cpp
+for (int ${1:i} = 0; $1 < ${2:10}; $1++) {
+  // Your code here
+}
+```
+
+## [cotrWhileLoop](/snippets/cotrwhileloop)
+
+C++ While Loop
+
+```cpp
+while (${1:condition}) {
+  // Your code here
+}
+```
+
+## [cotrFuncLambda](/snippets/cotrfunclambda)
+
+C++ Lambda and Anonymous Function
+
+```cpp
+auto ${1:myLambda} = [](${2:parameters}) -> ${3:returnType} {
+  // Your code here
+};
+
+// Or without assigning to a variable:
+[](${2:parameters}) -> ${3:returnType} {
+  ${3:// Your code here}
+}
+```
+
+## [cotrTryCatch](/snippets/cotrtrycatch)
+
+C++ Try Catch
+
+```cpp
+try {
+  // Your code here
+} catch (${1:exceptionType} ${2:exception}) {
+  // Your code here
+}
+```
+
+## [cotrNotEqual](/snippets/cotrnotequal)
+
+C++ Not Equal To
+
+```cpp
+!=
+```
+
+## [cotrTypes](/snippets/cotrtypes)
+
+C++ Types
+
+```cpp
+$BLOCK_COMMENT_START
+C++ is a statically typed language.
+
+Types in C++ include:
+- int: Integer
+- float: Single-precision floating-point number
+- double: Double-precision floating-point number
+- char: Character
+- bool: Boolean
+- std::string: String class from the Standard Library
+- int[10]: Array of integers with size 10
+- std::vector<int>: Vector of integers from the Standard Library
+- std::map<K, V>: Map (associative array) from the Standard Library
+- struct MyStruct: Custom data structure with named fields
+- enum MyEnum: Enumeration type
+- void: Type representing the absence of a value
+- auto: Type inferred by the compiler
+- nullptr: Type of the null pointer
+- decltype: Type specifier for the type of an expression
+
+Read more here: https://learn.microsoft.com/en-us/cpp/cpp/fundamental-types-cpp?view=msvc-170
+$BLOCK_COMMENT_END
+```
+
+## [cotrTypesChar](/snippets/cotrtypeschar)
+
+C++ Character Type
+
+```cpp
+char
+```
+
+## [cotrVarNumAlt](/snippets/cotrvarnumalt)
+
+C++ Create Float Variable
+
+```cpp
+float ${1:myFloat} = ${2:value};
+```
+
+## [cotrFunc](/snippets/cotrfunc)
+
+C++ Function
+
+```cpp
+void ${2:myFunction}(${3:parameters}) {
+  ${4:// Your code here}
+}
+```
+
+## [cotrFuncArgsNamed](/snippets/cotrfuncargsnamed)
+
+C++ Function Named Args
+
+```cpp
+// C++ does not support named arguments in the same way as some other languages.
+```
+
+## [cotrTypesNum](/snippets/cotrtypesnum)
+
+C++ Double Type
+
+```cpp
+double
+```
+
+## [cotrNow](/snippets/cotrnow)
+
+C++ Date Now
+
+```cpp
+std::chrono::system_clock::now()
+```
+
+## [cotrVar](/snippets/cotrvar)
+
+C++ Create Variable
+
+```cpp
+${1:type} ${2:myVar} = ${3:value};
+```
+
+## [cotrVarSyntax](/snippets/cotrvarsyntax)
+
+C++ Variable Declaration Syntax
+
+```cpp
+// C++ Variable Declaration Syntax:
+
+// - auto: (Scope: Block)
+//   - Type is automatically inferred by the compiler.
+//   - Preferred for most variable declarations.
+
+// - type: (Scope: Block)
+//   - Explicitly specify the variable's type.
+//   - Use when auto deduction is not desired or not possible.
+
+// - const: (Scope: Block)
+//   - Cannot be reassigned or redeclared.
+//   - Use for values that should remain constant.
+
+// Note:
+// - C++ does not have a direct equivalent to 'var' or 'let'.
+// - Use 'auto' for most variable declarations.
+// - Use 'const' for values that should not change.
+```
+
+## [cotrVarTyped](/snippets/cotrvartyped)
+
+C++ Create Typed Variable
+
+```cpp
+${1:Type} ${2:myVar} = $3;
+```
+
+## [cotrOperators](/snippets/cotroperators)
+
+C++ Mathematical Operators
+
+```cpp
+// C++ Mathematical Operators
+// Addition: +
+// Subtraction: -
+// Multiplication: *
+// Exponentiation: **
+// Division: /
+// Modulus: %
+// Increment: ++
+// Decrement: --
+// Assignment: =
+// Addition assignment: +=
+// Subtraction assignment: -=
+// Multiplication assignment: *=
+// Division assignment: /=
+// Modulus assignment: %=
+```
+
+## [cotrTypesInt](/snippets/cotrtypesint)
+
+C++ Integer Type
+
+```cpp
+int
+```
+
+## [cotrThrow](/snippets/cotrthrow)
+
+C++ Throw Exception
 
 ```cpp
 throw ${1:Exception('Your message here')};
 ```
 
-## C++ Map Type
+## [cotrClass](/snippets/cotrclass)
 
-### [cotrTypesMap](/snippets/cotrTypesMap)
-
-```cpp
-std::map<${1:keyType}, ${2:valueType}>
-```
-
-## C++ Concatenate Strings
-
-### [cotrConcat](/snippets/cotrConcat)
+C++ Class
 
 ```cpp
-std::string ${1:myString} = ${2:"Hello, "} + ${3:"world!"};
+class ${1:MyClass} {
+  // Your code here
+};
 ```
 
-## C++ Function Syntax
+## [cotrTypesBoolTrue](/snippets/cotrtypesbooltrue)
 
-### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
+C++ Boolean True
 
 ```cpp
-// C++ Function Syntax
-// Basic function: returnType functionName(parameters) { ... }
-// Function with arguments: returnType functionName(arg1Type arg1, arg2Type arg2, ...) { ... }
-// C++ does not support named arguments in the same way as some other languages.
+true
 ```
 
-## C++ Create String Variable
+## [cotrTypesBoolFalse](/snippets/cotrtypesboolfalse)
 
-### [cotrVarString](/snippets/cotrVarString)
+C++ Boolean False
 
 ```cpp
-std::string ${1:myString} = ${2:value};
+false
 ```
 
-## C++ Static Variable
+## [cotrVarStatic](/snippets/cotrvarstatic)
 
-### [cotrVarStatic](/snippets/cotrVarStatic)
+C++ Static Variable
 
 ```cpp
 static ${2:type} ${3:myStaticVar} = ${4:value};
@@ -52,43 +393,57 @@ static ${2:type} ${3:myStaticVar} = ${4:value};
 // MyClass::${3:myStaticVar}
 ```
 
-## C++ List Type
+## [cotrVarBool](/snippets/cotrvarbool)
 
-### [cotrTypesList](/snippets/cotrTypesList)
-
-```cpp
-std::vector<${1:type}>
-```
-
-## C++ Print
-
-### [cotrPrint](/snippets/cotrPrint)
+C++ Create Boolean Variable
 
 ```cpp
-#include <iostream>
-
-std::cout << ${1:"Your message here"} << std::endl;
+bool ${1:myBool} = ${2:value};
 ```
 
-## C++ Dynamic Type
+## [cotrForInLoop](/snippets/cotrforinloop)
 
-### [cotrTypesDynamic](/snippets/cotrTypesDynamic)
+C++ For...In Loop
 
 ```cpp
-std::any
+for (auto ${1:item} : ${2:iterable}) {
+  // Your code here
+}
 ```
 
-## C++ Comment
+## [cotrFuncArgs](/snippets/cotrfuncargs)
 
-### [cotrComment](/snippets/cotrComment)
+C++ Function Args
+
+```cpp
+// In C++, you can use default arguments in function definitions.
+void ${2:myFunction}(${3:Type} ${4:arg1}, ${5:Type} ${6:arg2} = ${7:defaultValue}) {
+    ${8:// Your code here}
+}
+```
+
+## [cotrComment](/snippets/cotrcomment)
+
+C++ Comment
 
 ```cpp
 // ${1:Your comment here}
 ```
 
-## C++ Project Structure (High-Level)
+## [cotrInfo](/snippets/cotrinfo)
 
-### [cotrStructure](/snippets/cotrStructure)
+C++ Info
+
+```cpp
+// Typing: Statically typed
+// Paradigm: Multi-paradigm: procedural, object-oriented, functional, generic, imperative
+// Compilation: Compiled
+// Concurrency: Supports multi-threading
+```
+
+## [cotrStructure](/snippets/cotrstructure)
+
+C++ Project Structure (High-Level)
 
 ```cpp
 // Recommended High-Level C++ Project Structure:
@@ -120,31 +475,63 @@ std::any
 // - This is a basic structure; adjust based on project complexity and preferences.
 ```
 
-## C++ Mathematical Operators
+## [cotrTypeCompare](/snippets/cotrtypecompare)
 
-### [cotrOperators](/snippets/cotrOperators)
+C++ Type Comparison
 
 ```cpp
-// C++ Mathematical Operators
-// Addition: +
-// Subtraction: -
-// Multiplication: *
-// Exponentiation: **
-// Division: /
-// Modulus: %
-// Increment: ++
-// Decrement: --
-// Assignment: =
-// Addition assignment: +=
-// Subtraction assignment: -=
-// Multiplication assignment: *=
-// Division assignment: /=
-// Modulus assignment: %=
+// Check if two variables have the same type:
+if (typeid(${1:variable1}) == typeid(${2:variable2})) {
+  // Your code here
+}
 ```
 
-## C++ Boolean Operators
+## [cotrInterpolate](/snippets/cotrinterpolate)
 
-### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
+C++ Interpolate String
+
+```cpp
+std::string ${1:myString} = "${2:Your message here}";
+```
+
+## [cotrConcat](/snippets/cotrconcat)
+
+C++ Concatenate Strings
+
+```cpp
+std::string ${1:myString} = ${2:"Hello, "} + ${3:"world!"};
+```
+
+## [cotrVarStringMulti](/snippets/cotrvarstringmulti)
+
+C++ Create Multi-Line String Variable
+
+```cpp
+std::string ${1:myString} = R"(${2:Your multi-line message here})";
+```
+
+## [cotrConst](/snippets/cotrconst)
+
+C++ Create Constant
+
+```cpp
+const ${1:type} ${2:myConst} = ${3:value};
+```
+
+## [cotrFuncSyntax](/snippets/cotrfuncsyntax)
+
+C++ Function Syntax
+
+```cpp
+// C++ Function Syntax
+// Basic function: returnType functionName(parameters) { ... }
+// Function with arguments: returnType functionName(arg1Type arg1, arg2Type arg2, ...) { ... }
+// C++ does not support named arguments in the same way as some other languages.
+```
+
+## [cotrOperatorsBool](/snippets/cotroperatorsbool)
+
+C++ Boolean Operators
 
 ```cpp
 // C++ Boolean Operators
@@ -159,47 +546,9 @@ std::any
 // Less than or equal to: <=
 ```
 
-## C++ Create Float Variable
+## [cotrTypeConvert](/snippets/cotrtypeconvert)
 
-### [cotrVarNumAlt](/snippets/cotrVarNumAlt)
-
-```cpp
-float ${1:myFloat} = ${2:value};
-```
-
-## C++ Create Map Variable
-
-### [cotrVarMap](/snippets/cotrVarMap)
-
-```cpp
-std::map<${1:keyType}, ${2:valueType}> ${3:myMap} = {
-  {${4:key1}, ${5:value1}},
-  {${6:key2}, ${7:value2}},
-  // Add more key-value pairs here
-};
-```
-
-## C++ While Loop
-
-### [cotrWhileLoop](/snippets/cotrWhileLoop)
-
-```cpp
-while (${1:condition}) {
-  // Your code here
-}
-```
-
-## C++ Ternary Operator
-
-### [cotrTernary](/snippets/cotrTernary)
-
-```cpp
-${1:condition} ? ${2:trueValue} : ${3:falseValue}
-```
-
-## C++ Type Conversion
-
-### [cotrTypeConvert](/snippets/cotrTypeConvert)
+C++ Type Conversion
 
 ```cpp
 // C++ Type Conversion:
@@ -219,49 +568,25 @@ ${1:condition} ? ${2:trueValue} : ${3:falseValue}
 // double y = static_cast<double>(x);
 ```
 
-## C++ Boolean True
+## [cotrTypesMap](/snippets/cotrtypesmap)
 
-### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
-
-```cpp
-true
-```
-
-## C++ Boolean False
-
-### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
+C++ Map Type
 
 ```cpp
-false
+std::map<${1:keyType}, ${2:valueType}>
 ```
 
-## C++ Type Check
+## [cotrTypesList](/snippets/cotrtypeslist)
 
-### [cotrTypeCheck](/snippets/cotrTypeCheck)
+C++ List Type
 
 ```cpp
-typeid(${1:variable})
+std::vector<${1:type}>
 ```
 
-## C++ Double Type
+## [cotrSwitch](/snippets/cotrswitch)
 
-### [cotrTypesNum](/snippets/cotrTypesNum)
-
-```cpp
-double
-```
-
-## C++ Create Constant
-
-### [cotrConst](/snippets/cotrConst)
-
-```cpp
-const ${1:type} ${2:myConst} = ${3:value};
-```
-
-## C++ Switch Statement
-
-### [cotrSwitch](/snippets/cotrSwitch)
+C++ Switch Statement
 
 ```cpp
 switch (${1:variable}) {
@@ -276,65 +601,37 @@ switch (${1:variable}) {
 }
 ```
 
-## C++ Integer Type
+## [cotrTernary](/snippets/cotrternary)
 
-### [cotrTypesInt](/snippets/cotrTypesInt)
-
-```cpp
-int
-```
-
-## C++ Boolean Type
-
-### [cotrTypesBool](/snippets/cotrTypesBool)
+C++ Ternary Operator
 
 ```cpp
-bool
+${1:condition} ? ${2:trueValue} : ${3:falseValue}
 ```
 
-## C++ Create Variable
+## [cotrGenList](/snippets/cotrgenlist)
 
-### [cotrVar](/snippets/cotrVar)
+C++ Generate List
 
 ```cpp
-${1:type} ${2:myVar} = ${3:value};
+std::vector<${1:type}> ${2:listName}( ${3:size}, ${4:initialValue} );
 ```
 
-## C++ If Else Statement
+## [cotrPrintMulti](/snippets/cotrprintmulti)
 
-### [cotrIfElse](/snippets/cotrIfElse)
+C++ Print Multi
 
 ```cpp
-if (${1:condition}) {
-  // Your code here
-} else if (${2:condition}) {
-  // Your code here
-} else {
-  // Your code here
-}
+#include <iostream>
+
+std::cout << ${1:"Line 1"} << std::endl
+          << ${2:"Line 2"} << std::endl
+          << ${3:"Line 3"} << std::endl;
 ```
 
-## C++ Character Type
+## [cotrCommentMulti](/snippets/cotrcommentmulti)
 
-### [cotrTypesChar](/snippets/cotrTypesChar)
-
-```cpp
-char
-```
-
-## C++ Create Date Variable
-
-### [cotrVarDate](/snippets/cotrVarDate)
-
-```cpp
-#include <chrono>
-
-auto ${1:myDate} = std::chrono::system_clock::now();
-```
-
-## C++ Multi-Line Comment
-
-### [cotrCommentMulti](/snippets/cotrCommentMulti)
+C++ Multi-Line Comment
 
 ```cpp
 /*
@@ -342,92 +639,9 @@ auto ${1:myDate} = std::chrono::system_clock::now();
  */
 ```
 
-## C++ Function
+## [cotrEntry](/snippets/cotrentry)
 
-### [cotrFunc](/snippets/cotrFunc)
-
-```cpp
-void ${2:myFunction}(${3:parameters}) {
-  ${4:// Your code here}
-}
-```
-
-## C++ Enum
-
-### [cotrEnum](/snippets/cotrEnum)
-
-```cpp
-enum class ${1:MyEnum} {
-  ${2:value1},
-  ${3:value2},
-  // Add more values here
-};
-```
-
-## C++ Class
-
-### [cotrClass](/snippets/cotrClass)
-
-```cpp
-class ${1:MyClass} {
-  // Your code here
-};
-```
-
-## C++ Create Double Variable
-
-### [cotrVarNum](/snippets/cotrVarNum)
-
-```cpp
-double ${1:myDouble} = ${2:value};
-```
-
-## C++ Create Boolean Variable
-
-### [cotrVarBool](/snippets/cotrVarBool)
-
-```cpp
-bool ${1:myBool} = ${2:value};
-```
-
-## C++ For Loop
-
-### [cotrForLoop](/snippets/cotrForLoop)
-
-```cpp
-for (int ${1:i} = 0; $1 < ${2:10}; $1++) {
-  // Your code here
-}
-```
-
-## C++ Variable Declaration Syntax
-
-### [cotrVarSyntax](/snippets/cotrVarSyntax)
-
-```cpp
-// C++ Variable Declaration Syntax:
-
-// - auto: (Scope: Block)
-//   - Type is automatically inferred by the compiler.
-//   - Preferred for most variable declarations.
-
-// - type: (Scope: Block)
-//   - Explicitly specify the variable's type.
-//   - Use when auto deduction is not desired or not possible.
-
-// - const: (Scope: Block)
-//   - Cannot be reassigned or redeclared.
-//   - Use for values that should remain constant.
-
-// Note:
-// - C++ does not have a direct equivalent to 'var' or 'let'.
-// - Use 'auto' for most variable declarations.
-// - Use 'const' for values that should not change.
-```
-
-## C++ Entry Point
-
-### [cotrEntry](/snippets/cotrEntry)
+C++ Entry Point
 
 ```cpp
 // C++ Entry Point
@@ -441,265 +655,56 @@ int main() {
 }
 ```
 
-## C++ Not Equal To
+## [cotrTypesString](/snippets/cotrtypesstring)
 
-### [cotrNotEqual](/snippets/cotrNotEqual)
-
-```cpp
-!=
-```
-
-## C++ Type Comparison
-
-### [cotrTypeCompare](/snippets/cotrTypeCompare)
-
-```cpp
-// Check if two variables have the same type:
-if (typeid(${1:variable1}) == typeid(${2:variable2})) {
-  // Your code here
-}
-```
-
-## C++ Date Type
-
-### [cotrTypesDate](/snippets/cotrTypesDate)
-
-```cpp
-#include <chrono>
-
-std::chrono::system_clock::time_point
-```
-
-## C++ Generate List
-
-### [cotrGenList](/snippets/cotrGenList)
-
-```cpp
-std::vector<${1:type}> ${2:listName}( ${3:size}, ${4:initialValue} );
-```
-
-## C++ Function Named Args
-
-### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
-
-```cpp
-// C++ does not support named arguments in the same way as some other languages.
-```
-
-## C++ Create Multi-Line String Variable
-
-### [cotrVarStringMulti](/snippets/cotrVarStringMulti)
-
-```cpp
-std::string ${1:myString} = R"(${2:Your multi-line message here})";
-```
-
-## C++ Print Multi
-
-### [cotrPrintMulti](/snippets/cotrPrintMulti)
-
-```cpp
-#include <iostream>
-
-std::cout << ${1:"Line 1"} << std::endl
-          << ${2:"Line 2"} << std::endl
-          << ${3:"Line 3"} << std::endl;
-```
-
-## C++ Do...While Loop
-
-### [cotrDoWhileLoop](/snippets/cotrDoWhileLoop)
-
-```cpp
-do {
-  // Your code here
-} while (${1:condition});
-```
-
-## C++ Float Type
-
-### [cotrTypesNumAlt](/snippets/cotrTypesNumAlt)
-
-```cpp
-float
-```
-
-## C++ Interpolate String
-
-### [cotrInterpolate](/snippets/cotrInterpolate)
-
-```cpp
-std::string ${1:myString} = "${2:Your message here}";
-```
-
-## C++ Create Typed Variable
-
-### [cotrVarTyped](/snippets/cotrVarTyped)
-
-```cpp
-${1:Type} ${2:myVar} = $3;
-```
-
-## C++ For...In Loop
-
-### [cotrForInLoop](/snippets/cotrForInLoop)
-
-```cpp
-for (auto ${1:item} : ${2:iterable}) {
-  // Your code here
-}
-```
-
-## C++ Info
-
-### [cotrInfo](/snippets/cotrInfo)
-
-```cpp
-// Typing: Statically typed
-// Paradigm: Multi-paradigm: procedural, object-oriented, functional, generic, imperative
-// Compilation: Compiled
-// Concurrency: Supports multi-threading
-```
-
-## C++ Types
-
-### [cotrTypes](/snippets/cotrTypes)
-
-```cpp
-$BLOCK_COMMENT_START
-C++ is a statically typed language.
-
-Types in C++ include:
-- int: Integer
-- float: Single-precision floating-point number
-- double: Double-precision floating-point number
-- char: Character
-- bool: Boolean
-- std::string: String class from the Standard Library
-- int[10]: Array of integers with size 10
-- std::vector<int>: Vector of integers from the Standard Library
-- std::map<K, V>: Map (associative array) from the Standard Library
-- struct MyStruct: Custom data structure with named fields
-- enum MyEnum: Enumeration type
-- void: Type representing the absence of a value
-- auto: Type inferred by the compiler
-- nullptr: Type of the null pointer
-- decltype: Type specifier for the type of an expression
-
-Read more here: https://learn.microsoft.com/en-us/cpp/cpp/fundamental-types-cpp?view=msvc-170
-$BLOCK_COMMENT_END
-```
-
-## C++ String Type
-
-### [cotrTypesString](/snippets/cotrTypesString)
+C++ String Type
 
 ```cpp
 std::string
 ```
 
-## C++ Create List Variable
+## [cotrEnum](/snippets/cotrenum)
 
-### [cotrVarList](/snippets/cotrVarList)
-
-```cpp
-std::vector<${1:type}> ${2:myList} = {${3:values}};
-```
-
-## C++ Create Nullable Variable
-
-### [cotrVarNullable](/snippets/cotrVarNullable)
+C++ Enum
 
 ```cpp
-std::optional<${1:Type}> ${2:myVar} = $3;
-```
-
-## C++ Lambda and Anonymous Function
-
-### [cotrFuncLambda](/snippets/cotrFuncLambda)
-
-```cpp
-auto ${1:myLambda} = [](${2:parameters}) -> ${3:returnType} {
-  // Your code here
+enum class ${1:MyEnum} {
+  ${2:value1},
+  ${3:value2},
+  // Add more values here
 };
-
-// Or without assigning to a variable:
-[](${2:parameters}) -> ${3:returnType} {
-  ${3:// Your code here}
-}
 ```
 
-## C++ Try Catch
+## [cotrTypesBool](/snippets/cotrtypesbool)
 
-### [cotrTryCatch](/snippets/cotrTryCatch)
+C++ Boolean Type
 
 ```cpp
-try {
-  // Your code here
-} catch (${1:exceptionType} ${2:exception}) {
-  // Your code here
-}
+bool
 ```
 
-## C++ Create Integer Variable
+## [cotrGenMap](/snippets/cotrgenmap)
 
-### [cotrVarInt](/snippets/cotrVarInt)
-
-```cpp
-int ${1:myInt} = ${2:value};
-```
-
-## C++ Generate Map
-
-### [cotrGenMap](/snippets/cotrGenMap)
+C++ Generate Map
 
 ```cpp
 // C++ does not have a built-in way to generate a map with a specific number of key-value pairs.
 // You can use a loop or a custom function to achieve this.
 ```
 
-## C++ Function Args
+## [cotrEqual](/snippets/cotrequal)
 
-### [cotrFuncArgs](/snippets/cotrFuncArgs)
-
-```cpp
-// In C++, you can use default arguments in function definitions.
-void ${2:myFunction}(${3:Type} ${4:arg1}, ${5:Type} ${6:arg2} = ${7:defaultValue}) {
-    ${8:// Your code here}
-}
-```
-
-## C++ If Statement
-
-### [cotrIf](/snippets/cotrIf)
-
-```cpp
-if (${1:condition}) {
-  // Your code here
-}
-```
-
-## C++ Equal To
-
-### [cotrEqual](/snippets/cotrEqual)
+C++ Equal To
 
 ```cpp
 ==
 ```
 
-## C++ Null Type
+## [cotrVarString](/snippets/cotrvarstring)
 
-### [cotrTypesNull](/snippets/cotrTypesNull)
-
-```cpp
-nullptr
-```
-
-## C++ Date Now
-
-### [cotrNow](/snippets/cotrNow)
+C++ Create String Variable
 
 ```cpp
-std::chrono::system_clock::now()
+std::string ${1:myString} = ${2:value};
 ```
 

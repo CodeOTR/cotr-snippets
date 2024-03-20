@@ -1,307 +1,46 @@
-## PHP Boolean Type
+---
+title: Php
+description: Php snippets on the rocks.
+---
 
-### [cotrTypesBool](/snippets/cotrTypesBool)
+## [cotrTypeCheck](/snippets/cotrtypecheck)
 
-```php
-bool
-```
-
-## PHP List Type
-
-### [cotrTypesList](/snippets/cotrTypesList)
-
-```php
-// In PHP, indexed arrays are used as lists.
-```
-
-## PHP Arrow Function
-
-### [cotrFuncArrow](/snippets/cotrFuncArrow)
-
-```php
-$${2:myFunction} = fn(${3:parameters}) => ${4:// Your code here};
-```
-
-## PHP Float Type
-
-### [cotrTypesNum](/snippets/cotrTypesNum)
-
-```php
-float
-```
-
-## PHP Create Typed Variable
-
-### [cotrVarTyped](/snippets/cotrVarTyped)
-
-```php
-// PHP is a dynamically typed language, which means that by default there is no need to specify the type
-//  of a variable, as this will be determined at runtime.
-//  However, it is possible to statically type some aspect of the language via the use of type declarations.
-${1:Type} $${2:myVar} = $3;
-```
-
-## PHP Print
-
-### [cotrPrint](/snippets/cotrPrint)
-
-```php
-print('${1:Your message here}');
-```
-
-## PHP Switch Statement
-
-### [cotrSwitch](/snippets/cotrSwitch)
-
-```php
-switch ($${1:variable}) {
-  case ${2:value1}:
-    ${3:// Your code here}
-    break;
-  case ${4:value2}:
-    ${5:// Your code here}
-    break;
-  default:
-    ${6:// Your code here}
-}
-```
-
-## PHP Entry Point
-
-### [cotrEntry](/snippets/cotrEntry)
-
-```php
-// PHP Entry Point
-// To run this program, use: `php filename.php`
-
-<?php
-echo 'Hello, World!';
-?>
-```
-
-## PHP Concatenate Strings
-
-### [cotrConcat](/snippets/cotrConcat)
-
-```php
-'${1:string1}' . '${2:string2}'
-```
-
-## PHP Function Named Args
-
-### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
-
-```php
-// Note: PHP does not support named arguments in function definitions.
-```
-
-## PHP Create Multi-Line String Variable
-
-### [cotrVarMultiString](/snippets/cotrVarMultiString)
-
-```php
-$${1:myString} = <<<EOT
-${2:Your string here}
-EOT;
-```
-
-## PHP For Loop
-
-### [cotrForLoop](/snippets/cotrForLoop)
-
-```php
-for ($${1:i} = 0; $1 < ${2:10}; $1++) {
-  // Your code here
-}
-```
-
-## PHP Function Args
-
-### [cotrFuncArgs](/snippets/cotrFuncArgs)
-
-```php
-// In PHP, functions can have arguments with default values.
-function ${2:myFunction}(${3:$arg1}, ${4:$arg2} = '${5:defaultVal}') {
-  ${6:// Your code here}
-}
-```
-
-## PHP Function Syntax
-
-### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
-
-```php
-// PHP Function Syntax
-// Basic function: function functionName(parameters) { ... }
-// Function with arguments: function functionName($arg1, $arg2, ...) { ... }
-// Note: PHP does not support named arguments in function definitions.
-```
-
-## PHP Comment
-
-### [cotrComment](/snippets/cotrComment)
-
-```php
-// ${1:Your comment here}
-```
-
-## PHP Enum
-
-### [cotrEnum](/snippets/cotrEnum)
-
-```php
-abstract class ${1:MyEnum} {
-  const ${2:VALUE1} = ${3:0};
-  const ${4:VALUE2} = ${5:1};
-  // Add more values here
-}
-```
-
-## PHP Type Check
-
-### [cotrTypeCheck](/snippets/cotrTypeCheck)
+PHP Type Check
 
 ```php
 gettype(${1:variable})
 ```
 
-## PHP Map Type
+## [cotrTypeCompare](/snippets/cotrtypecompare)
 
-### [cotrTypesMap](/snippets/cotrTypesMap)
-
-```php
-// In PHP, associative arrays are used as maps.
-```
-
-## PHP Create Nullable Variable
-
-### [cotrVarNullable](/snippets/cotrVarNullable)
+PHP Type Comparison
 
 ```php
-${1:Type}? $${2:myVar} = $3;
-```
-
-## PHP Interpolate String
-
-### [cotrInterpolate](/snippets/cotrInterpolate)
-
-```php
-'Your string here \${${1:variable}}'
-```
-
-## PHP Create Integer Variable
-
-### [cotrVarInt](/snippets/cotrVarInt)
-
-```php
-$${1:myInt} = ${2:0};
-```
-
-## PHP Generate Array
-
-### [cotrGenList](/snippets/cotrGenList)
-
-```php
-$${1:myArray} = range(${2:0}, ${3:10});
-```
-
-## PHP Anonymous Function
-
-### [cotrFuncAnon](/snippets/cotrFuncAnon)
-
-```php
-$${2:myFunction} = function(${3:parameters}) {
-    ${4:// Your code here}
-};
-```
-
-## PHP Multi-Line Comment
-
-### [cotrCommentMulti](/snippets/cotrCommentMulti)
-
-```php
-/*
- * ${1:Your comment here}
- */
-```
-
-## PHP If Else Statement
-
-### [cotrIfElse](/snippets/cotrIfElse)
-
-```php
-if (${1:condition}) {
-  ${2:// Your code here}
-} else {
-  ${3:// Your code here}
+// Check if two variables have the same type:
+if (gettype(${1:variable1}) === gettype(${2:variable2})) {
+  // Your code here
 }
 ```
 
-## PHP Create Variable
+## [cotrTypesBool](/snippets/cotrtypesbool)
 
-### [cotrVar](/snippets/cotrVar)
-
-```php
-$${1:myVar} = $2;
-```
-
-## PHP Do While Loop
-
-### [cotrDoWhileLoop](/snippets/cotrDoWhileLoop)
+PHP Boolean Type
 
 ```php
-do {
-  ${1:// Your code here}
-} while ($${2:condition});
+bool
 ```
 
-## PHP Throw Exception
+## [cotrThrow](/snippets/cotrthrow)
 
-### [cotrThrow](/snippets/cotrThrow)
+PHP Throw Exception
 
 ```php
 throw new ${1:Exception}('${2:Your message here}');
 ```
 
-## PHP String Type
+## [cotrInfo](/snippets/cotrinfo)
 
-### [cotrTypesString](/snippets/cotrTypesString)
-
-```php
-string
-```
-
-## PHP If Statement
-
-### [cotrIf](/snippets/cotrIf)
-
-```php
-if (${1:condition}) {
-  ${2:// Your code here}
-}
-```
-
-## PHP Dynamic Type
-
-### [cotrTypesDynamic](/snippets/cotrTypesDynamic)
-
-```php
-// PHP is a dynamically typed language.
-```
-
-## PHP For Each Loop
-
-### [cotrForEachLoop](/snippets/cotrForEachLoop)
-
-```php
-foreach ($${1:iterable} as $${2:item}) {
-  ${3:// Your code here}
-}
-```
-
-## PHP Info
-
-### [cotrInfo](/snippets/cotrInfo)
+PHP Info
 
 ```php
 Typing: Dynamically typed
@@ -310,176 +49,28 @@ Compilation: Interpreted
 Concurrency: Supports multi-threading with extensions like pthreads, but traditionally single-threaded
 ```
 
-## PHP Mathematical Operators
+## [cotrTypesString](/snippets/cotrtypesstring)
 
-### [cotrOperators](/snippets/cotrOperators)
-
-```php
-// PHP Mathematical Operators
-// Addition: +
-// Subtraction: -
-// Multiplication: *
-// Exponentiation: **
-// Division: /
-// Modulus (Remainder): %
-// Increment: ++
-// Decrement: --
-// Assignment: =
-// Addition assignment: +=
-// Subtraction assignment: -=
-// Multiplication assignment: *=
-// Division assignment: /=
-// Modulus assignment: %=
-```
-
-## PHP Create Constant
-
-### [cotrConst](/snippets/cotrConst)
+PHP String Type
 
 ```php
-const $${1:myConst} = $2;
+string
 ```
 
-## PHP Print Multi
+## [cotrVarTyped](/snippets/cotrvartyped)
 
-### [cotrPrintMulti](/snippets/cotrPrintMulti)
+PHP Create Typed Variable
 
 ```php
-echo <<<EOT
-${1:Line 1}
-${2:Line 2}
-${3:Line 3}
-EOT;
+// PHP is a dynamically typed language, which means that by default there is no need to specify the type
+//  of a variable, as this will be determined at runtime.
+//  However, it is possible to statically type some aspect of the language via the use of type declarations.
+${1:Type} $${2:myVar} = $3;
 ```
 
-## PHP While Loop
+## [cotrTypeConvert](/snippets/cotrtypeconvert)
 
-### [cotrWhileLoop](/snippets/cotrWhileLoop)
-
-```php
-while ($${1:condition}) {
-  ${2:// Your code here}
-}
-```
-
-## PHP Lambda Function
-
-### [cotrFuncLambda](/snippets/cotrFuncLambda)
-
-```php
-function (${1:parameters}) => ${2:expression}
-```
-
-## PHP Boolean Operators
-
-### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
-
-```php
-// PHP Boolean Operators
-// Logical AND: && or and
-// Logical OR: || or or
-// Logical NOT: !
-// Equality: ==
-// Identity (Strict Equality): ===
-// Inequality: !=
-// Non-identity (Strict Inequality): !==
-// Greater than: >
-// Less than: <
-// Greater than or equal to: >=
-// Less than or equal to: <=
-```
-
-## PHP Integer Type
-
-### [cotrTypesInt](/snippets/cotrTypesInt)
-
-```php
-int
-```
-
-## PHP Create String Variable
-
-### [cotrVarString](/snippets/cotrVarString)
-
-```php
-$${1:myString} = '${2:Your string here}';
-```
-
-## PHP Create Date Variable
-
-### [cotrVarDate](/snippets/cotrVarDate)
-
-```php
-$${1:myDate} = new DateTime('${2:Y-m-d}');
-```
-
-## PHP Equal To
-
-### [cotrEqual](/snippets/cotrEqual)
-
-```php
-==
-```
-
-## Variable Declaration Syntax
-
-### [cotrVarSyntax](/snippets/cotrVarSyntax)
-
-```php
-// PHP Variable Declaration Syntax:
-
-// - $: (Scope: Global or Function)
-//   - Variables start with a dollar sign.
-//   - Can be reassigned and redeclared within their scope.
-//   - Use with caution due to potential scoping issues.
-
-// - const: (Scope: Global)
-//   - Cannot be reassigned or redeclared.
-//   - Use for values that should remain constant.
-
-// Note:
-// - PHP does not have a direct equivalent to 'let'.
-// - Use '$' for most variable declarations.
-// - Use 'const' for values that are known at compile time.
-```
-
-## PHP Function
-
-### [cotrFunc](/snippets/cotrFunc)
-
-```php
-function ${2:myFunction}(${3:parameters}) {
-  ${4:// Your code here}
-}
-```
-
-## PHP Null Type
-
-### [cotrNull](/snippets/cotrNull)
-
-```php
-null
-```
-
-## PHP Create Float Variable
-
-### [cotrVarNum](/snippets/cotrVarNum)
-
-```php
-$${1:myFloat} = ${2:0.0};
-```
-
-## PHP Ternary Operator
-
-### [cotrTernary](/snippets/cotrTernary)
-
-```php
-${1:condition} ? ${2:trueValue} : ${3:falseValue}
-```
-
-## PHP Type Conversion
-
-### [cotrTypeConvert](/snippets/cotrTypeConvert)
+PHP Type Conversion
 
 ```php
 // PHP Type Conversion:
@@ -500,9 +91,352 @@ ${1:condition} ? ${2:trueValue} : ${3:falseValue}
 // - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control.
 ```
 
-## PHP Types
+## [cotrVarMultiString](/snippets/cotrvarmultistring)
 
-### [cotrTypes](/snippets/cotrTypes)
+PHP Create Multi-Line String Variable
+
+```php
+$${1:myString} = <<<EOT
+${2:Your string here}
+EOT;
+```
+
+## [cotrFuncArgs](/snippets/cotrfuncargs)
+
+PHP Function Args
+
+```php
+// In PHP, functions can have arguments with default values.
+function ${2:myFunction}(${3:$arg1}, ${4:$arg2} = '${5:defaultVal}') {
+  ${6:// Your code here}
+}
+```
+
+## [cotrComment](/snippets/cotrcomment)
+
+PHP Comment
+
+```php
+// ${1:Your comment here}
+```
+
+## [cotrTypesDate](/snippets/cotrtypesdate)
+
+PHP Date Type
+
+```php
+DateTime
+```
+
+## [cotrTypesDynamic](/snippets/cotrtypesdynamic)
+
+PHP Dynamic Type
+
+```php
+// PHP is a dynamically typed language.
+```
+
+## [cotrVarBool](/snippets/cotrvarbool)
+
+PHP Create Boolean Variable
+
+```php
+$${1:myBool} = ${2:true};
+```
+
+## [cotrVarList](/snippets/cotrvarlist)
+
+PHP Create Array Variable
+
+```php
+$${1:myArray} = [${2:items}];
+```
+
+## [cotrForLoop](/snippets/cotrforloop)
+
+PHP For Loop
+
+```php
+for ($${1:i} = 0; $1 < ${2:10}; $1++) {
+  // Your code here
+}
+```
+
+## [cotrForEachLoop](/snippets/cotrforeachloop)
+
+PHP For Each Loop
+
+```php
+foreach ($${1:iterable} as $${2:item}) {
+  ${3:// Your code here}
+}
+```
+
+## [cotrFuncArrow](/snippets/cotrfuncarrow)
+
+PHP Arrow Function
+
+```php
+$${2:myFunction} = fn(${3:parameters}) => ${4:// Your code here};
+```
+
+## [cotrTypesBoolFalse](/snippets/cotrtypesboolfalse)
+
+PHP Boolean False
+
+```php
+false
+```
+
+## [cotrVarStatic](/snippets/cotrvarstatic)
+
+PHP Static Variable
+
+```php
+static $${1:myStaticVar} = $2;
+```
+
+## [cotrVarNum](/snippets/cotrvarnum)
+
+PHP Create Float Variable
+
+```php
+$${1:myFloat} = ${2:0.0};
+```
+
+## [cotrGenList](/snippets/cotrgenlist)
+
+PHP Generate Array
+
+```php
+$${1:myArray} = range(${2:0}, ${3:10});
+```
+
+## [cotrGenMap](/snippets/cotrgenmap)
+
+PHP Generate Map
+
+```php
+$${1:myMap} = array_combine(range(${2:0}, ${3:10}), range(${4:0}, ${5:10}));
+```
+
+## [cotrDoWhileLoop](/snippets/cotrdowhileloop)
+
+PHP Do While Loop
+
+```php
+do {
+  ${1:// Your code here}
+} while ($${2:condition});
+```
+
+## [cotrFunc](/snippets/cotrfunc)
+
+PHP Function
+
+```php
+function ${2:myFunction}(${3:parameters}) {
+  ${4:// Your code here}
+}
+```
+
+## [cotrTypesInt](/snippets/cotrtypesint)
+
+PHP Integer Type
+
+```php
+int
+```
+
+## [cotrTypesNum](/snippets/cotrtypesnum)
+
+PHP Float Type
+
+```php
+float
+```
+
+## [cotrTryCatch](/snippets/cotrtrycatch)
+
+PHP Try Catch
+
+```php
+try {
+  ${1:// Your code here}
+} catch (${2:Exception} $${3:e}) {
+  ${4:// Your code here}
+}
+```
+
+## [cotrNotEqual](/snippets/cotrnotequal)
+
+PHP Not Equal To
+
+```php
+!=
+```
+
+## [cotrVarInt](/snippets/cotrvarint)
+
+PHP Create Integer Variable
+
+```php
+$${1:myInt} = ${2:0};
+```
+
+## [cotrEqual](/snippets/cotrequal)
+
+PHP Equal To
+
+```php
+==
+```
+
+## [cotrSwitch](/snippets/cotrswitch)
+
+PHP Switch Statement
+
+```php
+switch ($${1:variable}) {
+  case ${2:value1}:
+    ${3:// Your code here}
+    break;
+  case ${4:value2}:
+    ${5:// Your code here}
+    break;
+  default:
+    ${6:// Your code here}
+}
+```
+
+## [cotrFuncLambda](/snippets/cotrfunclambda)
+
+PHP Lambda Function
+
+```php
+function (${1:parameters}) => ${2:expression}
+```
+
+## [cotrVar](/snippets/cotrvar)
+
+PHP Create Variable
+
+```php
+$${1:myVar} = $2;
+```
+
+## [cotrPrintMulti](/snippets/cotrprintmulti)
+
+PHP Print Multi
+
+```php
+echo <<<EOT
+${1:Line 1}
+${2:Line 2}
+${3:Line 3}
+EOT;
+```
+
+## [cotrFuncArgsNamed](/snippets/cotrfuncargsnamed)
+
+PHP Function Named Args
+
+```php
+// Note: PHP does not support named arguments in function definitions.
+```
+
+## [cotrFuncAnon](/snippets/cotrfuncanon)
+
+PHP Anonymous Function
+
+```php
+$${2:myFunction} = function(${3:parameters}) {
+    ${4:// Your code here}
+};
+```
+
+## [cotrEnum](/snippets/cotrenum)
+
+PHP Enum
+
+```php
+abstract class ${1:MyEnum} {
+  const ${2:VALUE1} = ${3:0};
+  const ${4:VALUE2} = ${5:1};
+  // Add more values here
+}
+```
+
+## [cotrIf](/snippets/cotrif)
+
+PHP If Statement
+
+```php
+if (${1:condition}) {
+  ${2:// Your code here}
+}
+```
+
+## [cotrVarDate](/snippets/cotrvardate)
+
+PHP Create Date Variable
+
+```php
+$${1:myDate} = new DateTime('${2:Y-m-d}');
+```
+
+## [cotrIfElse](/snippets/cotrifelse)
+
+PHP If Else Statement
+
+```php
+if (${1:condition}) {
+  ${2:// Your code here}
+} else {
+  ${3:// Your code here}
+}
+```
+
+## [cotrTernary](/snippets/cotrternary)
+
+PHP Ternary Operator
+
+```php
+${1:condition} ? ${2:trueValue} : ${3:falseValue}
+```
+
+## [cotrClass](/snippets/cotrclass)
+
+PHP Class
+
+```php
+class ${1:MyClass} {
+  ${2:// Your code here}
+}
+```
+
+## [cotrOperatorsBool](/snippets/cotroperatorsbool)
+
+PHP Boolean Operators
+
+```php
+// PHP Boolean Operators
+// Logical AND: && or and
+// Logical OR: || or or
+// Logical NOT: !
+// Equality: ==
+// Identity (Strict Equality): ===
+// Inequality: !=
+// Non-identity (Strict Inequality): !==
+// Greater than: >
+// Less than: <
+// Greater than or equal to: >=
+// Less than or equal to: <=
+```
+
+## [cotrTypes](/snippets/cotrtypes)
+
+PHP Types
 
 ```php
 $BLOCK_COMMENT_START
@@ -525,83 +459,94 @@ Types in PHP include:
 $BLOCK_COMMENT_END
 ```
 
-## PHP Create Boolean Variable
+## [cotrNull](/snippets/cotrnull)
 
-### [cotrVarBool](/snippets/cotrVarBool)
-
-```php
-$${1:myBool} = ${2:true};
-```
-
-## PHP Create Map Variable
-
-### [cotrVarMap](/snippets/cotrVarMap)
+PHP Null Type
 
 ```php
-$${1:myMap} = [${2:key} => ${3:value}];
+null
 ```
 
-## PHP Generate Map
+## [cotrTypesList](/snippets/cotrtypeslist)
 
-### [cotrGenMap](/snippets/cotrGenMap)
+PHP List Type
 
 ```php
-$${1:myMap} = array_combine(range(${2:0}, ${3:10}), range(${4:0}, ${5:10}));
+// In PHP, indexed arrays are used as lists.
 ```
 
-## PHP Class
+## [cotrVarNullable](/snippets/cotrvarnullable)
 
-### [cotrClass](/snippets/cotrClass)
+PHP Create Nullable Variable
 
 ```php
-class ${1:MyClass} {
-  ${2:// Your code here}
-}
+${1:Type}? $${2:myVar} = $3;
 ```
 
-## PHP Not Equal To
+## [cotrVarString](/snippets/cotrvarstring)
 
-### [cotrNotEqual](/snippets/cotrNotEqual)
+PHP Create String Variable
 
 ```php
-!=
+$${1:myString} = '${2:Your string here}';
 ```
 
-## PHP Boolean False
+## [cotrCommentMulti](/snippets/cotrcommentmulti)
 
-### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
+PHP Multi-Line Comment
 
 ```php
-false
+/*
+ * ${1:Your comment here}
+ */
 ```
 
-## PHP Date Type
+## [cotrEntry](/snippets/cotrentry)
 
-### [cotrTypesDate](/snippets/cotrTypesDate)
+PHP Entry Point
 
 ```php
-DateTime
+// PHP Entry Point
+// To run this program, use: `php filename.php`
+
+<?php
+echo 'Hello, World!';
+?>
 ```
 
-## PHP Create Array Variable
+## [cotrVarSyntax](/snippets/cotrvarsyntax)
 
-### [cotrVarList](/snippets/cotrVarList)
+Variable Declaration Syntax
 
 ```php
-$${1:myArray} = [${2:items}];
+// PHP Variable Declaration Syntax:
+
+// - $: (Scope: Global or Function)
+//   - Variables start with a dollar sign.
+//   - Can be reassigned and redeclared within their scope.
+//   - Use with caution due to potential scoping issues.
+
+// - const: (Scope: Global)
+//   - Cannot be reassigned or redeclared.
+//   - Use for values that should remain constant.
+
+// Note:
+// - PHP does not have a direct equivalent to 'let'.
+// - Use '$' for most variable declarations.
+// - Use 'const' for values that are known at compile time.
 ```
 
-## PHP Static Variable
+## [cotrPrint](/snippets/cotrprint)
 
-### [cotrVarStatic](/snippets/cotrVarStatic)
+PHP Print
 
 ```php
-static $${1:myStaticVar} = $2;
+print('${1:Your message here}');
 ```
 
-## PHP Project Structure (High-Level)
+## [cotrStructure](/snippets/cotrstructure)
 
-### [cotrStructure](/snippets/cotrStructure)
+PHP Project Structure (High-Level)
 
 ```php
 // Recommended High-Level PHP Project Structure:
@@ -636,34 +581,94 @@ static $${1:myStaticVar} = $2;
 // - Ensure that the public directory is the document root for the web server to secure application internals.
 ```
 
-## PHP Type Comparison
+## [cotrOperators](/snippets/cotroperators)
 
-### [cotrTypeCompare](/snippets/cotrTypeCompare)
+PHP Mathematical Operators
 
 ```php
-// Check if two variables have the same type:
-if (gettype(${1:variable1}) === gettype(${2:variable2})) {
-  // Your code here
-}
+// PHP Mathematical Operators
+// Addition: +
+// Subtraction: -
+// Multiplication: *
+// Exponentiation: **
+// Division: /
+// Modulus (Remainder): %
+// Increment: ++
+// Decrement: --
+// Assignment: =
+// Addition assignment: +=
+// Subtraction assignment: -=
+// Multiplication assignment: *=
+// Division assignment: /=
+// Modulus assignment: %=
 ```
 
-## PHP Boolean True
+## [cotrTypesBoolTrue](/snippets/cotrtypesbooltrue)
 
-### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
+PHP Boolean True
 
 ```php
 true
 ```
 
-## PHP Try Catch
+## [cotrInterpolate](/snippets/cotrinterpolate)
 
-### [cotrTryCatch](/snippets/cotrTryCatch)
+PHP Interpolate String
 
 ```php
-try {
-  ${1:// Your code here}
-} catch (${2:Exception} $${3:e}) {
-  ${4:// Your code here}
+'Your string here \${${1:variable}}'
+```
+
+## [cotrConcat](/snippets/cotrconcat)
+
+PHP Concatenate Strings
+
+```php
+'${1:string1}' . '${2:string2}'
+```
+
+## [cotrVarMap](/snippets/cotrvarmap)
+
+PHP Create Map Variable
+
+```php
+$${1:myMap} = [${2:key} => ${3:value}];
+```
+
+## [cotrConst](/snippets/cotrconst)
+
+PHP Create Constant
+
+```php
+const $${1:myConst} = $2;
+```
+
+## [cotrTypesMap](/snippets/cotrtypesmap)
+
+PHP Map Type
+
+```php
+// In PHP, associative arrays are used as maps.
+```
+
+## [cotrWhileLoop](/snippets/cotrwhileloop)
+
+PHP While Loop
+
+```php
+while ($${1:condition}) {
+  ${2:// Your code here}
 }
+```
+
+## [cotrFuncSyntax](/snippets/cotrfuncsyntax)
+
+PHP Function Syntax
+
+```php
+// PHP Function Syntax
+// Basic function: function functionName(parameters) { ... }
+// Function with arguments: function functionName($arg1, $arg2, ...) { ... }
+// Note: PHP does not support named arguments in function definitions.
 ```
 

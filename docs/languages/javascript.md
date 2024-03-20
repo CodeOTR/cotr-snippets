@@ -1,178 +1,30 @@
-## JavaScript Boolean Operators
+---
+title: Javascript
+description: Javascript snippets on the rocks.
+---
 
-### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
+## [cotrTypesBoolFalse](/snippets/cotrtypesboolfalse)
 
-```javascript
-// JavaScript Boolean Operators
-// Logical AND: &&
-// Logical OR: ||
-// Logical NOT: !
-// Equality: ==
-// Strict Equality: ===
-// Inequality: !=
-// Strict Inequality: !==
-// Greater than: >
-// Less than: <
-// Greater than or equal to: >=
-// Less than or equal to: <=
-```
-
-## JavaScript Concatenate String
-
-### [cotrConcat](/snippets/cotrConcat)
+JavaScript Boolean False
 
 ```javascript
-let text = 'Hello, ' + ${1:name} + '!';
+false;
 ```
 
-## JavaScript If Else Statement
+## [cotrFuncSyntax](/snippets/cotrfuncsyntax)
 
-### [cotrIfElse](/snippets/cotrIfElse)
+JavaScript Function Syntax
 
 ```javascript
-if (${1:condition}) {
-  ${2:// Your code here}
-} else if (${3:condition}) {
-  ${4:// Your code here}
-} else {
-  ${5:// Your code here}
-}
+// JavaScript Function Syntax
+// Basic function: function functionName(parameters) { ... }
+// Function with arguments: function functionName(arg1, arg2, ...) { ... }
+// Function with named arguments (using object destructuring): function functionName({arg1, arg2, ...}) { ... }
 ```
 
-## JavaScript Entry Point
+## [cotrTryCatch](/snippets/cotrtrycatch)
 
-### [cotrEntry](/snippets/cotrEntry)
-
-```javascript
-// JavaScript Entry Point
-// To run this program, use: `node filename.js`
-
-console.log('Hello, World!');
-```
-
-## JavaScript Type Comparison
-
-### [cotrTypeCompare](/snippets/cotrTypeCompare)
-
-```javascript
-// Check if two variables have the same type:
-if (typeof ${1:variable1} === typeof ${2:variable2}) {
-  // Your code here
-}
-```
-
-## JavaScript Create Variable
-
-### [cotrVar](/snippets/cotrVar)
-
-```javascript
-let ${1:myVar} = $2;
-```
-
-## JavaScript Create Multi-Line String Variable
-
-### [cotrVarMultiString](/snippets/cotrVarMultiString)
-
-```javascript
-let ${1:myString} = `
-${2:Line 1}
-${3:Line 2}
-${4:Line 3}
-`;
-```
-
-## JavaScript Create Date Variable
-
-### [cotrVarDate](/snippets/cotrVarDate)
-
-```javascript
-let ${1:myDate} = new Date(${2:year}, ${3:month} - 1, ${4:day});
-```
-
-## JavaScript Create Map Variable (Object)
-
-### [cotrVarMap](/snippets/cotrVarMap)
-
-```javascript
-let ${1:myObject} = {
-  ${2:'key1'}: ${3:'value1'},
-  ${4:'key2'}: ${5:'value2'}
-};
-```
-
-## JavaScript Create Typed Variable
-
-### [cotrVarTyped](/snippets/cotrVarTyped)
-
-```javascript
-let ${1:myVar} = $2; // Note: JavaScript is dynamically typed.
-```
-
-## JavaScript Create Constant
-
-### [cotrConst](/snippets/cotrConst)
-
-```javascript
-const ${1:myConst} = $2;
-```
-
-## JavaScript Type Conversion
-
-### [cotrTypeConvert](/snippets/cotrTypeConvert)
-
-```javascript
-// JavaScript Type Conversion:
-
-// Implicit conversions (JavaScript performs automatically):
-// - Can be unpredictable, especially with loose equality (==).
-
-// Explicit conversions:
-// - Number(variable)  // Converts to number
-// - String(variable)  // Converts to string
-// - Boolean(variable)  // Converts to boolean
-// - parseInt(string)  // Converts string to integer
-// - parseFloat(string)  // Converts string to floating-point number
-
-// Note:
-// - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control.
-```
-
-## JavaScript Date Type
-
-### [cotrTypesDate](/snippets/cotrTypesDate)
-
-```javascript
-Date
-```
-
-## JavaScript Create Nullable Variable
-
-### [cotrVarNullable](/snippets/cotrVarNullable)
-
-```javascript
-let ${1:myVar} = null;
-```
-
-## JavaScript Switch Statement
-
-### [cotrSwitch](/snippets/cotrSwitch)
-
-```javascript
-switch (${1:variable}) {
-  case ${2:value1}:
-    ${3:// Your code here}
-    break;
-  case ${4:value2}:
-    ${5:// Your code here}
-    break;
-  default:
-    ${6:// Your code here}
-}
-```
-
-## JavaScript Try Catch
-
-### [cotrTryCatch](/snippets/cotrTryCatch)
+JavaScript Try Catch
 
 ```javascript
 try {
@@ -182,19 +34,9 @@ try {
 }
 ```
 
-## JavaScript If Statement
+## [cotrInfo](/snippets/cotrinfo)
 
-### [cotrIf](/snippets/cotrIf)
-
-```javascript
-if (${1:condition}) {
-  ${2:// Your code here}
-}
-```
-
-## JavaScript Info
-
-### [cotrInfo](/snippets/cotrInfo)
+JavaScript Info
 
 ```javascript
 Typing: Dynamically typed
@@ -203,9 +45,137 @@ Compilation: Interpreted or just-in-time compiled
 Concurrency: Event loop model with support for asynchronous programming using callbacks, promises, and async/await
 ```
 
-## JavaScript Mathematical Operators
+## [cotrEntry](/snippets/cotrentry)
 
-### [cotrOperators](/snippets/cotrOperators)
+JavaScript Entry Point
+
+```javascript
+// JavaScript Entry Point
+// To run this program, use: `node filename.js`
+
+console.log('Hello, World!');
+```
+
+## [cotrVarMapAlt](/snippets/cotrvarmapalt)
+
+JavaScript Create Map Variable
+
+```javascript
+let ${1:myMap} = new Map([
+  [${2:'key1'}, ${3:'value1'}],
+  [${4:'key2'}, ${5:'value2'}]
+]);
+```
+
+## [cotrFuncAnon](/snippets/cotrfuncanon)
+
+JavaScript Anonymous Function
+
+```javascript
+function(${1:parameters}) {
+  ${2:// Your code here}
+};
+```
+
+## [cotrClass](/snippets/cotrclass)
+
+JavaScript Class
+
+```javascript
+class ${1:MyClass} {
+  ${2:// Your code here}
+}
+```
+
+## [cotrTypesString](/snippets/cotrtypesstring)
+
+JavaScript String Type
+
+```javascript
+let text = "John Doe";
+```
+
+## [cotrPrint](/snippets/cotrprint)
+
+JavaScript Print
+
+```javascript
+console.log(${1:'Your message here'});
+```
+
+## [cotrForLoop](/snippets/cotrforloop)
+
+JavaScript For Loop
+
+```javascript
+for (let ${1:i} = 0; $1 < ${2:10}; $1++) {
+  // Your code here
+}
+```
+
+## [cotrVarDate](/snippets/cotrvardate)
+
+JavaScript Create Date Variable
+
+```javascript
+let ${1:myDate} = new Date(${2:year}, ${3:month} - 1, ${4:day});
+```
+
+## [cotrVarList](/snippets/cotrvarlist)
+
+JavaScript Create Array Variable
+
+```javascript
+let ${1:myList} = [${2:'item1'}, ${3:'item2'}];
+```
+
+## [cotrConst](/snippets/cotrconst)
+
+JavaScript Create Constant
+
+```javascript
+const ${1:myConst} = $2;
+```
+
+## [cotrTernary](/snippets/cotrternary)
+
+JavaScript Ternary Operator
+
+```javascript
+${1:condition} ? ${2:trueValue} : ${3:falseValue}
+```
+
+## [cotrNotEqual](/snippets/cotrnotequal)
+
+JavaScript Not Equal To
+
+```javascript
+!==
+```
+
+## [cotrVarMultiString](/snippets/cotrvarmultistring)
+
+JavaScript Create Multi-Line String Variable
+
+```javascript
+let ${1:myString} = `
+${2:Line 1}
+${3:Line 2}
+${4:Line 3}
+`;
+```
+
+## [cotrVarBool](/snippets/cotrvarbool)
+
+JavaScript Create Boolean Variable
+
+```javascript
+let ${1:myBoolean} = ${2:true};
+```
+
+## [cotrOperators](/snippets/cotroperators)
+
+JavaScript Mathematical Operators
 
 ```javascript
 // JavaScript Mathematical Operators
@@ -225,75 +195,9 @@ Concurrency: Event loop model with support for asynchronous programming using ca
 // Modulus assignment: %=
 ```
 
-## JavaScript Create String Variable
+## [cotrVarStatic](/snippets/cotrvarstatic)
 
-### [cotrVarString](/snippets/cotrVarString)
-
-```javascript
-let ${1:myString} = "${2:Your string here}";
-```
-
-## JavaScript Create Map Variable
-
-### [cotrVarMapAlt](/snippets/cotrVarMapAlt)
-
-```javascript
-let ${1:myMap} = new Map([
-  [${2:'key1'}, ${3:'value1'}],
-  [${4:'key2'}, ${5:'value2'}]
-]);
-```
-
-## JavaScript While Loop
-
-### [cotrWhileLoop](/snippets/cotrWhileLoop)
-
-```javascript
-while (${1:condition}) {
-  ${2:// Your code here}
-}
-```
-
-## JavaScript Types
-
-### [cotrTypes](/snippets/cotrTypes)
-
-```javascript
-$BLOCK_COMMENT_START
-JavaScript is a dynamically typed language. It does not have static types.
-
-Types in JavaScript include:
-- Number: for both integers and floating-point numbers
-- String: for text
-- Boolean: for true/false values
-- Object: for key-value pairs
-- Array: for ordered lists
-- Function: for executable functions
-- Symbol: for unique identifiers
-- null: for absence of value
-- undefined: for uninitialized variables
-$BLOCK_COMMENT_END
-```
-
-## JavaScript Boolean Type
-
-### [cotrTypesBool](/snippets/cotrTypesBool)
-
-```javascript
-let flag = Boolean($1);
-```
-
-## JavaScript List Type
-
-### [cotrTypesList](/snippets/cotrTypesList)
-
-```javascript
-[]
-```
-
-## JavaScript Static Variable
-
-### [cotrVarStatic](/snippets/cotrVarStatic)
+JavaScript Static Variable
 
 ```javascript
 static ${3:myStaticVar} = ${4:value};
@@ -302,43 +206,9 @@ static ${3:myStaticVar} = ${4:value};
 // MyClass.${3:myStaticVar}
 ```
 
-## JavaScript Function Named Args
+## [cotrGenMap](/snippets/cotrgenmap)
 
-### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
-
-```javascript
-function ${2:myFunction}({${3:arg1}, ${4:arg2}}) {
-  ${5:// Your code here}
-}
-```
-
-## JavaScript Lambda
-
-### [cotrLambda](/snippets/cotrLambda)
-
-```javascript
-const ${1:myLambda} = (${2:parameters}) => ${3:expression};
-```
-
-## JavaScript Date Now
-
-### [cotrNow](/snippets/cotrNow)
-
-```javascript
-new Date()
-```
-
-## JavaScript Dynamic Type
-
-### [cotrTypesDynamic](/snippets/cotrTypesDynamic)
-
-```javascript
-// There is no specific syntax for declaring a variable with a dynamic type in JavaScript.
-```
-
-## JavaScript Generate Object Map
-
-### [cotrGenMap](/snippets/cotrGenMap)
+JavaScript Generate Object Map
 
 ```javascript
 const ${1:myMap} = Object.fromEntries(
@@ -346,76 +216,31 @@ const ${1:myMap} = Object.fromEntries(
 );
 ```
 
-## JavaScript Function Syntax
+## [cotrIfElse](/snippets/cotrifelse)
 
-### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
-
-```javascript
-// JavaScript Function Syntax
-// Basic function: function functionName(parameters) { ... }
-// Function with arguments: function functionName(arg1, arg2, ...) { ... }
-// Function with named arguments (using object destructuring): function functionName({arg1, arg2, ...}) { ... }
-```
-
-## JavaScript String Type
-
-### [cotrTypesString](/snippets/cotrTypesString)
+JavaScript If Else Statement
 
 ```javascript
-let text = "John Doe";
+if (${1:condition}) {
+  ${2:// Your code here}
+} else if (${3:condition}) {
+  ${4:// Your code here}
+} else {
+  ${5:// Your code here}
+}
 ```
 
-## JavaScript Number Type
+## [cotrTypesInt](/snippets/cotrtypesint)
 
-### [cotrTypesNum](/snippets/cotrTypesNum)
+JavaScript Int Type
 
 ```javascript
-let number = $1;
+let integer = Math.floor($1);
 ```
 
-## JavaScript Create Boolean Variable
+## [cotrForOfLoop](/snippets/cotrforofloop)
 
-### [cotrVarBool](/snippets/cotrVarBool)
-
-```javascript
-let ${1:myBoolean} = ${2:true};
-```
-
-## JavaScript Throw Exception
-
-### [cotrThrow](/snippets/cotrThrow)
-
-```javascript
-throw new Error('Your message here');
-```
-
-## JavaScript Boolean False
-
-### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
-
-```javascript
-false;
-```
-
-## JavaScript Map Type
-
-### [cotrTypesMap](/snippets/cotrTypesMap)
-
-```javascript
-new Map()
-```
-
-## JavaScript Generate Array
-
-### [cotrGenList](/snippets/cotrGenList)
-
-```javascript
-const ${1:myList} = Array.from({ length: ${2:length} }, (_, index) => ${3:'item'} + index);
-```
-
-## JavaScript For...Of Loop
-
-### [cotrForOfLoop](/snippets/cotrForOfLoop)
+JavaScript For...Of Loop
 
 ```javascript
 for (const item of ${1:iterable}) {
@@ -423,57 +248,9 @@ for (const item of ${1:iterable}) {
 }
 ```
 
-## JavaScript Anonymous Function
+## [cotrCommentMulti](/snippets/cotrcommentmulti)
 
-### [cotrFuncAnon](/snippets/cotrFuncAnon)
-
-```javascript
-function(${1:parameters}) {
-  ${2:// Your code here}
-};
-```
-
-## JavaScript Class
-
-### [cotrClass](/snippets/cotrClass)
-
-```javascript
-class ${1:MyClass} {
-  ${2:// Your code here}
-}
-```
-
-## JavaScript Create Array Variable
-
-### [cotrVarList](/snippets/cotrVarList)
-
-```javascript
-let ${1:myList} = [${2:'item1'}, ${3:'item2'}];
-```
-
-## JavaScript Function
-
-### [cotrFunc](/snippets/cotrFunc)
-
-```javascript
-function ${2:myFunction}(${3:parameters}) {
-  ${4:// Your code here}
-}
-```
-
-## JavaScript Arrow Function
-
-### [cotrFuncArrow](/snippets/cotrFuncArrow)
-
-```javascript
-const ${2:myFunction} = (${3:parameters}) => {
-  ${4:// Your code here}
-};
-```
-
-## JavaScript Multi-Line Comment
-
-### [cotrCommentMulti](/snippets/cotrCommentMulti)
+JavaScript Multi-Line Comment
 
 ```javascript
 /*
@@ -481,43 +258,120 @@ const ${2:myFunction} = (${3:parameters}) => {
  */
 ```
 
-## JavaScript Boolean True
+## [cotrInterpolate](/snippets/cotrinterpolate)
 
-### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
+JavaScript Interpolate String
 
 ```javascript
-true;
+let text = `Hello, ${1:name}!`;
 ```
 
-## JavaScript Create Number Variable
+## [cotrVarString](/snippets/cotrvarstring)
 
-### [cotrVarNum](/snippets/cotrVarNum)
+JavaScript Create String Variable
 
 ```javascript
-let ${1:myNumber} = ${2:0};
+let ${1:myString} = "${2:Your string here}";
 ```
 
-## JavaScript For Loop
+## [cotrNow](/snippets/cotrnow)
 
-### [cotrForLoop](/snippets/cotrForLoop)
+JavaScript Date Now
 
 ```javascript
-for (let ${1:i} = 0; $1 < ${2:10}; $1++) {
-  // Your code here
+new Date()
+```
+
+## [cotrTypeCheck](/snippets/cotrtypecheck)
+
+JavaScript Type Check
+
+```javascript
+typeof ${1:variable}
+```
+
+## [cotrTypeConvert](/snippets/cotrtypeconvert)
+
+JavaScript Type Conversion
+
+```javascript
+// JavaScript Type Conversion:
+
+// Implicit conversions (JavaScript performs automatically):
+// - Can be unpredictable, especially with loose equality (==).
+
+// Explicit conversions:
+// - Number(variable)  // Converts to number
+// - String(variable)  // Converts to string
+// - Boolean(variable)  // Converts to boolean
+// - parseInt(string)  // Converts string to integer
+// - parseFloat(string)  // Converts string to floating-point number
+
+// Note:
+// - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control.
+```
+
+## [cotrTypesBool](/snippets/cotrtypesbool)
+
+JavaScript Boolean Type
+
+```javascript
+let flag = Boolean($1);
+```
+
+## [cotrVarTyped](/snippets/cotrvartyped)
+
+JavaScript Create Typed Variable
+
+```javascript
+let ${1:myVar} = $2; // Note: JavaScript is dynamically typed.
+```
+
+## [cotrLambda](/snippets/cotrlambda)
+
+JavaScript Lambda
+
+```javascript
+const ${1:myLambda} = (${2:parameters}) => ${3:expression};
+```
+
+## [cotrConcat](/snippets/cotrconcat)
+
+JavaScript Concatenate String
+
+```javascript
+let text = 'Hello, ' + ${1:name} + '!';
+```
+
+## [cotrVarNullable](/snippets/cotrvarnullable)
+
+JavaScript Create Nullable Variable
+
+```javascript
+let ${1:myVar} = null;
+```
+
+## [cotrGenList](/snippets/cotrgenlist)
+
+JavaScript Generate Array
+
+```javascript
+const ${1:myList} = Array.from({ length: ${2:length} }, (_, index) => ${3:'item'} + index);
+```
+
+## [cotrIf](/snippets/cotrif)
+
+JavaScript If Statement
+
+```javascript
+if (${1:condition}) {
+  ${2:// Your code here}
 }
 ```
 
-## JavaScript Ternary Operator
+## [cotrStructure](/snippets/cotrstructure)
 
-### [cotrTernary](/snippets/cotrTernary)
-
-```javascript
-${1:condition} ? ${2:trueValue} : ${3:falseValue}
-```
-
-## JavaScript Project Structure (High-Level)
-
-### [cotrStructure](/snippets/cotrStructure)
+JavaScript Project Structure (High-Level)
 
 ```javascript
 // Recommended High-Level JavaScript Project Structure:
@@ -556,9 +410,183 @@ ${1:condition} ? ${2:trueValue} : ${3:falseValue}
 //   and the tools/frameworks being used (e.g., React, Vue, Angular, etc.).
 ```
 
-## JavaScript Print Multi
+## [cotrOperatorsBool](/snippets/cotroperatorsbool)
 
-### [cotrPrintMulti](/snippets/cotrPrintMulti)
+JavaScript Boolean Operators
+
+```javascript
+// JavaScript Boolean Operators
+// Logical AND: &&
+// Logical OR: ||
+// Logical NOT: !
+// Equality: ==
+// Strict Equality: ===
+// Inequality: !=
+// Strict Inequality: !==
+// Greater than: >
+// Less than: <
+// Greater than or equal to: >=
+// Less than or equal to: <=
+```
+
+## [cotrTypes](/snippets/cotrtypes)
+
+JavaScript Types
+
+```javascript
+$BLOCK_COMMENT_START
+JavaScript is a dynamically typed language. It does not have static types.
+
+Types in JavaScript include:
+- Number: for both integers and floating-point numbers
+- String: for text
+- Boolean: for true/false values
+- Object: for key-value pairs
+- Array: for ordered lists
+- Function: for executable functions
+- Symbol: for unique identifiers
+- null: for absence of value
+- undefined: for uninitialized variables
+$BLOCK_COMMENT_END
+```
+
+## [cotrTypeCompare](/snippets/cotrtypecompare)
+
+JavaScript Type Comparison
+
+```javascript
+// Check if two variables have the same type:
+if (typeof ${1:variable1} === typeof ${2:variable2}) {
+  // Your code here
+}
+```
+
+## [cotrTypesMap](/snippets/cotrtypesmap)
+
+JavaScript Map Type
+
+```javascript
+new Map()
+```
+
+## [cotrWhileLoop](/snippets/cotrwhileloop)
+
+JavaScript While Loop
+
+```javascript
+while (${1:condition}) {
+  ${2:// Your code here}
+}
+```
+
+## [cotrThrow](/snippets/cotrthrow)
+
+JavaScript Throw Exception
+
+```javascript
+throw new Error('Your message here');
+```
+
+## [cotrFunc](/snippets/cotrfunc)
+
+JavaScript Function
+
+```javascript
+function ${2:myFunction}(${3:parameters}) {
+  ${4:// Your code here}
+}
+```
+
+## [cotrFuncArgs](/snippets/cotrfuncargs)
+
+JavaScript Function Args
+
+```javascript
+// In JavaScript, functions can have arguments with default values.
+function ${2:myFunction}(${3:arg1}, ${4:arg2} = ${5:defaultValue}) {
+  ${6:// Your code here}
+}
+```
+
+## [cotrTypesNum](/snippets/cotrtypesnum)
+
+JavaScript Number Type
+
+```javascript
+let number = $1;
+```
+
+## [cotrVar](/snippets/cotrvar)
+
+JavaScript Create Variable
+
+```javascript
+let ${1:myVar} = $2;
+```
+
+## [cotrSwitch](/snippets/cotrswitch)
+
+JavaScript Switch Statement
+
+```javascript
+switch (${1:variable}) {
+  case ${2:value1}:
+    ${3:// Your code here}
+    break;
+  case ${4:value2}:
+    ${5:// Your code here}
+    break;
+  default:
+    ${6:// Your code here}
+}
+```
+
+## [cotrComment](/snippets/cotrcomment)
+
+JavaScript Comment
+
+```javascript
+// ${1:Your comment here}
+```
+
+## [cotrTypesBoolTrue](/snippets/cotrtypesbooltrue)
+
+JavaScript Boolean True
+
+```javascript
+true;
+```
+
+## [cotrTypesDate](/snippets/cotrtypesdate)
+
+JavaScript Date Type
+
+```javascript
+Date
+```
+
+## [cotrTypesList](/snippets/cotrtypeslist)
+
+JavaScript List Type
+
+```javascript
+[]
+```
+
+## [cotrVarMap](/snippets/cotrvarmap)
+
+JavaScript Create Map Variable (Object)
+
+```javascript
+let ${1:myObject} = {
+  ${2:'key1'}: ${3:'value1'},
+  ${4:'key2'}: ${5:'value2'}
+};
+```
+
+## [cotrPrintMulti](/snippets/cotrprintmulti)
+
+JavaScript Print Multi
 
 ```javascript
 console.log(`
@@ -568,73 +596,27 @@ ${3:Line 3}
 `);
 ```
 
-## JavaScript Equal To
+## [cotrFuncArrow](/snippets/cotrfuncarrow)
 
-### [cotrEqual](/snippets/cotrEqual)
+JavaScript Arrow Function
 
 ```javascript
-===
+const ${2:myFunction} = (${3:parameters}) => {
+  ${4:// Your code here}
+};
 ```
 
-## JavaScript Null Type
+## [cotrNull](/snippets/cotrnull)
 
-### [cotrNull](/snippets/cotrNull)
+JavaScript Null Type
 
 ```javascript
 null
 ```
 
-## JavaScript Print
+## [cotrVarSyntax](/snippets/cotrvarsyntax)
 
-### [cotrPrint](/snippets/cotrPrint)
-
-```javascript
-console.log(${1:'Your message here'});
-```
-
-## JavaScript Comment
-
-### [cotrComment](/snippets/cotrComment)
-
-```javascript
-// ${1:Your comment here}
-```
-
-## JavaScript Not Equal To
-
-### [cotrNotEqual](/snippets/cotrNotEqual)
-
-```javascript
-!==
-```
-
-## JavaScript Type Check
-
-### [cotrTypeCheck](/snippets/cotrTypeCheck)
-
-```javascript
-typeof ${1:variable}
-```
-
-## JavaScript Int Type
-
-### [cotrTypesInt](/snippets/cotrTypesInt)
-
-```javascript
-let integer = Math.floor($1);
-```
-
-## JavaScript Interpolate String
-
-### [cotrInterpolate](/snippets/cotrInterpolate)
-
-```javascript
-let text = `Hello, ${1:name}!`;
-```
-
-## Variable Declaration Syntax
-
-### [cotrVarSyntax](/snippets/cotrVarSyntax)
+Variable Declaration Syntax
 
 ```javascript
 // JavaScript Variable Declaration Syntax:
@@ -656,14 +638,37 @@ let text = `Hello, ${1:name}!`;
 // - Use 'const' for values that should not change.
 ```
 
-## JavaScript Function Args
+## [cotrVarNum](/snippets/cotrvarnum)
 
-### [cotrFuncArgs](/snippets/cotrFuncArgs)
+JavaScript Create Number Variable
 
 ```javascript
-// In JavaScript, functions can have arguments with default values.
-function ${2:myFunction}(${3:arg1}, ${4:arg2} = ${5:defaultValue}) {
-  ${6:// Your code here}
+let ${1:myNumber} = ${2:0};
+```
+
+## [cotrEqual](/snippets/cotrequal)
+
+JavaScript Equal To
+
+```javascript
+===
+```
+
+## [cotrTypesDynamic](/snippets/cotrtypesdynamic)
+
+JavaScript Dynamic Type
+
+```javascript
+// There is no specific syntax for declaring a variable with a dynamic type in JavaScript.
+```
+
+## [cotrFuncArgsNamed](/snippets/cotrfuncargsnamed)
+
+JavaScript Function Named Args
+
+```javascript
+function ${2:myFunction}({${3:arg1}, ${4:arg2}}) {
+  ${5:// Your code here}
 }
 ```
 

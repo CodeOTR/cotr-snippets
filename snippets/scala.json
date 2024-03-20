@@ -276,7 +276,7 @@
 
   "Scala Dynamic Type": {
     "scope": "scala",
-    "prefix": ["cotrDynamic", "dynamicType", "typeDynamic", "anyType", "typeAny"],
+        "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": ["Any"],
     "description": "The Scala Any type."
   },

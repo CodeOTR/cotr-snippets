@@ -238,7 +238,7 @@
   },
 
   "Haskell Dynamic Type": {
-    "prefix": ["cotrTypesDynamic", "cotrDynamic"],
+            "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": [
       "-- Haskell is statically typed, but you can use 'Any' for dynamic values."
     ],

@@ -1,23 +1,58 @@
-## Swift Switch Statement
+---
+title: Swift
+description: Swift snippets on the rocks.
+---
 
-### [cotrSwitch](/snippets/cotrSwitch)
+## [cotrOperators](/snippets/cotroperators)
+
+Swift Mathematical Operators
 
 ```swift
-switch ${1:variable} {
-  case ${2:value1}:
-    ${3:// Your code here}
-    break
-  case ${4:value2}:
-    ${5:// Your code here}
-    break
-  default:
-    ${6:// Your code here}
-}
+// Swift Mathematical Operators
+// Addition: +
+// Subtraction: -
+// Multiplication: *
+// Division: /
+// Modulus (Remainder): %
+// Exponentiation: **
+// Increment: Use += 1
+// Decrement: Use -= 1
+// Assignment: =
+// Addition assignment: +=
+// Subtraction assignment: -=
+// Multiplication assignment: *=
+// Division assignment: /=
+// Modulus assignment: %=
+// Exponentiation assignment: **=
 ```
 
-## Swift Multi-Line Comment
+## [cotrTypesBoolTrue](/snippets/cotrtypesbooltrue)
 
-### [cotrCommentMulti](/snippets/cotrCommentMulti)
+Swift Boolean True
+
+```swift
+true
+```
+
+## [cotrTypesBoolFalse](/snippets/cotrtypesboolfalse)
+
+Swift Boolean False
+
+```swift
+false
+```
+
+## [cotrConst](/snippets/cotrconst)
+
+Swift Create Constant
+
+```swift
+let ${1:myConst} = $2;
+```
+
+## [cotrCommentMulti](/snippets/cotrcommentmulti)
+
+Swift Multi-Line Comment
 
 ```swift
 /*
@@ -25,135 +60,106 @@ switch ${1:variable} {
  */
 ```
 
-## Swift List Type
+## [cotrTypesDate](/snippets/cotrtypesdate)
 
-### [cotrTypesList](/snippets/cotrTypesList)
-
-```swift
-Array<${1:Type}>
-```
-
-## Swift Dynamic Type
-
-### [cotrTypesAny](/snippets/cotrTypesAny)
-
-```swift
-Any
-```
-
-## Swift Create Boolean Variable
-
-### [cotrVarBool](/snippets/cotrVarBool)
-
-```swift
-var ${1:myBool} = ${2:true};
-```
-
-## Swift For...In Loop
-
-### [cotrForInLoop](/snippets/cotrForInLoop)
-
-```swift
-for ${1:item} in ${2:iterable} {
-  ${3:// Your code here}
-}
-```
-
-## Swift Create List Variable
-
-### [cotrVarList](/snippets/cotrVarList)
-
-```swift
-var ${1:myArray} = [${2:'item1'}, ${3:'item2'}, ${4:'item3'}];
-```
-
-## Swift Function Named Args
-
-### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
-
-```swift
-func ${2:myFunction}(${3:arg1Name} ${3:arg1}: ${4:Type1}, ${5:arg2Name} ${5:arg2}: ${6:Type2}) -> ${1:Void} {
-    ${7:// Your code here}
-}
-```
-
-## Swift Types
-
-### [cotrTypes](/snippets/cotrTypes)
-
-```swift
-$BLOCK_COMMENT_START
-Swift is a statically typed language.
-
-Types in Swift include:
-- Int, UInt: Signed and unsigned integers
-- Float, Double: Floating-point numbers
-- Bool: Boolean
-- String: Textual data
-- Character: A single character
-- Array<Element>: An ordered collection of elements
-- Dictionary<Key, Value>: A collection of key-value pairs
-- Set<Element>: An unordered collection of unique elements
-- Optional<Type>: An optional value of Type
-- Tuple: A group of values
-- Enum: An enumeration
-- Struct: A structure
-- Class: A class
-- Protocol: A protocol
-- Closure: A closure or lambda function
-
-Read more here: https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/
-$BLOCK_COMMENT_END
-```
-
-## Swift Double Type
-
-### [cotrTypesNum](/snippets/cotrTypesNum)
-
-```swift
-Double
-```
-
-## Swift Date Type
-
-### [cotrTypesDate](/snippets/cotrTypesDate)
+Swift Date Type
 
 ```swift
 Date
 ```
 
-## Swift Concatenate Strings
+## [cotrVarNullable](/snippets/cotrvarnullable)
 
-### [cotrConcat](/snippets/cotrConcat)
-
-```swift
-"${1:string1}" + "${2:string2}"
-```
-
-## Swift Static Variable
-
-### [cotrVarStatic](/snippets/cotrVarStatic)
+Swift Create Nullable Variable
 
 ```swift
-static ${2:var} ${3:myStaticVar} = ${4:value};
-
-// Access the static variable
-// MyClass.${3:myStaticVar}
+var ${1:myVar}: ${2:Type}? = $3
 ```
 
-## Swift Generate Dictionary
+## [cotrForLoop](/snippets/cotrforloop)
 
-### [cotrGenMap](/snippets/cotrGenMap)
+Swift For Loop
 
 ```swift
-var ${1:myDictionary} = 
-Dictionary(uniqueKeysWithValues: zip([${2:'key1'}, ${3:'key
-2'}], [${4:'value1'}, ${5:'value2'}]));
+for ${1:i} in ${2:0..<10} {
+  // Your code here
+}
 ```
 
-## Swift Entry Point
+## [cotrIfElse](/snippets/cotrifelse)
 
-### [cotrEntry](/snippets/cotrEntry)
+Swift If Else Statement
+
+```swift
+if ${1:condition} {
+  ${2:// Your code here}
+} else if ${3:condition} {
+  ${4:// Your code here}
+} else {
+  ${5:// Your code here}
+}
+```
+
+## [cotrVarDate](/snippets/cotrvardate)
+
+Swift Create Date Variable
+
+```swift
+let ${1:myDate} = Date()
+```
+
+## [cotrTypeConvert](/snippets/cotrtypeconvert)
+
+Swift Type Conversion
+
+```swift
+// Swift Type Conversion:
+
+// Swift emphasizes explicit type conversions for safety.
+
+// Explicit conversions:
+// - variable as? TargetType  // Safe cast (returns nil if conversion fails)
+// - TargetType(variable)  // Forced cast (can crash if conversion fails)
+
+// Note:
+// - Use safe casts (as?) whenever possible.
+// - Only use forced casts (TargetType()) when you are certain the conversion will succeed.
+```
+
+## [cotrTypesInt](/snippets/cotrtypesint)
+
+Swift Integer Type
+
+```swift
+Int
+```
+
+## [cotrPrintMulti](/snippets/cotrprintmulti)
+
+Swift Print Multi
+
+```swift
+print("""
+${1:Line 1}
+${2:Line 2}
+${3:Line 3}
+""")
+```
+
+## [cotrInfo](/snippets/cotrinfo)
+
+Swift Info
+
+```swift
+Typing: Statically typed
+Paradigm: Multi-paradigm: object-oriented, functional, imperative, block-structured
+Compilation: Compiled
+Concurrency: Supports multi-threading and concurrent programming with Grand Central Dispatch (GCD) and async/await
+```
+
+## [cotrEntry](/snippets/cotrentry)
+
+Swift Entry Point
 
 ```swift
 // Swift Entry Point
@@ -164,119 +170,69 @@ import Foundation
 print("Hello, World!")
 ```
 
-## Swift Comment
+## [cotrTypesMap](/snippets/cotrtypesmap)
 
-### [cotrComment](/snippets/cotrComment)
-
-```swift
-// ${1:Your comment here}
-```
-
-## Swift Anonymous Function
-
-### [cotrFuncAnon](/snippets/cotrFuncAnon)
-
-```swift
-{ (${1:parameters}) -> ${2:ReturnType} in
-    ${3:// Your code here}
-}
-```
-
-## Swift Info
-
-### [cotrInfo](/snippets/cotrInfo)
-
-```swift
-Typing: Statically typed
-Paradigm: Multi-paradigm: object-oriented, functional, imperative, block-structured
-Compilation: Compiled
-Concurrency: Supports multi-threading and concurrent programming with Grand Central Dispatch (GCD) and async/await
-```
-
-## Swift Type Comparison
-
-### [cotrTypeCompare](/snippets/cotrTypeCompare)
-
-```swift
-// Check if two variables have the same type:
-if type(of: ${1:variable1}) == type(of: ${2:variable2}) {
-  // Your code here
-}
-```
-
-## Swift Create Multi-Line String Variable
-
-### [cotrVarStringMulti](/snippets/cotrVarStringMulti)
-
-```swift
-var ${1:myString} = """
-${2:Line 1}
-${3:Line 2}
-${4:Line 3}
-""";
-```
-
-## Swift For Loop
-
-### [cotrForLoop](/snippets/cotrForLoop)
-
-```swift
-for ${1:i} in ${2:0..<10} {
-  // Your code here
-}
-```
-
-## Swift Create Integer Variable
-
-### [cotrVarInt](/snippets/cotrVarInt)
-
-```swift
-var ${1:myInt} = ${2:0};
-```
-
-## Swift Create Constant
-
-### [cotrConst](/snippets/cotrConst)
-
-```swift
-let ${1:myConst} = $2;
-```
-
-## Swift Map Type
-
-### [cotrTypesMap](/snippets/cotrTypesMap)
+Swift Map Type
 
 ```swift
 Dictionary<${1:KeyType}, ${2:ValueType}>
 ```
 
-## Swift Character Type
+## [cotrVarString](/snippets/cotrvarstring)
 
-### [cotrTypesChar](/snippets/cotrTypesChar)
-
-```swift
-Character
-```
-
-## Swift Create Float Variable
-
-### [cotrVarNumAlt](/snippets/cotrVarNumAlt)
+Swift Create String Variable
 
 ```swift
-var ${1:myFloat} = ${2:0.0}f;
+var ${1:myString} = ${2:'Your string here'};
 ```
 
-## Swift Ternary Operator
+## [cotrTernary](/snippets/cotrternary)
 
-### [cotrTernary](/snippets/cotrTernary)
+Swift Ternary Operator
 
 ```swift
 ${1:condition} ? ${2:trueValue} : ${3:falseValue}
 ```
 
-## Swift Project Structure (High-Level)
+## [cotrEqual](/snippets/cotrequal)
 
-### [cotrStructure](/snippets/cotrStructure)
+Swift Equal To
+
+```swift
+==
+```
+
+## [cotrTypesList](/snippets/cotrtypeslist)
+
+Swift List Type
+
+```swift
+Array<${1:Type}>
+```
+
+## [cotrGenMap](/snippets/cotrgenmap)
+
+Swift Generate Dictionary
+
+```swift
+var ${1:myDictionary} = 
+Dictionary(uniqueKeysWithValues: zip([${2:'key1'}, ${3:'key
+2'}], [${4:'value1'}, ${5:'value2'}]));
+```
+
+## [cotrIf](/snippets/cotrif)
+
+Swift If Statement
+
+```swift
+if ${1:condition} {
+  ${2:// Your code here}
+}
+```
+
+## [cotrStructure](/snippets/cotrstructure)
+
+Swift Project Structure (High-Level)
 
 ```swift
 // Recommended High-Level Swift Project Structure:
@@ -306,17 +262,190 @@ ${1:condition} ? ${2:trueValue} : ${3:falseValue}
 // - For Xcode projects, the structure might be different, typically organized within an .xcodeproj file.
 ```
 
-## Swift String Type
+## [cotrTypesChar](/snippets/cotrtypeschar)
 
-### [cotrTypesString](/snippets/cotrTypesString)
+Swift Character Type
 
 ```swift
-String
+Character
 ```
 
-## Swift Class
+## [cotrTypesAny](/snippets/cotrtypesany)
 
-### [cotrClass](/snippets/cotrClass)
+Swift Dynamic Type
+
+```swift
+Any
+```
+
+## [cotrLambda](/snippets/cotrlambda)
+
+Swift Closure
+
+```swift
+let ${1:myClosure} = { (${2:parameters}) -> ${3:ReturnType} in
+  ${4:return expression}
+}
+```
+
+## [cotrTypeCheck](/snippets/cotrtypecheck)
+
+Swift Type Check
+
+```swift
+type(of: ${1:variable})
+```
+
+## [cotrTypes](/snippets/cotrtypes)
+
+Swift Types
+
+```swift
+$BLOCK_COMMENT_START
+Swift is a statically typed language.
+
+Types in Swift include:
+- Int, UInt: Signed and unsigned integers
+- Float, Double: Floating-point numbers
+- Bool: Boolean
+- String: Textual data
+- Character: A single character
+- Array<Element>: An ordered collection of elements
+- Dictionary<Key, Value>: A collection of key-value pairs
+- Set<Element>: An unordered collection of unique elements
+- Optional<Type>: An optional value of Type
+- Tuple: A group of values
+- Enum: An enumeration
+- Struct: A structure
+- Class: A class
+- Protocol: A protocol
+- Closure: A closure or lambda function
+
+Read more here: https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/
+$BLOCK_COMMENT_END
+```
+
+## [cotrFunc](/snippets/cotrfunc)
+
+Swift Function
+
+```swift
+func ${2:myFunction}(${3:parameters}) -> ${1:Void} {
+    ${4:// Your code here}
+}
+```
+
+## [cotrVarNum](/snippets/cotrvarnum)
+
+Swift Create Double Variable
+
+```swift
+var ${1:myDouble} = ${2:0.0};
+```
+
+## [cotrWhileLoop](/snippets/cotrwhileloop)
+
+Swift While Loop
+
+```swift
+while ${1:condition} {
+  ${2:// Your code here}
+}
+```
+
+## [cotrFuncArgs](/snippets/cotrfuncargs)
+
+Swift Function Args
+
+```swift
+// In Swift, functions can have arguments with default values.
+func ${2:myFunction}(${3:arg1}: ${4:Type1}, ${5:arg2}: ${6:Type2} = ${7:defaultValue}) -> ${1:Void} {
+    ${8:// Your code here}
+}
+```
+
+## [cotrFuncArgsNamed](/snippets/cotrfuncargsnamed)
+
+Swift Function Named Args
+
+```swift
+func ${2:myFunction}(${3:arg1Name} ${3:arg1}: ${4:Type1}, ${5:arg2Name} ${5:arg2}: ${6:Type2}) -> ${1:Void} {
+    ${7:// Your code here}
+}
+```
+
+## [cotrComment](/snippets/cotrcomment)
+
+Swift Comment
+
+```swift
+// ${1:Your comment here}
+```
+
+## [cotrVar](/snippets/cotrvar)
+
+Swift Create Variable
+
+```swift
+var ${1:myVar} = $2;
+```
+
+## [cotrPrint](/snippets/cotrprint)
+
+Swift Print
+
+```swift
+print(${1:"Your message here"})
+```
+
+## [cotrForInLoop](/snippets/cotrforinloop)
+
+Swift For...In Loop
+
+```swift
+for ${1:item} in ${2:iterable} {
+  ${3:// Your code here}
+}
+```
+
+## [cotrNotEqual](/snippets/cotrnotequal)
+
+Swift Not Equal To
+
+```swift
+!=
+```
+
+## [cotrTypesNum](/snippets/cotrtypesnum)
+
+Swift Double Type
+
+```swift
+Double
+```
+
+## [cotrVarMap](/snippets/cotrvarmap)
+
+Swift Create Dictionary Variable
+
+```swift
+var ${1:myDictionary} = [
+  ${2:'key1'}: ${3:'value1'},
+  ${4:'key2'}: ${5:'value2'}
+];
+```
+
+## [cotrGenList](/snippets/cotrgenlist)
+
+Swift Generate Array
+
+```swift
+var ${1:myArray} = Array(repeating: ${2:'item'}, count: ${3:5});
+```
+
+## [cotrClass](/snippets/cotrclass)
+
+Swift Class
 
 ```swift
 class ${1:MyClass} {
@@ -324,27 +453,184 @@ class ${1:MyClass} {
 }
 ```
 
-## Swift If Statement
+## [cotrOperatorsBool](/snippets/cotroperatorsbool)
 
-### [cotrIf](/snippets/cotrIf)
+Swift Boolean Operators
 
 ```swift
-if ${1:condition} {
-  ${2:// Your code here}
+// Swift Boolean Operators
+// Logical AND: &&
+// Logical OR: ||
+// Logical NOT: !
+// Equality: ==
+// Inequality: !=
+// Greater than: >
+// Less than: <
+// Greater than or equal to: >=
+// Less than or equal to: <=
+```
+
+## [cotrTypesString](/snippets/cotrtypesstring)
+
+Swift String Type
+
+```swift
+String
+```
+
+## [cotrFuncSyntax](/snippets/cotrfuncsyntax)
+
+Swift Function Syntax
+
+```swift
+// Swift Function Syntax
+// Basic function: func functionName(parameters) -> ReturnType { ... }
+// Function with arguments: func functionName(arg1: Type1, arg2: Type2, ...) -> ReturnType { ... }
+// Function with named arguments: func functionName(arg1Name arg1: Type1, arg2Name arg2: Type2, ...) -> ReturnType { ... }
+```
+
+## [cotrTryCatch](/snippets/cotrtrycatch)
+
+Swift Try Catch
+
+```swift
+do {
+  ${1:// Your code here}
+} catch ${2:exception} {
+  ${3:// Your code here}
 }
 ```
 
-## Swift Not Equal To
+## [cotrTypesNull](/snippets/cotrtypesnull)
 
-### [cotrNotEqual](/snippets/cotrNotEqual)
+Swift Null Type
 
 ```swift
-!=
+nil
 ```
 
-## Variable Declaration Syntax
+## [cotrVarNumAlt](/snippets/cotrvarnumalt)
 
-### [cotrVarSyntax](/snippets/cotrVarSyntax)
+Swift Create Float Variable
+
+```swift
+var ${1:myFloat} = ${2:0.0}f;
+```
+
+## [cotrVarList](/snippets/cotrvarlist)
+
+Swift Create List Variable
+
+```swift
+var ${1:myArray} = [${2:'item1'}, ${3:'item2'}, ${4:'item3'}];
+```
+
+## [cotrThrow](/snippets/cotrthrow)
+
+Swift Throw Exception
+
+```swift
+throw ${1:Error('Your message here')};
+```
+
+## [cotrTypeCompare](/snippets/cotrtypecompare)
+
+Swift Type Comparison
+
+```swift
+// Check if two variables have the same type:
+if type(of: ${1:variable1}) == type(of: ${2:variable2}) {
+  // Your code here
+}
+```
+
+## [cotrTypesNumAlt](/snippets/cotrtypesnumalt)
+
+Swift Float Type
+
+```swift
+Float
+```
+
+## [cotrNow](/snippets/cotrnow)
+
+Swift Date Now
+
+```swift
+Date()
+```
+
+## [cotrVarTyped](/snippets/cotrvartyped)
+
+Swift Create Typed Variable
+
+```swift
+var ${1:myVar}: ${2:Type} = $3
+```
+
+## [cotrVarStringMulti](/snippets/cotrvarstringmulti)
+
+Swift Create Multi-Line String Variable
+
+```swift
+var ${1:myString} = """
+${2:Line 1}
+${3:Line 2}
+${4:Line 3}
+""";
+```
+
+## [cotrVarStatic](/snippets/cotrvarstatic)
+
+Swift Static Variable
+
+```swift
+static ${2:var} ${3:myStaticVar} = ${4:value};
+
+// Access the static variable
+// MyClass.${3:myStaticVar}
+```
+
+## [cotrSwitch](/snippets/cotrswitch)
+
+Swift Switch Statement
+
+```swift
+switch ${1:variable} {
+  case ${2:value1}:
+    ${3:// Your code here}
+    break
+  case ${4:value2}:
+    ${5:// Your code here}
+    break
+  default:
+    ${6:// Your code here}
+}
+```
+
+## [cotrEnum](/snippets/cotrenum)
+
+Swift Enum
+
+```swift
+enum ${1:MyEnum} {
+  ${2:value1},
+  ${3:value2},
+  // Add more values here
+}
+```
+
+## [cotrTypesBool](/snippets/cotrtypesbool)
+
+Swift Boolean Type
+
+```swift
+Bool
+```
+
+## [cotrVarSyntax](/snippets/cotrvarsyntax)
+
+Variable Declaration Syntax
 
 ```swift
 // Swift Variable Declaration Syntax:
@@ -362,326 +648,45 @@ if ${1:condition} {
 // - Use 'var' only when you need to reassign the variable.
 ```
 
-## Swift While Loop
+## [cotrVarInt](/snippets/cotrvarint)
 
-### [cotrWhileLoop](/snippets/cotrWhileLoop)
+Swift Create Integer Variable
 
 ```swift
-while ${1:condition} {
-  ${2:// Your code here}
+var ${1:myInt} = ${2:0};
+```
+
+## [cotrFuncAnon](/snippets/cotrfuncanon)
+
+Swift Anonymous Function
+
+```swift
+{ (${1:parameters}) -> ${2:ReturnType} in
+    ${3:// Your code here}
 }
 ```
 
-## Swift Function Args
+## [cotrInterpolate](/snippets/cotrinterpolate)
 
-### [cotrFuncArgs](/snippets/cotrFuncArgs)
-
-```swift
-// In Swift, functions can have arguments with default values.
-func ${2:myFunction}(${3:arg1}: ${4:Type1}, ${5:arg2}: ${6:Type2} = ${7:defaultValue}) -> ${1:Void} {
-    ${8:// Your code here}
-}
-```
-
-## Swift Boolean Operators
-
-### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
-
-```swift
-// Swift Boolean Operators
-// Logical AND: &&
-// Logical OR: ||
-// Logical NOT: !
-// Equality: ==
-// Inequality: !=
-// Greater than: >
-// Less than: <
-// Greater than or equal to: >=
-// Less than or equal to: <=
-```
-
-## Swift Print
-
-### [cotrPrint](/snippets/cotrPrint)
-
-```swift
-print(${1:"Your message here"})
-```
-
-## Swift Create Dictionary Variable
-
-### [cotrVarMap](/snippets/cotrVarMap)
-
-```swift
-var ${1:myDictionary} = [
-  ${2:'key1'}: ${3:'value1'},
-  ${4:'key2'}: ${5:'value2'}
-];
-```
-
-## Swift Closure
-
-### [cotrLambda](/snippets/cotrLambda)
-
-```swift
-let ${1:myClosure} = { (${2:parameters}) -> ${3:ReturnType} in
-  ${4:return expression}
-}
-```
-
-## Swift Throw Exception
-
-### [cotrThrow](/snippets/cotrThrow)
-
-```swift
-throw ${1:Error('Your message here')};
-```
-
-## Swift If Else Statement
-
-### [cotrIfElse](/snippets/cotrIfElse)
-
-```swift
-if ${1:condition} {
-  ${2:// Your code here}
-} else if ${3:condition} {
-  ${4:// Your code here}
-} else {
-  ${5:// Your code here}
-}
-```
-
-## Swift Type Conversion
-
-### [cotrTypeConvert](/snippets/cotrTypeConvert)
-
-```swift
-// Swift Type Conversion:
-
-// Swift emphasizes explicit type conversions for safety.
-
-// Explicit conversions:
-// - variable as? TargetType  // Safe cast (returns nil if conversion fails)
-// - TargetType(variable)  // Forced cast (can crash if conversion fails)
-
-// Note:
-// - Use safe casts (as?) whenever possible.
-// - Only use forced casts (TargetType()) when you are certain the conversion will succeed.
-```
-
-## Swift Float Type
-
-### [cotrTypesNumAlt](/snippets/cotrTypesNumAlt)
-
-```swift
-Float
-```
-
-## Swift Create String Variable
-
-### [cotrVarString](/snippets/cotrVarString)
-
-```swift
-var ${1:myString} = ${2:'Your string here'};
-```
-
-## Swift Create Double Variable
-
-### [cotrVarNum](/snippets/cotrVarNum)
-
-```swift
-var ${1:myDouble} = ${2:0.0};
-```
-
-## Swift Generate Array
-
-### [cotrGenList](/snippets/cotrGenList)
-
-```swift
-var ${1:myArray} = Array(repeating: ${2:'item'}, count: ${3:5});
-```
-
-## Swift Print Multi
-
-### [cotrPrintMulti](/snippets/cotrPrintMulti)
-
-```swift
-print("""
-${1:Line 1}
-${2:Line 2}
-${3:Line 3}
-""")
-```
-
-## Swift Equal To
-
-### [cotrEqual](/snippets/cotrEqual)
-
-```swift
-==
-```
-
-## Swift Boolean False
-
-### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
-
-```swift
-false
-```
-
-## Swift Interpolate String
-
-### [cotrInterpolate](/snippets/cotrInterpolate)
+Swift Interpolate String
 
 ```swift
 "\(${1:variable})"
 ```
 
-## Swift Integer Type
+## [cotrConcat](/snippets/cotrconcat)
 
-### [cotrTypesInt](/snippets/cotrTypesInt)
+Swift Concatenate Strings
 
 ```swift
-Int
+"${1:string1}" + "${2:string2}"
 ```
 
-## Swift Create Typed Variable
+## [cotrVarBool](/snippets/cotrvarbool)
 
-### [cotrVarTyped](/snippets/cotrVarTyped)
-
-```swift
-var ${1:myVar}: ${2:Type} = $3
-```
-
-## Swift Function
-
-### [cotrFunc](/snippets/cotrFunc)
+Swift Create Boolean Variable
 
 ```swift
-func ${2:myFunction}(${3:parameters}) -> ${1:Void} {
-    ${4:// Your code here}
-}
-```
-
-## Swift Enum
-
-### [cotrEnum](/snippets/cotrEnum)
-
-```swift
-enum ${1:MyEnum} {
-  ${2:value1},
-  ${3:value2},
-  // Add more values here
-}
-```
-
-## Swift Create Variable
-
-### [cotrVar](/snippets/cotrVar)
-
-```swift
-var ${1:myVar} = $2;
-```
-
-## Swift Create Date Variable
-
-### [cotrVarDate](/snippets/cotrVarDate)
-
-```swift
-let ${1:myDate} = Date()
-```
-
-## Swift Mathematical Operators
-
-### [cotrOperators](/snippets/cotrOperators)
-
-```swift
-// Swift Mathematical Operators
-// Addition: +
-// Subtraction: -
-// Multiplication: *
-// Division: /
-// Modulus (Remainder): %
-// Exponentiation: **
-// Increment: Use += 1
-// Decrement: Use -= 1
-// Assignment: =
-// Addition assignment: +=
-// Subtraction assignment: -=
-// Multiplication assignment: *=
-// Division assignment: /=
-// Modulus assignment: %=
-// Exponentiation assignment: **=
-```
-
-## Swift Type Check
-
-### [cotrTypeCheck](/snippets/cotrTypeCheck)
-
-```swift
-type(of: ${1:variable})
-```
-
-## Swift Boolean Type
-
-### [cotrTypesBool](/snippets/cotrTypesBool)
-
-```swift
-Bool
-```
-
-## Swift Null Type
-
-### [cotrTypesNull](/snippets/cotrTypesNull)
-
-```swift
-nil
-```
-
-## Swift Try Catch
-
-### [cotrTryCatch](/snippets/cotrTryCatch)
-
-```swift
-do {
-  ${1:// Your code here}
-} catch ${2:exception} {
-  ${3:// Your code here}
-}
-```
-
-## Swift Boolean True
-
-### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
-
-```swift
-true
-```
-
-## Swift Date Now
-
-### [cotrNow](/snippets/cotrNow)
-
-```swift
-Date()
-```
-
-## Swift Create Nullable Variable
-
-### [cotrVarNullable](/snippets/cotrVarNullable)
-
-```swift
-var ${1:myVar}: ${2:Type}? = $3
-```
-
-## Swift Function Syntax
-
-### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
-
-```swift
-// Swift Function Syntax
-// Basic function: func functionName(parameters) -> ReturnType { ... }
-// Function with arguments: func functionName(arg1: Type1, arg2: Type2, ...) -> ReturnType { ... }
-// Function with named arguments: func functionName(arg1Name arg1: Type1, arg2Name arg2: Type2, ...) -> ReturnType { ... }
+var ${1:myBool} = ${2:true};
 ```
 

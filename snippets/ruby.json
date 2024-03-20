@@ -245,7 +245,7 @@
     "description": "The Ruby nil value."
   },
   "Ruby Dynamic Type": {
-    "prefix": ["cotrDynamic", "dynamicType", "typeDynamic", "anyType", "typeAny"],
+        "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": ["# Ruby is a dynamically typed language."],
     "description": "Ruby is a dynamically typed language."
   },

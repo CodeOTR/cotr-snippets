@@ -235,7 +235,7 @@
   },
 
   "Perl Dynamic Type": {
-    "prefix": ["cotrTypesDynamic", "cotrDynamic"],
+            "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": ["# Perl is a dynamically typed language."],
     "description": "Perl is a dynamically typed language."
   },

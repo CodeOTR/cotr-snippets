@@ -1,70 +1,182 @@
-## Bash Type Comparison
+---
+title: Shellscript
+description: Shellscript snippets on the rocks.
+---
 
-### [cotrTypeCompare](/snippets/cotrTypeCompare)
+## [cotrTypesBoolFalse](/snippets/cotrtypesboolfalse)
+
+Bash Boolean False
+
+```shellscript
+# Bash represents false as 0.
+```
+
+## [cotrVarString](/snippets/cotrvarstring)
+
+Bash Create String Variable
+
+```shellscript
+# Assign a string value:
+${1:myString}=${2:'myValue'}
+```
+
+## [cotrVar](/snippets/cotrvar)
+
+Bash Variable
+
+```shellscript
+${1:myVar}=${2:value}
+```
+
+## [cotrIf](/snippets/cotrif)
+
+Bash If Statement
+
+```shellscript
+if [ ${1:condition} ]; then
+  ${2:// Your code here}
+fi
+```
+
+## [cotrTypeCompare](/snippets/cotrtypecompare)
+
+Bash Type Comparison
 
 ```shellscript
 # Bash doesn't have direct type comparison, but you can use file or grep for basic checks.
 ```
 
-## Bash Number Type
+## [cotrStructure](/snippets/cotrstructure)
 
-### [cotrTypesNum](/snippets/cotrTypesNum)
-
-```shellscript
-# Bash treats numbers as either integers or floating-point values.
-```
-
-## Bash Generate Map
-
-### [cotrGenMap](/snippets/cotrGenMap)
+Bash Project Structure (High-Level)
 
 ```shellscript
-# Bash doesn't have built-in map generation, but you can use associative arrays:
-declare -A ${1:myMap}; for i in {1..${2:10}}; do myMap[key$i]=value$i; done
+# Recommended High-Level Bash Project Structure:
+
+# - bin/
+#   - Contains executable scripts.
+# - lib/
+#   - Contains reusable functions and libraries.
+# - src/
+#   - Contains source code for scripts.
+# - test/
+#   - Contains unit tests.
+
+# Note:
+# - This is a basic structure; adjust based on project complexity and preferences.
 ```
 
-## Bash Dynamic Type
+## [cotrStructureFeatures](/snippets/cotrstructurefeatures)
 
-### [cotrTypesDynamic](/snippets/cotrTypesDynamic)
+Bash Project Structure (Feature/Module)
 
 ```shellscript
-# Bash is dynamically typed; variables can hold different types of values.
+# Organize source code by feature or module within src/:
+
+# - src/
+#   - rendering/
+#     - Contains scripts for rendering features.
+#   - physics/
+#     - Contains scripts for physics features.
+#   - networking/
+#     - Contains scripts for networking features.
+#   - ... (Organize by feature or module)
+
+# Note:
+# - This approach promotes modularity and is suitable for larger projects.
 ```
 
-## Bash Create Multi-Line String Variable
+## [cotrTypeConvert](/snippets/cotrtypeconvert)
 
-### [cotrVarStringMulti](/snippets/cotrVarStringMulti)
+Bash Type Conversion
 
 ```shellscript
-# Use a here document for multi-line strings:
-${1:myString}<<EOF
-${2:Line 1}
-${3:Line 2}
-${4:Line 3}
-EOF
+# Bash is dynamically typed, so explicit conversion is often not needed.
+# However, you can use tools like awk or bc for specific conversions.
 ```
 
-## Bash Equal To
+## [cotrTypes](/snippets/cotrtypes)
 
-### [cotrEqual](/snippets/cotrEqual)
+Bash Types
 
 ```shellscript
-# Bash uses '==' for string equality and '-eq' for numeric equality:
-[ ${1:var1} == ${2:var2} ]
+# Bash is dynamically typed, but common data types include:
+- string: Textual data
+- integer: Numeric data (whole numbers)
+- float: Numeric data (decimals)
+- array: Ordered collection of values
+- associative array: Key-value pairs
 ```
 
-## Bash Date Now
+## [cotrVarStatic](/snippets/cotrvarstatic)
 
-### [cotrNow](/snippets/cotrNow)
+Bash Static Variable
 
 ```shellscript
-# Get the current date and time:
-now=$(date)
+# Bash doesn't have static variables in the same way as some other languages.
 ```
 
-## Bash Mathematical Operators
+## [cotrInfo](/snippets/cotrinfo)
 
-### [cotrOperators](/snippets/cotrOperators)
+Bash Info
+
+```shellscript
+Typing: Dynamically typed
+Paradigm: Imperative
+Compilation: Interpreted
+Concurrency: No
+```
+
+## [cotrConst](/snippets/cotrconst)
+
+Bash Constant
+
+```shellscript
+# Bash uses readonly variables for constants:
+readonly ${1:myConst}=${2:value}
+```
+
+## [cotrFuncArrow](/snippets/cotrfuncarrow)
+
+Bash Arrow Function
+
+```shellscript
+# Bash doesn't have arrow functions.
+```
+
+## [cotrTypesBool](/snippets/cotrtypesbool)
+
+Bash Boolean Type
+
+```shellscript
+# Bash uses 0 for false and non-zero values for true.
+```
+
+## [cotrCommentMulti](/snippets/cotrcommentmulti)
+
+Bash Multi-Line Comment
+
+```shellscript
+: <<'END'
+${1:Your comment here}
+${2:Your comment here}
+${3:Your comment here}
+END
+```
+
+## [cotrFunc](/snippets/cotrfunc)
+
+Bash Function
+
+```shellscript
+${2:myFunction}() {
+  ${3:// Your code here}
+}
+```
+
+## [cotrOperators](/snippets/cotroperators)
+
+Bash Mathematical Operators
 
 ```shellscript
 # Bash Mathematical Operators:
@@ -85,53 +197,123 @@ now=$(date)
 - Exponentiation assignment: **=
 ```
 
-## Bash Boolean Operators
+## [cotrRead](/snippets/cotrread)
 
-### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
-
-```shellscript
-# Bash Boolean Operators:
-- Logical AND: &&
-- Logical OR: ||
-- Logical NOT: !
-- Equality: ==
-- Inequality: !=
-- Greater than: -gt
-- Less than: -lt
-- Greater than or equal to: -ge
-- Less than or equal to: -le
-```
-
-## Bash Create Date Variable
-
-### [cotrVarDate](/snippets/cotrVarDate)
+Bash Read Input
 
 ```shellscript
-# Bash doesn't have a dedicated date type, but you can store date strings:
-${1:myDate}=\$(date)
+read -p '${1:Prompt: }' ${2:varName}
 ```
 
-## Bash Print Multi
+## [cotrTypeCheck](/snippets/cotrtypecheck)
 
-### [cotrPrintMulti](/snippets/cotrPrintMulti)
+Bash Type Check
 
 ```shellscript
-# Use echo with -e for multi-line output:
-echo -e "${1:Line 1}\n${2:Line 2}\n${3:Line 3}"
+# Bash is dynamically typed, but you can use file or grep for basic checks:
+file ${1:variable} | grep -q '${2:type}'
 ```
 
-## Bash Create List Variable
+## [cotrTypesInt](/snippets/cotrtypesint)
 
-### [cotrVarList](/snippets/cotrVarList)
+Bash Integer Type
 
 ```shellscript
-# Create an array (list):
-${1:myList}=( ${2:item1} ${3:item2} ${4:item3} )
+# Bash treats integers as numeric values without decimals.
 ```
 
-## Bash Switch Statement
+## [cotrPrint](/snippets/cotrprint)
 
-### [cotrSwitch](/snippets/cotrSwitch)
+Bash Print
+
+```shellscript
+echo ${1:'Your message here'}
+```
+
+## [cotrFuncLambda](/snippets/cotrfunclambda)
+
+Bash Lambda
+
+```shellscript
+# Bash doesn't have lambda functions.
+```
+
+## [cotrTypesDynamic](/snippets/cotrtypesdynamic)
+
+Bash Dynamic Type
+
+```shellscript
+# Bash is dynamically typed; variables can hold different types of values.
+```
+
+## [cotrTypesList](/snippets/cotrtypeslist)
+
+Bash List Type
+
+```shellscript
+# Bash uses arrays for lists:
+myList=(item1 item2 item3)
+```
+
+## [cotrVarBool](/snippets/cotrvarbool)
+
+Bash Create Boolean Variable
+
+```shellscript
+# Bash uses 0 for false and non-zero values for true:
+${1:myBoolean}=${2:0}
+```
+
+## [cotrIfElse](/snippets/cotrifelse)
+
+Bash If Else Statement
+
+```shellscript
+if [ ${1:condition} ]; then
+  ${2:// Your code here}
+else
+  ${3:// Your code here}
+fi
+```
+
+## [cotrConcat](/snippets/cotrconcat)
+
+Bash Concatenate Strings
+
+```shellscript
+# Bash uses string juxtaposition for concatenation:
+${1:var1}${2:var2}
+```
+
+## [cotrFuncArgsNamed](/snippets/cotrfuncargsnamed)
+
+Bash Function Named Args
+
+```shellscript
+# Bash doesn't directly support named arguments, but you can simulate them using associative arrays or options parsing.
+```
+
+## [cotrGenList](/snippets/cotrgenlist)
+
+Bash Generate List
+
+```shellscript
+# Bash doesn't have built-in list generation, but you can use loops or command substitution:
+${1:myList}=( $(for i in {1..${2:10}}; do echo item$i; done) )
+```
+
+## [cotrNotEqual](/snippets/cotrnotequal)
+
+Bash Not Equal To
+
+```shellscript
+# Bash uses '!=' for string inequality and '-ne' for numeric inequality:
+[ ${1:var1} != ${2:var2} ]
+```
+
+## [cotrSwitch](/snippets/cotrswitch)
+
+Bash Switch Statement
 
 ```shellscript
 case ${1:variable} in
@@ -147,43 +329,232 @@ case ${1:variable} in
 esac
 ```
 
-## Bash Constant
+## [cotrOperatorsBool](/snippets/cotroperatorsbool)
 
-### [cotrConst](/snippets/cotrConst)
-
-```shellscript
-# Bash uses readonly variables for constants:
-readonly ${1:myConst}=${2:value}
-```
-
-## Bash Arrow Function
-
-### [cotrFuncArrow](/snippets/cotrFuncArrow)
+Bash Boolean Operators
 
 ```shellscript
-# Bash doesn't have arrow functions.
+# Bash Boolean Operators:
+- Logical AND: &&
+- Logical OR: ||
+- Logical NOT: !
+- Equality: ==
+- Inequality: !=
+- Greater than: -gt
+- Less than: -lt
+- Greater than or equal to: -ge
+- Less than or equal to: -le
 ```
 
-## Bash Lambda
+## [cotrThrow](/snippets/cotrthrow)
 
-### [cotrFuncLambda](/snippets/cotrFuncLambda)
+Bash Throw Exception
 
 ```shellscript
-# Bash doesn't have lambda functions.
+# Bash doesn't have exceptions, but you can exit with an error message:
+echo "Error: ${1:Your message here}" >&2; exit 1
 ```
 
-## Bash Interpolate String
+## [cotrVarNum](/snippets/cotrvarnum)
 
-### [cotrInterpolate](/snippets/cotrInterpolate)
+Bash Create Number Variable
 
 ```shellscript
-# Bash uses double quotes for variable interpolation:
-echo "Hello, ${1:name}!"
+# Assign a numeric value:
+${1:myNumber}=${2:10}
 ```
 
-## Bash Project Structure (File Type)
+## [cotrVarMap](/snippets/cotrvarmap)
 
-### [cotrStructureFiles](/snippets/cotrStructureFiles)
+Bash Create Map Variable
+
+```shellscript
+# Create an associative array (map):
+declare -A ${1:myMap}
+${1:myMap}[${2:key1}]=${3:value1}
+${1:myMap}[${4:key2}]=${5:value2}
+```
+
+## [cotrVarStringMulti](/snippets/cotrvarstringmulti)
+
+Bash Create Multi-Line String Variable
+
+```shellscript
+# Use a here document for multi-line strings:
+${1:myString}<<EOF
+${2:Line 1}
+${3:Line 2}
+${4:Line 3}
+EOF
+```
+
+## [cotrVarTyped](/snippets/cotrvartyped)
+
+Bash Create Typed Variable
+
+```shellscript
+# Bash is dynamically typed, so variables don't have explicit types.
+```
+
+## [cotrShebang](/snippets/cotrshebang)
+
+Bash Shebang
+
+```shellscript
+#!/bin/bash
+```
+
+## [cotrTryCatch](/snippets/cotrtrycatch)
+
+Bash Try Catch
+
+```shellscript
+# Bash doesn't have try/catch, but you can use set -e and trap ERR:
+set -e; trap 'echo "Error: ${1:Your message here}" >&2; exit 1' ERR; ${2:// Your code here}
+```
+
+## [cotrTypesString](/snippets/cotrtypesstring)
+
+Bash String Type
+
+```shellscript
+# Bash represents strings as sequences of characters.
+```
+
+## [cotrVarDate](/snippets/cotrvardate)
+
+Bash Create Date Variable
+
+```shellscript
+# Bash doesn't have a dedicated date type, but you can store date strings:
+${1:myDate}=\$(date)
+```
+
+## [cotrVarList](/snippets/cotrvarlist)
+
+Bash Create List Variable
+
+```shellscript
+# Create an array (list):
+${1:myList}=( ${2:item1} ${3:item2} ${4:item3} )
+```
+
+## [cotrGenMap](/snippets/cotrgenmap)
+
+Bash Generate Map
+
+```shellscript
+# Bash doesn't have built-in map generation, but you can use associative arrays:
+declare -A ${1:myMap}; for i in {1..${2:10}}; do myMap[key$i]=value$i; done
+```
+
+## [cotrPrintMulti](/snippets/cotrprintmulti)
+
+Bash Print Multi
+
+```shellscript
+# Use echo with -e for multi-line output:
+echo -e "${1:Line 1}\n${2:Line 2}\n${3:Line 3}"
+```
+
+## [cotrTypesMap](/snippets/cotrtypesmap)
+
+Bash Map Type
+
+```shellscript
+# Bash uses associative arrays for maps:
+declare -A myMap; myMap[key1]=value1; myMap[key2]=value2
+```
+
+## [cotrFuncArgs](/snippets/cotrfuncargs)
+
+Bash Function Args
+
+```shellscript
+${2:myFunction}() {
+  local ${3:arg1}=${4:\$1}
+  local ${5:arg2}=${6:\$2}
+  ${7:// Your code here}
+}
+```
+
+## [cotrNow](/snippets/cotrnow)
+
+Bash Date Now
+
+```shellscript
+# Get the current date and time:
+now=$(date)
+```
+
+## [cotrVarNullable](/snippets/cotrvarnullable)
+
+Bash Create Nullable Variable
+
+```shellscript
+# Bash doesn't have null, but you can use an empty string or a special value:
+${1:myVar}=${2:''}
+```
+
+## [cotrVarSyntax](/snippets/cotrvarsyntax)
+
+Bash Variable Declaration Syntax
+
+```shellscript
+# Bash Variable Declaration Syntax:
+
+# - varName=value: Assigns a value to a variable.
+# - declare varName: Declares a variable without assigning a value.
+# - readonly varName=value: Creates a read-only variable (constant).
+```
+
+## [cotrComment](/snippets/cotrcomment)
+
+Bash Comment
+
+```shellscript
+# ${1:Your comment here}
+```
+
+## [cotrEntry](/snippets/cotrentry)
+
+Bash Entry Point
+
+```shellscript
+# Bash scripts typically start with the shebang line:
+#!/bin/bash
+```
+
+## [cotrFuncAnon](/snippets/cotrfuncanon)
+
+Bash Anonymous Function
+
+```shellscript
+# Bash doesn't have true anonymous functions, but you can use function expressions:
+${1:myFunction}() { ${2:// Your code here} }
+```
+
+## [cotrCase](/snippets/cotrcase)
+
+Bash Case Statement
+
+```shellscript
+case ${1:variable} in
+  ${2:pattern1})
+    ${3:// Your code here}
+    ;;
+  ${4:pattern2})
+    ${5:// Your code here}
+    ;;
+  *)
+    ${6:// Your code here}
+    ;;
+esac
+```
+
+## [cotrStructureFiles](/snippets/cotrstructurefiles)
+
+Bash Project Structure (File Type)
 
 ```shellscript
 # Organize source code by file type within src/:
@@ -201,259 +572,34 @@ echo "Hello, ${1:name}!"
 # - This approach can be helpful for smaller projects or specific use cases.
 ```
 
-## Bash Try Catch
+## [cotrTernary](/snippets/cotrternary)
 
-### [cotrTryCatch](/snippets/cotrTryCatch)
-
-```shellscript
-# Bash doesn't have try/catch, but you can use set -e and trap ERR:
-set -e; trap 'echo "Error: ${1:Your message here}" >&2; exit 1' ERR; ${2:// Your code here}
-```
-
-## Bash Map Type
-
-### [cotrTypesMap](/snippets/cotrTypesMap)
+Bash Ternary Operator
 
 ```shellscript
-# Bash uses associative arrays for maps:
-declare -A myMap; myMap[key1]=value1; myMap[key2]=value2
+# Bash doesn't have a ternary operator, but you can use an if statement:
+${1:condition} && ${2:trueValue} || ${3:falseValue}
 ```
 
-## Bash Comment
+## [cotrTypesDate](/snippets/cotrtypesdate)
 
-### [cotrComment](/snippets/cotrComment)
-
-```shellscript
-# ${1:Your comment here}
-```
-
-## Bash Variable
-
-### [cotrVar](/snippets/cotrVar)
-
-```shellscript
-${1:myVar}=${2:value}
-```
-
-## Bash Concatenate Strings
-
-### [cotrConcat](/snippets/cotrConcat)
-
-```shellscript
-# Bash uses string juxtaposition for concatenation:
-${1:var1}${2:var2}
-```
-
-## Bash Anonymous Function
-
-### [cotrFuncAnon](/snippets/cotrFuncAnon)
-
-```shellscript
-# Bash doesn't have true anonymous functions, but you can use function expressions:
-${1:myFunction}() { ${2:// Your code here} }
-```
-
-## Bash Throw Exception
-
-### [cotrThrow](/snippets/cotrThrow)
-
-```shellscript
-# Bash doesn't have exceptions, but you can exit with an error message:
-echo "Error: ${1:Your message here}" >&2; exit 1
-```
-
-## Bash Shebang
-
-### [cotrShebang](/snippets/cotrShebang)
-
-```shellscript
-#!/bin/bash
-```
-
-## Bash For Loop
-
-### [cotrForLoop](/snippets/cotrForLoop)
-
-```shellscript
-for ${1:i} in ${2:list}; do
-  ${3:// Your code here}
-done
-```
-
-## Bash Create Boolean Variable
-
-### [cotrVarBool](/snippets/cotrVarBool)
-
-```shellscript
-# Bash uses 0 for false and non-zero values for true:
-${1:myBoolean}=${2:0}
-```
-
-## Bash Project Structure (Feature/Module)
-
-### [cotrStructureFeatures](/snippets/cotrStructureFeatures)
-
-```shellscript
-# Organize source code by feature or module within src/:
-
-# - src/
-#   - rendering/
-#     - Contains scripts for rendering features.
-#   - physics/
-#     - Contains scripts for physics features.
-#   - networking/
-#     - Contains scripts for networking features.
-#   - ... (Organize by feature or module)
-
-# Note:
-# - This approach promotes modularity and is suitable for larger projects.
-```
-
-## Bash Types
-
-### [cotrTypes](/snippets/cotrTypes)
-
-```shellscript
-# Bash is dynamically typed, but common data types include:
-- string: Textual data
-- integer: Numeric data (whole numbers)
-- float: Numeric data (decimals)
-- array: Ordered collection of values
-- associative array: Key-value pairs
-```
-
-## Bash Boolean True
-
-### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
-
-```shellscript
-# Bash represents true as any non-zero value.
-```
-
-## Bash String Type
-
-### [cotrTypesString](/snippets/cotrTypesString)
-
-```shellscript
-# Bash represents strings as sequences of characters.
-```
-
-## Bash Date Type
-
-### [cotrTypesDate](/snippets/cotrTypesDate)
+Bash Date Type
 
 ```shellscript
 # Bash doesn't have a dedicated date type, but you can use the 'date' command for date manipulation.
 ```
 
-## Bash List Type
+## [cotrTypesNum](/snippets/cotrtypesnum)
 
-### [cotrTypesList](/snippets/cotrTypesList)
-
-```shellscript
-# Bash uses arrays for lists:
-myList=(item1 item2 item3)
-```
-
-## Bash Create Number Variable
-
-### [cotrVarNum](/snippets/cotrVarNum)
+Bash Number Type
 
 ```shellscript
-# Assign a numeric value:
-${1:myNumber}=${2:10}
+# Bash treats numbers as either integers or floating-point values.
 ```
 
-## Bash Variable Declaration Syntax
+## [cotrWhileLoop](/snippets/cotrwhileloop)
 
-### [cotrVarSyntax](/snippets/cotrVarSyntax)
-
-```shellscript
-# Bash Variable Declaration Syntax:
-
-# - varName=value: Assigns a value to a variable.
-# - declare varName: Declares a variable without assigning a value.
-# - readonly varName=value: Creates a read-only variable (constant).
-```
-
-## Bash Create Typed Variable
-
-### [cotrVarTyped](/snippets/cotrVarTyped)
-
-```shellscript
-# Bash is dynamically typed, so variables don't have explicit types.
-```
-
-## Bash If Else Statement
-
-### [cotrIfElse](/snippets/cotrIfElse)
-
-```shellscript
-if [ ${1:condition} ]; then
-  ${2:// Your code here}
-else
-  ${3:// Your code here}
-fi
-```
-
-## Bash Project Structure (High-Level)
-
-### [cotrStructure](/snippets/cotrStructure)
-
-```shellscript
-# Recommended High-Level Bash Project Structure:
-
-# - bin/
-#   - Contains executable scripts.
-# - lib/
-#   - Contains reusable functions and libraries.
-# - src/
-#   - Contains source code for scripts.
-# - test/
-#   - Contains unit tests.
-
-# Note:
-# - This is a basic structure; adjust based on project complexity and preferences.
-```
-
-## Bash Type Conversion
-
-### [cotrTypeConvert](/snippets/cotrTypeConvert)
-
-```shellscript
-# Bash is dynamically typed, so explicit conversion is often not needed.
-# However, you can use tools like awk or bc for specific conversions.
-```
-
-## Bash Integer Type
-
-### [cotrTypesInt](/snippets/cotrTypesInt)
-
-```shellscript
-# Bash treats integers as numeric values without decimals.
-```
-
-## Bash Create Nullable Variable
-
-### [cotrVarNullable](/snippets/cotrVarNullable)
-
-```shellscript
-# Bash doesn't have null, but you can use an empty string or a special value:
-${1:myVar}=${2:''}
-```
-
-## Bash Create String Variable
-
-### [cotrVarString](/snippets/cotrVarString)
-
-```shellscript
-# Assign a string value:
-${1:myString}=${2:'myValue'}
-```
-
-## Bash While Loop
-
-### [cotrWhileLoop](/snippets/cotrWhileLoop)
+Bash While Loop
 
 ```shellscript
 while [ ${1:condition} ]; do
@@ -461,93 +607,9 @@ while [ ${1:condition} ]; do
 done
 ```
 
-## Bash Function Named Args
+## [cotrFuncSyntax](/snippets/cotrfuncsyntax)
 
-### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
-
-```shellscript
-# Bash doesn't directly support named arguments, but you can simulate them using associative arrays or options parsing.
-```
-
-## Bash Generate List
-
-### [cotrGenList](/snippets/cotrGenList)
-
-```shellscript
-# Bash doesn't have built-in list generation, but you can use loops or command substitution:
-${1:myList}=( $(for i in {1..${2:10}}; do echo item$i; done) )
-```
-
-## Bash Ternary Operator
-
-### [cotrTernary](/snippets/cotrTernary)
-
-```shellscript
-# Bash doesn't have a ternary operator, but you can use an if statement:
-${1:condition} && ${2:trueValue} || ${3:falseValue}
-```
-
-## Bash Boolean Type
-
-### [cotrTypesBool](/snippets/cotrTypesBool)
-
-```shellscript
-# Bash uses 0 for false and non-zero values for true.
-```
-
-## Bash If Statement
-
-### [cotrIf](/snippets/cotrIf)
-
-```shellscript
-if [ ${1:condition} ]; then
-  ${2:// Your code here}
-fi
-```
-
-## Bash Function
-
-### [cotrFunc](/snippets/cotrFunc)
-
-```shellscript
-${2:myFunction}() {
-  ${3:// Your code here}
-}
-```
-
-## Bash Function Args
-
-### [cotrFuncArgs](/snippets/cotrFuncArgs)
-
-```shellscript
-${2:myFunction}() {
-  local ${3:arg1}=${4:\$1}
-  local ${5:arg2}=${6:\$2}
-  ${7:// Your code here}
-}
-```
-
-## Bash Case Statement
-
-### [cotrCase](/snippets/cotrCase)
-
-```shellscript
-case ${1:variable} in
-  ${2:pattern1})
-    ${3:// Your code here}
-    ;;
-  ${4:pattern2})
-    ${5:// Your code here}
-    ;;
-  *)
-    ${6:// Your code here}
-    ;;
-esac
-```
-
-## Bash Function Syntax
-
-### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
+Bash Function Syntax
 
 ```shellscript
 # Bash Function Syntax:
@@ -556,114 +618,57 @@ function ${1:functionName} {
 }
 ```
 
-## Bash Null Type
+## [cotrTypesBoolTrue](/snippets/cotrtypesbooltrue)
 
-### [cotrTypesNull](/snippets/cotrTypesNull)
+Bash Boolean True
+
+```shellscript
+# Bash represents true as any non-zero value.
+```
+
+## [cotrInterpolate](/snippets/cotrinterpolate)
+
+Bash Interpolate String
+
+```shellscript
+# Bash uses double quotes for variable interpolation:
+echo "Hello, ${1:name}!"
+```
+
+## [cotrTypesNull](/snippets/cotrtypesnull)
+
+Bash Null Type
 
 ```shellscript
 # Bash doesn't have a dedicated null type, but you can use an empty string or a special value like 'null' to represent null.
 ```
 
-## Bash Create Map Variable
+## [cotrForLoop](/snippets/cotrforloop)
 
-### [cotrVarMap](/snippets/cotrVarMap)
-
-```shellscript
-# Create an associative array (map):
-declare -A ${1:myMap}
-${1:myMap}[${2:key1}]=${3:value1}
-${1:myMap}[${4:key2}]=${5:value2}
-```
-
-## Bash Multi-Line Comment
-
-### [cotrCommentMulti](/snippets/cotrCommentMulti)
+Bash For Loop
 
 ```shellscript
-: <<'END'
-${1:Your comment here}
-${2:Your comment here}
-${3:Your comment here}
-END
+for ${1:i} in ${2:list}; do
+  ${3:// Your code here}
+done
 ```
 
-## Bash Read Input
+## [cotrEqual](/snippets/cotrequal)
 
-### [cotrRead](/snippets/cotrRead)
+Bash Equal To
 
 ```shellscript
-read -p '${1:Prompt: }' ${2:varName}
+# Bash uses '==' for string equality and '-eq' for numeric equality:
+[ ${1:var1} == ${2:var2} ]
 ```
 
-## Bash Not Equal To
+## [cotrForIn](/snippets/cotrforin)
 
-### [cotrNotEqual](/snippets/cotrNotEqual)
-
-```shellscript
-# Bash uses '!=' for string inequality and '-ne' for numeric inequality:
-[ ${1:var1} != ${2:var2} ]
-```
-
-## Bash Boolean False
-
-### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
-
-```shellscript
-# Bash represents false as 0.
-```
-
-## Bash Static Variable
-
-### [cotrVarStatic](/snippets/cotrVarStatic)
-
-```shellscript
-# Bash doesn't have static variables in the same way as some other languages.
-```
-
-## Bash Info
-
-### [cotrInfo](/snippets/cotrInfo)
-
-```shellscript
-Typing: Dynamically typed
-Paradigm: Imperative
-Compilation: Interpreted
-Concurrency: No
-```
-
-## Bash Print
-
-### [cotrPrint](/snippets/cotrPrint)
-
-```shellscript
-echo ${1:'Your message here'}
-```
-
-## Bash Entry Point
-
-### [cotrEntry](/snippets/cotrEntry)
-
-```shellscript
-# Bash scripts typically start with the shebang line:
-#!/bin/bash
-```
-
-## Bash For...In Loop
-
-### [cotrForIn](/snippets/cotrForIn)
+Bash For...In Loop
 
 ```shellscript
 for ${1:item} in ${2:list}; do
   ${3:// Your code here}
 done
-```
-
-## Bash Type Check
-
-### [cotrTypeCheck](/snippets/cotrTypeCheck)
-
-```shellscript
-# Bash is dynamically typed, but you can use file or grep for basic checks:
-file ${1:variable} | grep -q '${2:type}'
 ```
 

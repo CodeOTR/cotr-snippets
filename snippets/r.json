@@ -240,7 +240,7 @@
   },
 
   "R Dynamic Type": {
-    "prefix": ["cotrDynamic", "dynamicType", "typeDynamic", "anyType", "typeAny"],
+        "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": ["# R is a dynamically typed language."],
     "description": "R is a dynamically typed language."
   },

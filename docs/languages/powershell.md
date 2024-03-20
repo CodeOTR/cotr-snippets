@@ -1,61 +1,68 @@
-## PowerShell Boolean True
+---
+title: Powershell
+description: Powershell snippets on the rocks.
+---
 
-### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
+## [cotrWhileLoop](/snippets/cotrwhileloop)
+
+PowerShell While Loop
+
+```powershell
+while (${1:condition}) {
+  # Your code here
+}
+```
+
+## [cotrEqual](/snippets/cotrequal)
+
+PowerShell Equal To
+
+```powershell
+-eq
+```
+
+## [cotrNotEqual](/snippets/cotrnotequal)
+
+PowerShell Not Equal To
+
+```powershell
+-ne
+```
+
+## [cotrTypesBoolTrue](/snippets/cotrtypesbooltrue)
+
+PowerShell Boolean True
 
 ```powershell
 $true
 ```
 
-## PowerShell For Loop
+## [cotrVarStringMulti](/snippets/cotrvarstringmulti)
 
-### [cotrForLoop](/snippets/cotrForLoop)
+PowerShell Create Multi-Line String Variable
 
 ```powershell
-for ($${1:i} = 0; $1 -lt ${2:10}; $1++) {
+$${1:myString} = @"
+${2:Line 1}
+${3:Line 2}
+${4:Line 3}
+"@;
+```
+
+## [cotrTypeCompare](/snippets/cotrtypecompare)
+
+PowerShell Type Comparison
+
+```powershell
+# Check if two variables have the same type:
+if (${1:variable1}.GetType() -eq ${2:variable2}.GetType()) {
   # Your code here
 }
 ```
 
-## PowerShell Create Variable
+## [cotrTypes](/snippets/cotrtypes)
 
-### [cotrVar](/snippets/cotrVar)
-
-```powershell
-$${1:myVar} = $2
-```
-
-## PowerShell Comment
-
-### [cotrComment](/snippets/cotrComment)
-
-```powershell
-# ${1:Your comment here}
-```
-
-## PowerShell If Statement
-
-### [cotrIf](/snippets/cotrIf)
-
-```powershell
-if (${1:condition}) {
-  # Your code here
-}
-```
-
-## PowerShell Info
-
-### [cotrInfo](/snippets/cotrInfo)
-
-```powershell
-# Typing: Dynamically typed
-# Paradigm: Object-oriented, imperative, scripting
-# Compilation: Interpreted
-# Concurrency: Supports multi-threading with the System.Threading namespace
-```
-
-## PowerShell Types
-
-### [cotrTypes](/snippets/cotrTypes)
+PowerShell Types
 
 ```powershell
 $BLOCK_COMMENT_START
@@ -76,92 +83,29 @@ Some common types in PowerShell include:
 $BLOCK_COMMENT_END
 ```
 
-## PowerShell Double Type
+## [cotrTypesNum](/snippets/cotrtypesnum)
 
-### [cotrTypesNum](/snippets/cotrTypesNum)
+PowerShell Double Type
 
 ```powershell
 [double]
 ```
 
-## PowerShell Print
+## [cotrPrintMulti](/snippets/cotrprintmulti)
 
-### [cotrPrint](/snippets/cotrPrint)
-
-```powershell
-Write-Host ${1:'Your message here'}
-```
-
-## PowerShell Date Type
-
-### [cotrTypesDate](/snippets/cotrTypesDate)
+PowerShell Print Multi
 
 ```powershell
-[datetime]
+Write-Host @"
+${1:Line 1}
+${2:Line 2}
+${3:Line 3}
+"@;
 ```
 
-## PowerShell Date Now
+## [cotrOperators](/snippets/cotroperators)
 
-### [cotrNow](/snippets/cotrNow)
-
-```powershell
-Get-Date
-```
-
-## PowerShell Concatenate Strings
-
-### [cotrConcat](/snippets/cotrConcat)
-
-```powershell
-"${1:string1}" + "${2:string2}"
-```
-
-## PowerShell Generate Map
-
-### [cotrGenMap](/snippets/cotrGenMap)
-
-```powershell
-# PowerShell does not have a built-in way to generate a map with a specific number of key-value pairs.
-# You can use a loop or a custom function to achieve this.
-```
-
-## PowerShell Not Equal To
-
-### [cotrNotEqual](/snippets/cotrNotEqual)
-
-```powershell
--ne
-```
-
-## PowerShell Boolean Type
-
-### [cotrTypesBool](/snippets/cotrTypesBool)
-
-```powershell
-[bool]
-```
-
-## PowerShell List Type
-
-### [cotrTypesList](/snippets/cotrTypesList)
-
-```powershell
-[array]
-```
-
-## PowerShell For Each Loop
-
-### [cotrForEachLoop](/snippets/cotrForEachLoop)
-
-```powershell
-foreach ($${1:item} in ${2:iterable}) {
-  # Your code here
-}
-```
-
-## PowerShell Mathematical Operators
-
-### [cotrOperators](/snippets/cotrOperators)
+PowerShell Mathematical Operators
 
 ```powershell
 # PowerShell Mathematical Operators
@@ -181,61 +125,165 @@ foreach ($${1:item} in ${2:iterable}) {
 # Modulus assignment: %=
 ```
 
-## PowerShell String Type
+## [cotrVar](/snippets/cotrvar)
 
-### [cotrTypesString](/snippets/cotrTypesString)
+PowerShell Create Variable
 
 ```powershell
-[string]
+$${1:myVar} = $2
 ```
 
-## PowerShell Create Multi-Line String Variable
+## [cotrConst](/snippets/cotrconst)
 
-### [cotrVarStringMulti](/snippets/cotrVarStringMulti)
+PowerShell Create Constant
 
 ```powershell
-$${1:myString} = @"
-${2:Line 1}
-${3:Line 2}
-${4:Line 3}
-"@;
+$${1:myConst} = $2
 ```
 
-## PowerShell Create Hash Table Variable
+## [cotrInfo](/snippets/cotrinfo)
 
-### [cotrVarMap](/snippets/cotrVarMap)
+PowerShell Info
 
 ```powershell
-$${1:myHashTable} = @{
-  ${2:key1} = ${3:value1}
-  ${4:key2} = ${5:value2}
-  # Add more key-value pairs here
+# Typing: Dynamically typed
+# Paradigm: Object-oriented, imperative, scripting
+# Compilation: Interpreted
+# Concurrency: Supports multi-threading with the System.Threading namespace
+```
+
+## [cotrConcat](/snippets/cotrconcat)
+
+PowerShell Concatenate Strings
+
+```powershell
+"${1:string1}" + "${2:string2}"
+```
+
+## [cotrFuncLambda](/snippets/cotrfunclambda)
+
+PowerShell Lambda Function (Script Block)
+
+```powershell
+# PowerShell does not have a 'lambda' keyword.
+# Instead, script blocks are used as anonymous functions.
+
+$lambda = {
+    param(${1:parameters})
+    ${2:# Your code here}
+}
+
+# Usage
+$result = $lambda.Invoke(${3:arguments})
+Write-Host "Result: $result"
+```
+
+## [cotrFuncArrow](/snippets/cotrfuncarrow)
+
+PowerShell Arrow Function
+
+```powershell
+{${1:parameters} ->
+    ${2:# Your code here}
 }
 ```
 
-## PowerShell Switch Statement
+## [cotrVarBool](/snippets/cotrvarbool)
 
-### [cotrSwitch](/snippets/cotrSwitch)
+PowerShell Create Boolean Variable
 
 ```powershell
-switch (${1:variable}) {
-  ${2:value1} {
-    # Your code here
-    break
-  }
-  ${3:value2} {
-    # Your code here
-    break
-  }
-  default {
-    # Your code here
-  }
+$${1:myBool} = ${2:$true}
+```
+
+## [cotrVarList](/snippets/cotrvarlist)
+
+PowerShell Create Array Variable
+
+```powershell
+$${1:myArray} = @(${2:items})
+```
+
+## [cotrForLoop](/snippets/cotrforloop)
+
+PowerShell For Loop
+
+```powershell
+for ($${1:i} = 0; $1 -lt ${2:10}; $1++) {
+  # Your code here
 }
 ```
 
-## PowerShell Function Syntax
+## [cotrOperatorsBool](/snippets/cotroperatorsbool)
 
-### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
+PowerShell Boolean Operators
+
+```powershell
+# PowerShell Boolean Operators
+# Logical AND: -and
+# Logical OR: -or
+# Logical NOT: -not
+# Equality: -eq
+# Inequality: -ne
+# Greater than: -gt
+# Less than: -lt
+# Greater than or equal to: -ge
+# Less than or equal to: -le
+```
+
+## [cotrNow](/snippets/cotrnow)
+
+PowerShell Date Now
+
+```powershell
+Get-Date
+```
+
+## [cotrIf](/snippets/cotrif)
+
+PowerShell If Statement
+
+```powershell
+if (${1:condition}) {
+  # Your code here
+}
+```
+
+## [cotrFuncArgs](/snippets/cotrfuncargs)
+
+PowerShell Function Args
+
+```powershell
+# In PowerShell, functions can have arguments with default values.
+function ${2:myFunction} {
+  param (
+    [${3:Type}] $${4:arg1},
+    [${5:Type}] $${6:arg2} = ${7:defaultValue}
+  )
+
+  ${8:# Your code here}
+}
+```
+
+## [cotrThrow](/snippets/cotrthrow)
+
+PowerShell Throw Exception
+
+```powershell
+throw '${1:Your message here}'
+```
+
+## [cotrTernary](/snippets/cotrternary)
+
+PowerShell Ternary Operator
+
+```powershell
+${1:condition} ? ${2:trueValue} : ${3:falseValue}
+```
+
+## [cotrFuncSyntax](/snippets/cotrfuncsyntax)
+
+PowerShell Function Syntax
 
 ```powershell
 # PowerShell Function Syntax
@@ -258,72 +306,9 @@ switch (${1:variable}) {
 # }
 ```
 
-## PowerShell Variable Declaration Syntax
+## [cotrStructure](/snippets/cotrstructure)
 
-### [cotrVarSyntax](/snippets/cotrVarSyntax)
-
-```powershell
-# PowerShell Variable Declaration Syntax:
-
-# - $: (Scope: Global or Function)
-#   - Variables start with a dollar sign.
-#   - Can be reassigned and redeclared within their scope.
-#   - Use with caution due to potential scoping issues.
-
-# - const: (Scope: Global)
-#   - Cannot be reassigned or redeclared.
-#   - Use for values that should remain constant.
-
-# Note:
-# - PHP does not have a direct equivalent to 'let'.
-# - Use '$' for most variable declarations.
-# - Use 'const' for values that are known at compile time.
-```
-
-## PowerShell Boolean Operators
-
-### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
-
-```powershell
-# PowerShell Boolean Operators
-# Logical AND: -and
-# Logical OR: -or
-# Logical NOT: -not
-# Equality: -eq
-# Inequality: -ne
-# Greater than: -gt
-# Less than: -lt
-# Greater than or equal to: -ge
-# Less than or equal to: -le
-```
-
-## PowerShell Null Type
-
-### [cotrTypesNull](/snippets/cotrTypesNull)
-
-```powershell
-$null
-```
-
-## PowerShell Create String Variable
-
-### [cotrVarString](/snippets/cotrVarString)
-
-```powershell
-$${1:myString} = "${2:Your string here}"
-```
-
-## PowerShell Create Array Variable
-
-### [cotrVarList](/snippets/cotrVarList)
-
-```powershell
-$${1:myArray} = @(${2:items})
-```
-
-## PowerShell Project Structure (High-Level)
-
-### [cotrStructure](/snippets/cotrStructure)
+PowerShell Project Structure (High-Level)
 
 ```powershell
 # Recommended High-Level PowerShell Project Structure:
@@ -355,63 +340,229 @@ $${1:myArray} = @(${2:items})
 # - Use descriptive names for script files to indicate their purpose or function.
 ```
 
-## PowerShell Type Check
+## [cotrTypesDate](/snippets/cotrtypesdate)
 
-### [cotrTypeCheck](/snippets/cotrTypeCheck)
+PowerShell Date Type
 
 ```powershell
-${1:variable}.GetType()
+[datetime]
 ```
 
-## PowerShell Interpolate String
+## [cotrVarNullable](/snippets/cotrvarnullable)
 
-### [cotrInterpolate](/snippets/cotrInterpolate)
+PowerShell Create Nullable Variable
+
+```powershell
+$${1:myVar} = $null
+```
+
+## [cotrVarDate](/snippets/cotrvardate)
+
+PowerShell Create Date Variable
+
+```powershell
+$${1:myDate} = Get-Date -Year ${2:year} -Month ${3:month} -Day ${4:day}
+```
+
+## [cotrVarSyntax](/snippets/cotrvarsyntax)
+
+PowerShell Variable Declaration Syntax
+
+```powershell
+# PowerShell Variable Declaration Syntax:
+
+# - $: (Scope: Global or Function)
+#   - Variables start with a dollar sign.
+#   - Can be reassigned and redeclared within their scope.
+#   - Use with caution due to potential scoping issues.
+
+# - const: (Scope: Global)
+#   - Cannot be reassigned or redeclared.
+#   - Use for values that should remain constant.
+
+# Note:
+# - PHP does not have a direct equivalent to 'let'.
+# - Use '$' for most variable declarations.
+# - Use 'const' for values that are known at compile time.
+```
+
+## [cotrFuncArgsNamed](/snippets/cotrfuncargsnamed)
+
+PowerShell Named Arguments Function
+
+```powershell
+function ${2:MyFunction} {
+    param(
+        [Parameter(Mandatory)]
+        [${3:type}] ${4:$arg1},
+        [Parameter(Mandatory)]
+        [${5:type}] ${6:$arg2}
+    )
+    ${7:# Your code here}
+}
+```
+
+## [cotrClass](/snippets/cotrclass)
+
+PowerShell Class
+
+```powershell
+class ${1:MyClass} {
+  # Your code here
+}
+```
+
+## [cotrTypesString](/snippets/cotrtypesstring)
+
+PowerShell String Type
+
+```powershell
+[string]
+```
+
+## [cotrForEachLoop](/snippets/cotrforeachloop)
+
+PowerShell For Each Loop
+
+```powershell
+foreach ($${1:item} in ${2:iterable}) {
+  # Your code here
+}
+```
+
+## [cotrFunc](/snippets/cotrfunc)
+
+PowerShell Function
+
+```powershell
+function ${2:myFunction} {
+  param (
+    ${3:parameters}
+  )
+
+  ${4:# Your code here}
+}
+```
+
+## [cotrInterpolate](/snippets/cotrinterpolate)
+
+PowerShell Interpolate String
 
 ```powershell
 "Your string here $${1:variable}"
 ```
 
-## PowerShell Try Catch
+## [cotrVarMap](/snippets/cotrvarmap)
 
-### [cotrTryCatch](/snippets/cotrTryCatch)
+PowerShell Create Hash Table Variable
 
 ```powershell
-try {
-  # Your code here
-} catch {
-  # Your code here
+$${1:myHashTable} = @{
+  ${2:key1} = ${3:value1}
+  ${4:key2} = ${5:value2}
+  # Add more key-value pairs here
 }
 ```
 
-## PowerShell Lambda Function (Script Block)
+## [cotrFuncAnon](/snippets/cotrfuncanon)
 
-### [cotrFuncLambda](/snippets/cotrFuncLambda)
+PowerShell Anonymous Function
 
 ```powershell
-# PowerShell does not have a 'lambda' keyword.
-# Instead, script blocks are used as anonymous functions.
-
-$lambda = {
+{
     param(${1:parameters})
     ${2:# Your code here}
 }
-
-# Usage
-$result = $lambda.Invoke(${3:arguments})
-Write-Host "Result: $result"
 ```
 
-## PowerShell Create Integer Variable
+## [cotrTypesBool](/snippets/cotrtypesbool)
 
-### [cotrVarInt](/snippets/cotrVarInt)
+PowerShell Boolean Type
 
 ```powershell
-$${1:myInt} = ${2:0}
+[bool]
 ```
 
-## PowerShell Function Arguments
+## [cotrTypesBoolFalse](/snippets/cotrtypesboolfalse)
 
-### [cotrFuncArgs](/snippets/cotrFuncArgs)
+PowerShell Boolean False
+
+```powershell
+$false
+```
+
+## [cotrTypesDynamic](/snippets/cotrtypesdynamic)
+
+PowerShell Dynamic Type
+
+```powershell
+# PowerShell is a dynamically typed language.
+```
+
+## [cotrTypesInt](/snippets/cotrtypesint)
+
+PowerShell Integer Type
+
+```powershell
+[int]
+```
+
+## [cotrVarNum](/snippets/cotrvarnum)
+
+PowerShell Create Double Variable
+
+```powershell
+$${1:myDouble} = ${2:0.0}
+```
+
+## [cotrIfElse](/snippets/cotrifelse)
+
+PowerShell If Else Statement
+
+```powershell
+if (${1:condition}) {
+  # Your code here
+} else {
+  # Your code here
+}
+```
+
+## [cotrVarStatic](/snippets/cotrvarstatic)
+
+PowerShell Static Variable
+
+```powershell
+# PowerShell does not have static variables in the same way as some other languages.
+# You can use class variables or module variables to achieve similar functionality.
+```
+
+## [cotrTypesList](/snippets/cotrtypeslist)
+
+PowerShell List Type
+
+```powershell
+[array]
+```
+
+## [cotrTypesNull](/snippets/cotrtypesnull)
+
+PowerShell Null Type
+
+```powershell
+$null
+```
+
+## [cotrVarTyped](/snippets/cotrvartyped)
+
+PowerShell Create Typed Variable
+
+```powershell
+[${1:Type}] $${2:myVar} = $3
+```
+
+## [cotrFuncArgs](/snippets/cotrfuncargs)
+
+PowerShell Function Arguments
 
 ```powershell
 # In PowerShell, functions can have arguments with default values.
@@ -425,127 +576,62 @@ function ${2:myFunction} {
 }
 ```
 
-## PowerShell Generate List
+## [cotrTypeCheck](/snippets/cotrtypecheck)
 
-### [cotrGenList](/snippets/cotrGenList)
+PowerShell Type Check
 
 ```powershell
-1..${1:length} | ForEach-Object { ${2:'item'} + $_ }
+${1:variable}.GetType()
 ```
 
-## PowerShell Static Variable
+## [cotrVarString](/snippets/cotrvarstring)
 
-### [cotrVarStatic](/snippets/cotrVarStatic)
+PowerShell Create String Variable
 
 ```powershell
-# PowerShell does not have static variables in the same way as some other languages.
-# You can use class variables or module variables to achieve similar functionality.
+$${1:myString} = "${2:Your string here}"
 ```
 
-## PowerShell Equal To
+## [cotrVarInt](/snippets/cotrvarint)
 
-### [cotrEqual](/snippets/cotrEqual)
+PowerShell Create Integer Variable
 
 ```powershell
--eq
+$${1:myInt} = ${2:0}
 ```
 
-## PowerShell Integer Type
+## [cotrSwitch](/snippets/cotrswitch)
 
-### [cotrTypesInt](/snippets/cotrTypesInt)
-
-```powershell
-[int]
-```
-
-## PowerShell Boolean False
-
-### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
+PowerShell Switch Statement
 
 ```powershell
-$false
-```
-
-## PowerShell Entry Point
-
-### [cotrEntry](/snippets/cotrEntry)
-
-```powershell
-# PowerShell Entry Point
-# To run this script, use: `powershell filename.ps1`
-
-Write-Host 'Hello, World!'
-```
-
-## PowerShell Anonymous Function
-
-### [cotrFuncAnon](/snippets/cotrFuncAnon)
-
-```powershell
-{
-    param(${1:parameters})
-    ${2:# Your code here}
+switch (${1:variable}) {
+  ${2:value1} {
+    # Your code here
+    break
+  }
+  ${3:value2} {
+    # Your code here
+    break
+  }
+  default {
+    # Your code here
+  }
 }
 ```
 
-## PowerShell Type Comparison
+## [cotrGenMap](/snippets/cotrgenmap)
 
-### [cotrTypeCompare](/snippets/cotrTypeCompare)
-
-```powershell
-# Check if two variables have the same type:
-if (${1:variable1}.GetType() -eq ${2:variable2}.GetType()) {
-  # Your code here
-}
-```
-
-## PowerShell Create Nullable Variable
-
-### [cotrVarNullable](/snippets/cotrVarNullable)
+PowerShell Generate Map
 
 ```powershell
-$${1:myVar} = $null
+# PowerShell does not have a built-in way to generate a map with a specific number of key-value pairs.
+# You can use a loop or a custom function to achieve this.
 ```
 
-## PowerShell Create Double Variable
+## [cotrTypeConvert](/snippets/cotrtypeconvert)
 
-### [cotrVarNum](/snippets/cotrVarNum)
-
-```powershell
-$${1:myDouble} = ${2:0.0}
-```
-
-## PowerShell Print Multi
-
-### [cotrPrintMulti](/snippets/cotrPrintMulti)
-
-```powershell
-Write-Host @"
-${1:Line 1}
-${2:Line 2}
-${3:Line 3}
-"@;
-```
-
-## PowerShell Throw Exception
-
-### [cotrThrow](/snippets/cotrThrow)
-
-```powershell
-throw '${1:Your message here}'
-```
-
-## PowerShell Ternary Operator
-
-### [cotrTernary](/snippets/cotrTernary)
-
-```powershell
-${1:condition} ? ${2:trueValue} : ${3:falseValue}
-```
-
-## PowerShell Type Conversion
-
-### [cotrTypeConvert](/snippets/cotrTypeConvert)
+PowerShell Type Conversion
 
 ```powershell
 # PowerShell Type Conversion:
@@ -561,67 +647,52 @@ ${1:condition} ? ${2:trueValue} : ${3:falseValue}
 # - Be cautious with type casting, as it can lead to errors if the conversion is not valid.
 ```
 
-## PowerShell Dynamic Type
+## [cotrTypesMap](/snippets/cotrtypesmap)
 
-### [cotrTypesDynamic](/snippets/cotrTypesDynamic)
-
-```powershell
-# PowerShell is a dynamically typed language.
-```
-
-## PowerShell Create Typed Variable
-
-### [cotrVarTyped](/snippets/cotrVarTyped)
-
-```powershell
-[${1:Type}] $${2:myVar} = $3
-```
-
-## PowerShell Create Date Variable
-
-### [cotrVarDate](/snippets/cotrVarDate)
-
-```powershell
-$${1:myDate} = Get-Date -Year ${2:year} -Month ${3:month} -Day ${4:day}
-```
-
-## PowerShell Map Type
-
-### [cotrTypesMap](/snippets/cotrTypesMap)
+PowerShell Map Type
 
 ```powershell
 [hashtable]
 ```
 
-## PowerShell While Loop
+## [cotrEntry](/snippets/cotrentry)
 
-### [cotrWhileLoop](/snippets/cotrWhileLoop)
-
-```powershell
-while (${1:condition}) {
-  # Your code here
-}
-```
-
-## PowerShell Named Arguments Function
-
-### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
+PowerShell Entry Point
 
 ```powershell
-function ${2:MyFunction} {
-    param(
-        [Parameter(Mandatory)]
-        [${3:type}] ${4:$arg1},
-        [Parameter(Mandatory)]
-        [${5:type}] ${6:$arg2}
-    )
-    ${7:# Your code here}
-}
+# PowerShell Entry Point
+# To run this script, use: `powershell filename.ps1`
+
+Write-Host 'Hello, World!'
 ```
 
-## PowerShell Multi-Line Comment
+## [cotrComment](/snippets/cotrcomment)
 
-### [cotrCommentMulti](/snippets/cotrCommentMulti)
+PowerShell Comment
+
+```powershell
+# ${1:Your comment here}
+```
+
+## [cotrGenList](/snippets/cotrgenlist)
+
+PowerShell Generate List
+
+```powershell
+1..${1:length} | ForEach-Object { ${2:'item'} + $_ }
+```
+
+## [cotrPrint](/snippets/cotrprint)
+
+PowerShell Print
+
+```powershell
+Write-Host ${1:'Your message here'}
+```
+
+## [cotrCommentMulti](/snippets/cotrcommentmulti)
+
+PowerShell Multi-Line Comment
 
 ```powershell
 <#
@@ -629,81 +700,15 @@ ${1:Your comment here}
 #>
 ```
 
-## PowerShell Class
+## [cotrTryCatch](/snippets/cotrtrycatch)
 
-### [cotrClass](/snippets/cotrClass)
+PowerShell Try Catch
 
 ```powershell
-class ${1:MyClass} {
+try {
+  # Your code here
+} catch {
   # Your code here
 }
-```
-
-## PowerShell If Else Statement
-
-### [cotrIfElse](/snippets/cotrIfElse)
-
-```powershell
-if (${1:condition}) {
-  # Your code here
-} else {
-  # Your code here
-}
-```
-
-## PowerShell Create Constant
-
-### [cotrConst](/snippets/cotrConst)
-
-```powershell
-$${1:myConst} = $2
-```
-
-## PowerShell Function
-
-### [cotrFunc](/snippets/cotrFunc)
-
-```powershell
-function ${2:myFunction} {
-  param (
-    ${3:parameters}
-  )
-
-  ${4:# Your code here}
-}
-```
-
-## PowerShell Function Args
-
-### [cotrFuncArgs](/snippets/cotrFuncArgs)
-
-```powershell
-# In PowerShell, functions can have arguments with default values.
-function ${2:myFunction} {
-  param (
-    [${3:Type}] $${4:arg1},
-    [${5:Type}] $${6:arg2} = ${7:defaultValue}
-  )
-
-  ${8:# Your code here}
-}
-```
-
-## PowerShell Arrow Function
-
-### [cotrFuncArrow](/snippets/cotrFuncArrow)
-
-```powershell
-{${1:parameters} ->
-    ${2:# Your code here}
-}
-```
-
-## PowerShell Create Boolean Variable
-
-### [cotrVarBool](/snippets/cotrVarBool)
-
-```powershell
-$${1:myBool} = ${2:$true}
 ```
 

@@ -1,74 +1,94 @@
-## Dart Boolean Type
+---
+title: Dart
+description: Dart snippets on the rocks.
+---
 
-### [cotrTypesBool](/snippets/cotrTypesBool)
+## [cotrVarStringMulti](/snippets/cotrvarstringmulti)
 
-```dart
-bool
-```
-
-## Dart Boolean True
-
-### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
+Dart Create Multiline String Variable
 
 ```dart
-true
+String ${1:myString} = '''
+${2:Your string here}
+''';
 ```
 
-## Dart Float Type
+## [cotrVarInt](/snippets/cotrvarint)
 
-### [cotrTypesNumAlt](/snippets/cotrTypesNumAlt)
+Dart Create Integer Variable
 
 ```dart
-float
+int ${1:myInt} = ${2:0};
 ```
 
-## Dart For...In Loop
+## [cotrVarDouble](/snippets/cotrvardouble)
 
-### [cotrForInLoop](/snippets/cotrForInLoop)
+Dart Create Double Variable
 
 ```dart
-for (var item in ${1:iterable}) {
-  ${2:// Your code here}
-}
+double ${1:myDouble} = ${2:0.0};
 ```
 
-## Dart Comment
+## [cotrComment](/snippets/cotrcomment)
 
-### [cotrComment](/snippets/cotrComment)
+Dart Comment
 
 ```dart
 // ${1:Your comment here}
 ```
 
-## Dart Create Variable
+## [cotrEqual](/snippets/cotrequal)
 
-### [cotrVar](/snippets/cotrVar)
+Dart Equal To
+
+```dart
+==
+```
+
+## [cotrTypes](/snippets/cotrtypes)
+
+Dart Types
+
+```dart
+$BLOCK_COMMENT_START
+Dart is a statically typed language.
+
+Types in Dart include:
+- num: A number type that can be either an int or a double
+- int: Integer
+- BigInt: Arbitrary-precision integer
+- double: Double-precision floating-point number
+- String: A sequence of characters
+- bool: Boolean
+- List: A list of elements
+- Map: A collection of key-value pairs
+- Set: A collection of unique elements
+- Runes: For expressing Unicode characters in a String
+- Symbol: An opaque, dynamic representation of a string in Dart
+
+Read more here: https://dart.dev/language/built-in-types
+$BLOCK_COMMENT_END
+```
+
+## [cotrTypesInt](/snippets/cotrtypesint)
+
+Dart Integer Type
+
+```dart
+int
+```
+
+## [cotrVar](/snippets/cotrvar)
+
+Dart Create Variable
 
 ```dart
 var ${1:myVar} = $2;
 ```
 
-## Dart Concatenate Strings
+## [cotrTryCatch](/snippets/cotrtrycatch)
 
-### [cotrConcat](/snippets/cotrConcat)
-
-```dart
-'Your string here ' + ${1:variable}
-```
-
-## Dart While Loop
-
-### [cotrWhileLoop](/snippets/cotrWhileLoop)
-
-```dart
-while (${1:condition}) {
-  ${2:// Your code here}
-}
-```
-
-## Dart Try Catch
-
-### [cotrTryCatch](/snippets/cotrTryCatch)
+Dart Try Catch
 
 ```dart
 try {
@@ -78,73 +98,116 @@ try {
 }
 ```
 
-## Dart Not Equal To
+## [cotrIf](/snippets/cotrif)
 
-### [cotrNotEqual](/snippets/cotrNotEqual)
-
-```dart
-!=
-```
-
-## Dart Double Type
-
-### [cotrTypesNum](/snippets/cotrTypesNum)
+Dart If Statement
 
 ```dart
-double
+if (${1:condition}) {
+  ${2:// Your code here}
+}
 ```
 
-## Dart Create Typed Variable
+## [cotrEnum](/snippets/cotrenum)
 
-### [cotrVarTyped](/snippets/cotrVarTyped)
+Dart Enum
 
 ```dart
-${1:Type} ${2:myVar} = $3;
+enum ${1:MyEnum} {
+  ${2:value1},
+  ${3:value2},
+  // Add more values here
+}
 ```
 
-## Dart Create String Variable
+## [cotrInfo](/snippets/cotrinfo)
 
-### [cotrVarString](/snippets/cotrVarString)
+Dart Info
+
+```dart
+Typing: Statically typed
+Paradigm: Multi-paradigm: object-oriented, functional, imperative, reflective
+Compilation: Compiled to native code or transpiled to JavaScript
+Concurrency: Supports isolates for concurrent execution
+```
+
+## [cotrTypesDate](/snippets/cotrtypesdate)
+
+Dart Date Type
+
+```dart
+DateTime
+```
+
+## [cotrVarNullable](/snippets/cotrvarnullable)
+
+Dart Create Nullable Variable
+
+```dart
+${1:Type}? ${2:myVar} = $3;
+```
+
+## [cotrVarString](/snippets/cotrvarstring)
+
+Dart Create String Variable
 
 ```dart
 String ${1:myString} = ${2:'Your string here'};
 ```
 
-## Dart Date Now
+## [cotrTypesNum](/snippets/cotrtypesnum)
 
-### [cotrNow](/snippets/cotrNow)
-
-```dart
-DateTime.now()
-```
-
-## Dart Function Arrow
-
-### [cotrFuncArrow](/snippets/cotrFuncArrow)
+Dart Double Type
 
 ```dart
-${1:Type} ${2:myFunction}(${3:parameters}) => ${4:expression};
+double
 ```
 
-## Dart Lambda Function
+## [cotrForInLoop](/snippets/cotrforinloop)
 
-### [cotrLambda](/snippets/cotrLambda)
+Dart For...In Loop
 
 ```dart
-(${1:parameters}) => ${2:expression}
+for (var item in ${1:iterable}) {
+  ${2:// Your code here}
+}
 ```
 
-## Dart Create Double Variable
+## [cotrThrow](/snippets/cotrthrow)
 
-### [cotrVarDouble](/snippets/cotrVarDouble)
+Dart Throw Exception
 
 ```dart
-double ${1:myDouble} = ${2:0.0};
+throw ${1:Exception('Your message here')};
 ```
 
-## Dart Generate Map
+## [cotrTypesString](/snippets/cotrtypesstring)
 
-### [cotrGenMap](/snippets/cotrGenMap)
+Dart String Type
+
+```dart
+String
+```
+
+## [cotrTypesNumAlt](/snippets/cotrtypesnumalt)
+
+Dart Float Type
+
+```dart
+float
+```
+
+## [cotrVarBool](/snippets/cotrvarbool)
+
+Dart Create Boolean Variable
+
+```dart
+bool ${1:myBool} = ${2:true};
+```
+
+## [cotrGenMap](/snippets/cotrgenmap)
+
+Dart Generate Map
 
 ```dart
 var ${1:myMap} = Map.fromIterable(List.generate(${2:length}, (index) => index),
@@ -153,9 +216,44 @@ var ${1:myMap} = Map.fromIterable(List.generate(${2:length}, (index) => index),
 );
 ```
 
-## Dart Switch Statement
+## [cotrTypesMap](/snippets/cotrtypesmap)
 
-### [cotrSwitch](/snippets/cotrSwitch)
+Dart Map Type
+
+```dart
+Map<${1:keyType}, ${2:valueType}>
+```
+
+## [cotrPrint](/snippets/cotrprint)
+
+Dart Print
+
+```dart
+print(${1:'Your message here'});
+```
+
+## [cotrFuncSyntax](/snippets/cotrfuncsyntax)
+
+Dart Function Syntax
+
+```dart
+// Dart Function Syntax
+// Basic function: returnType functionName(parameters) { ... }
+// Function with arguments: returnType functionName(arg1Type arg1, arg2Type arg2, ...) { ... }
+// Function with named arguments: returnType functionName({arg1Type arg1, arg2Type arg2, ...}) { ... }
+```
+
+## [cotrInterpolate](/snippets/cotrinterpolate)
+
+Dart Interpolate String
+
+```dart
+'Your string here \${${1:variable}}'
+```
+
+## [cotrSwitch](/snippets/cotrswitch)
+
+Dart Switch Statement
 
 ```dart
 switch (${1:variable}) {
@@ -170,76 +268,9 @@ switch (${1:variable}) {
 }
 ```
 
-## Dart Multi-Line Comment
+## [cotrStructure](/snippets/cotrstructure)
 
-### [cotrCommentMulti](/snippets/cotrCommentMulti)
-
-```dart
-/*
- * ${1:Your comment here}
- */
-```
-
-## Dart Mathematical Operators
-
-### [cotrOperators](/snippets/cotrOperators)
-
-```dart
-// Dart Mathematical Operators
-// Addition: +
-// Subtraction: -
-// Multiplication: *
-// Exponentiation: **
-// Division: /
-// Modulus: %
-// Increment: ++
-// Decrement: --
-// Assignment: =
-// Addition assignment: +=
-// Subtraction assignment: -=
-// Multiplication assignment: *=
-// Division assignment: /=
-// Modulus assignment: %=
-```
-
-## Dart Integer Type
-
-### [cotrTypesInt](/snippets/cotrTypesInt)
-
-```dart
-int
-```
-
-## Dart Character Type
-
-### [cotrTypesChar](/snippets/cotrTypesChar)
-
-```dart
-char
-```
-
-## Dart Dynamic Type
-
-### [cotrTypesDynamic](/snippets/cotrTypesDynamic)
-
-```dart
-dynamic
-```
-
-## Dart Function Syntax
-
-### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
-
-```dart
-// Dart Function Syntax
-// Basic function: returnType functionName(parameters) { ... }
-// Function with arguments: returnType functionName(arg1Type arg1, arg2Type arg2, ...) { ... }
-// Function with named arguments: returnType functionName({arg1Type arg1, arg2Type arg2, ...}) { ... }
-```
-
-## Dart Project Structure (High-Level)
-
-### [cotrStructure](/snippets/cotrStructure)
+Dart Project Structure (High-Level)
 
 ```dart
 // Recommended High-Level Dart Project Structure:
@@ -273,177 +304,47 @@ dynamic
 // - Use `web/` for web projects and `bin/` for server-side or command-line projects.
 ```
 
-## Dart Type Conversion
+## [cotrOperators](/snippets/cotroperators)
 
-### [cotrTypeConvert](/snippets/cotrTypeConvert)
-
-```dart
-// Dart Type Conversion:
-
-// Implicit conversions (compiler performs automatically):
-// - int to double (if no precision loss).
-
-// Explicit conversions (using casts):
-// - variable as Type  // Safe cast (returns null if conversion fails)
-// - Type.castFrom(variable)  // Conversion methods
-
-// Note:
-// - Be cautious with explicit conversions, as they can lead to data loss or errors if the conversion is not valid.
-```
-
-## Dart Date Type
-
-### [cotrTypesDate](/snippets/cotrTypesDate)
+Dart Mathematical Operators
 
 ```dart
-DateTime
+// Dart Mathematical Operators
+// Addition: +
+// Subtraction: -
+// Multiplication: *
+// Exponentiation: **
+// Division: /
+// Modulus: %
+// Increment: ++
+// Decrement: --
+// Assignment: =
+// Addition assignment: +=
+// Subtraction assignment: -=
+// Multiplication assignment: *=
+// Division assignment: /=
+// Modulus assignment: %=
 ```
 
-## Dart Function Named Args
+## [cotrTypeCheck](/snippets/cotrtypecheck)
 
-### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
-
-```dart
-${1:void} ${2:myFunction}({${3:arg1}, ${4:arg2}}) {
-  ${5:// Your code here}
-}
-```
-
-## Dart Info
-
-### [cotrInfo](/snippets/cotrInfo)
-
-```dart
-Typing: Statically typed
-Paradigm: Multi-paradigm: object-oriented, functional, imperative, reflective
-Compilation: Compiled to native code or transpiled to JavaScript
-Concurrency: Supports isolates for concurrent execution
-```
-
-## Dart Boolean False
-
-### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
-
-```dart
-false
-```
-
-## Dart Create Map Variable
-
-### [cotrVarMap](/snippets/cotrVarMap)
-
-```dart
-Map<${1:KeyType}, ${2:ValueType}> ${3:myMap} = {
-  ${4:key1}: ${5:value1},
-  ${6:key2}: ${7:value2}
-};
-```
-
-## Dart Boolean Operators
-
-### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
-
-```dart
-// Dart Boolean Operators
-// Logical AND: &&
-// Logical OR: ||
-// Logical NOT: !
-// Equality: ==
-// Inequality: !=
-// Greater than: >
-// Less than: <
-// Greater than or equal to: >=
-// Less than or equal to: <=
-```
-
-## Dart Map Type
-
-### [cotrTypesMap](/snippets/cotrTypesMap)
-
-```dart
-Map<${1:keyType}, ${2:valueType}>
-```
-
-## Dart Type Check
-
-### [cotrTypeCheck](/snippets/cotrTypeCheck)
+Dart Type Check
 
 ```dart
 ${1:variable}.runtimeType
 ```
 
-## Dart Create Multiline String Variable
+## [cotrNow](/snippets/cotrnow)
 
-### [cotrVarStringMulti](/snippets/cotrVarStringMulti)
-
-```dart
-String ${1:myString} = '''
-${2:Your string here}
-''';
-```
-
-## Dart Create List Variable
-
-### [cotrVarList](/snippets/cotrVarList)
+Dart Date Now
 
 ```dart
-List<${1:Type}> ${2:myList} = [${3:items}];
+DateTime.now()
 ```
 
-## Dart Generate List
+## [cotrEntry](/snippets/cotrentry)
 
-### [cotrGenList](/snippets/cotrGenList)
-
-```dart
-var ${1:myList} = List.generate(${2:length}, (index) => ${3:'item'} + index.toString());
-```
-
-## Dart Static Variable
-
-### [cotrVarStatic](/snippets/cotrVarStatic)
-
-```dart
-static ${2:var} ${3:myStaticVar} = ${4:value};
-
-// Access the static variable
-// MyClass.${3:myStaticVar}
-```
-
-## Dart List Type
-
-### [cotrTypesList](/snippets/cotrTypesList)
-
-```dart
-List<${1:type}>
-```
-
-## Dart Interpolate String
-
-### [cotrInterpolate](/snippets/cotrInterpolate)
-
-```dart
-'Your string here \${${1:variable}}'
-```
-
-## Dart Create Boolean Variable
-
-### [cotrVarBool](/snippets/cotrVarBool)
-
-```dart
-bool ${1:myBool} = ${2:true};
-```
-
-## Dart Create Date Variable
-
-### [cotrVarDate](/snippets/cotrVarDate)
-
-```dart
-DateTime ${1:myDate} = DateTime(${2:year}, ${3:month}, ${4:day});
-```
-
-## Dart Entry Point
-
-### [cotrEntry](/snippets/cotrEntry)
+Dart Entry Point
 
 ```dart
 // Dart Entry Point
@@ -454,92 +355,9 @@ void main() {
 }
 ```
 
-## Dart Equal To
+## [cotrFuncArgs](/snippets/cotrfuncargs)
 
-### [cotrEqual](/snippets/cotrEqual)
-
-```dart
-==
-```
-
-## Dart Type Comparison
-
-### [cotrTypeCompare](/snippets/cotrTypeCompare)
-
-```dart
-// Check if two variables have the same type:
-if (${1:variable1}.runtimeType == ${2:variable2}.runtimeType) {
-  // Your code here
-}
-```
-
-## Dart String Type
-
-### [cotrTypesString](/snippets/cotrTypesString)
-
-```dart
-String
-```
-
-## Dart Function Anonymous
-
-### [cotrFuncAnon](/snippets/cotrFuncAnon)
-
-```dart
-(${1:parameters}) {
-  ${2:// Your code here}
-}
-```
-
-## Dart Ternary Operator
-
-### [cotrTernary](/snippets/cotrTernary)
-
-```dart
-${1:condition} ? ${2:trueValue} : ${3:falseValue}
-```
-
-## Dart Create Constant
-
-### [cotrConst](/snippets/cotrConst)
-
-```dart
-const ${1:myConst} = $2;
-```
-
-## Dart Print
-
-### [cotrPrint](/snippets/cotrPrint)
-
-```dart
-print(${1:'Your message here'});
-```
-
-## Dart For Loop
-
-### [cotrForLoop](/snippets/cotrForLoop)
-
-```dart
-for (int ${1:i} = 0; $1 < ${2:10}; $1++) {
-  // Your code here
-}
-```
-
-## Dart Enum
-
-### [cotrEnum](/snippets/cotrEnum)
-
-```dart
-enum ${1:MyEnum} {
-  ${2:value1},
-  ${3:value2},
-  // Add more values here
-}
-```
-
-## Dart Function Args
-
-### [cotrFuncArgs](/snippets/cotrFuncArgs)
+Dart Function Args
 
 ```dart
 // In Dart, functions can have optional named or positional parameters with default values.
@@ -548,43 +366,9 @@ ${1:void} ${2:myFunction}(${3:Type} ${4:arg1}, [${5:Type} ${6:arg2} = ${7:defaul
 }
 ```
 
-## Dart If Statement
+## [cotrClass](/snippets/cotrclass)
 
-### [cotrIf](/snippets/cotrIf)
-
-```dart
-if (${1:condition}) {
-  ${2:// Your code here}
-}
-```
-
-## Dart Null Type
-
-### [cotrNull](/snippets/cotrNull)
-
-```dart
-null
-```
-
-## Dart Create Nullable Variable
-
-### [cotrVarNullable](/snippets/cotrVarNullable)
-
-```dart
-${1:Type}? ${2:myVar} = $3;
-```
-
-## Dart Create Integer Variable
-
-### [cotrVarInt](/snippets/cotrVarInt)
-
-```dart
-int ${1:myInt} = ${2:0};
-```
-
-## Dart Class
-
-### [cotrClass](/snippets/cotrClass)
+Dart Class
 
 ```dart
 class ${1:MyClass} {
@@ -592,17 +376,152 @@ class ${1:MyClass} {
 }
 ```
 
-## Dart Throw Exception
+## [cotrLambda](/snippets/cotrlambda)
 
-### [cotrThrow](/snippets/cotrThrow)
+Dart Lambda Function
 
 ```dart
-throw ${1:Exception('Your message here')};
+(${1:parameters}) => ${2:expression}
 ```
 
-## Dart If Else Statement
+## [cotrForLoop](/snippets/cotrforloop)
 
-### [cotrIfElse](/snippets/cotrIfElse)
+Dart For Loop
+
+```dart
+for (int ${1:i} = 0; $1 < ${2:10}; $1++) {
+  // Your code here
+}
+```
+
+## [cotrFuncAnon](/snippets/cotrfuncanon)
+
+Dart Function Anonymous
+
+```dart
+(${1:parameters}) {
+  ${2:// Your code here}
+}
+```
+
+## [cotrTypesBoolTrue](/snippets/cotrtypesbooltrue)
+
+Dart Boolean True
+
+```dart
+true
+```
+
+## [cotrTypesBoolFalse](/snippets/cotrtypesboolfalse)
+
+Dart Boolean False
+
+```dart
+false
+```
+
+## [cotrTypesList](/snippets/cotrtypeslist)
+
+Dart List Type
+
+```dart
+List<${1:type}>
+```
+
+## [cotrConst](/snippets/cotrconst)
+
+Dart Create Constant
+
+```dart
+const ${1:myConst} = $2;
+```
+
+## [cotrTypesBool](/snippets/cotrtypesbool)
+
+Dart Boolean Type
+
+```dart
+bool
+```
+
+## [cotrVarMap](/snippets/cotrvarmap)
+
+Dart Create Map Variable
+
+```dart
+Map<${1:KeyType}, ${2:ValueType}> ${3:myMap} = {
+  ${4:key1}: ${5:value1},
+  ${6:key2}: ${7:value2}
+};
+```
+
+## [cotrWhileLoop](/snippets/cotrwhileloop)
+
+Dart While Loop
+
+```dart
+while (${1:condition}) {
+  ${2:// Your code here}
+}
+```
+
+## [cotrNull](/snippets/cotrnull)
+
+Dart Null Type
+
+```dart
+null
+```
+
+## [cotrVarStatic](/snippets/cotrvarstatic)
+
+Dart Static Variable
+
+```dart
+static ${2:var} ${3:myStaticVar} = ${4:value};
+
+// Access the static variable
+// MyClass.${3:myStaticVar}
+```
+
+## [cotrTypeCompare](/snippets/cotrtypecompare)
+
+Dart Type Comparison
+
+```dart
+// Check if two variables have the same type:
+if (${1:variable1}.runtimeType == ${2:variable2}.runtimeType) {
+  // Your code here
+}
+```
+
+## [cotrFuncArrow](/snippets/cotrfuncarrow)
+
+Dart Function Arrow
+
+```dart
+${1:Type} ${2:myFunction}(${3:parameters}) => ${4:expression};
+```
+
+## [cotrVarList](/snippets/cotrvarlist)
+
+Dart Create List Variable
+
+```dart
+List<${1:Type}> ${2:myList} = [${3:items}];
+```
+
+## [cotrVarDate](/snippets/cotrvardate)
+
+Dart Create Date Variable
+
+```dart
+DateTime ${1:myDate} = DateTime(${2:year}, ${3:month}, ${4:day});
+```
+
+## [cotrIfElse](/snippets/cotrifelse)
+
+Dart If Else Statement
 
 ```dart
 if (${1:condition}) {
@@ -614,34 +533,25 @@ if (${1:condition}) {
 }
 ```
 
-## Dart Types
+## [cotrTypesChar](/snippets/cotrtypeschar)
 
-### [cotrTypes](/snippets/cotrTypes)
+Dart Character Type
 
 ```dart
-$BLOCK_COMMENT_START
-Dart is a statically typed language.
-
-Types in Dart include:
-- num: A number type that can be either an int or a double
-- int: Integer
-- BigInt: Arbitrary-precision integer
-- double: Double-precision floating-point number
-- String: A sequence of characters
-- bool: Boolean
-- List: A list of elements
-- Map: A collection of key-value pairs
-- Set: A collection of unique elements
-- Runes: For expressing Unicode characters in a String
-- Symbol: An opaque, dynamic representation of a string in Dart
-
-Read more here: https://dart.dev/language/built-in-types
-$BLOCK_COMMENT_END
+char
 ```
 
-## Variable Declaration Syntax
+## [cotrTypesDynamic](/snippets/cotrtypesdynamic)
 
-### [cotrVarSyntax](/snippets/cotrVarSyntax)
+Dart Dynamic Type
+
+```dart
+dynamic
+```
+
+## [cotrVarSyntax](/snippets/cotrvarsyntax)
+
+Variable Declaration Syntax
 
 ```dart
 // Dart Variable Declaration Syntax:
@@ -668,9 +578,94 @@ $BLOCK_COMMENT_END
 // - Use 'final' for variables that will be assigned later but should not change.
 ```
 
-## Dart Print Multi
+## [cotrNotEqual](/snippets/cotrnotequal)
 
-### [cotrPrintMulti](/snippets/cotrPrintMulti)
+Dart Not Equal To
+
+```dart
+!=
+```
+
+## [cotrTernary](/snippets/cotrternary)
+
+Dart Ternary Operator
+
+```dart
+${1:condition} ? ${2:trueValue} : ${3:falseValue}
+```
+
+## [cotrOperatorsBool](/snippets/cotroperatorsbool)
+
+Dart Boolean Operators
+
+```dart
+// Dart Boolean Operators
+// Logical AND: &&
+// Logical OR: ||
+// Logical NOT: !
+// Equality: ==
+// Inequality: !=
+// Greater than: >
+// Less than: <
+// Greater than or equal to: >=
+// Less than or equal to: <=
+```
+
+## [cotrTypeConvert](/snippets/cotrtypeconvert)
+
+Dart Type Conversion
+
+```dart
+// Dart Type Conversion:
+
+// Implicit conversions (compiler performs automatically):
+// - int to double (if no precision loss).
+
+// Explicit conversions (using casts):
+// - variable as Type  // Safe cast (returns null if conversion fails)
+// - Type.castFrom(variable)  // Conversion methods
+
+// Note:
+// - Be cautious with explicit conversions, as they can lead to data loss or errors if the conversion is not valid.
+```
+
+## [cotrVarTyped](/snippets/cotrvartyped)
+
+Dart Create Typed Variable
+
+```dart
+${1:Type} ${2:myVar} = $3;
+```
+
+## [cotrConcat](/snippets/cotrconcat)
+
+Dart Concatenate Strings
+
+```dart
+'Your string here ' + ${1:variable}
+```
+
+## [cotrCommentMulti](/snippets/cotrcommentmulti)
+
+Dart Multi-Line Comment
+
+```dart
+/*
+ * ${1:Your comment here}
+ */
+```
+
+## [cotrGenList](/snippets/cotrgenlist)
+
+Dart Generate List
+
+```dart
+var ${1:myList} = List.generate(${2:length}, (index) => ${3:'item'} + index.toString());
+```
+
+## [cotrPrintMulti](/snippets/cotrprintmulti)
+
+Dart Print Multi
 
 ```dart
 print('''
@@ -680,13 +675,23 @@ ${3:Line 3}
 ''');
 ```
 
-## Dart Function
+## [cotrFunc](/snippets/cotrfunc)
 
-### [cotrFunc](/snippets/cotrFunc)
+Dart Function
 
 ```dart
 ${1:void} ${2:myFunction}(${3:parameters}) {
   ${4:// Your code here}
+}
+```
+
+## [cotrFuncArgsNamed](/snippets/cotrfuncargsnamed)
+
+Dart Function Named Args
+
+```dart
+${1:void} ${2:myFunction}({${3:arg1}, ${4:arg2}}) {
+  ${5:// Your code here}
 }
 ```
 

@@ -1,66 +1,58 @@
-## Ruby Float Type
+---
+title: Ruby
+description: Ruby snippets on the rocks.
+---
 
-### [cotrTypesNumAlt](/snippets/cotrTypesNumAlt)
+## [cotrTypesBoolTrue](/snippets/cotrtypesbooltrue)
 
-```ruby
-Float
-```
-
-## Ruby Boolean Type
-
-### [cotrTypesBool](/snippets/cotrTypesBool)
+Ruby Boolean True
 
 ```ruby
-# Ruby uses true and false for boolean values.
+true
 ```
 
-## Ruby Date Now
+## [cotrVarString](/snippets/cotrvarstring)
 
-### [cotrNow](/snippets/cotrNow)
+Ruby Create String Variable
 
 ```ruby
-require 'date'
-
-Date.today
+${1:my_string} = ${2:'Your string here'}
 ```
 
-## Ruby Double Type
+## [cotrVarNum](/snippets/cotrvarnum)
 
-### [cotrTypesNum](/snippets/cotrTypesNum)
+Ruby Create Float Variable
 
 ```ruby
-double
+${1:my_float} = ${2:0.0}
 ```
 
-## Ruby Map Type
+## [cotrSwitch](/snippets/cotrswitch)
 
-### [cotrTypesMap](/snippets/cotrTypesMap)
+Ruby Case Statement
 
 ```ruby
-Hash
+case ${1:variable}
+when ${2:value1}
+  # Your code here
+when ${4:value2}
+  # Your code here
+else
+  # Your code here
+end
 ```
 
-## Ruby Equal To
+## [cotrEqual](/snippets/cotrequal)
 
-### [cotrEqual](/snippets/cotrEqual)
+Ruby Equal To
 
 ```ruby
 ==
 ```
 
-## Ruby Create Multiline String Variable
+## [cotrVarStatic](/snippets/cotrvarstatic)
 
-### [cotrVarStringMulti](/snippets/cotrVarStringMulti)
-
-```ruby
-${1:my_string} = <<~HEREDOC
-${2:Your string here}
-HEREDOC
-```
-
-## Ruby Static Variable
-
-### [cotrVarStatic](/snippets/cotrVarStatic)
+Ruby Static Variable
 
 ```ruby
 @@${1:my_static_var} = ${2:value}
@@ -69,79 +61,64 @@ HEREDOC
 # MyClass.class_variable_get(:@@${1:my_static_var})
 ```
 
-## Ruby Function Syntax
+## [cotrTypesInt](/snippets/cotrtypesint)
 
-### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
-
-```ruby
-# Ruby Function Syntax
-# Basic function: def function_name(parameters) ... end
-# Function with arguments: def function_name(arg1, arg2, ...) ... end
-# Function with named arguments: def function_name(arg1: value1, arg2: value2, ...) ... end
-```
-
-## Ruby Multi-Line Comment
-
-### [cotrCommentMulti](/snippets/cotrCommentMulti)
+Ruby Integer Type
 
 ```ruby
-=begin
-${1:Your comment here}
-=end
+Integer
 ```
 
-## Ruby Date Type
+## [cotrConst](/snippets/cotrconst)
 
-### [cotrTypesDate](/snippets/cotrTypesDate)
+Ruby Create Constant
 
 ```ruby
-require 'date'
-
-Date
+${1:MY_CONST} = $2
 ```
 
-## Ruby For...In Loop
+## [cotrTypesNum](/snippets/cotrtypesnum)
 
-### [cotrForInLoop](/snippets/cotrForInLoop)
+Ruby Double Type
 
 ```ruby
-${1:iterable}.each do |item|
-  # Your code here
-end
+double
 ```
 
-## Ruby Function Args
+## [cotrTypesBoolFalse](/snippets/cotrtypesboolfalse)
 
-### [cotrFuncArgs](/snippets/cotrFuncArgs)
+Ruby Boolean False
 
 ```ruby
-# In Ruby, functions can have arguments with default values.
-def ${2:my_function}(${3:arg1}, ${4:arg2}=${5:'defaultVal'})
-  ${6:# Your code here}
-end
+false
 ```
 
-## Ruby Comment
+## [cotrVarMap](/snippets/cotrvarmap)
 
-### [cotrComment](/snippets/cotrComment)
+Ruby Create Hash Variable
 
 ```ruby
-# ${1:Your comment here}
+${1:my_hash} = {
+  ${2:key1}: ${3:value1},
+  ${4:key2}: ${5:value2},
+  # Add more key-value pairs here
+}
 ```
 
-## Ruby If Statement
+## [cotrEntry](/snippets/cotrentry)
 
-### [cotrIf](/snippets/cotrIf)
+Ruby Entry Point
 
 ```ruby
-if ${1:condition}
-  ${2:# Your code here}
-end
+# Ruby Entry Point
+# To run this program, use: `ruby filename.rb`
+
+puts 'Hello, World!'
 ```
 
-## Ruby Project Structure (High-Level)
+## [cotrStructure](/snippets/cotrstructure)
 
-### [cotrStructure](/snippets/cotrStructure)
+Ruby Project Structure (High-Level)
 
 ```ruby
 # Recommended High-Level Ruby Project Structure:
@@ -177,98 +154,9 @@ end
 # - Ensure that the project structure aligns with the conventions of the used framework.
 ```
 
-## Ruby Type Comparison
+## [cotrTypes](/snippets/cotrtypes)
 
-### [cotrTypeCompare](/snippets/cotrTypeCompare)
-
-```ruby
-# Check if two variables have the same type:
-if ${1:variable1}.class == ${2:variable2}.class
-  # Your code here
-end
-```
-
-## Ruby Function
-
-### [cotrFunc](/snippets/cotrFunc)
-
-```ruby
-def ${2:my_function}(${3:parameters})
-  ${4:# Your code here}
-end
-```
-
-## Ruby Anonymous Function
-
-### [cotrFuncAnon](/snippets/cotrFuncAnon)
-
-```ruby
-lambda { |${1:parameters}|
-  ${2:# Your code here}
-}
-```
-
-## Ruby Ternary Operator
-
-### [cotrTernary](/snippets/cotrTernary)
-
-```ruby
-${1:condition} ? ${2:true_value} : ${3:false_value}
-```
-
-## Ruby Print
-
-### [cotrPrint](/snippets/cotrPrint)
-
-```ruby
-puts ${1:'Your message here'}
-```
-
-## Ruby While Loop
-
-### [cotrWhileLoop](/snippets/cotrWhileLoop)
-
-```ruby
-while ${1:condition} do
-  # Your code here
-end
-```
-
-## Ruby Try Catch
-
-### [cotrTryCatch](/snippets/cotrTryCatch)
-
-```ruby
-begin
-  ${1:# Your code here}
-rescue => ${2:exception}
-  ${3:# Your code here}
-end
-```
-
-## Ruby Type Conversion
-
-### [cotrTypeConvert](/snippets/cotrTypeConvert)
-
-```ruby
-# Ruby Type Conversion:
-
-# Implicit conversions (Ruby performs automatically):
-# - Can be unpredictable, especially with loose equality (==).
-
-# Explicit conversions:
-# - variable.to_i  // Converts to integer
-# - variable.to_f  // Converts to float
-# - variable.to_s  // Converts to string
-# - !!variable  // Converts to boolean
-
-# Note:
-# - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control.
-```
-
-## Ruby Types
-
-### [cotrTypes](/snippets/cotrTypes)
+Ruby Types
 
 ```ruby
 $BLOCK_COMMENT_START
@@ -295,338 +183,49 @@ Some common types in Ruby include:
 $BLOCK_COMMENT_END
 ```
 
-## Ruby Create Typed Variable
+## [cotrTypesList](/snippets/cotrtypeslist)
 
-### [cotrVarTyped](/snippets/cotrVarTyped)
-
-```ruby
-# Note: Ruby is dynamically typed; explicit type annotations are not used.
-${1:my_var} = $2
-```
-
-## Ruby Interpolate String
-
-### [cotrInterpolate](/snippets/cotrInterpolate)
-
-```ruby
-"Your string here \#{${1:variable}}"
-```
-
-## Ruby Create Date Variable
-
-### [cotrVarDate](/snippets/cotrVarDate)
-
-```ruby
-${1:my_date} = Date.new(${2:year}, ${3:month}, ${4:day})
-```
-
-## Ruby Boolean True
-
-### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
-
-```ruby
-true
-```
-
-## Ruby Generate Array
-
-### [cotrGenList](/snippets/cotrGenList)
-
-```ruby
-${1:my_array} = Array.new(${2:length}) { |i| ${3:'item'} + i.to_s }
-```
-
-## Ruby Function Named Args
-
-### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
-
-```ruby
-def ${2:my_function}(${3:arg1}: ${4:value1}, ${5:arg2}: ${6:value2})
-  ${7:# Your code here}
-end
-```
-
-## Ruby Lambda Function
-
-### [cotrFuncLambda](/snippets/cotrFuncLambda)
-
-```ruby
-${2:my_function} = ->(${3:parameters}) {
-  ${4:# Your code here}
-}
-```
-
-## Ruby Throw Exception
-
-### [cotrThrow](/snippets/cotrThrow)
-
-```ruby
-raise ${1:'Your message here'}
-```
-
-## Ruby Print Multi
-
-### [cotrPrintMulti](/snippets/cotrPrintMulti)
-
-```ruby
-puts ${1:"""Line 1}
-${2:Line 2}
-${3:Line 3}"""}
-```
-
-## Ruby Enum (with Symbols)
-
-### [cotrEnum](/snippets/cotrEnum)
-
-```ruby
-${1:MyEnum} = [:${2:value1}, :${3:value2}]
-# Access: ${1:MyEnum}[0] # :${2:value1}
-```
-
-## Ruby Class
-
-### [cotrClass](/snippets/cotrClass)
-
-```ruby
-class ${1:MyClass}
-  ${2:# Your code here}
-end
-```
-
-## Ruby String Type
-
-### [cotrTypesString](/snippets/cotrTypesString)
-
-```ruby
-String
-```
-
-## Ruby List Type
-
-### [cotrTypesList](/snippets/cotrTypesList)
+Ruby List Type
 
 ```ruby
 Array
 ```
 
-## Ruby For Loop
+## [cotrInterpolate](/snippets/cotrinterpolate)
 
-### [cotrForLoop](/snippets/cotrForLoop)
-
-```ruby
-${1:10}.times do |${2:i}|
-  # Your code here
-end
-```
-
-## Ruby Boolean Operators
-
-### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
+Ruby Interpolate String
 
 ```ruby
-# Ruby Boolean Operators
-# Logical AND: && or and
-# Logical OR: || or or
-# Logical NOT: ! or not
-# Equality: ==
-# Inequality: !=
-# Greater than: >
-# Less than: <
-# Greater than or equal to: >=
-# Less than or equal to: <=
+"Your string here \#{${1:variable}}"
 ```
 
-## Ruby Type Check
+## [cotrTypesBool](/snippets/cotrtypesbool)
 
-### [cotrTypeCheck](/snippets/cotrTypeCheck)
+Ruby Boolean Type
 
 ```ruby
-${1:variable}.class
+# Ruby uses true and false for boolean values.
 ```
 
-## Ruby Create Float Variable
+## [cotrPrint](/snippets/cotrprint)
 
-### [cotrVarNum](/snippets/cotrVarNum)
+Ruby Print
 
 ```ruby
-${1:my_float} = ${2:0.0}
+puts ${1:'Your message here'}
 ```
 
-## Ruby Create Boolean Variable
+## [cotrThrow](/snippets/cotrthrow)
 
-### [cotrVarBool](/snippets/cotrVarBool)
+Ruby Throw Exception
 
 ```ruby
-${1:my_bool} = ${2:true}
+raise ${1:'Your message here'}
 ```
 
-## Ruby Create Array Variable
+## [cotrOperators](/snippets/cotroperators)
 
-### [cotrVarList](/snippets/cotrVarList)
-
-```ruby
-${1:my_array} = [
-  ${2:'item1'},
-  ${3:'item2'},
-  # Add more items here
-]
-```
-
-## Ruby Entry Point
-
-### [cotrEntry](/snippets/cotrEntry)
-
-```ruby
-# Ruby Entry Point
-# To run this program, use: `ruby filename.rb`
-
-puts 'Hello, World!'
-```
-
-## Ruby Not Equal To
-
-### [cotrNotEqual](/snippets/cotrNotEqual)
-
-```ruby
-!=
-```
-
-## Ruby Boolean False
-
-### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
-
-```ruby
-false
-```
-
-## Ruby Dynamic Type
-
-### [cotrDynamic](/snippets/cotrDynamic)
-
-```ruby
-# Ruby is a dynamically typed language.
-```
-
-## Ruby Create Hash Variable
-
-### [cotrVarMap](/snippets/cotrVarMap)
-
-```ruby
-${1:my_hash} = {
-  ${2:key1}: ${3:value1},
-  ${4:key2}: ${5:value2},
-  # Add more key-value pairs here
-}
-```
-
-## Ruby Create Variable
-
-### [cotrVar](/snippets/cotrVar)
-
-```ruby
-${1:my_var} = $2
-```
-
-## Ruby Concatenate Strings
-
-### [cotrConcat](/snippets/cotrConcat)
-
-```ruby
-"${1:string1}" + "${2:string2}"
-```
-
-## Ruby Create Constant
-
-### [cotrConst](/snippets/cotrConst)
-
-```ruby
-${1:MY_CONST} = $2
-```
-
-## Ruby Integer Type
-
-### [cotrTypesInt](/snippets/cotrTypesInt)
-
-```ruby
-Integer
-```
-
-## Variable Declaration Syntax
-
-### [cotrVarSyntax](/snippets/cotrVarSyntax)
-
-```ruby
-# Ruby Variable Declaration Syntax:
-
-# - Ruby is dynamically typed, so there is no explicit type declaration.
-# - Variables are created when you first assign a value to them.
-# - Variables can be reassigned to different types.
-
-# Note:
-# - Ruby does not have direct equivalents to 'var', 'let', or 'const'.
-# - Use descriptive variable names to improve code readability.
-```
-
-## Ruby If Else Statement
-
-### [cotrIfElse](/snippets/cotrIfElse)
-
-```ruby
-if ${1:condition}
-  ${2:# Your code here}
-elsif ${3:condition}
-  ${4:# Your code here}
-else
-  ${5:# Your code here}
-end
-```
-
-## Ruby Info
-
-### [cotrInfo](/snippets/cotrInfo)
-
-```ruby
-Typing: Dynamically typed
-Paradigm: Multi-paradigm: object-oriented, imperative, functional, reflective
-Compilation: Interpreted
-Concurrency: Supports multi-threading and concurrent programming with fibers
-```
-
-## Ruby Character Type
-
-### [cotrTypesChar](/snippets/cotrTypesChar)
-
-```ruby
-# Ruby does not have a separate char type; use String instead.
-```
-
-## Ruby Null Type
-
-### [cotrNull](/snippets/cotrNull)
-
-```ruby
-nil
-```
-
-## Ruby Create String Variable
-
-### [cotrVarString](/snippets/cotrVarString)
-
-```ruby
-${1:my_string} = ${2:'Your string here'}
-```
-
-## Ruby Create Integer Variable
-
-### [cotrVarInt](/snippets/cotrVarInt)
-
-```ruby
-${1:my_int} = ${2:0}
-```
-
-## Ruby Mathematical Operators
-
-### [cotrOperators](/snippets/cotrOperators)
+Ruby Mathematical Operators
 
 ```ruby
 # Ruby Mathematical Operators
@@ -647,18 +246,424 @@ ${1:my_int} = ${2:0}
 # Exponentiation assignment: **=
 ```
 
-## Ruby Case Statement
+## [cotrDynamic](/snippets/cotrdynamic)
 
-### [cotrSwitch](/snippets/cotrSwitch)
+Ruby Dynamic Type
 
 ```ruby
-case ${1:variable}
-when ${2:value1}
-  # Your code here
-when ${4:value2}
-  # Your code here
-else
+# Ruby is a dynamically typed language.
+```
+
+## [cotrVarSyntax](/snippets/cotrvarsyntax)
+
+Variable Declaration Syntax
+
+```ruby
+# Ruby Variable Declaration Syntax:
+
+# - Ruby is dynamically typed, so there is no explicit type declaration.
+# - Variables are created when you first assign a value to them.
+# - Variables can be reassigned to different types.
+
+# Note:
+# - Ruby does not have direct equivalents to 'var', 'let', or 'const'.
+# - Use descriptive variable names to improve code readability.
+```
+
+## [cotrConcat](/snippets/cotrconcat)
+
+Ruby Concatenate Strings
+
+```ruby
+"${1:string1}" + "${2:string2}"
+```
+
+## [cotrVarStringMulti](/snippets/cotrvarstringmulti)
+
+Ruby Create Multiline String Variable
+
+```ruby
+${1:my_string} = <<~HEREDOC
+${2:Your string here}
+HEREDOC
+```
+
+## [cotrFuncSyntax](/snippets/cotrfuncsyntax)
+
+Ruby Function Syntax
+
+```ruby
+# Ruby Function Syntax
+# Basic function: def function_name(parameters) ... end
+# Function with arguments: def function_name(arg1, arg2, ...) ... end
+# Function with named arguments: def function_name(arg1: value1, arg2: value2, ...) ... end
+```
+
+## [cotrClass](/snippets/cotrclass)
+
+Ruby Class
+
+```ruby
+class ${1:MyClass}
+  ${2:# Your code here}
+end
+```
+
+## [cotrTypeCompare](/snippets/cotrtypecompare)
+
+Ruby Type Comparison
+
+```ruby
+# Check if two variables have the same type:
+if ${1:variable1}.class == ${2:variable2}.class
   # Your code here
 end
+```
+
+## [cotrTypesDate](/snippets/cotrtypesdate)
+
+Ruby Date Type
+
+```ruby
+require 'date'
+
+Date
+```
+
+## [cotrNull](/snippets/cotrnull)
+
+Ruby Null Type
+
+```ruby
+nil
+```
+
+## [cotrVarList](/snippets/cotrvarlist)
+
+Ruby Create Array Variable
+
+```ruby
+${1:my_array} = [
+  ${2:'item1'},
+  ${3:'item2'},
+  # Add more items here
+]
+```
+
+## [cotrGenList](/snippets/cotrgenlist)
+
+Ruby Generate Array
+
+```ruby
+${1:my_array} = Array.new(${2:length}) { |i| ${3:'item'} + i.to_s }
+```
+
+## [cotrFuncAnon](/snippets/cotrfuncanon)
+
+Ruby Anonymous Function
+
+```ruby
+lambda { |${1:parameters}|
+  ${2:# Your code here}
+}
+```
+
+## [cotrTypesString](/snippets/cotrtypesstring)
+
+Ruby String Type
+
+```ruby
+String
+```
+
+## [cotrTypesMap](/snippets/cotrtypesmap)
+
+Ruby Map Type
+
+```ruby
+Hash
+```
+
+## [cotrFuncLambda](/snippets/cotrfunclambda)
+
+Ruby Lambda Function
+
+```ruby
+${2:my_function} = ->(${3:parameters}) {
+  ${4:# Your code here}
+}
+```
+
+## [cotrNow](/snippets/cotrnow)
+
+Ruby Date Now
+
+```ruby
+require 'date'
+
+Date.today
+```
+
+## [cotrVar](/snippets/cotrvar)
+
+Ruby Create Variable
+
+```ruby
+${1:my_var} = $2
+```
+
+## [cotrVarDate](/snippets/cotrvardate)
+
+Ruby Create Date Variable
+
+```ruby
+${1:my_date} = Date.new(${2:year}, ${3:month}, ${4:day})
+```
+
+## [cotrForLoop](/snippets/cotrforloop)
+
+Ruby For Loop
+
+```ruby
+${1:10}.times do |${2:i}|
+  # Your code here
+end
+```
+
+## [cotrFunc](/snippets/cotrfunc)
+
+Ruby Function
+
+```ruby
+def ${2:my_function}(${3:parameters})
+  ${4:# Your code here}
+end
+```
+
+## [cotrComment](/snippets/cotrcomment)
+
+Ruby Comment
+
+```ruby
+# ${1:Your comment here}
+```
+
+## [cotrTypeConvert](/snippets/cotrtypeconvert)
+
+Ruby Type Conversion
+
+```ruby
+# Ruby Type Conversion:
+
+# Implicit conversions (Ruby performs automatically):
+# - Can be unpredictable, especially with loose equality (==).
+
+# Explicit conversions:
+# - variable.to_i  // Converts to integer
+# - variable.to_f  // Converts to float
+# - variable.to_s  // Converts to string
+# - !!variable  // Converts to boolean
+
+# Note:
+# - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control.
+```
+
+## [cotrTypesChar](/snippets/cotrtypeschar)
+
+Ruby Character Type
+
+```ruby
+# Ruby does not have a separate char type; use String instead.
+```
+
+## [cotrVarTyped](/snippets/cotrvartyped)
+
+Ruby Create Typed Variable
+
+```ruby
+# Note: Ruby is dynamically typed; explicit type annotations are not used.
+${1:my_var} = $2
+```
+
+## [cotrTryCatch](/snippets/cotrtrycatch)
+
+Ruby Try Catch
+
+```ruby
+begin
+  ${1:# Your code here}
+rescue => ${2:exception}
+  ${3:# Your code here}
+end
+```
+
+## [cotrIf](/snippets/cotrif)
+
+Ruby If Statement
+
+```ruby
+if ${1:condition}
+  ${2:# Your code here}
+end
+```
+
+## [cotrTernary](/snippets/cotrternary)
+
+Ruby Ternary Operator
+
+```ruby
+${1:condition} ? ${2:true_value} : ${3:false_value}
+```
+
+## [cotrInfo](/snippets/cotrinfo)
+
+Ruby Info
+
+```ruby
+Typing: Dynamically typed
+Paradigm: Multi-paradigm: object-oriented, imperative, functional, reflective
+Compilation: Interpreted
+Concurrency: Supports multi-threading and concurrent programming with fibers
+```
+
+## [cotrNotEqual](/snippets/cotrnotequal)
+
+Ruby Not Equal To
+
+```ruby
+!=
+```
+
+## [cotrTypeCheck](/snippets/cotrtypecheck)
+
+Ruby Type Check
+
+```ruby
+${1:variable}.class
+```
+
+## [cotrTypesNumAlt](/snippets/cotrtypesnumalt)
+
+Ruby Float Type
+
+```ruby
+Float
+```
+
+## [cotrVarInt](/snippets/cotrvarint)
+
+Ruby Create Integer Variable
+
+```ruby
+${1:my_int} = ${2:0}
+```
+
+## [cotrVarBool](/snippets/cotrvarbool)
+
+Ruby Create Boolean Variable
+
+```ruby
+${1:my_bool} = ${2:true}
+```
+
+## [cotrForInLoop](/snippets/cotrforinloop)
+
+Ruby For...In Loop
+
+```ruby
+${1:iterable}.each do |item|
+  # Your code here
+end
+```
+
+## [cotrFuncArgsNamed](/snippets/cotrfuncargsnamed)
+
+Ruby Function Named Args
+
+```ruby
+def ${2:my_function}(${3:arg1}: ${4:value1}, ${5:arg2}: ${6:value2})
+  ${7:# Your code here}
+end
+```
+
+## [cotrIfElse](/snippets/cotrifelse)
+
+Ruby If Else Statement
+
+```ruby
+if ${1:condition}
+  ${2:# Your code here}
+elsif ${3:condition}
+  ${4:# Your code here}
+else
+  ${5:# Your code here}
+end
+```
+
+## [cotrOperatorsBool](/snippets/cotroperatorsbool)
+
+Ruby Boolean Operators
+
+```ruby
+# Ruby Boolean Operators
+# Logical AND: && or and
+# Logical OR: || or or
+# Logical NOT: ! or not
+# Equality: ==
+# Inequality: !=
+# Greater than: >
+# Less than: <
+# Greater than or equal to: >=
+# Less than or equal to: <=
+```
+
+## [cotrPrintMulti](/snippets/cotrprintmulti)
+
+Ruby Print Multi
+
+```ruby
+puts ${1:"""Line 1}
+${2:Line 2}
+${3:Line 3}"""}
+```
+
+## [cotrWhileLoop](/snippets/cotrwhileloop)
+
+Ruby While Loop
+
+```ruby
+while ${1:condition} do
+  # Your code here
+end
+```
+
+## [cotrFuncArgs](/snippets/cotrfuncargs)
+
+Ruby Function Args
+
+```ruby
+# In Ruby, functions can have arguments with default values.
+def ${2:my_function}(${3:arg1}, ${4:arg2}=${5:'defaultVal'})
+  ${6:# Your code here}
+end
+```
+
+## [cotrCommentMulti](/snippets/cotrcommentmulti)
+
+Ruby Multi-Line Comment
+
+```ruby
+=begin
+${1:Your comment here}
+=end
+```
+
+## [cotrEnum](/snippets/cotrenum)
+
+Ruby Enum (with Symbols)
+
+```ruby
+${1:MyEnum} = [:${2:value1}, :${3:value2}]
+# Access: ${1:MyEnum}[0] # :${2:value1}
 ```
 

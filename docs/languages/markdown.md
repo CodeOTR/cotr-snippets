@@ -1,40 +1,11 @@
-## Markdown Comment (HTML)
+---
+title: Markdown
+description: Markdown snippets on the rocks.
+---
 
-### [cotrComment](/snippets/cotrComment)
+## [cotrInfo](/snippets/cotrinfo)
 
-```markdown
-<!-- ${1:Your comment here} -->
-```
-
-## Markdown Code Block
-
-### [cotrCodeBlock](/snippets/cotrCodeBlock)
-
-```markdown
-```
-${1:Your code here}
-```
-```
-
-## Markdown Ordered List
-
-### [cotrOrderedList](/snippets/cotrOrderedList)
-
-```markdown
-${1:1}. ${2:List item}
-```
-
-## Markdown Link
-
-### [cotrLink](/snippets/cotrLink)
-
-```markdown
-[${1:link text}](${2:https://www.example.com})
-```
-
-## Markdown Info
-
-### [cotrInfo](/snippets/cotrInfo)
+Markdown Info
 
 ```markdown
 # Markdown Syntax Reference:
@@ -45,51 +16,49 @@ It uses simple syntax to format text, create lists, insert links, and more.
 See the official Markdown guide for more details: https://www.markdownguide.org/
 ```
 
-## Markdown Multi-Line Comment (HTML)
+## [cotrComment](/snippets/cotrcomment)
 
-### [cotrCommentMulti](/snippets/cotrCommentMulti)
-
-```markdown
-<!--
-  ${1:Your comment here}
--->
-```
-
-## Markdown Heading
-
-### [cotrHeading](/snippets/cotrHeading)
+Markdown Comment (HTML)
 
 ```markdown
-${1:#} ${2:Heading Text}
+<!-- ${1:Your comment here} -->
 ```
 
-## Markdown Bold
+## [cotrOrderedList](/snippets/cotrorderedlist)
 
-### [cotrBold](/snippets/cotrBold)
+Markdown Ordered List
 
 ```markdown
-**${1:bold text}**
+${1:1}. ${2:List item}
 ```
 
-## Markdown Italic
+## [cotrItalic](/snippets/cotritalic)
 
-### [cotrItalic](/snippets/cotrItalic)
+Markdown Italic
 
 ```markdown
 *${1:italic text}*
 ```
 
-## Markdown Unordered List
+## [cotrList](/snippets/cotrlist)
 
-### [cotrList](/snippets/cotrList)
+Markdown Unordered List
 
 ```markdown
 - ${1:List item}
 ```
 
-## Markdown Image
+## [cotrLink](/snippets/cotrlink)
 
-### [cotrImage](/snippets/cotrImage)
+Markdown Link
+
+```markdown
+[${1:link text}](${2:https://www.example.com})
+```
+
+## [cotrImage](/snippets/cotrimage)
+
+Markdown Image
 
 ```markdown
 ![${1:alt text}](${2:image.jpg})
@@ -99,9 +68,45 @@ ${1:#} ${2:Heading Text}
 // Example: <img src="image.jpg" alt="alt text" width="50%" align="right" />
 ```
 
-## Markdown Badges
+## [cotrCodeBlock](/snippets/cotrcodeblock)
 
-### [cotrBadges](/snippets/cotrBadges)
+Markdown Code Block
+
+```markdown
+```
+${1:Your code here}
+```
+```
+
+## [cotrCommentMulti](/snippets/cotrcommentmulti)
+
+Markdown Multi-Line Comment (HTML)
+
+```markdown
+<!--
+  ${1:Your comment here}
+-->
+```
+
+## [cotrHeading](/snippets/cotrheading)
+
+Markdown Heading
+
+```markdown
+${1:#} ${2:Heading Text}
+```
+
+## [cotrBold](/snippets/cotrbold)
+
+Markdown Bold
+
+```markdown
+**${1:bold text}**
+```
+
+## [cotrBadges](/snippets/cotrbadges)
+
+Markdown Badges
 
 ```markdown
 <!-- For example: 

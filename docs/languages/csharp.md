@@ -1,95 +1,364 @@
-## C# Concatenate Strings
+---
+title: Csharp
+description: Csharp snippets on the rocks.
+---
 
-### [cotrConcat](/snippets/cotrConcat)
+## [cotrTypesList](/snippets/cotrtypeslist)
 
-```csharp
-string result = string.Concat(${1:First string}, ${2:Second string});
-```
-
-## C# Function Syntax
-
-### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
+C# List Type
 
 ```csharp
-// C# Function Syntax
-// Basic function: public returnType FunctionName(parameters) { ... }
-// Function with arguments: public returnType FunctionName(argType argName, ...) { ... }
-// Named parameters in method calls: FunctionName(argName: value, ...);
+List<${1:type}>
 ```
 
-## C# Boolean Type
+## [cotrTypesNumAlt](/snippets/cotrtypesnumalt)
 
-### [cotrTypesBool](/snippets/cotrTypesBool)
+C# Float Type
 
 ```csharp
-bool
+float
 ```
 
-## C# Date Now
+## [cotrVarNullable](/snippets/cotrvarnullable)
 
-### [cotrNow](/snippets/cotrNow)
-
-```csharp
-DateTime.Now
-```
-
-## C# Create Multi-Line String Variable
-
-### [cotrVarStringMulti](/snippets/cotrVarStringMulti)
-
-```csharp
-string ${1:myString} = @"""
-${2:Line 1}
-${3:Line 2}
-${4:Line 3}
-""";
-```
-
-## C# Create Integer Variable
-
-### [cotrVarInt](/snippets/cotrVarInt)
-
-```csharp
-int ${1:myInt} = ${2:0};
-```
-
-## C# Boolean False
-
-### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
-
-```csharp
-false
-```
-
-## C# Create Nullable Variable
-
-### [cotrVarNullable](/snippets/cotrVarNullable)
+C# Create Nullable Variable
 
 ```csharp
 ${1:Type}? ${2:myVar} = $3;
 ```
 
-## C# If Statement
+## [cotrComment](/snippets/cotrcomment)
 
-### [cotrIf](/snippets/cotrIf)
+C# Comment
 
 ```csharp
-if (${1:condition}) {
+// ${1:Your comment here}
+```
+
+## [cotrTypeConvert](/snippets/cotrtypeconvert)
+
+C# Type Conversion
+
+```csharp
+// C# Type Conversion:
+
+// Implicit conversions (compiler performs automatically):
+// - Smaller numeric types to larger numeric types (e.g., int to double).
+
+// Explicit conversions (using casts):
+// - (Type)variable  // C-style cast
+// - variable as Type  // Safe cast (returns null if conversion fails)
+// - Convert.ToType(variable)  // Conversion methods in the Convert class
+
+// Note:
+// - Be cautious with explicit conversions, as they can lead to data loss or errors if the conversion is not valid.
+```
+
+## [cotrTypesDynamic](/snippets/cotrtypesdynamic)
+
+C# Dynamic Type
+
+```csharp
+dynamic
+```
+
+## [cotrVarDouble](/snippets/cotrvardouble)
+
+C# Create Double Variable
+
+```csharp
+double ${1:myDouble} = ${2:0.0};
+```
+
+## [cotrVarMap](/snippets/cotrvarmap)
+
+C# Create Dictionary Variable
+
+```csharp
+Dictionary<${1:Key}, ${2:Value}> ${3:myDict} = new Dictionary<${1:Key}, ${2:Value}>();
+```
+
+## [cotrWhileLoop](/snippets/cotrwhileloop)
+
+C# While Loop
+
+```csharp
+while (${1:condition}) {
   ${2:// Your code here}
 }
 ```
 
-## C# Create Typed Variable
+## [cotrTypesNum](/snippets/cotrtypesnum)
 
-### [cotrVarTyped](/snippets/cotrVarTyped)
+C# Double Type
 
 ```csharp
-${1:Type} ${2:myVar} = $3;
+double
 ```
 
-## C# Project Structure (High-Level)
+## [cotrTernary](/snippets/cotrternary)
 
-### [cotrStructure](/snippets/cotrStructure)
+C# Ternary Operator
+
+```csharp
+${1:condition} ? ${2:trueValue} : ${3:falseValue}
+```
+
+## [cotrTypesBoolFalse](/snippets/cotrtypesboolfalse)
+
+C# Boolean False
+
+```csharp
+false
+```
+
+## [cotrVarStatic](/snippets/cotrvarstatic)
+
+C# Static Variable
+
+```csharp
+static ${2:Type} ${3:myStaticVar} = ${4:value};
+
+// Access the static variable
+// MyClass.${3:myStaticVar}
+```
+
+## [cotrFuncArgsNamed](/snippets/cotrfuncargsnamed)
+
+C# Function Named Args
+
+```csharp
+// Note: C# does not have named arguments in function definitions.
+// You can use named parameters in method calls.
+public ${1:void} ${2:MyFunction}(${3:type1} ${4:arg1}, ${5:type2} ${6:arg2})
+{
+    ${7:// Your code here}
+}
+```
+
+## [cotrTryCatch](/snippets/cotrtrycatch)
+
+C# Try Catch
+
+```csharp
+try {
+  ${1:// Your code here}
+} catch (${2:Exception} ${3:e}) {
+  ${4:// Your code here}
+}
+```
+
+## [cotrEqual](/snippets/cotrequal)
+
+C# Equal To
+
+```csharp
+==
+```
+
+## [cotrConcat](/snippets/cotrconcat)
+
+C# Concatenate Strings
+
+```csharp
+string result = string.Concat(${1:First string}, ${2:Second string});
+```
+
+## [cotrThrow](/snippets/cotrthrow)
+
+C# Throw Exception
+
+```csharp
+throw new ${1:Exception}(${2:'Your message here'});
+```
+
+## [cotrTypesDate](/snippets/cotrtypesdate)
+
+C# Date Type
+
+```csharp
+DateTime
+```
+
+## [cotrInterpolate](/snippets/cotrinterpolate)
+
+C# Interpolate String
+
+```csharp
+$"${1:Your string here}"
+```
+
+## [cotrVarSyntax](/snippets/cotrvarsyntax)
+
+C# Variable Declaration Syntax
+
+```csharp
+// C# Variable Declaration Syntax:
+
+// - var: (Scope: Block)
+//   - Type is automatically inferred by the compiler.
+//   - Preferred for most variable declarations.
+
+// - type: (Scope: Block)
+//   - Explicitly specify the variable's type.
+//   - Use when var deduction is not desired or not possible.
+
+// - const: (Scope: Block)
+//   - Cannot be reassigned or redeclared.
+//   - Use for values that should remain constant.
+
+// Note:
+// - C# does not have a direct equivalent to 'let'.
+// - Use 'var' for most variable declarations.
+// - Use 'const' for values that should not change.
+```
+
+## [cotrVarString](/snippets/cotrvarstring)
+
+C# Create String Variable
+
+```csharp
+string ${1:myString} = ${2:'Your string here'};
+```
+
+## [cotrSwitch](/snippets/cotrswitch)
+
+C# Switch Statement
+
+```csharp
+switch (${1:variable}) {
+  case ${2:value1}:
+    ${3:// Your code here}
+    break;
+  case ${4:value2}:
+    ${5:// Your code here}
+    break;
+  default:
+    ${6:// Your code here}
+}
+```
+
+## [cotrFuncAnon](/snippets/cotrfuncanon)
+
+C# Anonymous Function
+
+```csharp
+(${1:parameters}) => {
+    ${2:// Your code here}
+};
+```
+
+## [cotrTypesNull](/snippets/cotrtypesnull)
+
+C# Null Type
+
+```csharp
+null
+```
+
+## [cotrTypesMap](/snippets/cotrtypesmap)
+
+C# Map Type
+
+```csharp
+Dictionary<${1:keyType}, ${2:valueType}>
+```
+
+## [cotrVar](/snippets/cotrvar)
+
+C# Create Variable
+
+```csharp
+${1:Type} ${2:myVar} = ${3:value};
+```
+
+## [cotrVarDate](/snippets/cotrvardate)
+
+C# Create Date Variable
+
+```csharp
+DateTime ${1:myDate} = new DateTime(${2:year}, ${3:month}, ${4:day});
+```
+
+## [cotrPrint](/snippets/cotrprint)
+
+C# Print
+
+```csharp
+Console.WriteLine(${1:'Your message here'});
+```
+
+## [cotrTypesBool](/snippets/cotrtypesbool)
+
+C# Boolean Type
+
+```csharp
+bool
+```
+
+## [cotrVarList](/snippets/cotrvarlist)
+
+C# Create List Variable
+
+```csharp
+List<${1:Type}> ${2:myList} = new List<${1:Type}>();
+```
+
+## [cotrDoWhileLoop](/snippets/cotrdowhileloop)
+
+C# Do While Loop
+
+```csharp
+do {
+  ${1:// Your code here}
+} while (${2:condition});
+```
+
+## [cotrCommentMulti](/snippets/cotrcommentmulti)
+
+C# Multi-Line Comment
+
+```csharp
+/*
+ * ${1:Your comment here}
+ */
+```
+
+## [cotrTypeCheck](/snippets/cotrtypecheck)
+
+C# Type Check
+
+```csharp
+${1:variable}.GetType()
+```
+
+## [cotrNotEqual](/snippets/cotrnotequal)
+
+C# Not Equal To
+
+```csharp
+!=
+```
+
+## [cotrNow](/snippets/cotrnow)
+
+C# Date Now
+
+```csharp
+DateTime.Now
+```
+
+## [cotrGenMap](/snippets/cotrgenmap)
+
+C# Generate Map
+
+```csharp
+var ${1:myMap} = Enumerable.Range(0, ${2:length}).ToDictionary(i => i, i => ${3:'item'} + i.ToString());
+```
+
+## [cotrStructure](/snippets/cotrstructure)
+
+C# Project Structure (High-Level)
 
 ```csharp
 // Recommended High-Level C# Project Structure:
@@ -125,26 +394,9 @@ ${1:Type} ${2:myVar} = $3;
 // - This structure can vary depending on the project type and developer preferences.
 ```
 
-## C# Boolean Operators
+## [cotrTypeCompare](/snippets/cotrtypecompare)
 
-### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
-
-```csharp
-// C# Boolean Operators
-// Logical AND: &&
-// Logical OR: ||
-// Logical NOT: !
-// Equality: ==
-// Inequality: !=
-// Greater than: >
-// Less than: <
-// Greater than or equal to: >=
-// Less than or equal to: <=
-```
-
-## C# Type Comparison
-
-### [cotrTypeCompare](/snippets/cotrTypeCompare)
+C# Type Comparison
 
 ```csharp
 // Check if two variables have the same type:
@@ -153,98 +405,9 @@ if (${1:variable1}.GetType() == ${2:variable2}.GetType()) {
 }
 ```
 
-## C# List Type
+## [cotrTypes](/snippets/cotrtypes)
 
-### [cotrTypesList](/snippets/cotrTypesList)
-
-```csharp
-List<${1:type}>
-```
-
-## C# Entry Point
-
-### [cotrEntry](/snippets/cotrEntry)
-
-```csharp
-// C# Entry Point
-// To run this program, use: `dotnet run` within the project directory
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Your code here
-    }
-}
-```
-
-## C# Create Variable
-
-### [cotrVar](/snippets/cotrVar)
-
-```csharp
-${1:Type} ${2:myVar} = ${3:value};
-```
-
-## C# Generate List
-
-### [cotrGenList](/snippets/cotrGenList)
-
-```csharp
-var ${1:myList} = Enumerable.Range(0, ${2:length}).Select(i => ${3:'item'} + i.ToString()).ToList();
-```
-
-## C# For Each Loop
-
-### [cotrForEachLoop](/snippets/cotrForEachLoop)
-
-```csharp
-foreach (${1:Type} ${2:item} in ${3:iterable}) {
-  ${4:// Your code here}
-}
-```
-
-## C# Switch Statement
-
-### [cotrSwitch](/snippets/cotrSwitch)
-
-```csharp
-switch (${1:variable}) {
-  case ${2:value1}:
-    ${3:// Your code here}
-    break;
-  case ${4:value2}:
-    ${5:// Your code here}
-    break;
-  default:
-    ${6:// Your code here}
-}
-```
-
-## C# Function Named Args
-
-### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
-
-```csharp
-// Note: C# does not have named arguments in function definitions.
-// You can use named parameters in method calls.
-public ${1:void} ${2:MyFunction}(${3:type1} ${4:arg1}, ${5:type2} ${6:arg2})
-{
-    ${7:// Your code here}
-}
-```
-
-## C# String Type
-
-### [cotrTypesString](/snippets/cotrTypesString)
-
-```csharp
-string
-```
-
-## C# Types
-
-### [cotrTypes](/snippets/cotrTypes)
+C# Types
 
 ```csharp
 $BLOCK_COMMENT_START
@@ -274,152 +437,52 @@ Read more here: https://learn.microsoft.com/en-us/dotnet/csharp/language-referen
 $BLOCK_COMMENT_END
 ```
 
-## C# Static Variable
+## [cotrTypesInt](/snippets/cotrtypesint)
 
-### [cotrVarStatic](/snippets/cotrVarStatic)
+C# Integer Type
 
 ```csharp
-static ${2:Type} ${3:myStaticVar} = ${4:value};
-
-// Access the static variable
-// MyClass.${3:myStaticVar}
+int
 ```
 
-## C# Arrow Function
+## [cotrConst](/snippets/cotrconst)
 
-### [cotrFuncArrow](/snippets/cotrFuncArrow)
+C# Create Constant
 
 ```csharp
-Func<${2:parameters}, ${1:returnType}> ${3:myFunction} = (${4:parameters}) => {
-    ${5:// Your code here}
-};
+const ${1:Type} ${2:myConst} = ${3:value};
 ```
 
-## C# Lambda Function
+## [cotrIf](/snippets/cotrif)
 
-### [cotrFuncLambda](/snippets/cotrFuncLambda)
-
-```csharp
-(${1:parameters}) => ${2:expression}
-```
-
-## C# Comment
-
-### [cotrComment](/snippets/cotrComment)
+C# If Statement
 
 ```csharp
-// ${1:Your comment here}
-```
-
-## C# Enum
-
-### [cotrEnum](/snippets/cotrEnum)
-
-```csharp
-enum ${1:MyEnum} {
-  ${2:value1},
-  ${3:value2},
-  // Add more values here
+if (${1:condition}) {
+  ${2:// Your code here}
 }
 ```
 
-## C# Type Check
+## [cotrOperatorsBool](/snippets/cotroperatorsbool)
 
-### [cotrTypeCheck](/snippets/cotrTypeCheck)
-
-```csharp
-${1:variable}.GetType()
-```
-
-## C# Dynamic Type
-
-### [cotrTypesDynamic](/snippets/cotrTypesDynamic)
+C# Boolean Operators
 
 ```csharp
-dynamic
+// C# Boolean Operators
+// Logical AND: &&
+// Logical OR: ||
+// Logical NOT: !
+// Equality: ==
+// Inequality: !=
+// Greater than: >
+// Less than: <
+// Greater than or equal to: >=
+// Less than or equal to: <=
 ```
 
-## C# Interpolate String
+## [cotrFuncArgs](/snippets/cotrfuncargs)
 
-### [cotrInterpolate](/snippets/cotrInterpolate)
-
-```csharp
-$"${1:Your string here}"
-```
-
-## C# Create Double Variable
-
-### [cotrVarDouble](/snippets/cotrVarDouble)
-
-```csharp
-double ${1:myDouble} = ${2:0.0};
-```
-
-## C# Equal To
-
-### [cotrEqual](/snippets/cotrEqual)
-
-```csharp
-==
-```
-
-## C# Variable Declaration Syntax
-
-### [cotrVarSyntax](/snippets/cotrVarSyntax)
-
-```csharp
-// C# Variable Declaration Syntax:
-
-// - var: (Scope: Block)
-//   - Type is automatically inferred by the compiler.
-//   - Preferred for most variable declarations.
-
-// - type: (Scope: Block)
-//   - Explicitly specify the variable's type.
-//   - Use when var deduction is not desired or not possible.
-
-// - const: (Scope: Block)
-//   - Cannot be reassigned or redeclared.
-//   - Use for values that should remain constant.
-
-// Note:
-// - C# does not have a direct equivalent to 'let'.
-// - Use 'var' for most variable declarations.
-// - Use 'const' for values that should not change.
-```
-
-## C# Create String Variable
-
-### [cotrVarString](/snippets/cotrVarString)
-
-```csharp
-string ${1:myString} = ${2:'Your string here'};
-```
-
-## C# For Loop
-
-### [cotrForLoop](/snippets/cotrForLoop)
-
-```csharp
-for (int ${1:i} = 0; $1 < ${2:10}; $1++) {
-  // Your code here
-}
-```
-
-## C# Function
-
-### [cotrFunc](/snippets/cotrFunc)
-
-```csharp
-public ${1:void} ${2:MyFunction}(${3:parameters})
-{
-    ${4:// Your code here}
-}
-```
-
-## C# Function Args
-
-### [cotrFuncArgs](/snippets/cotrFuncArgs)
+C# Function Args
 
 ```csharp
 // In C#, functions can have arguments with default values.
@@ -429,177 +492,58 @@ public ${1:void} ${2:MyFunction}(${3:type1} ${4:arg1}, ${5:type2} ${6:arg2} = ${
 }
 ```
 
-## C# Null Type
+## [cotrEnum](/snippets/cotrenum)
 
-### [cotrTypesNull](/snippets/cotrTypesNull)
+C# Enum
 
 ```csharp
-null
+enum ${1:MyEnum} {
+  ${2:value1},
+  ${3:value2},
+  // Add more values here
+}
 ```
 
-## C# Create Boolean Variable
+## [cotrEntry](/snippets/cotrentry)
 
-### [cotrVarBool](/snippets/cotrVarBool)
+C# Entry Point
+
+```csharp
+// C# Entry Point
+// To run this program, use: `dotnet run` within the project directory
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Your code here
+    }
+}
+```
+
+## [cotrVarBool](/snippets/cotrvarbool)
+
+C# Create Boolean Variable
 
 ```csharp
 bool ${1:myBool} = ${2:true};
 ```
 
-## C# Print
+## [cotrVarStringMulti](/snippets/cotrvarstringmulti)
 
-### [cotrPrint](/snippets/cotrPrint)
-
-```csharp
-Console.WriteLine(${1:'Your message here'});
-```
-
-## C# Print Multi
-
-### [cotrPrintMulti](/snippets/cotrPrintMulti)
+C# Create Multi-Line String Variable
 
 ```csharp
-Console.WriteLine(@"""
-${1:Line 1}
-${2:Line 2}
-${3:Line 3}
-""");
+string ${1:myString} = @"""
+${2:Line 1}
+${3:Line 2}
+${4:Line 3}
+""";
 ```
 
-## C# While Loop
+## [cotrOperators](/snippets/cotroperators)
 
-### [cotrWhileLoop](/snippets/cotrWhileLoop)
-
-```csharp
-while (${1:condition}) {
-  ${2:// Your code here}
-}
-```
-
-## C# Do While Loop
-
-### [cotrDoWhileLoop](/snippets/cotrDoWhileLoop)
-
-```csharp
-do {
-  ${1:// Your code here}
-} while (${2:condition});
-```
-
-## C# Throw Exception
-
-### [cotrThrow](/snippets/cotrThrow)
-
-```csharp
-throw new ${1:Exception}(${2:'Your message here'});
-```
-
-## C# Double Type
-
-### [cotrTypesNum](/snippets/cotrTypesNum)
-
-```csharp
-double
-```
-
-## C# Not Equal To
-
-### [cotrNotEqual](/snippets/cotrNotEqual)
-
-```csharp
-!=
-```
-
-## C# Float Type
-
-### [cotrTypesNumAlt](/snippets/cotrTypesNumAlt)
-
-```csharp
-float
-```
-
-## C# Boolean True
-
-### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
-
-```csharp
-true
-```
-
-## C# Generate Map
-
-### [cotrGenMap](/snippets/cotrGenMap)
-
-```csharp
-var ${1:myMap} = Enumerable.Range(0, ${2:length}).ToDictionary(i => i, i => ${3:'item'} + i.ToString());
-```
-
-## C# Multi-Line Comment
-
-### [cotrCommentMulti](/snippets/cotrCommentMulti)
-
-```csharp
-/*
- * ${1:Your comment here}
- */
-```
-
-## C# Info
-
-### [cotrInfo](/snippets/cotrInfo)
-
-```csharp
-// Typing: Statically typed
-// Paradigm: Multi-paradigm: structured, imperative, object-oriented, event-driven, task-driven, functional, generic, reflective, concurrent
-// Compilation: Compiled (.NET Framework), Just-In-Time (JIT) compilation (.NET Core)
-// Concurrency: Supports multi-threading, async/await
-```
-
-## C# Type Conversion
-
-### [cotrTypeConvert](/snippets/cotrTypeConvert)
-
-```csharp
-// C# Type Conversion:
-
-// Implicit conversions (compiler performs automatically):
-// - Smaller numeric types to larger numeric types (e.g., int to double).
-
-// Explicit conversions (using casts):
-// - (Type)variable  // C-style cast
-// - variable as Type  // Safe cast (returns null if conversion fails)
-// - Convert.ToType(variable)  // Conversion methods in the Convert class
-
-// Note:
-// - Be cautious with explicit conversions, as they can lead to data loss or errors if the conversion is not valid.
-```
-
-## C# Date Type
-
-### [cotrTypesDate](/snippets/cotrTypesDate)
-
-```csharp
-DateTime
-```
-
-## C# Map Type
-
-### [cotrTypesMap](/snippets/cotrTypesMap)
-
-```csharp
-Dictionary<${1:keyType}, ${2:valueType}>
-```
-
-## C# Create Dictionary Variable
-
-### [cotrVarMap](/snippets/cotrVarMap)
-
-```csharp
-Dictionary<${1:Key}, ${2:Value}> ${3:myDict} = new Dictionary<${1:Key}, ${2:Value}>();
-```
-
-## C# Mathematical Operators
-
-### [cotrOperators](/snippets/cotrOperators)
+C# Mathematical Operators
 
 ```csharp
 // C# Mathematical Operators
@@ -619,17 +563,74 @@ Dictionary<${1:Key}, ${2:Value}> ${3:myDict} = new Dictionary<${1:Key}, ${2:Valu
 // Modulus assignment: %=
 ```
 
-## C# Ternary Operator
+## [cotrTypesString](/snippets/cotrtypesstring)
 
-### [cotrTernary](/snippets/cotrTernary)
+C# String Type
 
 ```csharp
-${1:condition} ? ${2:trueValue} : ${3:falseValue}
+string
 ```
 
-## C# Class
+## [cotrVarInt](/snippets/cotrvarint)
 
-### [cotrClass](/snippets/cotrClass)
+C# Create Integer Variable
+
+```csharp
+int ${1:myInt} = ${2:0};
+```
+
+## [cotrGenList](/snippets/cotrgenlist)
+
+C# Generate List
+
+```csharp
+var ${1:myList} = Enumerable.Range(0, ${2:length}).Select(i => ${3:'item'} + i.ToString()).ToList();
+```
+
+## [cotrForLoop](/snippets/cotrforloop)
+
+C# For Loop
+
+```csharp
+for (int ${1:i} = 0; $1 < ${2:10}; $1++) {
+  // Your code here
+}
+```
+
+## [cotrForEachLoop](/snippets/cotrforeachloop)
+
+C# For Each Loop
+
+```csharp
+foreach (${1:Type} ${2:item} in ${3:iterable}) {
+  ${4:// Your code here}
+}
+```
+
+## [cotrFuncArrow](/snippets/cotrfuncarrow)
+
+C# Arrow Function
+
+```csharp
+Func<${2:parameters}, ${1:returnType}> ${3:myFunction} = (${4:parameters}) => {
+    ${5:// Your code here}
+};
+```
+
+## [cotrInfo](/snippets/cotrinfo)
+
+C# Info
+
+```csharp
+// Typing: Statically typed
+// Paradigm: Multi-paradigm: structured, imperative, object-oriented, event-driven, task-driven, functional, generic, reflective, concurrent
+// Compilation: Compiled (.NET Framework), Just-In-Time (JIT) compilation (.NET Core)
+// Concurrency: Supports multi-threading, async/await
+```
+
+## [cotrClass](/snippets/cotrclass)
+
+C# Class
 
 ```csharp
 public class ${1:MyClass} {
@@ -637,55 +638,9 @@ public class ${1:MyClass} {
 }
 ```
 
-## C# Try Catch
+## [cotrIfElse](/snippets/cotrifelse)
 
-### [cotrTryCatch](/snippets/cotrTryCatch)
-
-```csharp
-try {
-  ${1:// Your code here}
-} catch (${2:Exception} ${3:e}) {
-  ${4:// Your code here}
-}
-```
-
-## C# Anonymous Function
-
-### [cotrFuncAnon](/snippets/cotrFuncAnon)
-
-```csharp
-(${1:parameters}) => {
-    ${2:// Your code here}
-};
-```
-
-## C# Integer Type
-
-### [cotrTypesInt](/snippets/cotrTypesInt)
-
-```csharp
-int
-```
-
-## C# Create List Variable
-
-### [cotrVarList](/snippets/cotrVarList)
-
-```csharp
-List<${1:Type}> ${2:myList} = new List<${1:Type}>();
-```
-
-## C# Create Constant
-
-### [cotrConst](/snippets/cotrConst)
-
-```csharp
-const ${1:Type} ${2:myConst} = ${3:value};
-```
-
-## C# If Else Statement
-
-### [cotrIfElse](/snippets/cotrIfElse)
+C# If Else Statement
 
 ```csharp
 if (${1:condition}) {
@@ -697,11 +652,61 @@ if (${1:condition}) {
 }
 ```
 
-## C# Create Date Variable
+## [cotrFuncSyntax](/snippets/cotrfuncsyntax)
 
-### [cotrVarDate](/snippets/cotrVarDate)
+C# Function Syntax
 
 ```csharp
-DateTime ${1:myDate} = new DateTime(${2:year}, ${3:month}, ${4:day});
+// C# Function Syntax
+// Basic function: public returnType FunctionName(parameters) { ... }
+// Function with arguments: public returnType FunctionName(argType argName, ...) { ... }
+// Named parameters in method calls: FunctionName(argName: value, ...);
+```
+
+## [cotrPrintMulti](/snippets/cotrprintmulti)
+
+C# Print Multi
+
+```csharp
+Console.WriteLine(@"""
+${1:Line 1}
+${2:Line 2}
+${3:Line 3}
+""");
+```
+
+## [cotrTypesBoolTrue](/snippets/cotrtypesbooltrue)
+
+C# Boolean True
+
+```csharp
+true
+```
+
+## [cotrFunc](/snippets/cotrfunc)
+
+C# Function
+
+```csharp
+public ${1:void} ${2:MyFunction}(${3:parameters})
+{
+    ${4:// Your code here}
+}
+```
+
+## [cotrFuncLambda](/snippets/cotrfunclambda)
+
+C# Lambda Function
+
+```csharp
+(${1:parameters}) => ${2:expression}
+```
+
+## [cotrVarTyped](/snippets/cotrvartyped)
+
+C# Create Typed Variable
+
+```csharp
+${1:Type} ${2:myVar} = $3;
 ```
 

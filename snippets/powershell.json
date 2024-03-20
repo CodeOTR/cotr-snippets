@@ -81,7 +81,7 @@
     "prefix": ["thisTypeCheck", "thisType", "getThisType"],
     "body": ["$CLIPBOARD.GetType().FullName"],
     "description": "Gets the full type name of the variable in the clipboard in PowerShell."
-  },  
+  },
 
   "PowerShell Type Comparison": {
     "prefix": ["cotrTypeCompare", "compareTypes"],
@@ -193,13 +193,29 @@
   },
 
   "PowerShell Date Type": {
-    "prefix": ["cotrTypesDate", "dateType", "typeDate", "timeType", "timestampType", "dateTimeType"],
+    "prefix": [
+      "cotrTypesDate",
+      "dateType",
+      "typeDate",
+      "timeType",
+      "timestampType",
+      "dateTimeType"
+    ],
     "body": ["[datetime]"],
     "description": "The PowerShell datetime type."
   },
 
   "PowerShell Map Type": {
-    "prefix": ["cotrTypesMap", "mapType", "typeMap", "hashmapType", "structType", "dictType", "typeDict", "typeScruct"],
+    "prefix": [
+      "cotrTypesMap",
+      "mapType",
+      "typeMap",
+      "hashmapType",
+      "structType",
+      "dictType",
+      "typeDict",
+      "typeScruct"
+    ],
     "body": ["[hashtable]"],
     "description": "The PowerShell hashtable type, equivalent to a map."
   },
@@ -223,7 +239,13 @@
   },
 
   "PowerShell Dynamic Type": {
-    "prefix": ["cotrTypesDynamic", "cotrDynamic"],
+    "prefix": [
+      "cotrTypesDynamic",
+      "typesDynamic",
+      "typesAny",
+      "dynamicType",
+      "anyType"
+    ],
     "body": ["# PowerShell is a dynamically typed language."],
     "description": "PowerShell is a dynamically typed language."
   },
@@ -247,7 +269,14 @@
   },
 
   "PowerShell Interpolate String": {
-    "prefix": ["cotrInterpolate", "interpolate", "variableExpansion", "variableSubstitution", "stringPlaceholders", "stringInterpolation"],
+    "prefix": [
+      "cotrInterpolate",
+      "interpolate",
+      "variableExpansion",
+      "variableSubstitution",
+      "stringPlaceholders",
+      "stringInterpolation"
+    ],
     "body": ["\"Your string here $${1:variable}\""],
     "description": "Interpolates a variable into a string in PowerShell."
   },
@@ -259,13 +288,27 @@
   },
 
   "PowerShell Create String Variable": {
-    "prefix": ["cotrVarString", "string", "stringVariable", "variableString", "text", "createString", "createText"],
+    "prefix": [
+      "cotrVarString",
+      "string",
+      "stringVariable",
+      "variableString",
+      "text",
+      "createString",
+      "createText"
+    ],
     "body": ["$${1:myString} = \"${2:Your string here}\""],
     "description": "Creates a string variable in PowerShell."
   },
 
   "PowerShell Create Multi-Line String Variable": {
-    "prefix": ["cotrVarStringMulti", "multiLineString", "varStringMulti", "stringVariableMulti", "createMultiLineString"],
+    "prefix": [
+      "cotrVarStringMulti",
+      "multiLineString",
+      "varStringMulti",
+      "stringVariableMulti",
+      "createMultiLineString"
+    ],
     "body": [
       "$${1:myString} = @\"",
       "${2:Line 1}",
@@ -277,31 +320,72 @@
   },
 
   "PowerShell Create Integer Variable": {
-    "prefix": ["cotrVarInt", "integer", "int", "variableInt", "intVariable", "createInt"],
+    "prefix": [
+      "cotrVarInt",
+      "integer",
+      "int",
+      "variableInt",
+      "intVariable",
+      "createInt"
+    ],
     "body": ["$${1:myInt} = ${2:0}"],
     "description": "Creates an integer variable in PowerShell."
   },
 
   "PowerShell Create Double Variable": {
-    "prefix": ["cotrVarNum", "number",  "float", "floatVariable", "variableFloat", "variableNumber", "numberVariable"],
+    "prefix": [
+      "cotrVarNum",
+      "number",
+      "float",
+      "floatVariable",
+      "variableFloat",
+      "variableNumber",
+      "numberVariable"
+    ],
     "body": ["$${1:myDouble} = ${2:0.0}"],
     "description": "Creates a double variable in PowerShell."
   },
 
   "PowerShell Create Boolean Variable": {
-    "prefix": ["cotrVarBool", "variableBool", "bool", "boolVariable", "createBool"],
+    "prefix": [
+      "cotrVarBool",
+      "variableBool",
+      "bool",
+      "boolVariable",
+      "createBool"
+    ],
     "body": ["$${1:myBool} = ${2:$true}"],
     "description": "Creates a boolean variable in PowerShell."
   },
 
   "PowerShell Create Array Variable": {
-    "prefix": ["cotrVarList", "createList", "listVariable", "arrayVariable", "variableList", "variableArray", "list", "array"],
+    "prefix": [
+      "cotrVarList",
+      "createList",
+      "listVariable",
+      "arrayVariable",
+      "variableList",
+      "variableArray",
+      "list",
+      "array"
+    ],
     "body": ["$${1:myArray} = @(${2:items})"],
     "description": "Creates an array variable in PowerShell."
   },
 
   "PowerShell Create Hash Table Variable": {
-    "prefix": ["cotrVarMap", "createMap", "createStruct", "variableMap", "variableStruct", "mapVariable", "structVariable", "dictVariable", "variableDict", "createDict"],
+    "prefix": [
+      "cotrVarMap",
+      "createMap",
+      "createStruct",
+      "variableMap",
+      "variableStruct",
+      "mapVariable",
+      "structVariable",
+      "dictVariable",
+      "variableDict",
+      "createDict"
+    ],
     "body": [
       "$${1:myHashTable} = @{",
       "  ${2:key1} = ${3:value1}",
@@ -327,7 +411,7 @@
   },
 
   "PowerShell Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
+    "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["Write-Host ${1:'Your message here'}"],
     "description": "Prints a message to the console in PowerShell."
   },
@@ -391,7 +475,14 @@
   },
 
   "PowerShell Function": {
-    "prefix": ["cotrFunc", "function", "subprogram", "procedure", "subroutine", "method"],
+    "prefix": [
+      "cotrFunc",
+      "function",
+      "subprogram",
+      "procedure",
+      "subroutine",
+      "method"
+    ],
     "body": [
       "function ${2:myFunction} {",
       "  param (",
@@ -443,7 +534,15 @@
   },
 
   "PowerShell Anonymous Function": {
-    "prefix": ["cotrFuncAnon", "anonFunc", "anonymous", "closure" ,"lambda", "functionLiteral", "cotrFuncLambda"],
+    "prefix": [
+      "cotrFuncAnon",
+      "anonFunc",
+      "anonymous",
+      "closure",
+      "lambda",
+      "functionLiteral",
+      "cotrFuncLambda"
+    ],
     "body": [
       "{",
       "    param(${1:parameters})",
@@ -535,7 +634,7 @@
   },
 
   "PowerShell Lambda Function (Script Block)": {
-    "prefix": ["cotrFuncLambda","lambda", "functionLiteral"],
+    "prefix": ["cotrFuncLambda", "lambda", "functionLiteral"],
     "body": [
       "# PowerShell does not have a 'lambda' keyword.",
       "# Instead, script blocks are used as anonymous functions.",
@@ -635,7 +734,12 @@
   },
 
   "PowerShell Variable Declaration Syntax": {
-    "prefix": ["cotrVarSyntax", "variableSyntax", "howToVariables", "letSyntax"],
+    "prefix": [
+      "cotrVarSyntax",
+      "variableSyntax",
+      "howToVariables",
+      "letSyntax"
+    ],
     "body": [
       "# PowerShell Variable Declaration Syntax:",
       "",
