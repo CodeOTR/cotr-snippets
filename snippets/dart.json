@@ -125,7 +125,7 @@
     "description": "Compares the types of two variables in Dart."
   },
   "Dart Type Conversion": {
-    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "prefix": ["cotrTypeCast", "convert", "cast"],
     "body": [
       "// Dart Type Conversion:",
       "",
@@ -401,7 +401,7 @@
     "description": "Creates a while loop in Dart."
   },
   "Dart Switch Statement": {
-    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case", "when"],
     "body": [
       "switch (${1:variable}) {",
       "  case ${2:value1}:",

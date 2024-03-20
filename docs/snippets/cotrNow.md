@@ -3,7 +3,7 @@ title: cotrNow
 description: The cotrNow snippet.
 ---
 
-The C# DateTime.Now property.
+Gets the current date and time
 
 **Aliases**:
 - cotrNow

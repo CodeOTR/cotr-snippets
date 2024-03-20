@@ -139,7 +139,7 @@
   },
   "Scala Type Conversion": {
     "scope": "scala",
-    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "prefix": ["cotrTypeCast", "convert", "cast"],
     "body": [
       "// Scala Type Conversion:",
       "",

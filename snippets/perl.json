@@ -131,7 +131,7 @@
   },
 
   "Perl Type Conversion": {
-    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "prefix": ["cotrTypeCast", "convert", "cast"],
     "body": [
       "# Perl Type Conversion:",
       "",
@@ -417,7 +417,7 @@
   },
 
   "Perl Case Statement": {
-    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case", "when"],
     "body": [
       "case ${1:variable} {",
       "when ${2:value1}",

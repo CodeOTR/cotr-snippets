@@ -124,7 +124,7 @@
     "description": "Compares the types of two variables in Rust."
   },
   "Rust Type Conversion": {
-    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "prefix": ["cotrTypeCast", "convert", "cast"],
     "body": [
       "// Rust Type Conversion:",
       "",
@@ -195,12 +195,7 @@
   "Rust Integer Type (i32)": {
     "prefix": ["cotrTypesInt", "intType", "typeInt"],
     "body": ["i32"],
-    "description": "The Rust i32 type."
-  },
-  "Rust Integer Type (i64)": {
-    "prefix": "cotrTypesIntAlt",
-    "body": ["i64"],
-    "description": "The Rust i64 type."
+    "description": "The integer type in Rust."
   },
   "Rust Float Type (f32)": {
     "prefix": [
@@ -313,7 +308,7 @@
   },
   "Rust Create Variable": {
     "prefix": ["cotrVar", "variable", "createVariable", "newVariable"],
-    "body": ["let ${1:myVar} = $2;"],
+    "body": ["let mut ${1:myVar} = $2;"],
     "description": "Creates a variable in Rust using the let keyword."
   },
   "Variable Declaration Syntax": {
@@ -479,11 +474,6 @@
     "body": ["const ${1:myConst}: ${2:type} = $3;"],
     "description": "Creates a constant variable in Rust using the const keyword."
   },
-  "Rust Create Mutable Variable": {
-    "prefix": "cotrMutVar",
-    "body": ["let mut ${1:myVar} = $2;"],
-    "description": "Creates a mutable variable in Rust using the let mut keywords."
-  },
   "Rust Generate Object Map": {
     "prefix": ["cotrGenMap", "generateMap"],
     "body": [
@@ -540,7 +530,7 @@
     "description": "Creates a while loop in Rust."
   },
   "Rust Match Statement": {
-    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case", "when"],
     "body": [
       "match ${1:variable} {",
       "  ${2:value1} => {",
@@ -588,11 +578,6 @@
       "// Note: Rust does not support named arguments in function definitions."
     ],
     "description": "Note about named arguments in Rust."
-  },
-  "Rust Closure": {
-    "prefix": ["cotrClosure", "cotrFuncArrow", "cotrFuncLambda", "cotrLambda"],
-    "body": ["let ${1:my_closure} = |${2:parameters}| ${3:expression};"],
-    "description": "Creates a closure (lambda function) in Rust."
   },
   "Rust Anonymous Function": {
     "prefix": [

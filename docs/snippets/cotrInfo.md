@@ -3,7 +3,7 @@ title: cotrInfo
 description: The cotrInfo snippet.
 ---
 
-General information about C++.
+Provides general information about the Kotlin programming language.
 
 **Aliases**:
 - cotrInfo
@@ -80,16 +80,6 @@ Typing: Statically typed
 Paradigm: Multi-paradigm: object-oriented, functional, imperative
 Compilation: Compiled to bytecode for the Java Virtual Machine (JVM), JavaScript, or native binaries
 Concurrency: Supports coroutines for asynchronous programming and concurrency
-```
-
-## markdown
-```markdown
-# Markdown Syntax Reference:
-
-Markdown is a lightweight markup language for creating formatted text.
-It uses simple syntax to format text, create lists, insert links, and more.
-
-See the official Markdown guide for more details: https://www.markdownguide.org/
 ```
 
 ## perl

@@ -3,7 +3,7 @@ title: cotrTypesChar
 description: The cotrTypesChar snippet.
 ---
 
-The Swift Character type.
+Ruby does not have a separate char type; use String instead.
 
 **Aliases**:
 - cotrTypesChar

@@ -3,7 +3,7 @@ title: cotrTypesDynamic
 description: The cotrTypesDynamic snippet.
 ---
 
-Explains the use of 'Any' for dynamic values
+The C++ dynamic type.
 
 **Aliases**:
 - cotrTypesDynamic

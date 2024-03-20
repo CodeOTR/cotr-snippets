@@ -46,6 +46,11 @@ const (
 )
 ```
 
+## haskell
+```haskell
+data MyEnum = Foo | Bar | Baz deriving (Enum)
+```
+
 ## java
 ```java
 enum MyEnum {

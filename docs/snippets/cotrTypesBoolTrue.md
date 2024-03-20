@@ -3,7 +3,7 @@ title: cotrTypesBoolTrue
 description: The cotrTypesBoolTrue snippet.
 ---
 
-The C++ true boolean value.
+The Perl true value.
 
 **Aliases**:
 - cotrTypesBoolTrue

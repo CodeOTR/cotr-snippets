@@ -3,7 +3,7 @@ title: cotrTypesMap
 description: The cotrTypesMap snippet.
 ---
 
-The JavaScript Map type.
+The Java Map type.
 
 **Aliases**:
 - cotrTypesMap

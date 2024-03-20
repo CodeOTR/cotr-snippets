@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.15
+
+- Fix Haskell language setup
+- Combine duplicate snippets across all languages
+- Add docs link to README
+
 ## 0.0.14
 
 - Fix scala snippet scope

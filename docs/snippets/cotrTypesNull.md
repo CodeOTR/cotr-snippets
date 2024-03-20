@@ -3,13 +3,13 @@ title: cotrTypesNull
 description: The cotrTypesNull snippet.
 ---
 
-The C# null value.
+The Python None type.
 
 **Aliases**:
 - cotrTypesNull
+- cotrNull
 - nullType
 - typesNull
-- cotrNull
 
 ## cpp
 ```cpp
@@ -18,6 +18,11 @@ nullptr
 
 ## csharp
 ```csharp
+null
+```
+
+## dart
+```dart
 null
 ```
 
@@ -36,6 +41,16 @@ Nothing
 null
 ```
 
+## javascript
+```javascript
+null
+```
+
+## javascriptreact
+```javascriptreact
+null
+```
+
 ## kotlin
 ```kotlin
 null
@@ -46,8 +61,38 @@ null
 undef
 ```
 
+## php
+```php
+null
+```
+
 ## powershell
 ```powershell
+null
+```
+
+## python
+```python
+None
+```
+
+## r
+```r
+NULL
+```
+
+## ruby
+```ruby
+nil
+```
+
+## rust
+```rust
+None
+```
+
+## scala
+```scala
 null
 ```
 
@@ -59,5 +104,15 @@ null
 ## swift
 ```swift
 nil
+```
+
+## typescript
+```typescript
+null
+```
+
+## typescriptreact
+```typescriptreact
+null
 ```
 

@@ -325,7 +325,7 @@
     "description": "Explains a file type-based source directory organization for Bash scripts."
   },
   "Bash Switch Statement": {
-    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case", "when"],
     "body": [
       "case ${1:variable} in",
       "  ${2:pattern1})",
@@ -394,7 +394,7 @@
     "description": "Bash doesn't have direct type comparison."
   },
   "Bash Type Conversion": {
-    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "prefix": ["cotrTypeCast", "convert", "cast"],
     "body": [
       "# Bash is dynamically typed, so explicit conversion is often not needed.",
       "# However, you can use tools like awk or bc for specific conversions."

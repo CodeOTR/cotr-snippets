@@ -3,7 +3,7 @@ title: cotrFuncArgsNamed
 description: The cotrFuncArgsNamed snippet.
 ---
 
-Note about named arguments
+C++ does not support named arguments
 
 **Aliases**:
 - cotrFuncArgsNamed

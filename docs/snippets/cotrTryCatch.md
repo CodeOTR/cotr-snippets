@@ -3,7 +3,7 @@ title: cotrTryCatch
 description: The cotrTryCatch snippet.
 ---
 
-Creates a try...catch block
+Creates a try...except block
 
 **Aliases**:
 - cotrTryCatch

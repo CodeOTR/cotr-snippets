@@ -95,7 +95,7 @@
   },
 
   "PowerShell Type Conversion": {
-    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "prefix": ["cotrTypeCast", "convert", "cast"],
     "body": [
       "# PowerShell Type Conversion:",
       "",
@@ -455,7 +455,7 @@
   },
 
   "PowerShell Switch Statement": {
-    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case", "when"],
     "body": [
       "switch (${1:variable}) {",
       "  ${2:value1} {",

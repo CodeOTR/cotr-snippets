@@ -3,7 +3,7 @@ title: cotrFuncArgs
 description: The cotrFuncArgs snippet.
 ---
 
-Explains how to pass arguments to functions
+Creates a function with arguments
 
 **Aliases**:
 - cotrFuncArgs

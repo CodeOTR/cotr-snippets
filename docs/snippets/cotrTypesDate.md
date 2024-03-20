@@ -3,7 +3,7 @@ title: cotrTypesDate
 description: The cotrTypesDate snippet.
 ---
 
-The Dart DateTime type.
+Explains the absence of a built-in Date type
 
 **Aliases**:
 - cotrTypesDate

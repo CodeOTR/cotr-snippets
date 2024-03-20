@@ -3,7 +3,7 @@ title: cotrInterpolate
 description: The cotrInterpolate snippet.
 ---
 
-Interpolates a string
+Interpolates a variable into a string
 
 **Aliases**:
 - cotrInterpolate
@@ -30,7 +30,7 @@ std::string myString = "Your message here";
 
 ## go
 ```go
-`string`
+fmt.Sprintf("Your string here", variable1, variable2)
 ```
 
 ## haskell

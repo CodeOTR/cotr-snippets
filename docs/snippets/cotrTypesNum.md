@@ -3,7 +3,7 @@ title: cotrTypesNum
 description: The cotrTypesNum snippet.
 ---
 
-Perl uses scalars for floating-point numbers.
+The C++ double type.
 
 **Aliases**:
 - cotrTypesNum
@@ -11,9 +11,9 @@ Perl uses scalars for floating-point numbers.
 - typeNumber
 - doubleType
 - typeDouble
+- cotrTypesDouble
 - number
 - double
-- cotrTypesDouble
 
 ## cpp
 ```cpp

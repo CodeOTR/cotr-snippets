@@ -9,6 +9,11 @@ Creates a nullable variable
 - cotrVarNullable
 - variableNullable
 - nullableVariable
+- nil
+- none
+- nothing
+- null
+- option
 
 ## cpp
 ```cpp

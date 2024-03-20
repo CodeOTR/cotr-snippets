@@ -40,6 +40,12 @@ type MyStruct struct {
 }
 ```
 
+## haskell
+```haskell
+-- Haskell does not have classes in the same sense as object-oriented languages.
+-- You can use type classes to define shared behavior for types.
+```
+
 ## java
 ```java
 public class MyClass {

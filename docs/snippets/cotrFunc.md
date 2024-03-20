@@ -15,14 +15,14 @@ Creates a function
 
 ## cpp
 ```cpp
-void myFunction(parameters) {
+void myFunction() {
   // Your code here
 }
 ```
 
 ## csharp
 ```csharp
-public void MyFunction(parameters)
+public void MyFunction()
 {
     // Your code here
 }
@@ -30,14 +30,14 @@ public void MyFunction(parameters)
 
 ## dart
 ```dart
-void myFunction(parameters) {
+void myFunction() {
   // Your code here
 }
 ```
 
 ## go
 ```go
-func MyFunction(parameters) void {
+func MyFunction() void {
     // Your code here
 }
 ```

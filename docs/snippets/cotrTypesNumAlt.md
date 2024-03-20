@@ -3,7 +3,7 @@ title: cotrTypesNumAlt
 description: The cotrTypesNumAlt snippet.
 ---
 
-The C++ float type.
+The Rust f64 type.
 
 **Aliases**:
 - cotrTypesNumAlt

@@ -88,7 +88,7 @@ my_var =2
 
 ## rust
 ```rust
-let myVar =2;
+let mut myVar =2;
 ```
 
 ## scala

@@ -3,7 +3,7 @@ title: cotrTypesInt
 description: The cotrTypesInt snippet.
 ---
 
-The PHP int type.
+Perl uses scalars for integers.
 
 **Aliases**:
 - cotrTypesInt

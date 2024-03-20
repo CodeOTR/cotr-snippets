@@ -131,7 +131,7 @@
     "description": "Compares the types of two variables in Python."
   },
   "Python Type Conversion": {
-    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "prefix": ["cotrTypeCast", "convert", "cast"],
     "body": [
       "# Python Type Conversion:",
       "",

@@ -3,13 +3,13 @@ title: cotrFuncLambda
 description: The cotrFuncLambda snippet.
 ---
 
-Creates a lambda (anonymous) function
+Creates a lambda function
 
 **Aliases**:
 - cotrFuncLambda
-- cotrFuncAnon
 - cotrLambda
 - cotrFuncArrow
+- cotrFuncAnon
 - anonFunc
 - anonymous
 - functionLiteral

@@ -409,7 +409,7 @@
     "description": "Creates a while loop in JavaScript."
   },
   "JavaScript Switch Statement": {
-    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case", "when"],
     "body": [
       "switch (${1:variable}) {",
       "  case ${2:value1}:",
@@ -477,12 +477,12 @@
     "description": "Outlines the syntax for functions in JavaScript."
   },
   "JSX Comment": {
-    "prefix": "cotrJSXComment",
+    "prefix": ["cotrComment", "comment", "note"],
     "body": ["{/* ${1:Your comment here} */}"],
     "description": "Creates a comment in JSX."
   },
   "JSX Multi-Line Comment": {
-    "prefix": "cotrJSXMultiComment",
+    "prefix": ["cotrCommentMulti", "multiLineComment", "commentMultiLine", "blockComment"],
     "body": ["{/*", " * ${1:Your comment here}", " */}"],
     "description": "Creates a multi-line comment in JSX."
   },

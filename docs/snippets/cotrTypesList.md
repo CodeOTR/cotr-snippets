@@ -3,7 +3,7 @@ title: cotrTypesList
 description: The cotrTypesList snippet.
 ---
 
-The C++ list type.
+Describes list representation
 
 **Aliases**:
 - cotrTypesList

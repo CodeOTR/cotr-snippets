@@ -3,7 +3,7 @@ title: cotrEntry
 description: The cotrEntry snippet.
 ---
 
-Describes the entry point of a TypeScript application.
+Creates the entry point of a Perl script.
 
 **Aliases**:
 - cotrEntry

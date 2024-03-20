@@ -3,7 +3,7 @@ title: cotrComment
 description: The cotrComment snippet.
 ---
 
-Creates a comment
+Creates a single-line comment
 
 **Aliases**:
 - cotrComment
@@ -45,14 +45,14 @@ Creates a comment
 // Your comment here
 ```
 
+## javascriptreact
+```javascriptreact
+{/* Your comment here */}
+```
+
 ## kotlin
 ```kotlin
 // Your comment here
-```
-
-## markdown
-```markdown
-<!-- Your comment here -->
 ```
 
 ## perl

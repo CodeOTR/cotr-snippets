@@ -8,6 +8,7 @@ Iterates over an iterable object
 **Aliases**:
 - cotrForInLoop
 - forIn
+- forOf
 
 ## cpp
 ```cpp
@@ -19,6 +20,20 @@ for (auto item : iterable) {
 ## dart
 ```dart
 for (var item in iterable) {
+  // Your code here
+}
+```
+
+## javascript
+```javascript
+for (const item of iterable) {
+  // Your code here
+}
+```
+
+## javascriptreact
+```javascriptreact
+for (const item of iterable) {
   // Your code here
 }
 ```
@@ -43,9 +58,30 @@ iterable.each do |item|
 end
 ```
 
+## rust
+```rust
+for item in iterable {
+  // Your code here
+}
+```
+
 ## swift
 ```swift
 for item in iterable {
+  // Your code here
+}
+```
+
+## typescript
+```typescript
+for (const item of iterable) {
+  // Your code here
+}
+```
+
+## typescriptreact
+```typescriptreact
+for (const item of iterable) {
   // Your code here
 }
 ```

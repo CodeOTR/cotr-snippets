@@ -463,7 +463,7 @@
     "description": "Creates a do...while loop in C#."
   },
   "C# Switch Statement": {
-    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case", "when"],
     "body": [
       "switch (${1:variable}) {",
       "  case ${2:value1}:",

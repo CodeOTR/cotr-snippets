@@ -3,7 +3,7 @@ title: cotrVarSyntax
 description: The cotrVarSyntax snippet.
 ---
 
-Explains Dart variable declaration syntax
+Explains JavaScript variable declaration syntax
 
 **Aliases**:
 - cotrVarSyntax

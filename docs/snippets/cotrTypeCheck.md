@@ -3,7 +3,7 @@ title: cotrTypeCheck
 description: The cotrTypeCheck snippet.
 ---
 
-Gets the type of a variable
+Explains how to perform basic type checks
 
 **Aliases**:
 - cotrTypeCheck

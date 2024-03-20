@@ -20,7 +20,9 @@ This [VS Code extension](https://marketplace.visualstudio.com/items?itemName=Cod
 
 How does it work?
 
-Its very simple, actually. Every supported language implements all snippets in a separate file. For example, the `dart.json` snippet file implements all of the snippets in Dart while the `typescript.json` file implements all of the snippets in TypeScript. **The key is that the snippet names are consistent across languages so you only need to remember the COTR snippet name**.
+Each snippet is implemented separately in each language. This means that if you are working in a TypeScript file, you will get TypeScript-specific snippets. If you are working in a Rust file, you will get Rust-specific snippets. This allows you to use the same snippet prefix in different languages and get the correct snippet for the language you are working in.
+
+Check out the [official docs](https://docs.codeontherocks.dev/) for more information.
 
 ![COTR Snippets](./cotr_snippets.png)
 

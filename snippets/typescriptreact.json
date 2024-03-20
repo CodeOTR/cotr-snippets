@@ -136,7 +136,7 @@
     "description": "Compares the types of two variables in TypeScript."
   },
   "TypeScript Type Conversion": {
-    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "prefix": ["cotrTypeCast", "convert", "cast"],
     "body": [
       "// TypeScript Type Conversion:",
       "",
@@ -194,10 +194,8 @@
   "TypeScript Number Type": {
     "prefix": [
       "cotrTypesNum",
-      "number",
       "numberType",
       "typeNumber",
-      "double",
       "doubleType",
       "typeDouble"
     ],
@@ -433,7 +431,7 @@
     "description": "Creates a while loop in TypeScript."
   },
   "TypeScript Switch Statement": {
-    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case", "when"],
     "body": [
       "switch (${1:variable}) {",
       "  case ${2:value1}:",

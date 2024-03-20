@@ -3,7 +3,7 @@ title: cotrTypesBool
 description: The cotrTypesBool snippet.
 ---
 
-The R logical type.
+The Kotlin Boolean type.
 
 **Aliases**:
 - cotrTypesBool

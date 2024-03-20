@@ -122,7 +122,7 @@
     "description": "Compares the types of two variables in Swift."
   },
   "Swift Type Conversion": {
-    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "prefix": ["cotrTypeCast", "convert", "cast"],
     "body": [
       "// Swift Type Conversion:",
       "",
@@ -411,7 +411,7 @@
     "description": "Creates a while loop in Swift."
   },
   "Swift Switch Statement": {
-    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case", "when"],
     "body": [
       "switch ${1:variable} {",
       "  case ${2:value1}:",

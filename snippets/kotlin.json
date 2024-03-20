@@ -139,7 +139,7 @@
     "description": "Compares the types of two variables in Kotlin."
   },
   "Kotlin Type Conversion": {
-    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "prefix": ["cotrTypeCast", "convert", "cast"],
     "scope": "kotlin",
     "body": [
       "// Kotlin Type Conversion:",
@@ -459,7 +459,7 @@
     "description": "Creates a while loop in Kotlin."
   },
   "Kotlin When Expression": {
-    "prefix": "cotrWhen",
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case", "when"],
     "scope": "kotlin",
     "body": [
       "when (${1:variable}) {",

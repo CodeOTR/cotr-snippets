@@ -4,7 +4,7 @@
   "publisher": "CodeontheRocks",
   "repository": "https://github.com/CodeOTR/cotr-snippets",
   "description": "Write code in every language",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "icon": "cubes_with_background.png",
   "sponsor": {
     "url": "https://github.com/sponsors/jtmuller5"
@@ -82,6 +82,14 @@
       {
         "language": "python",
         "path": "./snippets/python.json"
+      },
+      {
+        "language": "haskell",
+        "path": "./snippets/haskell.json"
+      },
+      {
+        "language": "julia",
+        "path": "./snippets/julia.json"
       },
       {
         "language": "java",

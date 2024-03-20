@@ -60,18 +60,18 @@ Creates a multi-line comment
  */
 ```
 
+## javascriptreact
+```javascriptreact
+{/*
+ * Your comment here
+ */}
+```
+
 ## kotlin
 ```kotlin
 /*
  * Your comment here
  */
-```
-
-## markdown
-```markdown
-<!--
-  Your comment here
--->
 ```
 
 ## perl

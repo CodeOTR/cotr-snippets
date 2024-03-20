@@ -3,7 +3,7 @@ title: cotrNotEqual
 description: The cotrNotEqual snippet.
 ---
 
-Haskell not equal to operator.
+Java not equal to operator.
 
 **Aliases**:
 - cotrNotEqual

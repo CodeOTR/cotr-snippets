@@ -407,7 +407,7 @@
     "description": "Creates a while loop in JavaScript."
   },
   "JavaScript Switch Statement": {
-    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case", "when"],
     "body": [
       "switch (${1:variable}) {",
       "  case ${2:value1}:",

@@ -7,7 +7,7 @@
 // Run it with `g++ -std=c++11 snippet_check.cpp -o snippet_check && ./snippet_check`
 int main()
 {
-    std::ifstream file("./../snippets/shellscript.json");
+    std::ifstream file("./../snippets/julia.json");
 
     // Define the set of snippet prefixes
     std::set<std::string> prefixes = {

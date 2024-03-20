@@ -3,7 +3,7 @@ title: cotrTypesBoolFalse
 description: The cotrTypesBoolFalse snippet.
 ---
 
-The Swift false value.
+The Haskell False value.
 
 **Aliases**:
 - cotrTypesBoolFalse

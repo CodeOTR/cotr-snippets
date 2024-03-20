@@ -93,6 +93,24 @@
     ],
     "description": "Lists the boolean operators in Haskell."
   },
+
+  "Haskell Class": {
+    "prefix": ["cotrClass", "class", "objectTemplate"],
+    "body": [
+      "-- Haskell does not have classes in the same sense as object-oriented languages.",
+      "-- You can use type classes to define shared behavior for types."
+    ],
+    "description": "Explains the absence of classes in Haskell."
+  },
+
+  "Haskell Enum": {
+    "prefix": ["cotrEnum", "enum"],
+    "body": [
+      "data MyEnum = Foo | Bar | Baz deriving (Enum)"
+    ],
+    "description": "Explains the absence of an enum keyword in Haskell."
+  },
+  
   "Haskell Equal To": {
     "prefix": ["cotrEqual", "equal"],
     "body": ["=="],
@@ -128,7 +146,7 @@
   },
 
   "Haskell Type Conversion": {
-    "prefix": ["cotrTypeConvert", "cotrTypeCast", "cotrConvert", "cotrCast"],
+    "prefix": ["cotrTypeCast", "convert", "cast"],
     "body": [
       "-- Haskell emphasizes explicit type conversions for safety.",
       "",
@@ -446,7 +464,7 @@
   },
 
   "Haskell Case Expression": {
-    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case"],
+    "prefix": ["cotrSwitch", "switch", "switchStatement", "select", "case", "when"],
     "body": [
       "case ${1:variable} of",
       "  ${2:pattern1} -> ${3:expression1}",

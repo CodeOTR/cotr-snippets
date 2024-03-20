@@ -3,7 +3,7 @@ title: cotrTypesString
 description: The cotrTypesString snippet.
 ---
 
-The C++ string type.
+The Rust String type.
 
 **Aliases**:
 - cotrTypesString

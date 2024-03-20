@@ -3,7 +3,7 @@ title: cotrForIn
 description: The cotrForIn snippet.
 ---
 
-Iterates over items
+Provides an alternative to the for...in loop
 
 **Aliases**:
 - cotrForIn

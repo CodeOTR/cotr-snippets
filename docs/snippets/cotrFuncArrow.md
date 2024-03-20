@@ -3,7 +3,7 @@ title: cotrFuncArrow
 description: The cotrFuncArrow snippet.
 ---
 
-Creates an arrow function (lambda)
+Creates a function using the arrow syntax
 
 **Aliases**:
 - cotrFuncArrow
