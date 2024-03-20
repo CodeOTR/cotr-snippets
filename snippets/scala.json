@@ -400,7 +400,7 @@
 
   "Scala Print": {
     "scope": "scala",
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["println(${1:'Your message here'})"],
     "description": "Prints a message to the console in Scala."
   },

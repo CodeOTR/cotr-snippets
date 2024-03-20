@@ -340,7 +340,7 @@
   },
 
   "Haskell Number Variable": {
-    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
+    "prefix": ["cotrVarNum", "number",  "float", "floatVariable", "variableFloat", "variableNumber", "numberVariable"],
     "body": ["let ${1:myNum} :: ${2:NumType} = $3"],
     "description": "Creates a number variable in Haskell."
   },
@@ -402,7 +402,7 @@
   },
 
   "Haskell Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["putStrLn ${1:'Your message here'}"],
     "description": "Prints a message to the console in Haskell."
   },

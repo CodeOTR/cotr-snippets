@@ -198,7 +198,7 @@
     "description": "The Java float type."
   },
   "Java Boolean Type": {
-    "prefix": "cotrTypesBoolean",
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["boolean"],
     "description": "The Java boolean type."
   },
@@ -228,12 +228,12 @@
     "description": "The Java List type."
   },
   "Java Null Type": {
-    "prefix": "cotrTypesNull",
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["null"],
     "description": "The Java null value."
   },
   "Java Dynamic Type": {
-    "prefix": "cotrTypesDynamic",
+    "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": ["Object"],
     "description": "The Java Object type."
   },
@@ -297,7 +297,7 @@
     "description": "Creates a string variable in Java."
   },
   "Java Create Multi-Line String Variable": {
-    "prefix": "cotrVarMultiString",
+    "prefix": ["cotrVarMultiString", "multiString", "variableMultiString", "multiStringVariable", "multilineText"],
     "body": [
       "String ${1:myString} =",
       "    \"${2:Line 1}\" +",
@@ -376,7 +376,7 @@
     "description": "Generates a map of a specific length in Java."
   },
   "Java Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["System.out.println(${1:'Your message here'});"],
     "description": "Prints a message to the console in Java."
   },
@@ -413,7 +413,7 @@
     "description": "Creates a while loop in Java."
   },
   "Java Do While Loop": {
-    "prefix": "cotrDoWhileLoop",
+    "prefix": ["cotrDoWhileLoop", "doWhile"],
     "body": ["do {", "  ${1:// Your code here}", "} while (${2:condition});"],
     "description": "Creates a do...while loop in Java."
   },
@@ -467,7 +467,7 @@
     "description": "Note about named arguments in Java."
   },
   "Java Arrow Function": {
-    "prefix": "cotrFuncArrow",
+    "prefix": ["cotrFuncArrow", "arrowFunction", "functionArrow"],
     "body": [
       "(${2:parameters}) -> ${1:returnType} {",
       "    ${3:// Your code here}",

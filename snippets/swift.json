@@ -230,17 +230,17 @@
     "description": "Gets the current date and time in Swift."
   },
   "Swift Null Type": {
-    "prefix": "cotrTypesNull",
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["nil"],
     "description": "The Swift nil value."
   },
   "Swift Character Type": {
-    "prefix": "cotrTypesChar",
+    "prefix": ["cotrTypesChar"],
     "body": ["Character"],
     "description": "The Swift Character type."
   },
   "Swift Dynamic Type": {
-    "prefix": "cotrTypesAny",
+    "prefix": ["cotrTypesAny", "dynamicType", "anyType", "typesDynamic", "typesAny"],
     "body": ["Any"],
     "description": "The Swift Any type."
   },
@@ -310,12 +310,12 @@
     "description": "Creates an integer variable in Swift."
   },
   "Swift Create Double Variable": {
-    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
+    "prefix": ["cotrVarNum", "number",  "float", "floatVariable", "variableFloat", "variableNumber", "numberVariable"],
     "body": ["var ${1:myDouble} = ${2:0.0};"],
     "description": "Creates a double variable in Swift."
   },
   "Swift Create Float Variable": {
-    "prefix": "cotrVarNumAlt",
+    "prefix": ["cotrVarNumAlt", "float", "variableFloat", "floatVariable"],
     "body": ["var ${1:myFloat} = ${2:0.0}f;"],
     "description": "Creates a float variable in Swift."
   },
@@ -376,7 +376,7 @@
     "description": "Generates a dictionary with a specific number of key-value pairs in Swift."
   },
   "Swift Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["print(${1:\"Your message here\"})"],
     "description": "Prints a message to the console in Swift."
   },
@@ -397,7 +397,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in Swift."
   },
   "Swift For...In Loop": {
-    "prefix": "cotrForInLoop",
+    "prefix": ["cotrForInLoop", "forIn"],
     "body": [
       "for ${1:item} in ${2:iterable} {",
       "  ${3:// Your code here}",

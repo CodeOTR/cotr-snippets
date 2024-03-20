@@ -215,7 +215,7 @@
     "description": "The Ruby false value."
   },
   "Ruby Character Type": {
-    "prefix": "cotrTypesChar",
+    "prefix": ["cotrTypesChar"],
     "body": ["# Ruby does not have a separate char type; use String instead."],
     "description": "Ruby does not have a separate char type; use String instead."
   },
@@ -303,7 +303,8 @@
     "description": "Creates an integer variable in Ruby."
   },
   "Ruby Create Float Variable": {
-    "prefix": "cotrVarFloat",
+        "prefix": ["cotrVarNum", "number",  "float", "floatVariable", "variableFloat", "variableNumber", "numberVariable"],
+
     "body": ["${1:my_float} = ${2:0.0}"],
     "description": "Creates a float variable in Ruby."
   },
@@ -362,7 +363,7 @@
     "description": "Generates an array of a specific length in Ruby."
   },
   "Ruby Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["puts ${1:'Your message here'}"],
     "description": "Prints a message to the console in Ruby."
   },
@@ -378,7 +379,7 @@
     "descriptin": "Creates a for loop that iterates through a set of numbers with the index in Ruby."
   },
   "Ruby For...In Loop": {
-    "prefix": "cotrForInLoop",
+    "prefix": ["cotrForInLoop", "forIn"],
     "body": ["${1:iterable}.each do |item|", "  # Your code here", "end"],
     "description": "Iterates over an iterable object in Ruby."
   },

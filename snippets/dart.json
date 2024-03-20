@@ -201,7 +201,7 @@
     "description": "The Dart false value."
   },
   "Dart Character Type": {
-    "prefix": "cotrTypesChar",
+    "prefix": ["cotrTypesChar"],
     "body": ["char"],
     "description": "The Dart char type."
   },
@@ -221,7 +221,7 @@
     "description": "The Dart List type."
   },
   "Dart Dynamic Type": {
-    "prefix": "cotrTypesDynamic",
+    "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": ["dynamic"],
     "description": "The Dart dynamic type."
   },
@@ -368,7 +368,7 @@
     "description": "Generates a list of a specific length in Dart."
   },
   "Dart Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["print(${1:'Your message here'});"],
     "description": "Prints a message to the console in Dart."
   },
@@ -387,7 +387,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in Dart."
   },
   "Dart For...In Loop": {
-    "prefix": "cotrForInLoop",
+    "prefix": ["cotrForInLoop", "forIn"],
     "body": [
       "for (var item in ${1:iterable}) {",
       "  ${2:// Your code here}",
@@ -445,7 +445,7 @@
     "description": "Creates a function with named arguments in Dart."
   },
   "Dart Function Arrow": {
-    "prefix": "cotrFuncArrow",
+    "prefix": ["cotrFuncArrow", "arrowFunction", "functionArrow"],
     "body": ["${1:Type} ${2:myFunction}(${3:parameters}) => ${4:expression};"],
     "description": "Creates a function using the arrow syntax in Dart."
   },

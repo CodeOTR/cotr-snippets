@@ -252,13 +252,13 @@
     "description": "The Kotlin List type."
   },
   "Kotlin Null Type": {
-    "prefix": "cotrTypesNull",
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "scope": "kotlin",
     "body": ["null"],
     "description": "The Kotlin null value."
   },
   "Kotlin Dynamic Type": {
-    "prefix": "cotrTypesAny",
+    "prefix": ["cotrTypesAny", "dynamicType", "anyType", "typesDynamic", "typesAny"],
     "scope": "kotlin",
     "body": ["Any"],
     "description": "The Kotlin Any type."
@@ -274,7 +274,7 @@
     "description": "Gets the current date in Kotlin."
   },
   "Kotlin Character Type": {
-    "prefix": "cotrTypesChar",
+    "prefix": ["cotrTypesChar"],
     "scope": "kotlin",
     "body": ["Char"],
     "description": "The Kotlin Char type."
@@ -354,13 +354,13 @@
     "description": "Creates an integer variable in Kotlin using the var keyword."
   },
   "Kotlin Create Double Variable": {
-    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
+    "prefix": ["cotrVarNum", "number",  "float", "floatVariable", "variableFloat", "variableNumber", "numberVariable"],
     "scope": "kotlin",
     "body": ["var ${1:myDouble} = ${2:0.0}"],
     "description": "Creates a double variable in Kotlin using the var keyword."
   },
   "Kotlin Create Float Variable": {
-    "prefix": "cotrVarNumAlt",
+    "prefix": ["cotrVarNumAlt", "float", "variableFloat", "floatVariable"],
     "scope": "kotlin",
     "body": ["var ${1:myFloat} = ${2:0.0f}"],
     "description": "Creates a float variable in Kotlin using the var keyword."
@@ -423,7 +423,7 @@
     "description": "Generates a list of a specific length in Kotlin."
   },
   "Kotlin Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "scope": "kotlin",
     "body": ["println(${1:'Your message here'})"],
     "description": "Prints a message to the console in Kotlin."
@@ -447,7 +447,7 @@
     "description": "Creates a for loop that iterates through a set of numbers with the index in Kotlin."
   },
   "Kotlin For...In Loop": {
-    "prefix": "cotrForInLoop",
+    "prefix": ["cotrForInLoop", "forIn"],
     "scope": "kotlin",
     "body": ["for (item in ${1:iterable}) {", "  // Your code here", "}"],
     "description": "Iterates over an iterable object in Kotlin."

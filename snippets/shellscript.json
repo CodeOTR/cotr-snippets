@@ -31,7 +31,7 @@
     "description": "Creates a multi-line comment."
   },
   "Bash Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["echo ${1:'Your message here'}"],
     "description": "Prints a message to the console."
   },
@@ -165,7 +165,7 @@
     "description": "Named arguments are not directly supported in Bash."
   },
   "Bash Arrow Function": {
-    "prefix": "cotrFuncArrow",
+    "prefix": ["cotrFuncArrow", "arrowFunction", "functionArrow"],
     "body": ["# Bash doesn't have arrow functions."],
     "description": "Arrow functions are not supported in Bash."
   },
@@ -436,7 +436,7 @@
     "description": "Explains how to work with dates in Bash."
   },
   "Bash Dynamic Type": {
-    "prefix": "cotrTypesDynamic",
+    "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": [
       "# Bash is dynamically typed; variables can hold different types of values."
     ],
@@ -461,7 +461,7 @@
     "description": "Describes map representation in Bash using associative arrays."
   },
   "Bash Null Type": {
-    "prefix": "cotrTypesNull",
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": [
       "# Bash doesn't have a dedicated null type, but you can use an empty string or a special value like 'null' to represent null."
     ],
@@ -522,7 +522,7 @@
     "description": "Creates a variable that can hold an empty string or a special value to represent null in Bash."
   },
   "Bash Create Number Variable": {
-    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
+    "prefix": ["cotrVarNum", "number",  "float", "floatVariable", "variableFloat", "variableNumber", "numberVariable"],
     "body": ["# Assign a numeric value:", "${1:myNumber}=${2:10}"],
     "description": "Creates a number variable in Bash."
   },

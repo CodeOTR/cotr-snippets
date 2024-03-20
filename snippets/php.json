@@ -231,7 +231,7 @@
     "description": "Explains the use of indexed arrays as lists in PHP."
   },
   "PHP Dynamic Type": {
-    "prefix": "cotrTypesDynamic",
+    "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": ["// PHP is a dynamically typed language."],
     "description": "Explains that PHP is a dynamically typed language."
   },
@@ -282,7 +282,7 @@
     "description": "Creates a string variable in PHP."
   },
   "PHP Create Multi-Line String Variable": {
-    "prefix": "cotrVarMultiString",
+    "prefix": ["cotrVarMultiString", "multiString", "variableMultiString", "multiStringVariable", "multilineText"],
     "body": ["$${1:myString} = <<<EOT", "${2:Your string here}", "EOT;"],
     "description": "Creates a multi-line string variable in PHP."
   },
@@ -302,7 +302,8 @@
     "description": "Creates an integer variable in PHP."
   },
   "PHP Create Float Variable": {
-    "prefix": "cotrVarFloat",
+        "prefix": ["cotrVarNum", "number",  "float", "floatVariable", "variableFloat", "variableNumber", "numberVariable"],
+
     "body": ["$${1:myFloat} = ${2:0.0};"],
     "description": "Creates a float variable in PHP."
   },
@@ -349,7 +350,7 @@
     "description": "Generates a map with a specific number of key-value pairs in PHP."
   },
   "PHP Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["print('${1:Your message here}');"],
     "description": "Prints a message to the console in PHP."
   },
@@ -388,7 +389,7 @@
     "description": "Creates a while loop in PHP."
   },
   "PHP Do While Loop": {
-    "prefix": "cotrDoWhileLoop",
+    "prefix": ["cotrDoWhileLoop", "doWhile"],
     "body": ["do {", "  ${1:// Your code here}", "} while ($${2:condition});"],
     "description": "Creates a do...while loop in PHP."
   },
@@ -435,7 +436,7 @@
     "description": "Note about named arguments in PHP."
   },
   "PHP Arrow Function": {
-    "prefix": "cotrFuncArrow",
+    "prefix": ["cotrFuncArrow", "arrowFunction", "functionArrow"],
     "body": [
       "$${2:myFunction} = fn(${3:parameters}) => ${4:// Your code here};"
     ],

@@ -93,7 +93,7 @@
     "description": "Compares the types of two variables in Go."
   },
   "Go Type Conversion": {
-    "prefix": "cotrTypeConvert",
+    "prefix": ["cotrTypeConvert", "convert", "cast"],
     "body": [
       "// Go Type Conversion:",
       "",
@@ -183,12 +183,12 @@
     "description": "The Go slice type, commonly used as a list."
   },
   "Go Null Type": {
-    "prefix": "cotrTypesNull",
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["nil"],
     "description": "The Go nil value, representing the absence of a value."
   },
   "Go Dynamic Type": {
-    "prefix": "cotrTypesDynamic",
+    "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": ["interface{}"],
     "description": "The Go interface{} type, representing any type."
   },
@@ -298,7 +298,7 @@
     "description": "Creates a string variable in Go using the var keyword"
   },
   "Go Create Multi-line String Variable": {
-    "prefix": "cotrVarMultiString",
+    "prefix": ["cotrVarMultiString", "multiString", "variableMultiString", "multiStringVariable", "multilineText"],
     "body": [
       "var ${1:variableName} = `",
       "${2:Line 1}",
@@ -314,7 +314,7 @@
     "description": "Creates an integer variable in Go using the var keyword"
   },
   "Go Create Float Variable": {
-    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
+    "prefix": ["cotrVarNum", "number",  "float", "floatVariable", "variableFloat", "variableNumber", "numberVariable"],
     "body": ["var ${1:variableName} float64 = ${2:variableValue}"],
     "description": "Creates a float variable in Go using the var keyword"
   },
@@ -376,7 +376,7 @@
     "description": "Generates an array in Go"
   },
   "Go Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["fmt.Println(${1:message})"],
     "description": "Prints a message to the console in Go"
   },

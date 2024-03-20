@@ -1,6 +1,6 @@
 {
   "C++ Arrow Function": {
-    "prefix": "cotrFuncArrow",
+    "prefix": ["cotrFuncArrow", "arrowFunction", "functionArrow"],
     "body": ["[]() -> ${1:void}", "{", "\t${2:/* code */}", "}"],
     "description": "Creates an arrow function in C++"
   }

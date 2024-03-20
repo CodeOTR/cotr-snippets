@@ -25,59 +25,38 @@
     "body": [
       "# Recommended High-Level R Project Structure:",
       "",
-      "# - project_name/",
-      "#   - Contains all project files.",
-      "# - data/",
-      "#   - raw",
-      "#   - processed",
+      "# - /",
+      "#   - README.md: Project description and instructions.",
+      "#   - .Rproj: RStudio project file.",
+      "",
       "# - R/",
-      "#   - Contains R scripts.",
-      "# - output/",
-      "#   - Contains generated output (e.g., figures, reports).",
+      "#   - Contains R script files (.R).",
+      "#   - Organize by feature or functionality, for example:",
+      "#     - data_preprocessing.R",
+      "#     - statistical_models.R",
+      "#     - visualization.R",
+      "",
+      "# - data/",
+      "#   - Raw and processed data files.",
+      "",
+      "# - docs/",
+      "#   - Documentation files, including analysis reports.",
+      "",
+      "# - tests/",
+      "#   - Test scripts for your R functions.",
+      "",
+      "# - man/",
+      "#   - Documentation for your functions, if you are building an R package.",
+      "",
+      "# - vignettes/",
+      "#   - Longer form documentation, such as tutorials or extended use cases.",
       "",
       "# Note:",
-      "# - This is a basic structure; adjust based on project complexity and preferences."
+      "# - This structure can be adapted based on the scale and needs of the project.",
+      "# - Use RStudio projects to manage workspace settings and project-specific options."
     ],
     "description": "Explains a high-level project structure for R."
-  },
-  "R Project Structure (Feature/Module)": {
-    "prefix": "cotrStructureFeatures",
-    "body": [
-      "# Recommended R Source Directory Organization (Feature/Module):",
-      "",
-      "# - R/",
-      "#   - data_cleaning/",
-      "#     - Contains scripts for data cleaning.",
-      "#   - analysis/",
-      "#     - Contains scripts for data analysis.",
-      "#   - visualization/",
-      "#     - Contains scripts for data visualization.",
-      "#   - ... (Organize by feature or module)",
-      "",
-      "# Note:",
-      "# - This approach promotes modularity and is suitable for larger projects."
-    ],
-    "description": "Explains a feature/module-based source directory organization for R."
-  },
-  "R Project Structure (File Type)": {
-    "prefix": "cotrStructureFiles",
-    "body": [
-      "# Recommended R Source Directory Organization (File Type):",
-      "",
-      "# - R/",
-      "#   - functions.R",
-      "#     - Contains custom functions.",
-      "#   - data_loading.R",
-      "#     - Contains scripts for loading data.",
-      "#   - analysis.R",
-      "#     - Contains scripts for data analysis.",
-      "#   - ... (Organize by file type)",
-      "",
-      "# Note:",
-      "# - This approach can be helpful for smaller projects or specific use cases."
-    ],
-    "description": "Explains a file type-based source directory organization for R."
-  },
+  },  
 
   "R Mathematical Operators": {
     "prefix": ["cotrOperators", "operators", "mathDocs"],
@@ -353,7 +332,7 @@
   },
 
   "R Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["print(${1:'Your message here'})"],
     "description": "Prints a message to the console in R."
   },

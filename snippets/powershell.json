@@ -283,7 +283,7 @@
   },
 
   "PowerShell Create Double Variable": {
-    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
+    "prefix": ["cotrVarNum", "number",  "float", "floatVariable", "variableFloat", "variableNumber", "numberVariable"],
     "body": ["$${1:myDouble} = ${2:0.0}"],
     "description": "Creates a double variable in PowerShell."
   },
@@ -327,7 +327,7 @@
   },
 
   "PowerShell Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["Write-Host ${1:'Your message here'}"],
     "description": "Prints a message to the console in PowerShell."
   },
@@ -437,7 +437,7 @@
   },
 
   "PowerShell Arrow Function": {
-    "prefix": "cotrFuncArrow",
+    "prefix": ["cotrFuncArrow", "arrowFunction", "functionArrow"],
     "body": ["{${1:parameters} ->", "    ${2:# Your code here}", "}"],
     "description": "Represents an arrow function-like syntax using a script block in PowerShell."
   },

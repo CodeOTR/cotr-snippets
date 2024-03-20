@@ -131,7 +131,7 @@
     "description": "Compares the types of two variables in JavaScript."
   },
   "JavaScript Type Conversion": {
-    "prefix": "cotrTypeConvert",
+    "prefix": ["cotrTypeConvert", "convert", "cast"],
     "body": [
       "// JavaScript Type Conversion:",
       "",
@@ -221,7 +221,7 @@
     "description": "The JavaScript array type, commonly used as a list."
   },
   "JavaScript Dynamic Type": {
-    "prefix": "cotrTypesDynamic",
+    "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": [
       "// There is no specific syntax for declaring a variable with a dynamic type in JavaScript."
     ],
@@ -286,7 +286,7 @@
     "description": "Creates a string variable in JavaScript."
   },
   "JavaScript Create Multi-Line String Variable": {
-    "prefix": "cotrVarMultiString",
+    "prefix": ["cotrVarMultiString", "multiString", "variableMultiString", "multiStringVariable", "multilineText"],
     "body": [
       "let ${1:myString} = `",
       "${2:Line 1}",
@@ -297,7 +297,7 @@
     "description": "Creates a multi-line string variable in JavaScript."
   },
   "JavaScript Create Number Variable": {
-    "prefix": ["cotrVarNum", "number", "variableNumber", "numberVariable"],
+    "prefix": ["cotrVarNum", "number",  "float", "floatVariable", "variableFloat", "variableNumber", "numberVariable"],
     "body": ["let ${1:myNumber} = ${2:0};"],
     "description": "Creates a number variable in JavaScript."
   },
@@ -370,7 +370,7 @@
     "description": "Generates an array (list) of a specific length in JavaScript."
   },
   "JavaScript Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["console.log(${1:'Your message here'});"],
     "description": "Prints a message to the console in JavaScript."
   },
@@ -453,7 +453,7 @@
     "description": "Creates a function with named arguments in JavaScript using object destructuring."
   },
   "JavaScript Arrow Function": {
-    "prefix": "cotrFuncArrow",
+    "prefix": ["cotrFuncArrow", "arrowFunction", "functionArrow"],
     "body": [
       "const ${2:myFunction} = (${3:parameters}) => {",
       "  ${4:// Your code here}",

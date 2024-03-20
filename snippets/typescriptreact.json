@@ -394,7 +394,7 @@
     "description": "Generates an array (list) of a specific length in TypeScript."
   },
   "TypeScript Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["console.log(${1:'Your message here'});"],
     "description": "Prints a message to the console in TypeScript."
   },
@@ -477,7 +477,7 @@
     "description": "Creates a function with named arguments in TypeScript."
   },
   "TypeScript Arrow Function": {
-    "prefix": "cotrFuncArrow",
+    "prefix": ["cotrFuncArrow", "arrowFunction", "functionArrow"],
     "body": [
       "const ${2:myFunction} = (${3:parameters}): ${1:void} => {",
       "  ${4:// Your code here}",

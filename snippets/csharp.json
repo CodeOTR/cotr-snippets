@@ -221,7 +221,7 @@
     "description": "The C# float type."
   },
   "C# Boolean Type": {
-    "prefix": "cotrTypesBoolean",
+    "prefix": ["cotrTypesBool", "booleanType", "typeBool"],
     "body": ["bool"],
     "description": "The C# boolean type."
   },
@@ -268,12 +268,12 @@
     "description": "The C# List type."
   },
   "C# Null Type": {
-    "prefix": "cotrTypesNull",
+    "prefix": ["cotrTypesNull", "nullType", "typesNull"],
     "body": ["null"],
     "description": "The C# null value."
   },
   "C# Dynamic Type": {
-    "prefix": "cotrTypesDynamic",
+    "prefix": ["cotrTypesDynamic", "typesDynamic", "typesAny", "dynamicType", "anyType"],
     "body": ["dynamic"],
     "description": "The C# dynamic type."
   },
@@ -419,7 +419,7 @@
     "description": "Creates a static variable in a C# class."
   },
   "C# Print": {
-   "prefix": ["cotrPrint", "print", "log", "systemOut", "write"],
+   "prefix": ["cotrPrint", "print", "log", "systemOut", "write", "consoleLog"],
     "body": ["Console.WriteLine(${1:'Your message here'});"],
     "description": "Prints a message to the console in C#."
   },
@@ -458,7 +458,7 @@
     "description": "Creates a while loop in C#."
   },
   "C# Do While Loop": {
-    "prefix": "cotrDoWhileLoop",
+    "prefix": ["cotrDoWhileLoop", "doWhile"],
     "body": ["do {", "  ${1:// Your code here}", "} while (${2:condition});"],
     "description": "Creates a do...while loop in C#."
   },
@@ -512,7 +512,7 @@
     "description": "Note about named arguments in C#."
   },
   "C# Arrow Function": {
-    "prefix": "cotrFuncArrow",
+    "prefix": ["cotrFuncArrow", "arrowFunction", "functionArrow"],
     "body": [
       "Func<${2:parameters}, ${1:returnType}> ${3:myFunction} = (${4:parameters}) => {",
       "    ${5:// Your code here}",
