@@ -1,303 +1,33 @@
-## Go Create Typed Variable
+## Go Variable Declaration Syntax
 
-### {[cotrVarTyped typedVariable variableWithType]}
+### [cotrVarSyntax](/snippets/cotrVarSyntax)
 
-```
-var ${1:myVar} ${2:Type} = $3
-```
+```go
+// Go Variable Declaration Syntax:
 
-## Go Create String Variable
+// - var: (Scope: Block or Package)
+//   - Explicitly declare the variable's type.
+//   - Can be declared without initialization (zero value is assigned).
 
-### {[cotrVarString string stringVariable variableString text createString createText]}
+// - :=: (Scope: Block)
+//   - Short variable declaration and type inference.
+//   - Requires initialization.
 
-```
-var ${1:variableName} string = ${2:variableValue}
-```
-
-## Go Throw Exception
-
-### {[cotrThrow throwError throwException]}
-
-```
-panic('Your message here')
-```
-
-## Go Type Check
-
-### {[cotrTypeCheck checkType getType typeOf]}
-
-```
-fmt.Printf("%T", ${1:variable})
-```
-
-## Go Float Type
-
-### {[cotrTypesNum numberType typeNumber doubleType typeDouble]}
-
-```
-float64
-```
-
-## Go Dynamic Type
-
-### {[cotrTypesDynamic typesDynamic typesAny dynamicType anyType]}
-
-```
-interface{}
-```
-
-## Go Create Variable
-
-### {[cotrVar variable createVariable newVariable]}
-
-```
-var ${1:variableName} ${2:variableType} = ${3:variableValue}
-```
-
-## Go Create Nullable Variable
-
-### {[cotrVarNullable variableNullable nullableVariable]}
-
-```
-var ${1:myVar} *${2:Type} = $3
-```
-
-## Go Function Syntax
-
-### {[cotrFuncSyntax functionSyntax functionDocs]}
-
-```
-// Go Function Syntax
-// Basic function: func FunctionName(parameters) returnType { ... }
-// Function with arguments: func FunctionName(arg1 type1, arg2 type2, ...) returnType { ... }
-// Note: Go does not support named arguments in function definitions.
-```
-
-## Go Function Named Args
-
-### {[cotrFuncArgsNamed functionNamedArgs]}
-
-```
-// Go does not support named arguments in function definitions.
-```
-
-## Go Comment
-
-### {[cotrComment comment note]}
-
-```
-// ${1:comment}
-```
-
-## Go Create Constant
-
-### {[cotrConst constant]}
-
-```
-const ${1:variableName} ${2:variableType} = ${3:variableValue}
-```
-
-## Go Ternary Operator
-
-### {[cotrTernary ternary conditionalOperator]}
-
-```
-${1:condition} ? ${2:trueValue} : ${3:falseValue}
-```
-
-## Go Create Float Variable
-
-### {[cotrVarNum number float floatVariable variableFloat variableNumber numberVariable]}
-
-```
-var ${1:variableName} float64 = ${2:variableValue}
-```
-
-## Go If Else Statement
-
-### {[cotrIfElse ifElseStatement]}
-
-```
-if ${1:condition} {
-  ${2:// Your code here}
-} else if ${3:condition} {
-  ${4:// Your code here}
-} else {
-  ${5:// Your code here}
-}
-```
-
-## Go Type Conversion
-
-### {[cotrTypeConvert convert cast]}
-
-```
-// Go Type Conversion:
-
-// Explicit conversions (using type assertion):
-// - targetType(variable)  // Type assertion (can panic if conversion fails)
-
-// Conversion functions:
-// - strconv.Itoa(int)  // Converts int to string
-// - strconv.Atoi(string)  // Converts string to int
-// - ... (Various conversion functions in strconv and other packages)
+// - const: (Scope: Package)
+//   - Cannot be reassigned or redeclared.
+//   - Use for values that should remain constant.
 
 // Note:
-// - Be cautious with type assertions, as they can lead to panics if the conversion is not valid.
-```
-
-## Go String Type
-
-### {[cotrTypesString stringType typeString textType typeText]}
-
-```
-string
-```
-
-## Go Date Type
-
-### {[cotrTypesDate dateType typeDate timeType timestampType dateTimeType]}
-
-```
-time.Time
-```
-
-## Go Create Date Variable
-
-### {[cotrVarDate dateVariable variableDate date]}
-
-```
-// import "time"
-var ${1:myDate} = time.Date(${2:year}, time.${3:Month}, ${4:day}, ${5:0}, ${6:0}, ${7:0}, ${8:0}, time.UTC)
-```
-
-## Go Create Map Variable
-
-### {[cotrVarMap createMap createStruct variableMap variableStruct mapVariable structVariable dictVariable variableDict createDict]}
-
-```
-var ${1:mapName} = map[${2:keyType}]${3:valueType}{
-    ${4:key1}: ${5:value1},
-    ${6:key2}: ${7:value2}
-}
-```
-
-## Go While Loop
-
-### {[cotrWhileLoop whileLoop whileTrue]}
-
-```
-for ${1:condition} {
-    ${2:// Your code here}
-}
-```
-
-## Go Concatenate Strings
-
-### {[cotrConcat concatenate combine]}
-
-```
-${1:string1} + ${2:string2}
-```
-
-## Go Create Integer Variable
-
-### {[cotrVarInt integer int variableInt intVariable createInt]}
-
-```
-var ${1:variableName} int = ${2:variableValue}
-```
-
-## Go Create Boolean Variable
-
-### {[cotrVarBool variableBool bool boolVariable createBool]}
-
-```
-var ${1:variableName} bool = ${2:variableValue}
-```
-
-## Go Equal To
-
-### {[cotrEqual equal]}
-
-```
-==
-```
-
-## Go Boolean True
-
-### {[cotrTypesBoolTrue true booleanTrue on]}
-
-```
-true
-```
-
-## Go Anonymous Function
-
-### {[cotrFuncAnon anonFunc anonymous closure lambda functionLiteral cotrFuncLambda cotrFuncArrow]}
-
-```
-var ${1:myFunc} = func(${2:parameters}) ${3:returnType} {
-    ${4:// Your code here}
-    return ${5:value}
-}
-
-// Usage
-${1:myFunc}(${6:arguments})
-```
-
-## Go Null Type
-
-### {[cotrTypesNull nullType typesNull]}
-
-```
-nil
-```
-
-## Go Function Args
-
-### {[cotrFuncArgs functionArgs functionWithArgs]}
-
-```
-// In Go, functions do not support default argument values in definitions.
-func ${2:MyFunction}(${3:arg1} ${4:type1}, ${5:arg2} ${6:type2}) ${1:void} {
-    ${7:// Your code here}
-}
-```
-
-## Go Switch Statement
-
-### {[cotrSwitch switch switchStatement select case]}
-
-```
-switch ${1:variable} {
-    case ${2:value1}:
-        ${3:// Your code here}
-        break
-    case ${4:value2}:
-        ${5:// Your code here}
-        break
-    default:
-        ${6:// Your code here}
-}
-```
-
-## Go Type Comparison
-
-### {[cotrTypeCompare compareTypes]}
-
-```
-// Check if two variables have the same type:
-if reflect.TypeOf(${1:variable1}) == reflect.TypeOf(${2:variable2}) {
-  // Your code here
-}
+// - Use 'var' for package-level variables or when explicit type declaration is desired.
+// - Use ':=' for most variable declarations within blocks.
+// - Use 'const' for values that are known at compile time.
 ```
 
 ## Go Project Structure (High-Level)
 
-### {[cotrStructure structure architecture]}
+### [cotrStructure](/snippets/cotrStructure)
 
-```
+```go
 // Recommended High-Level Go Project Structure:
 
 // - cmd/
@@ -340,205 +70,74 @@ if reflect.TypeOf(${1:variable1}) == reflect.TypeOf(${2:variable2}) {
 // - Smaller projects might have a simpler structure.
 ```
 
-## Go For Loop
+## Go Create Float Variable
 
-### {[cotrForLoop forLoop forX]}
+### [cotrVarNum](/snippets/cotrVarNum)
 
-```
-for ${1:i} := ${2:0}; $1 < ${3:10}; $1++ {
-    ${4:// Your code here}
-}
+```go
+var ${1:variableName} float64 = ${2:variableValue}
 ```
 
-## Go Generate Array
+## Go Ternary Operator
 
-### {[cotrGenList generateList listGen]}
+### [cotrTernary](/snippets/cotrTernary)
 
-```
-var ${1:arrayName} = []${2:arrayType}{
-    ${3:value1},
-    ${4:value2}
-}
+```go
+${1:condition} ? ${2:trueValue} : ${3:falseValue}
 ```
 
-## Go Function
+## Go Date Type
 
-### {[cotrFunc function subprogram procedure subroutine method]}
+### [cotrTypesDate](/snippets/cotrTypesDate)
 
-```
-func ${2:MyFunction}(${3:parameters}) ${1:void} {
-    ${4:// Your code here}
-}
-```
-
-## Go Integer Type
-
-### {[cotrTypesInt intType typeInt]}
-
-```
-int
-```
-
-## Go List Type
-
-### {[cotrTypesList listType typeList typeArray]}
-
-```
-[]${1:type}
-```
-
-## Go Interpolate String
-
-### {[cotrInterpolate interpolate variableExpansion variableSubstitution stringPlaceholders stringInterpolation]}
-
-```
-`${1:string}`
-```
-
-## Go Print
-
-### {[cotrPrint print log systemOut write consoleLog]}
-
-```
-fmt.Println(${1:message})
-```
-
-## Go Multi-line Comment
-
-### {[cotrCommentMulti multiLineComment commentMultiLine blockComment]}
-
-```
-/*
- * ${1:comment}
- */
+```go
+time.Time
 ```
 
 ## Go Date Now
 
-### {cotrTypesDateNow}
+### [cotrTypesDateNow](/snippets/cotrTypesDateNow)
 
-```
+```go
 time.Now()
-```
-
-## Go Variable Declaration Syntax
-
-### {[cotrVarSyntax variableSyntax howToVariables letSyntax]}
-
-```
-// Go Variable Declaration Syntax:
-
-// - var: (Scope: Block or Package)
-//   - Explicitly declare the variable's type.
-//   - Can be declared without initialization (zero value is assigned).
-
-// - :=: (Scope: Block)
-//   - Short variable declaration and type inference.
-//   - Requires initialization.
-
-// - const: (Scope: Package)
-//   - Cannot be reassigned or redeclared.
-//   - Use for values that should remain constant.
-
-// Note:
-// - Use 'var' for package-level variables or when explicit type declaration is desired.
-// - Use ':=' for most variable declarations within blocks.
-// - Use 'const' for values that are known at compile time.
-```
-
-## Go Create List Variable
-
-### {[cotrVarList createList listVariable arrayVariable variableList variableArray list array]}
-
-```
-var ${1:variableName} = []${2:variableType}{
-    ${3:value1},
-    ${4:value2}
-}
-```
-
-## Go Map Type
-
-### {[cotrTypesMap mapType typeMap hashmapType structType dictType typeDict typeScruct]}
-
-```
-map[${1:keyType}]${2:valueType}
-```
-
-## Go Create Multi-line String Variable
-
-### {[cotrVarMultiString multiString variableMultiString multiStringVariable multilineText]}
-
-```
-var ${1:variableName} = `
-${2:Line 1}
-${3:Line 2}
-${4:Line 3}
-`
 ```
 
 ## Go For...Range Loop
 
-### {cotrForRangeLoop}
+### [cotrForRangeLoop](/snippets/cotrForRangeLoop)
 
-```
+```go
 for ${1:index}, ${2:value} := range ${3:iterable} {
     ${4:// Your code here}
 }
 ```
 
-## Go Entry Point
+## Go Function Syntax
 
-### {[cotrEntry entry start startingPoint]}
+### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
 
-```
-// Go Entry Point
-// To run this program, use: `go run filename.go`
-
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, World!")
-}
+```go
+// Go Function Syntax
+// Basic function: func FunctionName(parameters) returnType { ... }
+// Function with arguments: func FunctionName(arg1 type1, arg2 type2, ...) returnType { ... }
+// Note: Go does not support named arguments in function definitions.
 ```
 
-## Go Mathematical Operators
+## Go Multi-line Comment
 
-### {[cotrOperators operators mathDocs]}
+### [cotrCommentMulti](/snippets/cotrCommentMulti)
 
-```
-// Go Mathematical Operators:
-// Addition: +
-// Subtraction: -
-// Multiplication: *
-// Exponentiation: **
-// Division: /
-// Modulus: %
-// Increment: ++
-// Decrement: --
-// Assignment: =
-// Addition assignment: +=
-// Subtraction assignment: -=
-// Multiplication assignment: *=
-// Division assignment: /=
-// Modulus assignment: %=
-```
-
-## Go Boolean Type
-
-### {[cotrTypesBool booleanType typeBool]}
-
-```
-bool
+```go
+/*
+ * ${1:comment}
+ */
 ```
 
 ## Go Struct
 
-### {[cotrClass class objectTemplate]}
+### [cotrClass](/snippets/cotrClass)
 
-```
+```go
 type ${1:MyStruct} struct {
   ${2:field1} ${3:type1}
   ${4:field2} ${5:type2}
@@ -546,113 +145,11 @@ type ${1:MyStruct} struct {
 }
 ```
 
-## Go Boolean Operators
-
-### {[cotrOperatorsBool booleanOperators logic]}
-
-```
-// Go Boolean Operators:
-// Logical AND: &&
-// Logical OR: ||
-// Logical NOT: !
-// Equality: ==
-// Inequality: !=
-// Greater than: >
-// Less than: <
-// Greater than or equal to: >=
-// Less than or equal to: <=
-```
-
-## Go This Type Check
-
-### {[thisTypeCheck thisType getThisType]}
-
-```
-reflect.TypeOf($CLIPBOARD).String()
-```
-
-## Go Try Catch
-
-### {[cotrTryCatch tryCatch]}
-
-```
-defer func() {
-  if r := recover(); r != nil {
-    ${1:// Your code here}
-  }
-}()
-${2:// Your code here}
-```
-
-## Go Print Multi
-
-### {[cotrPrintMulti printMultiLine]}
-
-```
-fmt.Println(`
-${1:Line 1}
-${2:Line 2}
-${3:Line 3}
-`)
-```
-
-## Go Iota
-
-### {[cotrEnum enum]}
-
-```
-const (
-  ${1:variable1} = iota
-  ${2:variable2}
-  ${3:variable3}
-  // Add more variables here
-)
-```
-
-## Go If Statement
-
-### {[cotrIf ifStatement]}
-
-```
-if ${1:condition} {
-  ${2:// Your code here}
-}
-```
-
-## Go Info
-
-### {[cotrInfo languageInfo info]}
-
-```
-Typing: Statically typed
-Paradigm: Multi-paradigm: procedural, concurrent
-Compilation: Compiled
-Concurrency: Built-in support for concurrency with goroutines and channels
-```
-
-## Go Not Equal To
-
-### {[cotrNotEqual notEqual doesNotEqual]}
-
-```
-!=
-```
-
-## Go Generate Map
-
-### {[cotrGenMap generateMap]}
-
-```
-var ${1:mapName} = make(map[${2:keyType}]${3:valueType})
-${1:mapName}[${4:key1}] = ${5:value1}
-${1:mapName}[${6:key2}] = ${7:value2}
-```
-
 ## Go Types
 
-### {[cotrTypes types allTypes languageTypes builtInTypes dataTypes]}
+### [cotrTypes](/snippets/cotrTypes)
 
-```
+```go
 $BLOCK_COMMENT_START
 Go is a statically typed language.
 
@@ -676,11 +173,506 @@ Types in Go include:
 $BLOCK_COMMENT_END
 ```
 
+## Go Float Type
+
+### [cotrTypesNum](/snippets/cotrTypesNum)
+
+```go
+float64
+```
+
+## Go Function
+
+### [cotrFunc](/snippets/cotrFunc)
+
+```go
+func ${2:MyFunction}(${3:parameters}) ${1:void} {
+    ${4:// Your code here}
+}
+```
+
+## Go Type Conversion
+
+### [cotrTypeConvert](/snippets/cotrTypeConvert)
+
+```go
+// Go Type Conversion:
+
+// Explicit conversions (using type assertion):
+// - targetType(variable)  // Type assertion (can panic if conversion fails)
+
+// Conversion functions:
+// - strconv.Itoa(int)  // Converts int to string
+// - strconv.Atoi(string)  // Converts string to int
+// - ... (Various conversion functions in strconv and other packages)
+
+// Note:
+// - Be cautious with type assertions, as they can lead to panics if the conversion is not valid.
+```
+
+## Go Generate Array
+
+### [cotrGenList](/snippets/cotrGenList)
+
+```go
+var ${1:arrayName} = []${2:arrayType}{
+    ${3:value1},
+    ${4:value2}
+}
+```
+
+## Go Create Map Variable
+
+### [cotrVarMap](/snippets/cotrVarMap)
+
+```go
+var ${1:mapName} = map[${2:keyType}]${3:valueType}{
+    ${4:key1}: ${5:value1},
+    ${6:key2}: ${7:value2}
+}
+```
+
+## Go Create Constant
+
+### [cotrConst](/snippets/cotrConst)
+
+```go
+const ${1:variableName} ${2:variableType} = ${3:variableValue}
+```
+
+## Go Print
+
+### [cotrPrint](/snippets/cotrPrint)
+
+```go
+fmt.Println(${1:message})
+```
+
+## Go For Loop
+
+### [cotrForLoop](/snippets/cotrForLoop)
+
+```go
+for ${1:i} := ${2:0}; $1 < ${3:10}; $1++ {
+    ${4:// Your code here}
+}
+```
+
+## Go Throw Exception
+
+### [cotrThrow](/snippets/cotrThrow)
+
+```go
+panic('Your message here')
+```
+
+## Go Equal To
+
+### [cotrEqual](/snippets/cotrEqual)
+
+```go
+==
+```
+
+## Go Create List Variable
+
+### [cotrVarList](/snippets/cotrVarList)
+
+```go
+var ${1:variableName} = []${2:variableType}{
+    ${3:value1},
+    ${4:value2}
+}
+```
+
+## Go Interpolate String
+
+### [cotrInterpolate](/snippets/cotrInterpolate)
+
+```go
+`${1:string}`
+```
+
+## Go While Loop
+
+### [cotrWhileLoop](/snippets/cotrWhileLoop)
+
+```go
+for ${1:condition} {
+    ${2:// Your code here}
+}
+```
+
+## Go Info
+
+### [cotrInfo](/snippets/cotrInfo)
+
+```go
+Typing: Statically typed
+Paradigm: Multi-paradigm: procedural, concurrent
+Compilation: Compiled
+Concurrency: Built-in support for concurrency with goroutines and channels
+```
+
+## Go Null Type
+
+### [cotrTypesNull](/snippets/cotrTypesNull)
+
+```go
+nil
+```
+
+## Go Create Nullable Variable
+
+### [cotrVarNullable](/snippets/cotrVarNullable)
+
+```go
+var ${1:myVar} *${2:Type} = $3
+```
+
+## Go Create Boolean Variable
+
+### [cotrVarBool](/snippets/cotrVarBool)
+
+```go
+var ${1:variableName} bool = ${2:variableValue}
+```
+
+## Go Create Date Variable
+
+### [cotrVarDate](/snippets/cotrVarDate)
+
+```go
+// import "time"
+var ${1:myDate} = time.Date(${2:year}, time.${3:Month}, ${4:day}, ${5:0}, ${6:0}, ${7:0}, ${8:0}, time.UTC)
+```
+
+## Go Generate Map
+
+### [cotrGenMap](/snippets/cotrGenMap)
+
+```go
+var ${1:mapName} = make(map[${2:keyType}]${3:valueType})
+${1:mapName}[${4:key1}] = ${5:value1}
+${1:mapName}[${6:key2}] = ${7:value2}
+```
+
+## Go Iota
+
+### [cotrEnum](/snippets/cotrEnum)
+
+```go
+const (
+  ${1:variable1} = iota
+  ${2:variable2}
+  ${3:variable3}
+  // Add more variables here
+)
+```
+
 ## Go Boolean False
 
-### {[cotrTypesBoolFalse false off booleanFalse]}
+### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
 
-```
+```go
 false
+```
+
+## Go Map Type
+
+### [cotrTypesMap](/snippets/cotrTypesMap)
+
+```go
+map[${1:keyType}]${2:valueType}
+```
+
+## Go Comment
+
+### [cotrComment](/snippets/cotrComment)
+
+```go
+// ${1:comment}
+```
+
+## Go Switch Statement
+
+### [cotrSwitch](/snippets/cotrSwitch)
+
+```go
+switch ${1:variable} {
+    case ${2:value1}:
+        ${3:// Your code here}
+        break
+    case ${4:value2}:
+        ${5:// Your code here}
+        break
+    default:
+        ${6:// Your code here}
+}
+```
+
+## Go Type Check
+
+### [cotrTypeCheck](/snippets/cotrTypeCheck)
+
+```go
+fmt.Printf("%T", ${1:variable})
+```
+
+## Go Create String Variable
+
+### [cotrVarString](/snippets/cotrVarString)
+
+```go
+var ${1:variableName} string = ${2:variableValue}
+```
+
+## Go Print Multi
+
+### [cotrPrintMulti](/snippets/cotrPrintMulti)
+
+```go
+fmt.Println(`
+${1:Line 1}
+${2:Line 2}
+${3:Line 3}
+`)
+```
+
+## Go If Statement
+
+### [cotrIf](/snippets/cotrIf)
+
+```go
+if ${1:condition} {
+  ${2:// Your code here}
+}
+```
+
+## Go String Type
+
+### [cotrTypesString](/snippets/cotrTypesString)
+
+```go
+string
+```
+
+## Go Boolean Type
+
+### [cotrTypesBool](/snippets/cotrTypesBool)
+
+```go
+bool
+```
+
+## Go Not Equal To
+
+### [cotrNotEqual](/snippets/cotrNotEqual)
+
+```go
+!=
+```
+
+## Go Boolean Operators
+
+### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
+
+```go
+// Go Boolean Operators:
+// Logical AND: &&
+// Logical OR: ||
+// Logical NOT: !
+// Equality: ==
+// Inequality: !=
+// Greater than: >
+// Less than: <
+// Greater than or equal to: >=
+// Less than or equal to: <=
+```
+
+## Go Concatenate Strings
+
+### [cotrConcat](/snippets/cotrConcat)
+
+```go
+${1:string1} + ${2:string2}
+```
+
+## Go Create Multi-line String Variable
+
+### [cotrVarMultiString](/snippets/cotrVarMultiString)
+
+```go
+var ${1:variableName} = `
+${2:Line 1}
+${3:Line 2}
+${4:Line 3}
+`
+```
+
+## Go Try Catch
+
+### [cotrTryCatch](/snippets/cotrTryCatch)
+
+```go
+defer func() {
+  if r := recover(); r != nil {
+    ${1:// Your code here}
+  }
+}()
+${2:// Your code here}
+```
+
+## Go Mathematical Operators
+
+### [cotrOperators](/snippets/cotrOperators)
+
+```go
+// Go Mathematical Operators:
+// Addition: +
+// Subtraction: -
+// Multiplication: *
+// Exponentiation: **
+// Division: /
+// Modulus: %
+// Increment: ++
+// Decrement: --
+// Assignment: =
+// Addition assignment: +=
+// Subtraction assignment: -=
+// Multiplication assignment: *=
+// Division assignment: /=
+// Modulus assignment: %=
+```
+
+## Go List Type
+
+### [cotrTypesList](/snippets/cotrTypesList)
+
+```go
+[]${1:type}
+```
+
+## Go Dynamic Type
+
+### [cotrTypesDynamic](/snippets/cotrTypesDynamic)
+
+```go
+interface{}
+```
+
+## Go Create Variable
+
+### [cotrVar](/snippets/cotrVar)
+
+```go
+var ${1:variableName} ${2:variableType} = ${3:variableValue}
+```
+
+## Go Create Integer Variable
+
+### [cotrVarInt](/snippets/cotrVarInt)
+
+```go
+var ${1:variableName} int = ${2:variableValue}
+```
+
+## Go Function Args
+
+### [cotrFuncArgs](/snippets/cotrFuncArgs)
+
+```go
+// In Go, functions do not support default argument values in definitions.
+func ${2:MyFunction}(${3:arg1} ${4:type1}, ${5:arg2} ${6:type2}) ${1:void} {
+    ${7:// Your code here}
+}
+```
+
+## Go Function Named Args
+
+### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
+
+```go
+// Go does not support named arguments in function definitions.
+```
+
+## Go Integer Type
+
+### [cotrTypesInt](/snippets/cotrTypesInt)
+
+```go
+int
+```
+
+## Go Boolean True
+
+### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
+
+```go
+true
+```
+
+## Go Create Typed Variable
+
+### [cotrVarTyped](/snippets/cotrVarTyped)
+
+```go
+var ${1:myVar} ${2:Type} = $3
+```
+
+## Go Anonymous Function
+
+### [cotrFuncAnon](/snippets/cotrFuncAnon)
+
+```go
+var ${1:myFunc} = func(${2:parameters}) ${3:returnType} {
+    ${4:// Your code here}
+    return ${5:value}
+}
+
+// Usage
+${1:myFunc}(${6:arguments})
+```
+
+## Go If Else Statement
+
+### [cotrIfElse](/snippets/cotrIfElse)
+
+```go
+if ${1:condition} {
+  ${2:// Your code here}
+} else if ${3:condition} {
+  ${4:// Your code here}
+} else {
+  ${5:// Your code here}
+}
+```
+
+## Go Entry Point
+
+### [cotrEntry](/snippets/cotrEntry)
+
+```go
+// Go Entry Point
+// To run this program, use: `go run filename.go`
+
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+```
+
+## Go Type Comparison
+
+### [cotrTypeCompare](/snippets/cotrTypeCompare)
+
+```go
+// Check if two variables have the same type:
+if reflect.TypeOf(${1:variable1}) == reflect.TypeOf(${2:variable2}) {
+  // Your code here
+}
 ```
 

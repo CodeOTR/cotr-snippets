@@ -1,119 +1,111 @@
-## R Info
+## R Types
 
-### {[cotrInfo languageInfo info]}
+### [cotrTypes](/snippets/cotrTypes)
 
+```r
+$BLOCK_COMMENT_START
+R is a dynamically typed language.
+
+Some common types in R include:
+- numeric: Numeric data type (includes integers and floating-point numbers)
+- character: String
+- logical: Boolean
+- vector: One-dimensional array
+- list: Ordered collection of elements
+- data.frame: Two-dimensional data structure
+- matrix: Two-dimensional array
+- factor: Categorical data
+- NULL: Represents the absence of a value
+- function: Function object
+$BLOCK_COMMENT_END
 ```
-# Typing: Dynamically typed
-# Paradigm: Multi-paradigm: functional, object-oriented, procedural, statistical
-# Compilation: Interpreted
-# Concurrency: Supports multi-threading with packages like 'parallel'
+
+## R Boolean Type
+
+### [cotrTypesBool](/snippets/cotrTypesBool)
+
+```r
+logical
+```
+
+## R For Loop
+
+### [cotrForLoop](/snippets/cotrForLoop)
+
+```r
+for (${1:i} in ${2:1:10}) {
+  # Your code here
+}
+```
+
+## R While Loop
+
+### [cotrWhileLoop](/snippets/cotrWhileLoop)
+
+```r
+while (${1:condition}) {
+  # Your code here
+}
 ```
 
 ## R Type Comparison
 
-### {[cotrTypeCompare compareTypes]}
+### [cotrTypeCompare](/snippets/cotrTypeCompare)
 
-```
+```r
 # Check if two variables have the same type:
 if (identical(class(${1:variable1}), class(${2:variable2}))) {
   # Your code here
 }
 ```
 
-## R For Loop
+## R Create Array Variable
 
-### {[cotrForLoop forLoop forX]}
+### [cotrVarList](/snippets/cotrVarList)
 
+```r
+${1:my_array} <- c(${2:items})
 ```
-for (${1:i} in ${2:1:10}) {
+
+## R For Each Loop
+
+### [cotrForEachLoop](/snippets/cotrForEachLoop)
+
+```r
+for (item in ${1:iterable}) {
   # Your code here
 }
 ```
 
-## R Enum
+## R Boolean False
 
-### {[cotrEnum enum]}
+### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
 
-```
-# R does not have a built-in enum type. Use a list or vector instead.
-```
-
-## R String Type
-
-### {[cotrTypesString stringType typeString textType typeText]}
-
-```
-character
-```
-
-## R If Else Statement
-
-### {[cotrIfElse ifElseStatement]}
-
-```
-if (${1:condition}) {
-  # Your code here
-} else {
-  # Your code here
-}
-```
-
-## R List Type
-
-### {[cotrTypesList listType typeList typeArray]}
-
-```
-list
+```r
+FALSE
 ```
 
 ## R Dynamic Type
 
-### {[cotrDynamic dynamicType typeDynamic anyType typeAny]}
+### [cotrDynamic](/snippets/cotrDynamic)
 
-```
+```r
 # R is a dynamically typed language.
 ```
 
-## R Function Args
+## R Not Equal To
 
-### {[cotrFuncArgs functionArgs functionWithArgs]}
+### [cotrNotEqual](/snippets/cotrNotEqual)
 
-```
-# In R, functions can have arguments with default values.
-${2:my_function} <- function(${3:arg1}, ${4:arg2} = ${5:'defaultVal'}) {
-  ${6:# Your code here}
-}
-```
-
-## R Equal To
-
-### {[cotrEqual equal]}
-
-```
-==
-```
-
-## R Comment
-
-### {[cotrComment comment note]}
-
-```
-# ${1:Your comment here}
-```
-
-## R Multi-Line Comment
-
-### {[cotrCommentMulti multiLineComment commentMultiLine blockComment]}
-
-```
-${1:comment}
+```r
+!=
 ```
 
 ## R Type Conversion
 
-### {[cotrTypeConvert cotrTypeCast cotrConvert cotrCast]}
+### [cotrTypeConvert](/snippets/cotrTypeConvert)
 
-```
+```r
 # R Type Conversion:
 
 # Implicit conversions (R performs automatically):
@@ -130,86 +122,120 @@ ${1:comment}
 # - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control.
 ```
 
-## R Create Multiline String Variable
+## R Null Type
 
-### {[cotrVarStringMulti multiLineString varStringMulti stringVariableMulti createMultiLineString]}
+### [cotrNull](/snippets/cotrNull)
 
-```
-${1:my_string} <- paste0(
-${2:"Line 1",
-${3:"Line 2",
-${4:"Line 3")
+```r
+NULL
 ```
 
 ## R Create String Variable
 
-### {[cotrVarString string stringVariable variableString text createString createText]}
+### [cotrVarString](/snippets/cotrVarString)
 
-```
+```r
 ${1:my_string} <- '${2:Your string here}'
 ```
 
-## R Create List Variable
+## R Type Check
 
-### {cotrVarListAlt}
+### [cotrTypeCheck](/snippets/cotrTypeCheck)
 
-```
-${1:my_list} <- list(${2:items})
-```
-
-## R Create Date Variable
-
-### {[cotrVarDate dateVariable variableDate date]}
-
-```
-${1:my_date} <- as.Date('${2:YYYY-MM-DD}')
+```r
+class(${1:variable})
 ```
 
-## R For Each Loop
+## R Function Args
 
-### {[cotrForEachLoop forEach]}
+### [cotrFuncArgs](/snippets/cotrFuncArgs)
 
+```r
+# In R, functions can have arguments with default values.
+${2:my_function} <- function(${3:arg1}, ${4:arg2} = ${5:'defaultVal'}) {
+  ${6:# Your code here}
+}
 ```
-for (item in ${1:iterable}) {
+
+## R If Statement
+
+### [cotrIf](/snippets/cotrIf)
+
+```r
+if (${1:condition}) {
   # Your code here
 }
 ```
 
-## R Mathematical Operators
+## R Throw Exception
 
-### {[cotrOperators operators mathDocs]}
+### [cotrThrow](/snippets/cotrThrow)
 
-```
-# R Mathematical Operators
-# Addition: +
-# Subtraction: -
-# Multiplication: *
-# Exponentiation: ^
-# Division: /
-# Modulus (Remainder): %%
-# Integer Division: %/%
-# Assignment: <- or =
-# Addition assignment: +=
-# Subtraction assignment: -=
-# Multiplication assignment: *=
-# Division assignment: /=
-# Modulus assignment: %%=
-# Exponentiation assignment: ^=
+```r
+stop(${1:'Your message here'})
 ```
 
-## R Boolean False
+## R Enum
 
-### {[cotrTypesBoolFalse false off booleanFalse]}
+### [cotrEnum](/snippets/cotrEnum)
 
+```r
+# R does not have a built-in enum type. Use a list or vector instead.
 ```
-FALSE
+
+## R Multi-Line Comment
+
+### [cotrCommentMulti](/snippets/cotrCommentMulti)
+
+```r
+${1:comment}
+```
+
+## R Create Constant
+
+### [cotrConst](/snippets/cotrConst)
+
+```r
+${1:MY_CONST} <- $2
+```
+
+## R Date Type
+
+### [cotrTypesDate](/snippets/cotrTypesDate)
+
+```r
+Date
+```
+
+## R List Type
+
+### [cotrTypesList](/snippets/cotrTypesList)
+
+```r
+list
+```
+
+## R Concatenate String
+
+### [cotrConcat](/snippets/cotrConcat)
+
+```r
+paste(${1:"string1"}, ${2:"string2"}, sep = "")
+```
+
+## R Create Date Variable
+
+### [cotrVarDate](/snippets/cotrVarDate)
+
+```r
+${1:my_date} <- as.Date('${2:YYYY-MM-DD}')
 ```
 
 ## R Try Catch
 
-### {[cotrTryCatch tryCatch]}
+### [cotrTryCatch](/snippets/cotrTryCatch)
 
-```
+```r
 tryCatch({
   # Your code here
 }, error = function(e) {
@@ -217,11 +243,125 @@ tryCatch({
 })
 ```
 
+## R String Type
+
+### [cotrTypesString](/snippets/cotrTypesString)
+
+```r
+character
+```
+
+## R Info
+
+### [cotrInfo](/snippets/cotrInfo)
+
+```r
+# Typing: Dynamically typed
+# Paradigm: Multi-paradigm: functional, object-oriented, procedural, statistical
+# Compilation: Interpreted
+# Concurrency: Supports multi-threading with packages like 'parallel'
+```
+
+## R Class
+
+### [cotrClass](/snippets/cotrClass)
+
+```r
+# R does not have a built-in class type. Use a list or vector instead.
+```
+
+## R Integer Type
+
+### [cotrTypesInt](/snippets/cotrTypesInt)
+
+```r
+# R uses 'numeric' for both integers and floating-point numbers.
+```
+
+## R Create List Variable
+
+### [cotrVarListAlt](/snippets/cotrVarListAlt)
+
+```r
+${1:my_list} <- list(${2:items})
+```
+
+## R Print
+
+### [cotrPrint](/snippets/cotrPrint)
+
+```r
+print(${1:'Your message here'})
+```
+
+## R Print Multi
+
+### [cotrPrintMulti](/snippets/cotrPrintMulti)
+
+```r
+cat(${1:"Line 1",
+${2:"Line 2",
+${3:"Line 3")
+```
+
+## R Equal To
+
+### [cotrEqual](/snippets/cotrEqual)
+
+```r
+==
+```
+
+## R Create Variable
+
+### [cotrVar](/snippets/cotrVar)
+
+```r
+${1:my_var} <- $2
+```
+
+## R Create Typed Variable
+
+### [cotrVarTyped](/snippets/cotrVarTyped)
+
+```r
+# Note: R is dynamically typed; explicit type annotations are not used.
+${1:my_var} <- $2
+```
+
+## R Create Boolean Variable
+
+### [cotrVarBool](/snippets/cotrVarBool)
+
+```r
+${1:my_bool} <- ${2:TRUE}
+```
+
+## R If Else Statement
+
+### [cotrIfElse](/snippets/cotrIfElse)
+
+```r
+if (${1:condition}) {
+  # Your code here
+} else {
+  # Your code here
+}
+```
+
+## R Ternary Operator
+
+### [cotrTernary](/snippets/cotrTernary)
+
+```r
+ifelse(${1:condition}, ${2:trueValue}, ${3:falseValue})
+```
+
 ## R Project Structure (High-Level)
 
-### {[cotrStructure structure architecture]}
+### [cotrStructure](/snippets/cotrStructure)
 
-```
+```r
 # Recommended High-Level R Project Structure:
 
 # - /
@@ -255,151 +395,61 @@ tryCatch({
 # - Use RStudio projects to manage workspace settings and project-specific options.
 ```
 
-## R Boolean True
-
-### {[cotrTypesBoolTrue true booleanTrue on]}
-
-```
-TRUE
-```
-
-## R Date Type
-
-### {[cotrTypesDate dateType typeDate timeType timestampType dateTimeType]}
-
-```
-Date
-```
-
 ## R Map Type
 
-### {[cotrTypesMap mapType typeMap hashmapType structType dictType typeDict typeScruct]}
+### [cotrTypesMap](/snippets/cotrTypesMap)
 
-```
+```r
 # R does not have a built-in Map type. Use lists or data.frames for similar functionality.
-```
-
-## R Create Typed Variable
-
-### {[cotrVarTyped typedVariable variableWithType]}
-
-```
-# Note: R is dynamically typed; explicit type annotations are not used.
-${1:my_var} <- $2
-```
-
-## R Create Boolean Variable
-
-### {[cotrVarBool variableBool bool boolVariable createBool]}
-
-```
-${1:my_bool} <- ${2:TRUE}
-```
-
-## R Print
-
-### {[cotrPrint print log systemOut write consoleLog]}
-
-```
-print(${1:'Your message here'})
-```
-
-## R While Loop
-
-### {[cotrWhileLoop whileLoop whileTrue]}
-
-```
-while (${1:condition}) {
-  # Your code here
-}
-```
-
-## R Not Equal To
-
-### {[cotrNotEqual notEqual doesNotEqual]}
-
-```
-!=
-```
-
-## R Types
-
-### {[cotrTypes types allTypes languageTypes builtInTypes dataTypes]}
-
-```
-$BLOCK_COMMENT_START
-R is a dynamically typed language.
-
-Some common types in R include:
-- numeric: Numeric data type (includes integers and floating-point numbers)
-- character: String
-- logical: Boolean
-- vector: One-dimensional array
-- list: Ordered collection of elements
-- data.frame: Two-dimensional data structure
-- matrix: Two-dimensional array
-- factor: Categorical data
-- NULL: Represents the absence of a value
-- function: Function object
-$BLOCK_COMMENT_END
-```
-
-## R Null Type
-
-### {[cotrNull null nil none nothing option]}
-
-```
-NULL
-```
-
-## R Create Array Variable
-
-### {[cotrVarList createList listVariable arrayVariable variableList variableArray list array]}
-
-```
-${1:my_array} <- c(${2:items})
 ```
 
 ## R Date Now
 
-### {[cotrNow now currentTime dateNow]}
+### [cotrNow](/snippets/cotrNow)
 
-```
+```r
 Sys.Date()
 ```
 
 ## R Interpolate String
 
-### {[cotrInterpolate interpolate variableExpansion variableSubstitution stringPlaceholders stringInterpolation]}
+### [cotrInterpolate](/snippets/cotrInterpolate)
 
-```
+```r
 paste0("Your string here ", ${1:variable})
 ```
 
-## R Ternary Operator
+## R Double Type
 
-### {[cotrTernary ternary conditionalOperator]}
+### [cotrTypesNum](/snippets/cotrTypesNum)
 
+```r
+# R uses 'numeric' for both integers and floating-point numbers.
 ```
-ifelse(${1:condition}, ${2:trueValue}, ${3:falseValue})
+
+## R Create Integer Variable
+
+### [cotrVarInt](/snippets/cotrVarInt)
+
+```r
+${1:my_int} <- ${2:0}
 ```
 
-## R Entry Point
+## R Function
 
-### {[cotrEntry entry start startingPoint]}
+### [cotrFunc](/snippets/cotrFunc)
 
-```
-# R Entry Point
-# To run this program, use: `Rscript filename.R`
-
-# Your code here
+```r
+${2:my_function} <- function(${3:parameters}) {
+  ${4:# Your code here}
+}
 ```
 
 ## R Boolean Operators
 
-### {[cotrOperatorsBool booleanOperators logic]}
+### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
 
-```
+```r
 # R Boolean Operators
 # Logical AND: & or &&
 # Logical OR: | or ||
@@ -412,129 +462,71 @@ ifelse(${1:condition}, ${2:trueValue}, ${3:falseValue})
 # Less than or equal to: <=
 ```
 
-## R Type Check
+## R Comment
 
-### {[cotrTypeCheck checkType getType typeOf]}
+### [cotrComment](/snippets/cotrComment)
 
-```
-class(${1:variable})
-```
-
-## R Integer Type
-
-### {[cotrTypesInt intType typeInt]}
-
-```
-# R uses 'numeric' for both integers and floating-point numbers.
+```r
+# ${1:Your comment here}
 ```
 
-## R Boolean Type
+## R Mathematical Operators
 
-### {[cotrTypesBool booleanType typeBool]}
+### [cotrOperators](/snippets/cotrOperators)
 
-```
-logical
-```
-
-## R Create Variable
-
-### {[cotrVar variable createVariable newVariable]}
-
-```
-${1:my_var} <- $2
-```
-
-## R Concatenate String
-
-### {[cotrConcat concatenate combine]}
-
-```
-paste(${1:"string1"}, ${2:"string2"}, sep = "")
+```r
+# R Mathematical Operators
+# Addition: +
+# Subtraction: -
+# Multiplication: *
+# Exponentiation: ^
+# Division: /
+# Modulus (Remainder): %%
+# Integer Division: %/%
+# Assignment: <- or =
+# Addition assignment: +=
+# Subtraction assignment: -=
+# Multiplication assignment: *=
+# Division assignment: /=
+# Modulus assignment: %%=
+# Exponentiation assignment: ^=
 ```
 
-## R Create Constant
+## R Boolean True
 
-### {[cotrConst constant]}
+### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
 
-```
-${1:MY_CONST} <- $2
-```
-
-## R Function
-
-### {[cotrFunc function subprogram procedure subroutine method]}
-
-```
-${2:my_function} <- function(${3:parameters}) {
-  ${4:# Your code here}
-}
+```r
+TRUE
 ```
 
-## R Throw Exception
+## R Create Multiline String Variable
 
-### {[cotrThrow throwError throwException]}
+### [cotrVarStringMulti](/snippets/cotrVarStringMulti)
 
-```
-stop(${1:'Your message here'})
-```
-
-## R Class
-
-### {[cotrClass class objectTemplate]}
-
-```
-# R does not have a built-in class type. Use a list or vector instead.
-```
-
-## R This Type Check
-
-### {[thisTypeCheck thisType getThisType]}
-
-```
-class($CLIPBOARD)
-```
-
-## R Print Multi
-
-### {[cotrPrintMulti printMultiLine]}
-
-```
-cat(${1:"Line 1",
-${2:"Line 2",
-${3:"Line 3")
-```
-
-## R Double Type
-
-### {[cotrTypesNum numberType typeNumber doubleType typeDouble]}
-
-```
-# R uses 'numeric' for both integers and floating-point numbers.
-```
-
-## R Create Integer Variable
-
-### {[cotrVarInt integer int variableInt intVariable createInt]}
-
-```
-${1:my_int} <- ${2:0}
+```r
+${1:my_string} <- paste0(
+${2:"Line 1",
+${3:"Line 2",
+${4:"Line 3")
 ```
 
 ## R Create Double Variable
 
-### {[cotrVarDouble double doubleVariable variableDouble createDouble]}
+### [cotrVarDouble](/snippets/cotrVarDouble)
 
-```
+```r
 ${1:my_double} <- ${2:0.0}
 ```
 
-## R If Statement
+## R Entry Point
 
-### {[cotrIf ifStatement]}
+### [cotrEntry](/snippets/cotrEntry)
 
-```
-if (${1:condition}) {
-  # Your code here
-}
+```r
+# R Entry Point
+# To run this program, use: `Rscript filename.R`
+
+# Your code here
 ```
 

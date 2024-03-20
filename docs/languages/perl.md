@@ -1,172 +1,16 @@
-## Perl Type Conversion
+## Perl Throw Exception
 
-### {[cotrTypeConvert cotrTypeCast cotrConvert cotrCast]}
+### [cotrThrow](/snippets/cotrThrow)
 
-```
-# Perl Type Conversion:
-
-# Implicit conversions (Perl performs automatically):
-# - Can be unpredictable, especially with loose equality (==).
-
-# Explicit conversions:
-# - int(variable)  // Converts to integer
-# - 0 + variable  // Converts to number
-# - "" . variable  // Converts to string
-
-# Note:
-# - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control.
-```
-
-## Perl Types
-
-### {[cotrTypes types allTypes languageTypes builtInTypes dataTypes]}
-
-```
-$BLOCK_COMMENT_START
-Perl is a dynamically typed language.
-
-Some common types in Perl include:
-- Scalar: Single value (numbers, strings, references)
-- Array: Ordered list of scalars
-- Hash: Unordered collection of key-value pairs
-- Code: Subroutine reference
-- Filehandle: File handle
-- Regexp: Regular expression
-- undef: Represents an undefined value
-$BLOCK_COMMENT_END
-```
-
-## Perl Dynamic Type
-
-### {[cotrTypesDynamic cotrDynamic]}
-
-```
-# Perl is a dynamically typed language.
-```
-
-## Perl Create Variable
-
-### {[cotrVar variable createVariable newVariable]}
-
-```
-my $${1:myVar} = $2;
-```
-
-## Perl Comment
-
-### {[cotrComment comment note]}
-
-```
-# ${1:Your comment here}
-```
-
-## Perl Type Check
-
-### {[cotrTypeCheck checkType getType typeOf]}
-
-```
-ref ${1:variable}
-```
-
-## Perl Create Hash Variable
-
-### {[cotrVarMap createMap createStruct variableMap variableStruct mapVariable structVariable dictVariable variableDict createDict]}
-
-```
-my %${1:myHash} = (${2:key} => ${3:value});
-```
-
-## Perl Function
-
-### {[cotrFunc function subprogram procedure subroutine method]}
-
-```
-sub ${2:myFunction} {
-  my (${3:parameters}) = @_;
-
-  ${4:# Your code here}
-}
-```
-
-## Perl Function Args
-
-### {[cotrFuncArgs functionArgs functionWithArgs]}
-
-```
-# In Perl, you can use default arguments in function definitions.
-sub ${2:myFunction} {
-  my (${3:$arg1}, ${4:$arg2} = ${5:'defaultVal'}) = @_;
-
-  ${6:# Your code here}
-}
-```
-
-## Perl Boolean True
-
-### {[cotrTypesBoolTrue true booleanTrue on]}
-
-```
-1
-```
-
-## Perl Print
-
-### {[cotrPrint print log systemOut write consoleLog]}
-
-```
-print '${1:Your message here}\n';
-```
-
-## Perl Generate List
-
-### {[cotrGenList generateList listGen]}
-
-```
-my @${1:listName} = (${2:initialValue}) x ${3:length};
-```
-
-## Perl Null Type
-
-### {[cotrTypesNull cotrNull]}
-
-```
-undef
-```
-
-## Perl Anonymous Function
-
-### {[cotrFuncAnon anonFunc anonymous closure lambda functionLiteral cotrFuncLambda]}
-
-```
-lambda { |${1:parameters}|
-  # Your code here
-}
-```
-
-## Perl Enum
-
-### {[cotrEnum enum]}
-
-```
-# Perl does not have a built-in enum type. Use a list or hash instead.
-```
-
-## Perl Info
-
-### {[cotrInfo languageInfo info]}
-
-```
-# Typing: Dynamically typed
-# Paradigm: Multi-paradigm: procedural, object-oriented, scripting
-# Compilation: Interpreted
-# Concurrency: Supports multi-threading with the threads module
+```perl
+die '${1:Your message here}';
 ```
 
 ## Perl Entry Point
 
-### {[cotrEntry entry start startingPoint]}
+### [cotrEntry](/snippets/cotrEntry)
 
-```
+```perl
 # Perl Entry Point
 # To run this program, use: `perl filename.pl`
 
@@ -176,37 +20,11 @@ use warnings;
 print "Hello, World!\n";
 ```
 
-## Perl Double Type
-
-### {[cotrTypesNum numberType typeNumber doubleType typeDouble]}
-
-```
-# Perl uses scalars for floating-point numbers.
-```
-
-## Perl Boolean Type
-
-### {[cotrTypesBool booleanType typeBool]}
-
-```
-# Perl uses 1 and 0 for boolean values.
-```
-
-## Perl For Each Loop
-
-### {[cotrForEach cotrForIn]}
-
-```
-foreach my $${1:item} (@${2:iterable}) {
-  # Your code here
-}
-```
-
 ## Perl Mathematical Operators
 
-### {[cotrOperators operators mathDocs]}
+### [cotrOperators](/snippets/cotrOperators)
 
-```
+```perl
 # Perl Mathematical Operators
 # Addition: +
 # Subtraction: -
@@ -225,68 +43,118 @@ foreach my $${1:item} (@${2:iterable}) {
 # Exponentiation assignment: **=
 ```
 
-## Perl Date Type
+## Perl Type Check
 
-### {[cotrTypesDate dateType typeDate timeType timestampType dateTimeType]}
+### [cotrTypeCheck](/snippets/cotrTypeCheck)
 
-```
-use DateTime
-```
-
-## Perl Static Variable
-
-### {[cotrVarStatic staticVariable associatedConstant]}
-
-```
-our $${1:myStaticVar} = ${2:value};
-
-# Perl does not have static variables in the traditional sense.
-# Access the package variable
-# $${1:myStaticVar}
+```perl
+ref ${1:variable}
 ```
 
-## Perl Arrow Function
+## Perl Create String Variable
 
-### {[cotrFuncArrow arrowFunction]}
+### [cotrVarString](/snippets/cotrVarString)
 
+```perl
+my $${1:myString} = "${2:Your string here}";
 ```
-${2:my_function} = ->(${3:parameters}) {
-  ${4:# Your code here}
+
+## Perl Create Float Variable
+
+### [cotrVarNum](/snippets/cotrVarNum)
+
+```perl
+my $${1:myFloat} = ${2:0.0};
+```
+
+## Perl Multi-Line Comment
+
+### [cotrCommentMulti](/snippets/cotrCommentMulti)
+
+```perl
+=begin
+${1:Your comment here}
+=end
+```
+
+## Perl Anonymous Function
+
+### [cotrFuncAnon](/snippets/cotrFuncAnon)
+
+```perl
+lambda { |${1:parameters}|
+  # Your code here
 }
 ```
 
 ## Perl Not Equal To
 
-### {[cotrNotEqual notEqual doesNotEqual]}
+### [cotrNotEqual](/snippets/cotrNotEqual)
 
-```
+```perl
 !=
 ```
 
-## Perl Date Now
+## Perl Map Type
 
-### {[cotrNow now currentTime dateNow]}
+### [cotrTypesMap](/snippets/cotrTypesMap)
 
+```perl
+%hash
 ```
-use DateTime
 
-DateTime->now
+## Perl Dynamic Type
+
+### [cotrTypesDynamic](/snippets/cotrTypesDynamic)
+
+```perl
+# Perl is a dynamically typed language.
+```
+
+## Perl Create Typed Variable
+
+### [cotrVarTyped](/snippets/cotrVarTyped)
+
+```perl
+# Note: Perl is dynamically typed; explicit type annotations are not used.
+my $${1:myVar} = $2;
+```
+
+## Perl Create Boolean Variable
+
+### [cotrVarBool](/snippets/cotrVarBool)
+
+```perl
+my $${1:myBool} = ${2:1};
+```
+
+## Perl Function Args
+
+### [cotrFuncArgs](/snippets/cotrFuncArgs)
+
+```perl
+# In Perl, you can use default arguments in function definitions.
+sub ${2:myFunction} {
+  my (${3:$arg1}, ${4:$arg2} = ${5:'defaultVal'}) = @_;
+
+  ${6:# Your code here}
+}
 ```
 
 ## Perl Generate Map
 
-### {[cotrGenMap generateMap]}
+### [cotrGenMap](/snippets/cotrGenMap)
 
-```
+```perl
 # Perl does not have a built-in way to generate a map (hash) with a specific number of key-value pairs.
 # You can use a loop or a custom function to achieve this.
 ```
 
 ## Perl Project Structure (High-Level)
 
-### {[cotrStructure structure architecture]}
+### [cotrStructure](/snippets/cotrStructure)
 
-```
+```perl
 # Recommended High-Level Perl Project Structure:
 
 # - lib/
@@ -314,11 +182,445 @@ DateTime->now
 #   directive in scripts to include the library path.
 ```
 
+## Perl Type Conversion
+
+### [cotrTypeConvert](/snippets/cotrTypeConvert)
+
+```perl
+# Perl Type Conversion:
+
+# Implicit conversions (Perl performs automatically):
+# - Can be unpredictable, especially with loose equality (==).
+
+# Explicit conversions:
+# - int(variable)  // Converts to integer
+# - 0 + variable  // Converts to number
+# - "" . variable  // Converts to string
+
+# Note:
+# - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control.
+```
+
+## Perl List Type
+
+### [cotrTypesList](/snippets/cotrTypesList)
+
+```perl
+@array
+```
+
+## Perl Create Multi-Line String Variable
+
+### [cotrVarStringMulti](/snippets/cotrVarStringMulti)
+
+```perl
+my $${1:myString} = <<'END_STRING';
+${2:Line 1}
+${3:Line 2}
+${4:Line 3}
+END_STRING
+```
+
+## Perl Create Array Variable
+
+### [cotrVarList](/snippets/cotrVarList)
+
+```perl
+my @${1:myArray} = (${2:items});
+```
+
+## Perl Function
+
+### [cotrFunc](/snippets/cotrFunc)
+
+```perl
+sub ${2:myFunction} {
+  my (${3:parameters}) = @_;
+
+  ${4:# Your code here}
+}
+```
+
+## Perl Double Type
+
+### [cotrTypesNum](/snippets/cotrTypesNum)
+
+```perl
+# Perl uses scalars for floating-point numbers.
+```
+
+## Perl Concatenate Strings
+
+### [cotrConcat](/snippets/cotrConcat)
+
+```perl
+"${1:string1}" . "${2:string2}"
+```
+
+## Perl For Each Loop
+
+### [cotrForEach](/snippets/cotrForEach)
+
+```perl
+foreach my $${1:item} (@${2:iterable}) {
+  # Your code here
+}
+```
+
+## Perl Type Comparison
+
+### [cotrTypeCompare](/snippets/cotrTypeCompare)
+
+```perl
+# Check if two variables have the same type:
+if (ref ${1:variable1} eq ref ${2:variable2}) {
+  # Your code here
+}
+```
+
+## Perl Date Type
+
+### [cotrTypesDate](/snippets/cotrTypesDate)
+
+```perl
+use DateTime
+```
+
+## Perl Ternary Operator
+
+### [cotrTernary](/snippets/cotrTernary)
+
+```perl
+${1:condition} ? ${2:trueValue} : ${3:falseValue}
+```
+
+## Perl Null Type
+
+### [cotrTypesNull](/snippets/cotrTypesNull)
+
+```perl
+undef
+```
+
+## Perl Create Hash Variable
+
+### [cotrVarMap](/snippets/cotrVarMap)
+
+```perl
+my %${1:myHash} = (${2:key} => ${3:value});
+```
+
+## Perl Generate List
+
+### [cotrGenList](/snippets/cotrGenList)
+
+```perl
+my @${1:listName} = (${2:initialValue}) x ${3:length};
+```
+
+## Perl Boolean False
+
+### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
+
+```perl
+0
+```
+
+## Perl If Statement
+
+### [cotrIf](/snippets/cotrIf)
+
+```perl
+if (${1:condition}) {
+  # Your code here
+}
+```
+
+## Perl Function Syntax
+
+### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
+
+```perl
+# Perl Function Syntax
+# Basic function:
+# sub functionName {
+#   my ($parameters) = @_;
+#   # Your code here
+# }
+
+# Function with arguments:
+# sub functionName {
+#   my ($arg1, $arg2, ...) = @_;
+#   # Your code here
+# }
+```
+
+## Perl Integer Type
+
+### [cotrTypesInt](/snippets/cotrTypesInt)
+
+```perl
+# Perl uses scalars for integers.
+```
+
+## Perl Print Multi
+
+### [cotrPrintMulti](/snippets/cotrPrintMulti)
+
+```perl
+print <<'END_STRING';
+${1:Line 1}
+${2:Line 2}
+${3:Line 3}
+END_STRING
+```
+
+## Perl For Loop
+
+### [cotrForLoop](/snippets/cotrForLoop)
+
+```perl
+for (my $${1:i} = 0; $1 < ${2:10}; $1++) {
+  # Your code here
+}
+```
+
+## Perl If Else Statement
+
+### [cotrIfElse](/snippets/cotrIfElse)
+
+```perl
+if (${1:condition}) {
+  # Your code here
+} else {
+  # Your code here
+}
+```
+
+## Perl Comment
+
+### [cotrComment](/snippets/cotrComment)
+
+```perl
+# ${1:Your comment here}
+```
+
+## Perl Enum
+
+### [cotrEnum](/snippets/cotrEnum)
+
+```perl
+# Perl does not have a built-in enum type. Use a list or hash instead.
+```
+
+## Perl Date Now
+
+### [cotrNow](/snippets/cotrNow)
+
+```perl
+use DateTime
+
+DateTime->now
+```
+
+## Perl Create Variable
+
+### [cotrVar](/snippets/cotrVar)
+
+```perl
+my $${1:myVar} = $2;
+```
+
+## Perl Create Integer Variable
+
+### [cotrVarInt](/snippets/cotrVarInt)
+
+```perl
+my $${1:myInt} = ${2:0};
+```
+
+## Perl Case Statement
+
+### [cotrSwitch](/snippets/cotrSwitch)
+
+```perl
+case ${1:variable} {
+when ${2:value1}
+  # Your code here
+when ${4:value2}
+  # Your code here
+else
+  # Your code here
+}
+```
+
+## Perl Class
+
+### [cotrClass](/snippets/cotrClass)
+
+```perl
+package ${1:MyClass};
+
+# Your code here
+```
+
+## Perl Types
+
+### [cotrTypes](/snippets/cotrTypes)
+
+```perl
+$BLOCK_COMMENT_START
+Perl is a dynamically typed language.
+
+Some common types in Perl include:
+- Scalar: Single value (numbers, strings, references)
+- Array: Ordered list of scalars
+- Hash: Unordered collection of key-value pairs
+- Code: Subroutine reference
+- Filehandle: File handle
+- Regexp: Regular expression
+- undef: Represents an undefined value
+$BLOCK_COMMENT_END
+```
+
+## Perl Boolean Type
+
+### [cotrTypesBool](/snippets/cotrTypesBool)
+
+```perl
+# Perl uses 1 and 0 for boolean values.
+```
+
+## Perl Arrow Function
+
+### [cotrFuncArrow](/snippets/cotrFuncArrow)
+
+```perl
+${2:my_function} = ->(${3:parameters}) {
+  ${4:# Your code here}
+}
+```
+
+## Perl Equal To
+
+### [cotrEqual](/snippets/cotrEqual)
+
+```perl
+==
+```
+
+## Perl Boolean True
+
+### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
+
+```perl
+1
+```
+
+## Perl Static Variable
+
+### [cotrVarStatic](/snippets/cotrVarStatic)
+
+```perl
+our $${1:myStaticVar} = ${2:value};
+
+# Perl does not have static variables in the traditional sense.
+# Access the package variable
+# $${1:myStaticVar}
+```
+
+## Perl While Loop
+
+### [cotrWhileLoop](/snippets/cotrWhileLoop)
+
+```perl
+while (${1:condition}) {
+  # Your code here
+}
+```
+
+## Perl Boolean Operators
+
+### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
+
+```perl
+# Perl Boolean Operators
+# Logical AND: && or and
+# Logical OR: || or or
+# Logical NOT: ! or not
+# Equality: ==
+# Inequality: !=
+# Greater than: >
+# Less than: <
+# Greater than or equal to: >=
+# Less than or equal to: <=
+```
+
+## Perl Create Nullable Variable
+
+### [cotrVarNullable](/snippets/cotrVarNullable)
+
+```perl
+my $${1:myVar};  # Variable can be undefined (undef).
+```
+
+## Perl Interpolate String
+
+### [cotrInterpolate](/snippets/cotrInterpolate)
+
+```perl
+"Your string here $${1:variable}"
+```
+
+## Perl Create Date Variable
+
+### [cotrVarDate](/snippets/cotrVarDate)
+
+```perl
+my $${1:myDate} = DateTime->new( year => ${2:year}, month => ${3:month}, day => ${4:day} );
+```
+
+## Perl Create Constant
+
+### [cotrConst](/snippets/cotrConst)
+
+```perl
+use constant ${1:MY_CONST} => $2;
+```
+
+## Perl Named Arguments (Alternative)
+
+### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
+
+```perl
+# Perl does not have named arguments in the traditional sense.
+# You can use record syntax or higher-order functions to achieve similar functionality.
+```
+
+## Perl Info
+
+### [cotrInfo](/snippets/cotrInfo)
+
+```perl
+# Typing: Dynamically typed
+# Paradigm: Multi-paradigm: procedural, object-oriented, scripting
+# Compilation: Interpreted
+# Concurrency: Supports multi-threading with the threads module
+```
+
+## Perl String Type
+
+### [cotrTypesString](/snippets/cotrTypesString)
+
+```perl
+# Perl uses scalars for strings.
+```
+
 ## Perl Variable Declaration Syntax
 
-### {[cotrVarSyntax variableSyntax howToVariables letSyntax]}
+### [cotrVarSyntax](/snippets/cotrVarSyntax)
 
-```
+```perl
 # Perl Variable Declaration Syntax:
 
 # - my: (Scope: Block)
@@ -339,334 +641,24 @@ DateTime->now
 # - Avoid using 'local' unless you have a specific reason.
 ```
 
-## Perl Integer Type
+## Perl Print
 
-### {[cotrTypesInt intType typeInt]}
+### [cotrPrint](/snippets/cotrPrint)
 
-```
-# Perl uses scalars for integers.
-```
-
-## Perl Create Integer Variable
-
-### {[cotrVarInt integer int variableInt intVariable createInt]}
-
-```
-my $${1:myInt} = ${2:0};
-```
-
-## Perl Create Array Variable
-
-### {[cotrVarList createList listVariable arrayVariable variableList variableArray list array]}
-
-```
-my @${1:myArray} = (${2:items});
-```
-
-## Perl Create Constant
-
-### {[cotrConst constant]}
-
-```
-use constant ${1:MY_CONST} => $2;
-```
-
-## Perl Named Arguments (Alternative)
-
-### {[cotrFuncArgsNamed functionNamedArgs]}
-
-```
-# Perl does not have named arguments in the traditional sense.
-# You can use record syntax or higher-order functions to achieve similar functionality.
-```
-
-## Perl While Loop
-
-### {[cotrWhileLoop whileLoop whileTrue]}
-
-```
-while (${1:condition}) {
-  # Your code here
-}
-```
-
-## Perl Function Syntax
-
-### {[cotrFuncSyntax functionSyntax functionDocs]}
-
-```
-# Perl Function Syntax
-# Basic function:
-# sub functionName {
-#   my ($parameters) = @_;
-#   # Your code here
-# }
-
-# Function with arguments:
-# sub functionName {
-#   my ($arg1, $arg2, ...) = @_;
-#   # Your code here
-# }
-```
-
-## Perl Equal To
-
-### {[cotrEqual equal]}
-
-```
-==
-```
-
-## Perl Boolean Operators
-
-### {[cotrOperatorsBool booleanOperators logic]}
-
-```
-# Perl Boolean Operators
-# Logical AND: && or and
-# Logical OR: || or or
-# Logical NOT: ! or not
-# Equality: ==
-# Inequality: !=
-# Greater than: >
-# Less than: <
-# Greater than or equal to: >=
-# Less than or equal to: <=
-```
-
-## Perl Interpolate String
-
-### {[cotrInterpolate interpolate variableExpansion variableSubstitution stringPlaceholders stringInterpolation]}
-
-```
-"Your string here $${1:variable}"
-```
-
-## Perl Create String Variable
-
-### {[cotrVarString string stringVariable variableString text createString createText]}
-
-```
-my $${1:myString} = "${2:Your string here}";
-```
-
-## Perl Print Multi
-
-### {[cotrPrintMulti printMultiLine]}
-
-```
-print <<'END_STRING';
-${1:Line 1}
-${2:Line 2}
-${3:Line 3}
-END_STRING
-```
-
-## Perl String Type
-
-### {[cotrTypesString stringType typeString textType typeText]}
-
-```
-# Perl uses scalars for strings.
-```
-
-## Perl Create Typed Variable
-
-### {[cotrVarTyped typedVariable variableWithType]}
-
-```
-# Note: Perl is dynamically typed; explicit type annotations are not used.
-my $${1:myVar} = $2;
-```
-
-## Perl For Loop
-
-### {[cotrForLoop forLoop forX]}
-
-```
-for (my $${1:i} = 0; $1 < ${2:10}; $1++) {
-  # Your code here
-}
-```
-
-## Perl Throw Exception
-
-### {[cotrThrow throwError throwException]}
-
-```
-die '${1:Your message here}';
-```
-
-## Perl This Type Check
-
-### {[thisTypeCheck thisType getThisType]}
-
-```
-ref($CLIPBOARD)
-```
-
-## Perl Map Type
-
-### {[cotrTypesMap mapType typeMap hashmapType structType dictType typeDict typeScruct]}
-
-```
-%hash
-```
-
-## Perl Concatenate Strings
-
-### {[cotrConcat concatenate combine]}
-
-```
-"${1:string1}" . "${2:string2}"
-```
-
-## Perl If Else Statement
-
-### {[cotrIfElse ifElseStatement]}
-
-```
-if (${1:condition}) {
-  # Your code here
-} else {
-  # Your code here
-}
+```perl
+print '${1:Your message here}\n';
 ```
 
 ## Perl Try Catch
 
-### {[cotrTryCatch tryCatch]}
+### [cotrTryCatch](/snippets/cotrTryCatch)
 
-```
+```perl
 eval {
   # Your code here
 };
 if ($@) {
   # Your code here
 }
-```
-
-## Perl Class
-
-### {[cotrClass class objectTemplate]}
-
-```
-package ${1:MyClass};
-
-# Your code here
-```
-
-## Perl Boolean False
-
-### {[cotrTypesBoolFalse false off booleanFalse]}
-
-```
-0
-```
-
-## Perl Create Nullable Variable
-
-### {[cotrVarNullable variableNullable nullableVariable]}
-
-```
-my $${1:myVar};  # Variable can be undefined (undef).
-```
-
-## Perl Create Float Variable
-
-### {[cotrVarNum number float floatVariable variableFloat variableNumber numberVariable]}
-
-```
-my $${1:myFloat} = ${2:0.0};
-```
-
-## Perl Create Boolean Variable
-
-### {[cotrVarBool variableBool bool boolVariable createBool]}
-
-```
-my $${1:myBool} = ${2:1};
-```
-
-## Perl Create Date Variable
-
-### {[cotrVarDate dateVariable variableDate date]}
-
-```
-my $${1:myDate} = DateTime->new( year => ${2:year}, month => ${3:month}, day => ${4:day} );
-```
-
-## Perl Case Statement
-
-### {[cotrSwitch switch switchStatement select case]}
-
-```
-case ${1:variable} {
-when ${2:value1}
-  # Your code here
-when ${4:value2}
-  # Your code here
-else
-  # Your code here
-}
-```
-
-## Perl Type Comparison
-
-### {[cotrTypeCompare compareTypes]}
-
-```
-# Check if two variables have the same type:
-if (ref ${1:variable1} eq ref ${2:variable2}) {
-  # Your code here
-}
-```
-
-## Perl Create Multi-Line String Variable
-
-### {[cotrVarStringMulti multiLineString varStringMulti stringVariableMulti createMultiLineString]}
-
-```
-my $${1:myString} = <<'END_STRING';
-${2:Line 1}
-${3:Line 2}
-${4:Line 3}
-END_STRING
-```
-
-## Perl If Statement
-
-### {[cotrIf ifStatement]}
-
-```
-if (${1:condition}) {
-  # Your code here
-}
-```
-
-## Perl Ternary Operator
-
-### {[cotrTernary ternary conditionalOperator]}
-
-```
-${1:condition} ? ${2:trueValue} : ${3:falseValue}
-```
-
-## Perl List Type
-
-### {[cotrTypesList listType typeList typeArray]}
-
-```
-@array
-```
-
-## Perl Multi-Line Comment
-
-### {[cotrCommentMulti multiLineComment commentMultiLine blockComment]}
-
-```
-=begin
-${1:Your comment here}
-=end
 ```
 

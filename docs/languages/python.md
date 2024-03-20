@@ -1,27 +1,45 @@
-## Python Dictionary Type
+## Python If Else Statement
 
-### {[cotrTypesMap mapType typeMap hashmapType structType dictType typeDict typeScruct]}
+### [cotrIfElse](/snippets/cotrIfElse)
 
-```
-dict
-```
-
-## Python Try Except
-
-### {[cotrTryCatch tryCatch]}
-
-```
-try:
+```python
+if ${1:condition}:
   # Your code here
-except ${1:Exception} as ${2:e}:
+else:
   # Your code here
+```
+
+## Python Function
+
+### [cotrFunc](/snippets/cotrFunc)
+
+```python
+def ${2:my_function}(${3:parameters}):
+    ${4:# Your code here}
+
+```
+
+## Python Boolean False
+
+### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
+
+```python
+False
+```
+
+## Python Interpolate String
+
+### [cotrInterpolate](/snippets/cotrInterpolate)
+
+```python
+f"${1:Your message here}"
 ```
 
 ## Variable Declaration Syntax
 
-### {[cotrVarSyntax variableSyntax howToVariables letSyntax]}
+### [cotrVarSyntax](/snippets/cotrVarSyntax)
 
-```
+```python
 # Python Variable Declaration Syntax:
 
 # - Python is dynamically typed, so there is no explicit type declaration.
@@ -33,267 +51,71 @@ except ${1:Exception} as ${2:e}:
 # - Use descriptive variable names to improve code readability.
 ```
 
-## Python Create Nullable Variable
-
-### {[cotrVarNullable variableNullable nullableVariable]}
-
-```
-${1:my_var} = None  # Variable can be set to None.
-```
-
-## Python Create Constant
-
-### {[cotrConst constant]}
-
-```
-${1:MY_CONST} = ${2:value}
-```
-
-## Python For...In Loop
-
-### {[cotrForInLoop forIn]}
-
-```
-for ${1:item} in ${2:iterable}:
-  # Your code here
-```
-
-## Python Function Args
-
-### {[cotrFuncArgs functionArgs functionWithArgs]}
-
-```
-# In Python, functions can have arguments with default values.
-def ${2:my_function}(${3:arg1}, ${4:arg2}=${5:'defaultVal'}):
-    ${6:# Your code here}
-
-```
-
-## Python Arrow Function
-
-### {[cotrFuncArrow arrowFunc]}
-
-```
-${2:my_function} = lambda ${3:parameters}: ${4:// Your code here}
-```
-
-## Python Comment
-
-### {[cotrComment comment note]}
-
-```
-# ${1:Your comment here}
-```
-
-## Python Ternary Operator
-
-### {[cotrTernary ternary conditionalOperator]}
-
-```
-${1:trueValue} if ${2:condition} else ${3:falseValue}
-```
-
-## Python Multi-Line Comment
-
-### {[cotrCommentMulti multiLineComment commentMultiLine blockComment]}
-
-```
-'''
-${1:Your comment here}
-'''
-```
-
-## Python Type Check
-
-### {[cotrTypeCheck checkType getType typeOf]}
-
-```
-type(${1:variable})
-```
-
-## Python String Type
-
-### {[cotrTypesString stringType typeString textType typeText]}
-
-```
-str
-```
-
-## Python Create Typed Variable
-
-### {[cotrVarTyped typedVariable variableWithType]}
-
-```
-${1:my_var} = $2  # Note: Python is dynamically typed.
-```
-
-## Python Create String Variable
-
-### {[cotrVarString string stringVariable variableString text createString createText]}
-
-```
-${1:myString} = ${2:''}
-```
-
-## Python If Statement
-
-### {[cotrIf ifStatement]}
-
-```
-if ${1:condition}:
-  # Your code here
-```
-
-## Python Create Integer Variable
-
-### {[cotrVarNum number float floatVariable variableFloat variableNumber numberVariable]}
-
-```
-${1:myInt} = ${2:0}
-```
-
-## Python Create Boolean Variable
-
-### {[cotrVarBool variableBool bool boolVariable createBool]}
-
-```
-${1:myBool} = ${2:True}
-```
-
-## Python Create List Variable
-
-### {[cotrVarList createList listVariable arrayVariable variableList variableArray list array]}
-
-```
-${1:myList} = [${2:1}, ${3:2}, ${4:3}]
-```
-
-## Python Throw Exception
-
-### {[cotrThrow throwError throwException]}
-
-```
-raise ${1:Exception('Your message here')}
-```
-
-## Python This Type Check
-
-### {[thisTypeCheck thisType getThisType]}
-
-```
-type($CLIPBOARD).__name__
-```
-
-## Python Float Type
-
-### {[cotrTypesNum numberType typeNumber doubleType typeDouble]}
-
-```
-float
-```
-
-## Python Boolean Type
-
-### {[cotrTypesBool booleanType typeBool]}
-
-```
-bool
-```
-
-## Python If Else Statement
-
-### {[cotrIfElse ifElseStatement]}
-
-```
-if ${1:condition}:
-  # Your code here
-else:
-  # Your code here
-```
-
-## Python Info
-
-### {[cotrInfo languageInfo info]}
-
-```
-Typing: Dynamically typed. Use the Typing module to specify types.
-Paradigm: Multi-paradigm: object-oriented, imperative, functional, procedural, reflective
-Compilation: Interpreted
-Concurrency: Supports multi-threading and asynchronous programming with asyncio
-```
-
-## Python Interpolate String
-
-### {[cotrInterpolate interpolate variableExpansion variableSubstitution stringPlaceholders stringInterpolation]}
-
-```
-f"${1:Your message here}"
-```
-
-## Python Date Type
-
-### {[cotrTypesDate dateType typeDate timeType timestampType dateTimeType]}
-
-```
-from datetime import datetime
-```
-
 ## Python Date Now
 
-### {[cotrNow now currentTime dateNow]}
+### [cotrNow](/snippets/cotrNow)
 
-```
+```python
 from datetime import datetime
 
 now = datetime.now()
 ```
 
-## Python Print
+## Python Concatenate String
 
-### {[cotrPrint print log systemOut write consoleLog]}
+### [cotrConcat](/snippets/cotrConcat)
 
+```python
+"${1:Your message here}" + "${2:Another message}"
 ```
-print(${1:'Your message here'})
+
+## Python Create Float Variable
+
+### [cotrVarNumAlt](/snippets/cotrVarNumAlt)
+
+```python
+${1:myFloat} = ${2:0.0}
 ```
 
-## Python For Loop
+## Python Create List Variable
 
-### {[cotrForLoop forLoop forX]}
+### [cotrVarList](/snippets/cotrVarList)
 
+```python
+${1:myList} = [${2:1}, ${3:2}, ${4:3}]
 ```
-for ${1:i} in range(${2:10}):
+
+## Python While Loop
+
+### [cotrWhileLoop](/snippets/cotrWhileLoop)
+
+```python
+while ${1:condition}:
   # Your code here
 ```
 
-## Python Enum
+## Python Ternary Operator
 
-### {[cotrEnum enum]}
+### [cotrTernary](/snippets/cotrTernary)
 
-```
-class ${1:MyEnum}(Enum):
-  ${2:value1} = ${3:1}
-  ${4:value2} = ${5:2}
-  # Add more values here
+```python
+${1:trueValue} if ${2:condition} else ${3:falseValue}
 ```
 
-## Python Entry Point
+## Python Class
 
-### {[cotrEntry entry start startingPoint]}
+### [cotrClass](/snippets/cotrClass)
 
-```
-# Python Entry Point
-# To run this program, use: `python filename.py`
-
-if __name__ == '__main__':
-    # Your code here
-
+```python
+class ${1:MyClass}:
+  # Your code here
 ```
 
 ## Python Types
 
-### {[cotrTypes types allTypes languageTypes builtInTypes dataTypes]}
+### [cotrTypes](/snippets/cotrTypes)
 
-```
+```python
 $BLOCK_COMMENT_START
 Python is a dynamically typed language.
 
@@ -323,66 +145,67 @@ Some common types in Python include:
 $BLOCK_COMMENT_END
 ```
 
-## Python List Type
+## Python Create Nullable Variable
 
-### {[cotrTypesList listType typeList typeArray]}
+### [cotrVarNullable](/snippets/cotrVarNullable)
 
-```
-list
-```
-
-## Python Concatenate String
-
-### {[cotrConcat concatenate combine]}
-
-```
-"${1:Your message here}" + "${2:Another message}"
+```python
+${1:my_var} = None  # Variable can be set to None.
 ```
 
-## Python Print Multi
+## Python Create Boolean Variable
 
-### {[cotrPrintMulti printMultiLine]}
+### [cotrVarBool](/snippets/cotrVarBool)
 
-```
-print('''
-${1:Line 1}
-${2:Line 2}
-${3:Line 3}
-''')
+```python
+${1:myBool} = ${2:True}
 ```
 
-## Python Boolean Operators
+## Python Create Dictionary Variable
 
-### {[cotrOperatorsBool booleanOperators logic]}
+### [cotrVarMap](/snippets/cotrVarMap)
 
-```
-# Python Boolean Operators
-# Logical AND: and
-# Logical OR: or
-# Logical NOT: not
-# Equality: ==
-# Inequality: !=
-# Greater than: >
-# Less than: <
-# Greater than or equal to: >=
-# Less than or equal to: <=
+```python
+${1:myDict} = {
+    '${2:key1}': ${3:value1},
+    '${4:key2}': ${5:value2}
+}
 ```
 
-## Python Function Named Args
+## Python Throw Exception
 
-### {[cotrFuncArgsNamed functionNamedArgs]}
+### [cotrThrow](/snippets/cotrThrow)
+
+```python
+raise ${1:Exception('Your message here')}
+```
+
+## Python Entry Point
+
+### [cotrEntry](/snippets/cotrEntry)
+
+```python
+# Python Entry Point
+# To run this program, use: `python filename.py`
+
+if __name__ == '__main__':
+    # Your code here
 
 ```
-def ${2:my_function}(*, ${3:arg1}=${4:value1}, ${5:arg2}=${6:value2}):
-    ${7:# Your code here}
 
+## Python Print
+
+### [cotrPrint](/snippets/cotrPrint)
+
+```python
+print(${1:'Your message here'})
 ```
 
 ## Python Mathematical Operators
 
-### {[cotrOperators operators mathDocs]}
+### [cotrOperators](/snippets/cotrOperators)
 
-```
+```python
 # Python Mathematical Operators
 # Addition: +
 # Subtraction: -
@@ -403,58 +226,323 @@ def ${2:my_function}(*, ${3:arg1}=${4:value1}, ${5:arg2}=${6:value2}):
 # Floor Division assignment: //=
 ```
 
-## Python Not Equal To
+## Python Dictionary Type
 
-### {[cotrNotEqual notEqual doesNotEqual]}
+### [cotrTypesMap](/snippets/cotrTypesMap)
 
+```python
+dict
 ```
-!=
+
+## Python For...In Loop
+
+### [cotrForInLoop](/snippets/cotrForInLoop)
+
+```python
+for ${1:item} in ${2:iterable}:
+  # Your code here
 ```
 
 ## Python Type Comparison
 
-### {[cotrTypeCompare compareTypes]}
+### [cotrTypeCompare](/snippets/cotrTypeCompare)
 
-```
+```python
 # Check if two variables have the same type:
 if type(${1:variable1}) is type(${2:variable2}):
   # Your code here
 ```
 
-## Python Create Variable
+## Python String Type
 
-### {[cotrVar variable createVariable newVariable]}
+### [cotrTypesString](/snippets/cotrTypesString)
+
+```python
+str
+```
+
+## Python Float Type
+
+### [cotrTypesNum](/snippets/cotrTypesNum)
+
+```python
+float
+```
+
+## Python Function Named Args
+
+### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
+
+```python
+def ${2:my_function}(*, ${3:arg1}=${4:value1}, ${5:arg2}=${6:value2}):
+    ${7:# Your code here}
 
 ```
-${1:myVar} = ${2:value}
+
+## Python Multi-Line Comment
+
+### [cotrCommentMulti](/snippets/cotrCommentMulti)
+
+```python
+'''
+${1:Your comment here}
+'''
+```
+
+## Python Type Check
+
+### [cotrTypeCheck](/snippets/cotrTypeCheck)
+
+```python
+type(${1:variable})
+```
+
+## Python Integer Type
+
+### [cotrTypesInt](/snippets/cotrTypesInt)
+
+```python
+int
+```
+
+## Python Boolean Type
+
+### [cotrTypesBool](/snippets/cotrTypesBool)
+
+```python
+bool
+```
+
+## Python Enum
+
+### [cotrEnum](/snippets/cotrEnum)
+
+```python
+class ${1:MyEnum}(Enum):
+  ${2:value1} = ${3:1}
+  ${4:value2} = ${5:2}
+  # Add more values here
+```
+
+## Python Create Constant
+
+### [cotrConst](/snippets/cotrConst)
+
+```python
+${1:MY_CONST} = ${2:value}
+```
+
+## Python Function Args
+
+### [cotrFuncArgs](/snippets/cotrFuncArgs)
+
+```python
+# In Python, functions can have arguments with default values.
+def ${2:my_function}(${3:arg1}, ${4:arg2}=${5:'defaultVal'}):
+    ${6:# Your code here}
+
+```
+
+## Python Boolean True
+
+### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
+
+```python
+True
+```
+
+## Python Create Integer Variable
+
+### [cotrVarNum](/snippets/cotrVarNum)
+
+```python
+${1:myInt} = ${2:0}
+```
+
+## Python Arrow Function
+
+### [cotrFuncArrow](/snippets/cotrFuncArrow)
+
+```python
+${2:my_function} = lambda ${3:parameters}: ${4:// Your code here}
+```
+
+## Python Type Conversion
+
+### [cotrTypeConvert](/snippets/cotrTypeConvert)
+
+```python
+# Python Type Conversion:
+
+# Implicit conversions (Python performs automatically):
+# - Can be unpredictable, especially with loose equality (==).
+
+# Explicit conversions:
+# - int(variable)  // Converts to integer
+# - float(variable)  // Converts to float
+# - str(variable)  // Converts to string
+# - bool(variable)  // Converts to boolean
+
+# Note:
+# - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control.
+```
+
+## Python List Type
+
+### [cotrTypesList](/snippets/cotrTypesList)
+
+```python
+list
 ```
 
 ## Python Create Date Variable
 
-### {[cotrVarDate dateVariable variableDate date]}
+### [cotrVarDate](/snippets/cotrVarDate)
 
-```
+```python
 from datetime import datetime
 
 my_date = datetime(${1:year}, ${2:month}, ${3:day})
 ```
 
-## Python Create Dictionary Variable
+## Python If Statement
 
-### {[cotrVarMap createMap createStruct variableMap variableStruct mapVariable structVariable dictVariable variableDict createDict]}
+### [cotrIf](/snippets/cotrIf)
 
+```python
+if ${1:condition}:
+  # Your code here
 ```
-${1:myDict} = {
-    '${2:key1}': ${3:value1},
-    '${4:key2}': ${5:value2}
-}
+
+## Python Comment
+
+### [cotrComment](/snippets/cotrComment)
+
+```python
+# ${1:Your comment here}
+```
+
+## Python Info
+
+### [cotrInfo](/snippets/cotrInfo)
+
+```python
+Typing: Dynamically typed. Use the Typing module to specify types.
+Paradigm: Multi-paradigm: object-oriented, imperative, functional, procedural, reflective
+Compilation: Interpreted
+Concurrency: Supports multi-threading and asynchronous programming with asyncio
+```
+
+## Python Boolean Operators
+
+### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
+
+```python
+# Python Boolean Operators
+# Logical AND: and
+# Logical OR: or
+# Logical NOT: not
+# Equality: ==
+# Inequality: !=
+# Greater than: >
+# Less than: <
+# Greater than or equal to: >=
+# Less than or equal to: <=
+```
+
+## Python Create String Variable
+
+### [cotrVarString](/snippets/cotrVarString)
+
+```python
+${1:myString} = ${2:''}
+```
+
+## Python Function Syntax
+
+### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
+
+```python
+# Python Function Syntax
+# Basic function: def function_name(parameters): ...
+# Function with arguments: def function_name(arg1, arg2, ...): ...
+# Function with named arguments: def function_name(*, arg1=value1, arg2=value2, ...): ...
+```
+
+## Python Not Equal To
+
+### [cotrNotEqual](/snippets/cotrNotEqual)
+
+```python
+!=
+```
+
+## Python Dynamic Type
+
+### [cotrTypesDynamic](/snippets/cotrTypesDynamic)
+
+```python
+Any # Note: Python is dynamically typed. Use the Typing module to specify types.
+```
+
+## Python Print Multi
+
+### [cotrPrintMulti](/snippets/cotrPrintMulti)
+
+```python
+print('''
+${1:Line 1}
+${2:Line 2}
+${3:Line 3}
+''')
+```
+
+## Python For Loop
+
+### [cotrForLoop](/snippets/cotrForLoop)
+
+```python
+for ${1:i} in range(${2:10}):
+  # Your code here
+```
+
+## Python Null Type
+
+### [cotrNull](/snippets/cotrNull)
+
+```python
+None
+```
+
+## Python Equal To
+
+### [cotrEqual](/snippets/cotrEqual)
+
+```python
+==
+```
+
+## Python Create Variable
+
+### [cotrVar](/snippets/cotrVar)
+
+```python
+${1:myVar} = ${2:value}
+```
+
+## Python Create Typed Variable
+
+### [cotrVarTyped](/snippets/cotrVarTyped)
+
+```python
+${1:my_var} = $2  # Note: Python is dynamically typed.
 ```
 
 ## Python Project Structure (High-Level)
 
-### {[cotrStructure structure architecture]}
+### [cotrStructure](/snippets/cotrStructure)
 
-```
+```python
 # Recommended High-Level Python Project Structure:
 
 # - /
@@ -490,80 +578,11 @@ ${1:myDict} = {
 # - Use virtual environments to isolate project-specific dependencies.
 ```
 
-## Python Type Conversion
-
-### {[cotrTypeConvert cotrTypeCast cotrConvert cotrCast]}
-
-```
-# Python Type Conversion:
-
-# Implicit conversions (Python performs automatically):
-# - Can be unpredictable, especially with loose equality (==).
-
-# Explicit conversions:
-# - int(variable)  // Converts to integer
-# - float(variable)  // Converts to float
-# - str(variable)  // Converts to string
-# - bool(variable)  // Converts to boolean
-
-# Note:
-# - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control.
-```
-
-## Python Boolean False
-
-### {[cotrTypesBoolFalse false off booleanFalse]}
-
-```
-False
-```
-
-## Python Class
-
-### {[cotrClass class objectTemplate]}
-
-```
-class ${1:MyClass}:
-  # Your code here
-```
-
-## Python Equal To
-
-### {[cotrEqual equal]}
-
-```
-==
-```
-
-## Python Integer Type
-
-### {[cotrTypesInt intType typeInt]}
-
-```
-int
-```
-
-## Python Boolean True
-
-### {[cotrTypesBoolTrue true booleanTrue on]}
-
-```
-True
-```
-
-## Python Null Type
-
-### {[cotrNull null nil none nothing option]}
-
-```
-None
-```
-
 ## Python Create Multi-Line String Variable
 
-### {[cotrVarStringMulti multiLineString varStringMulti stringVariableMulti createMultiLineString]}
+### [cotrVarStringMulti](/snippets/cotrVarStringMulti)
 
-```
+```python
 ${1:myString} = '''
 ${2:Line 1}
 ${3:Line 2}
@@ -571,49 +590,22 @@ ${4:Line 3}
 '''
 ```
 
-## Python While Loop
+## Python Try Except
 
-### {[cotrWhileLoop whileLoop whileTrue]}
+### [cotrTryCatch](/snippets/cotrTryCatch)
 
-```
-while ${1:condition}:
+```python
+try:
+  # Your code here
+except ${1:Exception} as ${2:e}:
   # Your code here
 ```
 
-## Python Function Syntax
+## Python Date Type
 
-### {[cotrFuncSyntax functionSyntax functionDocs]}
+### [cotrTypesDate](/snippets/cotrTypesDate)
 
-```
-# Python Function Syntax
-# Basic function: def function_name(parameters): ...
-# Function with arguments: def function_name(arg1, arg2, ...): ...
-# Function with named arguments: def function_name(*, arg1=value1, arg2=value2, ...): ...
-```
-
-## Python Create Float Variable
-
-### {[cotrVarNumAlt float variableFloat floatVariable]}
-
-```
-${1:myFloat} = ${2:0.0}
-```
-
-## Python Function
-
-### {[cotrFunc function subprogram procedure subroutine method]}
-
-```
-def ${2:my_function}(${3:parameters}):
-    ${4:# Your code here}
-
-```
-
-## Python Dynamic Type
-
-### {[cotrTypesDynamic typesDynamic typesAny dynamicType anyType]}
-
-```
-Any # Note: Python is dynamically typed. Use the Typing module to specify types.
+```python
+from datetime import datetime
 ```
 

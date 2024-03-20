@@ -1,16 +1,35 @@
-## JavaScript This Type Check
+## JavaScript Create Nullable Variable
 
-### {[thisTypeCheck thisType getThisType]}
+### [cotrVarNullable](/snippets/cotrVarNullable)
 
+```javascriptreact
+let ${1:myVar} = null;
 ```
-typeof $CLIPBOARD
+
+## JavaScript Entry Point
+
+### [cotrEntry](/snippets/cotrEntry)
+
+```javascriptreact
+// JavaScript Entry Point
+// To run this program, use: `node filename.js`
+
+console.log('Hello, World!');
+```
+
+## JavaScript Not Equal To
+
+### [cotrNotEqual](/snippets/cotrNotEqual)
+
+```javascriptreact
+!==
 ```
 
 ## JavaScript Types
 
-### {[cotrTypes types allTypes languageTypes builtInTypes dataTypes]}
+### [cotrTypes](/snippets/cotrTypes)
 
-```
+```javascriptreact
 $BLOCK_COMMENT_START
 JavaScript is a dynamically typed language. It does not have static types.
 
@@ -27,19 +46,156 @@ Types in JavaScript include:
 $BLOCK_COMMENT_END
 ```
 
-## JavaScript Interpolate String
+## JavaScript Boolean False
 
-### {[cotrInterpolate interpolate variableExpansion variableSubstitution stringPlaceholders stringInterpolation]}
+### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
 
+```javascriptreact
+false;
 ```
-let text = `Hello, ${1:name}!`;
+
+## JavaScript Number Type
+
+### [cotrTypesNum](/snippets/cotrTypesNum)
+
+```javascriptreact
+let number = $1;
+```
+
+## JavaScript Type Check
+
+### [cotrTypeCheck](/snippets/cotrTypeCheck)
+
+```javascriptreact
+typeof ${1:variable}
+```
+
+## JavaScript Dynamic Type
+
+### [cotrTypesDynamic](/snippets/cotrTypesDynamic)
+
+```javascriptreact
+// There is no specific syntax for declaring a variable with a dynamic type in JavaScript.
+```
+
+## JSX Comment
+
+### [cotrJSXComment](/snippets/cotrJSXComment)
+
+```javascriptreact
+{/* ${1:Your comment here} */}
+```
+
+## JavaScript Static Variable
+
+### [cotrVarStatic](/snippets/cotrVarStatic)
+
+```javascriptreact
+static ${3:myStaticVar} = ${4:value};
+
+// Access the static variable
+// MyClass.${3:myStaticVar}
+```
+
+## JavaScript Boolean Operators
+
+### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
+
+```javascriptreact
+// JavaScript Boolean Operators
+// Logical AND: &&
+// Logical OR: ||
+// Logical NOT: !
+// Equality: ==
+// Strict Equality: ===
+// Inequality: !=
+// Strict Inequality: !==
+// Greater than: >
+// Less than: <
+// Greater than or equal to: >=
+// Less than or equal to: <=
+```
+
+## JavaScript List Type
+
+### [cotrTypesList](/snippets/cotrTypesList)
+
+```javascriptreact
+[]
+```
+
+## JavaScript Create Variable
+
+### [cotrVar](/snippets/cotrVar)
+
+```javascriptreact
+let ${1:myVar} = $2;
+```
+
+## JavaScript Create String Variable
+
+### [cotrVarString](/snippets/cotrVarString)
+
+```javascriptreact
+let ${1:myString} = "${2:Your string here}";
+```
+
+## JavaScript Create Number Variable
+
+### [cotrVarNum](/snippets/cotrVarNum)
+
+```javascriptreact
+let ${1:myNumber} = ${2:0};
+```
+
+## JavaScript Create Array Variable
+
+### [cotrVarList](/snippets/cotrVarList)
+
+```javascriptreact
+let ${1:myList} = [${2:'item1'}, ${3:'item2'}];
+```
+
+## JavaScript Create Map Variable (Object)
+
+### [cotrVarMap](/snippets/cotrVarMap)
+
+```javascriptreact
+let ${1:myObject} = {
+  ${2:'key1'}: ${3:'value1'},
+  ${4:'key2'}: ${5:'value2'}
+};
+```
+
+## JavaScript Print
+
+### [cotrPrint](/snippets/cotrPrint)
+
+```javascriptreact
+console.log(${1:'Your message here'});
+```
+
+## JavaScript String Type
+
+### [cotrTypesString](/snippets/cotrTypesString)
+
+```javascriptreact
+let text = "John Doe";
+```
+
+## JavaScript Concatenate String
+
+### [cotrConcat](/snippets/cotrConcat)
+
+```javascriptreact
+let text = 'Hello, ' + ${1:name} + '!';
 ```
 
 ## JavaScript Create Multi-Line String Variable
 
-### {[cotrVarMultiString multiString variableMultiString multiStringVariable multilineText]}
+### [cotrVarMultiString](/snippets/cotrVarMultiString)
 
-```
+```javascriptreact
 let ${1:myString} = `
 ${2:Line 1}
 ${3:Line 2}
@@ -47,48 +203,38 @@ ${4:Line 3}
 `;
 ```
 
-## JavaScript Function Args
+## JavaScript Create Boolean Variable
 
-### {[cotrFuncArgs functionArgs functionWithArgs]}
+### [cotrVarBool](/snippets/cotrVarBool)
 
-```
-// In JavaScript, functions can have arguments with default values.
-function ${2:myFunction}(${3:arg1}, ${4:arg2} = ${5:defaultValue}) {
-  ${6:// Your code here}
-}
+```javascriptreact
+let ${1:myBoolean} = ${2:true};
 ```
 
-## JavaScript Try Catch
+## JavaScript Create Date Variable
 
-### {[cotrTryCatch tryCatch]}
+### [cotrVarDate](/snippets/cotrVarDate)
 
-```
-try {
-  ${1:// Your code here}
-} catch (${2:exception}) {
-  ${3:// Your code here}
-}
+```javascriptreact
+let ${1:myDate} = new Date(${2:year}, ${3:month} - 1, ${4:day});
 ```
 
-## JavaScript If Else Statement
+## JavaScript Info
 
-### {[cotrIfElse ifElseStatement]}
+### [cotrInfo](/snippets/cotrInfo)
 
-```
-if (${1:condition}) {
-  ${2:// Your code here}
-} else if (${3:condition}) {
-  ${4:// Your code here}
-} else {
-  ${5:// Your code here}
-}
+```javascriptreact
+Typing: Dynamically typed
+Paradigm: Multi-paradigm: event-driven, functional, imperative, prototype-based
+Compilation: Interpreted or just-in-time compiled
+Concurrency: Event loop model with support for asynchronous programming using callbacks, promises, and async/await
 ```
 
 ## JavaScript with React Project Structure (High-Level)
 
-### {[cotrStructure structure architecture]}
+### [cotrStructure](/snippets/cotrStructure)
 
-```
+```javascriptreact
 // Recommended High-Level JavaScript with React Project Structure:
 
 // - public/
@@ -125,148 +271,162 @@ if (${1:condition}) {
 // - Smaller projects might not need separate directories for hooks, services, or containers.
 ```
 
-## JavaScript List Type
+## JavaScript For Loop
 
-### {[cotrTypesList listType typeList typeArray]}
+### [cotrForLoop](/snippets/cotrForLoop)
 
-```
-[]
-```
-
-## JSX Multi-Line Comment
-
-### {cotrJSXMultiComment}
-
-```
-{/*
- * ${1:Your comment here}
- */}
-```
-
-## JavaScript If Statement
-
-### {[cotrIf ifStatement]}
-
-```
-if (${1:condition}) {
-  ${2:// Your code here}
+```javascriptreact
+for (let ${1:i} = 0; $1 < ${2:10}; $1++) {
+  // Your code here
 }
-```
-
-## JavaScript Create Variable
-
-### {[cotrVar variable createVariable newVariable]}
-
-```
-let ${1:myVar} = $2;
-```
-
-## JavaScript Create Date Variable
-
-### {[cotrVarDate dateVariable variableDate date]}
-
-```
-let ${1:myDate} = new Date(${2:year}, ${3:month} - 1, ${4:day});
-```
-
-## JavaScript Create Array Variable
-
-### {[cotrVarList createList listVariable arrayVariable variableList variableArray list array]}
-
-```
-let ${1:myList} = [${2:'item1'}, ${3:'item2'}];
-```
-
-## JavaScript Print
-
-### {[cotrPrint print log systemOut write consoleLog]}
-
-```
-console.log(${1:'Your message here'});
-```
-
-## JavaScript Create String Variable
-
-### {[cotrVarString string stringVariable variableString text createString createText]}
-
-```
-let ${1:myString} = "${2:Your string here}";
-```
-
-## JavaScript Info
-
-### {[cotrInfo languageInfo info]}
-
-```
-Typing: Dynamically typed
-Paradigm: Multi-paradigm: event-driven, functional, imperative, prototype-based
-Compilation: Interpreted or just-in-time compiled
-Concurrency: Event loop model with support for asynchronous programming using callbacks, promises, and async/await
-```
-
-## JavaScript Mathematical Operators
-
-### {[cotrOperators operators mathDocs]}
-
-```
-// JavaScript Mathematical Operators
-// Addition: +
-// Subtraction: -
-// Multiplication: *
-// Exponentiation: **
-// Division: /
-// Modulus (Remainder): %
-// Increment: ++
-// Decrement: --
-// Assignment: =
-// Addition assignment: +=
-// Subtraction assignment: -=
-// Multiplication assignment: *=
-// Division assignment: /=
-// Modulus assignment: %=
-```
-
-## JavaScript String Type
-
-### {[cotrTypesString stringType typeString textType typeText]}
-
-```
-let text = "John Doe";
-```
-
-## JavaScript Create Constant
-
-### {[cotrConst constant]}
-
-```
-const ${1:myConst} = $2;
-```
-
-## JavaScript Arrow Function
-
-### {[cotrFuncArrow arrowFunction functionArrow]}
-
-```
-const ${2:myFunction} = (${3:parameters}) => {
-  ${4:// Your code here}
-};
 ```
 
 ## JavaScript Class
 
-### {[cotrClass class objectTemplate]}
+### [cotrClass](/snippets/cotrClass)
 
-```
+```javascriptreact
 class ${1:MyClass} {
   ${2:// Your code here}
 }
 ```
 
+## JavaScript Int Type
+
+### [cotrTypesInt](/snippets/cotrTypesInt)
+
+```javascriptreact
+let integer = Math.floor($1);
+```
+
+## JavaScript Date Now
+
+### [cotrNow](/snippets/cotrNow)
+
+```javascriptreact
+new Date()
+```
+
+## JavaScript Generate Array
+
+### [cotrGenList](/snippets/cotrGenList)
+
+```javascriptreact
+const ${1:myList} = Array.from({ length: ${2:length} }, (_, index) => ${3:'item'} + index);
+```
+
+## JavaScript Throw Exception
+
+### [cotrThrow](/snippets/cotrThrow)
+
+```javascriptreact
+throw new Error('Your message here');
+```
+
+## JavaScript If Statement
+
+### [cotrIf](/snippets/cotrIf)
+
+```javascriptreact
+if (${1:condition}) {
+  ${2:// Your code here}
+}
+```
+
+## JavaScript Map Type
+
+### [cotrTypesMap](/snippets/cotrTypesMap)
+
+```javascriptreact
+new Map()
+```
+
+## JavaScript Function
+
+### [cotrFunc](/snippets/cotrFunc)
+
+```javascriptreact
+function ${2:myFunction}(${3:parameters}) {
+  ${4:// Your code here}
+}
+```
+
+## JavaScript Generate Object Map
+
+### [cotrGenMap](/snippets/cotrGenMap)
+
+```javascriptreact
+const ${1:myMap} = Object.fromEntries(
+  Array.from({ length: ${2:length} }, (_, index) => [`key${index}`, `value${index}`])
+);
+```
+
+## JavaScript Type Comparison
+
+### [cotrTypeCompare](/snippets/cotrTypeCompare)
+
+```javascriptreact
+// Check if two variables have the same type:
+if (typeof ${1:variable1} === typeof ${2:variable2}) {
+  // Your code here
+}
+```
+
+## JavaScript Boolean Type
+
+### [cotrTypesBool](/snippets/cotrTypesBool)
+
+```javascriptreact
+let flag = Boolean($1);
+```
+
+## JavaScript Create Typed Variable
+
+### [cotrVarTyped](/snippets/cotrVarTyped)
+
+```javascriptreact
+let ${1:myVar} = $2; // Note: JavaScript is dynamically typed.
+```
+
+## JavaScript For...Of Loop
+
+### [cotrForOfLoop](/snippets/cotrForOfLoop)
+
+```javascriptreact
+for (const item of ${1:iterable}) {
+  ${2:// Your code here}
+}
+```
+
+## JavaScript Ternary Operator
+
+### [cotrTernary](/snippets/cotrTernary)
+
+```javascriptreact
+${1:condition} ? ${2:trueValue} : ${3:falseValue}
+```
+
+## JavaScript Boolean True
+
+### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
+
+```javascriptreact
+true;
+```
+
+## JavaScript Date Type
+
+### [cotrTypesDate](/snippets/cotrTypesDate)
+
+```javascriptreact
+Date
+```
+
 ## Variable Declaration Syntax
 
-### {[cotrVarSyntax variableSyntax howToVariables letSyntax]}
+### [cotrVarSyntax](/snippets/cotrVarSyntax)
 
-```
+```javascriptreact
 // JavaScript Variable Declaration Syntax:
 
 // - var: (Scope: Function or Global)
@@ -286,78 +446,116 @@ class ${1:MyClass} {
 // - Use 'const' for values that should not change.
 ```
 
+## JavaScript Function Syntax
+
+### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
+
+```javascriptreact
+// JavaScript Function Syntax
+// Basic function: function functionName(parameters) { ... }
+// Function with arguments: function functionName(arg1, arg2, ...) { ... }
+// Function with named arguments (using object destructuring): function functionName({arg1, arg2, ...}) { ... }
+```
+
+## JavaScript If Else Statement
+
+### [cotrIfElse](/snippets/cotrIfElse)
+
+```javascriptreact
+if (${1:condition}) {
+  ${2:// Your code here}
+} else if (${3:condition}) {
+  ${4:// Your code here}
+} else {
+  ${5:// Your code here}
+}
+```
+
+## JavaScript Try Catch
+
+### [cotrTryCatch](/snippets/cotrTryCatch)
+
+```javascriptreact
+try {
+  ${1:// Your code here}
+} catch (${2:exception}) {
+  ${3:// Your code here}
+}
+```
+
 ## JavaScript Equal To
 
-### {[cotrEqual equal]}
+### [cotrEqual](/snippets/cotrEqual)
 
-```
+```javascriptreact
 ===
 ```
 
-## JavaScript Not Equal To
+## JavaScript Null Type
 
-### {[cotrNotEqual notEqual doesNotEqual]}
+### [cotrNull](/snippets/cotrNull)
 
-```
-!==
-```
-
-## JavaScript Boolean Operators
-
-### {[cotrOperatorsBool booleanOperators logic]}
-
-```
-// JavaScript Boolean Operators
-// Logical AND: &&
-// Logical OR: ||
-// Logical NOT: !
-// Equality: ==
-// Strict Equality: ===
-// Inequality: !=
-// Strict Inequality: !==
-// Greater than: >
-// Less than: <
-// Greater than or equal to: >=
-// Less than or equal to: <=
+```javascriptreact
+null
 ```
 
-## JavaScript Boolean Type
+## JavaScript Function Named Args
 
-### {[cotrTypesBool booleanType typeBool]}
+### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
 
-```
-let flag = Boolean($1);
-```
-
-## JavaScript Map Type
-
-### {[cotrTypesMap mapType typeMap hashmapType structType dictType typeDict typeScruct]}
-
-```
-new Map()
+```javascriptreact
+function ${2:myFunction}({${3:arg1}, ${4:arg2}}) {
+  ${5:// Your code here}
+}
 ```
 
-## JSX Comment
+## JavaScript Arrow Function
 
-### {cotrJSXComment}
+### [cotrFuncArrow](/snippets/cotrFuncArrow)
 
+```javascriptreact
+const ${2:myFunction} = (${3:parameters}) => {
+  ${4:// Your code here}
+};
 ```
-{/* ${1:Your comment here} */}
+
+## JSX Multi-Line Comment
+
+### [cotrJSXMultiComment](/snippets/cotrJSXMultiComment)
+
+```javascriptreact
+{/*
+ * ${1:Your comment here}
+ */}
 ```
 
-## JavaScript Lambda
+## JavaScript Mathematical Operators
 
-### {cotrLambda}
+### [cotrOperators](/snippets/cotrOperators)
 
-```
-const ${1:myLambda} = (${2:parameters}) => ${3:expression};
+```javascriptreact
+// JavaScript Mathematical Operators
+// Addition: +
+// Subtraction: -
+// Multiplication: *
+// Exponentiation: **
+// Division: /
+// Modulus (Remainder): %
+// Increment: ++
+// Decrement: --
+// Assignment: =
+// Addition assignment: +=
+// Subtraction assignment: -=
+// Multiplication assignment: *=
+// Division assignment: /=
+// Modulus assignment: %=
 ```
 
 ## JavaScript Type Conversion
 
-### {[cotrTypeConvert convert cast]}
+### [cotrTypeConvert](/snippets/cotrTypeConvert)
 
-```
+```javascriptreact
 // JavaScript Type Conversion:
 
 // Implicit conversions (JavaScript performs automatically):
@@ -374,76 +572,19 @@ const ${1:myLambda} = (${2:parameters}) => ${3:expression};
 // - Be aware of implicit conversions and use explicit conversions when necessary for clarity and control.
 ```
 
-## JavaScript Dynamic Type
+## JavaScript Interpolate String
 
-### {[cotrTypesDynamic typesDynamic typesAny dynamicType anyType]}
+### [cotrInterpolate](/snippets/cotrInterpolate)
 
-```
-// There is no specific syntax for declaring a variable with a dynamic type in JavaScript.
-```
-
-## JavaScript Concatenate String
-
-### {[cotrConcat concatenate combine]}
-
-```
-let text = 'Hello, ' + ${1:name} + '!';
-```
-
-## JavaScript Create Typed Variable
-
-### {[cotrVarTyped typedVariable variableWithType]}
-
-```
-let ${1:myVar} = $2; // Note: JavaScript is dynamically typed.
-```
-
-## JavaScript Static Variable
-
-### {[cotrVarStatic staticVariable associatedConstant]}
-
-```
-static ${3:myStaticVar} = ${4:value};
-
-// Access the static variable
-// MyClass.${3:myStaticVar}
-```
-
-## JavaScript Generate Array
-
-### {[cotrGenList generateList listGen]}
-
-```
-const ${1:myList} = Array.from({ length: ${2:length} }, (_, index) => ${3:'item'} + index);
-```
-
-## JavaScript Print Multi
-
-### {[cotrPrintMulti printMultiLine]}
-
-```
-console.log(`
-${1:Line 1}
-${2:Line 2}
-${3:Line 3}
-`);
-```
-
-## JavaScript For...Of Loop
-
-### {cotrForOfLoop}
-
-```
-for (const item of ${1:iterable}) {
-  ${2:// Your code here}
-}
+```javascriptreact
+let text = `Hello, ${1:name}!`;
 ```
 
 ## JavaScript Switch Statement
 
-### {[cotrSwitch switch switchStatement select case]}
+### [cotrSwitch](/snippets/cotrSwitch)
 
-```
+```javascriptreact
 switch (${1:variable}) {
   case ${2:value1}:
     ${3:// Your code here}
@@ -456,222 +597,73 @@ switch (${1:variable}) {
 }
 ```
 
-## JavaScript Type Comparison
+## JavaScript Lambda
 
-### {[cotrTypeCompare compareTypes]}
+### [cotrLambda](/snippets/cotrLambda)
 
+```javascriptreact
+const ${1:myLambda} = (${2:parameters}) => ${3:expression};
 ```
-// Check if two variables have the same type:
-if (typeof ${1:variable1} === typeof ${2:variable2}) {
-  // Your code here
+
+## JavaScript Create Constant
+
+### [cotrConst](/snippets/cotrConst)
+
+```javascriptreact
+const ${1:myConst} = $2;
+```
+
+## JavaScript Function Args
+
+### [cotrFuncArgs](/snippets/cotrFuncArgs)
+
+```javascriptreact
+// In JavaScript, functions can have arguments with default values.
+function ${2:myFunction}(${3:arg1}, ${4:arg2} = ${5:defaultValue}) {
+  ${6:// Your code here}
 }
 ```
 
-## JavaScript Boolean True
+## JavaScript Anonymous Function
 
-### {[cotrTypesBoolTrue true booleanTrue on]}
+### [cotrFuncAnon](/snippets/cotrFuncAnon)
 
-```
-true;
-```
-
-## JavaScript Date Type
-
-### {[cotrTypesDate dateType typeDate timeType timestampType dateTimeType]}
-
-```
-Date
-```
-
-## JavaScript Create Number Variable
-
-### {[cotrVarNum number float floatVariable variableFloat variableNumber numberVariable]}
-
-```
-let ${1:myNumber} = ${2:0};
-```
-
-## JavaScript Type Check
-
-### {[cotrTypeCheck checkType getType typeOf]}
-
-```
-typeof ${1:variable}
-```
-
-## JavaScript While Loop
-
-### {[cotrWhileLoop whileLoop whileTrue]}
-
-```
-while (${1:condition}) {
+```javascriptreact
+function(${1:parameters}) {
   ${2:// Your code here}
-}
-```
-
-## JavaScript Function
-
-### {[cotrFunc function subprogram procedure subroutine method]}
-
-```
-function ${2:myFunction}(${3:parameters}) {
-  ${4:// Your code here}
-}
-```
-
-## JavaScript Function Named Args
-
-### {[cotrFuncArgsNamed functionNamedArgs]}
-
-```
-function ${2:myFunction}({${3:arg1}, ${4:arg2}}) {
-  ${5:// Your code here}
-}
-```
-
-## JavaScript Throw Exception
-
-### {[cotrThrow throwError throwException]}
-
-```
-throw new Error('Your message here');
-```
-
-## JavaScript Ternary Operator
-
-### {[cotrTernary ternary conditionalOperator]}
-
-```
-${1:condition} ? ${2:trueValue} : ${3:falseValue}
-```
-
-## JavaScript Boolean False
-
-### {[cotrTypesBoolFalse false off booleanFalse]}
-
-```
-false;
-```
-
-## JavaScript Date Now
-
-### {[cotrNow now currentTime dateNow]}
-
-```
-new Date()
-```
-
-## JavaScript Create Boolean Variable
-
-### {[cotrVarBool variableBool bool boolVariable createBool]}
-
-```
-let ${1:myBoolean} = ${2:true};
-```
-
-## JavaScript Create Map Variable (Object)
-
-### {[cotrVarMap createMap createStruct variableMap variableStruct mapVariable structVariable dictVariable variableDict createDict]}
-
-```
-let ${1:myObject} = {
-  ${2:'key1'}: ${3:'value1'},
-  ${4:'key2'}: ${5:'value2'}
 };
-```
-
-## JavaScript Generate Object Map
-
-### {[cotrGenMap generateMap]}
-
-```
-const ${1:myMap} = Object.fromEntries(
-  Array.from({ length: ${2:length} }, (_, index) => [`key${index}`, `value${index}`])
-);
-```
-
-## JavaScript Int Type
-
-### {[cotrTypesInt intType typeInt]}
-
-```
-let integer = Math.floor($1);
-```
-
-## JavaScript For Loop
-
-### {[cotrForLoop forLoop forX]}
-
-```
-for (let ${1:i} = 0; $1 < ${2:10}; $1++) {
-  // Your code here
-}
-```
-
-## JavaScript Function Syntax
-
-### {[cotrFuncSyntax functionSyntax functionDocs]}
-
-```
-// JavaScript Function Syntax
-// Basic function: function functionName(parameters) { ... }
-// Function with arguments: function functionName(arg1, arg2, ...) { ... }
-// Function with named arguments (using object destructuring): function functionName({arg1, arg2, ...}) { ... }
-```
-
-## JavaScript Entry Point
-
-### {[cotrEntry entry start startingPoint]}
-
-```
-// JavaScript Entry Point
-// To run this program, use: `node filename.js`
-
-console.log('Hello, World!');
-```
-
-## JavaScript Null Type
-
-### {[cotrNull null nil none nothing option]}
-
-```
-null
-```
-
-## JavaScript Number Type
-
-### {[cotrTypesNum numberType typeNumber doubleType typeDouble]}
-
-```
-let number = $1;
-```
-
-## JavaScript Create Nullable Variable
-
-### {[cotrVarNullable variableNullable nullableVariable]}
-
-```
-let ${1:myVar} = null;
 ```
 
 ## JavaScript Create Map Variable
 
-### {cotrVarMapAlt}
+### [cotrVarMapAlt](/snippets/cotrVarMapAlt)
 
-```
+```javascriptreact
 let ${1:myMap} = new Map([
   [${2:'key1'}, ${3:'value1'}],
   [${4:'key2'}, ${5:'value2'}]
 ]);
 ```
 
-## JavaScript Anonymous Function
+## JavaScript While Loop
 
-### {[cotrFuncAnon anonFunc anonymous closure lambda functionLiteral cotrFuncLambda]}
+### [cotrWhileLoop](/snippets/cotrWhileLoop)
 
-```
-function(${1:parameters}) {
+```javascriptreact
+while (${1:condition}) {
   ${2:// Your code here}
-};
+}
+```
+
+## JavaScript Print Multi
+
+### [cotrPrintMulti](/snippets/cotrPrintMulti)
+
+```javascriptreact
+console.log(`
+${1:Line 1}
+${2:Line 2}
+${3:Line 3}
+`);
 ```
 

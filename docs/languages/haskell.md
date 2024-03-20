@@ -1,20 +1,8 @@
-## Haskell Boolean Operators
-
-### {[cotrOperatorsBool booleanOperators logic]}
-
-```
--- Haskell Boolean Operators:
-
--- - && : Logical AND
--- - || : Logical OR
--- - not : Logical NOT
-```
-
 ## Haskell Date Variable
 
-### {[cotrVarDate dateVariable variableDate date]}
+### [cotrVarDate](/snippets/cotrVarDate)
 
-```
+```haskell
 -- Use the 'time' package to create a date variable:
 
 import Data.Time
@@ -22,90 +10,32 @@ import Data.Time
 let ${1:myDate} :: UTCTime = getCurrentTime
 ```
 
-## Haskell Function Arguments
+## Haskell Create Multi-Line String Variable
 
-### {[cotrFuncArgs functionArgs functionWithArgs]}
+### [cotrVarStringMulti](/snippets/cotrVarStringMulti)
 
-```
--- Haskell functions typically use pattern matching to handle arguments.
--- Example:
-
-myFunction :: Int -> Int -> Int
-myFunction x y = x + y
-```
-
-## Haskell Integer Type
-
-### {[cotrTypesInt intType typeInt]}
-
-```
-Int
+```haskell
+let ${1:myString} = """
+${2:Line 1}
+${3:Line 2}
+${4:Line 3}
+"""
 ```
 
-## Haskell Double Type
+## Haskell For Each Loop
 
-### {[cotrTypesNum numberType typeNumber doubleType typeDouble]}
+### [cotrForEachLoop](/snippets/cotrForEachLoop)
 
-```
-Double
-```
-
-## Haskell Create Nullable Variable
-
-### {[cotrVarNullable variableNullable nullableVariable]}
-
-```
-let ${1:myVar} :: Maybe ${2:Type} = Nothing
-```
-
-## Haskell Static Variable (Alternative)
-
-### {[cotrVarStatic staticVariable associatedConstant]}
-
-```
--- Haskell does not have static variables in the same way as imperative languages.
--- You can use top-level definitions or modules to achieve similar functionality.
-```
-
-## Haskell For...In Loop (Alternative)
-
-### {[cotrForIn forIn]}
-
-```
--- Haskell does not have a direct for...in loop.
--- Use higher-order functions like 'map' or 'forM' instead:
-
+```haskell
 forM ${1:iterable} \${2:item} -> do
   -- Your code here
 ```
 
-## Haskell Throw Exception
-
-### {[cotrThrow throwError throwException]}
-
-```
-error "${1:Your error message here}"
-```
-
-## Haskell Entry Point
-
-### {[cotrEntry entry start startingPoint]}
-
-```
--- Haskell Entry Point
--- To run this program, use: `ghc filename.hs` or `runhaskell filename.hs`
-
-main :: IO ()
-main = do
-  -- Your code here
-
-```
-
 ## Haskell Project Structure (High-Level)
 
-### {[cotrStructure structure architecture]}
+### [cotrStructure](/snippets/cotrStructure)
 
-```
+```haskell
 // Recommended High-Level Haskell Project Structure:
 
 // - src/
@@ -138,56 +68,76 @@ main = do
 // - The 'app' directory is often used in Stack-based projects.
 ```
 
-## Haskell Map Type
+## Haskell Mathematical Operators
 
-### {[cotrTypesMap mapType typeMap hashmapType structType dictType typeDict typeScruct]}
+### [cotrOperators](/snippets/cotrOperators)
 
-```
-Map k v
-```
-
-## Haskell Create Boolean Variable
-
-### {[cotrVarBool variableBool bool boolVariable createBool]}
-
-```
-let ${1:myBool} = ${2:True}
-```
-
-## Haskell If Statement
-
-### {[cotrIf ifStatement]}
-
-```
-if ${1:condition}
-  then ${2:expression1}
-  else ${3:expression2}
+```haskell
+-- Haskell Mathematical Operators
+-- Addition: +
+-- Subtraction: -
+-- Multiplication: *
+-- Exponentiation: **
+-- Division: /
+-- Modulus (Remainder): mod
+-- Integer Division: div
+-- Assignment: =
+-- Addition assignment: +=
+-- Subtraction assignment: -=
+-- Multiplication assignment: *=
+-- Division assignment: /=
+-- Modulus assignment: mod=
+-- Integer Division assignment: div=
 ```
 
-## Haskell Info
+## Haskell Case Expression
 
-### {[cotrInfo languageInfo info]}
+### [cotrSwitch](/snippets/cotrSwitch)
 
+```haskell
+case ${1:variable} of
+  ${2:pattern1} -> ${3:expression1}
+  ${4:pattern2} -> ${5:expression2}
+  _ -> ${6:defaultExpression}
 ```
--- Typing: Statically typed, strong, inferred
--- Paradigm: Functional
--- Compilation: Compiled or interpreted
--- Concurrency: Supports concurrency with lightweight threads and software transactional memory
+
+## Haskell Try-Catch 
+
+### [cotrTryCatch](/snippets/cotrTryCatch)
+
+```haskell
+-- Haskell does not have a traditional try-catch mechanism.
+-- Use the 'Either' or 'Maybe' types for error handling.
 ```
 
-## Haskell Not Equal To
+## Haskell Create Nullable Variable
 
-### {[cotrNotEqual notEqual doesNotEqual]}
+### [cotrVarNullable](/snippets/cotrVarNullable)
 
+```haskell
+let ${1:myVar} :: Maybe ${2:Type} = Nothing
 ```
-/=
+
+## Haskell Function Syntax
+
+### [cotrFuncSyntax](/snippets/cotrFuncSyntax)
+
+```haskell
+-- Haskell Function Syntax:
+
+-- Basic function:
+-- functionName :: parameterTypes -> returnType
+-- functionName parameters = expression
+
+-- Function with arguments:
+-- functionName arg1 arg2 ... = expression
 ```
 
 ## Haskell Type Conversion
 
-### {[cotrTypeConvert cotrTypeCast cotrConvert cotrCast]}
+### [cotrTypeConvert](/snippets/cotrTypeConvert)
 
-```
+```haskell
 -- Haskell emphasizes explicit type conversions for safety.
 
 -- Explicit conversions:
@@ -199,96 +149,83 @@ if ${1:condition}
 -- - Be cautious with type conversions, especially 'read', as they can lead to errors if the conversion is not valid.
 ```
 
-## Haskell Equal To
+## Haskell Print
 
-### {[cotrEqual equal]}
+### [cotrPrint](/snippets/cotrPrint)
 
-```
-==
+```haskell
+putStrLn ${1:'Your message here'}
 ```
 
 ## Haskell Type Check
 
-### {[cotrTypeCheck checkType getType typeOf]}
+### [cotrTypeCheck](/snippets/cotrTypeCheck)
 
-```
+```haskell
 ${1:variable} :: ${2:Type}
 ```
 
-## Haskell Concatenate Strings
+## Haskell Integer Type
 
-### {[cotrConcat concatenate combine]}
+### [cotrTypesInt](/snippets/cotrTypesInt)
 
-```
-${1:string1} ++ ${2:string2}
-```
-
-## Haskell Type Comparison
-
-### {[cotrTypeCompare compareTypes]}
-
-```
--- Haskell does not have a built-in function for comparing types directly.
--- You can use type classes or custom functions to achieve this.
+```haskell
+Int
 ```
 
-## Haskell Lambda Function
+## Haskell Double Type
 
-### {[cotrFuncLambda cotrFuncAnon cotrFuncArrow lambda anonymous arrowFunc closure]}
+### [cotrTypesNum](/snippets/cotrTypesNum)
 
-```
-\${1:parameters} -> ${2:expression}
-
--- Usage example
-let ${3:myFunc} = \${1:parameters} -> ${2:expression}
-in ${3:myFunc} ${4:arguments}
-```
-
-## Haskell Create Constant
-
-### {[cotrConst constant]}
-
-```
--- Haskell does not have a 'const' keyword. Use 'let' for immutable values.
+```haskell
+Double
 ```
 
 ## Haskell Boolean True
 
-### {[cotrTypesBoolTrue true booleanTrue on]}
+### [cotrTypesBoolTrue](/snippets/cotrTypesBoolTrue)
 
-```
+```haskell
 True
+```
+
+## Haskell Boolean Type
+
+### [cotrTypesBool](/snippets/cotrTypesBool)
+
+```haskell
+Bool
 ```
 
 ## Haskell Boolean False
 
-### {[cotrTypesBoolFalse false off booleanFalse]}
+### [cotrTypesBoolFalse](/snippets/cotrTypesBoolFalse)
 
-```
+```haskell
 False
 ```
 
-## Haskell Create List Variable
+## Haskell Concatenate Strings
 
-### {[cotrVarList createList listVariable arrayVariable variableList variableArray list array]}
+### [cotrConcat](/snippets/cotrConcat)
 
+```haskell
+${1:string1} ++ ${2:string2}
 ```
-let ${1:myList} = [${2:items}]
-```
 
-## Haskell Create Variable
+## Haskell Generate List
 
-### {[cotrVar variable createVariable newVariable]}
+### [cotrGenList](/snippets/cotrGenList)
 
-```
-let ${1:myVar} = $2
+```haskell
+[${1:start}..${2:end}]
 ```
 
 ## Haskell Print Multi
 
-### {[cotrPrintMulti printMultiLine]}
+### [cotrPrintMulti](/snippets/cotrPrintMulti)
 
-```
+```haskell
 putStrLn $ unlines [
   ${1:"Line 1"},
   ${2:"Line 2"},
@@ -296,173 +233,99 @@ putStrLn $ unlines [
 ]
 ```
 
-## Haskell Function Syntax
+## Haskell Function
 
-### {[cotrFuncSyntax functionSyntax functionDocs]}
+### [cotrFunc](/snippets/cotrFunc)
 
-```
--- Haskell Function Syntax:
-
--- Basic function:
--- functionName :: parameterTypes -> returnType
--- functionName parameters = expression
-
--- Function with arguments:
--- functionName arg1 arg2 ... = expression
-```
-
-## Haskell This Type Check
-
-### {[thisTypeCheck thisType getThisType]}
-
-```
-import Data.Typeable
-
-typeOf $CLIPBOARD
-```
-
-## Haskell String Type
-
-### {[cotrTypesString stringType typeString textType typeText]}
-
-```
-String
-```
-
-## Haskell Date Now
-
-### {[cotrNow now currentTime dateNow]}
-
-```
--- Use the 'time' package to get the current date and time.
+```haskell
+${1:functionName} :: ${2:parameterTypes} -> ${3:returnType}
+${1:functionName} ${2:parameters} = ${4:expression}
 ```
 
 ## Haskell Comment
 
-### {[cotrComment comment note]}
+### [cotrComment](/snippets/cotrComment)
 
-```
+```haskell
 -- ${1:Your comment here}
 ```
 
-## Haskell Date Type
+## Haskell Float Type
 
-### {[cotrTypesDate dateType typeDate timeType timestampType dateTimeType]}
+### [cotrTypesNumAlt](/snippets/cotrTypesNumAlt)
 
+```haskell
+Float
 ```
--- Haskell does not have a built-in Date type. Use the 'time' package for date and time operations.
+
+## Haskell Map Type
+
+### [cotrTypesMap](/snippets/cotrTypesMap)
+
+```haskell
+Map k v
 ```
 
-## Haskell Variable Declaration Syntax
+## Haskell Date Now
 
-### {[cotrVarSyntax variableSyntax howToVariables letSyntax]}
+### [cotrNow](/snippets/cotrNow)
 
+```haskell
+-- Use the 'time' package to get the current date and time.
 ```
--- Haskell Variable Declaration Syntax:
 
--- - let: (Scope: Block)
---   - Declares an immutable variable.
---   - Use for values that should not change.
+## Haskell Not Equal To
 
--- - let (mut) varName = expression: (Scope: do block)
---   - Declares a mutable variable within a 'do' block.
---   - Use for variables that need to be reassigned.
+### [cotrNotEqual](/snippets/cotrNotEqual)
 
--- Note:
--- - Haskell emphasizes immutability, so use 'let' by default.
--- - Use mutable variables with 'let (mut)' only when necessary within 'do' blocks.
+```haskell
+/=
+```
+
+## Haskell Dynamic Type
+
+### [cotrTypesDynamic](/snippets/cotrTypesDynamic)
+
+```haskell
+-- Haskell is statically typed, but you can use 'Any' for dynamic values.
+```
+
+## Haskell Create Integer Variable
+
+### [cotrVarInt](/snippets/cotrVarInt)
+
+```haskell
+let ${1:myInt} = ${2:0}
 ```
 
 ## Haskell Generate Map
 
-### {[cotrGenMap generateMap]}
+### [cotrGenMap](/snippets/cotrGenMap)
 
-```
+```haskell
 -- Haskell does not have a built-in way to generate a map with a specific number of key-value pairs.
 -- You can use a list comprehension or a custom function to achieve this.
 ```
 
-## Haskell Number Variable
+## Haskell Entry Point
 
-### {[cotrVarNum number float floatVariable variableFloat variableNumber numberVariable]}
+### [cotrEntry](/snippets/cotrEntry)
 
-```
-let ${1:myNum} :: ${2:NumType} = $3
-```
+```haskell
+-- Haskell Entry Point
+-- To run this program, use: `ghc filename.hs` or `runhaskell filename.hs`
 
-## Haskell List Type
+main :: IO ()
+main = do
+  -- Your code here
 
-### {[cotrTypesList listType typeList typeArray]}
-
-```
-[a]
-```
-
-## Haskell Create String Variable
-
-### {[cotrVarString string stringVariable variableString text createString createText]}
-
-```
-let ${1:myString} = "${2:Your string here}"
-```
-
-## Haskell Create Multi-Line String Variable
-
-### {[cotrVarStringMulti multiLineString varStringMulti stringVariableMulti createMultiLineString]}
-
-```
-let ${1:myString} = """
-${2:Line 1}
-${3:Line 2}
-${4:Line 3}
-"""
-```
-
-## Haskell Create Map Variable
-
-### {[cotrVarMap createMap createStruct variableMap variableStruct mapVariable structVariable dictVariable variableDict createDict]}
-
-```
-let ${1:myMap} = Map.fromList [(${2:key}, ${3:value})]
-  -- Add more key-value pairs here
-```
-
-## Haskell Case Expression
-
-### {[cotrSwitch switch switchStatement select case]}
-
-```
-case ${1:variable} of
-  ${2:pattern1} -> ${3:expression1}
-  ${4:pattern2} -> ${5:expression2}
-  _ -> ${6:defaultExpression}
-```
-
-## Haskell Multi-Line Comment
-
-### {[cotrCommentMulti multiLineComment commentMultiLine blockComment]}
-
-```
-{-
- ${1:Your comment here}
--}
-```
-
-## Haskell If-Else Statement
-
-### {[cotrIfElse ifElseStatement]}
-
-```
-if ${1:condition}
-  then ${2:expression1}
-  else ${3:expression2}
 ```
 
 ## Haskell Types
 
-### {[cotrTypes types allTypes languageTypes builtInTypes dataTypes]}
+### [cotrTypes](/snippets/cotrTypes)
 
-```
+```haskell
 $BLOCK_COMMENT_START
 Haskell is a statically typed language with strong type inference.
 
@@ -484,76 +347,36 @@ Types in Haskell include:
 $BLOCK_COMMENT_END
 ```
 
-## Haskell Boolean Type
+## Haskell Create Boolean Variable
 
-### {[cotrTypesBool booleanType typeBool]}
+### [cotrVarBool](/snippets/cotrVarBool)
 
-```
-Bool
-```
-
-## Haskell Interpolate String
-
-### {[cotrInterpolate interpolate variableExpansion variableSubstitution stringPlaceholders stringInterpolation]}
-
-```
-show ${1:variable}
+```haskell
+let ${1:myBool} = ${2:True}
 ```
 
-## Haskell Null Type
+## Haskell Create Constant
 
-### {[cotrTypesNull cotrNull]}
+### [cotrConst](/snippets/cotrConst)
 
-```
-Nothing
-```
-
-## Haskell Create Typed Variable
-
-### {[cotrVarTyped typedVariable variableWithType]}
-
-```
-let ${1:myVar} :: ${2:Type} = $3
+```haskell
+-- Haskell does not have a 'const' keyword. Use 'let' for immutable values.
 ```
 
 ## Haskell Named Arguments (Alternative)
 
-### {[cotrFuncArgsNamed functionNamedArgs]}
+### [cotrFuncArgsNamed](/snippets/cotrFuncArgsNamed)
 
-```
+```haskell
 -- Haskell does not have named arguments in the traditional sense.
 -- You can use record syntax or higher-order functions to achieve similar functionality.
 ```
 
-## Haskell Float Type
-
-### {[cotrTypesNumAlt floatType typeFloat]}
-
-```
-Float
-```
-
-## Haskell Dynamic Type
-
-### {[cotrTypesDynamic cotrDynamic]}
-
-```
--- Haskell is statically typed, but you can use 'Any' for dynamic values.
-```
-
-## Haskell Create Integer Variable
-
-### {[cotrVarInt integer int variableInt intVariable createInt]}
-
-```
-let ${1:myInt} = ${2:0}
-```
-
 ## Haskell Ternary Operator (Alternative)
 
-### {[cotrTernary ternary conditionalOperator]}
+### [cotrTernary](/snippets/cotrTernary)
 
-```
+```haskell
 -- Haskell does not have a ternary operator.
 -- Use a case expression or an if-then-else expression instead:
 
@@ -562,84 +385,251 @@ let result = case ${1:condition} of
   False -> ${3:falseValue}
 ```
 
-## Haskell Mathematical Operators
+## Haskell Boolean Operators
 
-### {[cotrOperators operators mathDocs]}
+### [cotrOperatorsBool](/snippets/cotrOperatorsBool)
 
-```
--- Haskell Mathematical Operators
--- Addition: +
--- Subtraction: -
--- Multiplication: *
--- Exponentiation: **
--- Division: /
--- Modulus (Remainder): mod
--- Integer Division: div
--- Assignment: =
--- Addition assignment: +=
--- Subtraction assignment: -=
--- Multiplication assignment: *=
--- Division assignment: /=
--- Modulus assignment: mod=
--- Integer Division assignment: div=
+```haskell
+-- Haskell Boolean Operators:
+
+-- - && : Logical AND
+-- - || : Logical OR
+-- - not : Logical NOT
 ```
 
-## Haskell Print
+## Haskell List Type
 
-### {[cotrPrint print log systemOut write consoleLog]}
+### [cotrTypesList](/snippets/cotrTypesList)
 
-```
-putStrLn ${1:'Your message here'}
-```
-
-## Haskell While Loop
-
-### {[cotrWhileLoop whileLoop whileTrue]}
-
-```
--- Haskell does not have a traditional while loop. Use recursion or higher-order functions like 'until'.
+```haskell
+[a]
 ```
 
-## Haskell For Each Loop
+## Haskell Create Typed Variable
 
-### {[cotrForEachLoop forLoop forEach cotrForLoop]}
+### [cotrVarTyped](/snippets/cotrVarTyped)
 
+```haskell
+let ${1:myVar} :: ${2:Type} = $3
 ```
+
+## Haskell Create List Variable
+
+### [cotrVarList](/snippets/cotrVarList)
+
+```haskell
+let ${1:myList} = [${2:items}]
+```
+
+## Haskell Info
+
+### [cotrInfo](/snippets/cotrInfo)
+
+```haskell
+-- Typing: Statically typed, strong, inferred
+-- Paradigm: Functional
+-- Compilation: Compiled or interpreted
+-- Concurrency: Supports concurrency with lightweight threads and software transactional memory
+```
+
+## Haskell Create Variable
+
+### [cotrVar](/snippets/cotrVar)
+
+```haskell
+let ${1:myVar} = $2
+```
+
+## Haskell For...In Loop (Alternative)
+
+### [cotrForIn](/snippets/cotrForIn)
+
+```haskell
+-- Haskell does not have a direct for...in loop.
+-- Use higher-order functions like 'map' or 'forM' instead:
+
 forM ${1:iterable} \${2:item} -> do
   -- Your code here
 ```
 
-## Haskell Try-Catch 
+## Haskell While Loop
 
-### {[cotrTryCatch tryCatch]}
+### [cotrWhileLoop](/snippets/cotrWhileLoop)
 
+```haskell
+-- Haskell does not have a traditional while loop. Use recursion or higher-order functions like 'until'.
 ```
--- Haskell does not have a traditional try-catch mechanism.
--- Use the 'Either' or 'Maybe' types for error handling.
+
+## Haskell Type Comparison
+
+### [cotrTypeCompare](/snippets/cotrTypeCompare)
+
+```haskell
+-- Haskell does not have a built-in function for comparing types directly.
+-- You can use type classes or custom functions to achieve this.
+```
+
+## Haskell Throw Exception
+
+### [cotrThrow](/snippets/cotrThrow)
+
+```haskell
+error "${1:Your error message here}"
+```
+
+## Haskell Null Type
+
+### [cotrTypesNull](/snippets/cotrTypesNull)
+
+```haskell
+Nothing
+```
+
+## Haskell Interpolate String
+
+### [cotrInterpolate](/snippets/cotrInterpolate)
+
+```haskell
+show ${1:variable}
 ```
 
 ## Haskell Create Double Variable
 
-### {[cotrVarDouble double doubleVariable variableDouble createDouble]}
+### [cotrVarDouble](/snippets/cotrVarDouble)
 
-```
+```haskell
 let ${1:myDouble} = ${2:0.0}
 ```
 
-## Haskell Generate List
+## Haskell Function Arguments
 
-### {[cotrGenList generateList listGen]}
+### [cotrFuncArgs](/snippets/cotrFuncArgs)
 
+```haskell
+-- Haskell functions typically use pattern matching to handle arguments.
+-- Example:
+
+myFunction :: Int -> Int -> Int
+myFunction x y = x + y
 ```
-[${1:start}..${2:end}]
+
+## Haskell Lambda Function
+
+### [cotrFuncLambda](/snippets/cotrFuncLambda)
+
+```haskell
+\${1:parameters} -> ${2:expression}
+
+-- Usage example
+let ${3:myFunc} = \${1:parameters} -> ${2:expression}
+in ${3:myFunc} ${4:arguments}
 ```
 
-## Haskell Function
+## Haskell Multi-Line Comment
 
-### {[cotrFunc function subprogram procedure subroutine method]}
+### [cotrCommentMulti](/snippets/cotrCommentMulti)
 
+```haskell
+{-
+ ${1:Your comment here}
+-}
 ```
-${1:functionName} :: ${2:parameterTypes} -> ${3:returnType}
-${1:functionName} ${2:parameters} = ${4:expression}
+
+## Haskell Equal To
+
+### [cotrEqual](/snippets/cotrEqual)
+
+```haskell
+==
+```
+
+## Haskell Variable Declaration Syntax
+
+### [cotrVarSyntax](/snippets/cotrVarSyntax)
+
+```haskell
+-- Haskell Variable Declaration Syntax:
+
+-- - let: (Scope: Block)
+--   - Declares an immutable variable.
+--   - Use for values that should not change.
+
+-- - let (mut) varName = expression: (Scope: do block)
+--   - Declares a mutable variable within a 'do' block.
+--   - Use for variables that need to be reassigned.
+
+-- Note:
+-- - Haskell emphasizes immutability, so use 'let' by default.
+-- - Use mutable variables with 'let (mut)' only when necessary within 'do' blocks.
+```
+
+## Haskell Number Variable
+
+### [cotrVarNum](/snippets/cotrVarNum)
+
+```haskell
+let ${1:myNum} :: ${2:NumType} = $3
+```
+
+## Haskell If Statement
+
+### [cotrIf](/snippets/cotrIf)
+
+```haskell
+if ${1:condition}
+  then ${2:expression1}
+  else ${3:expression2}
+```
+
+## Haskell String Type
+
+### [cotrTypesString](/snippets/cotrTypesString)
+
+```haskell
+String
+```
+
+## Haskell Date Type
+
+### [cotrTypesDate](/snippets/cotrTypesDate)
+
+```haskell
+-- Haskell does not have a built-in Date type. Use the 'time' package for date and time operations.
+```
+
+## Haskell Static Variable (Alternative)
+
+### [cotrVarStatic](/snippets/cotrVarStatic)
+
+```haskell
+-- Haskell does not have static variables in the same way as imperative languages.
+-- You can use top-level definitions or modules to achieve similar functionality.
+```
+
+## Haskell Create String Variable
+
+### [cotrVarString](/snippets/cotrVarString)
+
+```haskell
+let ${1:myString} = "${2:Your string here}"
+```
+
+## Haskell Create Map Variable
+
+### [cotrVarMap](/snippets/cotrVarMap)
+
+```haskell
+let ${1:myMap} = Map.fromList [(${2:key}, ${3:value})]
+  -- Add more key-value pairs here
+```
+
+## Haskell If-Else Statement
+
+### [cotrIfElse](/snippets/cotrIfElse)
+
+```haskell
+if ${1:condition}
+  then ${2:expression1}
+  else ${3:expression2}
 ```
 

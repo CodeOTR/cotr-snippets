@@ -22,7 +22,6 @@ func (p *Prefix) UnmarshalJSON(b []byte) error {
         p.Value = single
         return nil
     }
-
     var multiple []string
     if err := json.Unmarshal(b, &multiple); err != nil {
         return err
@@ -32,9 +31,9 @@ func (p *Prefix) UnmarshalJSON(b []byte) error {
 }
 
 type Snippet struct {
-    Prefix Prefix `json:"prefix"`
-    Body   []string `json:"body"`
-    Description string `json:"description"`
+    Prefix      Prefix   `json:"prefix"`
+    Body        []string `json:"body"`
+    Description string   `json:"description"`
 }
 
 func main() {
@@ -86,6 +85,26 @@ func main() {
 
         // Write the markdown content for each snippet
         for name, snippet := range snippets {
+            // Extract the first prefix that starts with "cotr"
+            var cotrPrefix string
+            switch v := snippet.Prefix.Value.(type) {
+            case string:
+                if strings.HasPrefix(v, "cotr") {
+                    cotrPrefix = v
+                }
+            case []string:
+                for _, prefix := range v {
+                    if strings.HasPrefix(prefix, "cotr") {
+                        cotrPrefix = prefix
+                        break
+                    }
+                }
+            }
+
+            if cotrPrefix == "" {
+                continue
+            }
+
             // Write the snippet name as a subheader
             _, err := file.WriteString(fmt.Sprintf("## %s\n\n", name))
             if err != nil {
@@ -93,15 +112,17 @@ func main() {
                 continue
             }
 
-            // Write the snippet prefix as a subheader
-            _, err = file.WriteString(fmt.Sprintf("### %s\n\n", snippet.Prefix))
+            var linkedPrefix string = "[" + cotrPrefix + "]" + "(/snippets/" + cotrPrefix + ")";
+
+            // Write the "cotr" prefix as a subheader
+            _, err = file.WriteString(fmt.Sprintf("### %s\n\n", linkedPrefix))
             if err != nil {
                 log.Printf("Error writing to file: %v", err)
                 continue
             }
 
             // Write the snippet body in a code block
-            _, err = file.WriteString("```\n")
+            _, err = file.WriteString(fmt.Sprintf("```%s\n", language))
             if err != nil {
                 log.Printf("Error writing to file: %v", err)
                 continue
@@ -109,7 +130,6 @@ func main() {
 
             // Replace tabs with spaces in the snippet body
             body := strings.ReplaceAll(strings.Join(snippet.Body, "\n"), "\t", "    ")
-
             _, err = file.WriteString(body + "\n")
             if err != nil {
                 log.Printf("Error writing to file: %v", err)
