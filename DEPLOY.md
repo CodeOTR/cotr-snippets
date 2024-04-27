@@ -1,0 +1,4 @@
+```
+vsce package
+vsce publish
+```

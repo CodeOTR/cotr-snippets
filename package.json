@@ -4,7 +4,7 @@
   "publisher": "CodeontheRocks",
   "repository": "https://github.com/CodeOTR/cotr-snippets",
   "description": "Write code in every language",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "icon": "cubes_with_background.png",
   "sponsor": {
     "url": "https://github.com/sponsors/jtmuller5"
@@ -12,6 +12,8 @@
   "engines": {
     "vscode": "^1.87.0"
   },
+  "activationEvents": [],
+  "main": "./out/extension",
   "keywords": [
     "dart",
     "typescript",
@@ -119,6 +121,45 @@
         "language": "powershell",
         "path": "./snippets/powershell.json"
       }
-    ]
+    ],
+    "commands": [
+      {
+        "command": "cotr.logIn",
+        "title": "Login to COTR"
+      },
+      {
+        "command": "cotr.logOut",
+        "title": "Log out of COTR"
+      },
+      {
+        "command": "cotr.saveSnippet",
+        "title": "Save COTR Snippet"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "command": "cotr.saveSnippet",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.42.5",
+    "@types/vscode": "^1.88.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.8"
   }
 }
