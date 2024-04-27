@@ -14,9 +14,17 @@ https://javascript.plainenglish.io/how-to-make-custom-language-badges-for-your-p
 
 At [Code on the Rocks](https://codeontherocks.dev/) (COTR) our mission is to enable developers to code fluently in every programming language. We create tools and resources to help you apply your high-level programming knowledge in any code base.
 
+## COTR Integration
+
+Code on the Rocks is a social platform for developers to share, remix, and edit code snippets. This [VS Code extension](https://marketplace.visualstudio.com/items?itemName=CodeontheRocks.cotr-snippets) provides a simple command (`Save COTR Snippet`) to convert code from VS Code into COTR snippets.
+
+To use it, simply highlight the code you want to save, right-click, and select the `Save COTR Snippet` command. This will open the COTR website with your code. At this point, you can save, screenshot, and update the code using our AI models.
+
+By default, snippets will be save anonymously so a COTR account isn't required. If you'd like to save snippets to your own account, create an account on the [COTR Website](https://codeontherocks.dev/) and then use the `Login to COTR` command in VS Code to connect your account.
+
 ## COTR Snippets
 
-This [VS Code extension](https://marketplace.visualstudio.com/items?itemName=CodeontheRocks.cotr-snippets) provides a large list of generic snippets that can be used in any project, regardless of the language used.
+This extension also provides a large list of generic snippets that can be used in any project, regardless of the language used.
 
 How does it work?
 

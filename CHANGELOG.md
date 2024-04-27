@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.17
+
+- Update README
+
 ## 0.0.16
 
 - Add commands to integrate with COTR platform
